@@ -2933,7 +2933,7 @@ input[type="range"]::-moz-range-thumb {
 
 .fs-item-specimen-wrap {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: visible;
   padding: 24px 0;
   margin: 12px 0 20px 0;
@@ -2941,13 +2941,14 @@ input[type="range"]::-moz-range-thumb {
 
 .fs-item-specimen {
   font-size: 210px;
-  line-height: 1.25;
+  line-height: 1.40;
   white-space: nowrap;
   overflow: visible;
   text-overflow: clip;
   color: var(--fontshare-text);
   outline: none;
-  padding: 12px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .fs-item-meta-bottom {
@@ -3012,11 +3013,12 @@ input[type="range"]::-moz-range-thumb {
 
 .fontshare-grid-mode .fs-item-specimen {
   font-size: 56px !important;
-  line-height: 1.35;
+  line-height: 1.40 !important;
   white-space: normal;
   min-height: 130px;
-  padding: 12px 0;
-  overflow: visible;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  overflow: visible !important;
 }
 
 /* Floating Scroll to Top button */
