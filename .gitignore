@@ -1,2 +1,5 @@
 .vercel
 dist/
+__pycache__/
+*.pyc
+test_previews/

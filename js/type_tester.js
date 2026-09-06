@@ -318,12 +318,24 @@
           return mockFace;
         }
 
+        var cleanUrl = webFontUrl.split('?')[0].split('#')[0].toLowerCase();
+        var formatSpec = '';
+        if (cleanUrl.endsWith('.woff2')) {
+          formatSpec = " format('woff2')";
+        } else if (cleanUrl.endsWith('.woff')) {
+          formatSpec = " format('woff')";
+        } else if (cleanUrl.endsWith('.otf')) {
+          formatSpec = " format('opentype')";
+        } else if (cleanUrl.endsWith('.ttf')) {
+          formatSpec = " format('truetype')";
+        }
+
         var fontFace = new FontFace(
           family,
-          'url(\'' + webFontUrl + '\') format(\'woff2\')',
+          'url(\'' + webFontUrl + '\')' + formatSpec,
           {
-            weight: String(weight),
-            style: style,
+            weight: String(weight || '400'),
+            style: style || 'normal',
             display: 'swap'
           }
         );
@@ -331,9 +343,40 @@
         document.fonts.add(fontFace);
         var loadedFace = await fontFace.load();
         self.loadedFaces.set(cacheKey, loadedFace);
+
+        // Also register bold weights 600, 700 if default weight is 400 so bold elements don't fallback
+        if (String(weight) === '400' || weight === 'normal') {
+          try {
+            var bFace = new FontFace(
+              family,
+              'url(\'' + webFontUrl + '\')' + formatSpec,
+              { weight: '700', style: style || 'normal', display: 'swap' }
+            );
+            document.fonts.add(bFace);
+            bFace.load().catch(function () {});
+          } catch (e) {}
+        }
+
         self.emit('fontLoaded', { family: family, weight: weight, style: style, fontFace: loadedFace });
         return loadedFace;
       } catch (err) {
+        // Fallback recovery if external domain fails
+        if (webFontUrl.includes('r2.dev') || webFontUrl.includes('dist/')) {
+          var fname = webFontUrl.split('/').pop();
+          var localFb = 'fonts/' + fname;
+          try {
+            var fbFace = new FontFace(family, 'url(\'' + localFb + '\')', {
+              weight: String(weight || '400'),
+              style: style || 'normal',
+              display: 'swap'
+            });
+            document.fonts.add(fbFace);
+            var loadedFb = await fbFace.load();
+            self.loadedFaces.set(cacheKey, loadedFb);
+            self.emit('fontLoaded', { family: family, weight: weight, style: style, fontFace: loadedFb });
+            return loadedFb;
+          } catch (eFb) {}
+        }
         console.warn('[TypeTester] Failed to load web font ' + family + ' (' + webFontUrl + '):', err);
         self.emit('fontError', { family: family, weight: weight, style: style, error: err });
         throw err;

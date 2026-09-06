@@ -2036,3 +2036,927 @@ input[type="range"]::-moz-range-thumb {
     font-size: 36px;
   }
 }
+
+/* ==========================================================================
+   FEDU FONTHUB — CORE TYPEFACES & LOCAL WEBFONTS (@font-face)
+   ========================================================================== */
+
+/* 1. Satoshi (Fontshare Signature Sans) */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('fonts/Satoshi-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('fonts/Satoshi-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Clash Display / SVN-ClashDisplay */
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/FDClash-DisplayRegular.ttf') format('truetype'),
+       url('fonts/FDClash-DisplayRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/FDClash-DisplayBold.ttf') format('truetype'),
+       url('fonts/FDClash-DisplayBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-ClashDisplay';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/FDClash-DisplayRegular.ttf') format('truetype'),
+       url('fonts/FDClash-DisplayRegular.ttf') format('truetype'),
+       url('../fonts/SVN-ClashDisplay-Regular.ttf') format('truetype'),
+       url('fonts/SVN-ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3. GT Sectra */
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GTSectra-Regular.woff2') format('woff2'),
+       url('fonts/GTSectra-Regular.woff2') format('woff2'),
+       url('../fonts/GT-Sectra-LCGV-Display-Regular.otf') format('opentype'),
+       url('fonts/GT-Sectra-LCGV-Display-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GT-Sectra-LCGV-Display-Bold.otf') format('opentype'),
+       url('fonts/GT-Sectra-LCGV-Display-Bold.otf') format('opentype'),
+       url('../fonts/GTSectra-Regular.woff2') format('woff2'),
+       url('fonts/GTSectra-Regular.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 4. GT America */
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GTAmerica-Regular.woff2') format('woff2'),
+       url('fonts/GTAmerica-Regular.woff2') format('woff2');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 5. SVN-NoeDisplay / FDNoeDisplay */
+@font-face {
+  font-family: 'SVN-NoeDisplay';
+  src: url('../fonts/SVN-NoeDisplay-Regular.ttf') format('truetype'),
+       url('fonts/SVN-NoeDisplay-Regular.ttf') format('truetype'),
+       url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
+       url('fonts/FDNoeDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-NoeDisplay';
+  src: url('../fonts/SVN-NoeDisplay-Bold.ttf') format('truetype'),
+       url('fonts/SVN-NoeDisplay-Bold.ttf') format('truetype'),
+       url('../fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
+       url('fonts/FDNoeDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDNoeDisplay';
+  src: url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
+       url('fonts/FDNoeDisplay-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 6. FDAeonik / SVN-AEONIK */
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonik-Regular.woff2') format('woff2'),
+       url('../fonts/SVN-AEONIK-REGULAR.TTF') format('truetype'),
+       url('fonts/SVN-AEONIK-REGULAR.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonik-Bold.woff2') format('woff2'),
+       url('../fonts/SVN-AEONIK-BOLD.TTF') format('truetype'),
+       url('fonts/SVN-AEONIK-BOLD.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-AEONIK';
+  src: url('../fonts/SVN-AEONIK-REGULAR.TTF') format('truetype'),
+       url('fonts/SVN-AEONIK-REGULAR.TTF') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 7. SVN-Gilroy / FDGilroy */
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../fonts/FDGilroy-Regular.woff2') format('woff2'),
+       url('fonts/FDGilroy-Regular.woff2') format('woff2'),
+       url('../fonts/SVN-Gilroy Regular.ttf') format('truetype'),
+       url('fonts/SVN-Gilroy Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Gilroy';
+  src: url('../fonts/FDGilroy-Bold.woff2') format('woff2'),
+       url('fonts/FDGilroy-Bold.woff2') format('woff2'),
+       url('../fonts/SVN-Gilroy Bold.otf') format('opentype'),
+       url('fonts/SVN-Gilroy Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Regular.woff2') format('woff2'),
+       url('fonts/FDGilroy-Regular.woff2') format('woff2');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 8. SVN-Acta / FDActa */
+@font-face {
+  font-family: 'SVN-Acta';
+  src: url('../fonts/FDActa-Book.woff2') format('woff2'),
+       url('fonts/FDActa-Book.woff2') format('woff2'),
+       url('../fonts/SVN-Acta-Book.ttf') format('truetype'),
+       url('fonts/SVN-Acta-Book.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 9. Curated Pairs 3-8 Webfonts */
+@font-face {
+  font-family: 'SVN-Adobe Caslon';
+  src: url('../fonts/FDAdobeCaslon-Regular.ttf') format('truetype'),
+       url('fonts/FDAdobeCaslon-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Apercu Pro';
+  src: url('../fonts/FDApercuPro-Regular.ttf') format('truetype'),
+       url('fonts/FDApercuPro-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Abril Fatface';
+  src: url('../fonts/FDAbrilFatface-Regular.ttf') format('truetype'),
+       url('fonts/FDAbrilFatface-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Aptima';
+  src: url('../fonts/FDAptima-Regular.ttf') format('truetype'),
+       url('fonts/FDAptima-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-HC Bourbon Grotesque';
+  src: url('../fonts/FDHC-BourbonGrotesque.otf') format('opentype'),
+       url('fonts/FDHC-BourbonGrotesque.otf') format('opentype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Adobe Jenson';
+  src: url('../fonts/FDAdobeJenson-Regular.ttf') format('truetype'),
+       url('fonts/FDAdobeJenson-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-A Love Of Thunder';
+  src: url('../fonts/FDALoveOfThunder-Regular.woff2') format('woff2'),
+       url('fonts/FDALoveOfThunder-Regular.woff2') format('woff2'),
+       url('../fonts/FDALoveOfThunder-Regular.ttf') format('truetype'),
+       url('fonts/FDALoveOfThunder-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Aguila';
+  src: url('../fonts/FDAguila-Regular.ttf') format('truetype'),
+       url('fonts/FDAguila-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Addington CF';
+  src: url('../fonts/FDAddingtonCF-Regular.otf') format('opentype'),
+       url('fonts/FDAddingtonCF-Regular.otf') format('opentype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Bio Sans';
+  src: url('../fonts/FDBioSans-Regular.ttf') format('truetype'),
+       url('fonts/FDBioSans-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Avo';
+  src: url('../fonts/FDAvo-Regular.ttf') format('truetype'),
+       url('fonts/FDAvo-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Ultra';
+  src: url('../fonts/SVN-UltraStandard-Regular.ttf') format('truetype'),
+       url('fonts/SVN-UltraStandard-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Walsheim Pro';
+  src: url('../fonts/SVN-WalsheimPro-Regular.ttf') format('truetype'),
+       url('fonts/SVN-WalsheimPro-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-Alpina';
+  src: url('../fonts/SVN-AlpinaFine-Regular.ttf') format('truetype'),
+       url('fonts/SVN-AlpinaFine-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SVN-SuperDisplay';
+  src: url('../fonts/SVN-SuperDisplay-Regular.ttf') format('truetype'),
+       url('fonts/SVN-SuperDisplay-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   FONTSHARE EDITORIAL VIEW (Exact Matching Image 4: media_1788686668299.png)
+   ========================================================================== */
+
+:root {
+  --fontshare-bg: #FAF8F3;
+  --fontshare-bg-card: #FAF8F3;
+  --fontshare-border: #EAE6DB;
+  --fontshare-text: #111111;
+  --fontshare-muted: #767676;
+  --fontshare-tag-bg: #EFECE3;
+}
+
+[data-theme="dark"] {
+  --fontshare-bg: #141414;
+  --fontshare-bg-card: #181818;
+  --fontshare-border: #2A2A2A;
+  --fontshare-text: #F5F3EB;
+  --fontshare-muted: #888888;
+  --fontshare-tag-bg: #222222;
+}
+
+#fontshare-view {
+  background-color: var(--fontshare-bg);
+  background: #FAF8F3;
+  color: var(--fontshare-text);
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+[data-theme="dark"] #fontshare-view {
+  background: #141414;
+}
+
+/* Fontshare Dedicated Topbar (Image 4) */
+.fontshare-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 64px;
+  background-color: var(--fontshare-bg);
+  border-bottom: 1px solid var(--fontshare-border);
+}
+
+.fontshare-topbar__left {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.fontshare-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  padding-right: 36px;
+  color: var(--fontshare-text);
+}
+
+.fontshare-tabs {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.fs-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 32px;
+  background: transparent;
+  color: var(--fontshare-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-right: 1px solid var(--fontshare-border);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.fs-tab.active {
+  background-color: #111111;
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .fs-tab.active {
+  background-color: #FFFFFF;
+  color: #111111;
+}
+
+.fs-tab-count {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.fontshare-topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fs-styles-status {
+  font-size: 0.9rem;
+  color: var(--fontshare-muted);
+}
+
+.fs-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fs-menu-line {
+  width: 22px;
+  height: 2px;
+  background-color: var(--fontshare-text);
+  border-radius: 1px;
+}
+
+/* Fontshare Controls Toolbar (Image 4) */
+.fontshare-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background-color: var(--fontshare-bg);
+  border-bottom: 1px solid var(--fontshare-border);
+}
+
+.fs-toolbar-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 48px;
+  gap: 24px;
+  border-bottom: 1px solid var(--fontshare-border);
+}
+
+.fs-toolbar-row:last-child {
+  border-bottom: none;
+}
+
+/* Row 1: Search, Dropdowns, Slider */
+.fs-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.fs-search-icon {
+  color: var(--fontshare-muted);
+  flex-shrink: 0;
+}
+
+.fs-search-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  color: var(--fontshare-text);
+  padding: 4px 0;
+  outline: none;
+}
+
+.fs-dropdowns-group {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.fs-dropdown-wrap {
+  position: relative;
+}
+
+.fs-select {
+  appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--fontshare-text);
+  cursor: pointer;
+  padding-right: 18px;
+  outline: none;
+}
+
+.fs-size-slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.fs-size-readout {
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-width: 70px;
+  text-align: right;
+  color: var(--fontshare-text);
+}
+
+.fs-slider {
+  appearance: none;
+  width: 200px;
+  height: 2px;
+  background: var(--fontshare-border);
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+.fs-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--fontshare-text);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.fs-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Row 2: Your Text, Presets, Alignment, Theme, Reset */
+.fs-your-text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.fs-pencil-icon {
+  color: var(--fontshare-muted);
+}
+
+.fs-custom-text-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--fontshare-border);
+  font-size: 0.95rem;
+  color: var(--fontshare-text);
+  padding: 4px 0;
+  outline: none;
+}
+
+.fs-custom-text-input:focus {
+  border-bottom-color: var(--fontshare-text);
+}
+
+.fs-presets-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.fs-preset-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.92rem;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+
+.fs-preset-btn:hover,
+.fs-preset-btn.active {
+  color: var(--fontshare-text);
+  font-weight: 700;
+}
+
+.fs-align-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.fs-align-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+}
+
+.fs-align-btn:hover,
+.fs-align-btn.active {
+  color: var(--fontshare-text);
+  background: var(--fontshare-tag-bg);
+}
+
+.fs-shuffle-btn {
+  background: transparent;
+  border: 1px solid var(--fontshare-border);
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--fontshare-text);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.fs-shuffle-btn:hover {
+  background: var(--fontshare-text);
+  color: var(--fontshare-bg);
+}
+
+.fs-theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--fontshare-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.fs-reset-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.fs-reset-btn:hover {
+  color: var(--fontshare-text);
+  text-decoration: underline;
+}
+
+/* Row 3: Sub-bar */
+.fs-toolbar-row--tertiary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 48px;
+  background: var(--fontshare-bg);
+}
+
+.fs-tertiary-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.fs-total-count {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--fontshare-text);
+  min-width: 40px;
+}
+
+.fs-view-toggle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-right: 1px solid var(--fontshare-border);
+  padding-right: 24px;
+}
+
+.fs-view-mode-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+}
+
+.fs-view-mode-btn.active {
+  color: var(--fontshare-text);
+  font-weight: 700;
+}
+
+.fs-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fs-pill-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+  padding: 3px 0;
+  transition: color 0.15s;
+}
+
+.fs-pill-btn:hover,
+.fs-pill-btn.active {
+  color: var(--fontshare-text);
+  font-weight: 600;
+}
+
+.fs-tertiary-right {
+  display: flex;
+  align-items: center;
+}
+
+.fs-sort-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fs-sort-label {
+  font-size: 0.88rem;
+  color: var(--fontshare-muted);
+}
+
+.fs-sort-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.88rem;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+}
+
+.fs-sort-btn:hover,
+.fs-sort-btn.active {
+  color: var(--fontshare-text);
+  font-weight: 700;
+}
+
+/* List View Specimen Cards (Image 4 Specs) */
+.fontshare-specimens-container {
+  width: 100%;
+}
+
+.fontshare-list-mode .fontshare-card,
+.fontshare-list-mode .fs-list-item {
+  border-bottom: 1px solid var(--fontshare-border);
+  padding: 40px 48px;
+  transition: background 0.15s ease;
+}
+
+.fontshare-list-mode .fontshare-card:hover,
+.fontshare-list-mode .fs-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+.fs-item-meta-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.fs-item-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fs-item-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fontshare-text);
+  margin: 0;
+}
+
+.fs-star-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.15rem;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.fs-star-btn.active,
+.fs-star-btn:hover {
+  color: #F5A623;
+}
+
+.fs-item-badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.85rem;
+  color: var(--fontshare-muted);
+}
+
+.fs-item-specimen-wrap {
+  width: 100%;
+  overflow: hidden;
+  margin: 16px 0 24px 0;
+}
+
+.fs-item-specimen {
+  font-size: 210px;
+  line-height: 1.0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  color: var(--fontshare-text);
+  outline: none;
+}
+
+.fs-item-meta-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--fontshare-muted);
+  margin-top: 16px;
+}
+
+.fs-designer {
+  color: var(--fontshare-muted);
+}
+
+.fs-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fs-btn-waterfall-toggle {
+  background: transparent;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--fontshare-muted);
+  cursor: pointer;
+}
+
+.fs-btn-waterfall-toggle:hover {
+  color: var(--fontshare-text);
+}
+
+.fs-download-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--fontshare-text);
+  text-decoration: underline;
+}
+
+/* Waterfall collapsible scale inside list item */
+.fs-waterfall-drawer {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--fontshare-border);
+}
+
+/* Grid View Mode */
+.fontshare-grid-mode {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  border-top: 1px solid var(--fontshare-border);
+}
+
+.fontshare-grid-mode .fontshare-card,
+.fontshare-grid-mode .fs-list-item {
+  border-right: 1px solid var(--fontshare-border);
+  border-bottom: 1px solid var(--fontshare-border);
+  padding: 32px;
+}
+
+.fontshare-grid-mode .fs-item-specimen {
+  font-size: 56px !important;
+  line-height: 1.15;
+  white-space: normal;
+  min-height: 130px;
+}
+
+/* Floating Scroll to Top button */
+.fs-scroll-top-btn {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--fontshare-bg);
+  color: var(--fontshare-text);
+  border: 1px solid var(--fontshare-border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+  transition: all 0.2s ease;
+}
+
+.fs-scroll-top-btn:hover {
+  background: var(--fontshare-text);
+  color: var(--fontshare-bg);
+  transform: translateY(-2px);
+}
+

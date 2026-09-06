@@ -185,6 +185,24 @@
     });
   }
 
+  var _queryCache = Object.create(null);
+  var _queryCacheCount = 0;
+
+  function getCachedQuery(query) {
+    var cached = _queryCache[query];
+    if (cached) return cached;
+    var nq = removeVietnameseDiacritics(query);
+    var raw = query.toLowerCase().trim();
+    cached = { nq: nq, raw: raw, same: nq === raw };
+    if (_queryCacheCount > 5000) {
+      _queryCache = Object.create(null);
+      _queryCacheCount = 0;
+    }
+    _queryCache[query] = cached;
+    _queryCacheCount++;
+    return cached;
+  }
+
   /**
    * Instant search supporting both pre-computed indexed fonts and raw font arrays.
    * Literal substring search guarantees complete ReDoS and regex metacharacter immunity.
@@ -192,23 +210,29 @@
   function instantSearch(items, query) {
     if (!Array.isArray(items)) return [];
     if (!query || typeof query !== 'string' || !query.trim()) {
-      return items.map(function (item) {
-        return (item && item.searchComposite !== undefined) ? item.font : item;
-      });
+      var all = new Array(items.length);
+      for (var k = 0; k < items.length; k++) {
+        var it = items[k];
+        all[k] = (it && it.searchComposite !== undefined) ? it.font : it;
+      }
+      return all;
     }
 
-    var normalizedQuery = removeVietnameseDiacritics(query);
-    var rawQueryLower = query.toLowerCase().trim();
+    var qData = getCachedQuery(query);
+    var normalizedQuery = qData.nq;
+    var rawQueryLower = qData.raw;
+    var needRaw = !qData.same;
     var results = [];
 
     // Check if items are pre-indexed
     var isIndexed = items.length > 0 && items[0] && items[0].searchComposite !== undefined;
 
     if (isIndexed) {
-      for (var i = 0; i < items.length; i++) {
-        var indexed = items[i];
-        if (indexed.searchComposite.includes(normalizedQuery) || indexed.searchComposite.includes(rawQueryLower)) {
-          results.push(indexed.font);
+      var len = items.length;
+      for (var i = 0; i < len; i++) {
+        var comp = items[i].searchComposite;
+        if (comp.includes(normalizedQuery) || (needRaw && comp.includes(rawQueryLower))) {
+          results.push(items[i].font);
         }
       }
     } else {
@@ -217,31 +241,47 @@
         var font = items[j];
         if (!font || typeof font !== 'object') continue;
 
-        var name = String(font.name || font.family || '');
-        var designer = String(font.designer || font.foundry_designer || '');
-        var notes = String(font.director_notes || '');
-        var subcategory = String(font.subcategory || '');
-        var mood = String((font.matrix_3d && font.matrix_3d.mood) || font.matrix_mood || '');
-        var driveFiles = Array.isArray(font.drive_files) ? font.drive_files.join(' ') : String(font.drive_files || '');
+        var searchNorm = font._rawSearchNorm;
+        if (searchNorm === undefined) {
+          var name = String(font.name || font.family || '');
+          var designer = String(font.designer || font.foundry_designer || '');
+          var notes = String(font.director_notes || '');
+          var subcategory = String(font.subcategory || '');
+          var mood = String((font.matrix_3d && font.matrix_3d.mood) || font.matrix_mood || '');
+          var driveFiles = Array.isArray(font.drive_files) ? font.drive_files.join(' ') : String(font.drive_files || '');
 
-        var normName = removeVietnameseDiacritics(name);
-        var normDesigner = removeVietnameseDiacritics(designer);
-        var normNotes = removeVietnameseDiacritics(notes);
-        var normSubcat = removeVietnameseDiacritics(subcategory);
-        var normMood = removeVietnameseDiacritics(mood);
-        var normDrive = removeVietnameseDiacritics(driveFiles);
+          var normName = removeVietnameseDiacritics(name);
+          var normDesigner = removeVietnameseDiacritics(designer);
+          var normNotes = removeVietnameseDiacritics(notes);
+          var normSubcat = removeVietnameseDiacritics(subcategory);
+          var normMood = removeVietnameseDiacritics(mood);
+          var normDrive = removeVietnameseDiacritics(driveFiles);
 
-        if (
-          normName.includes(normalizedQuery) ||
-          normDesigner.includes(normalizedQuery) ||
-          normNotes.includes(normalizedQuery) ||
-          normSubcat.includes(normalizedQuery) ||
-          normMood.includes(normalizedQuery) ||
-          normDrive.includes(normalizedQuery) ||
-          name.toLowerCase().includes(rawQueryLower) ||
-          notes.toLowerCase().includes(rawQueryLower) ||
-          mood.toLowerCase().includes(rawQueryLower)
-        ) {
+          searchNorm = [
+            normName,
+            normDesigner,
+            normNotes,
+            normSubcat,
+            normMood,
+            normDrive,
+            name.toLowerCase(),
+            notes.toLowerCase(),
+            mood.toLowerCase()
+          ].join(' \0 ');
+
+          try {
+            Object.defineProperty(font, '_rawSearchNorm', {
+              value: searchNorm,
+              writable: true,
+              enumerable: false,
+              configurable: true
+            });
+          } catch (e) {
+            font._rawSearchNorm = searchNorm;
+          }
+        }
+
+        if (searchNorm.includes(normalizedQuery) || searchNorm.includes(rawQueryLower)) {
           results.push(font);
         }
       }

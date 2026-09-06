@@ -77,7 +77,7 @@
         "BlackItalic"
       ],
       "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/FDAeonik-Regular.woff2",
+      "web_font_url": "fonts/FDAeonik-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1fkI7kZxuQmbbKefZQX2fVKfZs_vZ1zoF?usp=sharing",
       "files_count": 14,
       "files": [
@@ -238,7 +238,7 @@
         "Black Italic"
       ],
       "sample_text": "Khát vọng vươn tầm kiến tạo chuẩn mực typography Việt Nam đương đại sắc sảo",
-      "web_font_url": "dist/fonts/web/GTAmerica-Regular.woff2",
+      "web_font_url": "fonts/GTAmerica-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ImQ2OK8QyS7BN_8LR5MRZCA1qc883jAS?usp=sharing",
       "files_count": 14,
       "tags": [
@@ -326,7 +326,7 @@
         "Fine Black Italic"
       ],
       "sample_text": "Hào khí Đông A vang vọng ngàn năm trong tinh hoa câu chữ nước Việt ngời sáng",
-      "web_font_url": "dist/fonts/web/GTSectra-Regular.woff2",
+      "web_font_url": "fonts/GTSectra-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0?usp=sharing",
       "files_count": 20,
       "tags": [
@@ -395,7 +395,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ALoveOfThunder-Regular.woff2",
+      "web_font_url": "fonts/FDALoveOfThunder-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ljuTxXFq19ympRlnXpOsDmUeP2jGSnFG?usp=sharing",
       "files_count": 1,
       "files": [
@@ -435,7 +435,7 @@
         "Regular"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AbrilFatface-Regular.woff2",
+      "web_font_url": "fonts/FDAbrilFatface-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ABCNsDtSsXz8eh6GAfzt-Xu-pldF12MH?usp=sharing",
       "files_count": 1,
       "files": [
@@ -490,7 +490,7 @@
         "BlackItalic"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Acta-Regular.woff2",
+      "web_font_url": "fonts/FDActa-Book.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mSBsppjMF9lQiNqazgk45x60SW3wWFac?usp=sharing",
       "files_count": 12,
       "files": [
@@ -618,7 +618,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AdamGorry-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AdamGorry-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zfKQaW4DMhW-74bLRmZ1PDBInpcHic0x?usp=sharing",
       "files_count": 1,
       "files": [
@@ -661,7 +661,7 @@
         "RegularItalic"
       ],
       "sample_text": "Bản hòa ca êm dịu giữa kỹ nghệ chế tác thủ công và phong cách kiến trúc hoàng gia",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AddingtonCF-Regular.woff2",
+      "web_font_url": "fonts/FDAddingtonCF-Regular.otf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1nYIqOJdw5nn6ISg35EeGVdmD6AQFs4Ry?usp=sharing",
       "files_count": 4,
       "files": [
@@ -734,7 +734,7 @@
         "Bold Italic"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AdobeCaslon-Regular.woff2",
+      "web_font_url": "fonts/FDAdobeCaslon-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1-p1fa8SPJNSBgZfPl4fpBC-eTkRVGNmc?usp=sharing",
       "files_count": 6,
       "files": [
@@ -821,7 +821,7 @@
         "Bold Italic"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AdobeJenson-Regular.woff2",
+      "web_font_url": "fonts/FDAdobeJenson-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zvUedY9NDBQI1XgECej4E8ajpDQ83xGu?usp=sharing",
       "files_count": 4,
       "files": [
@@ -891,7 +891,7 @@
         "Black"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AgencyFB-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AgencyFB-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1q_LmRnMptfcgXFSTz4Uoq4TWD2kf_P0_?usp=sharing",
       "files_count": 3,
       "files": [
@@ -949,7 +949,7 @@
         "Bold"
       ],
       "sample_text": "LỊCH SỬ GHI DẤU KỲ TÍCH VẺ VANG KHI TOÀN DÂN CỞI MỞ ĐỠ ĐẦU NỀN VĂN MINH MỚI",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Aguila-Regular.woff2",
+      "web_font_url": "fonts/FDAguila-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C0P_cGcGDGt5VwEPDSNITUvEGAH2bMw8?usp=sharing",
       "files_count": 3,
       "files": [
@@ -1011,7 +1011,7 @@
         "Bold"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Alek-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Alek-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1uG4UrKJsWl8ZKWGk8MHGh_sNqjMITC2d?usp=sharing",
       "files_count": 3,
       "files": [
@@ -1070,7 +1070,7 @@
         "Black"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Alfreda-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Alfreda-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cTUR7IyIePJGoVirLw8lg-_H77HH5pu8?usp=sharing",
       "files_count": 4,
       "files": [
@@ -1138,7 +1138,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Alogittyon-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Alogittyon-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1UXBVQWXZAq4L7lcMyWArUsKW2S4eVqYN?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1187,7 +1187,7 @@
         "BoldItalic"
       ],
       "sample_text": "Vợ chàng kỵ sĩ bỡ ngỡ bước vào lâu đài lộng lẫy uy nghiêm giữa màn sương sớm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Alpina-Regular.woff2",
+      "web_font_url": "fonts/SVN-AlpinaFine-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1wQ2lB4PR5-NBy0LRecEGxfCgMoGWMFfm?usp=sharing",
       "files_count": 10,
       "files": [
@@ -1310,7 +1310,7 @@
         "Bold"
       ],
       "sample_text": "Ký ức về một thời kỳ hào hoa trên phố biển xưa được tái hiện qua từng bức ảnh đen trắng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AmericanTypewriter-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AmericanTypewriter-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1JJESkrHpS5hKaZKq_5LmRZeWltCae46k?usp=sharing",
       "files_count": 3,
       "files": [
@@ -1370,7 +1370,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Amstirdam-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Amstirdam-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1R97YT2dyrN1PWaJRvLg1EaE1ha53A_za?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1410,7 +1410,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Androgyne-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Androgyne-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/10kguJqRHzcwDWjgwdrd-KSjiPMki-66u?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1465,7 +1465,7 @@
         "Black Italic"
       ],
       "sample_text": "DÙ GẶP GIAN NAN, KỴ BINH VÀ CHIẾN MÃ VƯỢT ĐÈO DỐC HIỂM TRỞ ĐẬP TAN CẰN CỖI",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AnguitaSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AnguitaSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1B7wYvms6hl9BXx55HCpqJ6rl-l3dL4d7?usp=sharing",
       "files_count": 16,
       "files": [
@@ -1634,7 +1634,7 @@
         "Regular Italic"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ApercuPro-Regular.woff2",
+      "web_font_url": "fonts/FDApercuPro-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xe1eLIcFU5PkKZQiAppByI75xGnsk5DB?usp=sharing",
       "files_count": 6,
       "files": [
@@ -1718,7 +1718,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Apple-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Apple-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/18vh8nHSOJvuCGPOKqVgRb_WOZTdTy0aC?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1758,7 +1758,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Appleberry-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Appleberry-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1l2u33Waew8UU2GB-p-O7NBalBLfnAvJD?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1801,7 +1801,7 @@
         "bold italic"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Aptima-Regular.woff2",
+      "web_font_url": "fonts/FDAptima-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mCEbBuNFBV5AImvNB09S9pwPhHUhBRiF?usp=sharing",
       "files_count": 4,
       "files": [
@@ -1865,7 +1865,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Arsilon-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Arsilon-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_4sAcD0pgzK0r2dkpF6Oa5qGYhJm-ZUw?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1905,7 +1905,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ArtfulBeauty-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ArtfulBeauty-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1yZZs_dj29Ph9eIAdxWmz3-4YdgiT8bsH?usp=sharing",
       "files_count": 1,
       "files": [
@@ -1948,7 +1948,7 @@
         "BoldItalic"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ArtifexCF-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ArtifexCF-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Bx4BEaC0WbhvV3SnFmsEdsNElBWqgOwv?usp=sharing",
       "files_count": 4,
       "files": [
@@ -2015,7 +2015,7 @@
         "Classic Roman Italic"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Astoria-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Astoria-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1m5sH_OUKqkZx2q1JoSJOITcwPYZTnHgn?usp=sharing",
       "files_count": 4,
       "files": [
@@ -2079,7 +2079,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Astronout-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Astronout-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hVIl4KTbwfgvH0PHjU6IdZqhnYgqb7FS?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2119,7 +2119,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Athene-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Athene-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1eh6EkyHVPW1Jvisz9x-fhqRjK0cxgzdG?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2161,7 +2161,7 @@
         "Bold"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AvantGardeGothic-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AvantGardeGothic-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1AG-gIZiLdHTa-U6DaptvaAW3CtVBf47K?usp=sharing",
       "files_count": 3,
       "files": [
@@ -2228,7 +2228,7 @@
         "Bold Italic"
       ],
       "sample_text": "Mỗi dòng lệnh đều được kiểm thử kỹ lưỡng, đảm bảo an toàn thông tin và bảo mật đa lớp",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AvenirNext-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AvenirNext-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1uZM-0va6WJxGdMRQ3kpZVqAANLdrv9Lb?usp=sharing",
       "files_count": 8,
       "files": [
@@ -2328,7 +2328,7 @@
         "DemiBold"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AvenirNextRounded-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AvenirNextRounded-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1KavK6jMBE1GCNzBkw14574T_WCKhFt0Z?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2375,7 +2375,7 @@
         "bold italic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Avo-Regular.woff2",
+      "web_font_url": "fonts/FDAvo-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1FDibCQDYCcLps9QrprUeILwoQBeAnHkW?usp=sharing",
       "files_count": 4,
       "files": [
@@ -2442,7 +2442,7 @@
         "Italic"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-AyerDeck-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-AyerDeck-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Ju-i1BLEXmVIj2kN-pBqk6MR1cvbgygS?usp=sharing",
       "files_count": 4,
       "files": [
@@ -2510,7 +2510,7 @@
         "Textured"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Bargitta-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Bargitta-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1IRAxl00Fz0NhUzLXRpY8QGA1sRgQBsGX?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2550,7 +2550,7 @@
         "Regular"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BarnyardScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BarnyardScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cnHI0gdRtXL9-_eczlCDWmLYGOgKvUXt?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2590,7 +2590,7 @@
         "Regular"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BarnyardSerif-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BarnyardSerif-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/15tVhUTHOP5DWXSLP6dnphSpwtWUbkKtB?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2633,7 +2633,7 @@
         "Bold Italic"
       ],
       "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BasisGrotesquePro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BasisGrotesquePro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_vS0xUXHWUKuJsz4XCzqC4prf9VagIsC?usp=sharing",
       "files_count": 4,
       "files": [
@@ -2701,7 +2701,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Bear-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Bear-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/14_PgALe85QAfjBvumPFIgGYPWUiAkLUX?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2741,7 +2741,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Beast-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Beast-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LyvcMUAQPFSRRgFNz1dZETqJBTlYjisW?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2783,7 +2783,7 @@
         "Bold"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Beatrice-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Beatrice-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hDyTSakF6LzofZ_JEVahyOLuARC8XjRZ?usp=sharing",
       "files_count": 3,
       "files": [
@@ -2845,7 +2845,7 @@
         "Bold"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Begum-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Begum-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bqq_WCvoHGQV_gK4t1qUzPpjSKnzpg1H?usp=sharing",
       "files_count": 3,
       "files": [
@@ -2905,7 +2905,7 @@
         "Swash"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Berkshire-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Berkshire-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1nIWIkiIKZSEt9AqpypHamTNsy4p0m_tb?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2945,7 +2945,7 @@
         "Regular"
       ],
       "sample_text": "KHẲNG ĐỊNH ĐẲNG CẤP THƯƠNG HIỆU VIỆT VỚI Ý CHÍ THẲNG TIẾN VÀO KỶ NGUYÊN SỐ",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BigNoodleTitling-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BigNoodleTitling-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1AHYuBF3vo_Pz6AaGI7AlIfHUQ9j3F2hx?usp=sharing",
       "files_count": 1,
       "files": [
@@ -2985,7 +2985,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Billo-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Billo-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1EMLQBK7uhfexOr8OKPXbZD6dduR9XpNA?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3036,7 +3036,7 @@
         "ExtraBoldItalic"
       ],
       "sample_text": "Cấu trúc vi mạch và mã nguồn mở vận hành trơn tru ngay cả dưới áp lực tải nặng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BioSans-Regular.woff2",
+      "web_font_url": "fonts/FDBioSans-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zh06Yq4TAGFqkViXLU1iIao-nQZNjVga?usp=sharing",
       "files_count": 12,
       "files": [
@@ -3168,7 +3168,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Bira-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Bira-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1g4adUfRScZxevylmLMDeV8rhOy4cyBdc?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3208,7 +3208,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BirthOfAHero-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BirthOfAHero-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1u8msRkiX6QvPuB0kC7e-Caau2gHlnM1-?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3248,7 +3248,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BlackDiamond-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BlackDiamond-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1d7AFJQ7X_IkPM0hDd6wiCWDPwMZguEzE?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3289,7 +3289,7 @@
         "Bold"
       ],
       "sample_text": "Tôn vinh đẳng cấp thượng lưu trong từng đường nét chạm khắc tỉ mỉ và tinh tế",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BlackMango-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BlackMango-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1UX4hlUSUtkjyhiFloA-sduHeF8g7sO-Q?usp=sharing",
       "files_count": 2,
       "files": [
@@ -3342,7 +3342,7 @@
         "Swash"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BLACKHAWK-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BLACKHAWK-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1tOsh2tgJ08lbXkdnXUcOwqEdOvevXoRp?usp=sharing",
       "files_count": 2,
       "files": [
@@ -3390,7 +3390,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Bladerunner-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Bladerunner-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_YaoZOIen8ntbC9JhLogL-QH9QNPSMoD?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3430,7 +3430,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Bladekill-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Bladekill-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LABnP-y4x5iuNEja5daZoOD3Y-ShcrOn?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3473,7 +3473,7 @@
         "Heavy"
       ],
       "sample_text": "Dữ liệu lớn được phân tích rõ ràng, hỗ trợ việc ra quyết định chính xác và nhanh chóng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BlenderPro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BlenderPro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1sYpt_1EZ64-LE-TiUjJ6f-O0OwoQ6BdX?usp=sharing",
       "files_count": 4,
       "files": [
@@ -3541,7 +3541,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Block-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Block-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1eyKYtRZ6DL_UK4i-Pg6X4kChgUU4Zb_Y?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3581,7 +3581,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Blue-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Blue-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1fJULJXkA3AytZ-JX2mJttFjKxH0ypiPf?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3621,7 +3621,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Blywoofs-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Blywoofs-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1FlXTqAsawmlXFeYoUvfR82Xqm8ynfu80?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3664,7 +3664,7 @@
         "BlackItalic"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BodoniSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BodoniSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_qQ5l3gj8UOcFVFvTCtiNIEZQtL97kU-?usp=sharing",
       "files_count": 4,
       "files": [
@@ -3735,7 +3735,7 @@
         "bold italic"
       ],
       "sample_text": "Ngõ nhỏ quanh co rợp bóng cây xanh, gợi nhớ tiếng còi tàu sớm và hương hoa sữa nồng nàn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BookAntiqua-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BookAntiqua-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1o6_JX1gLLvGfu5sLFUkMqYPGkLcevAsP?usp=sharing",
       "files_count": 4,
       "files": [
@@ -3799,7 +3799,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Bougher-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Bougher-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Ks8NHeTAoCg4NKnXb4N_BcmqkfG9zgPm?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3839,7 +3839,7 @@
         "Regular"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BoutiqueScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BoutiqueScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1K8cMDM08FdXdYyJOQ8BzChFuFsHAI9x4?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3879,7 +3879,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BradleyHand-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BradleyHand-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1gIqDFrMid2gdbm3XH2jlPUMZBpGye1Si?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3919,7 +3919,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Braga-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Braga-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1afF_ZfufaAYLpGHAD23ItDnGQy1gwDxr?usp=sharing",
       "files_count": 1,
       "files": [
@@ -3961,7 +3961,7 @@
         "Bold"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BrandonGrotesque-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BrandonGrotesque-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1W-SwdSiREZ0faSfYChyuOhqhHtZ9b6dp?usp=sharing",
       "files_count": 3,
       "files": [
@@ -4024,7 +4024,7 @@
         "Bold Italic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Brioni-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Brioni-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1AtXHdHr25Y6XXiCHE_3OuJM417_deV96?usp=sharing",
       "files_count": 4,
       "files": [
@@ -4092,7 +4092,7 @@
         "Regular"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BrownhillScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BrownhillScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ttzD7Qc4JduVpW2OHVzr-uTIjIrt5ew2?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4132,7 +4132,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Brunette-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Brunette-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xxY5vLQk0D0iEeGoseaFVXApNNgN-Qvd?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4173,7 +4173,7 @@
         "Regular"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BruseloScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-BruseloScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1VkrCrjAGtd4qSu113CCc32w8VGNfDBiK?usp=sharing",
       "files_count": 2,
       "files": [
@@ -4223,7 +4223,7 @@
         "Bold"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Butler-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Butler-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1lT1dQVV8MnUieITeonHXyb16cVBsFHOk?usp=sharing",
       "files_count": 3,
       "files": [
@@ -4286,7 +4286,7 @@
         "Bold Italic"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-CabritoDidone-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-CabritoDidone-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1U5SCYwGmlbuysKGWm5t6Zs0Cih7kuYm3?usp=sharing",
       "files_count": 4,
       "files": [
@@ -4354,7 +4354,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-CafeLounge19-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-CafeLounge19-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1sVwiT6wumx7DvIEwM16dcIiGnYTcL91K?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4394,7 +4394,7 @@
         "Regular"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-CallpediaScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-CallpediaScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1x6ZQBbv0QiLdfKFp5ca75__U2JHgzAsI?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4434,7 +4434,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Carington-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Carington-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1JjKUcVfXM8d0FpkoDd4_tHTT2TFxn_Uw?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4476,7 +4476,7 @@
         "Bold"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-CarlaSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-CarlaSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1SsGrMJcu-78ZwP2PUp5MARxLSl0RH8jK?usp=sharing",
       "files_count": 3,
       "files": [
@@ -4536,7 +4536,7 @@
         "Regular"
       ],
       "sample_text": "Tôn vinh đẳng cấp thượng lưu trong từng đường nét chạm khắc tỉ mỉ và tinh tế",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-CattleyaScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-CattleyaScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/12tN4eE7sGvUOognZus7t5NzDU1HJcqpE?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4578,7 +4578,7 @@
         "Bold"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-CenturyGothic-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-CenturyGothic-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1jPyNiWa6BsfZUdRzV3Vr-wYu31-jFaV4?usp=sharing",
       "files_count": 3,
       "files": [
@@ -4638,7 +4638,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Channel-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Channel-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cP9Lnv8Ksp5MGrqq5rnxywwXIomhbFjJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4683,7 +4683,7 @@
         "Black Italic"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Charter-Regular.woff2",
+      "web_font_url": "fonts/FDCharter-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1BpguQI8Zq1C2YoLvp5AH5GsT5YKoN0qE?usp=sharing",
       "files_count": 6,
       "files": [
@@ -4770,7 +4770,7 @@
         "Bold"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Circular-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Circular-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/11--_45wTR6833UaXmTALWRbkJFWnWyTW?usp=sharing",
       "files_count": 4,
       "files": [
@@ -4841,7 +4841,7 @@
         "Bold"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ClashDisplay-Regular.woff2",
+      "web_font_url": "fonts/ClashDisplay-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1JLejxNyYvHQrFYAwkRLZXUvaU8ypk3VL?usp=sharing",
       "files_count": 4,
       "files": [
@@ -4909,7 +4909,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Clodia-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Clodia-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1XaX0cXTLo9Wjn40mf7s-4TlvmDSPlaR2?usp=sharing",
       "files_count": 1,
       "files": [
@@ -4954,7 +4954,7 @@
         "Black"
       ],
       "sample_text": "Đội ngũ kỹ sư nỗ lực giải quyết các bài toán kỹ thuật ngặt nghèo trong kỷ nguyên số",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Coachella-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Coachella-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1dqn3mM9EWwm88oy8SSpm3EK7j2q8CLJ3?usp=sharing",
       "files_count": 6,
       "files": [
@@ -5038,7 +5038,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ComicSansMS-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ComicSansMS-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1UXrGE0ir7D3rchhKDDVJTiZ5gFrV6JKJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5080,7 +5080,7 @@
         "Bold"
       ],
       "sample_text": "Dữ liệu lớn được phân tích rõ ràng, hỗ trợ việc ra quyết định chính xác và nhanh chóng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Conduit-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Conduit-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1EcluGYPK6vQFobcYlY7tgbqIAg0W-ri0?usp=sharing",
       "files_count": 3,
       "files": [
@@ -5140,7 +5140,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Cookie-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Cookie-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f8mE3hYqbZufPW3FmanAbo8UpbUu5jli?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5180,7 +5180,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Cookies-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Cookies-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qKEI8_kGMC2Y-ewltuT9djTqitubSsP5?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5220,7 +5220,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DaisyLau-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-DaisyLau-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/162YtE9D2CxYE5_CrUexcBsN0hBigBrkm?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5260,7 +5260,7 @@
         "Regular"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Dancingscript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Dancingscript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/19SIif8nVh0LWaWcnYtN09BY-s7kXum2U?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5300,7 +5300,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DHFDexsarBrush-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-DHFDexsarBrush-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LYfU7GUJyUNPELDQA80HBUiAYjFKy_2I?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5340,7 +5340,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DHFHarrysBrush-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-DHFHarrysBrush-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qojF0VFySbw6aWkLewixJqrMtRycDARA?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5386,7 +5386,7 @@
         "BoldItalic"
       ],
       "sample_text": "Cấu trúc vi mạch và mã nguồn mở vận hành trơn tru ngay cả dưới áp lực tải nặng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DINNext-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-DINNext-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1E6yd54_ParYSASpsoMPyBVBAO-EdL9xY?usp=sharing",
       "files_count": 9,
       "files": [
@@ -5497,7 +5497,7 @@
         "Bold"
       ],
       "sample_text": "Dữ liệu lớn được phân tích rõ ràng, hỗ trợ việc ra quyết định chính xác và nhanh chóng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DINNextRounded-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-DINNextRounded-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ZRGDIA_yJlt7d5_KKp8CRumTN1-tnmY2?usp=sharing",
       "files_count": 4,
       "files": [
@@ -5565,7 +5565,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Dominique-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Dominique-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/15PkDJ6trQvv7-8MFhPaQ_bfZy86TCBMd?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5605,7 +5605,7 @@
         "Regular"
       ],
       "sample_text": "Bản hòa ca êm dịu giữa kỹ nghệ chế tác thủ công và phong cách kiến trúc hoàng gia",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DopeScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-DopeScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1buyoShJKEhEDzOzw3qhBf3eaJD2Hvj4B?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5645,7 +5645,7 @@
         "Extra Light"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ElleNovaC-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ElleNovaC-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1WENfZaWe6MODkWYJlVR588J6-KBjlesa?usp=sharing",
       "files_count": 1,
       "files": [
@@ -5693,7 +5693,7 @@
         "ExtraBoldItalic"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-EncorpadaClassic-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-EncorpadaClassic-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1k3AHLCZUuksShwSJF9Eo5yoNCAhWacMj?usp=sharing",
       "files_count": 9,
       "files": [
@@ -5802,7 +5802,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-EndlessSorrow-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-EndlessSorrow-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1-jTNTFNxApuCQfI0XLPTWnV5IpDCGbUt?usp=sharing",
       "files_count": 2,
       "files": [
@@ -5857,7 +5857,7 @@
         "SemiBold Italic"
       ],
       "sample_text": "Hệ thống trí tuệ nhân tạo và tương lai số hóa toàn diện thúc đẩy đổi mới sáng tạo",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-EurostileNextExtended-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-EurostileNextExtended-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1j_o3bLnt33DF21PIVuf2d_Xm1XBfy83t?usp=sharing",
       "files_count": 8,
       "files": [
@@ -5959,7 +5959,7 @@
         "Bold"
       ],
       "sample_text": "Đội ngũ kỹ sư nỗ lực giải quyết các bài toán kỹ thuật ngặt nghèo trong kỷ nguyên số",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Factoria-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Factoria-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1kMcmKi7aCFachEnfwPfeZaglGiCZzhAH?usp=sharing",
       "files_count": 3,
       "files": [
@@ -6019,7 +6019,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FFFTusj-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-FFFTusj-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LwMbWVy19PoXc1DdgdZOUxa37FL0BrXa?usp=sharing",
       "files_count": 1,
       "files": [
@@ -6059,7 +6059,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FiolexGirls-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-FiolexGirls-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/142n58xT9HAFljWEUjs2eWDXn208q-Aif?usp=sharing",
       "files_count": 1,
       "files": [
@@ -6104,7 +6104,7 @@
         "Bold Italic"
       ],
       "sample_text": "Bản hòa ca êm dịu giữa kỹ nghệ chế tác thủ công và phong cách kiến trúc hoàng gia",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Flatline-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Flatline-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1AC6YywIhvw8SxP8fcaNf28zd7tkwWYm5?usp=sharing",
       "files_count": 6,
       "files": [
@@ -6190,7 +6190,7 @@
         "Black"
       ],
       "sample_text": "Mỗi dòng lệnh đều được kiểm thử kỹ lưỡng, đảm bảo an toàn thông tin và bảo mật đa lớp",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Frank-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Frank-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zsnhpMpSLZYM3gDT4suHwD5XyJhJ02no?usp=sharing",
       "files_count": 3,
       "files": [
@@ -6250,7 +6250,7 @@
         "Regular"
       ],
       "sample_text": "Hệ thống trí tuệ nhân tạo và tương lai số hóa toàn diện thúc đẩy đổi mới sáng tạo",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Franko-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Franko-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1QpYekWfRQPc1gjP2cVYYJtCnU3mchnDL?usp=sharing",
       "files_count": 1,
       "files": [
@@ -6301,7 +6301,7 @@
         "BlackItalic"
       ],
       "sample_text": "Ánh sáng huyền ảo soi rọi từng góc nhỏ, gợi mở xúc cảm thăng hoa thuần khiết",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FreightDisplay-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-FreightDisplay-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1iG_xQvoAPO6JbL1gSkAcYoOq5EYMRSa6?usp=sharing",
       "files_count": 8,
       "files": [
@@ -6401,7 +6401,7 @@
         "Regular"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FreshScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-FreshScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1X7DSKEFbO71JGQl6IutREsxYSb8NOMnb?usp=sharing",
       "files_count": 1,
       "files": [
@@ -6442,7 +6442,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FriendsForever-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-FriendsForever-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1L1sNkzV_8txebAYDkMCfhQ3JK6efigEE?usp=sharing",
       "files_count": 2,
       "files": [
@@ -6494,7 +6494,7 @@
         "Bold Italic"
       ],
       "sample_text": "Dữ liệu lớn được phân tích rõ ràng, hỗ trợ việc ra quyết định chính xác và nhanh chóng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Futura-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Futura-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TolLCNcz6gkBqAAVvM_klFx5VZJMCZZd?usp=sharing",
       "files_count": 5,
       "files": [
@@ -6583,7 +6583,7 @@
         "Black Italic"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gazpacho-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Gazpacho-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1r8ENJkOvfS6MGzL0rdpq6Ojcm7d7Nz39?usp=sharing",
       "files_count": 14,
       "files": [
@@ -6733,7 +6733,7 @@
         "Bold"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GeometricSlab703-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GeometricSlab703-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/16fTb0MgYWeXXi0ERu_bG_PPr_1kNaar6?usp=sharing",
       "files_count": 3,
       "files": [
@@ -6802,7 +6802,7 @@
         "Black Italic"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GeorgiaPro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GeorgiaPro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1tjfBpNCHvh7bfYnBXgX_LRS04nbjYnAt?usp=sharing",
       "files_count": 10,
       "files": [
@@ -6918,7 +6918,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gidry-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Gidry-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1WVpTkqNbTr2R5pQFZc5uIDlw0_19fnkB?usp=sharing",
       "files_count": 1,
       "files": [
@@ -6964,7 +6964,7 @@
         "Bold Italic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GillSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GillSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/184qfOc19a0CJDuoC-opUixlscKLhQI9e?usp=sharing",
       "files_count": 7,
       "files": [
@@ -7075,7 +7075,7 @@
         "Black Italic"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gilroy-Regular.woff2",
+      "web_font_url": "fonts/FDGilroy-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1u1bDU9oUR2c8skRwX8EjfoH-8qCzZ0j-?usp=sharing",
       "files_count": 21,
       "files": [
@@ -7281,7 +7281,7 @@
         "Heavy"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GiorgioSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GiorgioSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/132G1cX4G3NqFk2S3uddy10qb8aFdFZqR?usp=sharing",
       "files_count": 3,
       "files": [
@@ -7337,7 +7337,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GoldenYouthCaps-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GoldenYouthCaps-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1HyDZtDIGGEk1XXPoWQFrNIZwf0n5tHxT?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7377,7 +7377,7 @@
         "Regular"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GoldenYouthScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GoldenYouthScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1S5E5IkIA4OfMmb8yFkzlCOmaB0c2Ro5M?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7417,7 +7417,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GoodDog-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GoodDog-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/170wuvBE81khoRVJQfMPmNPXYBHxVgGvZ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7471,7 +7471,7 @@
         "Black Italic"
       ],
       "sample_text": "DÙ GẶP GIAN NAN, KỴ BINH VÀ CHIẾN MÃ VƯỢT ĐÈO DỐC HIỂM TRỞ ĐẬP TAN CẰN CỖI",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gotham-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Gotham-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Zqg4RW-pXYrbig8v4A7jIuEjFuaHeJNa?usp=sharing",
       "files_count": 18,
       "files": [
@@ -7653,7 +7653,7 @@
         "Bold"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gothiks-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Gothiks-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/16uWFv0EpIjjCAbh4LJqJlYDhadydujXZ?usp=sharing",
       "files_count": 3,
       "files": [
@@ -7713,7 +7713,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gracia-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Gracia-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/18Tk10R13K-d373Jl3i4EAQyL2AuR7U_R?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7753,7 +7753,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Grahamo-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Grahamo-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TvTH6LJB0DIYoepgZBHAuggZVsHB_VEt?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7796,7 +7796,7 @@
         "Bold"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Graphik-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Graphik-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TRd_FY30A2C85_CASpfeIziEsSUnQ7tc?usp=sharing",
       "files_count": 4,
       "files": [
@@ -7865,7 +7865,7 @@
         "Regular"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-GratelosDisplay-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-GratelosDisplay-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1uQYq1yeTuBBfSMryGNKP0bMIokip-Tw8?usp=sharing",
       "files_count": 2,
       "files": [
@@ -7917,7 +7917,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Gretoon-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Gretoon-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zD7KcVCwGTMLUn86GgqGxo75gTrsEtXy?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7957,7 +7957,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Hamstring-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Hamstring-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1-s7taiP5ZB3A1M7XsZc_b72sDnUG4aGw?usp=sharing",
       "files_count": 1,
       "files": [
@@ -7997,7 +7997,7 @@
         "Two"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Handelson-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Handelson-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1fKhUvPC5DzyJDrcdtNQ5dIS4XThbONeJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8037,7 +8037,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Harabaras-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Harabaras-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LPNbvvG7mxQdaGQoyxXPwf4iIy9wOtLr?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8078,7 +8078,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HaveHeart-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HaveHeart-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1tQq9TukC9nRozM_6MHuFCjVE2YdDl38S?usp=sharing",
       "files_count": 2,
       "files": [
@@ -8126,7 +8126,7 @@
         "Regular"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HC1785GLCBaskerville-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HC1785GLCBaskerville-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f6FFg1rF9PTa3BGGFOQ-D7BfUkJwZDcc?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8170,7 +8170,7 @@
         "Regular"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCAerojonesNF-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCAerojonesNF-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1NHmdEzHdrzj1e2HPY-mOte5d-PPOfJm5?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8214,7 +8214,7 @@
         "Regular"
       ],
       "sample_text": "Ký ức về một thời kỳ hào hoa trên phố biển xưa được tái hiện qua từng bức ảnh đen trắng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCAlterner-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCAlterner-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1aVJz4oQCX-zJq169fC9_RWJIKBatqb-g?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8258,7 +8258,7 @@
         "Regular"
       ],
       "sample_text": "Dáng vẻ trầm mặc của mái ngói âm dương trải qua bao thăng trầm dâu bể cuộc đời",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCAnasRustyTypewriter-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCAnasRustyTypewriter-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Oc_awHX-Z5QVMu_CrGXqhRTQL-5gbgdZ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8302,7 +8302,7 @@
         "Regular"
       ],
       "sample_text": "Hà Nội ba mươi sáu phố phường rêu phong cổ kính, nét vẽ biển hiệu vương vấn hoài niệm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCAnchorJack-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCAnchorJack-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1m_H8Q3sbyQMQTrLcRhjNlnH5NZoejV0v?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8347,7 +8347,7 @@
         "Black Italic"
       ],
       "sample_text": "Ngõ nhỏ quanh co rợp bóng cây xanh, gợi nhớ tiếng còi tàu sớm và hương hoa sữa nồng nàn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCAppareo-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCAppareo-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1wvm6YjYduXuyt4gVJF5LR_RcV0yeSAwB?usp=sharing",
       "files_count": 2,
       "files": [
@@ -8399,7 +8399,7 @@
         "Regular"
       ],
       "sample_text": "Chiếc xe đạp cũ chở đầy cúc họa mi lướt qua hè phố vắng trong chiều mưa bay lất phất",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBauhaus93-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCBauhaus93-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1jH3eiN3Sp0d-WAB9B5hpyGD65qvh0mD4?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8443,7 +8443,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBelinda-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCBelinda-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1n7FVyjRF_8hwAw5873WlD07EnflQvfHt?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8487,7 +8487,7 @@
         "Cond"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBernardMT-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCBernardMT-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/15P5EN0rlVFDSuFm2dbkGvDCJnlm7TzJB?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8531,7 +8531,7 @@
         "Regular"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBourbonGrotesque-Regular.woff2",
+      "web_font_url": "fonts/FDHC-BourbonGrotesque.otf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1lauFEnGQdjx8cM54VjTwuoDKfr1wx3pe?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8575,7 +8575,7 @@
         "Regular"
       ],
       "sample_text": "Ký ức về một thời kỳ hào hoa trên phố biển xưa được tái hiện qua từng bức ảnh đen trắng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBragaHuis-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCBragaHuis-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1HnQ2LJjbJJ_1T2GDNylQKhVMJrabXUBy?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8619,7 +8619,7 @@
         "Cond"
       ],
       "sample_text": "Ánh sáng huyền ảo soi rọi từng góc nhỏ, gợi mở xúc cảm thăng hoa thuần khiết",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBroadway-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCBroadway-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Yx_c8DHqafR0ApF0ATF3TNh-qWDazqQD?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8663,7 +8663,7 @@
         "Regular"
       ],
       "sample_text": "ẴM BỒNG TRẺ THƠ VƯỢT VŨ BÃO VÀ GIÓ XOÁY NGHIỆT NGÃ ĐỂ ĐẾN BẾN BỜ BÌNH YÊN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCBuiltTitling-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCBuiltTitling-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1IvdUKCXI6A3ZJD5lqVX80mbB1ZrL-LEO?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8707,7 +8707,7 @@
         "Regular"
       ],
       "sample_text": "Ngõ nhỏ quanh co rợp bóng cây xanh, gợi nhớ tiếng còi tàu sớm và hương hoa sữa nồng nàn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCCalvous-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCCalvous-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1RmbK04-rPDhPGmdZscS6gk6Nl_ZcwPaN?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8751,7 +8751,7 @@
         "Regular"
       ],
       "sample_text": "Chiếc xe đạp cũ chở đầy cúc họa mi lướt qua hè phố vắng trong chiều mưa bay lất phất",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCCarlson-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCCarlson-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1DhXmOJiCis-5FpxmY5opM9cZNuUpmdsf?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8795,7 +8795,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCCarosello-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCCarosello-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/17j02L6ECwFud0Srw8ClpbFq8GeffaDW5?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8839,7 +8839,7 @@
         "Regular"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCColomboSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCColomboSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_tkRg6LVT8RH5zqD2MdXTTEX6YrIZqY1?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8884,7 +8884,7 @@
         "Sharp"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCCubano-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCCubano-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1suqxiDdpH77NFgk5DMc9OlkQFv4gT4MN?usp=sharing",
       "files_count": 2,
       "files": [
@@ -8936,7 +8936,7 @@
         "Regular"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCCulture-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCCulture-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mXucY7yAY5Qd2OD5538T6ZsA8panVMMO?usp=sharing",
       "files_count": 1,
       "files": [
@@ -8980,7 +8980,7 @@
         "Regular"
       ],
       "sample_text": "Dáng vẻ trầm mặc của mái ngói âm dương trải qua bao thăng trầm dâu bể cuộc đời",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCCyrene-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCCyrene-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1pNTbEB8cR9tynnk7HPz43o2wKrsXmfZX?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9024,7 +9024,7 @@
         "Regular"
       ],
       "sample_text": "Hà Nội ba mươi sáu phố phường rêu phong cổ kính, nét vẽ biển hiệu vương vấn hoài niệm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCDeftoneStylus-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCDeftoneStylus-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mqkaSl1SJYTTDG_1JzcIPFtdWAz3y9ir?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9068,7 +9068,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCEastMarket-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCEastMarket-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1RsoHPoFTR4G5skGVwQGJOpnaoNNpT_S-?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9112,7 +9112,7 @@
         "Regular"
       ],
       "sample_text": "Chiếc xe đạp cũ chở đầy cúc họa mi lướt qua hè phố vắng trong chiều mưa bay lất phất",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCEkimMezunu-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCEkimMezunu-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/17GGwMPdHr8rm2xFDFyzGAcTSUFLVUkIJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9156,7 +9156,7 @@
         "Regular"
       ],
       "sample_text": "Người nghệ nhân già tỉ mỉ ngồi nắn nót từng con chữ trên trang giấy dó thô mộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCElixirCircus-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCElixirCircus-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1L6yVPRx4WEVBayRCKXLJOWVEUWVyyiFQ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9200,7 +9200,7 @@
         "Regular"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCElixirSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCElixirSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Y71hl_4wXQoStI5UqXqeVcyM93vsYhPX?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9244,7 +9244,7 @@
         "Condensed"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCExplorer-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCExplorer-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1NI4mSb_zke5VLRyySxOvLWXwQEpyjAv9?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9289,7 +9289,7 @@
         "Two"
       ],
       "sample_text": "Ký ức về một thời kỳ hào hoa trên phố biển xưa được tái hiện qua từng bức ảnh đen trắng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCGibsons-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCGibsons-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1DeWbiCY0rW9hNYVCG1alR-oLF2VCk5Rh?usp=sharing",
       "files_count": 2,
       "files": [
@@ -9341,7 +9341,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCGneisenauette-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCGneisenauette-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1y7Z5FX-hLYCYmWFFc3ESL9xojL3Hfdco?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9385,7 +9385,7 @@
         "Regular"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCGorod-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCGorod-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mwTwDqS7f0UZaRJpjycAgp8TZYWF4kHA?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9429,7 +9429,7 @@
         "Regular"
       ],
       "sample_text": "Ngõ nhỏ quanh co rợp bóng cây xanh, gợi nhớ tiếng còi tàu sớm và hương hoa sữa nồng nàn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCGreenGrove-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCGreenGrove-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1V-uDXJri-XT-m3BOxJEfKn2QjsmmDEdv?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9473,7 +9473,7 @@
         "Regular"
       ],
       "sample_text": "NGẪM NGHĨ KỸ CÀNG VỀ MỸ THUẬT, LỄ HỘI VÀ BẢN SẮC DÂN TỘC TRUYỀN THỐNG",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCGrindstoneDisplay-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCGrindstoneDisplay-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/19tQYtJPD7vBZzP1E_8nwKytfAGPA-ZSC?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9517,7 +9517,7 @@
         "Regular"
       ],
       "sample_text": "Người nghệ nhân già tỉ mỉ ngồi nắn nót từng con chữ trên trang giấy dó thô mộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCHaydonBrush-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCHaydonBrush-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1IbLHM1F8SmYQfmNWzZuu10jJETSgNPuj?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9557,7 +9557,7 @@
         "Regular"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCImpossibilium-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCImpossibilium-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1yCkE5Vj35BQUU5a1F5BzrUxqC1KzIQTU?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9601,7 +9601,7 @@
         "Regular"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCJungleAdventurer-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCJungleAdventurer-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TqmpL4XpOTaSH8G6p-jZ1Z9KsnEPZWS9?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9645,7 +9645,7 @@
         "Regular"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCJustOldFashion-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCJustOldFashion-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1wfhb-WtwfsdAKjX4i7OT_8hMbmur9p3G?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9689,7 +9689,7 @@
         "Regular"
       ],
       "sample_text": "Dáng vẻ trầm mặc của mái ngói âm dương trải qua bao thăng trầm dâu bể cuộc đời",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCKodiak-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCKodiak-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1dFHY3UwNc9JG0_t5C9gMrbCP6UpcbWDz?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9733,7 +9733,7 @@
         "Regular"
       ],
       "sample_text": "Hà Nội ba mươi sáu phố phường rêu phong cổ kính, nét vẽ biển hiệu vương vấn hoài niệm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCLexington-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCLexington-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/16wj83lzGIKKGRLT-2bvKFdFl4NbMFXjp?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9777,7 +9777,7 @@
         "Regular"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCMarvinVisions-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCMarvinVisions-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1dugvQ-jpJgNm0CjG3j5RWGhG5OUDIiUO?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9821,7 +9821,7 @@
         "Regular"
       ],
       "sample_text": "Chiếc xe đạp cũ chở đầy cúc họa mi lướt qua hè phố vắng trong chiều mưa bay lất phất",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCMaturaScriptCapitals-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCMaturaScriptCapitals-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/13iVyLsmukM7630w1UW2Yyf0vI_8esAub?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9865,7 +9865,7 @@
         "Regular"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCNewyorkClean-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCNewyorkClean-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1abfpLVfpcd5IdDWIdiZg8Gd2L_y4Xfth?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9909,7 +9909,7 @@
         "Regular"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCOilvareBase-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCOilvareBase-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1gHrFoU_-6e2C97wsLrU1cygAk9yhWgpJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9953,7 +9953,7 @@
         "Regular"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCOldNewspaperTypes-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCOldNewspaperTypes-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hIt3jUaqpPsLdrLP1pc6aj0-6JUb4o8E?usp=sharing",
       "files_count": 1,
       "files": [
@@ -9997,7 +9997,7 @@
         "Italic"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCOldstyle-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCOldstyle-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1rQkH7xbRXithSjZf5ghwhPmpWWfs1ICc?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10041,7 +10041,7 @@
         "Regular"
       ],
       "sample_text": "Dáng vẻ trầm mặc của mái ngói âm dương trải qua bao thăng trầm dâu bể cuộc đời",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCOrganGrinder-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCOrganGrinder-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1HGQ2m-wGCpQQtYNtsaOa99y3mIx6kQ51?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10085,7 +10085,7 @@
         "Regular"
       ],
       "sample_text": "Hà Nội ba mươi sáu phố phường rêu phong cổ kính, nét vẽ biển hiệu vương vấn hoài niệm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCOronteusFinaeus-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCOronteusFinaeus-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hhCc7PvJLmvPwhqm_-V1-EImKcveEuzM?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10129,7 +10129,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCPacifico-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCPacifico-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/16Y05lZOEF_dixLSqf7OlLDtju7OS77r7?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10173,7 +10173,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCQuotesCaps-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCQuotesCaps-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1KoiHHLcIzXmpsQO6U70SRB_jjci-PpKh?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10217,7 +10217,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCQuotesScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCQuotesScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xCwmXhn1Op_F49sNoM6-8uW4qZjgc2x9?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10261,7 +10261,7 @@
         "Bold"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCRadiant-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCRadiant-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1N2cl5YvB4koxOcUzI7PjGGsUtnwHY-OG?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10305,7 +10305,7 @@
         "One"
       ],
       "sample_text": "Mỗi dòng lệnh đều được kiểm thử kỹ lưỡng, đảm bảo an toàn thông tin và bảo mật đa lớp",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCRead-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCRead-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_jZYT-TBg7vNPnuh6ZpXMZRxtel5pSMu?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10349,7 +10349,7 @@
         "Regular"
       ],
       "sample_text": "NGẪM NGHĨ KỸ CÀNG VỀ MỸ THUẬT, LỄ HỘI VÀ BẢN SẮC DÂN TỘC TRUYỀN THỐNG",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCRostrum-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCRostrum-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ZwYSONL-FZ2l-N-cT8tSjnVqYyRvn5w3?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10393,7 +10393,7 @@
         "Regular"
       ],
       "sample_text": "GIỮ GÌN CHỮ VIẾT TỈ MỈ RÕ RÀNG TRONG TỪNG NÉT VẼ ĐỒ HỌA CHUYÊN NGHIỆP",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCSantoroScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCSantoroScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/10XhSTNexztU5QZbqHsh-7YpqHLFrfc-U?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10437,7 +10437,7 @@
         "Regular"
       ],
       "sample_text": "ẴM BỒNG TRẺ THƠ VƯỢT VŨ BÃO VÀ GIÓ XOÁY NGHIỆT NGÃ ĐỂ ĐẾN BẾN BỜ BÌNH YÊN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCSpot-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCSpot-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1giCEVKpyxJD88GJtx5KLb384tYI53kbP?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10481,7 +10481,7 @@
         "Regular"
       ],
       "sample_text": "Ngõ nhỏ quanh co rợp bóng cây xanh, gợi nhớ tiếng còi tàu sớm và hương hoa sữa nồng nàn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCSpyRoyal-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCSpyRoyal-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1e8Yp_T9qM_Wi_PYvLAMAdNSy65TFE3Nm?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10525,7 +10525,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCStayKool-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCStayKool-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qM_Md_7pUdchD5SWNYDFO6axTJpX89TG?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10571,7 +10571,7 @@
         "Slab"
       ],
       "sample_text": "Người nghệ nhân già tỉ mỉ ngồi nắn nót từng con chữ trên trang giấy dó thô mộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCSteakAndCheese-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCSteakAndCheese-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1OHhydI3Wyz3y2CjtMHvgPIw_mj6s0sq5?usp=sharing",
       "files_count": 3,
       "files": [
@@ -10631,7 +10631,7 @@
         "Regular"
       ],
       "sample_text": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — ĐỘC LẬP TỰ DO HẠNH PHÚC",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCStrenuous-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCStrenuous-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1rtCa62tqxzsj9Ajhstzy1kq9uUu4rexy?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10675,7 +10675,7 @@
         "Regular"
       ],
       "sample_text": "Tiếng chuông chùa ngân vang trầm mặc giữa không gian tĩnh mịch của buổi hoàng hôn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCThePretender-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCThePretender-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mWjcqpe0eTDbkN-BVIV239LCljBZSMvv?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10719,7 +10719,7 @@
         "Regular"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCTransformacio-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCTransformacio-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Kc79FNl-NZDuXLenKRhLZIS27EiXUBEP?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10763,7 +10763,7 @@
         "Regular"
       ],
       "sample_text": "Dáng vẻ trầm mặc của mái ngói âm dương trải qua bao thăng trầm dâu bể cuộc đời",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCVelcro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCVelcro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1vDtm1tBKO1cUNZNvND0YSkzVnltjDF6w?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10803,7 +10803,7 @@
         "Regular"
       ],
       "sample_text": "Hà Nội ba mươi sáu phố phường rêu phong cổ kính, nét vẽ biển hiệu vương vấn hoài niệm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCVenhilleQuaver-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCVenhilleQuaver-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f_nUJUhzBQN2LsDkGgJ07lH-NxB45-zz?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10843,7 +10843,7 @@
         "Regular"
       ],
       "sample_text": "Ngõ nhỏ quanh co rợp bóng cây xanh, gợi nhớ tiếng còi tàu sớm và hương hoa sữa nồng nàn",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCYellowtail-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCYellowtail-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1n-Znm3lR01p7pzKtneuuJe7NNrDWfIYL?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10883,7 +10883,7 @@
         "Regular"
       ],
       "sample_text": "Chiếc xe đạp cũ chở đầy cúc họa mi lướt qua hè phố vắng trong chiều mưa bay lất phất",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HCYeomanGothic-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HCYeomanGothic-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cZ02cvi36FnCkPb5ZIXT5KNR513gO01C?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10923,7 +10923,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HeadlinerNo45-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HeadlinerNo45-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1YP5BqCW-28BjNWYjRuygmZ_kbEcpltxU?usp=sharing",
       "files_count": 1,
       "files": [
@@ -10964,7 +10964,7 @@
         "Smooth"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HeartAndSoul-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HeartAndSoul-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TbxmTuwm0vcQ8oYjjvKkkKY4jeVPT0Ks?usp=sharing",
       "files_count": 2,
       "files": [
@@ -11012,7 +11012,7 @@
         "Regular"
       ],
       "sample_text": "Tôn vinh đẳng cấp thượng lưu trong từng đường nét chạm khắc tỉ mỉ và tinh tế",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Heathergreen-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Heathergreen-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1CJRRxqiZzhevinJ-IBqPkjYPw22tWkJe?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11056,7 +11056,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Helga-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Helga-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1H2LZIaUD3I9cIk5otvfMnuZC4qrazBZW?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11096,7 +11096,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HelloSweets-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HelloSweets-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/14eCkWTAsvBuVbNz7X4zr2HwXMfD-dz2Q?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11139,7 +11139,7 @@
         "bold italic"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Helves-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Helves-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1b-oZPOVY5LrqqMIS4uYiREG65O3ACXKJ?usp=sharing",
       "files_count": 4,
       "files": [
@@ -11209,7 +11209,7 @@
         "Bold Italic"
       ],
       "sample_text": "DÙ GẶP GIAN NAN, KỴ BINH VÀ CHIẾN MÃ VƯỢT ĐÈO DỐC HIỂM TRỞ ĐẬP TAN CẰN CỖI",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HelveticaNeue-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HelveticaNeue-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1u0tulP9LiUcWd7muR_Lhiz10-HWR_Hlt?usp=sharing",
       "files_count": 9,
       "files": [
@@ -11317,7 +11317,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HemiHead-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HemiHead-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/19nWabXkrD-JK47R1W6VahkMcKLPDms0x?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11357,7 +11357,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HiroMisake-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HiroMisake-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Nky81DjHIB_nzlKcc8tt-N6OBw0L5_Iv?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11397,7 +11397,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Hogfish-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Hogfish-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qJtYCTFQdFBBRpnas4TvAPt3kYYs7G1c?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11437,7 +11437,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HoleHearted-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HoleHearted-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/12R2ZSzLPmzxhpnAqVODuEzZ1zR9aCXH9?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11477,7 +11477,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Holiday-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Holiday-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ttfdsP6N0Eh1j4PQYCpUWBzQgYwW1SvI?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11517,7 +11517,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Holidays-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Holidays-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Cq9n5VkD_CQErxkAaA4pbV77Ln528W67?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11557,7 +11557,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HoneyguideCaps-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-HoneyguideCaps-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1K0O1lmEF4DlmVF4gNetRY5jqeIu60_dY?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11597,7 +11597,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Inspiration-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Inspiration-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1WogVg6Cc6lIOFfszAowz9Bioog9Vh-Tj?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11642,7 +11642,7 @@
         "BoldItalic"
       ],
       "sample_text": "ẴM BỒNG TRẺ THƠ VƯỢT VŨ BÃO VÀ GIÓ XOÁY NGHIỆT NGÃ ĐỂ ĐẾN BẾN BỜ BÌNH YÊN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-IntegralCF-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-IntegralCF-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Ngai5NPvD4x5sNRP-mToBVmL_1_4gXdy?usp=sharing",
       "files_count": 6,
       "files": [
@@ -11726,7 +11726,7 @@
         "Regular"
       ],
       "sample_text": "Cấu trúc vi mạch và mã nguồn mở vận hành trơn tru ngay cả dưới áp lực tải nặng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Internation-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Internation-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1CdL8lquVc9vTEyMaxeCdGTpgFLg-LaSt?usp=sharing",
       "files_count": 1,
       "files": [
@@ -11779,7 +11779,7 @@
         "BoldItalic"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Ivar-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Ivar-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cN2ubernm3nbJQjjQBVIRVWGNrkzXfZp?usp=sharing",
       "files_count": 10,
       "files": [
@@ -11899,7 +11899,7 @@
         "Italic"
       ],
       "sample_text": "Tôn vinh đẳng cấp thượng lưu trong từng đường nét chạm khắc tỉ mỉ và tinh tế",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-IvyMode-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-IvyMode-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bfPon5FMztYbI7iK06l5k98yDtiNqR7m?usp=sharing",
       "files_count": 5,
       "files": [
@@ -11975,7 +11975,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-JaneAusten-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-JaneAusten-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cPFQWdSCLCivNqZ5iHCf6Ew_jpT4H_UV?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12015,7 +12015,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Janelotus-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Janelotus-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1yz3oZtLAOx6Gio_1_s6JDCOXNcpgZeVE?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12058,7 +12058,7 @@
         "Bold Italic"
       ],
       "sample_text": "Cuốn sách cổ nhuốm màu thời gian vẫn giữ nguyên nét mực trang nhã thanh lịch",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-JannonAnt-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-JannonAnt-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/11kGShh_1_b3Kosthoe5gwhrVhrtboCsm?usp=sharing",
       "files_count": 4,
       "files": [
@@ -12128,7 +12128,7 @@
         "Bold"
       ],
       "sample_text": "Cấu trúc vi mạch và mã nguồn mở vận hành trơn tru ngay cả dưới áp lực tải nặng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Jeko-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Jeko-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/12UAQ8mmAUgr9ZQKbyvvAb842QR0jDA2F?usp=sharing",
       "files_count": 3,
       "files": [
@@ -12188,7 +12188,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-JustSunday-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-JustSunday-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1yjIfnZMzc2ghtPQi5gXz3-cC81l4nIfX?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12228,7 +12228,7 @@
         "Regular"
       ],
       "sample_text": "GIỮ GÌN CHỮ VIẾT TỈ MỈ RÕ RÀNG TRONG TỪNG NÉT VẼ ĐỒ HỌA CHUYÊN NGHIỆP",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-JusticeLeague-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-JusticeLeague-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1CY4N2MvPVaWSxKLqjZnkVop8sAtKxmtR?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12272,7 +12272,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-KashimaBrush-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-KashimaBrush-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Q_Fu2LE6qmEitFH-Vssj0vZHDew-Q2E4?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12312,7 +12312,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-KGTenThousandReasons-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-KGTenThousandReasons-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1UQqxA2RELzwKzUSjSrAYaE9FNFYumZTF?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12352,7 +12352,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Kimberley-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Kimberley-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1asMG9FpVWuLTaSvWSpEwdzv3JWR4ZpWJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12394,7 +12394,7 @@
         "Bold"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-LaguSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-LaguSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1biDVEEjNOHI3InCGR5kFRSfYlIRuXTxc?usp=sharing",
       "files_count": 3,
       "files": [
@@ -12461,7 +12461,7 @@
         "BlackItalic"
       ],
       "sample_text": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — ĐỘC LẬP TỰ DO HẠNH PHÚC",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Larken-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Larken-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/17rb9xnEISULrzpY3GYpq_tBtc46lLsUp?usp=sharing",
       "files_count": 8,
       "files": [
@@ -12564,7 +12564,7 @@
         "Italic"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-LeMondeCourrier-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-LeMondeCourrier-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1928jxbYGiQCwe99yH6IownChlw378rU2?usp=sharing",
       "files_count": 5,
       "files": [
@@ -12638,7 +12638,7 @@
         "Italic"
       ],
       "sample_text": "Ký ức về một thời kỳ hào hoa trên phố biển xưa được tái hiện qua từng bức ảnh đen trắng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-LibreBaskerville-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-LibreBaskerville-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1BxNUXDGokuI0TBVbMX-RaGag2qMxrIzD?usp=sharing",
       "files_count": 3,
       "files": [
@@ -12701,7 +12701,7 @@
         "bold italic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-LinuxLibertine-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-LinuxLibertine-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1OMCEHTgZL5jewQxHJOK6HfIld5-PJBG6?usp=sharing",
       "files_count": 4,
       "files": [
@@ -12765,7 +12765,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Lobster-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Lobster-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1gnZQcRNN2GJ4khJzVtfezw3c3m-fiLLY?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12807,7 +12807,7 @@
         "Bold"
       ],
       "sample_text": "Tôn vinh đẳng cấp thượng lưu trong từng đường nét chạm khắc tỉ mỉ và tinh tế",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Mansory-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Mansory-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1PDXfjP3gN211rly7iyf5xzKOBiSQAbFh?usp=sharing",
       "files_count": 3,
       "files": [
@@ -12867,7 +12867,7 @@
         "Regular"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MarcelScriptPro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MarcelScriptPro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1nLKYJmCgbnha9wuHrPp_i_VhY9DzzZUw?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12907,7 +12907,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Megante-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Megante-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1gALGAswvTMYtKLc_-pnrBHcdniNfo2W-?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12947,7 +12947,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Micheline-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Micheline-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1SCgvufyfHCCCnF_W264UGfdCuRZF-TPj?usp=sharing",
       "files_count": 1,
       "files": [
@@ -12989,7 +12989,7 @@
         "Bold"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Mikado-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Mikado-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Pl8s50Dj-OAB06r0di6YYH056RF-PdFv?usp=sharing",
       "files_count": 3,
       "files": [
@@ -13053,7 +13053,7 @@
         "BoldItalic"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MillerBanner-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MillerBanner-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1oOun2njiWOXTDvPR5ZHvwVTFPIJGv1Pl?usp=sharing",
       "files_count": 5,
       "files": [
@@ -13132,7 +13132,7 @@
         "Black"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Moneta-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Moneta-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1rvy8MNRqLAS_zZFk7odZGXlEkXgLMD57?usp=sharing",
       "files_count": 4,
       "files": [
@@ -13198,7 +13198,7 @@
         "Black"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MonetaSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MonetaSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Z_Npmlxu1SWy17kAiZchQe2ZlWOupXZR?usp=sharing",
       "files_count": 3,
       "files": [
@@ -13258,7 +13258,7 @@
         "Extended"
       ],
       "sample_text": "KHẲNG ĐỊNH ĐẲNG CẤP THƯƠNG HIỆU VIỆT VỚI Ý CHÍ THẲNG TIẾN VÀO KỶ NGUYÊN SỐ",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Monument-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Monument-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mhoMxU2zcumYrAMzelqEq0aNBN3Z4KQT?usp=sharing",
       "files_count": 3,
       "files": [
@@ -13318,7 +13318,7 @@
         "Regular"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MoonStar-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MoonStar-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1K9Tl6tF48AXdsaGGJk8bRRVvhCcdYZdP?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13362,7 +13362,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MotionPicture-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MotionPicture-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1une-bxTEYY1xmn1Fqtt_JmeSlGAkz2fo?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13405,7 +13405,7 @@
         "BoldItalic"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MrsEaves-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MrsEaves-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1nuHGXmyTTpK7Ky075OkcH8Hjp8f5ixvr?usp=sharing",
       "files_count": 4,
       "files": [
@@ -13469,7 +13469,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Mukadua-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Mukadua-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1vUqXbdhNHEvv9O-EQuUa0lrLsLXbnubv?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13512,7 +13512,7 @@
         "Bold"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Museo-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Museo-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bOJsd2qe7F927JmEgSlrc84Q6afGa2s6?usp=sharing",
       "files_count": 4,
       "files": [
@@ -13590,7 +13590,7 @@
         "900Italic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-MuseoSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-MuseoSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zLtvoDAP_BsnznCgeH1fWqZnPKr--j9n?usp=sharing",
       "files_count": 11,
       "files": [
@@ -13714,7 +13714,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Mutlu-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Mutlu-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1lbbMdrqZHJf-9E_p-qSENVe4sNBtE--3?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13754,7 +13754,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Neogrey-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Neogrey-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qfDIyOCoe2AUgUZ7DMVRUSGe6hiCzE6_?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13797,7 +13797,7 @@
         "Bold"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-NeueKabel-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-NeueKabel-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Q4ekie_sm1BWrUv4invb9qGKJfORJJLn?usp=sharing",
       "files_count": 4,
       "files": [
@@ -13865,7 +13865,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Newton-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Newton-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mrzUR-540_b6g0aeRW8ij3YLE3lv5vxV?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13905,7 +13905,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Nickel-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Nickel-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1miUKAUBhesEPTHkPHnhAXPOPyDuTIngC?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13945,7 +13945,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-NightWindSent-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-NightWindSent-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/13IdFdy6E0fqMYLCRMq6PZpzHfHc_IsDH?usp=sharing",
       "files_count": 1,
       "files": [
@@ -13992,7 +13992,7 @@
         "BlackItalic"
       ],
       "sample_text": "ẴM BỒNG TRẺ THƠ VƯỢT VŨ BÃO VÀ GIÓ XOÁY NGHIỆT NGÃ ĐỂ ĐẾN BẾN BỜ BÌNH YÊN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-NoeDisplay-Regular.woff2",
+      "web_font_url": "fonts/SVN-NoeDisplay-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1JBo-8L2PdlySpwJAak_G3VCS7JWBtQCY?usp=sharing",
       "files_count": 8,
       "files": [
@@ -14092,7 +14092,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Notera-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Notera-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1yI9SoOYmZWpAv0ei57iUetDw-dZ9sszm?usp=sharing",
       "files_count": 1,
       "files": [
@@ -14141,7 +14141,7 @@
         "Bold Italic"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Ogg-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Ogg-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1euiydxjaGK4Yxn3E_AaCMmXzy3zS4ofD?usp=sharing",
       "files_count": 10,
       "files": [
@@ -14257,7 +14257,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Okami-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Okami-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1rUVG8Q9ewoSBF7Uid46tMJyuhUPLU26Q?usp=sharing",
       "files_count": 1,
       "files": [
@@ -14297,7 +14297,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Olivier-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Olivier-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1erRRTjNBDphNTmwGRH5YRLBtND2dswDe?usp=sharing",
       "files_count": 1,
       "files": [
@@ -14348,7 +14348,7 @@
         "ExtraBlack Italic"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Optima-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Optima-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_dbgiuHScqxoBYy3Mp9rqynQ7KEuT4kp?usp=sharing",
       "files_count": 12,
       "files": [
@@ -14482,7 +14482,7 @@
         "Bold"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-OuterSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-OuterSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1K_2VQeta304-W7UBWTTCdqWbuoPHZhbY?usp=sharing",
       "files_count": 3,
       "files": [
@@ -14542,7 +14542,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Palmaton-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Palmaton-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1H8cc-HjujV9AED3W-mIMPZP4DP_UviKx?usp=sharing",
       "files_count": 1,
       "files": [
@@ -14582,7 +14582,7 @@
         "Condensed Regular"
       ],
       "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-PFDinTextPro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-PFDinTextPro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ayPXtydAMNXNuy0YCbWKt_t-hRXDFiDe?usp=sharing",
       "files_count": 1,
       "files": [
@@ -14624,7 +14624,7 @@
         "Bold"
       ],
       "sample_text": "Dáng vẻ trầm mặc của mái ngói âm dương trải qua bao thăng trầm dâu bể cuộc đời",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-PlantinPro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-PlantinPro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1WuMHfsXWsjytELBUO30pTTcU6Vrx5XuU?usp=sharing",
       "files_count": 3,
       "files": [
@@ -14684,7 +14684,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Pleasent-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Pleasent-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1j0pBPq0kNedhEZ0pEgDQ6Tl9VQTuDL3P?usp=sharing",
       "files_count": 1,
       "files": [
@@ -14733,7 +14733,7 @@
         "BlackItalic"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Poppins-Regular.woff2",
+      "web_font_url": "fonts/FDPoppins-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ZKqB-r2uZ2G2Ka38249y0YARQ2yJQp07?usp=sharing",
       "files_count": 10,
       "files": [
@@ -14865,7 +14865,7 @@
         "Black Italic"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Pragmatica-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Pragmatica-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1UI0IyCRw3v_hpCFDIU7NHkDOv9_rFc7o?usp=sharing",
       "files_count": 28,
       "files": [
@@ -15121,7 +15121,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Prima-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Prima-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1YzLdMR7qWm-0ENJBs6u08SNhUK_L0RMh?usp=sharing",
       "files_count": 1,
       "files": [
@@ -15164,7 +15164,7 @@
         "Bold Italic"
       ],
       "sample_text": "Đội ngũ kỹ sư nỗ lực giải quyết các bài toán kỹ thuật ngặt nghèo trong kỷ nguyên số",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ProductSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ProductSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/16cH5L6VUU3XJQlHEGr9xFtlZ7jqzFv57?usp=sharing",
       "files_count": 4,
       "files": [
@@ -15245,7 +15245,7 @@
         "Black Italic"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ProximaNova-Regular.woff2",
+      "web_font_url": "fonts/FDProximaNova-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Q5SDoiUEGWNatMcF_ae3Bv-ei4LQeAJC?usp=sharing",
       "files_count": 14,
       "files": [
@@ -15395,7 +15395,7 @@
         "Bold"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ProzaDisplay-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ProzaDisplay-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mhyYo5rWaPpUq5qpS8xELBWX1yk1PX4u?usp=sharing",
       "files_count": 3,
       "files": [
@@ -15455,7 +15455,7 @@
         "Regular"
       ],
       "sample_text": "Ánh sáng huyền ảo soi rọi từng góc nhỏ, gợi mở xúc cảm thăng hoa thuần khiết",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-QalishaSignatureScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-QalishaSignatureScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/11SQ6acL0KLIoPnBjA5wJbW3M5q-Q9k7R?usp=sharing",
       "files_count": 1,
       "files": [
@@ -15495,7 +15495,7 @@
         "Regular"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-QalishaSignatureSerif-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-QalishaSignatureSerif-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1y1u-9tXMDSAg6vWNm4YouuGk_wKboF1F?usp=sharing",
       "files_count": 1,
       "files": [
@@ -15550,7 +15550,7 @@
         "BlackItalic"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-QuincyCF-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-QuincyCF-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/10LHdAIejrmeFDdzzqalVLpm21mZoDbw_?usp=sharing",
       "files_count": 16,
       "files": [
@@ -15718,7 +15718,7 @@
         "Bold"
       ],
       "sample_text": "Cấu trúc vi mạch và mã nguồn mở vận hành trơn tru ngay cả dưới áp lực tải nặng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rajdhani-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rajdhani-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1I7-77eH-wqrvXRccPjcWXd0dY2vhGRX9?usp=sharing",
       "files_count": 5,
       "files": [
@@ -15796,7 +15796,7 @@
         "Bold"
       ],
       "sample_text": "Bản hòa ca êm dịu giữa kỹ nghệ chế tác thủ công và phong cách kiến trúc hoàng gia",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Raleway-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Raleway-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ser9u8QyfHoAgdJLIBpCQIyMQEJva7jV?usp=sharing",
       "files_count": 3,
       "files": [
@@ -15856,7 +15856,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rawkstone-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rawkstone-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1pVMlTNoSfcqzoXG6WzXXyv36bke5bxv-?usp=sharing",
       "files_count": 1,
       "files": [
@@ -15900,7 +15900,7 @@
         "BookItalic"
       ],
       "sample_text": "Đội ngũ kỹ sư nỗ lực giải quyết các bài toán kỹ thuật ngặt nghèo trong kỷ nguyên số",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RBNo31-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-RBNo31-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cX7rR1TfJrY8uzbLOakU0ZP5NSbXgVEw?usp=sharing",
       "files_count": 5,
       "files": [
@@ -15976,7 +15976,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Ready-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Ready-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xSzm8JxfvUDZjtzZue-lEXaocPnfvjx-?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16018,7 +16018,7 @@
         "Bold"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Recoleta-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Recoleta-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1JpVQUqyXBIwJ9yqdxTImTrPu7erbRH7F?usp=sharing",
       "files_count": 3,
       "files": [
@@ -16078,7 +16078,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Redressed-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Redressed-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ttloQfC3I_zDGHzkn4hpVYlLtW7yyWUF?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16118,7 +16118,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Redtowns-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Redtowns-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1crS2ViRQICcmrrVQ7FrnL5MOqJ6EIpFX?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16158,7 +16158,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Reliant-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Reliant-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1o8vzltYBlt6mxRvCZNUFohWLFTt_tslW?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16200,7 +16200,7 @@
         "Black"
       ],
       "sample_text": "Người nghệ nhân già tỉ mỉ ngồi nắn nót từng con chữ trên trang giấy dó thô mộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Restora-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Restora-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1HEQgJF7LxMxIuibEgemsbMz4dtaH6rcb?usp=sharing",
       "files_count": 3,
       "files": [
@@ -16260,7 +16260,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Retron2000-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Retron2000-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/152KAu9zpyfY2X9RlpXyBXAOld_NTygBR?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16300,7 +16300,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Revolution-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Revolution-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1VVHRtRo3m3--1N0f2UgIZGiJxJjv-32g?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16340,7 +16340,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rex-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rex-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1pJFSnLwvxVyEn03df3Hta8n6pnUNXLpm?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16380,7 +16380,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Riesling-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Riesling-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1-UerT6BdUGUkxUxl9v5uRmOyAlkXxR5b?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16421,7 +16421,7 @@
         "Regular"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RisottoScriptPro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-RisottoScriptPro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LuxkdIeXTRQGu1hyFsQdOZQxOLClXCBo?usp=sharing",
       "files_count": 2,
       "files": [
@@ -16469,7 +16469,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RoadRage-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-RoadRage-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1MbfKK1yg_DISDYRqRFv80db_FPADbHTe?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16509,7 +16509,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rocker-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rocker-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/141PJyiunNDtHYaDMCT3FeBW_Q7LLZp70?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16549,7 +16549,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rockness-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rockness-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1jTyWVmaR-5sLW2vL0rThW8CxVIBG92_q?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16589,7 +16589,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rohtwo-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rohtwo-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1D2optB94X2MMkmVrAD_MUscwAoZVcPGO?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16629,7 +16629,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RosellindaAlyamore-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-RosellindaAlyamore-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1m35Zg-qQZGgygGZcxG1ISaRLvvTOz8L0?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16669,7 +16669,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rounded-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rounded-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1LJCEAeNI55hEKsMZEcrRVqPfitIdV2W1?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16711,7 +16711,7 @@
         "Bold"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Rubik-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Rubik-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1U0ZUYzZqoDD3M0Fl4xkuux9jC7D-aAJz?usp=sharing",
       "files_count": 3,
       "files": [
@@ -16771,7 +16771,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Ruca-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Ruca-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1vduFgv55PHbHslVFIZjNSC8S7f-iwBmI?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16811,7 +16811,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RushHour-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-RushHour-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1lJMMBxIiSqGD14of5adrZQ2yGNlAUW1s?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16851,7 +16851,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Russell-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Russell-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1uHgH2NC3IdaAxtuc9GFo1ZrQf3982fHH?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16891,7 +16891,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SAF-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-SAF-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C3eV087nWP9IBEkMpx9qAVUJLqKa8_ex?usp=sharing",
       "files_count": 1,
       "files": [
@@ -16932,7 +16932,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sage-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sage-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1PNulldaHKQrp6h3XgBvD_dH0D248TrYh?usp=sharing",
       "files_count": 2,
       "files": [
@@ -16983,7 +16983,7 @@
         "Bold Italic"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sagona-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sagona-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1VGwR4J0TD1TbnYWz8KG-Dq4sL7JyDjlQ?usp=sharing",
       "files_count": 4,
       "files": [
@@ -17051,7 +17051,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sansation-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sansation-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/18xTvbfXgbY2prQwHaj238WB9K3K1E593?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17102,7 +17102,7 @@
         "BoldItalic"
       ],
       "sample_text": "Ánh sáng huyền ảo soi rọi từng góc nhỏ, gợi mở xúc cảm thăng hoa thuần khiết",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SaolStandard-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-SaolStandard-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1IJsmLHowyUDbAbLMi9pHEiLNJvuTYj6Y?usp=sharing",
       "files_count": 12,
       "files": [
@@ -17239,7 +17239,7 @@
         "Medium Italic"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sari-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sari-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ZRNmRISlR1STANHOFS6569OvnHs8msko?usp=sharing",
       "files_count": 6,
       "files": [
@@ -17326,7 +17326,7 @@
         "Bold Italic"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Scala-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Scala-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1tUmEf25l-b7BF4xl2R4aTfUwETFuA5Dp?usp=sharing",
       "files_count": 4,
       "files": [
@@ -17396,7 +17396,7 @@
         "Bold"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Schnyder-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Schnyder-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1EG-VXxOpGrGsg2B74gljdGOrwXlQ2dpB?usp=sharing",
       "files_count": 3,
       "files": [
@@ -17456,7 +17456,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SegoePrint-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-SegoePrint-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/14g4TUnE3iuiMpqjiuD7dRpMmQJ2-1WsM?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17496,7 +17496,7 @@
         "Regular"
       ],
       "sample_text": "Bản hòa ca êm dịu giữa kỹ nghệ chế tác thủ công và phong cách kiến trúc hoàng gia",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SegoeScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-SegoeScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bUaX41I1NN2MKzCDLagQdgq-s4RNRR-b?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17551,7 +17551,7 @@
         "BlackItalic"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sequel-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sequel-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/11A97XFu2habMPt6bNLOH3rMA_n4Ka0my?usp=sharing",
       "files_count": 16,
       "files": [
@@ -17715,7 +17715,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sharpen-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sharpen-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1IeXiB3Gs1MxyOVRXobowIripDH7d2gcG?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17755,7 +17755,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Shikamaru-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Shikamaru-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1ceA2JNpG-ZzoFYNS1vvZX3IbMBg2OzJv?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17795,7 +17795,7 @@
         "Regular"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Signatrue-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Signatrue-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1cyD3JrNLrYWE1eWvW7nw9ZHYIn2v_-LP?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17838,7 +17838,7 @@
         "Italic"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Singel-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Singel-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1lrwTQ14kmsKB9I1yt38bq22L1cG_yczw?usp=sharing",
       "files_count": 4,
       "files": [
@@ -17902,7 +17902,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Slabrush-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Slabrush-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1WqLejMtJhJnZ1uHM9iXP29-HFZ0MldNZ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17942,7 +17942,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sliced-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sliced-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1MoZRmmzD3DvS71p2VlBZGcVtV8QqegvH?usp=sharing",
       "files_count": 1,
       "files": [
@@ -17983,7 +17983,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SlowAttack-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-SlowAttack-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/137WKBcnL1s1sE4Llt3-CZlHn0Q9iGPSs?usp=sharing",
       "files_count": 2,
       "files": [
@@ -18031,7 +18031,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Snail-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Snail-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1YWDgAmcEllPURfLIY2jLLLPOiwyB4uR3?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18071,7 +18071,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sofia-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sofia-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1390kPO3_brn8j_FepLyH1d0ztdYr7eS_?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18126,7 +18126,7 @@
         "BlackItalic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Sonoma-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Sonoma-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1jqlLvJmcLYqoIGAFjuuITQllMlXYrZ04?usp=sharing",
       "files_count": 16,
       "files": [
@@ -18286,7 +18286,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SouthDakota-Regular.woff2",
+      "web_font_url": "fonts/FDSouthDakota-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1NDxdsSsia-Uav3E6d_eiU2EFrSO6TOBd?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18326,7 +18326,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SpaceAge-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-SpaceAge-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1AwwpYr9mbm8UPdfl3PWEEtA_c6TVpCwH?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18366,7 +18366,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Square-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Square-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qvkrsIlNBOFM2EnMAaXbqtgwLJeekdbF?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18406,7 +18406,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Stereoflows-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Stereoflows-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mCJ2SA4-BdZKwSPA_aziwKe2K__66aeZ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18447,7 +18447,7 @@
         "Bold"
       ],
       "sample_text": "ẴM BỒNG TRẺ THƠ VƯỢT VŨ BÃO VÀ GIÓ XOÁY NGHIỆT NGÃ ĐỂ ĐẾN BẾN BỜ BÌNH YÊN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Stinger-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Stinger-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1jfRogAcT1zzN_eJ823uYsMcIevYE0QI4?usp=sharing",
       "files_count": 6,
       "files": [
@@ -18531,7 +18531,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Stingray-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Stingray-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TC8HVmISW1_zxwtFWhu6QAIl7DObSfCs?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18575,7 +18575,7 @@
         "Serif"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Storyteller-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Storyteller-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1qBJY7XyrcflKq30_0v9fh6Wl6nTdlubR?usp=sharing",
       "files_count": 5,
       "files": [
@@ -18647,7 +18647,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Stradas-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Stradas-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1NsivY-X6t2OZrpwwNt2evJzPyt5rOz47?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18687,7 +18687,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Student-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Student-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1gd_G3z0_TeAQMhcPbGTKAkwD9wU4-dPy?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18727,7 +18727,7 @@
         "Regular"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-StudioBrush-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-StudioBrush-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1VHP6Ds19bcxk030QY_w92ePDAqjFJ9fa?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18775,7 +18775,7 @@
         "BoldItalic"
       ],
       "sample_text": "KIẾN TẠO CHUẨN MỰC MỚI VÀ NỀN TẢNG ỔN ĐỊNH BẰNG SỨC MẠNH CÔNG NGHỆ TIÊN TIẾN",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-SuperDisplay-Regular.woff2",
+      "web_font_url": "fonts/SVN-SuperDisplay-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mtZH6MCcBjJMZsur-4yicXK4AYBFR7Fq?usp=sharing",
       "files_count": 9,
       "files": [
@@ -18888,7 +18888,7 @@
         "Regular"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-TakenbyVultures-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-TakenbyVultures-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bp3K6WxRMeUZBddGN7Po1vWPNXCFtI1W?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18928,7 +18928,7 @@
         "Extras"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Tanglewoods-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Tanglewoods-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hpHU60BeDWarEv6mMswm_NA1lFENRpkB?usp=sharing",
       "files_count": 1,
       "files": [
@@ -18968,7 +18968,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-TanglewoodsSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-TanglewoodsSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/13Omx54S-ddtY57vyiCSpDGyXW-82zlri?usp=sharing",
       "files_count": 1,
       "files": [
@@ -19008,7 +19008,7 @@
         "Regular"
       ],
       "sample_text": "Nét chữ thanh thoát được chau chuốt kỹ càng, gìn giữ trọn vẹn hồn cốt xưa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-TanglewoodsScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-TanglewoodsScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1gLCuXag58hh8ceiMSNMH-f2izamWS6_L?usp=sharing",
       "files_count": 1,
       "files": [
@@ -19050,7 +19050,7 @@
         "Heavy Italic"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-TheVoice-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-TheVoice-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1l5UN-5TXK7LmWz-MlhVUEHZXLpAlugi3?usp=sharing",
       "files_count": 3,
       "files": [
@@ -19110,7 +19110,7 @@
         "Italic"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Thicker-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Thicker-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1OJP2AStN7IE2xbGt_7tDiLSfya8Tk41L?usp=sharing",
       "files_count": 5,
       "files": [
@@ -19186,7 +19186,7 @@
         "BlackItalic"
       ],
       "sample_text": "LỊCH SỬ GHI DẤU KỲ TÍCH VẺ VANG KHI TOÀN DÂN CỞI MỞ ĐỠ ĐẦU NỀN VĂN MINH MỚI",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ThickerItalic-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ThickerItalic-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/15nqWo8m_UdfW55cyWu53dmezOotzDBmK?usp=sharing",
       "files_count": 1,
       "files": [
@@ -19237,7 +19237,7 @@
         "Italic"
       ],
       "sample_text": "Hệ thống trí tuệ nhân tạo và tương lai số hóa toàn diện thúc đẩy đổi mới sáng tạo",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Titillium-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Titillium-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1O5ohVYCgx5PPM02Y5Kxe4IAZGdK7yinE?usp=sharing",
       "files_count": 8,
       "files": [
@@ -19341,7 +19341,7 @@
         "ExtBold"
       ],
       "sample_text": "BẢN LĨNH TIÊN PHONG BỨT PHÁ MỌI GIỚI HẠN VÀ CHINH PHỤC ĐỈNH CAO NGHỆ THUẬT",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-TradeGothic-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-TradeGothic-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1oDyfJE5Z0ykLr3LIBWeR5FezXmuXbKAg?usp=sharing",
       "files_count": 5,
       "files": [
@@ -19417,7 +19417,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Transformer-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Transformer-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1QfHWkjSnZj6KmnP93ho_XtOMsdcVwDnP?usp=sharing",
       "files_count": 1,
       "files": [
@@ -19457,7 +19457,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Trebuchets-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Trebuchets-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1iCqXXTUU0yk5yVVESu1akORVhlB9DeLL?usp=sharing",
       "files_count": 1,
       "files": [
@@ -19500,7 +19500,7 @@
         "Bold"
       ],
       "sample_text": "NGẪM NGHĨ KỸ CÀNG VỀ MỸ THUẬT, LỄ HỘI VÀ BẢN SẮC DÂN TỘC TRUYỀN THỐNG",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Tungsten-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Tungsten-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1zza97CdFO6NEk8rW4t7giGIH3MH4gnA8?usp=sharing",
       "files_count": 4,
       "files": [
@@ -19568,7 +19568,7 @@
         "Regular"
       ],
       "sample_text": "Ánh sáng huyền ảo soi rọi từng góc nhỏ, gợi mở xúc cảm thăng hoa thuần khiết",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-TwilightScript-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-TwilightScript-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1-mD7f1j-oJYOMTGVgN8yLqg8cN1CcFwB?usp=sharing",
       "files_count": 1,
       "files": [
@@ -19617,7 +19617,7 @@
         "BlackItalic"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Ultra-Regular.woff2",
+      "web_font_url": "fonts/SVN-UltraStandard-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1XGDKYEZTVMoA15e1HfTMszivW6OH_eBT?usp=sharing",
       "files_count": 30,
       "files": [
@@ -19904,7 +19904,7 @@
         "BlackItalic"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Ultro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Ultro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1AyPc_c5QNTEepkSP3YiBJUZ07EnL8wBb?usp=sharing",
       "files_count": 33,
       "files": [
@@ -20200,7 +20200,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-UncleBen-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-UncleBen-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bhZorBpZhVxrI9X4RIrd34vX22nCuaHJ?usp=sharing",
       "files_count": 1,
       "files": [
@@ -20244,7 +20244,7 @@
         "Bold Italic"
       ],
       "sample_text": "LỊCH SỬ GHI DẤU KỲ TÍCH VẺ VANG KHI TOÀN DÂN CỞI MỞ ĐỠ ĐẦU NỀN VĂN MINH MỚI",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-UniSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-UniSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/19TvWoRhNuUPovrmK8WQRMHKf0G3etpDt?usp=sharing",
       "files_count": 5,
       "files": [
@@ -20323,7 +20323,7 @@
         "Italic"
       ],
       "sample_text": "Dữ liệu lớn được phân tích rõ ràng, hỗ trợ việc ra quyết định chính xác và nhanh chóng",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Univers-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Univers-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Yd1yIHqecA23RPm60gaUD93zzZ-dQzU8?usp=sharing",
       "files_count": 4,
       "files": [
@@ -20393,7 +20393,7 @@
         "Black"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-VAGRoundedNext-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-VAGRoundedNext-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1_0Ji096sbeNG1EbHFyk0EllwP-VRFEy-?usp=sharing",
       "files_count": 3,
       "files": [
@@ -20453,7 +20453,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Vampires-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Vampires-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1vR_bs_0K3RWBs28pVYHJ5uwzFbFeZEMY?usp=sharing",
       "files_count": 1,
       "files": [
@@ -20493,7 +20493,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-VanessasValentine-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-VanessasValentine-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mB_On_HQ3mLkRGDHTHTbwQdMfXjd9Sql?usp=sharing",
       "files_count": 1,
       "files": [
@@ -20548,7 +20548,7 @@
         "HeavyItalic"
       ],
       "sample_text": "NGẪM NGHĨ KỸ CÀNG VỀ MỸ THUẬT, LỄ HỘI VÀ BẢN SẮC DÂN TỘC TRUYỀN THỐNG",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-VanguardCF-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-VanguardCF-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1bZcbMdfVjoCrljj4I5_ueRrSh12DORs_?usp=sharing",
       "files_count": 16,
       "files": [
@@ -20714,7 +20714,7 @@
         "Bold"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Vesterbro-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Vesterbro-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1B0hE072bcE_YhDyAws8XYLWR1vZ5qel1?usp=sharing",
       "files_count": 3,
       "files": [
@@ -20781,7 +20781,7 @@
         "BoldItalic"
       ],
       "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-WalbaumPro12pt-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-WalbaumPro12pt-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Xj_A1NOvvdCmT7e469Muy2sbWYX2OZX1?usp=sharing",
       "files_count": 8,
       "files": [
@@ -20883,7 +20883,7 @@
         "Heavy"
       ],
       "sample_text": "Không gian tĩnh lặng nâng niu từng trải nghiệm thẩm mỹ đỉnh cao của giới quý tộc",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-WalbaumPro60pt-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-WalbaumPro60pt-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1eIaQukYYXryniQxhH1QW2lvNOKcL9Ypx?usp=sharing",
       "files_count": 3,
       "files": [
@@ -20958,7 +20958,7 @@
         "BlackItalic"
       ],
       "sample_text": "BẢO VỆ MẸ HIỀN VÀ EM BÉ NHỎ DƯỚI LÁ CỜ ĐỎ THẮM TRONG HOÀN CẢNH NGẶT NGHÈO",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-WalsheimPro-Regular.woff2",
+      "web_font_url": "fonts/SVN-WalsheimPro-Regular.ttf",
       "drive_folder_url": "https://drive.google.com/drive/folders/1CSjvQQroYqSnWWwbQoSEqymocJO_lvXB?usp=sharing",
       "files_count": 16,
       "files": [
@@ -21127,7 +21127,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-WeYouth-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-WeYouth-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Fl3MehbfStb7-DqNxuRY0ME6EOjD7RHf?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21167,7 +21167,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Wellfont-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Wellfont-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1TjJcLGJJCG7efRU9AaE3C3WAKVa1uIew?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21207,7 +21207,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Whimsy-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Whimsy-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/10DrLdiUWEu-W2NtER8EUIrnudNPHK8qO?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21249,7 +21249,7 @@
         "Black"
       ],
       "sample_text": "Vẻ đẹp thuần khiết vượt thời gian của nghệ thuật chữ và tinh hoa văn hóa",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Whitman-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Whitman-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1tKw68gqGu4ilsriVnr8l0R3lZU1o4N5j?usp=sharing",
       "files_count": 3,
       "files": [
@@ -21314,7 +21314,7 @@
         "Heavy"
       ],
       "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Woodland-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Woodland-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1EqXpSt0gHLRScf5t5IeF-i8uphLs52Yk?usp=sharing",
       "files_count": 6,
       "files": [
@@ -21394,7 +21394,7 @@
         "Regular"
       ],
       "sample_text": "Bữa cơm chiều đầm ấm có tiếng cười ríu rít của đàn trẻ nhỏ bên cạnh ông bà",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-WritingTresno-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-WritingTresno-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1PPALczFJV5VDQs1xAuEgh9b8iNQv-jxg?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21435,7 +21435,7 @@
         "Underline"
       ],
       "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-WrongHunt-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-WrongHunt-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1WyqMqaQHgl8dKzqsZZvoeffEFWSDiWo9?usp=sharing",
       "files_count": 2,
       "files": [
@@ -21483,7 +21483,7 @@
         "Regular"
       ],
       "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-XXIIGroberPinsel-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-XXIIGroberPinsel-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1pyUyZVazh99kb_7pavqdqHl91PWUsk0D?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21523,7 +21523,7 @@
         "Regular"
       ],
       "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Yahoo-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Yahoo-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/167AO8OudWtvxS2wpiC9rCu4-yCngw7-P?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21563,7 +21563,7 @@
         "Regular"
       ],
       "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Zebra-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Zebra-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1r-O7fJ7nyejl48bOLKjrB6HHz2g2PeUU?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21603,7 +21603,7 @@
         "Regular"
       ],
       "sample_text": "Sự cảm thông sâu sắc và tình cảm đằm thắm là chiếc cầu nối gắn kết mọi trái tim",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-ZeldaSans-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-ZeldaSans-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1vTvZ1xN2jUL4tVUAywBVldE71F1FqBCE?usp=sharing",
       "files_count": 1,
       "files": [
@@ -21643,7 +21643,7 @@
         "Regular"
       ],
       "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Zero-Regular.woff2",
+      "web_font_url": "https://fedu.vn/fonts/SVN-Zero-Regular.woff2",
       "drive_folder_url": "https://drive.google.com/drive/folders/1nIYLeEdbM0glTYV9YcX1_oOUKM7x32ct?usp=sharing",
       "files_count": 1,
       "files": [
