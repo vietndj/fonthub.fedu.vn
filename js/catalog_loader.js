@@ -427,11 +427,13 @@
   }
 
   /**
-   * High-performance asynchronous fetch of catalog.json.
+   * High-performance asynchronous fetch of catalog.json with cache-busting.
    */
   function fetchCatalog(url) {
     var targetUrl = url || 'data/catalog.json';
-    return fetch(targetUrl)
+    var sep = targetUrl.indexOf('?') === -1 ? '?' : '&';
+    var cacheBustUrl = targetUrl + sep + 't=' + Date.now();
+    return fetch(cacheBustUrl)
       .then(function (res) {
         if (!res.ok) {
           throw new Error('HTTP ' + res.status + ' loading catalog: ' + targetUrl);

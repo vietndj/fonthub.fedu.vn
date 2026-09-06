@@ -459,9 +459,20 @@
     var aperture = anatomy.aperture || 'Balanced';
 
     var directorNotes = font.director_notes || 'Kiểu chữ tinh tế, cân bằng thị giác hoàn hảo.';
+    var originBadge = '';
+    var critiqueText = directorNotes;
+    if (directorNotes.indexOf('📌 Nguồn gốc:') !== -1) {
+      var noteParts = directorNotes.split('\n\n');
+      originBadge = noteParts[0].trim();
+      critiqueText = noteParts.slice(1).join('\n\n').trim();
+    }
 
-    var driveUrl = font.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
-    var downloadTooltip = 'Tải trọn bộ ' + escapeHTML(font.name) + ' (' + weightsCount + ' files zip)';
+    var isGRFont = isGT || (font.id && font.id.startsWith('gr-'));
+    var defaultDriveUrl = isGRFont
+      ? 'https://drive.google.com/drive/folders/1lm3iFyPj9cXJeVqplp8PbLXWSlDJ6lll?usp=sharing'
+      : 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+    var driveUrl = font.drive_folder_url || font.drive_link || font.download_url || defaultDriveUrl;
+    var downloadTooltip = 'Tải trọn bộ ' + escapeHTML(font.name) + ' (' + weightsCount + ' styles)';
 
     var category = font.category || (font.matrix_3d && font.matrix_3d.style) || 'Sans Serif';
 
@@ -531,7 +542,8 @@
       '        <div class="anatomy-item"><span class="label">X-Height</span><span class="val">' + escapeHTML(xHeight) + '</span></div>',
       '        <div class="anatomy-item"><span class="label">Độ mở</span><span class="val">' + escapeHTML(aperture) + '</span></div>',
       '      </div>',
-      '      <blockquote class="director-quote">"' + escapeHTML(directorNotes) + '"</blockquote>',
+      '      ' + (originBadge ? '<div class="font-origin-badge" title="Nguồn gốc phông chữ">' + escapeHTML(originBadge) + '</div>' : ''),
+      '      <blockquote class="director-quote">"' + escapeHTML(critiqueText || directorNotes) + '"</blockquote>',
       '    </div>',
       '  </details>',
       '  <footer class="card-footer">',
@@ -1108,7 +1120,11 @@
       var family = font.family || font.name;
       var designer = font.designer || 'FEDU Type Foundry';
       var weightsCount = font.weights ? font.weights.length : (font.files_count || 1);
-      var driveUrl = font.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+      var isGRFontItem = (font.id && font.id.startsWith('gr-')) || CatalogLoader.isGTFont(font);
+      var defaultDrive = isGRFontItem
+        ? 'https://drive.google.com/drive/folders/1lm3iFyPj9cXJeVqplp8PbLXWSlDJ6lll?usp=sharing'
+        : 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+      var driveUrl = font.drive_folder_url || font.drive_link || font.download_url || defaultDrive;
       var isVariable = font.is_variable || weightsCount >= 6;
       var sourceType = font.source_type || (font.license || 'Closed Source');
       var isFav = isFontFavorite(font.id);

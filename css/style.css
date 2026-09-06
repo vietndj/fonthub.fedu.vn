@@ -1025,12 +1025,29 @@ input[type="range"]::-moz-range-thumb {
   color: var(--text-primary);
 }
 
+.font-origin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
 .director-quote {
   font-style: italic;
   color: var(--text-secondary);
   font-size: 0.8rem;
   border-left: 2px solid var(--border-strong);
   padding-left: 8px;
+  white-space: pre-line;
+  line-height: 1.5;
 }
 
 /* Card Footer Actions */
