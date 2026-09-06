@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FONTHUB — Vietnamese Typography Foundry & Interactive Type Tester</title>
+  <meta name="description" content="Thư viện quản lý, trải nghiệm trực tiếp và tải font trực tuyến độc lập FONTHUB (fonthub.fedu.vn). 361 font families, 1.070 fonts, 100% hỗ trợ Tiếng Việt, tải 1-click Google Drive.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%23111111'/><path d='M10 9H26V13.5H15.5V17H23.5V21H15.5V27H10V9Z' fill='%23FFFFFF'/><circle cx='24' cy='25' r='2.5' fill='%2300E599'/></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Utility Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand-group">
+        <a href="./" class="brand-logo-wrap" title="FONTHUB - fedu.vn">
+          <svg class="fonthub-logo-icon" width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#111111"/>
+            <path d="M10 9H26V13.5H15.5V17H23.5V21H15.5V27H10V9Z" fill="#FFFFFF"/>
+            <circle cx="24" cy="25" r="2.5" fill="#00E599"/>
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">FONTHUB</span>
+            <span class="brand-sub">fonthub.fedu.vn</span>
+          </div>
+        </a>
+        <span class="brand-badge" id="header-stats-badge">361 Families / 1,070 Fonts</span>
+      </div>
+
+      <div class="header-actions">
+        <div class="theme-switcher" role="group" aria-label="Giao diện hiển thị">
+          <button type="button" class="theme-btn active" data-theme-set="light" title="Light Mode (#FFFFFF)">Light</button>
+          <button type="button" class="theme-btn" data-theme-set="dark" title="Dark Mode (#121212)">Dark</button>
+          <button type="button" class="theme-btn" data-theme-set="neon" title="Neon Cyberpunk (#00FF66)">Neon</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Global Type Tester Toolbar (Frosted Blur) -->
+  <section class="type-tester-toolbar" aria-label="Bộ điều khiển Type Tester">
+    <div class="toolbar-container">
+      <!-- Row 1: Global Text Input & Preset Quotes -->
+      <div class="toolbar-row-top">
+        <div class="input-wrap-main">
+          <input 
+            type="text" 
+            id="global-text-input" 
+            class="global-text-input" 
+            placeholder="Gõ thử văn bản Tiếng Việt có dấu bất kỳ..." 
+            value="Cộng hòa Xã hội Chủ nghĩa Việt Nam"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Văn bản xem trước toàn cục"
+          >
+          <button type="button" id="text-clear-btn" class="input-clear-btn" title="Xóa văn bản">✕</button>
+        </div>
+
+        <div class="preset-select-wrap">
+          <select id="preset-select" aria-label="Chọn câu mẫu">
+            <option value="">— Mẫu Tiếng Việt —</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 2: Sliders & Text Transformations -->
+      <div class="toolbar-row-bottom">
+        <div class="slider-group">
+          <!-- Size Slider -->
+          <div class="slider-item">
+            <span class="slider-label">Size</span>
+            <input type="range" id="font-size-slider" min="14" max="140" value="36" step="1" aria-label="Cỡ chữ">
+            <span class="slider-val" id="font-size-val">36px</span>
+          </div>
+
+          <!-- Line Height Slider -->
+          <div class="slider-item">
+            <span class="slider-label">Line</span>
+            <input type="range" id="line-height-slider" min="0.80" max="2.40" value="1.20" step="0.05" aria-label="Giãn dòng">
+            <span class="slider-val" id="line-height-val">1.20</span>
+          </div>
+
+          <!-- Kerning Slider -->
+          <div class="slider-item">
+            <span class="slider-label">Kern</span>
+            <input type="range" id="kerning-slider" min="-0.050" max="0.300" value="0.000" step="0.01" aria-label="Khoảng cách chữ">
+            <span class="slider-val" id="kerning-val">0.00em</span>
+          </div>
+        </div>
+
+        <!-- Text Transform, Alignment & Reset Controls -->
+        <div class="button-controls-group">
+          <!-- Alignment -->
+          <div class="segmented-control" role="group" aria-label="Căn lề">
+            <button type="button" class="btn-seg active" data-align="left" title="Căn trái">L</button>
+            <button type="button" class="btn-seg" data-align="center" title="Căn giữa">C</button>
+            <button type="button" class="btn-seg" data-align="right" title="Căn phải">R</button>
+          </div>
+
+          <!-- Transform -->
+          <div class="segmented-control" role="group" aria-label="Biến đổi chữ hoa/thường">
+            <button type="button" class="btn-seg active" data-transform="none" title="Nguyên bản">Aa</button>
+            <button type="button" class="btn-seg" data-transform="uppercase" title="In hoa (Đ, Ệ, Ợ bảo toàn)">AA</button>
+            <button type="button" class="btn-seg" data-transform="lowercase" title="In thường">aa</button>
+            <button type="button" class="btn-seg" data-transform="titlecase" title="In hoa đầu từ">Abc</button>
+          </div>
+
+          <!-- Reset -->
+          <button type="button" id="btn-reset-tester" class="btn-reset-tester" title="Đặt lại thông số mặc định">
+            <span>↺</span>
+            <span>Reset</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Faceted Filter Section -->
+  <section class="filter-section" aria-label="Tìm kiếm và bộ lọc đa chiều">
+    <!-- Search Bar -->
+    <div class="search-bar-row">
+      <div class="search-input-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Tìm kiếm theo tên font, nhà thiết kế, nhận định đạo diễn... (nhập tức thì < 4ms)"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Tìm kiếm font"
+        >
+        <span class="search-latency-badge" id="search-latency">&lt; 4ms</span>
+      </div>
+
+      <div class="results-meta">
+        <span id="results-count">361 / 361 font families</span>
+      </div>
+    </div>
+
+    <!-- Core Category Filter Chips -->
+    <div class="chips-container" id="category-chips" role="group" aria-label="Phân loại thị giác cốt lõi">
+      <button type="button" class="chip-btn active" data-category="all">
+        <span>Tất cả</span>
+        <span class="chip-count" id="count-all">361</span>
+      </button>
+      <button type="button" class="chip-btn" data-category="Sans Serif">
+        <span>Sans Serif</span>
+        <span class="chip-count" id="count-sans">234</span>
+      </button>
+      <button type="button" class="chip-btn" data-category="Serif">
+        <span>Serif</span>
+        <span class="chip-count" id="count-serif">39</span>
+      </button>
+      <button type="button" class="chip-btn" data-category="Việt Nam Oldstyle / Vintage Sài Gòn">
+        <span>Vintage Sài Gòn</span>
+        <span class="chip-count" id="count-vintage">63</span>
+      </button>
+      <button type="button" class="chip-btn" data-category="Blackletter, Script & Monospace">
+        <span>Mono & Script</span>
+        <span class="chip-count" id="count-mono-script">25</span>
+      </button>
+    </div>
+
+    <!-- Secondary Filter Selects -->
+    <div class="secondary-filters-row">
+      <!-- Mood Filter -->
+      <select id="filter-mood" class="filter-select" aria-label="Lọc theo Mood / Tính cách thương hiệu">
+        <option value="all">Mood / Tính cách: Tất cả</option>
+        <option value="Luxury & Sang trọng">Luxury &amp; Sang trọng</option>
+        <option value="Tech & Công nghệ">Tech &amp; Công nghệ</option>
+        <option value="Bold & Tuyên ngôn">Bold &amp; Tuyên ngôn</option>
+        <option value="Friendly & Nhân văn">Friendly &amp; Nhân văn</option>
+        <option value="Nostalgic & Cổ điển">Nostalgic &amp; Cổ điển</option>
+      </select>
+
+      <!-- Use-Case Filter -->
+      <select id="filter-use-case" class="filter-select" aria-label="Lọc theo Ngữ cảnh ứng dụng">
+        <option value="all">Ứng dụng: Tất cả</option>
+        <option value="Display / Headline">Display / Headline</option>
+        <option value="Body Text">Body Text</option>
+        <option value="Display & Body">Display &amp; Body</option>
+      </select>
+
+      <!-- Weight Filter -->
+      <select id="filter-weight" class="filter-select" aria-label="Lọc theo Số biến thể độ dày">
+        <option value="all">Biến thể: Tất cả</option>
+        <option value="single">Single Weight (1 font)</option>
+        <option value="family">Font Family (&gt;1 weights)</option>
+        <option value="bold">Có Bold / Đậm</option>
+        <option value="regular">Có Regular</option>
+        <option value="light">Có Light / Mảnh</option>
+      </select>
+
+      <!-- Vietnamese Support Checkbox -->
+      <label class="vn-toggle-label">
+        <input type="checkbox" id="filter-vn-support" class="vn-toggle-checkbox" checked>
+        <span>Chỉ hiện font hỗ trợ Tiếng Việt (100%)</span>
+      </label>
+
+      <!-- Clear Filters Link -->
+      <button type="button" id="btn-clear-filters" class="btn-clear-filters">Xóa bộ lọc</button>
+    </div>
+  </section>
+
+  <!-- Main Font Grid Content -->
+  <main class="main-content">
+    <div class="font-grid" id="font-grid" aria-label="Danh sách font chữ tương tác">
+      <!-- Font cards rendered dynamically via app.js -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="empty-state hidden">
+      <h3 class="empty-title">Không tìm thấy font phù hợp</h3>
+      <p>Thử điều chỉnh từ khóa tìm kiếm hoặc xóa bớt các tiêu chí lọc.</p>
+      <button type="button" id="empty-reset-btn" class="btn-download-family" style="margin-top: 10px;">Xóa toàn bộ bộ lọc</button>
+    </div>
+
+    <!-- Scroll Sentinel for Progressive Infinite Scroll -->
+    <div id="scroll-sentinel" class="scroll-sentinel"></div>
+  </main>
+
+  <!-- Vietnamese Glyph Map Modal -->
+  <div id="glyph-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="glyph-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="glyph-modal-title">Bảng Ký Tự & Dấu Tiếng Việt</h3>
+          <p id="glyph-modal-subtitle">Connary Fagen • 134 ký tự Tiếng Việt có dấu</p>
+        </div>
+        <button type="button" id="glyph-modal-close" class="modal-close-btn" aria-label="Đóng">✕</button>
+      </div>
+
+      <div class="modal-tabs" id="glyph-modal-tabs">
+        <button type="button" class="modal-tab-btn active" data-glyph-tab="all-vn">Tất Cả Tiếng Việt (134)</button>
+        <button type="button" class="modal-tab-btn" data-glyph-tab="lower">Chữ Thường (67)</button>
+        <button type="button" class="modal-tab-btn" data-glyph-tab="upper">Chữ Hoa (67)</button>
+        <button type="button" class="modal-tab-btn" data-glyph-tab="complex">Từ Phức Tạp (15)</button>
+      </div>
+
+      <div class="modal-body" id="glyph-modal-body">
+        <!-- Rendered by TypeTesterEngine.renderGlyphMap -->
+      </div>
+
+      <div class="modal-footer" id="glyph-modal-footer">
+        <span id="glyph-info-text">Nhấp vào ký tự để sao chép vào Clipboard</span>
+        <span>fedu.vn/font Typography Explorer</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notice" class="toast-notice" role="status" aria-live="polite">
+    Đã copy vào clipboard!
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/type_tester.js"></script>
+  <script src="js/catalog_loader.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

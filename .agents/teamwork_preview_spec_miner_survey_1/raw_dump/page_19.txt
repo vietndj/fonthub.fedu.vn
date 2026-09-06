@@ -1,0 +1,55 @@
+Update
+Font List
+2022
+FONT CHỮ
+MẪU CHỮ
+TIẾNG VIỆT
+GOOGLE FONT
+PHÂN TÍCH
+BIẾN THỂ
+Monospace, từ chữ i đến chữ M chỉ là một 
+khoảng cách. Một dòng font đa tính cách nhất 
+nhà. 
+Tính cách của font gồm 3 hướng. (1) cảm giác công nghệ, 
+phát triển từ máy đánh chữ (2) cảm giác thủ công cũng do 
+hoạt động đánh chữ là tỉ mỉ và (3) cảm giác hoài cổ
+Fira Code
+handgloves & winter?
+Một font chữ mono dành cho code mà lại thêm các chấm phá 
+mang tính con người. 
+Inconsolata
+handgloves & winter?
+Font chữ mono theo phong cách hình học - geometric.
+Input Mono
+handgloves & winter?
+Một font mono miễn phí và trả phí trong dự án mã nguồn mở, font 
+rất đẹp, chữ g 2 tầng hiếm gặp trong mono đc sử dụng cho cảm 
+giác thân thiện của con người.  chiều rộng tính toán cẩn thận, 
+muốn public bạn cần trả thêm phí. 
+Roboto Mono
+handgloves & winter?
+Nằm trong super family Roboto, thiết kế chữ theo hướng hình học.  
+Dễ dàng kết hợp với họ roboto, đó là lý do nằm trong list này.
+JetBrains Mono
+IBM Plex Mono
+handgloves & winter?
+handgloves & winter?
+Có thể thấy rõ việc sắp xếp con chữ so với một font mono là khá 
+chặt ở jetbrains, điều đó làm font này có khả năng dùng làm font 
+nhấn mạnh cho nội dung.  
+(2) chữ g và chữ L đúng chất công nghệ rất gọn và match với nhau
+Đường nối giữa nét cong và nét thẳng ở chữ h, n, d, r.. là điểm lấy 
+cảm hứng từ chữ viết tay.(2) điểm thứ 2 là chữ g 2 tầng rất thân 
+thiện (3) lý do thứ 3 để giúp nó xuất hiện trong bảng này là 
+73
+4
+14
+14
+14
+128
+Monospace
+Dòng font mặc định của lập trình.
+Made with Love 
+2021
+fb.com/vietndj
+#learnforwork

@@ -1,0 +1,176 @@
+Update
+Font List
+2022
+Transitional (garalde)
+Dòng font có chân cổ điển nghiêm túc
+FONT CHỮ
+MẪU CHỮ
+TIẾNG VIỆT
+GOOGLE FONT
+PHÂN TÍCH
+CHARTER - 123PT
+BIẾN THỂ
+Libre Baskerville
+handgloves & aethers 
+HANDGLOVES & AETHERS
+Baskerville gốc thì quá cũ, baskerville Libre  là phiên bản làm lại. Tính cách cổ 
+điện, nghiêm túc, sẽ không phải nói quá nếu chỉ dùng baskerville cho toàn bộ 
+website cũng đủ tạo nên tính cách đặc trưng rồi. 
+Lora là dòng font chữ lấy cảm hứng từ thư pháp châu âu, có chân hiện đại, với độ 
+tương phản thanh mảnh thấp.  
+Lora có khá nhiều biến thể, các nét cong được bo góc tròn, và cẩn thận giúp cho 
+kiểu chứ có một tính cách thanh lịch và tinh tế. Chữ nghiêng còn cho cảm giác nữ 
+tính và quyến rũ. 
+Plantin Pro là kiểu chữ làm lại các mẫu chữ thời phục hưng thế kỉ 16. Thiết kế bởi 
+Hinman Pierpont 1913, ông nổi tiếng với việc tạo ra các dòng font oldstyle, và 
+Garamond.  
+Một font chữ văn bản cho sách, biên tập báo, với tính con người, thanh lịch, dễ 
+đọc và cổ điển đậm nét.  
+Georgia pro
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Georgia là font dùng sẵn trong các hệ điều hành rồi. Ở đây là 
+georgia pro, dòng font cải tiến tính năng đọc hơn, có biến thể, 
+không quá thưa, không quá ngột ngạt, nghiêm túc rõ ràng.
+Lora
+Plantin Pro
+handgloves & cargo?
+HANDGLOVES & CARGO?
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Transitional Serif dòng garalde với đặc điểm chân dầy hơn, với các đường 
+cắt sắc nét, có sự can thiệp của máy móc để đạt được sự cân đối, trục ít 
+nghiêng hơn, chân dầy hơn, tương phản vừa đủ, tỉ lệ tối ưu về công năng 
+hơn tính cách.  
+Dòng font này thường dùng trong văn bản đọc, do tạo cảm giác đọc quen 
+thuộc, công năng tốt hơn dòng bracketed, hoặc dùng trong giáo dục và 
+các chủ đề cần sự nghiêm túc, hiện đại.
+10
+6
+6
+6
+Aa
+TRANSITIONAL
+Made with Love 
+2021
+fb.com/vietndj
+#learnforwork
+Nghiêm Túc 
+Faustina
+handgloves & cargo? 
+strength youthful
+Một font chữ đáng kinh ngạc, nó đẹp và thể hiện đúng chất của 
+dòng font có chân cổ điển, nghiêm túc, hiện đại và đẹp, tuy nhiên 
+nó gần như bị bỏ quên trong vô vàn font chữ khác, có tiếng việt 
+Có nhiều dạng cấu tạo chữ rất riêng, thích hợp tiêu đề lớn. 
+Merriweather
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Có 2 điểm nổi bật ở dòng font này (1) tính dễ đọc (2) tính chất tự 
+nhiên của font chữ, nó tự nhiên đời thường. Chữ cái ở hình dạng 
+thường của nó rất tối giản, dù nó là font có chân vốn là hoa mỹ. 
+Biến thể đậm và thông thường tạo nên tính thẩm mỹ cổ điển và dễ 
+đọc. 
+Noticia Text
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Chữ C của Notica không thể thấy ở các font chữ khác, (2) sự tương phản nét thanh đậm lấy 
+cảm hứng từ chữ viết tay mang cảm giác rất con người, nhưng các góc cạnh sắc nét lại 
+mang ý nghĩa về hình học và sự hiện đại. Cả hai thứ bên trong dòng font này thể hiện một 
+cách rất tinh tế tạo nên tính phá cách, hiện đại, thân thiện.
+1
+10
+10
+99
+5
+5
+5
+03
+Addington CF
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Tính cách : thanh lịch, đẹp, điệu nhưng thực tế.  
+Đẹp điệu thể hiện ở trục chữ hơi nghiêng, tương phản thanh mảnh nhiều nhưng 
+không quá để đọc, họ hình bên trong chữ luôn căng và đẹp a, d, r, e,s.. 
+Thực tế ở việc x-height cao, chân chữ ko cầu kì mà vững vàng, độ mở lớn để đọc ở 
+kích thước nhỏ. Không có quá nhiều sự phá cách như piazzola.  
+Tiêu đề hay body đều đẹp, mạnh mẽ, nổi bật, đa dụng, thực tế.
+Piazzolla
+Noto serif
+handgloves & cargo?
+HANDGLOVES & CARGO?
+handgloves ?
+HANDGLOVES ?
+Một font chữ cực kỳ đặc sắc. (1) Đường cong tưởng cong nhưng là tập hợp của các đường thẳng, tạo nên sự 
+tinh tế hút mắt của font chữ. (2) Sự mềm mại bên ngoài và cứng cáp bên trong giúp font chữ phù hợp với 
+cả tính hiện đại và cổ điển. Cả tính con người và tính máy móc công nghệ cũng phù hợp.  Độ mở của chữ 
+cho phép đặt tại tiêu đề hay nội dung đều tốt, (3) hỗ trợ đa ngôn ngữ. 
+một trong số it font có thể dùng cho việc đọc dòng 
+chính thống. ví dụ báo mạng, báo chính thống, 
+Thiết kế vào 1980, khi mà các thiết bị màn hình có độ phân giải rất thấp, font chữ giải quyết việc 
+nhòe chữ với việc thiết kế các chân chữ to và rõ, độ mở lớn, thanh mảnh vừa phải để cân bằng 
+giữa đọc và đẹp. Chính điều này làm cho font chữ mang đậm nét lịch sử của một thời kì chuyển 
+dịch lên thiết bị thông minh.  
+Một font chữ đạt được sự kết hợp hài hòa giữa thẩm mỹ và công năng sử dụng tại thời kì bấy giờ.  
+Font gốc, hỗ trợ tiếng việt.  
+Tương đồng với Charter. Độ tin tưởng, chính thống, nghiêm túc.
+Charter 
+Adobe clean script
+HANDGLOVES & CARGO?
+HANDGLOVES & CARGO?
+handgloves & cargo?
+handgloves & cargo?
+Adobe Caslon
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Font caslon là một font serif transitional, Adobe làm lại nó rất tinh 
+vi và chính xác, con chữ hình thành cẩn thận, nó gợi cảm giác 
+về sự cổ điển, về những quyển sách lâu đời. 
+6
+DM Serif Display
+handgloves & cargo?
+Thanh lịch, hào hoa, trang nghiêm. (2) chỉ dùng kích thước lớn (3) 
+free 
+1
+Publico 
+handgloves & cargo?
+HANDGLOVES & CARGO?
+Font chữ gợi cảm giác chính thống, báo chí, và tính dễ đọc rất 
+cao vì sở hữu tỉ lệ xheight lớn.
+1
+Libre Caslon Text
+handgloves & cargo?
+Cổ điển và nghiêm trang. 
+10
+13
+6
+Recia
+handgloves & cargo?
+Điểm nhấn của font này là các nét thẳng ở phần kết thúc của nét chữ. 
+Nó giúp thu hút mắt người nhìn và tạo sự khác biệt so với các font chữ 
+khác. Đầu chữ h, ?, a, d, s.. Một font chữ rất khác biệt.
+Skolar
+handgloves & cargo?
+PT Serif
+handgloves & cargo?
+Phần chân chữ móc thẳng rất hiện đại, sắc nét và dễ nhớ, sử dụng 
+hơi quá nhiều ở tất cả kí tự tạo cảm giác dễ nhớ. Font khá nổi tiếng 
+và được dùng nhiều
+Hiện đại vì có tính dễ đọc cao với phần counter mở rộng, cổ điển 
+với tỉ lệ xheight hơi thấp tạo cảm giác cũ, tưởng phản nét thanh 
+đậm gợi cảm xúc tự nhiên thường nhật. Không hỗ trợ tiếng việt. 
+Domaine Display 
+handgloves & cargo?
+Rất kì lạ, nhất là ở nét móc cong hẳn vào trong của chữ c, a, y, r tạo 
+cảm giác tràn đầy năng lượng do sức căng của các đường cong 
+này. Tính cách của font này thể hiện một sự phân loại rõ ràng, một 
+định hướng. Thường dùng thương hiệu cần sự nổi bật một cách 
+truyền thống, và thiên hướng về nghệ thuật.
+6
+Bespoke Serif
+handgloves & cargo? 
+strength youthful
+Một font chữ dễ đọc nhưng hiển thị tốt nhất trên kich thước lớn.  
+Nét móc cuối các chữ cái đẹp nhất là ở chữ "Y". 
+10
+FONT KHÔNG HỖ TRỢ TIẾNG VIỆT 
