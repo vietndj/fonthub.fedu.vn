@@ -471,7 +471,8 @@
     var defaultDriveUrl = isGRFont
       ? 'https://drive.google.com/drive/folders/1lm3iFyPj9cXJeVqplp8PbLXWSlDJ6lll?usp=sharing'
       : 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
-    var driveUrl = font.drive_folder_url || font.drive_link || font.download_url || defaultDriveUrl;
+    var downloadHref = font.zip_url || font.download_url || font.drive_folder_url || font.drive_link || defaultDriveUrl;
+    var isDirectZip = Boolean(font.zip_url || (font.download_url && font.download_url.endsWith('.zip')));
     var downloadTooltip = 'Tải trọn bộ ' + escapeHTML(font.name) + ' (' + weightsCount + ' styles)';
 
     var category = font.category || (font.matrix_3d && font.matrix_3d.style) || 'Sans Serif';
@@ -547,7 +548,7 @@
       '    </div>',
       '  </details>',
       '  <footer class="card-footer">',
-      '    <a href="' + driveUrl + '" class="btn-download-family" target="_blank" rel="noopener noreferrer" title="' + downloadTooltip + '">',
+      '    <a href="' + downloadHref + '" class="btn-download-family"' + (isDirectZip ? ' download="' + escapeHTML(font.zip_filename || (font.name + '.zip')) + '"' : ' target="_blank"') + ' rel="noopener noreferrer" title="' + downloadTooltip + '">',
       '      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">',
       '        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>',
       '        <polyline points="7 10 12 15 17 10"/>',
@@ -1004,43 +1005,16 @@
     var state = App.fontshareState;
     var query = (DOM.fontshareSearch ? DOM.fontshareSearch.value.trim() : '').toLowerCase();
 
-    // Featured signature showcase fonts (Image 4: Satoshi, Clash Display)
-    var signatureFonts = [
-      {
-        id: 'satoshi',
-        name: 'Satoshi',
-        family: 'Satoshi',
-        designer: 'Indian Type Foundry',
-        category: 'Sans Serif',
-        weights: ['Light', 'Regular', 'Medium', 'Bold', 'Black'],
-        web_font_url: 'fonts/Satoshi-Regular.woff2',
-        is_variable: true,
-        source_type: 'Closed Source',
-        drive_folder_url: 'https://www.fontshare.com/fonts/satoshi'
-      },
-      {
-        id: 'clash-display',
-        name: 'Clash Display',
-        family: 'Clash Display',
-        designer: 'Indian Type Foundry',
-        category: 'Sans Serif',
-        weights: ['Extralight', 'Light', 'Regular', 'Medium', 'Semibold', 'Bold'],
-        web_font_url: 'fonts/ClashDisplay-Regular.woff2',
-        is_variable: true,
-        source_type: 'Closed Source',
-        drive_folder_url: 'https://www.fontshare.com/fonts/clash-display'
-      }
-    ];
-
-    // Filter catalog fonts (avoid duplicate signature fonts)
+    // Filter catalog fonts (strictly remove any non-Vietnamese, ultro or clash display fonts)
     var catalogFonts = App.allFonts.filter(function (f) {
       var n = (f.name || f.family || '').toLowerCase();
-      return n !== 'satoshi' && n !== 'clash display' && n !== 'svn-clashdisplay';
+      var id = (f.id || '').toLowerCase();
+      return n !== 'satoshi' && n !== 'clash display' && id !== 'fd-clashdisplay' && id !== 'fd-ultro' && !n.includes('ultro');
     });
 
-    // Curated priority order for Fontshare showcase:
-    // Satoshi, Clash Display, GR Sectra, GR America, FD NoeDisplay, FDAeonik, FD Gilroy, FD Acta...
-    var priorityIds = ['gr-sectra', 'gr-america', 'fd-noedisplay', 'fdaeonik', 'fd-gilroy', 'fd-acta', 'gr-super'];
+    // Curated priority order for Fontshare showcase (100% Vietnamese FEDU typefaces):
+    // GR Sectra, GR America, FD NoeDisplay, FDAeonik, FD Gilroy, FD Acta, GR Super, FD Walsheim Pro...
+    var priorityIds = ['gr-sectra', 'gr-america', 'fd-noedisplay', 'fdaeonik', 'fd-gilroy', 'fd-acta', 'gr-super', 'fd-walsheim-pro'];
     var prioritized = [];
     priorityIds.forEach(function (pid) {
       var match = catalogFonts.find(function (f) { return f.id === pid; });
@@ -1048,7 +1022,7 @@
     });
     var remaining = catalogFonts.filter(function (f) { return !priorityIds.includes(f.id); });
 
-    var pool = signatureFonts.concat(prioritized).concat(remaining);
+    var pool = prioritized.concat(remaining);
 
     // Search query filter
     if (query) {
@@ -1120,11 +1094,11 @@
       var family = font.family || font.name;
       var designer = font.designer || 'FEDU Type Foundry';
       var weightsCount = font.weights ? font.weights.length : (font.files_count || 1);
-      var isGRFontItem = (font.id && font.id.startsWith('gr-')) || CatalogLoader.isGTFont(font);
-      var defaultDrive = isGRFontItem
+      var defaultDrive = (font.id && font.id.startsWith('gr-'))
         ? 'https://drive.google.com/drive/folders/1lm3iFyPj9cXJeVqplp8PbLXWSlDJ6lll?usp=sharing'
         : 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
-      var driveUrl = font.drive_folder_url || font.drive_link || font.download_url || defaultDrive;
+      var driveUrl = font.zip_url || font.download_url || font.drive_folder_url || font.drive_link || defaultDrive;
+      var isDirectZip = Boolean(font.zip_url || (font.download_url && font.download_url.endsWith('.zip')));
       var isVariable = font.is_variable || weightsCount >= 6;
       var sourceType = font.source_type || (font.license || 'Closed Source');
       var isFav = isFontFavorite(font.id);
@@ -1178,7 +1152,7 @@
         '    <div class="fs-actions">',
         '      <button type="button" class="fs-btn-waterfall-toggle" data-action="toggle-waterfall">Waterfall ▾</button>',
         '      <button type="button" class="btn-seg btn-glyph-trigger" data-glyph-font-id="' + escapeHTML(font.id) + '">Glyphs</button>',
-        '      <a href="' + driveUrl + '" class="fs-download-link" target="_blank" rel="noopener noreferrer">Tải ZIP</a>',
+        '      <a href="' + driveUrl + '" class="fs-download-link"' + (isDirectZip ? ' download="' + escapeHTML(font.zip_filename || (font.name + '.zip')) + '"' : ' target="_blank"') + ' rel="noopener noreferrer">Tải ZIP</a>',
         '    </div>',
         '  </div>',
         '</article>'
@@ -1461,13 +1435,13 @@
     {
       id: 'pair-2-tech',
       style: 'Công Nghệ & Giao Diện Số',
-      headingFamily: 'FD ClashDisplay',
-      headingCategory: 'Display Sans (Geometric)',
+      headingFamily: 'GR Sectra',
+      headingCategory: 'Display Sharp Contemporary',
       bodyFamily: 'FD Gilroy',
       bodyCategory: 'Neo-Grotesk (UI Standard)',
       headline: 'Kiến Trúc Dữ Liệu & Kỷ Nguyên Trí Tuệ Nhân Tạo',
       subhead: 'Cặp đôi chuẩn mực Châu Âu hiện đại cho các sản phẩm công nghệ, SaaS và nền tảng số tiên phong.',
-      paragraph: 'Giao diện sản phẩm số đòi hỏi tính chính xác tuyệt đối trong từng điểm ảnh. ClashDisplay tạo ấn tượng thị giác dứt khoát ở tiêu đề, đồng hành cùng Gilroy dẫn dắt trải nghiệm đọc mượt mà qua hàng nghìn dòng dữ liệu và tài liệu kỹ thuật.',
+      paragraph: 'Giao diện sản phẩm số đòi hỏi tính chính xác tuyệt đối trong từng điểm ảnh. GR Sectra tạo ấn tượng thị giác dứt khoát ở tiêu đề, đồng hành cùng Gilroy dẫn dắt trải nghiệm đọc mượt mà qua hàng nghìn dòng dữ liệu và tài liệu kỹ thuật.',
       rationale: 'Năng lượng cơ học mạnh mẽ kết hợp cùng độ thoáng của x-height cao, chống mỏi mắt trên màn hình Retina.'
     },
     {

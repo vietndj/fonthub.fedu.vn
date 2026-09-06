@@ -124,7 +124,7 @@ function runTier5Tests(reporter) {
     // Curated fonts used across the 8 boards (supporting both FD/GR and legacy names)
     const requiredFonts = [
       'FD NoeDisplay', (catalogFontNames.has('FD Aeonik') ? 'FD Aeonik' : 'FDAeonik'),
-      'FD ClashDisplay', 'FD Gilroy',
+      'GR Sectra', 'FD Gilroy',
       'FD Adobe Caslon', 'FD Apercu Pro',
       'FD Abril Fatface', 'FD Aptima',
       'FD HC Bourbon Grotesque', 'FD Acta',
@@ -163,7 +163,7 @@ function runTier5Tests(reporter) {
         });
       });
 
-      const gtExcludeStems = ['walsheim', 'ultra', 'alpina', 'super', 'america', 'sectra'];
+      const gtExcludeStems = ['walsheim', 'ultra', 'ultro', 'alpina', 'super', 'america', 'sectra', 'clash'];
       const missingFromCatalog = sourceFiles.filter(f => {
         const n = norm(f.name);
         const isGtPromoted = gtExcludeStems.some(stem => f.name.toLowerCase().includes(stem));

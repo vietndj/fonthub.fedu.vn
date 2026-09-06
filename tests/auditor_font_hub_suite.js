@@ -65,7 +65,7 @@ const TARGET_FONTS = [
   { query: 'GR America', key: 'gr-america' },
   { query: 'FD NoeDisplay', key: 'fd-noedisplay' },
   { query: 'FD Aeonik', key: 'fdaeonik' },
-  { query: 'FD ClashDisplay', key: 'fd-clashdisplay' },
+  { query: 'GR Sectra', key: 'gr-sectra' },
   { query: 'FD Gilroy', key: 'fd-gilroy' },
   { query: 'GR Ultra', key: 'gr-ultra' },
   { query: 'GR Walsheim', key: 'gr-walsheim' },
@@ -113,7 +113,7 @@ console.log(`\n${BOLD}▶ [Audit 2] 8 Curated Pairing Boards Font Asset Verifica
 
 const CURATED_PAIRS_LIST = [
   { id: 'pair-1-luxury', h: 'FD NoeDisplay', b: 'FD Aeonik' },
-  { id: 'pair-2-tech', h: 'FD ClashDisplay', b: 'FD Gilroy' },
+  { id: 'pair-2-tech', h: 'GR Sectra', b: 'FD Gilroy' },
   { id: 'pair-3-journal', h: 'FD Adobe Caslon', b: 'FD Apercu Pro' },
   { id: 'pair-4-brand', h: 'FD Abril Fatface', b: 'FD Aptima' },
   { id: 'pair-5-vintage', h: 'FD HC Bourbon Grotesque', b: 'FD Acta' },
