@@ -40,7 +40,19 @@
     activeModalFont: null,
     activeGlyphTab: 'all-vn',
     intersectionObserver: null,
-    fontLoadObserver: null
+    fontLoadObserver: null,
+
+    // Multi-View Architecture
+    currentView: 'catalog',
+    fontshareSearchQuery: '',
+    pairState: {
+      headingFont: null,
+      bodyFont: null,
+      headingSize: 54,
+      bodySize: 17,
+      lineHeight: 1.55,
+      kerning: 0.00
+    }
   };
 
   // DOM Cache
@@ -50,6 +62,38 @@
     DOM.html = document.documentElement;
     DOM.headerStatsBadge = document.getElementById('header-stats-badge');
     DOM.themeBtns = document.querySelectorAll('[data-theme-set]');
+
+    // Multi-View controls
+    DOM.viewBtns = document.querySelectorAll('[data-view]');
+    DOM.catalogView = document.getElementById('catalog-view');
+    DOM.fontshareView = document.getElementById('fontshare-view');
+    DOM.pairView = document.getElementById('pair-view');
+
+    // Fontshare View controls
+    DOM.fontshareSearch = document.getElementById('fontshare-search');
+    DOM.fontshareGrid = document.getElementById('fontshare-grid');
+    DOM.fontshareShuffleBtn = document.getElementById('fontshare-shuffle-btn');
+
+    // Pair View controls
+    DOM.pairHeadingSelect = document.getElementById('pair-heading-select');
+    DOM.pairBodySelect = document.getElementById('pair-body-select');
+    DOM.pairSwapBtn = document.getElementById('pair-swap-btn');
+    DOM.pairRandomBtn = document.getElementById('pair-random-btn');
+    DOM.pairDownloadBothBtn = document.getElementById('pair-download-both-btn');
+    DOM.pairHeadingSize = document.getElementById('pair-heading-size');
+    DOM.pairHeadingSizeVal = document.getElementById('pair-heading-size-val');
+    DOM.pairBodySize = document.getElementById('pair-body-size');
+    DOM.pairBodySizeVal = document.getElementById('pair-body-size-val');
+    DOM.pairLineHeight = document.getElementById('pair-line-height');
+    DOM.pairLineHeightVal = document.getElementById('pair-line-height-val');
+    DOM.pairKerning = document.getElementById('pair-kerning');
+    DOM.pairKerningVal = document.getElementById('pair-kerning-val');
+    DOM.pairPreviewHeading = document.getElementById('pair-preview-heading');
+    DOM.pairPreviewSubhead = document.getElementById('pair-preview-subhead');
+    DOM.pairPreviewBody = document.getElementById('pair-preview-body');
+    DOM.pairingAccordion = document.getElementById('pairing-accordion');
+    DOM.pairingAccordionContent = document.getElementById('pairing-accordion-content');
+    DOM.curatedPairsGrid = document.getElementById('curated-pairs-grid');
 
     // Type Tester Toolbar
     DOM.globalTextInput = document.getElementById('global-text-input');
@@ -789,6 +833,14 @@
       wordsSection.appendChild(grid);
       DOM.glyphModalBody.appendChild(wordsSection);
     } else {
+      // Handle tab filtering for lowercase and uppercase
+      var filterMode = 'all-vn';
+      if (App.activeGlyphTab === 'lower') {
+        filterMode = 'lower';
+      } else if (App.activeGlyphTab === 'upper') {
+        filterMode = 'upper';
+      }
+
       // Render standard character map
       App.typeTester.renderGlyphMap(DOM.glyphModalBody, App.activeModalFont, function (char, hex) {
         if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -796,14 +848,616 @@
             showToast('Đã copy ký tự \'' + char + '\' (U+' + hex + ')');
           });
         }
+      }, filterMode);
+    }
+  }
+
+  /* ==========================================================================
+     MULTI-VIEW ARCHITECTURE (Catalog, Fontshare, Pair)
+     ========================================================================== */
+
+  function switchView(viewName) {
+    if (!viewName) viewName = 'catalog';
+    App.currentView = viewName;
+
+    // Update buttons
+    if (DOM.viewBtns) {
+      DOM.viewBtns.forEach(function (btn) {
+        var isMatch = (btn.getAttribute('data-view') === viewName);
+        btn.classList.toggle('active', isMatch);
+        btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
       });
     }
+
+    // Update view panels
+    if (DOM.catalogView) DOM.catalogView.classList.toggle('hidden', viewName !== 'catalog');
+    if (DOM.fontshareView) DOM.fontshareView.classList.toggle('hidden', viewName !== 'fontshare');
+    if (DOM.pairView) DOM.pairView.classList.toggle('hidden', viewName !== 'pair');
+
+    // Trigger specific view rendering
+    if (viewName === 'fontshare') {
+      renderFontshareView();
+    } else if (viewName === 'pair') {
+      initPairView();
+    }
+
+    // Sync URL hash
+    try {
+      if (history && history.replaceState) {
+        history.replaceState(null, '', '#' + viewName);
+      }
+    } catch (e) { /* ignore */ }
+  }
+
+  /* ==========================================================================
+     FONTSHARE WATERFALL VIEW CONTROLLER
+     ========================================================================== */
+
+  function renderFontshareView() {
+    if (!DOM.fontshareGrid) return;
+
+    var query = (DOM.fontshareSearch ? DOM.fontshareSearch.value.trim() : '').toLowerCase();
+    var fonts = App.allFonts;
+
+    if (query) {
+      fonts = fonts.filter(function (f) {
+        var n = (f.name || f.family || '').toLowerCase();
+        var d = (f.designer || '').toLowerCase();
+        var c = (f.category || '').toLowerCase();
+        return n.indexOf(query) !== -1 || d.indexOf(query) !== -1 || c.indexOf(query) !== -1;
+      });
+    }
+
+    // Pick top 15 fonts for clean performance
+    var displayFonts = fonts.slice(0, 15);
+
+    if (displayFonts.length === 0) {
+      DOM.fontshareGrid.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-secondary);">' +
+        'Không tìm thấy font phù hợp trong chế độ Fontshare.</div>';
+      return;
+    }
+
+    DOM.fontshareGrid.innerHTML = displayFonts.map(function (font) {
+      var family = font.family || font.name;
+      var designer = font.designer || 'FEDU Studio';
+      var category = font.category || 'Sans Serif';
+      var weightsCount = font.weights ? font.weights.length : 1;
+      var driveUrl = font.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+
+      // Load web font asynchronously
+      if (font.web_font_url) {
+        App.typeTester.loadWebFont(family, font.web_font_url);
+      }
+
+      return [
+        '<article class="fontshare-card" data-family="' + escapeHTML(family) + '">',
+        '  <header class="fontshare-card-header">',
+        '    <div class="fontshare-card-title-group">',
+        '      <h3 style="font-family: \'' + escapeHTML(family) + '\', sans-serif;">' + escapeHTML(font.name) + '</h3>',
+        '      <div class="fontshare-card-meta">',
+        '        <span>' + escapeHTML(designer) + '</span>',
+        '        <span>•</span>',
+        '        <span>' + escapeHTML(category) + '</span>',
+        '        <span>•</span>',
+        '        <span>' + weightsCount + ' weights</span>',
+        '      </div>',
+        '    </div>',
+        '    <div class="fontshare-card-actions">',
+        '      <button type="button" class="btn-seg btn-glyph-trigger" data-glyph-font-id="' + escapeHTML(font.id) + '" title="Soi 134 ký tự Tiếng Việt">Glyphs</button>',
+        '      <a href="' + driveUrl + '" class="btn-download-family" target="_blank" rel="noopener noreferrer" title="Tải font">',
+        '        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/></svg>',
+        '        <span>Tải ZIP</span>',
+        '      </a>',
+        '    </div>',
+        '  </header>',
+        '  <div class="fontshare-waterfall" style="font-family: \'' + escapeHTML(family) + '\', sans-serif;">',
+        '    <div class="waterfall-row">',
+        '      <span class="waterfall-size-tag">72px</span>',
+        '      <div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 72px; font-weight: 700;">Việt Nam Độc Lập</div>',
+        '    </div>',
+        '    <div class="waterfall-row">',
+        '      <span class="waterfall-size-tag">48px</span>',
+        '      <div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 48px; font-weight: 600;">Nghệ thuật chữ đồ họa thực chiến</div>',
+        '    </div>',
+        '    <div class="waterfall-row">',
+        '      <span class="waterfall-size-tag">32px</span>',
+        '      <div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 32px; font-weight: 400;">Do bạch kim rất quý nên qua thời gian phong thổ vẫn giữ màu.</div>',
+        '    </div>',
+        '    <div class="waterfall-row">',
+        '      <span class="waterfall-size-tag">20px</span>',
+        '      <div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 20px; font-weight: 400;">Đường nét hài hòa, tinh tế, dấu thanh điệu chuẩn xác bảo toàn vẻ đẹp tiếng Việt có dấu.</div>',
+        '    </div>',
+        '    <div class="waterfall-row">',
+        '      <span class="waterfall-size-tag">14px</span>',
+        '      <div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 14px; font-weight: 400; letter-spacing: 0.05em;">0123456789 • ABCDEFGHIJKLMNOPQRSTUVWXYZ • abcdefghijklmnopqrstuvwxyz • ăâđêôơư</div>',
+        '    </div>',
+        '  </div>',
+        '</article>'
+      ].join('');
+    }).join('');
+
+    // Attach glyph modal openers
+    DOM.fontshareGrid.querySelectorAll('.btn-glyph-trigger').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var fontId = btn.getAttribute('data-glyph-font-id');
+        var target = App.allFonts.find(function (f) { return f.id === fontId; });
+        if (target) openGlyphModal(target);
+      });
+    });
+  }
+
+  /* ==========================================================================
+     FONT PAIRING CONTROLLER (Dual-Font Playground + Accordion + 8 Boards)
+     ========================================================================== */
+
+  var CURATED_PAIRS = [
+    {
+      id: 'pair-1-luxury',
+      style: 'Luxury & Thời Trang',
+      headingFamily: 'SVN-NoeDisplay',
+      headingCategory: 'Serif (Editorial Display)',
+      bodyFamily: 'FDAeonik',
+      bodyCategory: 'Sans Serif (Geometric Clean)',
+      headline: 'Nghệ Thuật Chế Tác Thượng Đẳng & Tinh Thần Đương Đại',
+      subhead: 'Tương phản đỉnh cao giữa nét thanh đậm kịch tính của Serif và nhịp điệu phẳng tối giản của Sans Serif.',
+      paragraph: 'Trong thế giới của sự xa hoa thầm lặng, từng đường cong và tỉ lệ hình học của con chữ phản chiếu triết lý tối giản vượt thời gian. Nét thanh mảnh của serif cổ điển khi song hành cùng sans hiện đại tạo nên chuẩn mực thị giác không thể hòa lẫn.',
+      rationale: 'Serif kịch tính tạo điểm nhấn độc tôn giật tít, trong khi Sans hình học đảm bảo khối văn bản trong suốt, êm mắt khi đọc lướt.'
+    },
+    {
+      id: 'pair-2-tech',
+      style: 'Công Nghệ & Giao Diện Số',
+      headingFamily: 'SVN-ClashDisplay',
+      headingCategory: 'Display Sans (Geometric)',
+      bodyFamily: 'SVN-Gilroy',
+      bodyCategory: 'Neo-Grotesk (UI Standard)',
+      headline: 'Kiến Trúc Dữ Liệu & Kỷ Nguyên Trí Tuệ Nhân Tạo',
+      subhead: 'Cặp đôi chuẩn mực Châu Âu hiện đại cho các sản phẩm công nghệ, SaaS và nền tảng số tiên phong.',
+      paragraph: 'Giao diện sản phẩm số đòi hỏi tính chính xác tuyệt đối trong từng điểm ảnh. ClashDisplay tạo ấn tượng thị giác dứt khoát ở tiêu đề, đồng hành cùng Gilroy dẫn dắt trải nghiệm đọc mượt mà qua hàng nghìn dòng dữ liệu và tài liệu kỹ thuật.',
+      rationale: 'Năng lượng cơ học mạnh mẽ kết hợp cùng độ thoáng của x-height cao, chống mỏi mắt trên màn hình Retina.'
+    },
+    {
+      id: 'pair-3-journal',
+      style: 'Báo Chí & Tạp Chí Tri Thức',
+      headingFamily: 'SVN-Adobe Caslon',
+      headingCategory: 'Oldstyle Serif (Venetian Heritage)',
+      bodyFamily: 'SVN-Apercu Pro',
+      bodyCategory: 'Humanist Sans (Warm Modern)',
+      headline: 'Dòng Chảy Văn Hóa & Nghệ Thuật Chữ Đồ Họa Việt',
+      subhead: 'Âm hưởng học thuật trang trọng, bề thế dung hòa hoàn hảo cùng nét chữ không chân nhân văn, gần gũi.',
+      paragraph: 'Một bài xã luận học thuật cần âm hưởng điềm đạm, trang trọng. Chân chữ cổ điển của Caslon tạo niềm tin vững chãi qua hàng thế kỷ, được làm tươi mới bởi nét chữ không chân Apercu Pro mềm mại, thanh thoát và tràn đầy năng lượng nhân văn.',
+      rationale: 'Chân chữ cổ điển uy tín kết hợp nét chữ không chân hiện đại, duy trì độ tập trung tối đa cho người đọc văn học.'
+    },
+    {
+      id: 'pair-4-brand',
+      style: 'Tuyên Ngôn Thương Hiệu Đột Phá',
+      headingFamily: 'SVN-Abril Fatface',
+      headingCategory: 'Didone Display (Ultra Bold)',
+      bodyFamily: 'SVN-Aptima',
+      bodyCategory: 'Humanist Sans (Balanced Contrast)',
+      headline: 'Định Hình Tương Lai Bằng Những Ý Tưởng Táo Bạo',
+      subhead: 'Cú hích thị giác đầy uy lực ở tiêu đề được cân bằng bởi khối thân bài nhẹ nhàng, minh bạch.',
+      paragraph: 'Khi thương hiệu cần một tuyên ngôn trực diện, Abril Fatface lập tức chiếm lĩnh toàn bộ không gian thị giác với độ tương phản cực đại. Aptima ở thân bài đóng vai trò điểm tựa trung tính, thanh khiết và chân phương, truyền tải trọn vẹn thông điệp.',
+      rationale: 'Tương phản cực đoan (Maximum Contrast) giữa Display siêu đậm và Body thanh mảnh, tạo dấu ấn thị giác khó phai.'
+    },
+    {
+      id: 'pair-5-vintage',
+      style: 'Hoài Niệm Sài Gòn & Di Sản Phố Phường',
+      headingFamily: 'SVN-HC Bourbon Grotesque',
+      headingCategory: 'Vintage Display (Heritage)',
+      bodyFamily: 'SVN-Acta',
+      bodyCategory: 'Humanist Sans (Editorial Warm)',
+      headline: 'Góc Phố Rêu Phong & Ký Ức Bảng Hiệu Sài Gòn Xưa',
+      subhead: 'Khơi gợi phong vị hào sảng của các bảng hiệu vẽ tay thập niên 70 trong một bố cục hiện đại tinh tế.',
+      paragraph: 'Những nét chữ vẽ tay hào sảng của Sài Gòn thập niên trước đem lại rung cảm hoài niệm thân thương. Acta ở phần thân bài nâng niu từng dòng hồi ức một cách tao nhã, ấm áp và thanh lịch, giữ trọn thanh âm bình dị của người Việt.',
+      rationale: 'Gợi không khí hoài niệm của phố phường xưa nhưng văn bản vẫn thoáng đãng, ấm áp và sang trọng.'
+    },
+    {
+      id: 'pair-6-publishing',
+      style: 'Ấn Phẩm Sách & Văn Học Dài Kỳ',
+      headingFamily: 'SVN-Adobe Jenson',
+      headingCategory: 'Venetian Oldstyle (Renaissance)',
+      bodyFamily: 'SVN-A Love Of Thunder',
+      bodyCategory: 'Humanist Sans (Friendly Soft)',
+      headline: 'Hương Thơm Của Giấy Mộc & Tình Yêu Với Sách',
+      subhead: 'Bộ đôi truyền thống bảo vệ mắt tối ưu, mang vẻ đẹp hoài cổ của những trang bản thảo kinh điển.',
+      paragraph: 'Đọc sách là hành trình nuôi dưỡng tâm hồn. Adobe Jenson mang vẻ đẹp thủ bản thời Phục Hưng với trục nghiêng mềm mại, kết hợp hài hòa cùng A Love Of Thunder phóng khoáng, giúp người đọc đắm chìm trong từng trang truyện dài.',
+      rationale: 'Nét chữ giàu cảm xúc nhân văn, trục nghiêng hữu cơ tự nhiên, bảo vệ thị giác khi đọc các tác phẩm dài kỳ.'
+    },
+    {
+      id: 'pair-7-nordic',
+      style: 'Tối Giản Bắc Âu (Nordic Minimal — Đảo Ngược)',
+      headingFamily: 'SVN-Aguila',
+      headingCategory: 'Geometric Sans (Clean Modern)',
+      bodyFamily: 'SVN-Addington CF',
+      bodyCategory: 'Book Serif (Warm & Elegant)',
+      headline: 'Vẻ Đẹp Thuần Khiết Của Công Năng & Ánh Sáng',
+      subhead: 'Phá cách bằng việc đảo ngược truyền thống: Tiêu đề hình học sắc gọn, thân bài có chân ấm cúng.',
+      paragraph: 'Táo bạo khi đảo ngược cấu trúc truyền thống: Tiêu đề phẳng và dứt khoát như kiến trúc bê tông trần Bắc Âu, trong khi đoạn văn thân bài lại nồng ấm, thân mật với các chân chữ uốn cong nhẹ nhàng của Addington CF, tạo nên sự giao thoa thị giác bất ngờ.',
+      rationale: 'Đảo ngược vai trò: Tiêu đề dứt khoát hiện đại, thân bài có chân ấm áp, tạo nhịp điệu đọc mới mẻ.'
+    },
+    {
+      id: 'pair-8-creative',
+      style: 'Sáng Tạo & Cảm Xúc Nghệ Thuật',
+      headingFamily: 'SVN-Recoleta',
+      headingCategory: 'Soft Organic Serif (Playful)',
+      bodyFamily: 'SVN-Alpina',
+      bodyCategory: 'Modern Serif/Sans Hybrid',
+      headline: 'Khơi Nguồn Cảm Hứng Từ Những Điều Giản Dị Nhất',
+      subhead: 'Đường cong hữu cơ đầy cảm xúc hòa quyện cùng phong cách thiết kế đương đại của thế hệ sáng tạo trẻ.',
+      paragraph: 'Đường cong tròn đầy đặn của Recoleta mang đến nguồn năng lượng vui tươi, ấm áp và giàu tính nghệ thuật. Khi kết hợp cùng sự chuẩn mực thanh nhã của Alpina, tổ hợp tạo nên bản sắc độc đáo cho các ấn phẩm sáng tạo và thương hiệu phong cách sống.',
+      rationale: 'Đường cong mềm mại ở tiêu đề đem lại cảm giác thân thiện, độc đáo, kích thích tư duy nghệ thuật.'
+    }
+  ];
+
+  function initPairView() {
+    if (!DOM.pairHeadingSelect || !DOM.pairBodySelect) return;
+
+    // Populate selects if empty
+    if (DOM.pairHeadingSelect.options.length === 0) {
+      populatePairSelects();
+    }
+
+    // Set initial pair if not set
+    if (!App.pairState.headingFont || !App.pairState.bodyFont) {
+      var defaultHeading = App.allFonts.find(function (f) {
+        return f.name === 'SVN-NoeDisplay' || f.name === 'SVN-Adobe Caslon' ||
+          (f.category && f.category.indexOf('Serif') !== -1 && f.category.indexOf('Sans') === -1);
+      });
+      var defaultBody = App.allFonts.find(function (f) {
+        return f.name === 'FDAeonik' || f.name === 'SVN-Gilroy' || f.name === 'SVN-Aptima' ||
+          (f.category && f.category.indexOf('Sans') !== -1);
+      });
+
+      App.pairState.headingFont = defaultHeading || App.allFonts[0];
+      App.pairState.bodyFont = defaultBody || App.allFonts[1] || App.allFonts[0];
+
+      if (App.pairState.headingFont && DOM.pairHeadingSelect) DOM.pairHeadingSelect.value = App.pairState.headingFont.id;
+      if (App.pairState.bodyFont && DOM.pairBodySelect) DOM.pairBodySelect.value = App.pairState.bodyFont.id;
+    }
+
+    updatePairArticle();
+    updatePairAccordion();
+    renderCuratedPairs();
+  }
+
+  function populatePairSelects() {
+    DOM.pairHeadingSelect.innerHTML = '';
+    DOM.pairBodySelect.innerHTML = '';
+
+    var serifs = [];
+    var sans = [];
+    var others = [];
+
+    App.allFonts.forEach(function (f) {
+      var cat = (f.category || '').toLowerCase();
+      if (cat.indexOf('serif') !== -1 && cat.indexOf('sans') === -1) {
+        serifs.push(f);
+      } else if (cat.indexOf('sans') !== -1) {
+        sans.push(f);
+      } else {
+        others.push(f);
+      }
+    });
+
+    function appendGroup(select, label, fontList) {
+      var optgroup = document.createElement('optgroup');
+      optgroup.label = label;
+      fontList.forEach(function (f) {
+        var opt = document.createElement('option');
+        opt.value = f.id;
+        opt.textContent = f.name + ' (' + (f.category || 'Font') + ')';
+        optgroup.appendChild(opt);
+      });
+      select.appendChild(optgroup);
+    }
+
+    // For Heading: recommend Serifs first
+    appendGroup(DOM.pairHeadingSelect, '★ Khuyên dùng cho Tiêu đề: Serif (Có chân)', serifs);
+    appendGroup(DOM.pairHeadingSelect, 'Sans Serif (Không chân)', sans);
+    appendGroup(DOM.pairHeadingSelect, 'Display, Vintage & Script', others);
+
+    // For Body: recommend Sans first
+    appendGroup(DOM.pairBodySelect, '★ Khuyên dùng cho Thân bài: Sans Serif (Không chân)', sans);
+    appendGroup(DOM.pairBodySelect, 'Serif (Có chân)', serifs);
+    appendGroup(DOM.pairBodySelect, 'Display, Vintage & Script', others);
+  }
+
+  function updatePairArticle() {
+    var headingFont = App.pairState.headingFont;
+    var bodyFont = App.pairState.bodyFont;
+
+    if (!headingFont || !bodyFont) return;
+
+    // Load web fonts
+    if (headingFont.web_font_url) App.typeTester.loadWebFont(headingFont.family || headingFont.name, headingFont.web_font_url);
+    if (bodyFont.web_font_url) App.typeTester.loadWebFont(bodyFont.family || bodyFont.name, bodyFont.web_font_url);
+
+    var hFamily = headingFont.family || headingFont.name;
+    var bFamily = bodyFont.family || bodyFont.name;
+
+    if (DOM.pairPreviewHeading) {
+      DOM.pairPreviewHeading.style.fontFamily = '\'' + hFamily + '\', serif';
+      DOM.pairPreviewHeading.style.fontSize = App.pairState.headingSize + 'px';
+      DOM.pairPreviewHeading.style.letterSpacing = App.pairState.kerning + 'em';
+    }
+
+    if (DOM.pairPreviewSubhead) {
+      DOM.pairPreviewSubhead.style.fontFamily = '\'' + bFamily + '\', sans-serif';
+      DOM.pairPreviewSubhead.style.letterSpacing = App.pairState.kerning + 'em';
+    }
+
+    if (DOM.pairPreviewBody) {
+      DOM.pairPreviewBody.style.fontFamily = '\'' + bFamily + '\', sans-serif';
+      DOM.pairPreviewBody.style.fontSize = App.pairState.bodySize + 'px';
+      DOM.pairPreviewBody.style.lineHeight = App.pairState.lineHeight;
+      DOM.pairPreviewBody.style.letterSpacing = App.pairState.kerning + 'em';
+    }
+
+    // Update download link
+    if (DOM.pairDownloadBothBtn) {
+      DOM.pairDownloadBothBtn.href = headingFont.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+      DOM.pairDownloadBothBtn.title = 'Tải ' + headingFont.name + ' và ' + bodyFont.name;
+    }
+  }
+
+  function updatePairAccordion() {
+    if (!DOM.pairingAccordionContent) return;
+
+    var h = App.pairState.headingFont;
+    var b = App.pairState.bodyFont;
+    if (!h || !b) return;
+
+    var hCat = h.category || 'Serif';
+    var bCat = b.category || 'Sans Serif';
+    var isSerifHeading = (hCat.toLowerCase().indexOf('serif') !== -1 && hCat.toLowerCase().indexOf('sans') === -1);
+    var isSansBody = (bCat.toLowerCase().indexOf('sans') !== -1);
+
+    var contrastNote = '';
+    if (isSerifHeading && isSansBody) {
+      contrastNote = 'Đây là <strong>chuẩn mực phối font kinh điển (Gold Standard)</strong>: Font có chân ' + escapeHTML(h.name) + ' đóng vai trò điểm neo thị giác đầy uy quyền cho tiêu đề, còn font không chân ' + escapeHTML(b.name) + ' với x-height thoáng và nét đều mang lại trải nghiệm đọc thân bài mượt mà, chống mỏi mắt.';
+    } else if (!isSerifHeading && !isSansBody) {
+      contrastNote = '<strong>Phá cách hiện đại (Reverse Pairing)</strong>: Tiêu đề dùng font không chân ' + escapeHTML(h.name) + ' tạo cảm giác dứt khoát, tối giản, kết hợp thân bài có chân ' + escapeHTML(b.name) + ' mang âm hưởng ấm cúng, sang trọng như sách in thủ bản.';
+    } else {
+      contrastNote = '<strong>Tổ hợp đồng điệu (Harmonic Pairing)</strong>: Hai họ font ' + escapeHTML(h.name) + ' và ' + escapeHTML(b.name) + ' bổ trợ lẫn nhau, tạo nên tính thống nhất cao trong ngôn ngữ thị giác.';
+    }
+
+    DOM.pairingAccordionContent.innerHTML = [
+      '<div class="dynamic-analysis-box">',
+      '  <div class="dynamic-analysis-title">',
+      '    <span>✦ Đánh giá tổ hợp: ' + escapeHTML(h.name) + ' (Tiêu đề) + ' + escapeHTML(b.name) + ' (Thân bài)</span>',
+      '  </div>',
+      '  <div class="dynamic-analysis-text">' + contrastNote + '</div>',
+      '</div>',
+      '<div class="logic-cards-grid">',
+      '  <div class="logic-card">',
+      '    <span class="logic-card-tag">1. Tương Phản Hình Thái</span>',
+      '    <h4 class="logic-card-title">Serif vs. Sans Serif</h4>',
+      '    <p class="logic-card-desc">Chân chữ (serifs) và độ tương phản nét thanh/đậm tạo cảm xúc mạnh mẽ cho tiêu đề lớn. Nét chữ phẳng (sans) loại bỏ mọi chi tiết thừa, giúp mắt nhận diện nhanh các mặt chữ ở kích thước nhỏ (14-18px).</p>',
+      '  </div>',
+      '  <div class="logic-card">',
+      '    <span class="logic-card-tag">2. Tỉ Lệ &amp; Nhịp Điệu</span>',
+      '    <h4 class="logic-card-title">Cân Bằng X-Height &amp; Trục Đứng</h4>',
+      '    <p class="logic-card-desc">Tỉ lệ chiều cao thân chữ thường (x-height) tương đương và trục đối xứng thẳng đứng (vertical stress) giúp ánh nhìn của độc giả chuyển mượt mà từ dòng tít giật xuống đoạn văn đầu tiên mà không bị gãy nhịp.</p>',
+      '  </div>',
+      '  <div class="logic-card">',
+      '    <span class="logic-card-tag">3. Ngữ Cảnh Ứng Dụng</span>',
+      '    <h4 class="logic-card-title">Nhận Diện &amp; Xuất Bản</h4>',
+      '    <p class="logic-card-desc">Tối ưu cho thiết kế tạp chí editorial, website thương hiệu, trang đích (landing page) giáo dục và ấn phẩm truyền thông. Tiêu đề kể câu chuyện cảm xúc, thân bài truyền tải nội dung súc tích.</p>',
+      '  </div>',
+      '</div>'
+    ].join('');
+  }
+
+  function renderCuratedPairs() {
+    if (!DOM.curatedPairsGrid) return;
+
+    DOM.curatedPairsGrid.innerHTML = CURATED_PAIRS.map(function (pair, idx) {
+      var hFont = App.allFonts.find(function (f) { return f.name === pair.headingFamily; }) || { name: pair.headingFamily, drive_folder_url: '#' };
+      var bFont = App.allFonts.find(function (f) { return f.name === pair.bodyFamily; }) || { name: pair.bodyFamily, drive_folder_url: '#' };
+
+      if (hFont.web_font_url) App.typeTester.loadWebFont(hFont.family || hFont.name, hFont.web_font_url);
+      if (bFont.web_font_url) App.typeTester.loadWebFont(bFont.family || bFont.name, bFont.web_font_url);
+
+      var hFamily = hFont.family || hFont.name;
+      var bFamily = bFont.family || bFont.name;
+      var driveUrl = hFont.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+
+      return [
+        '<article class="curated-card" data-pair-id="' + escapeHTML(pair.id) + '">',
+        '  <div class="curated-card-top">',
+        '    <div class="curated-card-badge-row">',
+        '      <span class="curated-style-badge">#' + (idx + 1) + ' ' + escapeHTML(pair.style) + '</span>',
+        '      <span class="curated-fonts-label">' + escapeHTML(pair.headingFamily) + ' + ' + escapeHTML(pair.bodyFamily) + '</span>',
+        '    </div>',
+        '    <div class="curated-specimen-box">',
+        '      <div class="curated-headline" style="font-family: \'' + escapeHTML(hFamily) + '\', serif;">',
+        '        ' + escapeHTML(pair.headline),
+        '      </div>',
+        '      <div class="curated-paragraph" style="font-family: \'' + escapeHTML(bFamily) + '\', sans-serif;">',
+        '        ' + escapeHTML(pair.paragraph),
+        '      </div>',
+        '    </div>',
+        '  </div>',
+        '  <div class="curated-card-footer">',
+        '    <button type="button" class="btn-apply-pair" data-load-pair="' + escapeHTML(pair.id) + '">',
+        '      ✦ Thử trên Playground',
+        '    </button>',
+        '    <a href="' + driveUrl + '" class="btn-download-pair" target="_blank" rel="noopener noreferrer" title="Tải font">',
+        '      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/></svg>',
+        '      <span>Tải trọn bộ</span>',
+        '    </a>',
+        '  </div>',
+        '</article>'
+      ].join('');
+    }).join('');
+
+    // Attach "Apply to Playground" handlers
+    DOM.curatedPairsGrid.querySelectorAll('[data-load-pair]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var pairId = btn.getAttribute('data-load-pair');
+        applyCuratedPair(pairId);
+      });
+    });
+  }
+
+  function applyCuratedPair(pairId) {
+    var pair = CURATED_PAIRS.find(function (p) { return p.id === pairId; });
+    if (!pair) return;
+
+    var hFont = App.allFonts.find(function (f) { return f.name === pair.headingFamily; });
+    var bFont = App.allFonts.find(function (f) { return f.name === pair.bodyFamily; });
+
+    if (hFont) {
+      App.pairState.headingFont = hFont;
+      if (DOM.pairHeadingSelect) DOM.pairHeadingSelect.value = hFont.id;
+    }
+    if (bFont) {
+      App.pairState.bodyFont = bFont;
+      if (DOM.pairBodySelect) DOM.pairBodySelect.value = bFont.id;
+    }
+
+    if (DOM.pairPreviewHeading) DOM.pairPreviewHeading.textContent = pair.headline;
+    if (DOM.pairPreviewSubhead) DOM.pairPreviewSubhead.textContent = pair.subhead;
+    if (DOM.pairPreviewBody) DOM.pairPreviewBody.innerHTML = '<p>' + escapeHTML(pair.paragraph) + '</p>';
+
+    updatePairArticle();
+    updatePairAccordion();
+
+    // Scroll smoothly to playground
+    if (DOM.pairView) {
+      DOM.pairView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    showToast('Đã nạp bảng phối mẫu: ' + pair.style);
+  }
+
+  function swapPairRoles() {
+    var temp = App.pairState.headingFont;
+    App.pairState.headingFont = App.pairState.bodyFont;
+    App.pairState.bodyFont = temp;
+
+    if (App.pairState.headingFont && DOM.pairHeadingSelect) {
+      DOM.pairHeadingSelect.value = App.pairState.headingFont.id;
+    }
+    if (App.pairState.bodyFont && DOM.pairBodySelect) {
+      DOM.pairBodySelect.value = App.pairState.bodyFont.id;
+    }
+
+    updatePairArticle();
+    updatePairAccordion();
+    showToast('Đã hoán đổi vai trò font Tiêu đề ⇄ Đoạn văn');
+  }
+
+  function randomizePair() {
+    var serifs = App.allFonts.filter(function (f) {
+      var cat = (f.category || '').toLowerCase();
+      return cat.indexOf('serif') !== -1 && cat.indexOf('sans') === -1;
+    });
+    var sans = App.allFonts.filter(function (f) {
+      var cat = (f.category || '').toLowerCase();
+      return cat.indexOf('sans') !== -1;
+    });
+
+    if (serifs.length > 0) {
+      var randSerif = serifs[Math.floor(Math.random() * serifs.length)];
+      App.pairState.headingFont = randSerif;
+      if (DOM.pairHeadingSelect) DOM.pairHeadingSelect.value = randSerif.id;
+    }
+    if (sans.length > 0) {
+      var randSans = sans[Math.floor(Math.random() * sans.length)];
+      App.pairState.bodyFont = randSans;
+      if (DOM.pairBodySelect) DOM.pairBodySelect.value = randSans.id;
+    }
+
+    updatePairArticle();
+    updatePairAccordion();
+    showToast('Đã tạo cặp ngẫu nhiên: ' + App.pairState.headingFont.name + ' + ' + App.pairState.bodyFont.name);
   }
 
   /**
    * Initializes event listeners across all interactive controls.
    */
   function bindEvents() {
+    // Multi-View switching
+    if (DOM.viewBtns) {
+      DOM.viewBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          switchView(btn.getAttribute('data-view'));
+        });
+      });
+    }
+
+    // Fontshare View search & shuffle
+    if (DOM.fontshareSearch) {
+      DOM.fontshareSearch.addEventListener('input', function () {
+        renderFontshareView();
+      });
+    }
+    if (DOM.fontshareShuffleBtn) {
+      DOM.fontshareShuffleBtn.addEventListener('click', function () {
+        App.allFonts.sort(function () { return 0.5 - Math.random(); });
+        renderFontshareView();
+        showToast('Đã xáo trộn danh sách font!');
+      });
+    }
+
+    // Pair View font selectors & actions
+    if (DOM.pairHeadingSelect) {
+      DOM.pairHeadingSelect.addEventListener('change', function (e) {
+        var found = App.allFonts.find(function (f) { return f.id === e.target.value; });
+        if (found) {
+          App.pairState.headingFont = found;
+          updatePairArticle();
+          updatePairAccordion();
+        }
+      });
+    }
+    if (DOM.pairBodySelect) {
+      DOM.pairBodySelect.addEventListener('change', function (e) {
+        var found = App.allFonts.find(function (f) { return f.id === e.target.value; });
+        if (found) {
+          App.pairState.bodyFont = found;
+          updatePairArticle();
+          updatePairAccordion();
+        }
+      });
+    }
+    if (DOM.pairSwapBtn) {
+      DOM.pairSwapBtn.addEventListener('click', swapPairRoles);
+    }
+    if (DOM.pairRandomBtn) {
+      DOM.pairRandomBtn.addEventListener('click', randomizePair);
+    }
+
+    // Pair Sliders
+    if (DOM.pairHeadingSize) {
+      DOM.pairHeadingSize.addEventListener('input', function (e) {
+        App.pairState.headingSize = parseInt(e.target.value, 10);
+        if (DOM.pairHeadingSizeVal) DOM.pairHeadingSizeVal.textContent = e.target.value + 'px';
+        updatePairArticle();
+      });
+    }
+    if (DOM.pairBodySize) {
+      DOM.pairBodySize.addEventListener('input', function (e) {
+        App.pairState.bodySize = parseInt(e.target.value, 10);
+        if (DOM.pairBodySizeVal) DOM.pairBodySizeVal.textContent = e.target.value + 'px';
+        updatePairArticle();
+      });
+    }
+    if (DOM.pairLineHeight) {
+      DOM.pairLineHeight.addEventListener('input', function (e) {
+        App.pairState.lineHeight = parseFloat(e.target.value);
+        if (DOM.pairLineHeightVal) DOM.pairLineHeightVal.textContent = parseFloat(e.target.value).toFixed(2);
+        updatePairArticle();
+      });
+    }
+    if (DOM.pairKerning) {
+      DOM.pairKerning.addEventListener('input', function (e) {
+        App.pairState.kerning = parseFloat(e.target.value);
+        if (DOM.pairKerningVal) DOM.pairKerningVal.textContent = parseFloat(e.target.value).toFixed(2) + 'em';
+        updatePairArticle();
+      });
+    }
+
     // Theme switching
     DOM.themeBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -1031,6 +1685,14 @@
 
       // Initial Filter & Render
       applyFilters();
+
+      // Check URL hash for initial view mode (#fontshare, #pair, or catalog)
+      var hash = (window.location.hash || '').replace('#', '').toLowerCase();
+      if (hash === 'fontshare' || hash === 'pair') {
+        switchView(hash);
+      } else {
+        switchView('catalog');
+      }
     } catch (err) {
       console.error('[fedu-font] Failed to load catalog.json:', err);
       if (DOM.fontGrid) {
