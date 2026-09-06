@@ -1,0 +1,83 @@
+[
+  {
+    "font_name": "FD Addington CF",
+    "found": true,
+    "button_href": "dist/zips/FD/FD-AddingtonCF.zip",
+    "resolved_url": "https://fonthub.fedu.vn/dist/zips/FD/FD-AddingtonCF.zip",
+    "download_attr": "FD-AddingtonCF.zip",
+    "target_attr": null,
+    "is_drive": false,
+    "is_direct_zip": true,
+    "download_status": "SUCCESS_PLAYWRIGHT_CLICK",
+    "file_size": 224118,
+    "zip_files": [
+      "FD-Addington CF/FDAddingtonCFBold.otf",
+      "FD-Addington CF/FDAddingtonCF.otf",
+      "FD-Addington CF/FDAddingtonCFThin.otf",
+      "FD-Addington CF/FDAddingtonCFItalic.ttf"
+    ],
+    "has_svn_in_files": false,
+    "has_fd_in_files": true
+  },
+  {
+    "font_name": "FD Adobe Caslon",
+    "found": true,
+    "button_href": "dist/zips/FD/FD-AdobeCaslon.zip",
+    "resolved_url": "https://fonthub.fedu.vn/dist/zips/FD/FD-AdobeCaslon.zip",
+    "download_attr": "FD-AdobeCaslon.zip",
+    "target_attr": null,
+    "is_drive": false,
+    "is_direct_zip": true,
+    "download_status": "SUCCESS_PLAYWRIGHT_CLICK",
+    "file_size": 1631597,
+    "zip_files": [
+      "FD-Adobe Caslon/FDAdobeCaslonBoldItalic.ttf",
+      "FD-Adobe Caslon/FDAdobeCaslonBold.ttf",
+      "FD-Adobe Caslon/FDAdobeCaslonItalic.ttf",
+      "FD-Adobe Caslon/FDAdobeCaslon.ttf",
+      "FD-Adobe Caslon/FDAdobeCaslonSemiBoldItalic.ttf",
+      "FD-Adobe Caslon/FDAdobeCaslonSemiBold.ttf"
+    ],
+    "has_svn_in_files": false,
+    "has_fd_in_files": true
+  },
+  {
+    "font_name": "FD Adobe Jenson",
+    "found": true,
+    "button_href": "dist/zips/FD/FD-AdobeJenson.zip",
+    "resolved_url": "https://fonthub.fedu.vn/dist/zips/FD/FD-AdobeJenson.zip",
+    "download_attr": "FD-AdobeJenson.zip",
+    "target_attr": null,
+    "is_drive": false,
+    "is_direct_zip": true,
+    "download_status": "SUCCESS_PLAYWRIGHT_CLICK",
+    "file_size": 673412,
+    "zip_files": [
+      "FD-Adobe Jenson/FDAdobeJensonBoldItalic.ttf",
+      "FD-Adobe Jenson/FDAdobeJensonBold.ttf",
+      "FD-Adobe Jenson/FDAdobeJensonItalic.ttf",
+      "FD-Adobe Jenson/FDAdobeJenson.ttf"
+    ],
+    "has_svn_in_files": false,
+    "has_fd_in_files": true
+  },
+  {
+    "font_name": "FD Agency FB",
+    "found": true,
+    "button_href": "dist/zips/FD/FD-AgencyFB.zip",
+    "resolved_url": "https://fonthub.fedu.vn/dist/zips/FD/FD-AgencyFB.zip",
+    "download_attr": "FD-AgencyFB.zip",
+    "target_attr": null,
+    "is_drive": false,
+    "is_direct_zip": true,
+    "download_status": "SUCCESS_PLAYWRIGHT_CLICK",
+    "file_size": 89458,
+    "zip_files": [
+      "FD-Agency FB/FDAgencyFBBold.ttf",
+      "FD-Agency FB/FDAgencyFB.ttf",
+      "FD-Agency FB/FDAgencyFBBlack.ttf"
+    ],
+    "has_svn_in_files": false,
+    "has_fd_in_files": true
+  }
+]

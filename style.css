@@ -1113,12 +1113,24 @@ input[type="range"]::-moz-range-thumb {
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   cursor: pointer;
+  text-decoration: none;
   transition: all var(--trans-fast);
 }
 
 .btn-icon-action:hover {
   color: var(--text-primary);
   border-color: var(--border-strong);
+}
+
+.btn-drive-link {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.25);
+}
+
+.btn-drive-link:hover {
+  color: #7dd3fc;
+  border-color: rgba(56, 189, 248, 0.5);
+  background: rgba(56, 189, 248, 0.08);
 }
 
 /* --------------------------------------------------------------------------

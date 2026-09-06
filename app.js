@@ -468,11 +468,12 @@
     }
 
     var isGRFont = isGT || (font.id && font.id.startsWith('gr-'));
-    var defaultDriveUrl = isGRFont
-      ? 'https://drive.google.com/drive/folders/1lm3iFyPj9cXJeVqplp8PbLXWSlDJ6lll?usp=sharing'
-      : 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
-    var downloadHref = font.zip_url || font.download_url || font.drive_folder_url || font.drive_link || defaultDriveUrl;
-    var isDirectZip = Boolean(font.zip_url || (font.download_url && font.download_url.endsWith('.zip')));
+    var defaultDriveFolder = isGRFont
+      ? 'https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing'
+      : 'https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing';
+    var driveViewUrl = font.drive_view_url || font.drive_url || font.drive_link || defaultDriveFolder;
+    var driveDownloadUrl = font.drive_download_url || font.download_url || font.zip_url || driveViewUrl;
+    var downloadHref = driveDownloadUrl;
     var downloadTooltip = 'Tải trọn bộ ' + escapeHTML(font.name) + ' (' + weightsCount + ' styles)';
 
     var category = font.category || (font.matrix_3d && font.matrix_3d.style) || 'Sans Serif';
@@ -548,7 +549,7 @@
       '    </div>',
       '  </details>',
       '  <footer class="card-footer">',
-      '    <a href="' + downloadHref + '" class="btn-download-family"' + (isDirectZip ? ' download="' + escapeHTML(font.zip_filename || (font.name + '.zip')) + '"' : ' target="_blank"') + ' rel="noopener noreferrer" title="' + downloadTooltip + '">',
+      '    <a href="' + downloadHref + '" class="btn-download-family" target="_blank" rel="noopener noreferrer" title="' + downloadTooltip + '">',
       '      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">',
       '        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>',
       '        <polyline points="7 10 12 15 17 10"/>',
@@ -557,6 +558,7 @@
       '      <span>Tải Trọn Bộ (.zip)</span>',
       '    </a>',
       '    <div class="secondary-actions">',
+      '      <a href="' + driveViewUrl + '" class="btn-icon-action btn-drive-link" target="_blank" rel="noopener noreferrer" title="Mở file trên Google Drive">Drive ↗</a>',
       '      <button type="button" class="btn-icon-action btn-open-glyphs" data-action="glyphs" title="Xem bảng ký tự &amp; dấu Tiếng Việt">Glyphs</button>',
       '      <button type="button" class="btn-icon-action btn-copy-css" data-action="copy-css" title="Copy mã @font-face CSS">CSS</button>',
       '    </div>',
@@ -1095,10 +1097,10 @@
       var designer = font.designer || 'FEDU Type Foundry';
       var weightsCount = font.weights ? font.weights.length : (font.files_count || 1);
       var defaultDrive = (font.id && font.id.startsWith('gr-'))
-        ? 'https://drive.google.com/drive/folders/1lm3iFyPj9cXJeVqplp8PbLXWSlDJ6lll?usp=sharing'
-        : 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
-      var driveUrl = font.zip_url || font.download_url || font.drive_folder_url || font.drive_link || defaultDrive;
-      var isDirectZip = Boolean(font.zip_url || (font.download_url && font.download_url.endsWith('.zip')));
+        ? 'https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing'
+        : 'https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing';
+      var driveView = font.drive_view_url || font.drive_url || font.drive_link || defaultDrive;
+      var driveDown = font.drive_download_url || font.download_url || font.zip_url || driveView;
       var isVariable = font.is_variable || weightsCount >= 6;
       var sourceType = font.source_type || (font.license || 'Closed Source');
       var isFav = isFontFavorite(font.id);
@@ -1152,7 +1154,8 @@
         '    <div class="fs-actions">',
         '      <button type="button" class="fs-btn-waterfall-toggle" data-action="toggle-waterfall">Waterfall ▾</button>',
         '      <button type="button" class="btn-seg btn-glyph-trigger" data-glyph-font-id="' + escapeHTML(font.id) + '">Glyphs</button>',
-        '      <a href="' + driveUrl + '" class="fs-download-link"' + (isDirectZip ? ' download="' + escapeHTML(font.zip_filename || (font.name + '.zip')) + '"' : ' target="_blank"') + ' rel="noopener noreferrer">Tải ZIP</a>',
+        '      <a href="' + escapeHTML(driveView) + '" class="btn-seg btn-drive-link" target="_blank" rel="noopener noreferrer" title="Mở trên Google Drive">Drive ↗</a>',
+        '      <a href="' + escapeHTML(driveDown) + '" class="fs-download-link" target="_blank" rel="noopener noreferrer">Tải ZIP</a>',
         '    </div>',
         '  </div>',
         '</article>'
@@ -1624,7 +1627,7 @@
 
     // Update download link
     if (DOM.pairDownloadBothBtn) {
-      DOM.pairDownloadBothBtn.href = headingFont.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+      DOM.pairDownloadBothBtn.href = headingFont.drive_download_url || headingFont.drive_view_url || headingFont.drive_folder_url || 'https://drive.google.com/drive/folders/1vybz5LwFasmy9kRGBVcX3tX6vYfEoi9j?usp=sharing';
       DOM.pairDownloadBothBtn.title = 'Tải ' + headingFont.name + ' và ' + bodyFont.name;
     }
   }
@@ -1689,7 +1692,8 @@
 
       var hFamily = hFont.family || hFont.name;
       var bFamily = bFont.family || bFont.name;
-      var driveUrl = hFont.drive_folder_url || 'https://drive.google.com/drive/folders/1FKhlQEoj44xJXqWAFCCSwMv6JgBvIKao?usp=sharing';
+      var defaultPairDrive = 'https://drive.google.com/drive/folders/1vybz5LwFasmy9kRGBVcX3tX6vYfEoi9j?usp=sharing';
+      var driveUrl = hFont.drive_download_url || hFont.drive_view_url || hFont.drive_folder_url || defaultPairDrive;
 
       return [
         '<article class="curated-card" data-pair-id="' + escapeHTML(pair.id) + '">',
