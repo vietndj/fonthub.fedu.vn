@@ -15,7 +15,7 @@
 
   /* Type Tester Live Batching Variables (Controlled by Sliders at 60 FPS) */
   --tester-font-size: 36px;
-  --tester-line-height: 1.2;
+  --tester-line-height: 1.35;
   --tester-letter-spacing: 0.00em;
   --tester-text-align: left;
   --tester-text-transform: none;
@@ -852,12 +852,13 @@ input[type="range"]::-moz-range-thumb {
 
 /* Specimen Area (Reactive to Global Sliders) */
 .card-specimen-wrap {
-  min-height: 90px;
-  padding: 12px 0;
+  min-height: 96px;
+  padding: 18px 0;
   border-top: 1px dashed var(--border-subtle);
   border-bottom: 1px dashed var(--border-subtle);
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 
 .preview-text {
@@ -871,6 +872,8 @@ input[type="range"]::-moz-range-thumb {
   word-break: break-word;
   overflow-wrap: anywhere;
   cursor: text;
+  padding: 8px 0;
+  overflow: visible;
   transition: color var(--trans-fast);
 }
 
@@ -1537,7 +1540,9 @@ input[type="range"]::-moz-range-thumb {
   flex: 1;
   color: var(--text-primary);
   outline: none;
-  line-height: 1.25;
+  line-height: 1.35;
+  padding: 4px 0;
+  overflow: visible;
   transition: color var(--trans-fast);
 }
 
@@ -2891,18 +2896,21 @@ input[type="range"]::-moz-range-thumb {
 
 .fs-item-specimen-wrap {
   width: 100%;
-  overflow: hidden;
-  margin: 16px 0 24px 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding: 24px 0;
+  margin: 12px 0 20px 0;
 }
 
 .fs-item-specimen {
   font-size: 210px;
-  line-height: 1.0;
+  line-height: 1.25;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: clip;
   color: var(--fontshare-text);
   outline: none;
+  padding: 12px 0;
 }
 
 .fs-item-meta-bottom {
@@ -2967,9 +2975,11 @@ input[type="range"]::-moz-range-thumb {
 
 .fontshare-grid-mode .fs-item-specimen {
   font-size: 56px !important;
-  line-height: 1.15;
+  line-height: 1.35;
   white-space: normal;
   min-height: 130px;
+  padding: 12px 0;
+  overflow: visible;
 }
 
 /* Floating Scroll to Top button */

@@ -64,7 +64,7 @@ const TARGET_FONTS = [
   { query: 'GR Sectra', key: 'gr-sectra' },
   { query: 'GR America', key: 'gr-america' },
   { query: 'FD NoeDisplay', key: 'fd-noedisplay' },
-  { query: 'FDAeonik', key: 'fdaeonik' },
+  { query: 'FD Aeonik', key: 'fdaeonik' },
   { query: 'FD ClashDisplay', key: 'fd-clashdisplay' },
   { query: 'FD Gilroy', key: 'fd-gilroy' },
   { query: 'GR Ultra', key: 'gr-ultra' },
@@ -112,7 +112,7 @@ TARGET_FONTS.forEach(({ query, key }) => {
 console.log(`\n${BOLD}▶ [Audit 2] 8 Curated Pairing Boards Font Asset Verification${RESET}`);
 
 const CURATED_PAIRS_LIST = [
-  { id: 'pair-1-luxury', h: 'FD NoeDisplay', b: 'FDAeonik' },
+  { id: 'pair-1-luxury', h: 'FD NoeDisplay', b: 'FD Aeonik' },
   { id: 'pair-2-tech', h: 'FD ClashDisplay', b: 'FD Gilroy' },
   { id: 'pair-3-journal', h: 'FD Adobe Caslon', b: 'FD Apercu Pro' },
   { id: 'pair-4-brand', h: 'FD Abril Fatface', b: 'FD Aptima' },

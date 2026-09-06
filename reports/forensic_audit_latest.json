@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06 18:15:40",
+  "timestamp": "2026-09-06 18:25:15",
   "gt_metadata_audit": {
     "GRAlpinaFine-Bold.otf": {
       "clean": true,
@@ -33956,7 +33956,7 @@
   "fd_metadata_audit": {},
   "macos_install_audit": {
     "gr_count": 1036,
-    "fd_count": 1876,
+    "fd_count": 2005,
     "corrupt_count": 0,
     "corrupted_files": []
   },
@@ -33970,7 +33970,7 @@
     "fd_pass": 0,
     "fd_fail": 0,
     "mac_gr_count": 1036,
-    "mac_fd_count": 1876,
+    "mac_fd_count": 2005,
     "mac_corrupt_count": 0,
     "drive_total_checked": 382,
     "drive_valid": 382,

@@ -15,7 +15,7 @@
 
   /* Type Tester Live Batching Variables (Controlled by Sliders at 60 FPS) */
   --tester-font-size: 36px;
-  --tester-line-height: 1.2;
+  --tester-line-height: 1.40;
   --tester-letter-spacing: 0.00em;
   --tester-text-align: left;
   --tester-text-transform: none;
@@ -852,18 +852,22 @@ input[type="range"]::-moz-range-thumb {
 
 /* Specimen Area (Reactive to Global Sliders) */
 .card-specimen-wrap {
-  min-height: 90px;
-  padding: 12px 0;
+  min-height: 100px;
+  padding: 18px 0;
   border-top: 1px dashed var(--border-subtle);
   border-bottom: 1px dashed var(--border-subtle);
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 
-.preview-text {
+.preview-text,
+.font-preview,
+.list-view-item,
+.editable-preview {
   width: 100%;
   font-size: var(--tester-font-size);
-  line-height: var(--tester-line-height);
+  line-height: var(--tester-line-height, 1.40);
   letter-spacing: var(--tester-letter-spacing);
   text-align: var(--tester-text-align);
   text-transform: var(--tester-text-transform);
@@ -871,10 +875,18 @@ input[type="range"]::-moz-range-thumb {
   word-break: break-word;
   overflow-wrap: anywhere;
   cursor: text;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow: visible;
   transition: color var(--trans-fast);
 }
 
-.preview-text:focus {
+.preview-text:focus,
+.font-preview:focus,
+.list-view-item:focus,
+.editable-preview:focus {
   background: var(--bg-hover);
   border-radius: var(--border-radius-sm);
 }
@@ -1537,7 +1549,9 @@ input[type="range"]::-moz-range-thumb {
   flex: 1;
   color: var(--text-primary);
   outline: none;
-  line-height: 1.25;
+  line-height: 1.35;
+  padding: 4px 0;
+  overflow: visible;
   transition: color var(--trans-fast);
 }
 
@@ -2202,7 +2216,35 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 
-/* 6. FDAeonik / FDAeonik */
+/* 6. FD Aeonik / FDAeonik */
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonik-Regular.woff2') format('woff2'),
+       url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
+       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonik-Bold.woff2') format('woff2'),
+       url('../fonts/FDAeonik-BOLD.TTF') format('truetype'),
+       url('fonts/FDAeonik-BOLD.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
+       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FDAeonik';
   src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
@@ -2891,18 +2933,21 @@ input[type="range"]::-moz-range-thumb {
 
 .fs-item-specimen-wrap {
   width: 100%;
-  overflow: hidden;
-  margin: 16px 0 24px 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding: 24px 0;
+  margin: 12px 0 20px 0;
 }
 
 .fs-item-specimen {
   font-size: 210px;
-  line-height: 1.0;
+  line-height: 1.25;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: clip;
   color: var(--fontshare-text);
   outline: none;
+  padding: 12px 0;
 }
 
 .fs-item-meta-bottom {
@@ -2967,9 +3012,11 @@ input[type="range"]::-moz-range-thumb {
 
 .fontshare-grid-mode .fs-item-specimen {
   font-size: 56px !important;
-  line-height: 1.15;
+  line-height: 1.35;
   white-space: normal;
   min-height: 130px;
+  padding: 12px 0;
+  overflow: visible;
 }
 
 /* Floating Scroll to Top button */

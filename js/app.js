@@ -1451,7 +1451,7 @@
       style: 'Luxury & Thời Trang',
       headingFamily: 'FD NoeDisplay',
       headingCategory: 'Serif (Editorial Display)',
-      bodyFamily: 'FDAeonik',
+      bodyFamily: 'FD Aeonik',
       bodyCategory: 'Sans Serif (Geometric Clean)',
       headline: 'Nghệ Thuật Chế Tác Thượng Đẳng & Tinh Thần Đương Đại',
       subhead: 'Tương phản đỉnh cao giữa nét thanh đậm kịch tính của Serif và nhịp điệu phẳng tối giản của Sans Serif.',
@@ -1559,7 +1559,7 @@
           (f.category && f.category.indexOf('Serif') !== -1 && f.category.indexOf('Sans') === -1);
       });
       var defaultBody = App.allFonts.find(function (f) {
-        return f.name === 'FDAeonik' || f.name === 'FD Gilroy' || f.name === 'FD Aptima' ||
+        return f.name === 'FD Aeonik' || f.name === 'FDAeonik' || f.name === 'FD Gilroy' || f.name === 'FD Aptima' ||
           (f.category && f.category.indexOf('Sans') !== -1);
       });
 

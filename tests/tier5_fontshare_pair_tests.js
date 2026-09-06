@@ -123,7 +123,7 @@ function runTier5Tests(reporter) {
     
     // Curated fonts used across the 8 boards (supporting both FD/GR and legacy names)
     const requiredFonts = [
-      'FD NoeDisplay', 'FDAeonik',
+      'FD NoeDisplay', (catalogFontNames.has('FD Aeonik') ? 'FD Aeonik' : 'FDAeonik'),
       'FD ClashDisplay', 'FD Gilroy',
       'FD Adobe Caslon', 'FD Apercu Pro',
       'FD Abril Fatface', 'FD Aptima',
