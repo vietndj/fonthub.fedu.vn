@@ -172,6 +172,44 @@ function runTier5Tests(reporter) {
     assert.ok(css.includes('.pairing-accordion'), 'CSS must style pairing-accordion');
     assert.ok(css.includes('.curated-pairs-grid'), 'CSS must style curated-pairs-grid');
   });
+
+  // -------------------------------------------------------------------------
+  // T5.7: GT Font (Grilli Type) Collection & Tag Filter Tests
+  // -------------------------------------------------------------------------
+  reporter.test('T5.7.1: GT Font Category & Filter Chip Integration in index.html & CatalogLoader', () => {
+    assert.ok(html.includes('data-category="GT Font"'), 'index.html must include GT Font filter button');
+    assert.ok(html.includes('id="count-gt"'), 'index.html must include id count-gt count badge');
+    assert.ok(css.includes('.badge-gt'), 'CSS must style .badge-gt tag');
+    assert.ok(css.includes('.chip-btn.chip-gt'), 'CSS must style .chip-btn.chip-gt button');
+
+    const loader = require('../js/catalog_loader.js');
+    assert.strictEqual(typeof loader.isGTFont, 'function', 'CatalogLoader.isGTFont must be exported');
+
+    const gtFonts = catalog.fonts.filter(loader.isGTFont);
+    assert.ok(gtFonts.length >= 6, `Must detect at least 6 GT font families, found ${gtFonts.length}`);
+
+    const counts = loader.computeFacetCounts(catalog.fonts);
+    assert.strictEqual(counts.categories['GT Font'], gtFonts.length, 'Facet count for GT Font must match exactly');
+  });
+
+  reporter.test('T5.7.2: GT Font Collection integrity (GT America, GT Sectra, SVN-Ultra, SVN-Walsheim Pro, etc.)', () => {
+    const loader = require('../js/catalog_loader.js');
+    const gtFonts = catalog.fonts.filter(loader.isGTFont);
+    const gtNames = gtFonts.map(f => f.name);
+
+    assert.ok(gtNames.includes('GT America'), 'GT America must be in GT Font collection');
+    assert.ok(gtNames.includes('GT Sectra'), 'GT Sectra must be in GT Font collection');
+    assert.ok(gtNames.includes('SVN-Ultra'), 'SVN-Ultra (GT Ultra) must be in GT Font collection');
+    assert.ok(gtNames.includes('SVN-Walsheim Pro'), 'SVN-Walsheim Pro (GT Walsheim) must be in GT Font collection');
+    assert.ok(gtNames.includes('SVN-SuperDisplay'), 'SVN-SuperDisplay (GT Super) must be in GT Font collection');
+    assert.ok(gtNames.includes('SVN-Alpina'), 'SVN-Alpina (GT Alpina) must be in GT Font collection');
+
+    // All GT fonts must have 100% Vietnamese support
+    gtFonts.forEach(f => {
+      assert.strictEqual(f.vietnamese_support, true, `${f.name} must have vietnamese_support: true`);
+      assert.ok(f.drive_folder_url.startsWith('https://drive.google.com/drive/folders/'), `${f.name} must have valid Drive folder URL`);
+    });
+  });
 }
 
 module.exports = { runTier5Tests };

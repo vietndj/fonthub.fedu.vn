@@ -47,7 +47,7 @@ function assert(condition, message) {
 console.log('\x1b[1m\x1b[36m▶ [Benchmark 1] Search Query Latency (<4ms Target)\x1b[0m');
 
 const indexedFonts = CatalogLoader.buildSearchIndex(allFonts);
-assert(indexedFonts.length === 361, 'buildSearchIndex should index all 361 fonts');
+assert(indexedFonts.length === allFonts.length, `buildSearchIndex should index all ${allFonts.length} fonts`);
 
 const sampleQueries = [
   'svn', 'saol', 'helvetica', 'arial', 'integral', 'fagen', 'connary',
@@ -327,25 +327,28 @@ console.log('\x1b[1m\x1b[36m▶ [Stress 4] Dynamic Facet Count Calculation Accur
 
 // A. Full Catalog Facet Counts
 const fullCounts = CatalogLoader.computeFacetCounts(allFonts);
+const totalTarget = allFonts.length;
 
-assert(fullCounts.categories.all === 361, 'Total category count must be 361');
-assert(fullCounts.weights.all === 361, 'Total weights all must be 361');
-assert(fullCounts.weights.single + fullCounts.weights.family === 361, 'Single + Family weights must sum to 361');
-assert(fullCounts.vnSupport.supported === 361, 'Supported VN fonts must be 361 (100%)');
+assert(fullCounts.categories.all === totalTarget, `Total category count must be ${totalTarget}`);
+assert(fullCounts.weights.all === totalTarget, `Total weights all must be ${totalTarget}`);
+assert(fullCounts.weights.single + fullCounts.weights.family === totalTarget, `Single + Family weights must sum to ${totalTarget}`);
+assert(fullCounts.vnSupport.supported === totalTarget, `Supported VN fonts must be ${totalTarget} (100%)`);
+assert(fullCounts.categories['GT Font'] === 6, `GT Font category must identify exactly 6 GT font families, found ${fullCounts.categories['GT Font']}`);
 
 // Verify Category partition sum
 const catSum = fullCounts.categories['Sans Serif'] +
                fullCounts.categories['Serif'] +
                fullCounts.categories['Việt Nam Oldstyle / Vintage Sài Gòn'] +
                fullCounts.categories['Blackletter, Script & Monospace'];
-assert(catSum === 361, `4 Core visual categories must partition exactly 361 fonts (sum: ${catSum})`);
+assert(catSum === totalTarget, `4 Core visual categories must partition exactly ${totalTarget} fonts (sum: ${catSum})`);
 
 console.log(`  Full Catalog Category Counts:`);
 console.log(`    Sans Serif: ${fullCounts.categories['Sans Serif']}`);
 console.log(`    Serif:      ${fullCounts.categories['Serif']}`);
 console.log(`    Vintage:    ${fullCounts.categories['Việt Nam Oldstyle / Vintage Sài Gòn']}`);
 console.log(`    Mono/Script:${fullCounts.categories['Blackletter, Script & Monospace']}`);
-console.log(`    Sum:        ${catSum} / 361`);
+console.log(`    GT Font:    ${fullCounts.categories['GT Font']}`);
+console.log(`    Sum:        ${catSum} / ${totalTarget}`);
 
 // B. Subsets Dynamic Facet Counts (e.g., filtered subsets)
 const testSubsets = [

@@ -145,7 +145,10 @@
           return text.toLowerCase();
         case 'titlecase':
         case 'capitalize':
-          return text.replace(/\b(\w)/g, function (m) { return m.toUpperCase(); });
+          return text.split(/(\s+|[-–—/])/).map(function (seg) {
+            if (/^(\s+|[-–—/])$/.test(seg) || !seg) return seg;
+            return seg.charAt(0).toUpperCase() + seg.slice(1).toLowerCase();
+          }).join('');
         default:
           return text;
       }
@@ -403,7 +406,7 @@
   /**
    * Renders the interactive 134-glyph grid inside container.
    */
-  TypeTesterEngine.prototype.renderGlyphMap = function (container, font, onSelectGlyph) {
+  TypeTesterEngine.prototype.renderGlyphMap = function (container, font, onSelectGlyph, filter) {
     if (!container) return;
     container.innerHTML = '';
 
@@ -411,18 +414,26 @@
     var glyphGroups = this.getVietnameseGlyphs();
 
     glyphGroups.forEach(function (groupData) {
+      var chars = groupData.chars;
+      if (filter === 'lower') {
+        chars = chars.filter(function (c) { return VIETNAMESE_LOWERCASE.indexOf(c) !== -1; });
+      } else if (filter === 'upper') {
+        chars = chars.filter(function (c) { return VIETNAMESE_UPPERCASE.indexOf(c) !== -1; });
+      }
+      if (chars.length === 0) return;
+
       var section = document.createElement('div');
       section.className = 'glyph-group';
 
       var title = document.createElement('div');
       title.className = 'glyph-group-title';
-      title.textContent = 'Nhóm ' + groupData.group + ' (' + groupData.chars.length + ' ký tự)';
+      title.textContent = 'Nhóm ' + groupData.group + ' (' + chars.length + ' ký tự)';
       section.appendChild(title);
 
       var grid = document.createElement('div');
       grid.className = 'glyph-grid';
 
-      groupData.chars.forEach(function (char) {
+      chars.forEach(function (char) {
         var btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'glyph-cell';

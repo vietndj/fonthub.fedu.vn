@@ -38,6 +38,31 @@
   }
 
   /**
+   * Identifies fonts belonging to the Grilli Type (GT Font) collection.
+   * Matches explicit flags, tags, known foundry IDs (America, Sectra, Ultra, Walsheim, Alpina, Super),
+   * or "GT-" / "GT " prefixes.
+   */
+  function isGTFont(font) {
+    if (!font || typeof font !== 'object') return false;
+    if (font.is_gt) return true;
+    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /gt\b|grilli/i.test(t); })) {
+      return true;
+    }
+    var name = (font.name || font.family || '').toLowerCase().trim();
+    var id = (font.id || '').toLowerCase().trim();
+    var gtKnown = [
+      'svn-ultra', 'svn-walsheim-pro', 'svn-superdisplay', 'svn-alpina',
+      'gt-america', 'gt-sectra', 'gt-pantheon', 'fd-pantheon',
+      'gt-walsheim', 'gt-ultra', 'gt-super', 'gt-alpina'
+    ];
+    if (gtKnown.indexOf(id) !== -1) return true;
+    if (/^gt[-_\s]/i.test(name) || /\bgt\b/i.test(name) || name.includes('walsheim')) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
    * Robust category matcher that discriminates 'Serif' vs 'Sans Serif'
    * and properly matches composite categories.
    */
@@ -49,6 +74,9 @@
     var tc = targetCategory.toLowerCase().trim();
 
     if (tc === 'all') return true;
+    if (tc === 'gt font' || tc === 'gt' || tc === 'grilli type') {
+      return isGTFont(font);
+    }
     if (fc === tc) return true;
 
     // Serif vs Sans Serif discrimination
@@ -123,6 +151,8 @@
       var normMood = removeVietnameseDiacritics(mood);
       var normUseCase = removeVietnameseDiacritics(useCase);
       var normDrive = removeVietnameseDiacritics(driveFiles);
+      var gtTokens = isGTFont(f) ? 'gt gtfont grilli type swiss' : '';
+      var tagsTokens = Array.isArray(f.tags) ? f.tags.map(removeVietnameseDiacritics).join(' ') : '';
 
       var searchComposite = [
         normName,
@@ -134,6 +164,8 @@
         normMood,
         normUseCase,
         normDrive,
+        gtTokens,
+        tagsTokens,
         name.toLowerCase(),
         designer.toLowerCase(),
         notes.toLowerCase(),
@@ -185,12 +217,12 @@
         var font = items[j];
         if (!font || typeof font !== 'object') continue;
 
-        var name = font.name || font.family || '';
-        var designer = font.designer || font.foundry_designer || '';
-        var notes = font.director_notes || '';
-        var subcategory = font.subcategory || '';
-        var mood = (font.matrix_3d && font.matrix_3d.mood) || font.matrix_mood || '';
-        var driveFiles = Array.isArray(font.drive_files) ? font.drive_files.join(' ') : '';
+        var name = String(font.name || font.family || '');
+        var designer = String(font.designer || font.foundry_designer || '');
+        var notes = String(font.director_notes || '');
+        var subcategory = String(font.subcategory || '');
+        var mood = String((font.matrix_3d && font.matrix_3d.mood) || font.matrix_mood || '');
+        var driveFiles = Array.isArray(font.drive_files) ? font.drive_files.join(' ') : String(font.drive_files || '');
 
         var normName = removeVietnameseDiacritics(name);
         var normDesigner = removeVietnameseDiacritics(designer);
@@ -309,7 +341,8 @@
         'Serif': 0,
         'Sans Serif': 0,
         'Blackletter, Script & Monospace': 0,
-        'Việt Nam Oldstyle / Vintage Sài Gòn': 0
+        'Việt Nam Oldstyle / Vintage Sài Gòn': 0,
+        'GT Font': 0
       },
       styles: {},
       moods: {},
@@ -328,6 +361,7 @@
       if (matchesCategory(cat, 'Sans Serif', f)) counts.categories['Sans Serif']++;
       if (matchesCategory(cat, 'Blackletter, Script & Monospace', f)) counts.categories['Blackletter, Script & Monospace']++;
       if (matchesCategory(cat, 'Việt Nam Oldstyle / Vintage Sài Gòn', f)) counts.categories['Việt Nam Oldstyle / Vintage Sài Gòn']++;
+      if (isGTFont(f)) counts.categories['GT Font']++;
 
       var style = (f.matrix_3d && f.matrix_3d.style) || f.matrix_visual;
       if (style) counts.styles[style] = (counts.styles[style] || 0) + 1;
@@ -366,6 +400,7 @@
 
   return {
     removeVietnameseDiacritics: removeVietnameseDiacritics,
+    isGTFont: isGTFont,
     matchesCategory: matchesCategory,
     buildSearchIndex: buildSearchIndex,
     instantSearch: instantSearch,

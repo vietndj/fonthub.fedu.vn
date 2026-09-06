@@ -257,11 +257,11 @@ test('3.3 Glyph Modal Tab Filtering Implementation (Chữ Thường 67 vs Chữ 
 // ---------------------------------------------------------------------------
 console.log('\n▶ Area 4: Google Drive 1-Click Family Download Links');
 
-test('4.1 100% of 361 Font Cards in catalog.json have valid Google Drive URLs', () => {
+test('4.1 100% of Font Cards in catalog.json have valid Google Drive URLs', () => {
   const catalog = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/catalog.json'), 'utf8'));
   const fonts = catalog.fonts || [];
 
-  assert.strictEqual(fonts.length, 361, `Catalog must contain exactly 361 fonts, found ${fonts.length}`);
+  assert.ok(fonts.length >= 361, `Catalog must contain at least 361 fonts, found ${fonts.length}`);
 
   const driveRegex = /^https:\/\/drive\.google\.com\/drive\/folders\/[A-Za-z0-9_-]+\?usp=sharing$/;
   const invalidFonts = [];
@@ -276,11 +276,11 @@ test('4.1 100% of 361 Font Cards in catalog.json have valid Google Drive URLs', 
   assert.strictEqual(
     invalidFonts.length,
     0,
-    `All 361 fonts must have valid Google Drive URLs with ?usp=sharing, found ${invalidFonts.length} invalid`
+    `All ${fonts.length} fonts must have valid Google Drive URLs with ?usp=sharing, found ${invalidFonts.length} invalid`
   );
 });
 
-test('4.2 361 Distinct Family Subfolder URLs in catalog.json', () => {
+test('4.2 Distinct Family Subfolder URLs in catalog.json', () => {
   const catalog = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/catalog.json'), 'utf8'));
   const fonts = catalog.fonts || [];
   const urls = fonts.map(f => f.drive_folder_url);
@@ -288,8 +288,8 @@ test('4.2 361 Distinct Family Subfolder URLs in catalog.json', () => {
 
   assert.strictEqual(
     uniqueUrls.size,
-    361,
-    `Each font family must have a dedicated distinct Drive folder URL, found ${uniqueUrls.size} distinct out of 361`
+    fonts.length,
+    `Each font family must have a dedicated distinct Drive folder URL, found ${uniqueUrls.size} distinct out of ${fonts.length}`
   );
 });
 
@@ -298,7 +298,7 @@ test('4.3 data/drive_links.json Family Mappings Integrity', () => {
   const links = driveLinksData.drive_links || {};
   const families = Object.keys(links);
 
-  assert.strictEqual(families.length, 361, `drive_links must map exactly 361 families, found ${families.length}`);
+  assert.ok(families.length >= 361, `drive_links must map at least 361 families, found ${families.length}`);
 
   const driveRegex = /^https:\/\/drive\.google\.com\/drive\/folders\/[A-Za-z0-9_-]+\?usp=sharing$/;
   for (const [family, url] of Object.entries(links)) {

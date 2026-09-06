@@ -126,6 +126,7 @@
     DOM.countSerif = document.getElementById('count-serif');
     DOM.countVintage = document.getElementById('count-vintage');
     DOM.countMonoScript = document.getElementById('count-mono-script');
+    DOM.countGt = document.getElementById('count-gt');
 
     // Grid & Empty State
     DOM.fontGrid = document.getElementById('font-grid');
@@ -406,6 +407,14 @@
       ? '<span class="badge badge-vn" title="Hỗ trợ đầy đủ Tiếng Việt có dấu">VN Ready</span>'
       : '<span class="badge" style="opacity: 0.6;">Basic Latin</span>';
 
+    var isGT = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isGTFont)
+      ? CatalogLoader.isGTFont(font)
+      : (Boolean(font.is_gt) || (Array.isArray(font.tags) && font.tags.indexOf('GT Font') !== -1));
+
+    var gtBadge = isGT
+      ? '<button type="button" class="badge badge-gt" data-category="GT Font" title="Lọc phông chữ Grilli Type (GT Font)">GT Font</button>'
+      : '';
+
     var anatomy = font.anatomy || {};
     var contrast = anatomy.contrast || 'Medium';
     var axis = anatomy.axis || 'Vertical';
@@ -458,6 +467,7 @@
       '      <span>' + escapeHTML(font.source || 'PDF & Drive') + '</span>',
       '    </div>',
       '    <div class="card-badges-row">',
+      '      ' + gtBadge,
       '      ' + styleBadge,
       '      ' + moodBadge,
       '      ' + useBadge,
@@ -636,6 +646,21 @@
       });
     });
 
+    // GT Font badge filter click
+    DOM.fontGrid.querySelectorAll('.badge-gt:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var gtChip = document.querySelector('.chip-btn[data-category="GT Font"]');
+        if (gtChip) {
+          gtChip.click();
+        } else {
+          App.activeFilters.category = 'GT Font';
+          applyFilters();
+        }
+      });
+    });
+
     // Glyphs modal button
     DOM.fontGrid.querySelectorAll('[data-action="glyphs"]:not([data-bound])').forEach(function (btn) {
       btn.setAttribute('data-bound', 'true');
@@ -732,6 +757,7 @@
     if (DOM.countSerif) DOM.countSerif.textContent = counts.categories['Serif'] || 0;
     if (DOM.countVintage) DOM.countVintage.textContent = counts.categories['Việt Nam Oldstyle / Vintage Sài Gòn'] || 0;
     if (DOM.countMonoScript) DOM.countMonoScript.textContent = counts.categories['Blackletter, Script & Monospace'] || 0;
+    if (DOM.countGt) DOM.countGt.textContent = counts.categories['GT Font'] || 0;
   }
 
   /**
@@ -762,7 +788,8 @@
     });
 
     applyFilters();
-    showToast('Đã xóa bộ lọc, hiển thị toàn bộ 361 font');
+    var count = (App.allFonts && App.allFonts.length) ? App.allFonts.length : 363;
+    showToast('Đã xóa bộ lọc, hiển thị toàn bộ ' + count + ' font');
   }
 
   /**

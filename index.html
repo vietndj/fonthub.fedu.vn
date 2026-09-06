@@ -29,15 +29,22 @@
       </div>
 
       <div class="header-actions">
-        <div class="theme-switcher" role="group" aria-label="Giao diện hiển thị">
+        <div class="theme-switcher" role="group" aria-label="Giao diện màu sắc">
           <button type="button" class="theme-btn active" data-theme-set="light" title="Light Mode (#FFFFFF)">Light</button>
           <button type="button" class="theme-btn" data-theme-set="dark" title="Dark Mode (#121212)">Dark</button>
           <button type="button" class="theme-btn" data-theme-set="neon" title="Neon Cyberpunk (#00FF66)">Neon</button>
+        </div>
+        <div class="view-mode-switcher" role="tablist" aria-label="Chế độ hiển thị">
+          <button type="button" class="view-btn active" data-view="catalog" role="tab" aria-selected="true" title="Kho 361 Font Families">Catalog</button>
+          <button type="button" class="view-btn" data-view="fontshare" role="tab" aria-selected="false" title="Trình diễn phong cách Fontshare">Fontshare</button>
+          <button type="button" class="view-btn" data-view="pair" role="tab" aria-selected="false" title="Chế độ kết hợp 2 font (Tiêu đề & Đoạn văn)">Pair</button>
         </div>
       </div>
     </div>
   </header>
 
+  <!-- Catalog View Container -->
+  <div id="catalog-view" class="app-view active">
   <!-- Sticky Global Type Tester Toolbar (Frosted Blur) -->
   <section class="type-tester-toolbar" aria-label="Bộ điều khiển Type Tester">
     <div class="toolbar-container">
@@ -103,7 +110,7 @@
             <button type="button" class="btn-seg active" data-transform="none" title="Nguyên bản">Aa</button>
             <button type="button" class="btn-seg" data-transform="uppercase" title="In hoa (Đ, Ệ, Ợ bảo toàn)">AA</button>
             <button type="button" class="btn-seg" data-transform="lowercase" title="In thường">aa</button>
-            <button type="button" class="btn-seg" data-transform="titlecase" title="In hoa đầu từ">Abc</button>
+            <button type="button" class="btn-seg" data-transform="capitalize" title="In hoa đầu từ">Abc</button>
           </div>
 
           <!-- Reset -->
@@ -146,15 +153,15 @@
     <div class="chips-container" id="category-chips" role="group" aria-label="Phân loại thị giác cốt lõi">
       <button type="button" class="chip-btn active" data-category="all">
         <span>Tất cả</span>
-        <span class="chip-count" id="count-all">361</span>
+        <span class="chip-count" id="count-all">363</span>
       </button>
       <button type="button" class="chip-btn" data-category="Sans Serif">
         <span>Sans Serif</span>
-        <span class="chip-count" id="count-sans">234</span>
+        <span class="chip-count" id="count-sans">235</span>
       </button>
       <button type="button" class="chip-btn" data-category="Serif">
         <span>Serif</span>
-        <span class="chip-count" id="count-serif">39</span>
+        <span class="chip-count" id="count-serif">40</span>
       </button>
       <button type="button" class="chip-btn" data-category="Việt Nam Oldstyle / Vintage Sài Gòn">
         <span>Vintage Sài Gòn</span>
@@ -163,6 +170,10 @@
       <button type="button" class="chip-btn" data-category="Blackletter, Script & Monospace">
         <span>Mono & Script</span>
         <span class="chip-count" id="count-mono-script">25</span>
+      </button>
+      <button type="button" class="chip-btn chip-gt" data-category="GT Font" title="Bộ sưu tập Grilli Type (GT Fonts: America, Sectra, Ultra, Walsheim...)">
+        <span>GT Font</span>
+        <span class="chip-count" id="count-gt">6</span>
       </button>
     </div>
 
@@ -223,6 +234,153 @@
     <!-- Scroll Sentinel for Progressive Infinite Scroll -->
     <div id="scroll-sentinel" class="scroll-sentinel"></div>
   </main>
+  </div><!-- /#catalog-view -->
+
+  <!-- Fontshare View (Swiss Editorial Waterfall Showcase) -->
+  <section id="fontshare-view" class="app-view hidden" aria-label="Chế độ hiển thị kiểu Fontshare">
+    <div class="fontshare-container">
+      <div class="fontshare-header">
+        <div class="fontshare-headline">
+          <h2>Fontshare Editorial Specimen</h2>
+          <p class="fontshare-subhead">Trưng bày typography theo triết lý Swiss Style: Tối giản, tương phản kích thước mạnh mẽ, kiểm tra phân cấp thị giác từ Headline đến Body text.</p>
+        </div>
+        <div class="fontshare-controls">
+          <input type="text" id="fontshare-search" class="fontshare-search" placeholder="Lọc nhanh font theo tên..." autocomplete="off">
+          <button type="button" id="fontshare-shuffle-btn" class="btn-seg">✦ Đổi ngẫu nhiên</button>
+        </div>
+      </div>
+
+      <div class="fontshare-grid" id="fontshare-grid">
+        <!-- Rendered dynamically by app.js: Waterfall cards for top curated fonts -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Font Pairing View (Interactive Dual-Font Playground + 8 Curated Boards) -->
+  <section id="pair-view" class="app-view hidden" aria-label="Chế độ phối font chữ">
+    <div class="pair-container">
+      
+      <!-- Top Dual-Font Interactive Playground -->
+      <div class="pair-playground-card">
+        <div class="pair-controls-header">
+          <div class="pair-selectors-row">
+            <!-- Heading Font Selector -->
+            <div class="pair-select-item">
+              <label for="pair-heading-select" class="pair-label">
+                <span class="role-badge role-heading">Tiêu đề (Heading)</span>
+                <span class="role-desc">Khuyên dùng: Font có chân (Serif)</span>
+              </label>
+              <select id="pair-heading-select" class="pair-select" aria-label="Chọn font tiêu đề"></select>
+            </div>
+
+            <!-- Swap Button -->
+            <button type="button" id="pair-swap-btn" class="btn-pair-action btn-swap" title="Hoán đổi vai trò Heading & Body">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 16V4m0 0L3 8m4-4l4 4m6 4v12m0 0l4-4m-4 4l-4-4"/>
+              </svg>
+              <span>Đảo vai trò</span>
+            </button>
+
+            <!-- Body Font Selector -->
+            <div class="pair-select-item">
+              <label for="pair-body-select" class="pair-label">
+                <span class="role-badge role-body">Đoạn văn (Body)</span>
+                <span class="role-desc">Khuyên dùng: Font không chân (Sans-Serif)</span>
+              </label>
+              <select id="pair-body-select" class="pair-select" aria-label="Chọn font đoạn văn"></select>
+            </div>
+
+            <!-- Extra Action Buttons -->
+            <div class="pair-quick-actions">
+              <button type="button" id="pair-random-btn" class="btn-pair-action" title="Tự động ghép ngẫu nhiên cặp font đạt chuẩn">
+                <span>✦ Ghép ngẫu nhiên</span>
+              </button>
+              <a href="#" id="pair-download-both-btn" class="btn-pair-action btn-download-both" target="_blank" rel="noopener noreferrer" title="Tải trọn bộ 2 font">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Tải font</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Fine-tuning Sliders -->
+          <div class="pair-sliders-row">
+            <div class="pair-slider-item">
+              <span class="pair-slider-label">Cỡ Tiêu đề</span>
+              <input type="range" id="pair-heading-size" min="28" max="96" value="54" step="1">
+              <span class="pair-slider-val" id="pair-heading-size-val">54px</span>
+            </div>
+            <div class="pair-slider-item">
+              <span class="pair-slider-label">Cỡ Đoạn văn</span>
+              <input type="range" id="pair-body-size" min="14" max="28" value="17" step="1">
+              <span class="pair-slider-val" id="pair-body-size-val">17px</span>
+            </div>
+            <div class="pair-slider-item">
+              <span class="pair-slider-label">Giãn dòng</span>
+              <input type="range" id="pair-line-height" min="1.1" max="2.2" value="1.55" step="0.05">
+              <span class="pair-slider-val" id="pair-line-height-val">1.55</span>
+            </div>
+            <div class="pair-slider-item">
+              <span class="pair-slider-label">Khoảng cách chữ</span>
+              <input type="range" id="pair-kerning" min="-0.03" max="0.10" value="0.00" step="0.01">
+              <span class="pair-slider-val" id="pair-kerning-val">0.00em</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Specimen Article Preview -->
+        <article class="pair-preview-article" id="pair-preview-article">
+          <div class="pair-article-meta">
+            <span class="pair-tag" id="pair-preview-tag">KIẾN TRÚC &amp; NGHỆ THUẬT CHỮ ĐƯƠNG ĐẠI</span>
+            <span class="pair-date">FONTHUB SPECIMEN NO. 08</span>
+          </div>
+          <h1 class="pair-preview-heading" id="pair-preview-heading" contenteditable="true" spellcheck="false">
+            Vẻ Đẹp Vĩnh Cửu Của Dấu Ấn Typography Việt Nam
+          </h1>
+          <p class="pair-preview-subhead" id="pair-preview-subhead" contenteditable="true" spellcheck="false">
+            Sự kết hợp tương phản hài hòa giữa nét chữ có chân trang trọng và nét chữ không chân tinh giản mở ra trải nghiệm thị giác trọn vẹn cho độc giả.
+          </p>
+          <div class="pair-preview-body" id="pair-preview-body" contenteditable="true" spellcheck="false">
+            <p>Trong thiết kế xuất bản và giao diện hiện đại, việc phối hợp hai họ font chữ khác biệt đòi hỏi sự thấu hiểu sâu sắc về tỉ lệ hình khối và nhịp điệu thị giác. Font có chân mang đến cảm giác uy tín, đĩnh đạc và bề thế cho tiêu đề, trong khi font không chân đảm nhiệm vai trò dẫn dắt người đọc qua từng trang văn bản dài mà không hề gây cảm giác mỏi mắt.</p>
+            <p>Mỗi dấu thanh điệu tiếng Việt—từ dấu huyền êm dịu, dấu sắc dứt khoát đến dấu hỏi ngã uyển chuyển—đều cần được dung hòa trong một hệ thống lưới đồng trục. Khi hai kiểu chữ cùng chia sẻ một tỉ lệ chiều cao chữ thường cân đối, văn bản sẽ tự cất lên một giai điệu nhịp nhàng, êm ả và thanh thoát.</p>
+          </div>
+          <div class="pair-preview-footer">
+            <span class="pair-author">Viết bởi FEDU Typography Studio • Xuất bản tại fonthub.fedu.vn</span>
+            <span class="pair-hint">Tip: Bạn có thể nhấp chuột trực tiếp vào bất kỳ dòng chữ nào để chỉnh sửa văn bản.</span>
+          </div>
+        </article>
+
+        <!-- Dynamic Pairing Logic Accordion -->
+        <details class="pairing-accordion" id="pairing-accordion">
+          <summary class="pairing-accordion-summary">
+            <div class="accordion-summary-inner">
+              <span class="accordion-icon">💡</span>
+              <span class="accordion-title">Phân tích logic thiết kế &amp; Nguyên lý kết hợp cặp font này</span>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </summary>
+          <div class="pairing-accordion-body" id="pairing-accordion-content">
+            <!-- Dynamic analysis injected by app.js -->
+          </div>
+        </details>
+      </div>
+
+      <!-- 8 Curated Pairing Boards Section -->
+      <section class="curated-pairs-section" aria-label="8 bảng kết hợp font mẫu">
+        <div class="curated-section-header">
+          <div class="curated-title-group">
+            <span class="section-kicker">FEDU CURATED PAIRINGS</span>
+            <h3>8 Bảng Kết Hợp Font Mẫu Tuyển Chọn</h3>
+            <p>8 công thức kết hợp kinh điển trong thiết kế đồ họa, báo chí xuất bản và nhận diện thương hiệu Việt Nam.</p>
+          </div>
+        </div>
+
+        <div class="curated-pairs-grid" id="curated-pairs-grid">
+          <!-- Rendered dynamically by app.js: 8 Curated Pairing Cards -->
+        </div>
+      </section>
+
+    </div>
+  </section>
 
   <!-- Vietnamese Glyph Map Modal -->
   <div id="glyph-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="glyph-modal-title">

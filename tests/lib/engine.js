@@ -161,7 +161,10 @@ const TypeTesterMetrics = {
         return text.toLowerCase();
       case 'titlecase':
       case 'capitalize':
-        return text.replace(/\b(\w)/g, m => m.toUpperCase());
+        return text.split(/(\s+|[-–—/])/).map(seg => {
+          if (/^(\s+|[-–—/])$/.test(seg) || !seg) return seg;
+          return seg.charAt(0).toUpperCase() + seg.slice(1).toLowerCase();
+        }).join('');
       default:
         return text;
     }

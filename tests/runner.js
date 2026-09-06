@@ -18,6 +18,7 @@ const { runTier1Tests } = require('./tier1_feature_tests');
 const { runTier2Tests } = require('./tier2_boundary_tests');
 const { runTier3Tests } = require('./tier3_pairwise_tests');
 const { runTier4Tests } = require('./tier4_workload_tests');
+const { runTier5Tests } = require('./tier5_fontshare_pair_tests');
 
 class TestReporter {
   constructor(verbose = false) {
@@ -126,6 +127,9 @@ function main() {
     }
     if (!targetTier || targetTier === 4) {
       runTier4Tests(reporter);
+    }
+    if (!targetTier || targetTier === 5) {
+      runTier5Tests(reporter);
     }
 
     const success = reporter.summary();

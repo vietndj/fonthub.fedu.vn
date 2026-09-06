@@ -40,6 +40,337 @@
   },
   "fonts": [
     {
+      "id": "fdaeonik",
+      "name": "FDAeonik",
+      "family": "FDAeonik",
+      "designer": "FEDU Type Foundry",
+      "source": "PDF & Drive",
+      "category": "Sans Serif",
+      "subcategory": "Sans Geometric Basic",
+      "matrix_3d": {
+        "style": "Sans Geometric",
+        "mood": "Tech & Công nghệ",
+        "use_case": "Display & Body"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Neo-Geometric",
+        "x_height": "High",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Dòng hình học thiên hướng công nghệ nhưng vẫn giữ được sự quen thuộc của font đọc. Đẹp, sắc sảo, tân thời (Phiên bản phái sinh FEDU độc quyền chống quét bản quyền).",
+      "weights": [
+        "Thin",
+        "Light",
+        "Air",
+        "Regular",
+        "Medium",
+        "Bold",
+        "Black",
+        "ThinItalic",
+        "LightItalic",
+        "AirItalic",
+        "RegularItalic",
+        "MediumItalic",
+        "BoldItalic",
+        "BlackItalic"
+      ],
+      "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/FDAeonik-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1fkI7kZxuQmbbKefZQX2fVKfZs_vZ1zoF?usp=sharing",
+      "files_count": 14,
+      "files": [
+        {
+          "filename": "FDAeonik-Air.ttf",
+          "style": "Air",
+          "ext": "ttf",
+          "size": 151164,
+          "id": "18R84Ha166af6KJLpOJQbUZLHVmDIBvwU",
+          "mod_time": "2022-06-30T03:53:24.000Z"
+        },
+        {
+          "filename": "FDAeonik-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 158488,
+          "id": "1OeCkYX9sQ6m-0NmD1nQ9UMnM6AQ-T95q",
+          "mod_time": "2022-06-30T03:53:34.000Z"
+        },
+        {
+          "filename": "FDAeonik-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 187472,
+          "id": "1rrCGTLVw8qTktfkpR8JrAvsw8a5o62OG",
+          "mod_time": "2022-06-30T03:54:52.000Z"
+        },
+        {
+          "filename": "FDAeonik-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 189148,
+          "id": "1MUaZaapkahP0oM7tsfRpHAOgZVBfaizW",
+          "mod_time": "2022-06-30T03:55:00.000Z"
+        },
+        {
+          "filename": "FDAeonik-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 181560,
+          "id": "1reA5FKVxSRDaOmzYKZcqOLwQf55txeb5",
+          "mod_time": "2022-06-30T03:54:06.000Z"
+        },
+        {
+          "filename": "FDAeonik-BoldItalic.ttf",
+          "style": "BoldItalic",
+          "ext": "ttf",
+          "size": 182592,
+          "id": "1B66DHjAwVPQ6sBghVkMUlBisCPGwaEA2",
+          "mod_time": "2022-06-30T03:54:12.000Z"
+        },
+        {
+          "filename": "FDAeonik-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 172700,
+          "id": "1aVT96abeTNqN7VN5eLNsAVt67Dacomnb",
+          "mod_time": "2022-06-30T03:53:54.000Z"
+        },
+        {
+          "filename": "FDAeonik-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 178704,
+          "id": "1HRNwbnzqRUWnRwjjiwx_GTChmMNf6fll",
+          "mod_time": "2022-06-30T03:54:00.000Z"
+        },
+        {
+          "filename": "FDAeonik-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 175672,
+          "id": "19kh0kRMvRMUbJRl5rOFezI2BJbLJ3b8s",
+          "mod_time": "2022-06-30T03:54:18.000Z"
+        },
+        {
+          "filename": "FDAeonik-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 185052,
+          "id": "17RgRyBbVxOdurkIKd4B-2b6IEL3buRVL",
+          "mod_time": "2022-06-30T03:54:24.000Z"
+        },
+        {
+          "filename": "FDAeonik-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 174420,
+          "id": "1D5fi3P3NTaKacnbU3EAzYO8QC0d9R0tk",
+          "mod_time": "2022-06-30T03:54:32.000Z"
+        },
+        {
+          "filename": "FDAeonik-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 185656,
+          "id": "1H96_KbGPiGRSZzUbaC8ZUkDwXUofyRnq",
+          "mod_time": "2022-06-30T03:54:42.000Z"
+        },
+        {
+          "filename": "FDAeonik-Thin.ttf",
+          "style": "Thin",
+          "ext": "ttf",
+          "size": 162416,
+          "id": "1ZFh2HMwUOSSTo58bCHIvQe-vMgUf-FZk",
+          "mod_time": "2022-06-30T03:53:40.000Z"
+        },
+        {
+          "filename": "FDAeonik-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 169612,
+          "id": "1BV6wsZj6rMZoPWzUlFyjX0gprrssdcIO",
+          "mod_time": "2022-06-30T03:53:46.000Z"
+        }
+      ],
+      "pdf_reference": {
+        "pdf_id": "fedu-font-137-aeonik",
+        "page": 12,
+        "raw_pdf_name": "FDAeonik"
+      }
+    },
+    {
+      "id": "gt-america",
+      "name": "GT America",
+      "family": "GT America",
+      "designer": "Grilli Type (Noël Leu & Marc Kappeler)",
+      "source": "Dropbox / Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "American Gothic / Swiss Neo-grotesque",
+      "matrix_3d": {
+        "style": "Sans Neo-grotesque",
+        "mood": "Bold & Tuyên ngôn",
+        "use_case": "Display & Body"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "High",
+        "aperture": "Semi-Closed"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Kiệt tác lai tạo giữa trường phái Gothic Mỹ thế kỷ 19 và Neo-grotesque Thụy Sĩ trung lập thế kỷ 20. Bản LCGV hỗ trợ tiếng Việt hoàn hảo, nét dứt khoát, độ cân bằng quang học tối ưu cho mọi kích thước từ Micro đến Super Display.",
+      "weights": [
+        "Thin",
+        "Thin Italic",
+        "Ultra Light",
+        "Ultra Light Italic",
+        "Light",
+        "Light Italic",
+        "Regular",
+        "Regular Italic",
+        "Medium",
+        "Medium Italic",
+        "Bold",
+        "Bold Italic",
+        "Black",
+        "Black Italic"
+      ],
+      "sample_text": "Khát vọng vươn tầm kiến tạo chuẩn mực typography Việt Nam đương đại sắc sảo",
+      "web_font_url": "dist/fonts/web/GTAmerica-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1ImQ2OK8QyS7BN_8LR5MRZCA1qc883jAS?usp=sharing",
+      "files_count": 14,
+      "tags": [
+        "GT Font",
+        "Grilli Type",
+        "Sans Serif",
+        "Neo-grotesque",
+        "American Gothic"
+      ],
+      "is_gt": true,
+      "files": [
+        {
+          "filename": "GT-America-LCGV-Standard-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 512488
+        },
+        {
+          "filename": "GT-America-LCGV-Standard-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 501356
+        },
+        {
+          "filename": "GT-America-LCGV-Standard-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 504352
+        },
+        {
+          "filename": "GT-America-LCGV-Standard-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 507580
+        },
+        {
+          "filename": "GT-America-LCGV-Standard-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 494044
+        }
+      ]
+    },
+    {
+      "id": "gt-sectra",
+      "name": "GT Sectra",
+      "family": "GT Sectra",
+      "designer": "Grilli Type (Marc Kappeler, Dominik Huber, Noël Leu)",
+      "source": "Drive Archive / vietndj.github.io",
+      "category": "Serif",
+      "subcategory": "Contemporary Serif / Broad-Nib Chiseled",
+      "matrix_3d": {
+        "style": "Serif Modern",
+        "mood": "Luxury & Sang trọng",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "High",
+        "axis": "Diagonal",
+        "x_height": "Medium",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Phông chữ Serif đương đại với nét vát góc sắc bén đặc trưng được tạo nên từ sự hòa quyện giữa bút lông ngòi dẹt và đường cắt dao phẫu thuật. Bản LCGV tiếng Việt tinh hoa, tôn vinh vẻ đẹp sang trọng, học thuật và đậm chất báo chí quốc tế.",
+      "weights": [
+        "Display Light",
+        "Display Light Italic",
+        "Display Regular",
+        "Display Regular Italic",
+        "Display Medium",
+        "Display Medium Italic",
+        "Display Bold",
+        "Display Bold Italic",
+        "Display Super",
+        "Display Super Italic",
+        "Fine Regular",
+        "Fine Regular Italic",
+        "Fine Book",
+        "Fine Book Italic",
+        "Fine Medium",
+        "Fine Medium Italic",
+        "Fine Bold",
+        "Fine Bold Italic",
+        "Fine Black",
+        "Fine Black Italic"
+      ],
+      "sample_text": "Hào khí Đông A vang vọng ngàn năm trong tinh hoa câu chữ nước Việt ngời sáng",
+      "web_font_url": "dist/fonts/web/GTSectra-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0?usp=sharing",
+      "files_count": 20,
+      "tags": [
+        "GT Font",
+        "Grilli Type",
+        "Serif",
+        "Editorial",
+        "Luxury"
+      ],
+      "is_gt": true,
+      "files": [
+        {
+          "filename": "GT-Sectra-LCGV-Display-Regular.otf",
+          "style": "Display Regular",
+          "ext": "otf",
+          "size": 196888
+        },
+        {
+          "filename": "GT-Sectra-LCGV-Display-Bold.otf",
+          "style": "Display Bold",
+          "ext": "otf",
+          "size": 202508
+        },
+        {
+          "filename": "GT-Sectra-LCGV-Display-Medium.otf",
+          "style": "Display Medium",
+          "ext": "otf",
+          "size": 198456
+        },
+        {
+          "filename": "GT-Sectra-LCGV-Display-Light.otf",
+          "style": "Display Light",
+          "ext": "otf",
+          "size": 190020
+        },
+        {
+          "filename": "GT-Sectra-LCGV-Fine-Regular.otf",
+          "style": "Fine Regular",
+          "ext": "otf",
+          "size": 212304
+        }
+      ]
+    },
+    {
       "id": "svn-a-love-of-thunder",
       "name": "SVN-A Love Of Thunder",
       "family": "SVN-A Love Of Thunder",
@@ -534,167 +865,6 @@
       }
     },
     {
-      "id": "fdaeonik",
-      "name": "FDAeonik",
-      "family": "FDAeonik",
-      "designer": "FEDU Type Foundry",
-      "source": "PDF & Drive",
-      "category": "Sans Serif",
-      "subcategory": "Sans Geometric Basic",
-      "matrix_3d": {
-        "style": "Sans Geometric",
-        "mood": "Tech & Công nghệ",
-        "use_case": "Display & Body"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Neo-Geometric",
-        "x_height": "High",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Dòng hình học thiên hướng công nghệ nhưng vẫn giữ được sự quen thuộc của font đọc. Đẹp, sắc sảo, tân thời (Phiên bản phái sinh FEDU độc quyền chống quét bản quyền).",
-      "weights": [
-        "Thin",
-        "Light",
-        "Air",
-        "Regular",
-        "Medium",
-        "Bold",
-        "Black",
-        "ThinItalic",
-        "LightItalic",
-        "AirItalic",
-        "RegularItalic",
-        "MediumItalic",
-        "BoldItalic",
-        "BlackItalic"
-      ],
-      "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/FDAeonik-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1fkI7kZxuQmbbKefZQX2fVKfZs_vZ1zoF?usp=sharing",
-      "files_count": 14,
-      "files": [
-        {
-          "filename": "FDAeonik-Air.ttf",
-          "style": "Air",
-          "ext": "ttf",
-          "size": 151164,
-          "id": "18R84Ha166af6KJLpOJQbUZLHVmDIBvwU",
-          "mod_time": "2022-06-30T03:53:24.000Z"
-        },
-        {
-          "filename": "FDAeonik-AirItalic.ttf",
-          "style": "AirItalic",
-          "ext": "ttf",
-          "size": 158488,
-          "id": "1OeCkYX9sQ6m-0NmD1nQ9UMnM6AQ-T95q",
-          "mod_time": "2022-06-30T03:53:34.000Z"
-        },
-        {
-          "filename": "FDAeonik-Black.ttf",
-          "style": "Black",
-          "ext": "ttf",
-          "size": 187472,
-          "id": "1rrCGTLVw8qTktfkpR8JrAvsw8a5o62OG",
-          "mod_time": "2022-06-30T03:54:52.000Z"
-        },
-        {
-          "filename": "FDAeonik-BlackItalic.ttf",
-          "style": "BlackItalic",
-          "ext": "ttf",
-          "size": 189148,
-          "id": "1MUaZaapkahP0oM7tsfRpHAOgZVBfaizW",
-          "mod_time": "2022-06-30T03:55:00.000Z"
-        },
-        {
-          "filename": "FDAeonik-Bold.ttf",
-          "style": "Bold",
-          "ext": "ttf",
-          "size": 181560,
-          "id": "1reA5FKVxSRDaOmzYKZcqOLwQf55txeb5",
-          "mod_time": "2022-06-30T03:54:06.000Z"
-        },
-        {
-          "filename": "FDAeonik-BoldItalic.ttf",
-          "style": "BoldItalic",
-          "ext": "ttf",
-          "size": 182592,
-          "id": "1B66DHjAwVPQ6sBghVkMUlBisCPGwaEA2",
-          "mod_time": "2022-06-30T03:54:12.000Z"
-        },
-        {
-          "filename": "FDAeonik-Light.ttf",
-          "style": "Light",
-          "ext": "ttf",
-          "size": 172700,
-          "id": "1aVT96abeTNqN7VN5eLNsAVt67Dacomnb",
-          "mod_time": "2022-06-30T03:53:54.000Z"
-        },
-        {
-          "filename": "FDAeonik-LightItalic.ttf",
-          "style": "LightItalic",
-          "ext": "ttf",
-          "size": 178704,
-          "id": "1HRNwbnzqRUWnRwjjiwx_GTChmMNf6fll",
-          "mod_time": "2022-06-30T03:54:00.000Z"
-        },
-        {
-          "filename": "FDAeonik-Medium.ttf",
-          "style": "Medium",
-          "ext": "ttf",
-          "size": 175672,
-          "id": "19kh0kRMvRMUbJRl5rOFezI2BJbLJ3b8s",
-          "mod_time": "2022-06-30T03:54:18.000Z"
-        },
-        {
-          "filename": "FDAeonik-MediumItalic.ttf",
-          "style": "MediumItalic",
-          "ext": "ttf",
-          "size": 185052,
-          "id": "17RgRyBbVxOdurkIKd4B-2b6IEL3buRVL",
-          "mod_time": "2022-06-30T03:54:24.000Z"
-        },
-        {
-          "filename": "FDAeonik-Regular.ttf",
-          "style": "Regular",
-          "ext": "ttf",
-          "size": 174420,
-          "id": "1D5fi3P3NTaKacnbU3EAzYO8QC0d9R0tk",
-          "mod_time": "2022-06-30T03:54:32.000Z"
-        },
-        {
-          "filename": "FDAeonik-RegularItalic.ttf",
-          "style": "RegularItalic",
-          "ext": "ttf",
-          "size": 185656,
-          "id": "1H96_KbGPiGRSZzUbaC8ZUkDwXUofyRnq",
-          "mod_time": "2022-06-30T03:54:42.000Z"
-        },
-        {
-          "filename": "FDAeonik-Thin.ttf",
-          "style": "Thin",
-          "ext": "ttf",
-          "size": 162416,
-          "id": "1ZFh2HMwUOSSTo58bCHIvQe-vMgUf-FZk",
-          "mod_time": "2022-06-30T03:53:40.000Z"
-        },
-        {
-          "filename": "FDAeonik-ThinItalic.ttf",
-          "style": "ThinItalic",
-          "ext": "ttf",
-          "size": 169612,
-          "id": "1BV6wsZj6rMZoPWzUlFyjX0gprrssdcIO",
-          "mod_time": "2022-06-30T03:53:46.000Z"
-        }
-      ],
-      "pdf_reference": {
-        "pdf_id": "fedu-font-137-aeonik",
-        "page": 12,
-        "raw_pdf_name": "FDAeonik"
-      }
-    },
-    {
       "id": "svn-agency-fb",
       "name": "SVN-Agency FB",
       "family": "SVN-Agency FB",
@@ -1106,7 +1276,12 @@
         "pdf_id": "fedu-font-025-gt-alpina",
         "page": 3,
         "raw_pdf_name": "Gt-Alpina"
-      }
+      },
+      "is_gt": true,
+      "tags": [
+        "GT Font",
+        "Grilli Type"
+      ]
     },
     {
       "id": "svn-americantypewriter",
@@ -2311,55 +2486,6 @@
       }
     },
     {
-      "id": "svn-blackhawk",
-      "name": "SVN-BLACKHAWK",
-      "family": "SVN-BLACKHAWK",
-      "designer": "Sam Parrett",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Medium",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, BLACKHAWK có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Regular",
-        "Swash"
-      ],
-      "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BLACKHAWK-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1tOsh2tgJ08lbXkdnXUcOwqEdOvevXoRp?usp=sharing",
-      "files_count": 2,
-      "files": [
-        {
-          "filename": "SVN-BLACKHAWK Swash.otf",
-          "style": "Swash",
-          "ext": "otf",
-          "size": 75184,
-          "id": "1IyWBKXL85SMllsntsu4FBTdHc6o9A-0B",
-          "mod_time": "2020-08-16T14:15:53.000Z"
-        },
-        {
-          "filename": "SVN-BLACKHAWK.otf",
-          "style": "Regular",
-          "ext": "otf",
-          "size": 647900,
-          "id": "1SAEABTpw95wrQQD-R5P-dzfs0_qUA-DV",
-          "mod_time": "2020-08-16T13:49:29.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
       "id": "svn-bargitta",
       "name": "SVN-Bargitta",
       "family": "SVN-Bargitta",
@@ -3189,6 +3315,55 @@
         "page": 9,
         "raw_pdf_name": "Black Mango"
       }
+    },
+    {
+      "id": "svn-blackhawk",
+      "name": "SVN-BLACKHAWK",
+      "family": "SVN-BLACKHAWK",
+      "designer": "Sam Parrett",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Medium",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, BLACKHAWK có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Regular",
+        "Swash"
+      ],
+      "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-BLACKHAWK-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1tOsh2tgJ08lbXkdnXUcOwqEdOvevXoRp?usp=sharing",
+      "files_count": 2,
+      "files": [
+        {
+          "filename": "SVN-BLACKHAWK Swash.otf",
+          "style": "Swash",
+          "ext": "otf",
+          "size": 75184,
+          "id": "1IyWBKXL85SMllsntsu4FBTdHc6o9A-0B",
+          "mod_time": "2020-08-16T14:15:53.000Z"
+        },
+        {
+          "filename": "SVN-BLACKHAWK.otf",
+          "style": "Regular",
+          "ext": "otf",
+          "size": 647900,
+          "id": "1SAEABTpw95wrQQD-R5P-dzfs0_qUA-DV",
+          "mod_time": "2020-08-16T13:49:29.000Z"
+        }
+      ],
+      "pdf_reference": null
     },
     {
       "id": "svn-blade-runner",
@@ -5021,6 +5196,86 @@
       "pdf_reference": null
     },
     {
+      "id": "svn-daisy-lau",
+      "name": "SVN-Daisy Lau",
+      "family": "SVN-Daisy Lau",
+      "designer": "Ryoichi Tsunekawa",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Low",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Daisy Lau có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Regular"
+      ],
+      "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DaisyLau-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/162YtE9D2CxYE5_CrUexcBsN0hBigBrkm?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-Daisy Lau.otf",
+          "style": "Regular",
+          "ext": "otf",
+          "size": 155800,
+          "id": "16L0sFt8tsnnGvF45dGVPj6Lt33LMOsxy",
+          "mod_time": "2022-04-28T14:40:38.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-dancing-script",
+      "name": "SVN-Dancing script",
+      "family": "SVN-Dancing script",
+      "designer": "STYLEno.1 Fonts (Việt hóa)",
+      "source": "Drive Archive",
+      "category": "Blackletter, Script & Monospace",
+      "subcategory": "Calligraphic / Signature Script",
+      "matrix_3d": {
+        "style": "Script",
+        "mood": "Luxury & Sang trọng",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "High",
+        "axis": "Tilted",
+        "x_height": "Low",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Sở hữu vẻ đẹp kiêu sa và thanh lịch vượt thời gian, Dancing script gây ấn tượng bởi sự tương phản nét thanh nét đậm tinh tế và tỷ lệ chữ quý phái chuẩn mực studio châu Âu. Hoàn hảo cho thiết kế bìa tạp chí thời trang, nhận diện thương hiệu mỹ phẩm, trang sức cao cấp, thiệp cưới và kiến trúc nội thất sang trọng.",
+      "weights": [
+        "Regular"
+      ],
+      "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Dancingscript-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/19SIif8nVh0LWaWcnYtN09BY-s7kXum2U?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-Dancing script.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 111532,
+          "id": "1Cz8Fi2SaZzO_aDiqQna6gOMzY9WC3V_0",
+          "mod_time": "2017-05-03T11:03:37.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
       "id": "svn-dhf-dexsar-brush",
       "name": "SVN-DHF Dexsar Brush",
       "family": "SVN-DHF Dexsar Brush",
@@ -5284,86 +5539,6 @@
         "page": 14,
         "raw_pdf_name": "DIN Next Rounded"
       }
-    },
-    {
-      "id": "svn-daisy-lau",
-      "name": "SVN-Daisy Lau",
-      "family": "SVN-Daisy Lau",
-      "designer": "Ryoichi Tsunekawa",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Low",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Daisy Lau có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Regular"
-      ],
-      "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-DaisyLau-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/162YtE9D2CxYE5_CrUexcBsN0hBigBrkm?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-Daisy Lau.otf",
-          "style": "Regular",
-          "ext": "otf",
-          "size": 155800,
-          "id": "16L0sFt8tsnnGvF45dGVPj6Lt33LMOsxy",
-          "mod_time": "2022-04-28T14:40:38.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
-      "id": "svn-dancing-script",
-      "name": "SVN-Dancing script",
-      "family": "SVN-Dancing script",
-      "designer": "STYLEno.1 Fonts (Việt hóa)",
-      "source": "Drive Archive",
-      "category": "Blackletter, Script & Monospace",
-      "subcategory": "Calligraphic / Signature Script",
-      "matrix_3d": {
-        "style": "Script",
-        "mood": "Luxury & Sang trọng",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "High",
-        "axis": "Tilted",
-        "x_height": "Low",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Sở hữu vẻ đẹp kiêu sa và thanh lịch vượt thời gian, Dancing script gây ấn tượng bởi sự tương phản nét thanh nét đậm tinh tế và tỷ lệ chữ quý phái chuẩn mực studio châu Âu. Hoàn hảo cho thiết kế bìa tạp chí thời trang, nhận diện thương hiệu mỹ phẩm, trang sức cao cấp, thiệp cưới và kiến trúc nội thất sang trọng.",
-      "weights": [
-        "Regular"
-      ],
-      "sample_text": "Nghệ sĩ ngẫm nghĩ về những nét vẽ mềm mại, quyến rũ và diễm lệ của đóa hoa đỗ quyên",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Dancingscript-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/19SIif8nVh0LWaWcnYtN09BY-s7kXum2U?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-Dancing script.ttf",
-          "style": "Regular",
-          "ext": "ttf",
-          "size": 111532,
-          "id": "1Cz8Fi2SaZzO_aDiqQna6gOMzY9WC3V_0",
-          "mod_time": "2017-05-03T11:03:37.000Z"
-        }
-      ],
-      "pdf_reference": null
     },
     {
       "id": "svn-dominique",
@@ -5758,46 +5933,6 @@
       }
     },
     {
-      "id": "svn-fff-tusj",
-      "name": "SVN-FFF Tusj",
-      "family": "SVN-FFF Tusj",
-      "designer": "Magnus Cederholm",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Medium",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, FFF Tusj có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Regular"
-      ],
-      "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FFFTusj-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1LwMbWVy19PoXc1DdgdZOUxa37FL0BrXa?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-FFF Tusj.ttf",
-          "style": "Regular",
-          "ext": "ttf",
-          "size": 2442204,
-          "id": "1urcYzNCMmxo8PjtpCl6084i7vS3LmuGL",
-          "mod_time": "2017-05-03T11:08:27.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
       "id": "svn-factoria",
       "name": "SVN-Factoria",
       "family": "SVN-Factoria",
@@ -5858,6 +5993,46 @@
         "page": 4,
         "raw_pdf_name": "Factoria"
       }
+    },
+    {
+      "id": "svn-fff-tusj",
+      "name": "SVN-FFF Tusj",
+      "family": "SVN-FFF Tusj",
+      "designer": "Magnus Cederholm",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Medium",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, FFF Tusj có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Regular"
+      ],
+      "sample_text": "Người mẹ trẻ ẵm con thơ dạo bước trên hè phố rực rỡ sắc hoa đỏ thắm",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-FFFTusj-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1LwMbWVy19PoXc1DdgdZOUxa37FL0BrXa?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-FFF Tusj.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 2442204,
+          "id": "1urcYzNCMmxo8PjtpCl6084i7vS3LmuGL",
+          "mod_time": "2017-05-03T11:08:27.000Z"
+        }
+      ],
+      "pdf_reference": null
     },
     {
       "id": "svn-fiolex-girls",
@@ -7753,6 +7928,175 @@
           "size": 154252,
           "id": "1eirqIcuIc2N-6n99I-PiPGO9cI5qqq8N",
           "mod_time": "2017-05-03T11:19:09.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-hamstring",
+      "name": "SVN-Hamstring",
+      "family": "SVN-Hamstring",
+      "designer": "Widiyanti & Sarah Suci P",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Low",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Hamstring có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Regular"
+      ],
+      "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Hamstring-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1-s7taiP5ZB3A1M7XsZc_b72sDnUG4aGw?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-Hamstring.otf",
+          "style": "Regular",
+          "ext": "otf",
+          "size": 73896,
+          "id": "1gNUNRWkHpggD_dFIZfT433MJFXpuqaU3",
+          "mod_time": "2021-03-29T13:35:24.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-handelson",
+      "name": "SVN-Handelson",
+      "family": "SVN-Handelson",
+      "designer": "Mika Melvas",
+      "source": "Drive Archive",
+      "category": "Blackletter, Script & Monospace",
+      "subcategory": "Calligraphic / Signature Script",
+      "matrix_3d": {
+        "style": "Script",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "High",
+        "axis": "Tilted",
+        "x_height": "Low",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Handelson có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Two"
+      ],
+      "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Handelson-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1fKhUvPC5DzyJDrcdtNQ5dIS4XThbONeJ?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-Handelson Two.otf",
+          "style": "Two",
+          "ext": "otf",
+          "size": 1803512,
+          "id": "1rzUcOejKjorUfpTdew75e7TJwAmCpZcm",
+          "mod_time": "2018-07-22T07:22:56.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-harabaras",
+      "name": "SVN-Harabaras",
+      "family": "SVN-Harabaras",
+      "designer": "STYLEno.1 Fonts (Việt hóa)",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Medium",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Harabaras có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Regular"
+      ],
+      "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Harabaras-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1LPNbvvG7mxQdaGQoyxXPwf4iIy9wOtLr?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-Harabaras.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 66460,
+          "id": "1v9XxTiwkqOXytPTzFg2CXwFcgne_Ick9",
+          "mod_time": "2017-05-03T11:20:44.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-have-heart",
+      "name": "SVN-Have Heart",
+      "family": "SVN-Have Heart",
+      "designer": "Set Sail Studios",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "High",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Have Heart có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "2",
+        "Regular"
+      ],
+      "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HaveHeart-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1tQq9TukC9nRozM_6MHuFCjVE2YdDl38S?usp=sharing",
+      "files_count": 2,
+      "files": [
+        {
+          "filename": "SVN-Have Heart 2.otf",
+          "style": "2",
+          "ext": "otf",
+          "size": 94304,
+          "id": "1n2q-JKrNihpNeDhbjzYu69PVsyZxh7AC",
+          "mod_time": "2017-08-24T13:19:08.000Z"
+        },
+        {
+          "filename": "SVN-Have Heart.otf",
+          "style": "Regular",
+          "ext": "otf",
+          "size": 365100,
+          "id": "1jwBGFK24NJqFKEUkIj498OOzBNO3aNWt",
+          "mod_time": "2017-08-24T13:15:22.000Z"
         }
       ],
       "pdf_reference": null
@@ -10555,175 +10899,6 @@
       "pdf_reference": null
     },
     {
-      "id": "svn-hamstring",
-      "name": "SVN-Hamstring",
-      "family": "SVN-Hamstring",
-      "designer": "Widiyanti & Sarah Suci P",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Low",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Hamstring có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Regular"
-      ],
-      "sample_text": "Bác làm vườn cặm cụi chăm sóc từng luống rau xanh mướt mát sau cơn mưa rào",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Hamstring-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1-s7taiP5ZB3A1M7XsZc_b72sDnUG4aGw?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-Hamstring.otf",
-          "style": "Regular",
-          "ext": "otf",
-          "size": 73896,
-          "id": "1gNUNRWkHpggD_dFIZfT433MJFXpuqaU3",
-          "mod_time": "2021-03-29T13:35:24.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
-      "id": "svn-handelson",
-      "name": "SVN-Handelson",
-      "family": "SVN-Handelson",
-      "designer": "Mika Melvas",
-      "source": "Drive Archive",
-      "category": "Blackletter, Script & Monospace",
-      "subcategory": "Calligraphic / Signature Script",
-      "matrix_3d": {
-        "style": "Script",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "High",
-        "axis": "Tilted",
-        "x_height": "Low",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Handelson có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Two"
-      ],
-      "sample_text": "Mỗi trang sách mở ra chân trời mới tươi sáng, nuôi dưỡng tâm hồn nhân ái bao la",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Handelson-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1fKhUvPC5DzyJDrcdtNQ5dIS4XThbONeJ?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-Handelson Two.otf",
-          "style": "Two",
-          "ext": "otf",
-          "size": 1803512,
-          "id": "1rzUcOejKjorUfpTdew75e7TJwAmCpZcm",
-          "mod_time": "2018-07-22T07:22:56.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
-      "id": "svn-harabaras",
-      "name": "SVN-Harabaras",
-      "family": "SVN-Harabaras",
-      "designer": "STYLEno.1 Fonts (Việt hóa)",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Medium",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Harabaras có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Regular"
-      ],
-      "sample_text": "Lời ru ngọt ngào của mẹ nâng niu giấc ngủ bé thơ suốt những năm tháng êm đềm",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-Harabaras-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1LPNbvvG7mxQdaGQoyxXPwf4iIy9wOtLr?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-Harabaras.ttf",
-          "style": "Regular",
-          "ext": "ttf",
-          "size": 66460,
-          "id": "1v9XxTiwkqOXytPTzFg2CXwFcgne_Ick9",
-          "mod_time": "2017-05-03T11:20:44.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
-      "id": "svn-have-heart",
-      "name": "SVN-Have Heart",
-      "family": "SVN-Have Heart",
-      "designer": "Set Sail Studios",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "High",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, Have Heart có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "2",
-        "Regular"
-      ],
-      "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-HaveHeart-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1tQq9TukC9nRozM_6MHuFCjVE2YdDl38S?usp=sharing",
-      "files_count": 2,
-      "files": [
-        {
-          "filename": "SVN-Have Heart 2.otf",
-          "style": "2",
-          "ext": "otf",
-          "size": 94304,
-          "id": "1n2q-JKrNihpNeDhbjzYu69PVsyZxh7AC",
-          "mod_time": "2017-08-24T13:19:08.000Z"
-        },
-        {
-          "filename": "SVN-Have Heart.otf",
-          "style": "Regular",
-          "ext": "otf",
-          "size": 365100,
-          "id": "1jwBGFK24NJqFKEUkIj498OOzBNO3aNWt",
-          "mod_time": "2017-08-24T13:15:22.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
       "id": "svn-headliner-no-45",
       "name": "SVN-Headliner No 45",
       "family": "SVN-Headliner No 45",
@@ -12073,46 +12248,6 @@
       }
     },
     {
-      "id": "svn-kg-ten-thousand-reasons",
-      "name": "SVN-KG Ten Thousand Reasons",
-      "family": "SVN-KG Ten Thousand Reasons",
-      "designer": "STYLEno.1 Fonts (Việt hóa)",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Humanist Sans / Balanced Contrast",
-      "matrix_3d": {
-        "style": "Sans Humanist",
-        "mood": "Friendly & Nhân văn",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Low",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, KG Ten Thousand Reasons có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
-      "weights": [
-        "Regular"
-      ],
-      "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-KGTenThousandReasons-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1UQqxA2RELzwKzUSjSrAYaE9FNFYumZTF?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-KG Ten Thousand Reasons.ttf",
-          "style": "Regular",
-          "ext": "ttf",
-          "size": 454824,
-          "id": "1CGuKoGUQ-eAzSWu6onF3HlSOzqMwMePb",
-          "mod_time": "2017-05-03T11:36:33.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
       "id": "svn-kashima-brush",
       "name": "SVN-Kashima Brush",
       "family": "SVN-Kashima Brush",
@@ -12148,6 +12283,46 @@
           "size": 253524,
           "id": "1B-pquzxtWzOx4Yx66opSQavpXfF9E2KG",
           "mod_time": "2019-07-09T07:21:14.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-kg-ten-thousand-reasons",
+      "name": "SVN-KG Ten Thousand Reasons",
+      "family": "SVN-KG Ten Thousand Reasons",
+      "designer": "STYLEno.1 Fonts (Việt hóa)",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Humanist Sans / Balanced Contrast",
+      "matrix_3d": {
+        "style": "Sans Humanist",
+        "mood": "Friendly & Nhân văn",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Low",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Mang tinh thần ấm áp, gần gũi và giàu tính kết nối con người, KG Ten Thousand Reasons có đường nét mềm mại tự nhiên, khoảng mở phóng khoáng giúp văn bản thoáng đãng, dễ tiếp nhận. Lựa chọn lý tưởng cho các ấn phẩm giáo dục, sách báo thiếu nhi, thương hiệu cộng đồng, bao bì thực phẩm sạch và trải nghiệm đọc văn bản dài.",
+      "weights": [
+        "Regular"
+      ],
+      "sample_text": "Nụ cười rạng rỡ chào đón ngày mới bình an, ấm áp và tràn đầy năng lượng yêu thương",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-KGTenThousandReasons-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1UQqxA2RELzwKzUSjSrAYaE9FNFYumZTF?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-KG Ten Thousand Reasons.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 454824,
+          "id": "1CGuKoGUQ-eAzSWu6onF3HlSOzqMwMePb",
+          "mod_time": "2017-05-03T11:36:33.000Z"
         }
       ],
       "pdf_reference": null
@@ -14343,46 +14518,6 @@
       }
     },
     {
-      "id": "svn-pf-din-text-pro",
-      "name": "SVN-PF Din Text Pro",
-      "family": "SVN-PF Din Text Pro",
-      "designer": "Panos Vassiliou",
-      "source": "Drive Archive",
-      "category": "Sans Serif",
-      "subcategory": "Geometric Sans / Clean Precision",
-      "matrix_3d": {
-        "style": "Sans Geometric",
-        "mood": "Tech & Công nghệ",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Vertical",
-        "x_height": "Medium",
-        "aperture": "Open"
-      },
-      "vietnamese_support": true,
-      "director_notes": "PF Din Text Pro mang hơi thở kiến trúc kỹ thuật số với đường nét dứt khoát, kỷ luật và tỷ lệ hình học chuẩn xác. Được thiết kế cho thời đại màn hình độ phân giải cao, phông chữ duy trì độ sắc nét hoàn hảo cả ở kích thước nhỏ lẫn tiêu đề lớn. Đặc biệt phù hợp cho các sản phẩm công nghệ, báo cáo tài chính, giao diện ứng dụng (UI/UX) và slide thuyết trình chuyên nghiệp.",
-      "weights": [
-        "Condensed Regular"
-      ],
-      "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-PFDinTextPro-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1ayPXtydAMNXNuy0YCbWKt_t-hRXDFiDe?usp=sharing",
-      "files_count": 1,
-      "files": [
-        {
-          "filename": "SVN-PF Din Text Pro Condensed Regular.ttf",
-          "style": "Condensed Regular",
-          "ext": "ttf",
-          "size": 350892,
-          "id": "1MxP1Uz6bUFcP51UCqSjAmkFaN4ELVoKk",
-          "mod_time": "2016-04-21T09:00:43.000Z"
-        }
-      ],
-      "pdf_reference": null
-    },
-    {
       "id": "svn-palmaton",
       "name": "SVN-Palmaton",
       "family": "SVN-Palmaton",
@@ -14418,6 +14553,46 @@
           "size": 76068,
           "id": "1WkxgdWggpj9BKx2MhOI6e7LyeciInpIa",
           "mod_time": "2020-01-28T17:49:34.000Z"
+        }
+      ],
+      "pdf_reference": null
+    },
+    {
+      "id": "svn-pf-din-text-pro",
+      "name": "SVN-PF Din Text Pro",
+      "family": "SVN-PF Din Text Pro",
+      "designer": "Panos Vassiliou",
+      "source": "Drive Archive",
+      "category": "Sans Serif",
+      "subcategory": "Geometric Sans / Clean Precision",
+      "matrix_3d": {
+        "style": "Sans Geometric",
+        "mood": "Tech & Công nghệ",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Vertical",
+        "x_height": "Medium",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "PF Din Text Pro mang hơi thở kiến trúc kỹ thuật số với đường nét dứt khoát, kỷ luật và tỷ lệ hình học chuẩn xác. Được thiết kế cho thời đại màn hình độ phân giải cao, phông chữ duy trì độ sắc nét hoàn hảo cả ở kích thước nhỏ lẫn tiêu đề lớn. Đặc biệt phù hợp cho các sản phẩm công nghệ, báo cáo tài chính, giao diện ứng dụng (UI/UX) và slide thuyết trình chuyên nghiệp.",
+      "weights": [
+        "Condensed Regular"
+      ],
+      "sample_text": "Tối ưu hóa thuật toán và trải nghiệm người dùng với tốc độ xử lý siêu phân tán",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-PFDinTextPro-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1ayPXtydAMNXNuy0YCbWKt_t-hRXDFiDe?usp=sharing",
+      "files_count": 1,
+      "files": [
+        {
+          "filename": "SVN-PF Din Text Pro Condensed Regular.ttf",
+          "style": "Condensed Regular",
+          "ext": "ttf",
+          "size": 350892,
+          "id": "1MxP1Uz6bUFcP51UCqSjAmkFaN4ELVoKk",
+          "mod_time": "2016-04-21T09:00:43.000Z"
         }
       ],
       "pdf_reference": null
@@ -15515,86 +15690,6 @@
       }
     },
     {
-      "id": "svn-rbno31",
-      "name": "SVN-RBNo3.1",
-      "family": "SVN-RBNo3.1",
-      "designer": "Rene Bieder",
-      "source": "PDF & Drive",
-      "category": "Sans Serif",
-      "subcategory": "Sans Geometric Tech",
-      "matrix_3d": {
-        "style": "Sans Geometric",
-        "mood": "Tech & Công nghệ",
-        "use_case": "Display / Headline"
-      },
-      "anatomy": {
-        "contrast": "Low",
-        "axis": "Technical Condensed Geometric",
-        "x_height": "Very High",
-        "aperture": "Moderate"
-      },
-      "vietnamese_support": true,
-      "director_notes": "Dựa trên font kinh điển của Đức: DIN, kết hợp tính hiện đại tương lai của Futura. Công nghệ, hiện đại, chính xác.",
-      "weights": [
-        "Light",
-        "Book",
-        "Bold",
-        "Ultra",
-        "BookItalic"
-      ],
-      "sample_text": "Đội ngũ kỹ sư nỗ lực giải quyết các bài toán kỹ thuật ngặt nghèo trong kỷ nguyên số",
-      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RBNo31-Regular.woff2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1cX7rR1TfJrY8uzbLOakU0ZP5NSbXgVEw?usp=sharing",
-      "files_count": 5,
-      "files": [
-        {
-          "filename": "SVN-RBNo3.1 Bold.ttf",
-          "style": "Bold",
-          "ext": "ttf",
-          "size": 185796,
-          "id": "1CLOjSzeqa4f4gGXCtsi-YstUEsI7I8lr",
-          "mod_time": "2022-01-15T04:36:41.000Z"
-        },
-        {
-          "filename": "SVN-RBNo3.1 Book.ttf",
-          "style": "Book",
-          "ext": "ttf",
-          "size": 187524,
-          "id": "18jS3tfVFXn8FYuSrNkL_69zGxLZ7dT86",
-          "mod_time": "2022-01-15T04:37:02.000Z"
-        },
-        {
-          "filename": "SVN-RBNo3.1 BookItalic.ttf",
-          "style": "BookItalic",
-          "ext": "ttf",
-          "size": 191528,
-          "id": "1UqicKOfGapGKZeLyxe1ufg_sVY8o7oms",
-          "mod_time": "2022-01-15T04:37:08.000Z"
-        },
-        {
-          "filename": "SVN-RBNo3.1 Light.ttf",
-          "style": "Light",
-          "ext": "ttf",
-          "size": 183916,
-          "id": "1W3WL_Lq08eotdL5BrVwLf2KZGfILlHaV",
-          "mod_time": "2022-01-15T04:37:13.000Z"
-        },
-        {
-          "filename": "SVN-RBNo3.1 Ultra.ttf",
-          "style": "Ultra",
-          "ext": "ttf",
-          "size": 187232,
-          "id": "1nzCVesqMk_LWWD_Zj0C8yDGv1ayfGX3H",
-          "mod_time": "2022-01-15T04:36:18.000Z"
-        }
-      ],
-      "pdf_reference": {
-        "pdf_id": "fedu-font-144-rbno3-1",
-        "page": 13,
-        "raw_pdf_name": "RBNo3.1"
-      }
-    },
-    {
       "id": "svn-rajdhani",
       "name": "SVN-Rajdhani",
       "family": "SVN-Rajdhani",
@@ -15775,6 +15870,86 @@
         }
       ],
       "pdf_reference": null
+    },
+    {
+      "id": "svn-rbno31",
+      "name": "SVN-RBNo3.1",
+      "family": "SVN-RBNo3.1",
+      "designer": "Rene Bieder",
+      "source": "PDF & Drive",
+      "category": "Sans Serif",
+      "subcategory": "Sans Geometric Tech",
+      "matrix_3d": {
+        "style": "Sans Geometric",
+        "mood": "Tech & Công nghệ",
+        "use_case": "Display / Headline"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Technical Condensed Geometric",
+        "x_height": "Very High",
+        "aperture": "Moderate"
+      },
+      "vietnamese_support": true,
+      "director_notes": "Dựa trên font kinh điển của Đức: DIN, kết hợp tính hiện đại tương lai của Futura. Công nghệ, hiện đại, chính xác.",
+      "weights": [
+        "Light",
+        "Book",
+        "Bold",
+        "Ultra",
+        "BookItalic"
+      ],
+      "sample_text": "Đội ngũ kỹ sư nỗ lực giải quyết các bài toán kỹ thuật ngặt nghèo trong kỷ nguyên số",
+      "web_font_url": "https://pub-447bd44dfdac4938912655c855b8631c.r2.dev/fonts/SVN-RBNo31-Regular.woff2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1cX7rR1TfJrY8uzbLOakU0ZP5NSbXgVEw?usp=sharing",
+      "files_count": 5,
+      "files": [
+        {
+          "filename": "SVN-RBNo3.1 Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 185796,
+          "id": "1CLOjSzeqa4f4gGXCtsi-YstUEsI7I8lr",
+          "mod_time": "2022-01-15T04:36:41.000Z"
+        },
+        {
+          "filename": "SVN-RBNo3.1 Book.ttf",
+          "style": "Book",
+          "ext": "ttf",
+          "size": 187524,
+          "id": "18jS3tfVFXn8FYuSrNkL_69zGxLZ7dT86",
+          "mod_time": "2022-01-15T04:37:02.000Z"
+        },
+        {
+          "filename": "SVN-RBNo3.1 BookItalic.ttf",
+          "style": "BookItalic",
+          "ext": "ttf",
+          "size": 191528,
+          "id": "1UqicKOfGapGKZeLyxe1ufg_sVY8o7oms",
+          "mod_time": "2022-01-15T04:37:08.000Z"
+        },
+        {
+          "filename": "SVN-RBNo3.1 Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 183916,
+          "id": "1W3WL_Lq08eotdL5BrVwLf2KZGfILlHaV",
+          "mod_time": "2022-01-15T04:37:13.000Z"
+        },
+        {
+          "filename": "SVN-RBNo3.1 Ultra.ttf",
+          "style": "Ultra",
+          "ext": "ttf",
+          "size": 187232,
+          "id": "1nzCVesqMk_LWWD_Zj0C8yDGv1ayfGX3H",
+          "mod_time": "2022-01-15T04:36:18.000Z"
+        }
+      ],
+      "pdf_reference": {
+        "pdf_id": "fedu-font-144-rbno3-1",
+        "page": 13,
+        "raw_pdf_name": "RBNo3.1"
+      }
     },
     {
       "id": "svn-ready",
@@ -18681,7 +18856,12 @@
         "pdf_id": "fedu-font-026-gt-super",
         "page": 3,
         "raw_pdf_name": "Gt-Super"
-      }
+      },
+      "is_gt": true,
+      "tags": [
+        "GT Font",
+        "Grilli Type"
+      ]
     },
     {
       "id": "svn-taken-by-vultures",
@@ -19682,7 +19862,12 @@
           "mod_time": "2022-08-19T03:01:54.000Z"
         }
       ],
-      "pdf_reference": null
+      "pdf_reference": null,
+      "is_gt": true,
+      "tags": [
+        "GT Font",
+        "Grilli Type"
+      ]
     },
     {
       "id": "svn-ultro",
@@ -20910,7 +21095,12 @@
         "pdf_id": "fedu-font-134-gt-walsheim",
         "page": 12,
         "raw_pdf_name": "handgloves\nhandgloves\nGt-walsheim"
-      }
+      },
+      "is_gt": true,
+      "tags": [
+        "GT Font",
+        "Grilli Type"
+      ]
     },
     {
       "id": "svn-we-youth",

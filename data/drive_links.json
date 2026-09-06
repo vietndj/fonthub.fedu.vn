@@ -13903,6 +13903,58 @@
           "mod_time": "2017-05-03T11:21:50.000Z"
         }
       ]
+    },
+    "GT America": {
+      "folder_name": "GT America",
+      "clean_name": "GT America",
+      "folder_id": "1ImQ2OK8QyS7BN_8LR5MRZCA1qc883jAS",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1ImQ2OK8QyS7BN_8LR5MRZCA1qc883jAS?usp=sharing",
+      "file_count": 14,
+      "styles": [
+        "Thin",
+        "Thin Italic",
+        "Ultra Light",
+        "Ultra Light Italic",
+        "Light",
+        "Light Italic",
+        "Regular",
+        "Regular Italic",
+        "Medium",
+        "Medium Italic",
+        "Bold",
+        "Bold Italic",
+        "Black",
+        "Black Italic"
+      ]
+    },
+    "GT Sectra": {
+      "folder_name": "GT Sectra",
+      "clean_name": "GT Sectra",
+      "folder_id": "1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0?usp=sharing",
+      "file_count": 20,
+      "styles": [
+        "Display Light",
+        "Display Light Italic",
+        "Display Regular",
+        "Display Regular Italic",
+        "Display Medium",
+        "Display Medium Italic",
+        "Display Bold",
+        "Display Bold Italic",
+        "Display Super",
+        "Display Super Italic",
+        "Fine Regular",
+        "Fine Regular Italic",
+        "Fine Book",
+        "Fine Book Italic",
+        "Fine Medium",
+        "Fine Medium Italic",
+        "Fine Bold",
+        "Fine Bold Italic",
+        "Fine Black",
+        "Fine Black Italic"
+      ]
     }
   },
   "drive_links": {
@@ -14266,6 +14318,8 @@
     "SVN-Yahoo": "https://drive.google.com/drive/folders/167AO8OudWtvxS2wpiC9rCu4-yCngw7-P?usp=sharing",
     "SVN-Zebra": "https://drive.google.com/drive/folders/1r-O7fJ7nyejl48bOLKjrB6HHz2g2PeUU?usp=sharing",
     "SVN-Zelda Sans": "https://drive.google.com/drive/folders/1vTvZ1xN2jUL4tVUAywBVldE71F1FqBCE?usp=sharing",
-    "SVN-Zero": "https://drive.google.com/drive/folders/1nIYLeEdbM0glTYV9YcX1_oOUKM7x32ct?usp=sharing"
+    "SVN-Zero": "https://drive.google.com/drive/folders/1nIYLeEdbM0glTYV9YcX1_oOUKM7x32ct?usp=sharing",
+    "GT America": "https://drive.google.com/drive/folders/1ImQ2OK8QyS7BN_8LR5MRZCA1qc883jAS?usp=sharing",
+    "GT Sectra": "https://drive.google.com/drive/folders/1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0?usp=sharing"
   }
 }
