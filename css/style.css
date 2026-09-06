@@ -662,6 +662,28 @@ input[type="range"]::-moz-range-thumb {
   color: #ffffff;
 }
 
+.chip-btn.chip-fav {
+  border-color: rgba(234, 179, 8, 0.4);
+  background: rgba(234, 179, 8, 0.04);
+}
+
+.chip-btn.chip-fav:hover {
+  border-color: #eab308;
+  color: #eab308;
+}
+
+.chip-btn.chip-fav.active {
+  background: #eab308;
+  border-color: #eab308;
+  color: #000000;
+  font-weight: 700;
+}
+
+.chip-btn.chip-fav.active .chip-count {
+  background: rgba(0, 0, 0, 0.15);
+  color: #000000;
+}
+
 .chip-count {
   font-size: 0.7rem;
   font-family: var(--font-mono);
@@ -2067,7 +2089,7 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 
-/* 2. Clash Display / SVN-ClashDisplay */
+/* 2. Clash Display / FDClashDisplay */
 @font-face {
   font-family: 'Clash Display';
   src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
@@ -2089,13 +2111,13 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-ClashDisplay';
+  font-family: 'FDClashDisplay';
   src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
        url('fonts/ClashDisplay-Regular.woff2') format('woff2'),
        url('../fonts/FDClash-DisplayRegular.ttf') format('truetype'),
        url('fonts/FDClash-DisplayRegular.ttf') format('truetype'),
-       url('../fonts/SVN-ClashDisplay-Regular.ttf') format('truetype'),
-       url('fonts/SVN-ClashDisplay-Regular.ttf') format('truetype');
+       url('../fonts/FDClashDisplay-Regular.ttf') format('truetype'),
+       url('fonts/FDClashDisplay-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
@@ -2133,11 +2155,11 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 
-/* 5. SVN-NoeDisplay / FDNoeDisplay */
+/* 5. FDNoeDisplay / FDNoeDisplay */
 @font-face {
-  font-family: 'SVN-NoeDisplay';
-  src: url('../fonts/SVN-NoeDisplay-Regular.ttf') format('truetype'),
-       url('fonts/SVN-NoeDisplay-Regular.ttf') format('truetype'),
+  font-family: 'FDNoeDisplay';
+  src: url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
+       url('fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
        url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
        url('fonts/FDNoeDisplay-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -2145,9 +2167,9 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-NoeDisplay';
-  src: url('../fonts/SVN-NoeDisplay-Bold.ttf') format('truetype'),
-       url('fonts/SVN-NoeDisplay-Bold.ttf') format('truetype'),
+  font-family: 'FDNoeDisplay';
+  src: url('../fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
+       url('fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
        url('../fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
        url('fonts/FDNoeDisplay-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -2163,13 +2185,13 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 
-/* 6. FDAeonik / SVN-AEONIK */
+/* 6. FDAeonik / FDAeonik */
 @font-face {
   font-family: 'FDAeonik';
   src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
        url('fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('../fonts/SVN-AEONIK-REGULAR.TTF') format('truetype'),
-       url('fonts/SVN-AEONIK-REGULAR.TTF') format('truetype');
+       url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
+       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2178,38 +2200,38 @@ input[type="range"]::-moz-range-thumb {
   font-family: 'FDAeonik';
   src: url('../fonts/FDAeonik-Bold.woff2') format('woff2'),
        url('fonts/FDAeonik-Bold.woff2') format('woff2'),
-       url('../fonts/SVN-AEONIK-BOLD.TTF') format('truetype'),
-       url('fonts/SVN-AEONIK-BOLD.TTF') format('truetype');
+       url('../fonts/FDAeonik-BOLD.TTF') format('truetype'),
+       url('fonts/FDAeonik-BOLD.TTF') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-AEONIK';
-  src: url('../fonts/SVN-AEONIK-REGULAR.TTF') format('truetype'),
-       url('fonts/SVN-AEONIK-REGULAR.TTF') format('truetype');
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
+       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 
-/* 7. SVN-Gilroy / FDGilroy */
+/* 7. FDGilroy / FDGilroy */
 @font-face {
-  font-family: 'SVN-Gilroy';
+  font-family: 'FDGilroy';
   src: url('../fonts/FDGilroy-Regular.woff2') format('woff2'),
        url('fonts/FDGilroy-Regular.woff2') format('woff2'),
-       url('../fonts/SVN-Gilroy Regular.ttf') format('truetype'),
-       url('fonts/SVN-Gilroy Regular.ttf') format('truetype');
+       url('../fonts/FDGilroy Regular.ttf') format('truetype'),
+       url('fonts/FDGilroy Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Gilroy';
+  font-family: 'FDGilroy';
   src: url('../fonts/FDGilroy-Bold.woff2') format('woff2'),
        url('fonts/FDGilroy-Bold.woff2') format('woff2'),
-       url('../fonts/SVN-Gilroy Bold.otf') format('opentype'),
-       url('fonts/SVN-Gilroy Bold.otf') format('opentype');
+       url('../fonts/FDGilroy Bold.otf') format('opentype'),
+       url('fonts/FDGilroy Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2223,13 +2245,13 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 
-/* 8. SVN-Acta / FDActa */
+/* 8. FDActa / FDActa */
 @font-face {
-  font-family: 'SVN-Acta';
+  font-family: 'FDActa';
   src: url('../fonts/FDActa-Book.woff2') format('woff2'),
        url('fonts/FDActa-Book.woff2') format('woff2'),
-       url('../fonts/SVN-Acta-Book.ttf') format('truetype'),
-       url('fonts/SVN-Acta-Book.ttf') format('truetype');
+       url('../fonts/FDActa-Book.ttf') format('truetype'),
+       url('fonts/FDActa-Book.ttf') format('truetype');
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
@@ -2237,49 +2259,49 @@ input[type="range"]::-moz-range-thumb {
 
 /* 9. Curated Pairs 3-8 Webfonts */
 @font-face {
-  font-family: 'SVN-Adobe Caslon';
+  font-family: 'FDAdobe Caslon';
   src: url('../fonts/FDAdobeCaslon-Regular.ttf') format('truetype'),
        url('fonts/FDAdobeCaslon-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Apercu Pro';
+  font-family: 'FDApercu Pro';
   src: url('../fonts/FDApercuPro-Regular.ttf') format('truetype'),
        url('fonts/FDApercuPro-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Abril Fatface';
+  font-family: 'FDAbril Fatface';
   src: url('../fonts/FDAbrilFatface-Regular.ttf') format('truetype'),
        url('fonts/FDAbrilFatface-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Aptima';
+  font-family: 'FDAptima';
   src: url('../fonts/FDAptima-Regular.ttf') format('truetype'),
        url('fonts/FDAptima-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-HC Bourbon Grotesque';
+  font-family: 'FDHC Bourbon Grotesque';
   src: url('../fonts/FDHC-BourbonGrotesque.otf') format('opentype'),
        url('fonts/FDHC-BourbonGrotesque.otf') format('opentype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Adobe Jenson';
+  font-family: 'FDAdobe Jenson';
   src: url('../fonts/FDAdobeJenson-Regular.ttf') format('truetype'),
        url('fonts/FDAdobeJenson-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-A Love Of Thunder';
+  font-family: 'FDA Love Of Thunder';
   src: url('../fonts/FDALoveOfThunder-Regular.woff2') format('woff2'),
        url('fonts/FDALoveOfThunder-Regular.woff2') format('woff2'),
        url('../fonts/FDALoveOfThunder-Regular.ttf') format('truetype'),
@@ -2288,58 +2310,58 @@ input[type="range"]::-moz-range-thumb {
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Aguila';
+  font-family: 'FDAguila';
   src: url('../fonts/FDAguila-Regular.ttf') format('truetype'),
        url('fonts/FDAguila-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Addington CF';
+  font-family: 'FDAddington CF';
   src: url('../fonts/FDAddingtonCF-Regular.otf') format('opentype'),
        url('fonts/FDAddingtonCF-Regular.otf') format('opentype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Bio Sans';
+  font-family: 'FDBio Sans';
   src: url('../fonts/FDBioSans-Regular.ttf') format('truetype'),
        url('fonts/FDBioSans-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Avo';
+  font-family: 'FDAvo';
   src: url('../fonts/FDAvo-Regular.ttf') format('truetype'),
        url('fonts/FDAvo-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Ultra';
-  src: url('../fonts/SVN-UltraStandard-Regular.ttf') format('truetype'),
-       url('fonts/SVN-UltraStandard-Regular.ttf') format('truetype');
+  font-family: 'FDUltra';
+  src: url('../fonts/FDUltraStandard-Regular.ttf') format('truetype'),
+       url('fonts/FDUltraStandard-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Walsheim Pro';
-  src: url('../fonts/SVN-WalsheimPro-Regular.ttf') format('truetype'),
-       url('fonts/SVN-WalsheimPro-Regular.ttf') format('truetype');
+  font-family: 'FDWalsheim Pro';
+  src: url('../fonts/FDWalsheimPro-Regular.ttf') format('truetype'),
+       url('fonts/FDWalsheimPro-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-Alpina';
-  src: url('../fonts/SVN-AlpinaFine-Regular.ttf') format('truetype'),
-       url('fonts/SVN-AlpinaFine-Regular.ttf') format('truetype');
+  font-family: 'FDAlpina';
+  src: url('../fonts/FDAlpinaFine-Regular.ttf') format('truetype'),
+       url('fonts/FDAlpinaFine-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
-  font-family: 'SVN-SuperDisplay';
-  src: url('../fonts/SVN-SuperDisplay-Regular.ttf') format('truetype'),
-       url('fonts/SVN-SuperDisplay-Regular.ttf') format('truetype');
+  font-family: 'FDSuperDisplay';
+  src: url('../fonts/FDSuperDisplay-Regular.ttf') format('truetype'),
+       url('fonts/FDSuperDisplay-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }

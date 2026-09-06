@@ -158,6 +158,8 @@
     DOM.countVintage = document.getElementById('count-vintage');
     DOM.countMonoScript = document.getElementById('count-mono-script');
     DOM.countGt = document.getElementById('count-gt');
+    DOM.countFav = document.getElementById('count-fav');
+    DOM.chipFavorites = document.getElementById('chip-favorites');
 
     // Grid & Empty State
     DOM.fontGrid = document.getElementById('font-grid');
@@ -334,6 +336,10 @@
         isFav = false;
       }
       localStorage.setItem('fonthub_favorites', JSON.stringify(favs));
+      updateFacetCountBadges();
+      if (App.activeFilters && App.activeFilters.category === 'favorites') {
+        applyFilters();
+      }
       return isFav;
     } catch (e) {
       return false;
@@ -443,7 +449,7 @@
       : (Boolean(font.is_gt) || (Array.isArray(font.tags) && font.tags.indexOf('GT Font') !== -1));
 
     var gtBadge = isGT
-      ? '<button type="button" class="badge badge-gt" data-category="GT Font" title="Lọc phông chữ Grilli Type (GT Font)">GT Font</button>'
+      ? '<button type="button" class="badge badge-gt" data-category="GT Font" title="Lọc phông chữ GR Font (FEDU)">GT Font</button>'
       : '';
 
     var anatomy = font.anatomy || {};
@@ -560,11 +566,22 @@
 
     // Update Result Counts
     if (DOM.resultsCount) {
-      DOM.resultsCount.textContent = total + ' / 361 font families';
+      DOM.resultsCount.textContent = total + ' / ' + (App.allFonts ? App.allFonts.length : 376) + ' font families';
     }
 
     if (total === 0) {
-      if (DOM.emptyState) DOM.emptyState.classList.remove('hidden');
+      if (DOM.emptyState) {
+        DOM.emptyState.classList.remove('hidden');
+        var emptyTitle = DOM.emptyState.querySelector('.empty-title');
+        var emptyDesc = DOM.emptyState.querySelector('p');
+        if (App.activeFilters && App.activeFilters.category === 'favorites') {
+          if (emptyTitle) emptyTitle.textContent = 'Chưa có font yêu thích nào';
+          if (emptyDesc) emptyDesc.textContent = 'Bạn chưa đánh dấu font nào. Hãy nhấn biểu tượng ngôi sao ⭐ trên bất kỳ thẻ font nào để lưu vào danh sách yêu thích!';
+        } else {
+          if (emptyTitle) emptyTitle.textContent = 'Không tìm thấy font phù hợp';
+          if (emptyDesc) emptyDesc.textContent = 'Thử điều chỉnh từ khóa tìm kiếm hoặc xóa bớt các tiêu chí lọc.';
+        }
+      }
       if (DOM.scrollSentinel) DOM.scrollSentinel.style.display = 'none';
       return;
     } else {
@@ -762,6 +779,14 @@
       vietnamese_support: App.activeFilters.vietnamese_support
     };
 
+    if (App.activeFilters.category === 'favorites') {
+      var favIds = getFavorites();
+      searchResults = searchResults.filter(function (f) {
+        return favIds.indexOf(f.id) !== -1;
+      });
+      filterCriteria.category = 'all';
+    }
+
     App.filteredFonts = CatalogLoader.multiFilter(searchResults, filterCriteria);
 
     var elapsed = performance.now() - startTime;
@@ -789,6 +814,7 @@
     if (DOM.countVintage) DOM.countVintage.textContent = counts.categories['Việt Nam Oldstyle / Vintage Sài Gòn'] || 0;
     if (DOM.countMonoScript) DOM.countMonoScript.textContent = counts.categories['Blackletter, Script & Monospace'] || 0;
     if (DOM.countGt) DOM.countGt.textContent = counts.categories['GT Font'] || 0;
+    if (DOM.countFav) DOM.countFav.textContent = getFavorites().length;
   }
 
   /**
@@ -1001,8 +1027,8 @@
     });
 
     // Curated priority order for Fontshare showcase:
-    // Satoshi, Clash Display, GT Sectra, GT America, SVN-NoeDisplay, FDAeonik, SVN-Gilroy, SVN-Acta...
-    var priorityIds = ['gt-sectra', 'gt-america', 'svn-noedisplay', 'fdaeonik', 'svn-gilroy', 'svn-acta', 'svn-superdisplay'];
+    // Satoshi, Clash Display, GR Sectra, GR America, FD NoeDisplay, FDAeonik, FD Gilroy, FD Acta...
+    var priorityIds = ['gr-sectra', 'gr-america', 'fd-noedisplay', 'fdaeonik', 'fd-gilroy', 'fd-acta', 'gr-super'];
     var prioritized = [];
     priorityIds.forEach(function (pid) {
       var match = catalogFonts.find(function (f) { return f.id === pid; });
@@ -1026,7 +1052,7 @@
     if (state.category && state.category !== 'all') {
       pool = pool.filter(function (f) {
         var c = (f.category || '').toLowerCase();
-        if (state.category === 'GT Font') return (f.tags && f.tags.includes('GT Font')) || (f.name && f.name.startsWith('GT'));
+        if (state.category === 'GT Font') return (f.tags && f.tags.includes('GT Font')) || (f.name && (f.name.startsWith('GT') || f.name.startsWith('GR'))) || Boolean(f.is_gt);
         if (state.category === 'Vintage') return c.includes('vintage') || (f.tags && f.tags.some(function (t) { return t.includes('Vintage'); }));
         if (state.category === 'Mono/Script') return c.includes('mono') || c.includes('script');
         return c.includes(state.category.toLowerCase());
@@ -1051,8 +1077,8 @@
       } else if (state.pill === 'originals') {
         pool = pool.filter(function (f) { return (f.designer && f.designer.includes('Indian Type Foundry')) || (f.tags && f.tags.includes('GT Font')); });
       } else if (state.pill === 'shortlisted') {
-        var favs = getFavoriteFontIds();
-        pool = pool.filter(function (f) { return favs.includes(f.id); });
+        var favs = getFavorites();
+        pool = pool.filter(function (f) { return favs.indexOf(f.id) !== -1; });
       }
     }
 
@@ -1407,7 +1433,7 @@
     {
       id: 'pair-1-luxury',
       style: 'Luxury & Thời Trang',
-      headingFamily: 'SVN-NoeDisplay',
+      headingFamily: 'FD NoeDisplay',
       headingCategory: 'Serif (Editorial Display)',
       bodyFamily: 'FDAeonik',
       bodyCategory: 'Sans Serif (Geometric Clean)',
@@ -1419,9 +1445,9 @@
     {
       id: 'pair-2-tech',
       style: 'Công Nghệ & Giao Diện Số',
-      headingFamily: 'SVN-ClashDisplay',
+      headingFamily: 'FD ClashDisplay',
       headingCategory: 'Display Sans (Geometric)',
-      bodyFamily: 'SVN-Gilroy',
+      bodyFamily: 'FD Gilroy',
       bodyCategory: 'Neo-Grotesk (UI Standard)',
       headline: 'Kiến Trúc Dữ Liệu & Kỷ Nguyên Trí Tuệ Nhân Tạo',
       subhead: 'Cặp đôi chuẩn mực Châu Âu hiện đại cho các sản phẩm công nghệ, SaaS và nền tảng số tiên phong.',
@@ -1431,9 +1457,9 @@
     {
       id: 'pair-3-journal',
       style: 'Báo Chí & Tạp Chí Tri Thức',
-      headingFamily: 'SVN-Adobe Caslon',
+      headingFamily: 'FD Adobe Caslon',
       headingCategory: 'Oldstyle Serif (Venetian Heritage)',
-      bodyFamily: 'SVN-Apercu Pro',
+      bodyFamily: 'FD Apercu Pro',
       bodyCategory: 'Humanist Sans (Warm Modern)',
       headline: 'Dòng Chảy Văn Hóa & Nghệ Thuật Chữ Đồ Họa Việt',
       subhead: 'Âm hưởng học thuật trang trọng, bề thế dung hòa hoàn hảo cùng nét chữ không chân nhân văn, gần gũi.',
@@ -1443,9 +1469,9 @@
     {
       id: 'pair-4-brand',
       style: 'Tuyên Ngôn Thương Hiệu Đột Phá',
-      headingFamily: 'SVN-Abril Fatface',
+      headingFamily: 'FD Abril Fatface',
       headingCategory: 'Didone Display (Ultra Bold)',
-      bodyFamily: 'SVN-Aptima',
+      bodyFamily: 'FD Aptima',
       bodyCategory: 'Humanist Sans (Balanced Contrast)',
       headline: 'Định Hình Tương Lai Bằng Những Ý Tưởng Táo Bạo',
       subhead: 'Cú hích thị giác đầy uy lực ở tiêu đề được cân bằng bởi khối thân bài nhẹ nhàng, minh bạch.',
@@ -1455,9 +1481,9 @@
     {
       id: 'pair-5-vintage',
       style: 'Hoài Niệm Sài Gòn & Di Sản Phố Phường',
-      headingFamily: 'SVN-HC Bourbon Grotesque',
+      headingFamily: 'FD HC Bourbon Grotesque',
       headingCategory: 'Vintage Display (Heritage)',
-      bodyFamily: 'SVN-Acta',
+      bodyFamily: 'FD Acta',
       bodyCategory: 'Humanist Sans (Editorial Warm)',
       headline: 'Góc Phố Rêu Phong & Ký Ức Bảng Hiệu Sài Gòn Xưa',
       subhead: 'Khơi gợi phong vị hào sảng của các bảng hiệu vẽ tay thập niên 70 trong một bố cục hiện đại tinh tế.',
@@ -1467,9 +1493,9 @@
     {
       id: 'pair-6-publishing',
       style: 'Ấn Phẩm Sách & Văn Học Dài Kỳ',
-      headingFamily: 'SVN-Adobe Jenson',
+      headingFamily: 'FD Adobe Jenson',
       headingCategory: 'Venetian Oldstyle (Renaissance)',
-      bodyFamily: 'SVN-A Love Of Thunder',
+      bodyFamily: 'FD A Love Of Thunder',
       bodyCategory: 'Humanist Sans (Friendly Soft)',
       headline: 'Hương Thơm Của Giấy Mộc & Tình Yêu Với Sách',
       subhead: 'Bộ đôi truyền thống bảo vệ mắt tối ưu, mang vẻ đẹp hoài cổ của những trang bản thảo kinh điển.',
@@ -1479,9 +1505,9 @@
     {
       id: 'pair-7-nordic',
       style: 'Tối Giản Bắc Âu (Nordic Minimal — Đảo Ngược)',
-      headingFamily: 'SVN-Aguila',
+      headingFamily: 'FD Aguila',
       headingCategory: 'Geometric Sans (Clean Modern)',
-      bodyFamily: 'SVN-Addington CF',
+      bodyFamily: 'FD Addington CF',
       bodyCategory: 'Book Serif (Warm & Elegant)',
       headline: 'Vẻ Đẹp Thuần Khiết Của Công Năng & Ánh Sáng',
       subhead: 'Phá cách bằng việc đảo ngược truyền thống: Tiêu đề hình học sắc gọn, thân bài có chân ấm cúng.',
@@ -1491,9 +1517,9 @@
     {
       id: 'pair-8-creative',
       style: 'Sáng Tạo & Cảm Xúc Nghệ Thuật',
-      headingFamily: 'SVN-Recoleta',
+      headingFamily: 'FD Recoleta',
       headingCategory: 'Soft Organic Serif (Playful)',
-      bodyFamily: 'SVN-Alpina',
+      bodyFamily: 'GR Alpina',
       bodyCategory: 'Modern Serif/Sans Hybrid',
       headline: 'Khơi Nguồn Cảm Hứng Từ Những Điều Giản Dị Nhất',
       subhead: 'Đường cong hữu cơ đầy cảm xúc hòa quyện cùng phong cách thiết kế đương đại của thế hệ sáng tạo trẻ.',
@@ -1513,11 +1539,11 @@
     // Set initial pair if not set
     if (!App.pairState.headingFont || !App.pairState.bodyFont) {
       var defaultHeading = App.allFonts.find(function (f) {
-        return f.name === 'SVN-NoeDisplay' || f.name === 'SVN-Adobe Caslon' ||
+        return f.name === 'FD NoeDisplay' || f.name === 'FD Adobe Caslon' || f.name === 'GR Pantheon' ||
           (f.category && f.category.indexOf('Serif') !== -1 && f.category.indexOf('Sans') === -1);
       });
       var defaultBody = App.allFonts.find(function (f) {
-        return f.name === 'FDAeonik' || f.name === 'SVN-Gilroy' || f.name === 'SVN-Aptima' ||
+        return f.name === 'FDAeonik' || f.name === 'FD Gilroy' || f.name === 'FD Aptima' ||
           (f.category && f.category.indexOf('Sans') !== -1);
       });
 

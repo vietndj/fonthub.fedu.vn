@@ -45,7 +45,7 @@
   function isGTFont(font) {
     if (!font || typeof font !== 'object') return false;
     if (font.is_gt) return true;
-    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /gt\b|grilli/i.test(t); })) {
+    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /gt\b|gr font/i.test(t); })) {
       return true;
     }
     var name = (font.name || font.family || '').toLowerCase().trim();
@@ -53,10 +53,12 @@
     var gtKnown = [
       'svn-ultra', 'svn-walsheim-pro', 'svn-superdisplay', 'svn-alpina',
       'gt-america', 'gt-sectra', 'gt-pantheon', 'fd-pantheon',
-      'gt-walsheim', 'gt-ultra', 'gt-super', 'gt-alpina'
+      'gr-america', 'gr-sectra', 'gr-walsheim', 'gr-ultra', 'gr-alpina', 'gr-super',
+      'gr-pantheon', 'gr-canon', 'gr-cinetype', 'gr-eesti', 'gr-era', 'gr-flaire',
+      'gr-flexa', 'gr-haptik', 'gr-maru', 'gr-mechanik', 'gr-planar', 'gr-standard', 'gr-zirkon'
     ];
     if (gtKnown.indexOf(id) !== -1) return true;
-    if (/^gt[-_\s]/i.test(name) || /\bgt\b/i.test(name) || name.includes('walsheim')) {
+    if (/^(gt|gr)[-_\s]/i.test(name) || /\b(gt|gr)\b/i.test(name) || name.includes('walsheim')) {
       return true;
     }
     return false;

@@ -191,12 +191,12 @@ for (const pair of semanticPairs) {
 
 // D. Specific Font Target Diacritic Checks
 const specificFontTests = [
-  { query: 'saol', expectedId: 'svn-saol-standard' },
-  { query: 'SAOL', expectedId: 'svn-saol-standard' },
-  { query: 'integral', expectedId: 'svn-integralcf' },
-  { query: 'INTEGRAL', expectedId: 'svn-integralcf' },
+  { query: 'saol', expectedId: 'fd-saol-standard' },
+  { query: 'SAOL', expectedId: 'fd-saol-standard' },
+  { query: 'integral', expectedId: 'fd-integralcf' },
+  { query: 'INTEGRAL', expectedId: 'fd-integralcf' },
 
-  { query: 'woodland', expectedId: 'svn-woodland' },
+  { query: 'woodland', expectedId: 'fd-woodland' },
   { query: 'đông', expectedSubstr: 'đông' }
 ];
 
@@ -333,7 +333,7 @@ assert(fullCounts.categories.all === totalTarget, `Total category count must be 
 assert(fullCounts.weights.all === totalTarget, `Total weights all must be ${totalTarget}`);
 assert(fullCounts.weights.single + fullCounts.weights.family === totalTarget, `Single + Family weights must sum to ${totalTarget}`);
 assert(fullCounts.vnSupport.supported === totalTarget, `Supported VN fonts must be ${totalTarget} (100%)`);
-assert(fullCounts.categories['GT Font'] === 6, `GT Font category must identify exactly 6 GT font families, found ${fullCounts.categories['GT Font']}`);
+assert(fullCounts.categories['GT Font'] === 19, `GT Font category must identify exactly 19 GT font families, found ${fullCounts.categories['GT Font']}`);
 
 // Verify Category partition sum
 const catSum = fullCounts.categories['Sans Serif'] +

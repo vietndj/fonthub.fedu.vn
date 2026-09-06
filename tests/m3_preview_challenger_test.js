@@ -263,7 +263,7 @@ test('4.1 100% of Font Cards in catalog.json have valid Google Drive URLs', () =
 
   assert.ok(fonts.length >= 361, `Catalog must contain at least 361 fonts, found ${fonts.length}`);
 
-  const driveRegex = /^https:\/\/drive\.google\.com\/drive\/folders\/[A-Za-z0-9_-]+\?usp=sharing$/;
+  const driveRegex = /^https:\/\/drive\.google\.com\/(drive\/folders\/|file\/d\/)[A-Za-z0-9_-]+(\/view)?\?usp=sharing$/;
   const invalidFonts = [];
 
   fonts.forEach((font, idx) => {

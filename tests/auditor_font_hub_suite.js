@@ -61,16 +61,16 @@ const typeTesterJs = fs.readFileSync(typeTesterPath, 'utf8');
 console.log(`${BOLD}▶ [Audit 1] Web Font Network Resolution & Fallback Integrity${RESET}`);
 
 const TARGET_FONTS = [
-  { query: 'GT Sectra', key: 'gt-sectra' },
-  { query: 'GT America', key: 'gt-america' },
-  { query: 'SVN-NoeDisplay', key: 'svn-noedisplay' },
+  { query: 'GR Sectra', key: 'gr-sectra' },
+  { query: 'GR America', key: 'gr-america' },
+  { query: 'FD NoeDisplay', key: 'fd-noedisplay' },
   { query: 'FDAeonik', key: 'fdaeonik' },
-  { query: 'SVN-ClashDisplay', key: 'svn-clashdisplay' },
-  { query: 'SVN-Gilroy', key: 'svn-gilroy' },
-  { query: 'SVN-Ultra', key: 'svn-ultra' },
-  { query: 'SVN-Walsheim Pro', key: 'svn-walsheim-pro' },
-  { query: 'SVN-Alpina', key: 'svn-alpina' },
-  { query: 'SVN-SuperDisplay', key: 'svn-superdisplay' }
+  { query: 'FD ClashDisplay', key: 'fd-clashdisplay' },
+  { query: 'FD Gilroy', key: 'fd-gilroy' },
+  { query: 'GR Ultra', key: 'gr-ultra' },
+  { query: 'GR Walsheim', key: 'gr-walsheim' },
+  { query: 'GR Alpina', key: 'gr-alpina' },
+  { query: 'GR Super', key: 'gr-super' }
 ];
 
 TARGET_FONTS.forEach(({ query, key }) => {
@@ -112,14 +112,14 @@ TARGET_FONTS.forEach(({ query, key }) => {
 console.log(`\n${BOLD}▶ [Audit 2] 8 Curated Pairing Boards Font Asset Verification${RESET}`);
 
 const CURATED_PAIRS_LIST = [
-  { id: 'pair-1-luxury', h: 'SVN-NoeDisplay', b: 'FDAeonik' },
-  { id: 'pair-2-tech', h: 'SVN-ClashDisplay', b: 'SVN-Gilroy' },
-  { id: 'pair-3-journal', h: 'SVN-Adobe Caslon', b: 'SVN-Apercu Pro' },
-  { id: 'pair-4-brand', h: 'SVN-Abril Fatface', b: 'SVN-Aptima' },
-  { id: 'pair-5-vintage', h: 'SVN-HC Bourbon Grotesque', b: 'SVN-Acta' },
-  { id: 'pair-6-publishing', h: 'SVN-Adobe Jenson', b: 'SVN-A Love Of Thunder' },
-  { id: 'pair-7-nordic', h: 'SVN-Aguila', b: 'SVN-Addington CF' },
-  { id: 'pair-8-future', h: 'SVN-Bio Sans', b: 'SVN-Avo' }
+  { id: 'pair-1-luxury', h: 'FD NoeDisplay', b: 'FDAeonik' },
+  { id: 'pair-2-tech', h: 'FD ClashDisplay', b: 'FD Gilroy' },
+  { id: 'pair-3-journal', h: 'FD Adobe Caslon', b: 'FD Apercu Pro' },
+  { id: 'pair-4-brand', h: 'FD Abril Fatface', b: 'FD Aptima' },
+  { id: 'pair-5-vintage', h: 'FD HC Bourbon Grotesque', b: 'FD Acta' },
+  { id: 'pair-6-publishing', h: 'FD Adobe Jenson', b: 'FD A Love Of Thunder' },
+  { id: 'pair-7-nordic', h: 'FD Aguila', b: 'FD Addington CF' },
+  { id: 'pair-8-future', h: 'FD Bio Sans', b: 'FD Avo' }
 ];
 
 CURATED_PAIRS_LIST.forEach((pair, idx) => {

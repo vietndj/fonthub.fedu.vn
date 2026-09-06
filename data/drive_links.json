@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "updated_at": "2026-09-06T07:12:35.195473+00:00",
   "summary": {
-    "total_families": 361,
+    "total_families": 382,
     "total_files": 1070,
     "multi_file_families": 139,
     "single_file_families": 222,
@@ -13955,6 +13955,120 @@
         "Fine Black",
         "Fine Black Italic"
       ]
+    },
+    "GR Alpina": {
+      "folder_name": "GR Alpina",
+      "clean_name": "Alpina",
+      "folder_id": "1q-uljP9im9-KvKxx-usbdPhZt5a_5z7H",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1q-uljP9im9-KvKxx-usbdPhZt5a_5z7H?usp=sharing"
+    },
+    "GR America": {
+      "folder_name": "GR America",
+      "clean_name": "America",
+      "folder_id": "1xIuhsB36gfVmE6YXbLcLK_XarMmYX6Qs",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1xIuhsB36gfVmE6YXbLcLK_XarMmYX6Qs?usp=sharing"
+    },
+    "GR Canon": {
+      "folder_name": "GR Canon",
+      "clean_name": "Canon",
+      "folder_id": "1ITKPhXyGn4SMHWFZCJKmDk0m0QuOA3nk",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1ITKPhXyGn4SMHWFZCJKmDk0m0QuOA3nk?usp=sharing"
+    },
+    "GR Cinetype": {
+      "folder_name": "GR Cinetype",
+      "clean_name": "Cinetype",
+      "folder_id": "1FyjBU8YsiQOXHhHN3wXAqdw15xIjTMKr",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1FyjBU8YsiQOXHhHN3wXAqdw15xIjTMKr?usp=sharing"
+    },
+    "GR Eesti": {
+      "folder_name": "GR Eesti",
+      "clean_name": "Eesti",
+      "folder_id": "1DpiDs8MFGl2fyRv6TK1pBvadK1E0VQbq",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1DpiDs8MFGl2fyRv6TK1pBvadK1E0VQbq?usp=sharing"
+    },
+    "GR Era": {
+      "folder_name": "GR Era",
+      "clean_name": "Era",
+      "folder_id": "1lTqhK_FvUYl1_gp1UyYLmxkhY4vc9WXv",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1lTqhK_FvUYl1_gp1UyYLmxkhY4vc9WXv?usp=sharing"
+    },
+    "GR Flaire": {
+      "folder_name": "GR Flaire",
+      "clean_name": "Flaire",
+      "folder_id": "1GvFGNHvJaQdHn5A_8B-ZpK281p2mfaJI",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1GvFGNHvJaQdHn5A_8B-ZpK281p2mfaJI?usp=sharing"
+    },
+    "GR Flexa": {
+      "folder_name": "GR Flexa",
+      "clean_name": "Flexa",
+      "folder_id": "1ZMSVOi7F3G-6scGnRyfQasaFW7VD5by-",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1ZMSVOi7F3G-6scGnRyfQasaFW7VD5by-?usp=sharing"
+    },
+    "GR Haptik": {
+      "folder_name": "GR Haptik",
+      "clean_name": "Haptik",
+      "folder_id": "1FKvP9j3WtVnBSf22Xc-Wm9aYfClg-so_",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1FKvP9j3WtVnBSf22Xc-Wm9aYfClg-so_?usp=sharing"
+    },
+    "GR Maru": {
+      "folder_name": "GR Maru",
+      "clean_name": "Maru",
+      "folder_id": "1bJZCMi0qpf1B98GIs3WAOeiNjUYfBD9S",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1bJZCMi0qpf1B98GIs3WAOeiNjUYfBD9S?usp=sharing"
+    },
+    "GR Mechanik": {
+      "folder_name": "GR Mechanik",
+      "clean_name": "Mechanik",
+      "folder_id": "1oLumIT2C9O2nAOmoDKVdr2JeP9RSeuF1",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1oLumIT2C9O2nAOmoDKVdr2JeP9RSeuF1?usp=sharing"
+    },
+    "GR Pantheon": {
+      "folder_name": "GR Pantheon",
+      "clean_name": "Pantheon",
+      "folder_id": "1lA65LekNYF8N09dEDM-Msy1Wth-mbh-N",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1lA65LekNYF8N09dEDM-Msy1Wth-mbh-N?usp=sharing"
+    },
+    "GR Planar": {
+      "folder_name": "GR Planar",
+      "clean_name": "Planar",
+      "folder_id": "1kzHYiLyZeC9xKi4Qa1LnkoN-Zx49WFpO",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1kzHYiLyZeC9xKi4Qa1LnkoN-Zx49WFpO?usp=sharing"
+    },
+    "GR Sectra": {
+      "folder_name": "GR Sectra",
+      "clean_name": "Sectra",
+      "folder_id": "131O7aqir_6LJkf1osuQqjItnTJuNO1Ki",
+      "drive_folder_url": "https://drive.google.com/drive/folders/131O7aqir_6LJkf1osuQqjItnTJuNO1Ki?usp=sharing"
+    },
+    "GR Standard": {
+      "folder_name": "GR Standard",
+      "clean_name": "Standard",
+      "folder_id": "1043xxf943AFZC1-j8Km2zUAJiH91_zI0",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1043xxf943AFZC1-j8Km2zUAJiH91_zI0?usp=sharing"
+    },
+    "GR Super": {
+      "folder_name": "GR Super",
+      "clean_name": "Super",
+      "folder_id": "1WsObM_rIrNCnPbKlyNo74i_wsDnkLoSW",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1WsObM_rIrNCnPbKlyNo74i_wsDnkLoSW?usp=sharing"
+    },
+    "GR Ultra": {
+      "folder_name": "GR Ultra",
+      "clean_name": "Ultra",
+      "folder_id": "1XV8pqOFLXT-WLF_teT6FFOQfwfJjifJq",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1XV8pqOFLXT-WLF_teT6FFOQfwfJjifJq?usp=sharing"
+    },
+    "GR Walsheim": {
+      "folder_name": "GR Walsheim",
+      "clean_name": "Walsheim",
+      "folder_id": "1q9Ws-Gnuiz1dxk-gpgfgpHJShsH3pGU7",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1q9Ws-Gnuiz1dxk-gpgfgpHJShsH3pGU7?usp=sharing"
+    },
+    "GR Zirkon": {
+      "folder_name": "GR Zirkon",
+      "clean_name": "Zirkon",
+      "folder_id": "1QsqJMs62446s-b9rAWdqjgqIv2NFmlEE",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1QsqJMs62446s-b9rAWdqjgqIv2NFmlEE?usp=sharing"
     }
   },
   "drive_links": {
@@ -14320,6 +14434,25 @@
     "SVN-Zelda Sans": "https://drive.google.com/drive/folders/1vTvZ1xN2jUL4tVUAywBVldE71F1FqBCE?usp=sharing",
     "SVN-Zero": "https://drive.google.com/drive/folders/1nIYLeEdbM0glTYV9YcX1_oOUKM7x32ct?usp=sharing",
     "GT America": "https://drive.google.com/drive/folders/1ImQ2OK8QyS7BN_8LR5MRZCA1qc883jAS?usp=sharing",
-    "GT Sectra": "https://drive.google.com/drive/folders/1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0?usp=sharing"
+    "GT Sectra": "https://drive.google.com/drive/folders/1aZdDy-AWWz5Bm_dxw_BsPTbh0RKrBaL0?usp=sharing",
+    "GR Alpina": "https://drive.google.com/drive/folders/1q-uljP9im9-KvKxx-usbdPhZt5a_5z7H?usp=sharing",
+    "GR America": "https://drive.google.com/drive/folders/1xIuhsB36gfVmE6YXbLcLK_XarMmYX6Qs?usp=sharing",
+    "GR Canon": "https://drive.google.com/drive/folders/1ITKPhXyGn4SMHWFZCJKmDk0m0QuOA3nk?usp=sharing",
+    "GR Cinetype": "https://drive.google.com/drive/folders/1FyjBU8YsiQOXHhHN3wXAqdw15xIjTMKr?usp=sharing",
+    "GR Eesti": "https://drive.google.com/drive/folders/1DpiDs8MFGl2fyRv6TK1pBvadK1E0VQbq?usp=sharing",
+    "GR Era": "https://drive.google.com/drive/folders/1lTqhK_FvUYl1_gp1UyYLmxkhY4vc9WXv?usp=sharing",
+    "GR Flaire": "https://drive.google.com/drive/folders/1GvFGNHvJaQdHn5A_8B-ZpK281p2mfaJI?usp=sharing",
+    "GR Flexa": "https://drive.google.com/drive/folders/1ZMSVOi7F3G-6scGnRyfQasaFW7VD5by-?usp=sharing",
+    "GR Haptik": "https://drive.google.com/drive/folders/1FKvP9j3WtVnBSf22Xc-Wm9aYfClg-so_?usp=sharing",
+    "GR Maru": "https://drive.google.com/drive/folders/1bJZCMi0qpf1B98GIs3WAOeiNjUYfBD9S?usp=sharing",
+    "GR Mechanik": "https://drive.google.com/drive/folders/1oLumIT2C9O2nAOmoDKVdr2JeP9RSeuF1?usp=sharing",
+    "GR Pantheon": "https://drive.google.com/drive/folders/1lA65LekNYF8N09dEDM-Msy1Wth-mbh-N?usp=sharing",
+    "GR Planar": "https://drive.google.com/drive/folders/1kzHYiLyZeC9xKi4Qa1LnkoN-Zx49WFpO?usp=sharing",
+    "GR Sectra": "https://drive.google.com/drive/folders/131O7aqir_6LJkf1osuQqjItnTJuNO1Ki?usp=sharing",
+    "GR Standard": "https://drive.google.com/drive/folders/1043xxf943AFZC1-j8Km2zUAJiH91_zI0?usp=sharing",
+    "GR Super": "https://drive.google.com/drive/folders/1WsObM_rIrNCnPbKlyNo74i_wsDnkLoSW?usp=sharing",
+    "GR Ultra": "https://drive.google.com/drive/folders/1XV8pqOFLXT-WLF_teT6FFOQfwfJjifJq?usp=sharing",
+    "GR Walsheim": "https://drive.google.com/drive/folders/1q9Ws-Gnuiz1dxk-gpgfgpHJShsH3pGU7?usp=sharing",
+    "GR Zirkon": "https://drive.google.com/drive/folders/1QsqJMs62446s-b9rAWdqjgqIv2NFmlEE?usp=sharing"
   }
 }

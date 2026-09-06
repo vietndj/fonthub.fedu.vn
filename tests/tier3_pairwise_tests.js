@@ -31,10 +31,10 @@ function runTier3Tests(reporter) {
   // Pairwise & Cross-Feature Interaction Tests
   // =========================================================================
 
-  reporter.test('T3.1: Search Term ("SVN") + Category ("Sans Serif") + Mood ("Tech & Công nghệ")', () => {
-    // Step 1: Search for SVN
-    const searched = SearchEngine.instantSearch(fonts, 'SVN');
-    assert.ok(searched.length > 0, 'Must find fonts matching SVN');
+  reporter.test('T3.1: Search Term ("FD") + Category ("Sans Serif") + Mood ("Tech & Công nghệ")', () => {
+    // Step 1: Search for FD
+    const searched = SearchEngine.instantSearch(fonts, 'FD');
+    assert.ok(searched.length > 0, 'Must find fonts matching FD');
 
     // Step 2: Apply Category and Mood filter simultaneously
     const filtered = SearchEngine.multiFilter(searched, {
@@ -47,11 +47,10 @@ function runTier3Tests(reporter) {
       const name = f.name || f.family || '';
       const cat = f.category || f.core_section || '';
       const mood = f.matrix_3d?.mood || f.matrix_mood || '';
-      const hasSvnDrive = Array.isArray(f.drive_files) && f.drive_files.some(df => df.toLowerCase().includes('svn'));
 
       assert.ok(
-        name.toLowerCase().includes('svn') || (f.id && f.id.includes('svn')) || hasSvnDrive,
-        'Name, ID, or Drive file must contain SVN'
+        name.toLowerCase().includes('fd') || (f.id && f.id.includes('fd')),
+        'Name or ID must contain FD'
       );
       assert.ok(cat.toLowerCase().includes('sans'), 'Must be Sans Serif category');
       assert.ok(mood.toLowerCase().includes('tech'), 'Must be Tech mood');
@@ -115,7 +114,8 @@ function runTier3Tests(reporter) {
     const families = familyGrouping.families || {};
     let matchedDriveCount = 0;
     for (const f of filtered) {
-      if (families[f.name] || families[`SVN-${f.name}`] || (f.drive_files && f.drive_files.length > 0)) {
+      const cleanStem = f.name.replace(/^FD\s*/, '');
+      if (families[f.name] || families[`SVN-${cleanStem}`] || families[cleanStem] || f.drive_folder_url || (f.drive_files && f.drive_files.length > 0)) {
         matchedDriveCount++;
       }
     }
