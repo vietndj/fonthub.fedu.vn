@@ -194,6 +194,49 @@ async function runLiveAudit() {
 
   results.favoritesFilterStatus = (hasFavBtn && hasFavStorage && hasFavFilter) ? 'PASS' : 'FAIL';
 
+  // 4. Audit Vietnamese Support & Redundant Filter Removal
+  console.log('\n------------------------------------------------------------');
+  console.log('AUDIT SECTION 4: VIETNAMESE SUPPORT & FILTER AUDIT');
+  console.log('------------------------------------------------------------');
+  let vnSupportedCount = 0;
+  let stuckNamesErrors = [];
+  for (const f of fonts) {
+    if (f.vietnamese_support === true) vnSupportedCount++;
+    if (/^(FD|GR)[a-zA-Z]/.test(f.name) && !f.name.startsWith('FD ') && !f.name.startsWith('GR ')) {
+      stuckNamesErrors.push({ id: f.id, name: f.name });
+    }
+  }
+
+  const allVnSupported = vnSupportedCount === fonts.length;
+  const noRedundantVnFilter = !html.includes('id="filter-vn-support"') && !html.includes('Chỉ hiện font hỗ trợ Tiếng Việt');
+  const zeroStuckNames = stuckNamesErrors.length === 0;
+
+  console.log(`• 100% Fonts Support Vietnamese:    ${allVnSupported ? '✅ PASS' : '❌ FAIL'} (${vnSupportedCount}/${fonts.length})`);
+  console.log(`• Redundant VN Filter Removed:       ${noRedundantVnFilter ? '✅ PASS' : '❌ FAIL'}`);
+  console.log(`• Zero Stuck Font Names (e.g. FD Aeonik): ${zeroStuckNames ? '✅ PASS' : '❌ FAIL'} (${stuckNamesErrors.length} errors)`);
+
+  // 5. Audit Accents Clipping & Live CSS
+  console.log('\n------------------------------------------------------------');
+  console.log('AUDIT SECTION 5: ACCENTS CLIPPING & LIVE CSS AUDIT');
+  console.log('------------------------------------------------------------');
+  console.log('Fetching live style.css to verify line-height and padding...');
+  const cssResp = await fetchUrl(`${liveBase}/style.css?t=${timestamp}`);
+  const css = cssResp.body;
+
+  const hasSafeTesterLineHeight = css.includes('--tester-line-height: 1.4') || css.includes('--tester-line-height: 1.35;') || css.includes('--tester-line-height: 1.3');
+  const hasCardPadding = css.includes('.card-specimen-wrap') && (css.includes('padding: 18px 0;') || css.includes('padding: 16px 0;'));
+  const hasFsSpecimenLineHeight = css.includes('.fs-item-specimen') && (css.includes('line-height: 1.4') || css.includes('line-height: 1.25;') || css.includes('line-height: 1.3;'));
+  const hasFsSpecimenOverflow = css.includes('.fs-item-specimen-wrap') && css.includes('overflow-y: visible;');
+  const hasGridSpecimenLineHeight = css.includes('.fontshare-grid-mode .fs-item-specimen') && (css.includes('line-height: 1.4') || css.includes('line-height: 1.35;'));
+
+  console.log(`• Safe Tester Line-Height (--tester-line-height >= 1.3): ${hasSafeTesterLineHeight ? '✅ PASS' : '❌ FAIL'}`);
+  console.log(`• Card Specimen Padding (>= 16px 0):                     ${hasCardPadding ? '✅ PASS' : '❌ FAIL'}`);
+  console.log(`• Fontshare Specimen Line-Height (>= 1.25):              ${hasFsSpecimenLineHeight ? '✅ PASS' : '❌ FAIL'}`);
+  console.log(`• Fontshare Specimen Overflow-Y Visible:                 ${hasFsSpecimenOverflow ? '✅ PASS' : '❌ FAIL'}`);
+  console.log(`• Fontshare Grid Specimen Line-Height (>= 1.35):         ${hasGridSpecimenLineHeight ? '✅ PASS' : '❌ FAIL'}`);
+
+  const cssClippingPassed = hasSafeTesterLineHeight && hasCardPadding && hasFsSpecimenLineHeight && hasFsSpecimenOverflow && hasGridSpecimenLineHeight;
+
   // Summary Verdict
   if (results.totalFonts !== 376 ||
       results.grFontsCount !== 19 ||
@@ -202,7 +245,11 @@ async function runLiveAudit() {
       results.svnTraceErrors.length > 0 ||
       results.driveLinkErrors.length > 0 ||
       results.noeDisplayStatus !== 'PASS' ||
-      results.favoritesFilterStatus !== 'PASS') {
+      results.favoritesFilterStatus !== 'PASS' ||
+      !allVnSupported ||
+      !noRedundantVnFilter ||
+      !zeroStuckNames ||
+      !cssClippingPassed) {
     results.passed = false;
   }
 
