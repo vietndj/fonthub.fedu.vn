@@ -65,6 +65,29 @@
   }
 
   /**
+   * Identifies fonts belonging to the CoType Foundry collection.
+   */
+  function isCoTypeFont(font) {
+    if (!font || typeof font !== 'object') return false;
+    if (font.is_cotype) return true;
+    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /cotype/i.test(t); })) {
+      return true;
+    }
+    var name = (font.name || font.family || '').toLowerCase().trim();
+    var id = (font.id || '').toLowerCase().trim();
+    var cotypeKnown = [
+      'altform', 'ambit', 'coanda', 'lock-sans', 'lock-serif',
+      'orbikular', 'rm-mono', 'rm-neue', 'scandium', 'cotype'
+    ];
+    for (var i = 0; i < cotypeKnown.length; i++) {
+      if (id.indexOf(cotypeKnown[i]) !== -1 || name.indexOf(cotypeKnown[i]) !== -1) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
    * Robust category matcher that discriminates 'Serif' vs 'Sans Serif'
    * and properly matches composite categories.
    */
@@ -78,6 +101,9 @@
     if (tc === 'all') return true;
     if (tc === 'gt font' || tc === 'gt' || tc === 'grilli type') {
       return isGTFont(font);
+    }
+    if (tc === 'cotype' || tc === 'cotype font' || tc === 'cotype foundry') {
+      return isCoTypeFont(font);
     }
     if (fc === tc) return true;
 
@@ -384,7 +410,8 @@
         'Sans Serif': 0,
         'Blackletter, Script & Monospace': 0,
         'Việt Nam Oldstyle / Vintage Sài Gòn': 0,
-        'GT Font': 0
+        'GT Font': 0,
+        'CoType': 0
       },
       styles: {},
       moods: {},
@@ -404,6 +431,7 @@
       if (matchesCategory(cat, 'Blackletter, Script & Monospace', f)) counts.categories['Blackletter, Script & Monospace']++;
       if (matchesCategory(cat, 'Việt Nam Oldstyle / Vintage Sài Gòn', f)) counts.categories['Việt Nam Oldstyle / Vintage Sài Gòn']++;
       if (isGTFont(f)) counts.categories['GT Font']++;
+      if (isCoTypeFont(f)) counts.categories['CoType']++;
 
       var style = (f.matrix_3d && f.matrix_3d.style) || f.matrix_visual;
       if (style) counts.styles[style] = (counts.styles[style] || 0) + 1;
@@ -445,6 +473,7 @@
   return {
     removeVietnameseDiacritics: removeVietnameseDiacritics,
     isGTFont: isGTFont,
+    isCoTypeFont: isCoTypeFont,
     matchesCategory: matchesCategory,
     buildSearchIndex: buildSearchIndex,
     instantSearch: instantSearch,

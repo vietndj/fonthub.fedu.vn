@@ -57,6 +57,13 @@
       pill: 'all',
       sort: 'popular'
     },
+    fontsharePagination: {
+      pool: [],
+      renderedCount: 0,
+      batchSize: 30,
+      isLoading: false
+    },
+    fontshareObserver: null,
     pairState: {
       headingFont: null,
       bodyFont: null,
@@ -101,6 +108,9 @@
     DOM.fsPillBtns = document.querySelectorAll('.fs-pill-btn');
     DOM.fsSortBtns = document.querySelectorAll('.fs-sort-btn');
     DOM.fsScrollTopBtn = document.getElementById('fs-scroll-top-btn');
+    DOM.fontshareSentinel = document.getElementById('fontshare-scroll-sentinel');
+    DOM.fontshareEndMessage = document.getElementById('fontshare-end-message');
+    DOM.fsEndCount = document.getElementById('fs-end-count');
     DOM.fsTabFonts = document.getElementById('fs-tab-fonts');
     DOM.fsTabPairs = document.getElementById('fs-tab-pairs');
     DOM.fsTabLicenses = document.getElementById('fs-tab-licenses');
@@ -158,6 +168,7 @@
     DOM.countVintage = document.getElementById('count-vintage');
     DOM.countMonoScript = document.getElementById('count-mono-script');
     DOM.countGt = document.getElementById('count-gt');
+    DOM.countCotype = document.getElementById('count-cotype');
     DOM.countFav = document.getElementById('count-fav');
     DOM.chipFavorites = document.getElementById('chip-favorites');
 
@@ -486,6 +497,14 @@
       ? '<button type="button" class="badge badge-gt" data-category="GT Font" title="Lọc phông chữ GR Font (FEDU)">GT Font</button>'
       : '';
 
+    var isCoType = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isCoTypeFont)
+      ? CatalogLoader.isCoTypeFont(font)
+      : (Boolean(font.is_cotype) || (Array.isArray(font.tags) && font.tags.indexOf('CoType') !== -1));
+
+    var cotypeBadge = isCoType
+      ? '<button type="button" class="badge badge-cotype" data-category="CoType" title="Lọc phông chữ CoType Foundry (FEDU)">CoType</button>'
+      : '';
+
     var anatomy = font.anatomy || {};
     var contrast = anatomy.contrast || 'Medium';
     var axis = anatomy.axis || 'Vertical';
@@ -613,6 +632,7 @@
       '    </div>',
       '    <div class="card-badges-row">',
       '      ' + gtBadge,
+      '      ' + cotypeBadge,
       '      ' + styleBadge,
       '      ' + moodBadge,
       '      ' + useBadge,
@@ -1014,6 +1034,21 @@
       });
     });
 
+    // CoType badge filter click
+    DOM.fontGrid.querySelectorAll('.badge-cotype:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var cotypeChip = document.querySelector('.chip-btn[data-category="CoType"]');
+        if (cotypeChip) {
+          cotypeChip.click();
+        } else {
+          App.activeFilters.category = 'CoType';
+          applyFilters();
+        }
+      });
+    });
+
     // Glyphs modal button
     DOM.fontGrid.querySelectorAll('[data-action="glyphs"]:not([data-bound])').forEach(function (btn) {
       btn.setAttribute('data-bound', 'true');
@@ -1119,6 +1154,7 @@
     if (DOM.countVintage) DOM.countVintage.textContent = counts.categories['Việt Nam Oldstyle / Vintage Sài Gòn'] || 0;
     if (DOM.countMonoScript) DOM.countMonoScript.textContent = counts.categories['Blackletter, Script & Monospace'] || 0;
     if (DOM.countGt) DOM.countGt.textContent = counts.categories['GT Font'] || 0;
+    if (DOM.countCotype) DOM.countCotype.textContent = counts.categories['CoType'] || 0;
     if (DOM.countFav) DOM.countFav.textContent = getFavorites().length;
   }
 
@@ -1291,7 +1327,145 @@
     'Tối ưu hóa thuật toán và trải nghiệm người dùng'
   ];
 
-  function renderFontshareView() {
+  function renderFontshareCardHTML(font, idx, state) {
+    var family = font.family || font.name;
+    var designer = font.designer || 'FEDU Type Foundry';
+    var weightsCount = font.weights ? font.weights.length : (font.files_count || 1);
+    var defaultDrive = (font.id && font.id.startsWith('gr-'))
+      ? 'https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing'
+      : 'https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing';
+    var driveView = font.drive_view_url || font.drive_url || font.drive_link || defaultDrive;
+    var driveDown = font.drive_download_url || font.download_url || font.zip_url || driveView;
+    var isVariable = font.is_variable || weightsCount >= 6;
+    var sourceType = font.source_type || (font.license || 'Closed Source');
+    var isFav = isFontFavorite(font.id);
+
+    // Lazy load webfont for visible cards
+    if (font.web_font_url) {
+      App.typeTester.loadWebFont(family, font.web_font_url).catch(function () {});
+    }
+
+    // Resolve specimen text based on presets or custom input
+    var specimenText = font.name;
+    if (state.text && state.text.trim()) {
+      specimenText = state.text.trim();
+    } else if (state.preset === 'names') {
+      specimenText = font.name;
+    } else if (state.preset === 'cities') {
+      specimenText = CITIES_PRESETS[idx % CITIES_PRESETS.length];
+    } else if (state.preset === 'excerpts') {
+      specimenText = EXCERPTS_PRESETS[idx % EXCERPTS_PRESETS.length];
+    }
+
+    var fallbackCategory = (font.category && font.category.toLowerCase().includes('serif') && !font.category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
+
+    return [
+      '<article class="fontshare-card fs-list-item" data-family="' + escapeHTML(family) + '" data-font-id="' + escapeHTML(font.id) + '">',
+      '  <div class="fs-item-meta-top">',
+      '    <div class="fs-item-title-group">',
+      '      <h3 class="fs-item-name" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + ';">' + escapeHTML(font.name) + '</h3>',
+      '      <button type="button" class="fs-star-btn ' + (isFav ? 'active' : '') + '" data-fav-id="' + escapeHTML(font.id) + '" aria-label="Favorite">' + (isFav ? '★' : '☆') + '</button>',
+      '    </div>',
+      '    <div class="fs-item-badges">',
+      '      <span class="fs-styles-badge">' + weightsCount + ' styles</span>',
+      '      <span class="fs-feature-badge">' + (isVariable ? 'Variable' : 'Static') + '</span>',
+      '      <span class="fs-license-badge">' + escapeHTML(sourceType) + '</span>',
+      '    </div>',
+      '  </div>',
+      '  <div class="fs-item-specimen-wrap">',
+      '    <div class="fs-item-specimen preview-text" contenteditable="true" spellcheck="false" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; font-size: ' + state.size + 'px; text-align: ' + state.align + ';">',
+      '      ' + escapeHTML(specimenText),
+      '    </div>',
+      '  </div>',
+      '  <div class="fontshare-waterfall fs-waterfall-drawer card-waterfall-drawer" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; display: none;">',
+      '    <div class="waterfall-row"><span class="waterfall-size-tag">72px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 72px; font-weight: 700;">Việt Nam Độc Lập</div></div>',
+      '    <div class="waterfall-row"><span class="waterfall-size-tag">48px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 48px; font-weight: 600;">Nghệ thuật chữ đồ họa thực chiến</div></div>',
+      '    <div class="waterfall-row"><span class="waterfall-size-tag">32px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 32px; font-weight: 400;">Do bạch kim rất quý nên qua thời gian phong thổ vẫn giữ màu.</div></div>',
+      '    <div class="waterfall-row"><span class="waterfall-size-tag">20px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 20px; font-weight: 400;">Đường nét hài hòa, tinh tế, dấu thanh điệu chuẩn xác bảo toàn vẻ đẹp tiếng Việt có dấu.</div></div>',
+      '    <div class="waterfall-row"><span class="waterfall-size-tag">14px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 14px; font-weight: 400; letter-spacing: 0.05em;">0123456789 • ABCDEFGHIJKLMNOPQRSTUVWXYZ • abcdefghijklmnopqrstuvwxyz • ăâđêôơư</div></div>',
+      '  </div>',
+      '  <div class="fs-item-meta-bottom">',
+      '    <span class="fs-designer">Designed by ' + escapeHTML(designer) + '</span>',
+      '    <div class="fs-card-weight-ctrl" title="Độ dày font (Font Weight)">',
+      '      <span class="fs-weight-icon" aria-hidden="true">W</span>',
+      '      <input type="range" class="card-weight-slider fs-range-slider" min="100" max="900" step="100" value="400" aria-label="Độ dày font">',
+      '      <span class="fs-weight-val">400</span>',
+      '    </div>',
+      '    <div class="fs-actions">',
+      '      <button type="button" class="fs-btn-waterfall-toggle card-styles-toggle" data-action="toggle-waterfall" data-action-card="toggle-card-waterfall">Waterfall ▾</button>',
+      '      <button type="button" class="btn-seg btn-glyph-trigger" data-glyph-font-id="' + escapeHTML(font.id) + '">Glyphs</button>',
+      '      <a href="' + escapeHTML(driveView) + '" class="btn-seg btn-drive-link" target="_blank" rel="noopener noreferrer" title="Mở trên Google Drive">Drive ↗</a>',
+      '      <a href="' + escapeHTML(driveDown) + '" class="fs-download-link" target="_blank" rel="noopener noreferrer">Tải ZIP</a>',
+      '    </div>',
+      '  </div>',
+      '</article>'
+    ].join('');
+  }
+
+  function updateFontshareSentinel(hasMore) {
+    var sentinel = DOM.fontshareSentinel;
+    var endMsg = DOM.fontshareEndMessage;
+    var pagination = App.fontsharePagination;
+
+    if (hasMore) {
+      if (sentinel) sentinel.style.display = 'flex';
+      if (endMsg) endMsg.style.display = 'none';
+    } else {
+      if (sentinel) sentinel.style.display = 'none';
+      if (endMsg) {
+        if (pagination && pagination.pool && pagination.pool.length > 0) {
+          endMsg.style.display = 'block';
+          if (DOM.fsEndCount) DOM.fsEndCount.textContent = pagination.pool.length;
+        } else {
+          endMsg.style.display = 'none';
+        }
+      }
+    }
+  }
+
+  function checkSentinelInView() {
+    var sentinel = DOM.fontshareSentinel;
+    if (!sentinel || sentinel.style.display === 'none') return false;
+    var rect = sentinel.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    return rect.top <= vh + 150;
+  }
+
+  function appendFontshareBatch() {
+    if (!DOM.fontshareGrid) return;
+    var pagination = App.fontsharePagination;
+    if (!pagination || pagination.isLoading) return;
+    if (pagination.renderedCount >= pagination.pool.length) {
+      updateFontshareSentinel(false);
+      return;
+    }
+
+    pagination.isLoading = true;
+    var state = App.fontshareState;
+    var start = pagination.renderedCount;
+    var end = Math.min(start + pagination.batchSize, pagination.pool.length);
+    var nextBatch = pagination.pool.slice(start, end);
+
+    var html = nextBatch.map(function (font, i) {
+      return renderFontshareCardHTML(font, start + i, state);
+    }).join('');
+
+    DOM.fontshareGrid.insertAdjacentHTML('beforeend', html);
+    pagination.renderedCount = end;
+    pagination.isLoading = false;
+
+    var hasMore = pagination.renderedCount < pagination.pool.length;
+    updateFontshareSentinel(hasMore);
+
+    // Auto-fill viewport if screen height is larger than initial cards
+    if (hasMore && checkSentinelInView()) {
+      requestAnimationFrame(function () {
+        appendFontshareBatch();
+      });
+    }
+  }
+
+  function renderFontshareView(options) {
     if (!DOM.fontshareGrid) return;
 
     var state = App.fontshareState;
@@ -1331,6 +1505,7 @@
       pool = pool.filter(function (f) {
         var c = (f.category || '').toLowerCase();
         if (state.category === 'GT Font') return (f.tags && f.tags.includes('GT Font')) || (f.name && (f.name.startsWith('GT') || f.name.startsWith('GR'))) || Boolean(f.is_gt);
+        if (state.category === 'CoType') return (typeof CatalogLoader !== 'undefined' && CatalogLoader.isCoTypeFont) ? CatalogLoader.isCoTypeFont(f) : Boolean(f.is_cotype);
         if (state.category === 'Vintage') return c.includes('vintage') || (f.tags && f.tags.some(function (t) { return t.includes('Vintage'); }));
         if (state.category === 'Mono/Script') return c.includes('mono') || c.includes('script');
         return c.includes(state.category.toLowerCase());
@@ -1371,126 +1546,197 @@
     if (DOM.fsTotalCount) DOM.fsTotalCount.textContent = pool.length;
     if (DOM.fsFontsCount) DOM.fsFontsCount.textContent = pool.length;
 
-    // Display slice of fonts (30 for initial snappy render)
-    var displayFonts = pool.slice(0, 30);
+    DOM.fontshareGrid.className = 'fontshare-specimens-container ' + (state.viewMode === 'grid' ? 'fontshare-grid-mode' : 'fontshare-list-mode');
 
-    if (displayFonts.length === 0) {
+    // Reset pagination state
+    DOM.fontshareGrid.innerHTML = '';
+    App.fontsharePagination = {
+      pool: pool,
+      renderedCount: 0,
+      batchSize: 30,
+      isLoading: false
+    };
+
+    if (pool.length === 0) {
       DOM.fontshareGrid.innerHTML = '<div style="padding: 60px; text-align: center; color: var(--fontshare-muted); font-size: 1.1rem;">' +
         'No fonts match the selected criteria. Try resetting filters.</div>';
+      updateFontshareSentinel(false);
       return;
     }
 
-    DOM.fontshareGrid.className = 'fontshare-specimens-container ' + (state.viewMode === 'grid' ? 'fontshare-grid-mode' : 'fontshare-list-mode');
-
-    DOM.fontshareGrid.innerHTML = displayFonts.map(function (font, idx) {
-      var family = font.family || font.name;
-      var designer = font.designer || 'FEDU Type Foundry';
-      var weightsCount = font.weights ? font.weights.length : (font.files_count || 1);
-      var defaultDrive = (font.id && font.id.startsWith('gr-'))
-        ? 'https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing'
-        : 'https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing';
-      var driveView = font.drive_view_url || font.drive_url || font.drive_link || defaultDrive;
-      var driveDown = font.drive_download_url || font.download_url || font.zip_url || driveView;
-      var isVariable = font.is_variable || weightsCount >= 6;
-      var sourceType = font.source_type || (font.license || 'Closed Source');
-      var isFav = isFontFavorite(font.id);
-
-      // Webfont loading
-      if (font.web_font_url) {
-        App.typeTester.loadWebFont(family, font.web_font_url).catch(function () {});
+    // Smooth scroll back to top if filter/search changed
+    if (options && options.scrollToTop) {
+      var topPos = DOM.fontshareGrid.getBoundingClientRect().top + window.pageYOffset - 120;
+      if (window.scrollY > topPos + 100) {
+        window.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
       }
+    }
 
-      // Resolve specimen text based on presets or custom input
-      var specimenText = font.name;
-      if (state.text && state.text.trim()) {
-        specimenText = state.text.trim();
-      } else if (state.preset === 'names') {
-        specimenText = font.name;
-      } else if (state.preset === 'cities') {
-        specimenText = CITIES_PRESETS[idx % CITIES_PRESETS.length];
-      } else if (state.preset === 'excerpts') {
-        specimenText = EXCERPTS_PRESETS[idx % EXCERPTS_PRESETS.length];
+    // Render initial batch (30 fonts)
+    appendFontshareBatch();
+  }
+
+  function initFontshareInfiniteScroll() {
+    if (!DOM.fontshareSentinel) {
+      DOM.fontshareSentinel = document.getElementById('fontshare-scroll-sentinel');
+    }
+    if (!DOM.fontshareEndMessage) {
+      DOM.fontshareEndMessage = document.getElementById('fontshare-end-message');
+    }
+    if (!DOM.fsEndCount) {
+      DOM.fsEndCount = document.getElementById('fs-end-count');
+    }
+
+    // Create sentinel element if missing in DOM
+    if (!DOM.fontshareSentinel && DOM.fontshareGrid) {
+      var sentinel = document.createElement('div');
+      sentinel.id = 'fontshare-scroll-sentinel';
+      sentinel.className = 'fontshare-sentinel';
+      sentinel.setAttribute('aria-hidden', 'true');
+      sentinel.innerHTML = '<div class="fontshare-loading-spinner"></div><span class="fontshare-loading-text">Đang tải thêm font...</span>';
+      sentinel.style.display = 'none';
+      DOM.fontshareGrid.parentNode.insertBefore(sentinel, DOM.fontshareGrid.nextSibling);
+      DOM.fontshareSentinel = sentinel;
+    }
+
+    // Create end message if missing in DOM
+    if (!DOM.fontshareEndMessage && DOM.fontshareGrid) {
+      var endMsg = document.createElement('div');
+      endMsg.id = 'fontshare-end-message';
+      endMsg.className = 'fontshare-end-message';
+      endMsg.innerHTML = '<div class="fs-end-badge">✦ ĐÃ HIỂN THỊ TOÀN BỘ <span id="fs-end-count">0</span> HỌ FONT ✦</div>';
+      endMsg.style.display = 'none';
+      if (DOM.fontshareSentinel) {
+        DOM.fontshareSentinel.parentNode.insertBefore(endMsg, DOM.fontshareSentinel.nextSibling);
+      } else {
+        DOM.fontshareGrid.parentNode.insertBefore(endMsg, DOM.fontshareGrid.nextSibling);
       }
+      DOM.fontshareEndMessage = endMsg;
+      DOM.fsEndCount = document.getElementById('fs-end-count');
+    }
 
-      var fallbackCategory = (font.category && font.category.toLowerCase().includes('serif') && !font.category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
-
-      return [
-        '<article class="fontshare-card fs-list-item" data-family="' + escapeHTML(family) + '" data-font-id="' + escapeHTML(font.id) + '">',
-        '  <div class="fs-item-meta-top">',
-        '    <div class="fs-item-title-group">',
-        '      <h3 class="fs-item-name" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + ';">' + escapeHTML(font.name) + '</h3>',
-        '      <button type="button" class="fs-star-btn ' + (isFav ? 'active' : '') + '" data-fav-id="' + escapeHTML(font.id) + '" aria-label="Favorite">' + (isFav ? '★' : '☆') + '</button>',
-        '    </div>',
-        '    <div class="fs-item-badges">',
-        '      <span class="fs-styles-badge">' + weightsCount + ' styles</span>',
-        '      <span class="fs-feature-badge">' + (isVariable ? 'Variable' : 'Static') + '</span>',
-        '      <span class="fs-license-badge">' + escapeHTML(sourceType) + '</span>',
-        '    </div>',
-        '  </div>',
-        '  <div class="fs-item-specimen-wrap">',
-        '    <div class="fs-item-specimen" contenteditable="true" spellcheck="false" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; font-size: ' + state.size + 'px; text-align: ' + state.align + ';">',
-        '      ' + escapeHTML(specimenText),
-        '    </div>',
-        '  </div>',
-        '  <div class="fontshare-waterfall fs-waterfall-drawer" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; display: none;">',
-        '    <div class="waterfall-row"><span class="waterfall-size-tag">72px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 72px; font-weight: 700;">Việt Nam Độc Lập</div></div>',
-        '    <div class="waterfall-row"><span class="waterfall-size-tag">48px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 48px; font-weight: 600;">Nghệ thuật chữ đồ họa thực chiến</div></div>',
-        '    <div class="waterfall-row"><span class="waterfall-size-tag">32px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 32px; font-weight: 400;">Do bạch kim rất quý nên qua thời gian phong thổ vẫn giữ màu.</div></div>',
-        '    <div class="waterfall-row"><span class="waterfall-size-tag">20px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 20px; font-weight: 400;">Đường nét hài hòa, tinh tế, dấu thanh điệu chuẩn xác bảo toàn vẻ đẹp tiếng Việt có dấu.</div></div>',
-        '    <div class="waterfall-row"><span class="waterfall-size-tag">14px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 14px; font-weight: 400; letter-spacing: 0.05em;">0123456789 • ABCDEFGHIJKLMNOPQRSTUVWXYZ • abcdefghijklmnopqrstuvwxyz • ăâđêôơư</div></div>',
-        '  </div>',
-        '  <div class="fs-item-meta-bottom">',
-        '    <span class="fs-designer">Designed by ' + escapeHTML(designer) + '</span>',
-        '    <div class="fs-actions">',
-        '      <button type="button" class="fs-btn-waterfall-toggle" data-action="toggle-waterfall">Waterfall ▾</button>',
-        '      <button type="button" class="btn-seg btn-glyph-trigger" data-glyph-font-id="' + escapeHTML(font.id) + '">Glyphs</button>',
-        '      <a href="' + escapeHTML(driveView) + '" class="btn-seg btn-drive-link" target="_blank" rel="noopener noreferrer" title="Mở trên Google Drive">Drive ↗</a>',
-        '      <a href="' + escapeHTML(driveDown) + '" class="fs-download-link" target="_blank" rel="noopener noreferrer">Tải ZIP</a>',
-        '    </div>',
-        '  </div>',
-        '</article>'
-      ].join('');
-    }).join('');
-
-    // Attach waterfall expand/collapse
-    DOM.fontshareGrid.querySelectorAll('[data-action="toggle-waterfall"]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var card = btn.closest('.fontshare-card');
-        if (!card) return;
-        var waterfall = card.querySelector('.fs-waterfall-drawer');
-        if (waterfall) {
-          var isHidden = waterfall.style.display === 'none';
-          waterfall.style.display = isHidden ? 'block' : 'none';
-          btn.textContent = isHidden ? 'Ẩn Waterfall ▴' : 'Waterfall ▾';
-        }
+    // IntersectionObserver with 400px bottom preloading rootMargin
+    if ('IntersectionObserver' in window) {
+      if (App.fontshareObserver) {
+        App.fontshareObserver.disconnect();
+      }
+      App.fontshareObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            if (App.currentView === 'fontshare' && App.fontsharePagination && App.fontsharePagination.renderedCount < App.fontsharePagination.pool.length) {
+              appendFontshareBatch();
+            }
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '400px 0px',
+        threshold: 0.01
       });
-    });
 
-    // Attach glyph modal openers
-    DOM.fontshareGrid.querySelectorAll('.btn-glyph-trigger').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var fontId = btn.getAttribute('data-glyph-font-id');
-        var target = pool.find(function (f) { return f.id === fontId; }) || App.allFonts.find(function (f) { return f.id === fontId; });
-        if (target) openGlyphModal(target);
-      });
-    });
+      if (DOM.fontshareSentinel) {
+        App.fontshareObserver.observe(DOM.fontshareSentinel);
+      }
+    }
 
-    // Attach favorite buttons
-    DOM.fontshareGrid.querySelectorAll('.fs-star-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var fontId = btn.getAttribute('data-fav-id');
-        var isFav = toggleFontFavorite(fontId);
-        btn.classList.toggle('active', isFav);
-        btn.textContent = isFav ? '★' : '☆';
-      });
-    });
+    // Window scroll fallback listener
+    window.addEventListener('scroll', function () {
+      if (App.currentView !== 'fontshare') return;
+      if (!App.fontsharePagination || App.fontsharePagination.isLoading) return;
+      if (App.fontsharePagination.renderedCount >= App.fontsharePagination.pool.length) return;
+
+      var sentinel = DOM.fontshareSentinel;
+      if (!sentinel) return;
+
+      var rect = sentinel.getBoundingClientRect();
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      if (rect.top <= vh + 500) {
+        appendFontshareBatch();
+      }
+    }, { passive: true });
   }
 
   function initFontshareEvents() {
+    // Delegated click listener on #fontshare-grid (Card buttons work on initial + dynamically loaded cards)
+    if (DOM.fontshareGrid) {
+      DOM.fontshareGrid.addEventListener('click', function (e) {
+        // 1. Toggle Waterfall drawer
+        var waterfallBtn = e.target.closest('[data-action="toggle-waterfall"], [data-action-card="toggle-card-waterfall"], .fs-btn-waterfall-toggle');
+        if (waterfallBtn) {
+          e.preventDefault();
+          var card = waterfallBtn.closest('.fontshare-card');
+          if (!card) return;
+          var waterfall = card.querySelector('.fs-waterfall-drawer');
+          if (waterfall) {
+            var isHidden = waterfall.style.display === 'none' || getComputedStyle(waterfall).display === 'none';
+            waterfall.style.display = isHidden ? 'block' : 'none';
+            waterfallBtn.textContent = isHidden ? 'Ẩn Waterfall ▴' : 'Waterfall ▾';
+          }
+          return;
+        }
+
+        // 2. Open Glyph modal
+        var glyphBtn = e.target.closest('.btn-glyph-trigger');
+        if (glyphBtn) {
+          e.preventDefault();
+          var fontId = glyphBtn.getAttribute('data-glyph-font-id');
+          var target = (App.fontsharePagination && App.fontsharePagination.pool.find(function (f) { return f.id === fontId; })) ||
+                       App.allFonts.find(function (f) { return f.id === fontId; });
+          if (target) openGlyphModal(target);
+          return;
+        }
+
+        // 3. Favorite button
+        var favBtn = e.target.closest('.fs-star-btn');
+        if (favBtn) {
+          e.preventDefault();
+          var fontId = favBtn.getAttribute('data-fav-id');
+          var isFav = toggleFontFavorite(fontId);
+          favBtn.classList.toggle('active', isFav);
+          favBtn.textContent = isFav ? '★' : '☆';
+          return;
+        }
+      });
+
+      // Delegated input listener on #fontshare-grid (Card weight slider works on dynamically loaded cards)
+      DOM.fontshareGrid.addEventListener('input', function (e) {
+        var weightSlider = e.target.closest('.card-weight-slider');
+        if (weightSlider) {
+          var card = weightSlider.closest('.fontshare-card');
+          if (!card) return;
+          var specimen = card.querySelector('.fs-item-specimen') || card.querySelector('.preview-text');
+          if (specimen) {
+            specimen.style.fontWeight = weightSlider.value;
+          }
+          var readout = card.querySelector('.fs-weight-val');
+          if (readout) {
+            readout.textContent = weightSlider.value;
+          }
+        }
+      });
+
+      // Delegated change listener on #fontshare-grid for completeness
+      DOM.fontshareGrid.addEventListener('change', function (e) {
+        var weightSlider = e.target.closest('.card-weight-slider');
+        if (weightSlider) {
+          var card = weightSlider.closest('.fontshare-card');
+          if (!card) return;
+          var specimen = card.querySelector('.fs-item-specimen') || card.querySelector('.preview-text');
+          if (specimen) {
+            specimen.style.fontWeight = weightSlider.value;
+          }
+          var readout = card.querySelector('.fs-weight-val');
+          if (readout) {
+            readout.textContent = weightSlider.value;
+          }
+        }
+      });
+    }
+
     // 1. Search input
     if (DOM.fontshareSearch) {
       DOM.fontshareSearch.addEventListener('input', function () {
-        renderFontshareView();
+        renderFontshareView({ scrollToTop: true });
       });
     }
 
@@ -1498,7 +1744,7 @@
     if (DOM.fontshareShuffleBtn) {
       DOM.fontshareShuffleBtn.addEventListener('click', function () {
         App.allFonts.sort(function () { return 0.5 - Math.random(); });
-        renderFontshareView();
+        renderFontshareView({ scrollToTop: true });
         showToast('Đã xáo trộn danh sách font!');
       });
     }
@@ -1507,19 +1753,19 @@
     if (DOM.fsFilterCategory) {
       DOM.fsFilterCategory.addEventListener('change', function (e) {
         App.fontshareState.category = e.target.value;
-        renderFontshareView();
+        renderFontshareView({ scrollToTop: true });
       });
     }
     if (DOM.fsFilterProperty) {
       DOM.fsFilterProperty.addEventListener('change', function (e) {
         App.fontshareState.property = e.target.value;
-        renderFontshareView();
+        renderFontshareView({ scrollToTop: true });
       });
     }
     if (DOM.fsFilterPersonality) {
       DOM.fsFilterPersonality.addEventListener('change', function (e) {
         App.fontshareState.personality = e.target.value;
-        renderFontshareView();
+        renderFontshareView({ scrollToTop: true });
       });
     }
 
@@ -1563,7 +1809,7 @@
           App.fontshareState.preset = preset;
           App.fontshareState.text = '';
           if (DOM.fsCustomTextInput) DOM.fsCustomTextInput.value = '';
-          renderFontshareView();
+          renderFontshareView({ scrollToTop: true });
         });
       });
     }
@@ -1631,7 +1877,7 @@
         DOM.fsSortBtns.forEach(function (b) {
           b.classList.toggle('active', b.getAttribute('data-sort') === 'popular');
         });
-        renderFontshareView();
+        renderFontshareView({ scrollToTop: true });
         showToast('Đã đặt lại bộ lọc Fontshare!');
       });
     }
@@ -1657,7 +1903,7 @@
           btn.classList.add('active');
           var pill = btn.getAttribute('data-pill') || 'all';
           App.fontshareState.pill = pill;
-          renderFontshareView();
+          renderFontshareView({ scrollToTop: true });
         });
       });
     }
@@ -1670,7 +1916,7 @@
           btn.classList.add('active');
           var sort = btn.getAttribute('data-sort') || 'popular';
           App.fontshareState.sort = sort;
-          renderFontshareView();
+          renderFontshareView({ scrollToTop: true });
         });
       });
     }
@@ -2111,6 +2357,7 @@
 
     // Fontshare View controls (Image 4)
     initFontshareEvents();
+    initFontshareInfiniteScroll();
 
     // Pair View font selectors & actions
     if (DOM.pairHeadingSelect) {

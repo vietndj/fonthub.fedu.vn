@@ -1,35 +1,3 @@
-"""
-tests/test_fontshare_infinite_scroll.py
-Autonomous Quality Auditor E2E Test Suite for Fontshare Infinite Scroll.
-
-Tests:
-1. Initial Render on /#fontshare:
-   - Detects #fontshare-view active
-   - Verifies initial card batch (24-30 cards)
-2. Single Infinite Scroll Trigger:
-   - Scrolls down to bottom
-   - Verifies card count increases (batch 2 loaded, count > initial)
-3. Multi-Scroll Stress & Deduplication:
-   - Scrolls 3+ times consecutively
-   - Verifies continuous batch loading
-   - Asserts 0 duplicate cards across all rendered cards
-   - Asserts no freeze or crash
-4. Dynamic Card Interactivity on Newly Appended Cards:
-   - Weight slider modifies preview font-weight correctly
-   - Waterfall toggle button opens and closes waterfall drawer cleanly
-5. Search & Filter Reset:
-   - Typing in #fontshare-search resets list to matching results from batch 1
-   - Clearing search restores full catalog batching
-6. Mobile Responsive Infinite Scroll (390px):
-   - Fresh 390px mobile viewport
-   - Infinite scroll appends cards smoothly
-   - Asserts zero horizontal overflow (scrollWidth <= 390px)
-7. Console & Runtime Health:
-   - Asserts zero fatal uncaught console errors
-8. Live Production Verification (Optional / Flag-based):
-   - Audits https://fonthub.fedu.vn/#fontshare
-"""
-
 import os
 import sys
 import time
@@ -78,14 +46,14 @@ class InfiniteScrollAuditor:
         }
         self.console_errors = []
 
-    def record(self, test_name, passed, details=""):
+    def record(self, test_name, passed, details=''):
         status = 'PASS' if passed else 'FAIL'
         if passed:
             self.results['passed'] += 1
-            print(f"  [32m✔ PASS[0m: {test_name} {f'({details})' if details else ''}")
+            print(f"  \033[32m✔ PASS\033[0m: {test_name}" + (f" ({details})" if details else ""))
         else:
             self.results['failed'] += 1
-            print(f"  [31m✖ FAIL[0m: {test_name} - Details: {details}")
+            print(f"  \033[31m✖ FAIL\033[0m: {test_name} - Details: {details}")
         self.results['total'] += 1
         self.results['tests'].append({
             'test': test_name,
@@ -94,13 +62,12 @@ class InfiniteScrollAuditor:
         })
 
     def run_suite(self):
-        print("
-" + "=" * 70)
+        print("\n" + "=" * 70)
         print(f"AUDITING FONTSHARE INFINITE SCROLL: {self.target_url}")
         print("=" * 70)
 
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
+            browser = p.chromium.launch(channel="chrome", headless=True)
             context = browser.new_context(viewport={"width": 1440, "height": 900})
             page = context.new_page()
 
@@ -113,8 +80,7 @@ class InfiniteScrollAuditor:
             page.on("pageerror", lambda err: self.console_errors.append(str(err)))
 
             # Step 1: Navigate to /#fontshare
-            print("
-▶ [STEP 1] Navigate to #fontshare & Initial Batch Verification")
+            print("\n▶ [STEP 1] Navigate to #fontshare & Initial Batch Verification")
             target_with_hash = self.target_url if '#' in self.target_url else f"{self.target_url}#fontshare"
             page.goto(target_with_hash, wait_until="networkidle", timeout=25000)
             page.wait_for_timeout(1000)
@@ -125,7 +91,6 @@ class InfiniteScrollAuditor:
                 return fsView && !fsView.classList.contains('hidden') && getComputedStyle(fsView).display !== 'none';
             }""")
             if not is_fs_visible:
-                # Attempt to click Fontshare tab if not active
                 tab_btn = page.locator('[data-view="fontshare"]')
                 if tab_btn.count() > 0:
                     tab_btn.first.click()
@@ -158,20 +123,17 @@ class InfiniteScrollAuditor:
             page.screenshot(path=shot1, full_page=False)
 
             # Step 2: Single Infinite Scroll Trigger (Batch 2)
-            print("
-▶ [STEP 2] Trigger Infinite Scroll (Batch 2 Loading)")
+            print("\n▶ [STEP 2] Trigger Infinite Scroll (Batch 2 Loading)")
             prev_count = initial_count
             
             # Scroll down to bottom
             page.evaluate("() => window.scrollTo(0, document.body.scrollHeight)")
-            page.wait_for_timeout(1200)
+            page.wait_for_timeout(1500)
 
-            # Check if count increased or wait up to 4s
             for _ in range(8):
                 current_count = page.locator(card_selector).count()
                 if current_count > prev_count:
                     break
-                # Try scrolling sentinel or grid if needed
                 page.evaluate("""() => {
                     window.scrollBy(0, 1000);
                     const grid = document.getElementById('fontshare-grid');
@@ -190,8 +152,7 @@ class InfiniteScrollAuditor:
             page.screenshot(path=shot2, full_page=False)
 
             # Step 3: Multi-Scroll Continuous Batching & Deduplication
-            print("
-▶ [STEP 3] Multi-Scroll Stress Test & Deduplication Audit")
+            print("\n▶ [STEP 3] Multi-Scroll Stress Test & Deduplication Audit")
             scroll_success_count = 0
             for scroll_idx in range(3):
                 before_scroll = page.locator(card_selector).count()
@@ -201,7 +162,6 @@ class InfiniteScrollAuditor:
                 if after_scroll > before_scroll:
                     scroll_success_count += 1
                 else:
-                    # One more attempt with extra nudge
                     page.evaluate("() => window.scrollBy(0, 800)")
                     page.wait_for_timeout(600)
                     if page.locator(card_selector).count() > before_scroll:
@@ -225,32 +185,29 @@ class InfiniteScrollAuditor:
             self.record(
                 "Deduplication Integrity (Zero Duplicate Cards)",
                 len(duplicates) == 0,
-                f"Total cards: {len(card_ids)}, Duplicates found: {len(duplicates)} {duplicates[:5] if duplicates else ''}"
+                f"Total cards: {len(card_ids)}, Duplicates found: {len(duplicates)}"
             )
 
             shot3 = os.path.join(SCREENSHOTS_DIR, f"{'live' if self.is_live else 'local'}_fs_multiscroll.png")
             page.screenshot(path=shot3, full_page=False)
 
             # Step 4: Interactivity on Dynamically Loaded Cards
-            print("
-▶ [STEP 4] Interactive Controls on Dynamically Appended Card")
-            # Pick a card from later batch (e.g. index >= initial_count)
-            target_index = min(multi_count - 1, initial_count + 5)
+            print("\n▶ [STEP 4] Interactive Controls on Dynamically Appended Card")
+            target_index = min(multi_count - 1, initial_count + 5) if multi_count > initial_count else (initial_count - 1)
             new_card = page.locator(card_selector).nth(target_index)
             card_title = page.evaluate("""(card) => {
                 const title = card.querySelector('.fs-item-name, .card-family-name, h3');
                 return title ? title.textContent.trim() : 'Unknown';
             }""", new_card.element_handle())
-            print(f"  Testing dynamically loaded card #{target_index}: '{card_title}'")
+            print(f"  Testing card #{target_index}: '{card_title}'")
 
-            # 4.1 Waterfall Toggle on Dynamic Card
+            # 4.1 Waterfall Toggle on Card
             wf_toggle = new_card.locator('[data-action="toggle-waterfall"], [data-action="toggle-card-waterfall"], .fs-btn-waterfall-toggle, .card-styles-toggle')
             if wf_toggle.count() > 0:
                 wf_toggle.first.scroll_into_view_if_needed()
                 wf_toggle.first.click()
                 page.wait_for_timeout(400)
 
-                wf_drawer = new_card.locator('.fs-waterfall-drawer, .card-waterfall-drawer, .fontshare-waterfall')
                 is_drawer_open = page.evaluate("""(card) => {
                     const d = card.querySelector('.fs-waterfall-drawer, .card-waterfall-drawer, .fontshare-waterfall');
                     if (!d) return false;
@@ -304,12 +261,10 @@ class InfiniteScrollAuditor:
                     f"Initial: {init_w} -> Updated: {new_w}"
                 )
             else:
-                print(f"  Note: Card #{target_index} does not have per-card weight slider (checking specimen text responsiveness)")
                 self.record("Dynamic Card: Specimen Text Rendered", True, f"Card #{target_index} preview specimen present")
 
             # Step 5: Search & Filter Pagination Reset
-            print("
-▶ [STEP 5] Search & Filter Pagination Reset Audit")
+            print("\n▶ [STEP 5] Search & Filter Pagination Reset Audit")
             search_input = page.locator("#fontshare-search")
             if search_input.count() > 0:
                 search_query = "Sectra"
@@ -345,13 +300,11 @@ class InfiniteScrollAuditor:
                 self.record("Search Input #fontshare-search Exists", False, "Not found")
 
             # Step 6: Mobile Responsive Check (390px Viewport)
-            print("
-▶ [STEP 6] Mobile 390px Responsive & Infinite Scroll Audit")
+            print("\n▶ [STEP 6] Mobile 390px Responsive & Infinite Scroll Audit")
             mob_page = browser.new_page(viewport={"width": 390, "height": 844})
             mob_page.goto(target_with_hash, wait_until="networkidle", timeout=25000)
             mob_page.wait_for_timeout(1000)
 
-            # Ensure #fontshare view visible on mobile
             is_mob_fs_visible = mob_page.evaluate("""() => {
                 const fsView = document.getElementById('fontshare-view');
                 return fsView && !fsView.classList.contains('hidden');
@@ -365,7 +318,6 @@ class InfiniteScrollAuditor:
             mob_cards = mob_page.locator(card_selector)
             mob_initial = mob_cards.count()
 
-            # Check horizontal overflow
             scroll_w = mob_page.evaluate("() => document.documentElement.scrollWidth")
             self.record(
                 "Mobile 390px Viewport: No Horizontal Overflow",
@@ -376,7 +328,6 @@ class InfiniteScrollAuditor:
             shot_mob1 = os.path.join(SCREENSHOTS_DIR, f"{'live' if self.is_live else 'local'}_mobile_initial.png")
             mob_page.screenshot(path=shot_mob1, full_page=False)
 
-            # Trigger infinite scroll on mobile
             mob_page.evaluate("() => window.scrollTo(0, document.body.scrollHeight)")
             mob_page.wait_for_timeout(1500)
 
@@ -399,8 +350,7 @@ class InfiniteScrollAuditor:
             mob_page.close()
 
             # Step 7: Console Errors Audit
-            print("
-▶ [STEP 7] Console & Runtime Health Audit")
+            print("\n▶ [STEP 7] Console & Runtime Health Audit")
             self.record(
                 "Zero Fatal Uncaught JS Console Errors",
                 len(self.console_errors) == 0,
@@ -410,8 +360,7 @@ class InfiniteScrollAuditor:
             context.close()
             browser.close()
 
-        print("
-" + "=" * 70)
+        print("\n" + "=" * 70)
         print(f"AUDIT SUMMARY ({self.target_url}): {self.results['passed']}/{self.results['total']} PASSED ({self.results['failed']} FAILED)")
         print("=" * 70)
         return self.results
@@ -447,12 +396,10 @@ def main():
         if res['failed'] > 0:
             any_failed = True
 
-    # Save master report
     report_file = os.path.join(REPORTS_DIR, 'fontshare_infinite_scroll_report.json')
     with open(report_file, 'w', encoding='utf-8') as f:
         json.dump(overall_results, f, indent=2, ensure_ascii=False)
-    print(f"
-[REPORT] Saved full JSON audit report to: {report_file}")
+    print(f"\n[REPORT] Saved full JSON audit report to: {report_file}")
 
     sys.exit(1 if any_failed else 0)
 

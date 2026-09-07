@@ -1,0 +1,82 @@
+{
+  "local": {
+    "target_url": "http://127.0.0.1:50817/index.html",
+    "is_live": false,
+    "timestamp": "2026-09-07 22:20:53",
+    "passed": 14,
+    "failed": 0,
+    "total": 14,
+    "tests": [
+      {
+        "test": "Fontshare View Active & Visible",
+        "status": "PASS",
+        "details": "Tab #fontshare displayed"
+      },
+      {
+        "test": "Initial Batch Loaded",
+        "status": "PASS",
+        "details": "Initial cards count: 30 (Expected >= 12)"
+      },
+      {
+        "test": "Infinite Scroll Loads Batch 2",
+        "status": "PASS",
+        "details": "Count before: 30 -> Count after: 60 (Delta: +30)"
+      },
+      {
+        "test": "Multi-Scroll Continuous Appending",
+        "status": "PASS",
+        "details": "Cards after 3 additional scrolls: 150 (Increments registered: 3/3)"
+      },
+      {
+        "test": "Deduplication Integrity (Zero Duplicate Cards)",
+        "status": "PASS",
+        "details": "Total cards: 150, Duplicates found: 0"
+      },
+      {
+        "test": "Dynamic Card: Waterfall Drawer Expands",
+        "status": "PASS",
+        "details": "Card #35 'FD Abril Fatface' drawer opened"
+      },
+      {
+        "test": "Dynamic Card: Waterfall Drawer Collapses Cleanly",
+        "status": "PASS",
+        "details": "Card #35 drawer closed cleanly"
+      },
+      {
+        "test": "Dynamic Card: Weight Slider Updates fontWeight to Bold",
+        "status": "PASS",
+        "details": "Initial: 400 -> Updated: 800"
+      },
+      {
+        "test": "Search 'Sectra' Resets Pagination & Filters Matching Fonts",
+        "status": "PASS",
+        "details": "Filtered count: 1, All match keyword 'Sectra': True"
+      },
+      {
+        "test": "Clearing Search Restores Full Batching",
+        "status": "PASS",
+        "details": "Restored count: 90"
+      },
+      {
+        "test": "Mobile 390px Viewport: No Horizontal Overflow",
+        "status": "PASS",
+        "details": "scrollWidth=390px (Must be <= 390px)"
+      },
+      {
+        "test": "Mobile 390px Viewport: Infinite Scroll Appends Next Batch",
+        "status": "PASS",
+        "details": "Initial: 30 -> After Scroll: 60"
+      },
+      {
+        "test": "Mobile 390px Viewport: Zero Horizontal Overflow After Batch Injection",
+        "status": "PASS",
+        "details": "scrollWidth=390px"
+      },
+      {
+        "test": "Zero Fatal Uncaught JS Console Errors",
+        "status": "PASS",
+        "details": "Captured errors: 0 "
+      }
+    ]
+  }
+}

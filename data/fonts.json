@@ -1,5 +1,565 @@
 [
   {
+    "id": "fd-altform",
+    "name": "FD Altform",
+    "family": "FD Altform",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Geometric Neo-Grotesque",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Geometric Neo-Grotesque",
+      "mood": "Tech & Công nghệ",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Low",
+      "axis": "Vertical Geometric",
+      "x_height": "High",
+      "aperture": "Open"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nHọ phông Neo-Grotesque hình học đương đại của CoType Foundry. Cấu trúc khung chữ tối giản, nét dứt khoát với độ mở thoáng đạt, cân bằng hoàn hảo giữa tính công năng và thẩm mỹ hiện đại. Phù hợp cho nhận diện công nghệ cao, giao diện kỹ thuật số và ấn phẩm đồ họa chuẩn quốc tế.",
+    "weights": [
+      "Black",
+      "Black Italic",
+      "Bold",
+      "Bold Italic",
+      "ExtraLight",
+      "ExtraLight Italic",
+      "Light",
+      "Light Italic",
+      "Regular",
+      "Regular Italic",
+      "SemiBold",
+      "SemiBold Italic",
+      "Thin",
+      "Thin Italic"
+    ],
+    "sample_text": "Hệ thống nhận diện đương đại và cấu trúc thị giác tối giản chuẩn mực quốc tế",
+    "zip_filename": "FD-Altform.zip",
+    "zip_path": "dist/zips/FD/FD-Altform.zip",
+    "download_url": "dist/zips/FD/FD-Altform.zip",
+    "web_font_url": "fonts/FDAltform-Regular.woff2",
+    "director_review": "Họ phông Neo-Grotesque hình học đương đại của CoType Foundry. Cấu trúc khung chữ tối giản, nét dứt khoát với độ mở thoáng đạt, cân bằng hoàn hảo giữa tính công năng và thẩm mỹ hiện đại. Phù hợp cho nhận diện công nghệ cao, giao diện kỹ thuật số và ấn phẩm đồ họa chuẩn quốc tế.",
+    "critique": "Họ phông Neo-Grotesque hình học đương đại của CoType Foundry. Cấu trúc khung chữ tối giản, nét dứt khoát với độ mở thoáng đạt, cân bằng hoàn hảo giữa tính công năng và thẩm mỹ hiện đại. Phù hợp cho nhận diện công nghệ cao, giao diện kỹ thuật số và ấn phẩm đồ họa chuẩn quốc tế.",
+    "nhan_dinh_dao_dien": "Họ phông Neo-Grotesque hình học đương đại của CoType Foundry. Cấu trúc khung chữ tối giản, nét dứt khoát với độ mở thoáng đạt, cân bằng hoàn hảo giữa tính công năng và thẩm mỹ hiện đại. Phù hợp cho nhận diện công nghệ cao, giao diện kỹ thuật số và ấn phẩm đồ họa chuẩn quốc tế.",
+    "typography_critique": "Họ phông Neo-Grotesque hình học đương đại của CoType Foundry. Cấu trúc khung chữ tối giản, nét dứt khoát với độ mở thoáng đạt, cân bằng hoàn hảo giữa tính công năng và thẩm mỹ hiện đại. Phù hợp cho nhận diện công nghệ cao, giao diện kỹ thuật số và ấn phẩm đồ họa chuẩn quốc tế."
+  },
+  {
+    "id": "fd-ambit",
+    "name": "FD Ambit",
+    "family": "FD Ambit",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Geometric Humanist",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Geometric Humanist",
+      "mood": "Friendly & Nhân văn",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Low-Medium",
+      "axis": "Humanist Geometric",
+      "x_height": "Standard",
+      "aperture": "Dynamic"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nSự hòa quyện độc đáo giữa hình học thuần khiết (geometric) và hơi thở nhân văn (humanist). Nổi bật với các nét uốn lượn đặc trưng ở các ký tự f, t và r, tạo nhịp điệu đọc sinh động, ấm áp mà sắc sảo. Lựa chọn tuyệt vời cho thiết kế thương hiệu F&B, thời trang cao cấp và editorial.",
+    "weights": [
+      "Black",
+      "Black Italic",
+      "Bold",
+      "Bold Italic",
+      "ExtraLight",
+      "ExtraLight Italic",
+      "Italic",
+      "Light",
+      "Light Italic",
+      "Regular",
+      "SemiBold",
+      "SemiBold Italic",
+      "Thin",
+      "Thin Italic"
+    ],
+    "sample_text": "Nhịp điệu chữ nhân văn ấm áp và đường nét hình học phóng khoáng tao nhã",
+    "zip_filename": "FD-Ambit.zip",
+    "zip_path": "dist/zips/FD/FD-Ambit.zip",
+    "download_url": "dist/zips/FD/FD-Ambit.zip",
+    "web_font_url": "fonts/FDAmbit-Regular.woff2",
+    "director_review": "Sự hòa quyện độc đáo giữa hình học thuần khiết (geometric) và hơi thở nhân văn (humanist). Nổi bật với các nét uốn lượn đặc trưng ở các ký tự f, t và r, tạo nhịp điệu đọc sinh động, ấm áp mà sắc sảo. Lựa chọn tuyệt vời cho thiết kế thương hiệu F&B, thời trang cao cấp và editorial.",
+    "critique": "Sự hòa quyện độc đáo giữa hình học thuần khiết (geometric) và hơi thở nhân văn (humanist). Nổi bật với các nét uốn lượn đặc trưng ở các ký tự f, t và r, tạo nhịp điệu đọc sinh động, ấm áp mà sắc sảo. Lựa chọn tuyệt vời cho thiết kế thương hiệu F&B, thời trang cao cấp và editorial.",
+    "nhan_dinh_dao_dien": "Sự hòa quyện độc đáo giữa hình học thuần khiết (geometric) và hơi thở nhân văn (humanist). Nổi bật với các nét uốn lượn đặc trưng ở các ký tự f, t và r, tạo nhịp điệu đọc sinh động, ấm áp mà sắc sảo. Lựa chọn tuyệt vời cho thiết kế thương hiệu F&B, thời trang cao cấp và editorial.",
+    "typography_critique": "Sự hòa quyện độc đáo giữa hình học thuần khiết (geometric) và hơi thở nhân văn (humanist). Nổi bật với các nét uốn lượn đặc trưng ở các ký tự f, t và r, tạo nhịp điệu đọc sinh động, ấm áp mà sắc sảo. Lựa chọn tuyệt vời cho thiết kế thương hiệu F&B, thời trang cao cấp và editorial."
+  },
+  {
+    "id": "fd-coanda",
+    "name": "FD Coanda",
+    "family": "FD Coanda",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Modular Futuristic",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Modular Futuristic",
+      "mood": "Tech & Công nghệ",
+      "use_case": "Display / Headline"
+    },
+    "anatomy": {
+      "contrast": "None",
+      "axis": "Aerodynamic Modular",
+      "x_height": "High",
+      "aperture": "Semi-closed"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nLấy cảm hứng từ hiệu ứng khí động học Coanda, các ký tự được thiết kế với góc bo lượn công nghệ vi mô và cấu trúc mô-đun siêu hiện đại. Khí chất viễn tưởng (sci-fi), thể thao tốc độ và công nghệ hàng không vũ trụ. Cực kỳ ấn tượng trên poster, game UI và bìa album.",
+    "weights": [
+      "Black",
+      "Bold",
+      "Light",
+      "Regular",
+      "Thin"
+    ],
+    "sample_text": "Khí động học thị giác và bước nhảy công nghệ tương lai viễn tưởng",
+    "zip_filename": "FD-Coanda.zip",
+    "zip_path": "dist/zips/FD/FD-Coanda.zip",
+    "download_url": "dist/zips/FD/FD-Coanda.zip",
+    "web_font_url": "fonts/FDCoanda-Regular.woff2",
+    "director_review": "Lấy cảm hứng từ hiệu ứng khí động học Coanda, các ký tự được thiết kế với góc bo lượn công nghệ vi mô và cấu trúc mô-đun siêu hiện đại. Khí chất viễn tưởng (sci-fi), thể thao tốc độ và công nghệ hàng không vũ trụ. Cực kỳ ấn tượng trên poster, game UI và bìa album.",
+    "critique": "Lấy cảm hứng từ hiệu ứng khí động học Coanda, các ký tự được thiết kế với góc bo lượn công nghệ vi mô và cấu trúc mô-đun siêu hiện đại. Khí chất viễn tưởng (sci-fi), thể thao tốc độ và công nghệ hàng không vũ trụ. Cực kỳ ấn tượng trên poster, game UI và bìa album.",
+    "nhan_dinh_dao_dien": "Lấy cảm hứng từ hiệu ứng khí động học Coanda, các ký tự được thiết kế với góc bo lượn công nghệ vi mô và cấu trúc mô-đun siêu hiện đại. Khí chất viễn tưởng (sci-fi), thể thao tốc độ và công nghệ hàng không vũ trụ. Cực kỳ ấn tượng trên poster, game UI và bìa album.",
+    "typography_critique": "Lấy cảm hứng từ hiệu ứng khí động học Coanda, các ký tự được thiết kế với góc bo lượn công nghệ vi mô và cấu trúc mô-đun siêu hiện đại. Khí chất viễn tưởng (sci-fi), thể thao tốc độ và công nghệ hàng không vũ trụ. Cực kỳ ấn tượng trên poster, game UI và bìa album."
+  },
+  {
+    "id": "fd-lock-sans-stencil",
+    "name": "FD Lock Sans Stencil",
+    "family": "FD Lock Sans Stencil",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Industrial Stencil",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Industrial Stencil",
+      "mood": "Bold & Tuyên ngôn",
+      "use_case": "Display / Headline"
+    },
+    "anatomy": {
+      "contrast": "None",
+      "axis": "Mechanical Stencil",
+      "x_height": "High",
+      "aperture": "Engineered"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nPhiên bản Stencil của họ font Lock Sans với các đường cắt stencil chính xác theo phong cách công nghiệp nặng và biển báo cơ khí. Táo bạo, kiến trúc và đầy quyền uy. Hoàn hảo cho thiết kế bao bì streetwear, biển chỉ dẫn đô thị, triển lãm kiến trúc và poster tuyên ngôn.",
+    "weights": [
+      "Black",
+      "Bold",
+      "ExtraLight",
+      "Light",
+      "Medium",
+      "Regular"
+    ],
+    "sample_text": "Vết cắt công nghiệp cơ khí và cấu trúc biển chỉ dẫn đô thị hiện đại",
+    "zip_filename": "FD-LockSansStencil.zip",
+    "zip_path": "dist/zips/FD/FD-LockSansStencil.zip",
+    "download_url": "dist/zips/FD/FD-LockSansStencil.zip",
+    "web_font_url": "fonts/FDLockSansStencil-Regular.woff2",
+    "director_review": "Phiên bản Stencil của họ font Lock Sans với các đường cắt stencil chính xác theo phong cách công nghiệp nặng và biển báo cơ khí. Táo bạo, kiến trúc và đầy quyền uy. Hoàn hảo cho thiết kế bao bì streetwear, biển chỉ dẫn đô thị, triển lãm kiến trúc và poster tuyên ngôn.",
+    "critique": "Phiên bản Stencil của họ font Lock Sans với các đường cắt stencil chính xác theo phong cách công nghiệp nặng và biển báo cơ khí. Táo bạo, kiến trúc và đầy quyền uy. Hoàn hảo cho thiết kế bao bì streetwear, biển chỉ dẫn đô thị, triển lãm kiến trúc và poster tuyên ngôn.",
+    "nhan_dinh_dao_dien": "Phiên bản Stencil của họ font Lock Sans với các đường cắt stencil chính xác theo phong cách công nghiệp nặng và biển báo cơ khí. Táo bạo, kiến trúc và đầy quyền uy. Hoàn hảo cho thiết kế bao bì streetwear, biển chỉ dẫn đô thị, triển lãm kiến trúc và poster tuyên ngôn.",
+    "typography_critique": "Phiên bản Stencil của họ font Lock Sans với các đường cắt stencil chính xác theo phong cách công nghiệp nặng và biển báo cơ khí. Táo bạo, kiến trúc và đầy quyền uy. Hoàn hảo cho thiết kế bao bì streetwear, biển chỉ dẫn đô thị, triển lãm kiến trúc và poster tuyên ngôn."
+  },
+  {
+    "id": "fd-lock-sans",
+    "name": "FD Lock Sans",
+    "family": "FD Lock Sans",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Industrial Grotesque",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Industrial Grotesque",
+      "mood": "Bold & Tuyên ngôn",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Low",
+      "axis": "Industrial Grotesque",
+      "x_height": "Very High",
+      "aperture": "Square Closed"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nĐược xây dựng trên nền tảng thẩm mỹ công nghiệp, Lock Sans sở hữu các nét thẳng dứt khoát và bo góc vuông vức, gợi nhớ kết cấu ổ khóa và kim loại đúc. Mạnh mẽ, ổn định và đáng tin cậy. Tuyệt vời cho kiến trúc, xây dựng, logistics và fintech.",
+    "weights": [
+      "Black",
+      "Bold",
+      "ExtraLight",
+      "Light",
+      "Medium",
+      "Regular"
+    ],
+    "sample_text": "Nền tảng kỹ thuật vững chắc và độ tin cậy vượt thời gian của kết cấu cơ khí",
+    "zip_filename": "FD-LockSans.zip",
+    "zip_path": "dist/zips/FD/FD-LockSans.zip",
+    "download_url": "dist/zips/FD/FD-LockSans.zip",
+    "web_font_url": "fonts/FDLockSans-Regular.woff2",
+    "director_review": "Được xây dựng trên nền tảng thẩm mỹ công nghiệp, Lock Sans sở hữu các nét thẳng dứt khoát và bo góc vuông vức, gợi nhớ kết cấu ổ khóa và kim loại đúc. Mạnh mẽ, ổn định và đáng tin cậy. Tuyệt vời cho kiến trúc, xây dựng, logistics và fintech.",
+    "critique": "Được xây dựng trên nền tảng thẩm mỹ công nghiệp, Lock Sans sở hữu các nét thẳng dứt khoát và bo góc vuông vức, gợi nhớ kết cấu ổ khóa và kim loại đúc. Mạnh mẽ, ổn định và đáng tin cậy. Tuyệt vời cho kiến trúc, xây dựng, logistics và fintech.",
+    "nhan_dinh_dao_dien": "Được xây dựng trên nền tảng thẩm mỹ công nghiệp, Lock Sans sở hữu các nét thẳng dứt khoát và bo góc vuông vức, gợi nhớ kết cấu ổ khóa và kim loại đúc. Mạnh mẽ, ổn định và đáng tin cậy. Tuyệt vời cho kiến trúc, xây dựng, logistics và fintech.",
+    "typography_critique": "Được xây dựng trên nền tảng thẩm mỹ công nghiệp, Lock Sans sở hữu các nét thẳng dứt khoát và bo góc vuông vức, gợi nhớ kết cấu ổ khóa và kim loại đúc. Mạnh mẽ, ổn định và đáng tin cậy. Tuyệt vời cho kiến trúc, xây dựng, logistics và fintech."
+  },
+  {
+    "id": "fd-lock-serif-stencil",
+    "name": "FD Lock Serif Stencil",
+    "family": "FD Lock Serif Stencil",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Serif",
+    "subcategory": "Serif Industrial Stencil",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Serif Industrial Stencil",
+      "mood": "Bold & Tuyên ngôn",
+      "use_case": "Display / Headline"
+    },
+    "anatomy": {
+      "contrast": "Medium-High",
+      "axis": "Bracketed Stencil",
+      "x_height": "Standard",
+      "aperture": "Engineered"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nBiến thể stencil serif độc bản, kết hợp giữa sự thanh lịch của chân chữ serif và tính thô ráp cơ khí của các khe stencil. Vẻ đẹp đối lập đầy mê hoặc giữa di sản cổ điển và công nghiệp hiện đại. Lý tưởng cho tạp chí nghệ thuật, thời trang avant-garde và bao bì thủ công cao cấp.",
+    "weights": [
+      "Black",
+      "Bold",
+      "ExtraLight",
+      "Light",
+      "Medium",
+      "Regular"
+    ],
+    "sample_text": "Sự hòa quyện đối lập giữa chân chữ cổ điển và vết cắt cơ khí đương đại",
+    "zip_filename": "FD-LockSerifStencil.zip",
+    "zip_path": "dist/zips/FD/FD-LockSerifStencil.zip",
+    "download_url": "dist/zips/FD/FD-LockSerifStencil.zip",
+    "web_font_url": "fonts/FDLockSerifStencil-Regular.woff2",
+    "director_review": "Biến thể stencil serif độc bản, kết hợp giữa sự thanh lịch của chân chữ serif và tính thô ráp cơ khí của các khe stencil. Vẻ đẹp đối lập đầy mê hoặc giữa di sản cổ điển và công nghiệp hiện đại. Lý tưởng cho tạp chí nghệ thuật, thời trang avant-garde và bao bì thủ công cao cấp.",
+    "critique": "Biến thể stencil serif độc bản, kết hợp giữa sự thanh lịch của chân chữ serif và tính thô ráp cơ khí của các khe stencil. Vẻ đẹp đối lập đầy mê hoặc giữa di sản cổ điển và công nghiệp hiện đại. Lý tưởng cho tạp chí nghệ thuật, thời trang avant-garde và bao bì thủ công cao cấp.",
+    "nhan_dinh_dao_dien": "Biến thể stencil serif độc bản, kết hợp giữa sự thanh lịch của chân chữ serif và tính thô ráp cơ khí của các khe stencil. Vẻ đẹp đối lập đầy mê hoặc giữa di sản cổ điển và công nghiệp hiện đại. Lý tưởng cho tạp chí nghệ thuật, thời trang avant-garde và bao bì thủ công cao cấp.",
+    "typography_critique": "Biến thể stencil serif độc bản, kết hợp giữa sự thanh lịch của chân chữ serif và tính thô ráp cơ khí của các khe stencil. Vẻ đẹp đối lập đầy mê hoặc giữa di sản cổ điển và công nghiệp hiện đại. Lý tưởng cho tạp chí nghệ thuật, thời trang avant-garde và bao bì thủ công cao cấp."
+  },
+  {
+    "id": "fd-lock-serif",
+    "name": "FD Lock Serif",
+    "family": "FD Lock Serif",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Serif",
+    "subcategory": "Serif Contemporary Editorial",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Serif Contemporary Editorial",
+      "mood": "Luxury & Sang trọng",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Medium",
+      "axis": "Contemporary Slab-Serif",
+      "x_height": "Standard",
+      "aperture": "Moderate"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nHọ phông serif đương đại với chân chữ hình học vuông vắn, cứng cáp nhưng vẫn giữ được độ duyên dáng khi đọc dài. Nhịp điệu văn bản mạch lạc, trí tuệ và đẳng cấp. Thích hợp cho xuất bản sách, báo chí tài chính, thương hiệu trang sức và bảo tàng.",
+    "weights": [
+      "Black",
+      "Bold",
+      "ExtraLight",
+      "Light",
+      "Medium",
+      "Regular"
+    ],
+    "sample_text": "Dấu ấn tri thức hàn lâm và giá trị di sản trường tồn qua từng trang viết",
+    "zip_filename": "FD-LockSerif.zip",
+    "zip_path": "dist/zips/FD/FD-LockSerif.zip",
+    "download_url": "dist/zips/FD/FD-LockSerif.zip",
+    "web_font_url": "fonts/FDLockSerif-Regular.woff2",
+    "director_review": "Họ phông serif đương đại với chân chữ hình học vuông vắn, cứng cáp nhưng vẫn giữ được độ duyên dáng khi đọc dài. Nhịp điệu văn bản mạch lạc, trí tuệ và đẳng cấp. Thích hợp cho xuất bản sách, báo chí tài chính, thương hiệu trang sức và bảo tàng.",
+    "critique": "Họ phông serif đương đại với chân chữ hình học vuông vắn, cứng cáp nhưng vẫn giữ được độ duyên dáng khi đọc dài. Nhịp điệu văn bản mạch lạc, trí tuệ và đẳng cấp. Thích hợp cho xuất bản sách, báo chí tài chính, thương hiệu trang sức và bảo tàng.",
+    "nhan_dinh_dao_dien": "Họ phông serif đương đại với chân chữ hình học vuông vắn, cứng cáp nhưng vẫn giữ được độ duyên dáng khi đọc dài. Nhịp điệu văn bản mạch lạc, trí tuệ và đẳng cấp. Thích hợp cho xuất bản sách, báo chí tài chính, thương hiệu trang sức và bảo tàng.",
+    "typography_critique": "Họ phông serif đương đại với chân chữ hình học vuông vắn, cứng cáp nhưng vẫn giữ được độ duyên dáng khi đọc dài. Nhịp điệu văn bản mạch lạc, trí tuệ và đẳng cấp. Thích hợp cho xuất bản sách, báo chí tài chính, thương hiệu trang sức và bảo tàng."
+  },
+  {
+    "id": "fd-orbikular",
+    "name": "FD Orbikular",
+    "family": "FD Orbikular",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Serif",
+    "subcategory": "Serif High-Contrast Luxury",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Serif High-Contrast Luxury",
+      "mood": "Luxury & Sang trọng",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Very High",
+      "axis": "Vertical Didone",
+      "x_height": "Medium",
+      "aperture": "Open Ball-terminals"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nMột kiệt tác serif xa xỉ lấy cảm hứng từ typography thế kỷ 18-19, đặc trưng bởi độ tương phản nét cực cao và các chi tiết bo tròn hình cầu (orbicular terminals). Tỏa ra khí chất quý tộc, kiêu kỳ và gợi cảm. Lựa chọn số 1 cho nước hoa, mỹ phẩm high-end, khách sạn 5 sao và thời trang Haute Couture.",
+    "weights": [
+      "Bold",
+      "Bold Italic",
+      "ExtraBold",
+      "ExtraBold Italic",
+      "ExtraLight",
+      "ExtraLight Italic",
+      "Italic",
+      "Light",
+      "Light Italic",
+      "Regular",
+      "SemiBold",
+      "SemiBold Italic"
+    ],
+    "sample_text": "Hào quang vương giả và sự quyến rũ kiêu kỳ của thời trang cao cấp",
+    "zip_filename": "FD-Orbikular.zip",
+    "zip_path": "dist/zips/FD/FD-Orbikular.zip",
+    "download_url": "dist/zips/FD/FD-Orbikular.zip",
+    "web_font_url": "fonts/FDOrbikular-Regular.woff2",
+    "director_review": "Một kiệt tác serif xa xỉ lấy cảm hứng từ typography thế kỷ 18-19, đặc trưng bởi độ tương phản nét cực cao và các chi tiết bo tròn hình cầu (orbicular terminals). Tỏa ra khí chất quý tộc, kiêu kỳ và gợi cảm. Lựa chọn số 1 cho nước hoa, mỹ phẩm high-end, khách sạn 5 sao và thời trang Haute Couture.",
+    "critique": "Một kiệt tác serif xa xỉ lấy cảm hứng từ typography thế kỷ 18-19, đặc trưng bởi độ tương phản nét cực cao và các chi tiết bo tròn hình cầu (orbicular terminals). Tỏa ra khí chất quý tộc, kiêu kỳ và gợi cảm. Lựa chọn số 1 cho nước hoa, mỹ phẩm high-end, khách sạn 5 sao và thời trang Haute Couture.",
+    "nhan_dinh_dao_dien": "Một kiệt tác serif xa xỉ lấy cảm hứng từ typography thế kỷ 18-19, đặc trưng bởi độ tương phản nét cực cao và các chi tiết bo tròn hình cầu (orbicular terminals). Tỏa ra khí chất quý tộc, kiêu kỳ và gợi cảm. Lựa chọn số 1 cho nước hoa, mỹ phẩm high-end, khách sạn 5 sao và thời trang Haute Couture.",
+    "typography_critique": "Một kiệt tác serif xa xỉ lấy cảm hứng từ typography thế kỷ 18-19, đặc trưng bởi độ tương phản nét cực cao và các chi tiết bo tròn hình cầu (orbicular terminals). Tỏa ra khí chất quý tộc, kiêu kỳ và gợi cảm. Lựa chọn số 1 cho nước hoa, mỹ phẩm high-end, khách sạn 5 sao và thời trang Haute Couture."
+  },
+  {
+    "id": "fd-rm-mono",
+    "name": "FD RM Mono",
+    "family": "FD RM Mono",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Blackletter, Script & Monospace",
+    "subcategory": "Monospace Technical Sans",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Blackletter, Script & Monospace",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Monospace Technical Sans",
+      "mood": "Tech & Công nghệ",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "None",
+      "axis": "Strict Monospace 600",
+      "x_height": "High",
+      "aperture": "Open"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nPhông chữ đơn cách (monospace) chuẩn 600 đơn vị được tinh chỉnh tỉ mỉ từ họ font RM. Tỷ lệ ký tự đồng đều, giữ trật tự thị giác hoàn hảo trên dòng lệnh code cũng như thiết kế biên tập dữ liệu số. Dành cho developer portfolio, dashboard analytics, fintech và techwear.",
+    "weights": [
+      "Black",
+      "Bold",
+      "Light",
+      "Regular",
+      "SemiBold"
+    ],
+    "sample_text": "Trật tự cấu trúc dữ liệu đơn cách và nhịp điệu lập trình chính xác tuyệt đối",
+    "zip_filename": "FD-RMMono.zip",
+    "zip_path": "dist/zips/FD/FD-RMMono.zip",
+    "download_url": "dist/zips/FD/FD-RMMono.zip",
+    "web_font_url": "fonts/FDRMMono-Regular.woff2",
+    "director_review": "Phông chữ đơn cách (monospace) chuẩn 600 đơn vị được tinh chỉnh tỉ mỉ từ họ font RM. Tỷ lệ ký tự đồng đều, giữ trật tự thị giác hoàn hảo trên dòng lệnh code cũng như thiết kế biên tập dữ liệu số. Dành cho developer portfolio, dashboard analytics, fintech và techwear.",
+    "critique": "Phông chữ đơn cách (monospace) chuẩn 600 đơn vị được tinh chỉnh tỉ mỉ từ họ font RM. Tỷ lệ ký tự đồng đều, giữ trật tự thị giác hoàn hảo trên dòng lệnh code cũng như thiết kế biên tập dữ liệu số. Dành cho developer portfolio, dashboard analytics, fintech và techwear.",
+    "nhan_dinh_dao_dien": "Phông chữ đơn cách (monospace) chuẩn 600 đơn vị được tinh chỉnh tỉ mỉ từ họ font RM. Tỷ lệ ký tự đồng đều, giữ trật tự thị giác hoàn hảo trên dòng lệnh code cũng như thiết kế biên tập dữ liệu số. Dành cho developer portfolio, dashboard analytics, fintech và techwear.",
+    "typography_critique": "Phông chữ đơn cách (monospace) chuẩn 600 đơn vị được tinh chỉnh tỉ mỉ từ họ font RM. Tỷ lệ ký tự đồng đều, giữ trật tự thị giác hoàn hảo trên dòng lệnh code cũng như thiết kế biên tập dữ liệu số. Dành cho developer portfolio, dashboard analytics, fintech và techwear."
+  },
+  {
+    "id": "fd-rm-neue",
+    "name": "FD RM Neue",
+    "family": "FD RM Neue",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Neo-grotesque Swiss",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Neo-grotesque Swiss",
+      "mood": "Tech & Công nghệ",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Low",
+      "axis": "Neo-grotesque Neutral",
+      "x_height": "Very High",
+      "aperture": "Semi-closed"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nĐỉnh cao Neo-Grotesque phong cách Thụy Sĩ đương đại với các góc cua dứt khoát và nét cắt ngang ngang chuẩn mực. Tính trung tính cao, đọc cực tốt ở mọi kích thước màn hình retina. Lựa chọn hoàn hảo cho hệ thống design system, ứng dụng mobile và branding quy mô lớn.",
+    "weights": [
+      "Black",
+      "Black Italic",
+      "Bold",
+      "Bold Italic",
+      "Italic",
+      "Light",
+      "Light Italic",
+      "Regular",
+      "SemiBold",
+      "SemiBold Italic"
+    ],
+    "sample_text": "Tính trung tính Thụy Sĩ và độ rõ ràng quang học trên mọi giao diện hiển thị",
+    "zip_filename": "FD-RMNeue.zip",
+    "zip_path": "dist/zips/FD/FD-RMNeue.zip",
+    "download_url": "dist/zips/FD/FD-RMNeue.zip",
+    "web_font_url": "fonts/FDRMNeue-Regular.woff2",
+    "director_review": "Đỉnh cao Neo-Grotesque phong cách Thụy Sĩ đương đại với các góc cua dứt khoát và nét cắt ngang ngang chuẩn mực. Tính trung tính cao, đọc cực tốt ở mọi kích thước màn hình retina. Lựa chọn hoàn hảo cho hệ thống design system, ứng dụng mobile và branding quy mô lớn.",
+    "critique": "Đỉnh cao Neo-Grotesque phong cách Thụy Sĩ đương đại với các góc cua dứt khoát và nét cắt ngang ngang chuẩn mực. Tính trung tính cao, đọc cực tốt ở mọi kích thước màn hình retina. Lựa chọn hoàn hảo cho hệ thống design system, ứng dụng mobile và branding quy mô lớn.",
+    "nhan_dinh_dao_dien": "Đỉnh cao Neo-Grotesque phong cách Thụy Sĩ đương đại với các góc cua dứt khoát và nét cắt ngang ngang chuẩn mực. Tính trung tính cao, đọc cực tốt ở mọi kích thước màn hình retina. Lựa chọn hoàn hảo cho hệ thống design system, ứng dụng mobile và branding quy mô lớn.",
+    "typography_critique": "Đỉnh cao Neo-Grotesque phong cách Thụy Sĩ đương đại với các góc cua dứt khoát và nét cắt ngang ngang chuẩn mực. Tính trung tính cao, đọc cực tốt ở mọi kích thước màn hình retina. Lựa chọn hoàn hảo cho hệ thống design system, ứng dụng mobile và branding quy mô lớn."
+  },
+  {
+    "id": "fd-scandium",
+    "name": "FD Scandium",
+    "family": "FD Scandium",
+    "designer": "CoType Foundry / FEDU Type Studio",
+    "source": "CoType Foundry (FEDU Vietnamese Localization)",
+    "category": "Sans Serif",
+    "subcategory": "Sans Technical Precision",
+    "is_cotype": true,
+    "tags": [
+      "CoType",
+      "CoType Foundry",
+      "FEDU Type",
+      "Sans Serif",
+      "Universal Standard"
+    ],
+    "matrix_3d": {
+      "style": "Sans Technical Precision",
+      "mood": "Tech & Công nghệ",
+      "use_case": "Display & Body"
+    },
+    "anatomy": {
+      "contrast": "Low",
+      "axis": "Automotive Precision",
+      "x_height": "High",
+      "aperture": "Engineered"
+    },
+    "vietnamese_support": true,
+    "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+    "director_notes": "📌 Nguồn gốc: CoType Foundry (Bản quyền thương mại / FEDU Việt Hóa Chuẩn Typographic Engine)\n\nHọ font Sans mang đậm cảm hứng thiết kế công nghiệp ô tô và kỹ thuật cơ khí chính xác. Các đường nét bán hình học với góc lượn tinh xảo tạo cảm giác tốc độ, thể thao và công nghệ tiên phong. Cực kỳ bắt mắt trên nhận diện xe điện, hàng không vũ trụ và thiết bị điện tử.",
+    "weights": [
+      "Black",
+      "Black Italic",
+      "Bold",
+      "Bold Italic",
+      "ExtraLight",
+      "ExtraLight Italic",
+      "Light",
+      "Light Italic",
+      "Regular",
+      "Regular Italic",
+      "SemiBold",
+      "SemiBold Italic",
+      "Thin",
+      "Thin Italic"
+    ],
+    "sample_text": "Kỹ thuật cơ khí chính xác và năng lượng chuyển động của công nghệ tiên phong",
+    "zip_filename": "FD-Scandium.zip",
+    "zip_path": "dist/zips/FD/FD-Scandium.zip",
+    "download_url": "dist/zips/FD/FD-Scandium.zip",
+    "web_font_url": "fonts/FDScandium-Regular.woff2",
+    "director_review": "Họ font Sans mang đậm cảm hứng thiết kế công nghiệp ô tô và kỹ thuật cơ khí chính xác. Các đường nét bán hình học với góc lượn tinh xảo tạo cảm giác tốc độ, thể thao và công nghệ tiên phong. Cực kỳ bắt mắt trên nhận diện xe điện, hàng không vũ trụ và thiết bị điện tử.",
+    "critique": "Họ font Sans mang đậm cảm hứng thiết kế công nghiệp ô tô và kỹ thuật cơ khí chính xác. Các đường nét bán hình học với góc lượn tinh xảo tạo cảm giác tốc độ, thể thao và công nghệ tiên phong. Cực kỳ bắt mắt trên nhận diện xe điện, hàng không vũ trụ và thiết bị điện tử.",
+    "nhan_dinh_dao_dien": "Họ font Sans mang đậm cảm hứng thiết kế công nghiệp ô tô và kỹ thuật cơ khí chính xác. Các đường nét bán hình học với góc lượn tinh xảo tạo cảm giác tốc độ, thể thao và công nghệ tiên phong. Cực kỳ bắt mắt trên nhận diện xe điện, hàng không vũ trụ và thiết bị điện tử.",
+    "typography_critique": "Họ font Sans mang đậm cảm hứng thiết kế công nghiệp ô tô và kỹ thuật cơ khí chính xác. Các đường nét bán hình học với góc lượn tinh xảo tạo cảm giác tốc độ, thể thao và công nghệ tiên phong. Cực kỳ bắt mắt trên nhận diện xe điện, hàng không vũ trụ và thiết bị điện tử."
+  },
+  {
     "id": "gr-pantheon",
     "name": "GR Pantheon",
     "family": "GR Pantheon",
@@ -7455,7 +8015,7 @@
       "Regular"
     ],
     "sample_text": "Gia đình sum vầy bên tách chè sen thơm ngát, cùng sẻ chia buồn vui cuộc sống",
-    "web_font_url": "https://fedu.vn/fonts/FDDHFHarrysBrush-Regular.woff2",
+    "web_font_url": "fonts/FDDHFHarrysBrush-Regular.woff2",
     "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
     "files_count": 1,
     "files": [

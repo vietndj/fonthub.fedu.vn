@@ -665,6 +665,21 @@ input[type="range"]::-moz-range-thumb {
   color: #ffffff;
 }
 
+.chip-btn.chip-cotype {
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.chip-btn.chip-cotype:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.chip-btn.chip-cotype.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
 .chip-btn.chip-fav {
   border-color: rgba(234, 179, 8, 0.4);
   background: rgba(234, 179, 8, 0.04);
@@ -852,6 +867,23 @@ input[type="range"]::-moz-range-thumb {
   background: #f05a28;
   color: #ffffff;
   border-color: #f05a28;
+  transform: translateY(-1px);
+}
+
+.badge-cotype {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all var(--trans-fast);
+}
+
+.badge-cotype:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
   transform: translateY(-1px);
 }
 
@@ -2535,9 +2567,7 @@ input[type="range"]::-moz-range-thumb {
 @font-face {
   font-family: 'FD Aeonik';
   src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
-       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
+       url('fonts/FDAeonik-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2545,17 +2575,15 @@ input[type="range"]::-moz-range-thumb {
 @font-face {
   font-family: 'FD Aeonik';
   src: url('../fonts/FDAeonik-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonik-Bold.woff2') format('woff2'),
-       url('../fonts/FDAeonik-BOLD.TTF') format('truetype'),
-       url('fonts/FDAeonik-BOLD.TTF') format('truetype');
+       url('fonts/FDAeonik-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'FD Aeonik';
-  src: url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
-       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
+  src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonik-Regular.woff2') format('woff2');
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
@@ -2563,9 +2591,7 @@ input[type="range"]::-moz-range-thumb {
 @font-face {
   font-family: 'FDAeonik';
   src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
-       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
+       url('fonts/FDAeonik-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2573,17 +2599,15 @@ input[type="range"]::-moz-range-thumb {
 @font-face {
   font-family: 'FDAeonik';
   src: url('../fonts/FDAeonik-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonik-Bold.woff2') format('woff2'),
-       url('../fonts/FDAeonik-BOLD.TTF') format('truetype'),
-       url('fonts/FDAeonik-BOLD.TTF') format('truetype');
+       url('fonts/FDAeonik-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'FDAeonik';
-  src: url('../fonts/FDAeonik-REGULAR.TTF') format('truetype'),
-       url('fonts/FDAeonik-REGULAR.TTF') format('truetype');
+  src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonik-Regular.woff2') format('woff2');
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
@@ -3464,6 +3488,129 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 768px) {
+  /* Fontshare Topbar & Header Mobile Reset */
+  .fontshare-topbar {
+    height: auto !important;
+    min-height: 56px;
+    padding: 10px 16px !important;
+    flex-wrap: wrap !important;
+    gap: 10px;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+  .fontshare-topbar__left {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    gap: 8px;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .fontshare-brand {
+    font-size: 1.25rem !important;
+    padding-right: 16px !important;
+  }
+  .fontshare-tabs {
+    flex-wrap: wrap !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .fs-tab {
+    padding: 8px 14px !important;
+    font-size: 0.85rem !important;
+  }
+  .fontshare-topbar__right {
+    display: none !important;
+  }
+
+  /* Fontshare Toolbar Mobile Reset */
+  .fontshare-toolbar {
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+  .fs-toolbar-row {
+    padding: 10px 16px !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+  .fs-search-wrap {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .fs-dropdowns-group {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .fs-dropdown-wrap {
+    max-width: 100% !important;
+    flex: 1 1 110px;
+  }
+  .fs-select {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 0.88rem !important;
+  }
+  .fs-size-slider-wrap {
+    width: 100% !important;
+    margin-left: 0 !important;
+    justify-content: space-between;
+  }
+  .fs-slider {
+    flex: 1 !important;
+    width: auto !important;
+  }
+  .fs-your-text-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .fs-presets-group {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .fs-align-group {
+    margin-left: auto;
+  }
+  .fs-tertiary-left,
+  .fs-tertiary-right {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 8px !important;
+  }
+  .fs-pills-wrap,
+  .fs-sort-wrap {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 6px !important;
+  }
+
+  /* Fontshare Grid & Card Mobile Reset */
+  .fontshare-specimens-container {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+  .fontshare-card,
+  .fs-list-item {
+    padding: 20px 16px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+  .fs-item-specimen {
+    max-width: 100% !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
   .fs-item-meta-bottom {
     flex-wrap: wrap;
     gap: 12px;
@@ -3608,3 +3755,314 @@ input[type="range"]::-moz-range-thumb {
   font-style: normal;
   font-display: swap;
 }
+
+
+/* CoType Foundry Category Chip & Badge */
+.chip-btn.chip-cotype {
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.chip-btn.chip-cotype:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.chip-btn.chip-cotype.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.badge-cotype {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all var(--trans-fast);
+}
+
+.badge-cotype:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+/* CoType Webfonts @font-face declarations */
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-Regular.woff2') format('woff2'),
+       url('fonts/FDAltform-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-Bold.woff2') format('woff2'),
+       url('fonts/FDAltform-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-Regular.woff2') format('woff2'),
+       url('fonts/FDAltform-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Regular.woff2') format('woff2'),
+       url('fonts/FDAmbit-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Bold.woff2') format('woff2'),
+       url('fonts/FDAmbit-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Regular.woff2') format('woff2'),
+       url('fonts/FDAmbit-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Coanda';
+  src: url('../fonts/FDCoanda-Regular.woff2') format('woff2'),
+       url('fonts/FDCoanda-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Coanda';
+  src: url('../fonts/FDCoanda-Bold.woff2') format('woff2'),
+       url('fonts/FDCoanda-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Coanda';
+  src: url('../fonts/FDCoanda-Regular.woff2') format('woff2'),
+       url('fonts/FDCoanda-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Lock Sans Stencil';
+  src: url('../fonts/FDLockSansStencil-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans Stencil';
+  src: url('../fonts/FDLockSansStencil-Bold.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans Stencil';
+  src: url('../fonts/FDLockSansStencil-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Lock Sans';
+  src: url('../fonts/FDLockSans-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans';
+  src: url('../fonts/FDLockSans-Bold.woff2') format('woff2'),
+       url('fonts/FDLockSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans';
+  src: url('../fonts/FDLockSans-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSans-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Lock Serif Stencil';
+  src: url('../fonts/FDLockSerifStencil-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif Stencil';
+  src: url('../fonts/FDLockSerifStencil-Bold.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif Stencil';
+  src: url('../fonts/FDLockSerifStencil-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Lock Serif';
+  src: url('../fonts/FDLockSerif-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif';
+  src: url('../fonts/FDLockSerif-Bold.woff2') format('woff2'),
+       url('fonts/FDLockSerif-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif';
+  src: url('../fonts/FDLockSerif-Regular.woff2') format('woff2'),
+       url('fonts/FDLockSerif-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-Regular.woff2') format('woff2'),
+       url('fonts/FDOrbikular-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-Bold.woff2') format('woff2'),
+       url('fonts/FDOrbikular-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-Regular.woff2') format('woff2'),
+       url('fonts/FDOrbikular-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD RM Mono';
+  src: url('../fonts/FDRMMono-Regular.woff2') format('woff2'),
+       url('fonts/FDRMMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Mono';
+  src: url('../fonts/FDRMMono-Bold.woff2') format('woff2'),
+       url('fonts/FDRMMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Mono';
+  src: url('../fonts/FDRMMono-Regular.woff2') format('woff2'),
+       url('fonts/FDRMMono-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-Regular.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-Bold.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-Regular.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-Regular.woff2') format('woff2'),
+       url('fonts/FDScandium-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-Bold.woff2') format('woff2'),
+       url('fonts/FDScandium-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-Regular.woff2') format('woff2'),
+       url('fonts/FDScandium-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
