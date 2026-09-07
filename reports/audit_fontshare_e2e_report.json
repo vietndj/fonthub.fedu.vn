@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07 22:07:34",
+  "timestamp": "2026-09-07 22:39:49",
   "suites": {
     "Redirect": [
       {
@@ -59,7 +59,7 @@
         "details": null
       },
       {
-        "test": "Weight Slider adjusts font-weight to bold (300 -> 700)",
+        "test": "Weight Slider adjusts font-weight to bold (400 -> 700)",
         "status": "PASS",
         "details": null
       },
@@ -88,12 +88,12 @@
         "details": null
       },
       {
-        "test": "Clicking style toggle expands Waterfall drawer (Rows: 10)",
+        "test": "Clicking style toggle expands Waterfall drawer (Rows: 14)",
         "status": "PASS",
         "details": null
       },
       {
-        "test": "Clicking waterfall row applies style to card (Row: Display Regular, Weight: 400)",
+        "test": "Clicking waterfall row applies style to card (Row: Black Italic, Weight: 900)",
         "status": "PASS",
         "details": null
       },
@@ -151,7 +151,7 @@
         "details": null
       },
       {
-        "test": "Live Waterfall Drawer expands with styles (Rows: 10)",
+        "test": "Live Waterfall Drawer expands with styles (Rows: 14)",
         "status": "PASS",
         "details": null
       },

@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-09-07 23:12:59",
+  "summary": {
+    "total": 44,
+    "passed": 44,
+    "failed": 0
+  },
+  "suites": {
+    "Catalog (#catalog)": [
+      {
+        "name": "Card found for 'FD Gilroy'",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'FD Gilroy' Waterfall drawer toggles open on styles click",
+        "passed": true,
+        "details": "Badge: '20 styles'"
+      },
+      {
+        "name": "'FD Gilroy' Waterfall rows (20) match badge (20 styles)",
+        "passed": true,
+        "details": "Actual: 20, Expected: 20"
+      },
+      {
+        "name": "'FD Gilroy' Waterfall rows render distinct weights (Thin/Light/Bold)",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'FD Gilroy' Waterfall row click syncs slider to 100",
+        "passed": true,
+        "details": "Slider: 100, Display: 100, Target Row: 100"
+      },
+      {
+        "name": "'FD Gilroy' Light (300) is visually thinner than Regular (400)",
+        "passed": true,
+        "details": "Light (300): 2044 px, Regular (400): 2564 px"
+      },
+      {
+        "name": "'FD Gilroy' Regular (400) is visually thinner than Bold (700)",
+        "passed": true,
+        "details": "Regular (400): 2564 px, Bold (700): 4357 px"
+      },
+      {
+        "name": "'FD Gilroy' Bold (700) vs Black (900) progression verified",
+        "passed": true,
+        "details": "Bold (700): 4357 px, Black (900): 5761 px"
+      },
+      {
+        "name": "Card found for 'FD Aeonik'",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'FD Aeonik' Waterfall drawer toggles open on styles click",
+        "passed": true,
+        "details": "Badge: '14 styles'"
+      },
+      {
+        "name": "'FD Aeonik' Waterfall rows (14) match badge (14 styles)",
+        "passed": true,
+        "details": "Actual: 14, Expected: 14"
+      },
+      {
+        "name": "'FD Aeonik' Waterfall rows render distinct weights (Thin/Light/Bold)",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'FD Aeonik' Waterfall row click syncs slider to 100",
+        "passed": true,
+        "details": "Slider: 100, Display: 100, Target Row: 100"
+      },
+      {
+        "name": "'FD Aeonik' Light (300) is visually thinner than Regular (400)",
+        "passed": true,
+        "details": "Light (300): 2078 px, Regular (400): 3002 px"
+      },
+      {
+        "name": "'FD Aeonik' Regular (400) is visually thinner than Bold (700)",
+        "passed": true,
+        "details": "Regular (400): 3002 px, Bold (700): 4617 px"
+      },
+      {
+        "name": "'FD Aeonik' Bold (700) vs Black (900) progression verified",
+        "passed": true,
+        "details": "Bold (700): 4617 px, Black (900): 5377 px"
+      },
+      {
+        "name": "Card found for 'GR Sectra'",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'GR Sectra' Waterfall drawer toggles open on styles click",
+        "passed": true,
+        "details": "Badge: '14 styles'"
+      },
+      {
+        "name": "'GR Sectra' Waterfall rows (14) match badge (14 styles)",
+        "passed": true,
+        "details": "Actual: 14, Expected: 14"
+      },
+      {
+        "name": "'GR Sectra' Waterfall rows render distinct weights (Thin/Light/Bold)",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'GR Sectra' Waterfall row click syncs slider to 300",
+        "passed": true,
+        "details": "Slider: 300, Display: 300, Target Row: 300"
+      },
+      {
+        "name": "'GR Sectra' Light (300) is visually thinner than Regular (400)",
+        "passed": true,
+        "details": "Light (300): 1963 px, Regular (400): 2671 px"
+      },
+      {
+        "name": "'GR Sectra' Regular (400) is visually thinner than Bold (700)",
+        "passed": true,
+        "details": "Regular (400): 2671 px, Bold (700): 3456 px"
+      },
+      {
+        "name": "'GR Sectra' Bold (700) vs Black (900) progression verified",
+        "passed": true,
+        "details": "Bold (700): 3456 px, Black (900): 4424 px"
+      }
+    ],
+    "Fontshare (#fontshare)": [
+      {
+        "name": "Card found for 'FD Gilroy'",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'FD Gilroy' Waterfall drawer toggles open on Fontshare",
+        "passed": true,
+        "details": "Badge: '20 styles ▾'"
+      },
+      {
+        "name": "'FD Gilroy' Fontshare waterfall rows (20) match badge (20 styles)",
+        "passed": true,
+        "details": "Actual: 20, Expected: 20"
+      },
+      {
+        "name": "'FD Gilroy' Fontshare waterfall row click syncs slider to 100",
+        "passed": true,
+        "details": "Slider: 100, Display: 100, Target Row: 100"
+      },
+      {
+        "name": "'FD Gilroy' Fontshare Light (300) is visually thinner than Regular (400)",
+        "passed": true,
+        "details": "Light (300): 2044 px, Regular (400): 2564 px"
+      },
+      {
+        "name": "'FD Gilroy' Fontshare Regular (400) is visually thinner than Bold (700)",
+        "passed": true,
+        "details": "Regular (400): 2564 px, Bold (700): 4357 px"
+      },
+      {
+        "name": "Card found for 'FD Aeonik'",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'FD Aeonik' Waterfall drawer toggles open on Fontshare",
+        "passed": true,
+        "details": "Badge: '14 styles ▾'"
+      },
+      {
+        "name": "'FD Aeonik' Fontshare waterfall rows (14) match badge (14 styles)",
+        "passed": true,
+        "details": "Actual: 14, Expected: 14"
+      },
+      {
+        "name": "'FD Aeonik' Fontshare waterfall row click syncs slider to 100",
+        "passed": true,
+        "details": "Slider: 100, Display: 100, Target Row: 100"
+      },
+      {
+        "name": "'FD Aeonik' Fontshare Light (300) is visually thinner than Regular (400)",
+        "passed": true,
+        "details": "Light (300): 2078 px, Regular (400): 3002 px"
+      },
+      {
+        "name": "'FD Aeonik' Fontshare Regular (400) is visually thinner than Bold (700)",
+        "passed": true,
+        "details": "Regular (400): 3002 px, Bold (700): 4617 px"
+      },
+      {
+        "name": "Card found for 'GR Sectra'",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "'GR Sectra' Waterfall drawer toggles open on Fontshare",
+        "passed": true,
+        "details": "Badge: '14 styles ▾'"
+      },
+      {
+        "name": "'GR Sectra' Fontshare waterfall rows (14) match badge (14 styles)",
+        "passed": true,
+        "details": "Actual: 14, Expected: 14"
+      },
+      {
+        "name": "'GR Sectra' Fontshare waterfall row click syncs slider to 300",
+        "passed": true,
+        "details": "Slider: 300, Display: 300, Target Row: 300"
+      },
+      {
+        "name": "'GR Sectra' Fontshare Light (300) is visually thinner than Regular (400)",
+        "passed": true,
+        "details": "Light (300): 1963 px, Regular (400): 2671 px"
+      },
+      {
+        "name": "'GR Sectra' Fontshare Regular (400) is visually thinner than Bold (700)",
+        "passed": true,
+        "details": "Regular (400): 2671 px, Bold (700): 3456 px"
+      }
+    ],
+    "Live Production (fonthub.fedu.vn)": [
+      {
+        "name": "HTTP GET https://fonthub.fedu.vn status 200",
+        "passed": true,
+        "details": "HTTP 200"
+      },
+      {
+        "name": "Live Production rendered font cards (Count: 24)",
+        "passed": true,
+        "details": null
+      }
+    ]
+  },
+  "screenshots": [
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/catalog_fd_gilroy_w300.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/catalog_fd_gilroy_w700.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/catalog_fd_aeonik_w300.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/catalog_fd_aeonik_w700.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/catalog_gr_sectra_w300.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/catalog_gr_sectra_w700.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/fontshare_fd_gilroy_w300.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/fontshare_fd_gilroy_w700.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/fontshare_fd_aeonik_w300.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/fontshare_fd_aeonik_w700.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/fontshare_gr_sectra_w300.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/fontshare_gr_sectra_w700.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/live_production_catalog.png"
+  ]
+}

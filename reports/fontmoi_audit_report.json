@@ -1,0 +1,593 @@
+{
+  "timestamp": "2026-09-07T15:48:21Z",
+  "foundries": {
+    "Dinamo": {
+      "FD Monument Grotesk": {
+        "styles_count": 16,
+        "otf_count": 16,
+        "ttf_count": 16,
+        "woff2_count": 16,
+        "sample_audit": {
+          "file": "FDMonumentGrotesk-Black.otf",
+          "format": ".otf",
+          "size_kb": 123.42,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Monument Grotesk Condensed": {
+        "styles_count": 16,
+        "otf_count": 16,
+        "ttf_count": 16,
+        "woff2_count": 16,
+        "sample_audit": {
+          "file": "FDMonumentGroteskCondensed-Black.otf",
+          "format": ".otf",
+          "size_kb": 123.0,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Monument Grotesk Mono": {
+        "styles_count": 16,
+        "otf_count": 16,
+        "ttf_count": 16,
+        "woff2_count": 16,
+        "sample_audit": {
+          "file": "FDMonumentGroteskMono-Black.otf",
+          "format": ".otf",
+          "size_kb": 57.15,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Monument Grotesk Semi Mono": {
+        "styles_count": 16,
+        "otf_count": 16,
+        "ttf_count": 16,
+        "woff2_count": 16,
+        "sample_audit": {
+          "file": "FDMonumentGroteskSemiMono-Black.otf",
+          "format": ".otf",
+          "size_kb": 124.37,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      }
+    },
+    "Pangram": {
+      "FD Formula": {
+        "styles_count": 9,
+        "otf_count": 9,
+        "ttf_count": 9,
+        "woff2_count": 9,
+        "sample_audit": {
+          "file": "FDFormula-ExtendedBold.otf",
+          "format": ".otf",
+          "size_kb": 107.76,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      }
+    },
+    "Klim": {
+      "FD American Grotesk": {
+        "styles_count": 42,
+        "otf_count": 42,
+        "ttf_count": 42,
+        "woff2_count": 42,
+        "sample_audit": {
+          "file": "FDAmericanGrotesk-Black.otf",
+          "format": ".otf",
+          "size_kb": 35.97,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Calibre": {
+        "styles_count": 14,
+        "otf_count": 14,
+        "ttf_count": 14,
+        "woff2_count": 14,
+        "sample_audit": {
+          "file": "FDCalibre-Black.otf",
+          "format": ".otf",
+          "size_kb": 33.72,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Die Grotesk": {
+        "styles_count": 64,
+        "otf_count": 64,
+        "ttf_count": 64,
+        "woff2_count": 64,
+        "sample_audit": {
+          "file": "FDDieGroteskA-Black.otf",
+          "format": ".otf",
+          "size_kb": 37.03,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Domaine": {
+        "styles_count": 34,
+        "otf_count": 34,
+        "ttf_count": 34,
+        "woff2_count": 34,
+        "sample_audit": {
+          "file": "FDDomaineDisplay-Black.otf",
+          "format": ".otf",
+          "size_kb": 41.02,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Domaine Sans": {
+        "styles_count": 42,
+        "otf_count": 42,
+        "ttf_count": 42,
+        "woff2_count": 42,
+        "sample_audit": {
+          "file": "FDDomaineSansDisplay-Black.otf",
+          "format": ".otf",
+          "size_kb": 34.92,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Epicene": {
+        "styles_count": 20,
+        "otf_count": 20,
+        "ttf_count": 20,
+        "woff2_count": 20,
+        "sample_audit": {
+          "file": "FDEpiceneDisplay-Black.otf",
+          "format": ".otf",
+          "size_kb": 44.22,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Family": {
+        "styles_count": 12,
+        "otf_count": 12,
+        "ttf_count": 12,
+        "woff2_count": 12,
+        "sample_audit": {
+          "file": "FDFamily-Black.otf",
+          "format": ".otf",
+          "size_kb": 39.26,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Feijoa": {
+        "styles_count": 4,
+        "otf_count": 4,
+        "ttf_count": 4,
+        "woff2_count": 4,
+        "sample_audit": {
+          "file": "FDFeijoa-Bold.otf",
+          "format": ".otf",
+          "size_kb": 46.42,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Financier": {
+        "styles_count": 20,
+        "otf_count": 20,
+        "ttf_count": 20,
+        "woff2_count": 20,
+        "sample_audit": {
+          "file": "FDFinancierDisplay-Black.otf",
+          "format": ".otf",
+          "size_kb": 42.21,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Founders Grotesk": {
+        "styles_count": 25,
+        "otf_count": 25,
+        "ttf_count": 25,
+        "woff2_count": 25,
+        "sample_audit": {
+          "file": "FDFoundersGrotesk-Bold.otf",
+          "format": ".otf",
+          "size_kb": 34.15,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Geograph": {
+        "styles_count": 12,
+        "otf_count": 12,
+        "ttf_count": 12,
+        "woff2_count": 12,
+        "sample_audit": {
+          "file": "FDGeograph-Black.otf",
+          "format": ".otf",
+          "size_kb": 34.18,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Heldane": {
+        "styles_count": 12,
+        "otf_count": 12,
+        "ttf_count": 12,
+        "woff2_count": 12,
+        "sample_audit": {
+          "file": "FDHeldaneDisplay-Bold.otf",
+          "format": ".otf",
+          "size_kb": 44.75,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Karbon": {
+        "styles_count": 16,
+        "otf_count": 16,
+        "ttf_count": 16,
+        "woff2_count": 16,
+        "sample_audit": {
+          "file": "FDKarbon-Bold.otf",
+          "format": ".otf",
+          "size_kb": 33.48,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Maelstrom": {
+        "styles_count": 2,
+        "otf_count": 2,
+        "ttf_count": 2,
+        "woff2_count": 2,
+        "sample_audit": {
+          "file": "FDMaelstrom-Bold.otf",
+          "format": ".otf",
+          "size_kb": 36.19,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Manuka": {
+        "styles_count": 14,
+        "otf_count": 14,
+        "ttf_count": 14,
+        "woff2_count": 14,
+        "sample_audit": {
+          "file": "FDManuka-Black.otf",
+          "format": ".otf",
+          "size_kb": 32.27,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Martina Plantijn": {
+        "styles_count": 10,
+        "otf_count": 10,
+        "ttf_count": 10,
+        "woff2_count": 10,
+        "sample_audit": {
+          "file": "FDMartinaPlantijn-Black.otf",
+          "format": ".otf",
+          "size_kb": 41.48,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Metric": {
+        "styles_count": 14,
+        "otf_count": 14,
+        "ttf_count": 14,
+        "woff2_count": 14,
+        "sample_audit": {
+          "file": "FDMetric-Black.otf",
+          "format": ".otf",
+          "size_kb": 33.42,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD National": {
+        "styles_count": 18,
+        "otf_count": 18,
+        "ttf_count": 18,
+        "woff2_count": 18,
+        "sample_audit": {
+          "file": "FDNational-Black.otf",
+          "format": ".otf",
+          "size_kb": 35.32,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD National 2": {
+        "styles_count": 48,
+        "otf_count": 48,
+        "ttf_count": 48,
+        "woff2_count": 48,
+        "sample_audit": {
+          "file": "FDNational2-Black.otf",
+          "format": ".otf",
+          "size_kb": 35.54,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Newzald": {
+        "styles_count": 8,
+        "otf_count": 8,
+        "ttf_count": 8,
+        "woff2_count": 8,
+        "sample_audit": {
+          "file": "FDNewzald-Black.otf",
+          "format": ".otf",
+          "size_kb": 39.14,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Pitch": {
+        "styles_count": 20,
+        "otf_count": 20,
+        "ttf_count": 20,
+        "woff2_count": 20,
+        "sample_audit": {
+          "file": "FDPitch-Bold.otf",
+          "format": ".otf",
+          "size_kb": 31.69,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Signifier": {
+        "styles_count": 14,
+        "otf_count": 14,
+        "ttf_count": 14,
+        "woff2_count": 14,
+        "sample_audit": {
+          "file": "FDSignifier-Black.otf",
+          "format": ".otf",
+          "size_kb": 38.09,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Söhne": {
+        "styles_count": 64,
+        "otf_count": 64,
+        "ttf_count": 64,
+        "woff2_count": 64,
+        "sample_audit": {
+          "file": "FDSohne-Buch.otf",
+          "format": ".otf",
+          "size_kb": 35.74,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD The Future": {
+        "styles_count": 28,
+        "otf_count": 28,
+        "ttf_count": 28,
+        "woff2_count": 28,
+        "sample_audit": {
+          "file": "FDTheFuture-Black.otf",
+          "format": ".otf",
+          "size_kb": 34.48,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Tiempos": {
+        "styles_count": 32,
+        "otf_count": 32,
+        "ttf_count": 32,
+        "woff2_count": 32,
+        "sample_audit": {
+          "file": "FDTiemposFine-Black.otf",
+          "format": ".otf",
+          "size_kb": 43.03,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Untitled Sans": {
+        "styles_count": 10,
+        "otf_count": 10,
+        "ttf_count": 10,
+        "woff2_count": 10,
+        "sample_audit": {
+          "file": "FDUntitledSans-Black.otf",
+          "format": ".otf",
+          "size_kb": 35.31,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      },
+      "FD Untitled Serif": {
+        "styles_count": 6,
+        "otf_count": 6,
+        "ttf_count": 6,
+        "woff2_count": 6,
+        "sample_audit": {
+          "file": "FDUntitledSerif-Bold.otf",
+          "format": ".otf",
+          "size_kb": 41.61,
+          "vn_coverage": 100.0,
+          "vn_missing_count": 0,
+          "width_mismatches": 0,
+          "has_vn_cp": true,
+          "has_dcroat": true,
+          "harfbuzz_parity": true
+        },
+        "status": "PASS"
+      }
+    }
+  },
+  "summary": {
+    "total_families": 32,
+    "total_styles_found": 678,
+    "overall_pass": true,
+    "duration_sec": 3.31
+  }
+}

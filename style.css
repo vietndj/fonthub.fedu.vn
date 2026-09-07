@@ -680,6 +680,51 @@ input[type="range"]::-moz-range-thumb {
   color: #ffffff;
 }
 
+.chip-btn.chip-dinamo {
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.chip-btn.chip-dinamo:hover {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+
+.chip-btn.chip-dinamo.active {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+  color: #ffffff;
+}
+
+.chip-btn.chip-klim {
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+.chip-btn.chip-klim:hover {
+  border-color: #d97706;
+  color: #d97706;
+}
+
+.chip-btn.chip-klim.active {
+  background: #d97706;
+  border-color: #d97706;
+  color: #ffffff;
+}
+
+.chip-btn.chip-pangram {
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+.chip-btn.chip-pangram:hover {
+  border-color: #06b6d4;
+  color: #06b6d4;
+}
+
+.chip-btn.chip-pangram.active {
+  background: #06b6d4;
+  border-color: #06b6d4;
+  color: #ffffff;
+}
+
 .chip-btn.chip-fav {
   border-color: rgba(234, 179, 8, 0.4);
   background: rgba(234, 179, 8, 0.04);
@@ -884,6 +929,57 @@ input[type="range"]::-moz-range-thumb {
   background: #2563eb;
   color: #ffffff;
   border-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.badge-dinamo {
+  background: rgba(139, 92, 246, 0.12);
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all var(--trans-fast);
+}
+
+.badge-dinamo:hover {
+  background: #8b5cf6;
+  color: #ffffff;
+  border-color: #8b5cf6;
+  transform: translateY(-1px);
+}
+
+.badge-klim {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all var(--trans-fast);
+}
+
+.badge-klim:hover {
+  background: #d97706;
+  color: #ffffff;
+  border-color: #d97706;
+  transform: translateY(-1px);
+}
+
+.badge-pangram {
+  background: rgba(6, 182, 212, 0.12);
+  color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: all var(--trans-fast);
+}
+
+.badge-pangram:hover {
+  background: #06b6d4;
+  color: #ffffff;
+  border-color: #06b6d4;
   transform: translateY(-1px);
 }
 
@@ -2501,75 +2597,471 @@ input[type="range"]::-moz-range-thumb {
    FEDU FONTHUB — CORE TYPEFACES & LOCAL WEBFONTS (@font-face)
    ========================================================================== */
 
-/* 1. GT Sectra */
+/* ==========================================================================
+   @font-face for GR Sectra
+   ========================================================================== */
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-Light.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-LightItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-Regular.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-Medium.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-Bold.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-Super.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraFine-Black.woff2') format('woff2'),
+       url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('../fonts/GRSectraFine-BlackItalic.woff2') format('woff2'),
+       url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for GRSectra
+   ========================================================================== */
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-Light.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-LightItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-Regular.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-Medium.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-Bold.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-Super.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraFine-Black.woff2') format('woff2'),
+       url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('../fonts/GRSectraFine-BlackItalic.woff2') format('woff2'),
+       url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for GT Sectra
+   ========================================================================== */
 @font-face {
   font-family: 'GT Sectra';
-  src: url('../fonts/GTSectra-Regular.woff2') format('woff2'),
-       url('fonts/GTSectra-Regular.woff2') format('woff2'),
-       url('../fonts/GT-Sectra-LCGV-Display-Regular.otf') format('opentype'),
-       url('fonts/GT-Sectra-LCGV-Display-Regular.otf') format('opentype');
+  src: url('../fonts/GRSectraDisplay-Light.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-LightItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-Regular.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'GT Sectra';
-  src: url('../fonts/GT-Sectra-LCGV-Display-Bold.otf') format('opentype'),
-       url('fonts/GT-Sectra-LCGV-Display-Bold.otf') format('opentype'),
-       url('../fonts/GTSectra-Regular.woff2') format('woff2'),
-       url('fonts/GTSectra-Regular.woff2') format('woff2');
+  src: url('../fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-Medium.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-Bold.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
-/* 4. GT America */
 @font-face {
-  font-family: 'GT America';
-  src: url('../fonts/GTAmerica-Regular.woff2') format('woff2'),
-       url('fonts/GTAmerica-Regular.woff2') format('woff2');
-  font-weight: 400 900;
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-Super.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
-
-/* 5. FDNoeDisplay / FDNoeDisplay */
 @font-face {
-  font-family: 'FDNoeDisplay';
-  src: url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
-       url('fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
-       url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
-       url('fonts/FDNoeDisplay-Regular.ttf') format('truetype');
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraFine-Black.woff2') format('woff2'),
+       url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('../fonts/GRSectraFine-BlackItalic.woff2') format('woff2'),
+       url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for GTSectra
+   ========================================================================== */
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-Light.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-LightItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-Regular.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'FDNoeDisplay';
-  src: url('../fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
-       url('fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
-       url('../fonts/FDNoeDisplay-Bold.ttf') format('truetype'),
-       url('fonts/FDNoeDisplay-Bold.ttf') format('truetype');
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-Medium.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-Bold.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'FDNoeDisplay';
-  src: url('../fonts/FDNoeDisplay-Regular.ttf') format('truetype'),
-       url('fonts/FDNoeDisplay-Regular.ttf') format('truetype');
-  font-weight: 400 900;
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-Super.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2'),
+       url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraFine-Black.woff2') format('woff2'),
+       url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GTSectra';
+  src: url('../fonts/GRSectraFine-BlackItalic.woff2') format('woff2'),
+       url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
-/* 6. FD Aeonik / FDAeonik */
+/* ==========================================================================
+   @font-face for FD Aeonik
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Air.woff2') format('woff2'),
+       url('fonts/FDAeonik-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-AirItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-AirItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Light.woff2') format('woff2'),
+       url('fonts/FDAeonik-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Aeonik';
   src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
        url('fonts/FDAeonik-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Italic.woff2') format('woff2'),
+       url('fonts/FDAeonik-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonik-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -2582,10 +3074,62 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Aeonik';
-  src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonik-Regular.woff2') format('woff2');
-  font-weight: 400 900;
+  src: url('../fonts/FDAeonik-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-Black.woff2') format('woff2'),
+       url('fonts/FDAeonik-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik';
+  src: url('../fonts/FDAeonik-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FDAeonik
+   ========================================================================== */
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Air.woff2') format('woff2'),
+       url('fonts/FDAeonik-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-AirItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-AirItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Light.woff2') format('woff2'),
+       url('fonts/FDAeonik-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -2598,6 +3142,30 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Italic.woff2') format('woff2'),
+       url('fonts/FDAeonik-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonik-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
   src: url('../fonts/FDAeonik-Bold.woff2') format('woff2'),
        url('fonts/FDAeonik-Bold.woff2') format('woff2');
   font-weight: 700;
@@ -2606,52 +3174,522 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FDAeonik';
-  src: url('../fonts/FDAeonik-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonik-Regular.woff2') format('woff2');
-  font-weight: 400 900;
+  src: url('../fonts/FDAeonik-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-Black.woff2') format('woff2'),
+       url('fonts/FDAeonik-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
-
-/* 7. FDGilroy / FDGilroy */
 @font-face {
-  font-family: 'FDGilroy';
+  font-family: 'FDAeonik';
+  src: url('../fonts/FDAeonik-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAeonik-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD Gilroy
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-Thin.woff2') format('woff2'),
+       url('fonts/FDGilroy-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-ThinItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-XLight.woff2') format('woff2'),
+       url('fonts/FDGilroy-XLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-XLightItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-XLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-Light.woff2') format('woff2'),
+       url('fonts/FDGilroy-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-LightItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
   src: url('../fonts/FDGilroy-Regular.woff2') format('woff2'),
-       url('fonts/FDGilroy-Regular.woff2') format('woff2'),
-       url('../fonts/FDGilroy Regular.ttf') format('truetype'),
-       url('fonts/FDGilroy Regular.ttf') format('truetype');
+       url('fonts/FDGilroy-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'FDGilroy';
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-Italic.woff2') format('woff2'),
+       url('fonts/FDGilroy-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-Medium.woff2') format('woff2'),
+       url('fonts/FDGilroy-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-SemiBold.woff2') format('woff2'),
+       url('fonts/FDGilroy-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
   src: url('../fonts/FDGilroy-Bold.woff2') format('woff2'),
-       url('fonts/FDGilroy-Bold.woff2') format('woff2'),
-       url('../fonts/FDGilroy Bold.otf') format('opentype'),
-       url('fonts/FDGilroy Bold.otf') format('opentype');
+       url('fonts/FDGilroy-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-Heavy.woff2') format('woff2'),
+       url('fonts/FDGilroy-Heavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-HeavyItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-HeavyItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-Black.woff2') format('woff2'),
+       url('fonts/FDGilroy-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Gilroy';
+  src: url('../fonts/FDGilroy-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FDGilroy
+   ========================================================================== */
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Thin.woff2') format('woff2'),
+       url('fonts/FDGilroy-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-ThinItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-XLight.woff2') format('woff2'),
+       url('fonts/FDGilroy-XLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-XLightItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-XLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Light.woff2') format('woff2'),
+       url('fonts/FDGilroy-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-LightItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'FDGilroy';
   src: url('../fonts/FDGilroy-Regular.woff2') format('woff2'),
        url('fonts/FDGilroy-Regular.woff2') format('woff2');
-  font-weight: 400 900;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Italic.woff2') format('woff2'),
+       url('fonts/FDGilroy-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Medium.woff2') format('woff2'),
+       url('fonts/FDGilroy-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-SemiBold.woff2') format('woff2'),
+       url('fonts/FDGilroy-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Bold.woff2') format('woff2'),
+       url('fonts/FDGilroy-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Heavy.woff2') format('woff2'),
+       url('fonts/FDGilroy-Heavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-HeavyItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-HeavyItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-Black.woff2') format('woff2'),
+       url('fonts/FDGilroy-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDGilroy';
+  src: url('../fonts/FDGilroy-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDGilroy-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
-/* 8. FDActa / FDActa */
+/* ==========================================================================
+   @font-face for FD Acta
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-Light.woff2') format('woff2'),
+       url('fonts/FDActa-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-LightItalic.woff2') format('woff2'),
+       url('fonts/FDActa-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-Book.woff2') format('woff2'),
+       url('fonts/FDActa-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-BookItalic.woff2') format('woff2'),
+       url('fonts/FDActa-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-Medium.woff2') format('woff2'),
+       url('fonts/FDActa-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDActa-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-Bold.woff2') format('woff2'),
+       url('fonts/FDActa-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDActa-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-ExtraBold.woff2') format('woff2'),
+       url('fonts/FDActa-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-ExtraBoldItalic.woff2') format('woff2'),
+       url('fonts/FDActa-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-Black.woff2') format('woff2'),
+       url('fonts/FDActa-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Acta';
+  src: url('../fonts/FDActa-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDActa-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FDActa
+   ========================================================================== */
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-Light.woff2') format('woff2'),
+       url('fonts/FDActa-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-LightItalic.woff2') format('woff2'),
+       url('fonts/FDActa-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FDActa';
   src: url('../fonts/FDActa-Book.woff2') format('woff2'),
-       url('fonts/FDActa-Book.woff2') format('woff2'),
-       url('../fonts/FDActa-Book.ttf') format('truetype'),
-       url('fonts/FDActa-Book.ttf') format('truetype');
-  font-weight: 400 900;
+       url('fonts/FDActa-Book.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-BookItalic.woff2') format('woff2'),
+       url('fonts/FDActa-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-Medium.woff2') format('woff2'),
+       url('fonts/FDActa-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDActa-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-Bold.woff2') format('woff2'),
+       url('fonts/FDActa-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDActa-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-ExtraBold.woff2') format('woff2'),
+       url('fonts/FDActa-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-ExtraBoldItalic.woff2') format('woff2'),
+       url('fonts/FDActa-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-Black.woff2') format('woff2'),
+       url('fonts/FDActa-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDActa';
+  src: url('../fonts/FDActa-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDActa-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -3630,133 +4668,9 @@ input[type="range"]::-moz-range-thumb {
 
 
 
-/* FD Aeonik Families (Soft, Condensed, Extended, Mono, Fono) */
-@font-face {
-  font-family: 'FD Aeonik Soft';
-  src: url('../fonts/FDAeonikSoft-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikSoft-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Soft';
-  src: url('../fonts/FDAeonikSoft-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonikSoft-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Soft';
-  src: url('../fonts/FDAeonikSoft-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikSoft-Regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FD Aeonik Condensed';
-  src: url('../fonts/FDAeonikCondensed-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikCondensed-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Condensed';
-  src: url('../fonts/FDAeonikCondensed-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonikCondensed-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Condensed';
-  src: url('../fonts/FDAeonikCondensed-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikCondensed-Regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FD Aeonik Extended';
-  src: url('../fonts/FDAeonikExtended-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikExtended-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Extended';
-  src: url('../fonts/FDAeonikExtended-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonikExtended-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Extended';
-  src: url('../fonts/FDAeonikExtended-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikExtended-Regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FD Aeonik Mono';
-  src: url('../fonts/FDAeonikMono-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikMono-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Mono';
-  src: url('../fonts/FDAeonikMono-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonikMono-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Mono';
-  src: url('../fonts/FDAeonikMono-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikMono-Regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FD Aeonik Fono';
-  src: url('../fonts/FDAeonikFono-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikFono-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Fono';
-  src: url('../fonts/FDAeonikFono-Bold.woff2') format('woff2'),
-       url('fonts/FDAeonikFono-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FD Aeonik Fono';
-  src: url('../fonts/FDAeonikFono-Regular.woff2') format('woff2'),
-       url('fonts/FDAeonikFono-Regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-
+/* ==========================================================================
+   COTYPE TYPEFACES FULL MULTI-WEIGHT WEBFONTS
+   ========================================================================== */
 /* CoType Foundry Category Chip & Badge */
 .chip-btn.chip-cotype {
   border-color: rgba(37, 99, 235, 0.4);
@@ -3790,13 +4704,557 @@ input[type="range"]::-moz-range-thumb {
   transform: translateY(-1px);
 }
 
-/* CoType Webfonts @font-face declarations */
+
+
+/* ==========================================================================
+   @font-face for FD Aeonik Soft
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Air.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-AirItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-AirItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Light.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-RegularItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Black.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD Aeonik Condensed
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Air.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-AirItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-AirItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Light.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-RegularItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Black.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD Aeonik Extended
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Air.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-AirItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-AirItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Light.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-RegularItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-MediumItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Black.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD Aeonik Mono
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Air.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Light.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Black.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD Aeonik Fono
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Air.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Air.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Light.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Medium.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Black.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD Altform
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-Thin.woff2') format('woff2'),
+       url('fonts/FDAltform-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-ThinItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDAltform-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-ExtraLightItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-Light.woff2') format('woff2'),
+       url('fonts/FDAltform-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Altform';
   src: url('../fonts/FDAltform-Regular.woff2') format('woff2'),
        url('fonts/FDAltform-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-RegularItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAltform-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -3809,19 +5267,110 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Altform';
-  src: url('../fonts/FDAltform-Regular.woff2') format('woff2'),
-       url('fonts/FDAltform-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDAltform-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-Black.woff2') format('woff2'),
+       url('fonts/FDAltform-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'FD Altform';
+  src: url('../fonts/FDAltform-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAltform-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
+/* ==========================================================================
+   @font-face for FD Ambit
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Thin.woff2') format('woff2'),
+       url('fonts/FDAmbit-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-ThinItalic.woff2') format('woff2'),
+       url('fonts/FDAmbit-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDAmbit-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-ExtraLightItalic.woff2') format('woff2'),
+       url('fonts/FDAmbit-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Light.woff2') format('woff2'),
+       url('fonts/FDAmbit-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-LightItalic.woff2') format('woff2'),
+       url('fonts/FDAmbit-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Ambit';
   src: url('../fonts/FDAmbit-Regular.woff2') format('woff2'),
        url('fonts/FDAmbit-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Italic.woff2') format('woff2'),
+       url('fonts/FDAmbit-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-SemiBold.woff2') format('woff2'),
+       url('fonts/FDAmbit-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDAmbit-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -3834,13 +5383,48 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Ambit';
-  src: url('../fonts/FDAmbit-Regular.woff2') format('woff2'),
-       url('fonts/FDAmbit-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDAmbit-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDAmbit-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-Black.woff2') format('woff2'),
+       url('fonts/FDAmbit-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'FD Ambit';
+  src: url('../fonts/FDAmbit-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDAmbit-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
+/* ==========================================================================
+   @font-face for FD Coanda
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Coanda';
+  src: url('../fonts/FDCoanda-Thin.woff2') format('woff2'),
+       url('fonts/FDCoanda-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Coanda';
+  src: url('../fonts/FDCoanda-Light.woff2') format('woff2'),
+       url('fonts/FDCoanda-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Coanda';
   src: url('../fonts/FDCoanda-Regular.woff2') format('woff2'),
@@ -3859,18 +5443,45 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Coanda';
-  src: url('../fonts/FDCoanda-Regular.woff2') format('woff2'),
-       url('fonts/FDCoanda-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDCoanda-Black.woff2') format('woff2'),
+       url('fonts/FDCoanda-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FD Lock Sans Stencil
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Lock Sans Stencil';
+  src: url('../fonts/FDLockSansStencil-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans Stencil';
+  src: url('../fonts/FDLockSansStencil-Light.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Lock Sans Stencil';
   src: url('../fonts/FDLockSansStencil-Regular.woff2') format('woff2'),
        url('fonts/FDLockSansStencil-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans Stencil';
+  src: url('../fonts/FDLockSansStencil-Medium.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -3884,18 +5495,45 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Lock Sans Stencil';
-  src: url('../fonts/FDLockSansStencil-Regular.woff2') format('woff2'),
-       url('fonts/FDLockSansStencil-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDLockSansStencil-Black.woff2') format('woff2'),
+       url('fonts/FDLockSansStencil-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FD Lock Sans
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Lock Sans';
+  src: url('../fonts/FDLockSans-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDLockSans-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans';
+  src: url('../fonts/FDLockSans-Light.woff2') format('woff2'),
+       url('fonts/FDLockSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Lock Sans';
   src: url('../fonts/FDLockSans-Regular.woff2') format('woff2'),
        url('fonts/FDLockSans-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Sans';
+  src: url('../fonts/FDLockSans-Medium.woff2') format('woff2'),
+       url('fonts/FDLockSans-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -3909,18 +5547,45 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Lock Sans';
-  src: url('../fonts/FDLockSans-Regular.woff2') format('woff2'),
-       url('fonts/FDLockSans-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDLockSans-Black.woff2') format('woff2'),
+       url('fonts/FDLockSans-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FD Lock Serif Stencil
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Lock Serif Stencil';
+  src: url('../fonts/FDLockSerifStencil-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif Stencil';
+  src: url('../fonts/FDLockSerifStencil-Light.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Lock Serif Stencil';
   src: url('../fonts/FDLockSerifStencil-Regular.woff2') format('woff2'),
        url('fonts/FDLockSerifStencil-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif Stencil';
+  src: url('../fonts/FDLockSerifStencil-Medium.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -3934,18 +5599,45 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Lock Serif Stencil';
-  src: url('../fonts/FDLockSerifStencil-Regular.woff2') format('woff2'),
-       url('fonts/FDLockSerifStencil-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDLockSerifStencil-Black.woff2') format('woff2'),
+       url('fonts/FDLockSerifStencil-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FD Lock Serif
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Lock Serif';
+  src: url('../fonts/FDLockSerif-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDLockSerif-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif';
+  src: url('../fonts/FDLockSerif-Light.woff2') format('woff2'),
+       url('fonts/FDLockSerif-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Lock Serif';
   src: url('../fonts/FDLockSerif-Regular.woff2') format('woff2'),
        url('fonts/FDLockSerif-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Lock Serif';
+  src: url('../fonts/FDLockSerif-Medium.woff2') format('woff2'),
+       url('fonts/FDLockSerif-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -3959,19 +5651,78 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Lock Serif';
-  src: url('../fonts/FDLockSerif-Regular.woff2') format('woff2'),
-       url('fonts/FDLockSerif-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDLockSerif-Black.woff2') format('woff2'),
+       url('fonts/FDLockSerif-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FD Orbikular
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDOrbikular-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-ExtraLightItalic.woff2') format('woff2'),
+       url('fonts/FDOrbikular-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-Light.woff2') format('woff2'),
+       url('fonts/FDOrbikular-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-LightItalic.woff2') format('woff2'),
+       url('fonts/FDOrbikular-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Orbikular';
   src: url('../fonts/FDOrbikular-Regular.woff2') format('woff2'),
        url('fonts/FDOrbikular-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-Italic.woff2') format('woff2'),
+       url('fonts/FDOrbikular-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-SemiBold.woff2') format('woff2'),
+       url('fonts/FDOrbikular-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDOrbikular-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -3984,18 +5735,97 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Orbikular';
-  src: url('../fonts/FDOrbikular-Regular.woff2') format('woff2'),
-       url('fonts/FDOrbikular-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDOrbikular-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDOrbikular-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-ExtraBold.woff2') format('woff2'),
+       url('fonts/FDOrbikular-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Orbikular';
+  src: url('../fonts/FDOrbikular-ExtraBoldItalic.woff2') format('woff2'),
+       url('fonts/FDOrbikular-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FDRM Mono
+   ========================================================================== */
+@font-face {
+  font-family: 'FDRM Mono';
+  src: url('../fonts/FDRMMono-Light.woff2') format('woff2'),
+       url('fonts/FDRMMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Mono';
+  src: url('../fonts/FDRMMono-Regular.woff2') format('woff2'),
+       url('fonts/FDRMMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Mono';
+  src: url('../fonts/FDRMMono-SemiBold.woff2') format('woff2'),
+       url('fonts/FDRMMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Mono';
+  src: url('../fonts/FDRMMono-Bold.woff2') format('woff2'),
+       url('fonts/FDRMMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Mono';
+  src: url('../fonts/FDRMMono-Black.woff2') format('woff2'),
+       url('fonts/FDRMMono-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FD RM Mono
+   ========================================================================== */
+@font-face {
+  font-family: 'FD RM Mono';
+  src: url('../fonts/FDRMMono-Light.woff2') format('woff2'),
+       url('fonts/FDRMMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD RM Mono';
   src: url('../fonts/FDRMMono-Regular.woff2') format('woff2'),
        url('fonts/FDRMMono-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Mono';
+  src: url('../fonts/FDRMMono-SemiBold.woff2') format('woff2'),
+       url('fonts/FDRMMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -4009,19 +5839,146 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD RM Mono';
-  src: url('../fonts/FDRMMono-Regular.woff2') format('woff2'),
-       url('fonts/FDRMMono-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDRMMono-Black.woff2') format('woff2'),
+       url('fonts/FDRMMono-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
+/* ==========================================================================
+   @font-face for FDRM Neue
+   ========================================================================== */
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-Light.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-LightItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-Regular.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-Italic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-SemiBold.woff2') format('woff2'),
+       url('fonts/FDRMNeue-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-Bold.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-Black.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FDRM Neue';
+  src: url('../fonts/FDRMNeue-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   @font-face for FD RM Neue
+   ========================================================================== */
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-Light.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-LightItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD RM Neue';
   src: url('../fonts/FDRMNeue-Regular.woff2') format('woff2'),
        url('fonts/FDRMNeue-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-Italic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-SemiBold.woff2') format('woff2'),
+       url('fonts/FDRMNeue-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -4034,19 +5991,110 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD RM Neue';
-  src: url('../fonts/FDRMNeue-Regular.woff2') format('woff2'),
-       url('fonts/FDRMNeue-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDRMNeue-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-Black.woff2') format('woff2'),
+       url('fonts/FDRMNeue-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'FD RM Neue';
+  src: url('../fonts/FDRMNeue-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDRMNeue-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
+/* ==========================================================================
+   @font-face for FD Scandium
+   ========================================================================== */
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-Thin.woff2') format('woff2'),
+       url('fonts/FDScandium-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-ThinItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-ExtraLight.woff2') format('woff2'),
+       url('fonts/FDScandium-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-ExtraLightItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-Light.woff2') format('woff2'),
+       url('fonts/FDScandium-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-LightItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
 @font-face {
   font-family: 'FD Scandium';
   src: url('../fonts/FDScandium-Regular.woff2') format('woff2'),
        url('fonts/FDScandium-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-RegularItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-SemiBold.woff2') format('woff2'),
+       url('fonts/FDScandium-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -4059,10 +6107,26 @@ input[type="range"]::-moz-range-thumb {
 }
 @font-face {
   font-family: 'FD Scandium';
-  src: url('../fonts/FDScandium-Regular.woff2') format('woff2'),
-       url('fonts/FDScandium-Regular.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/FDScandium-BoldItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-Black.woff2') format('woff2'),
+       url('fonts/FDScandium-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Scandium';
+  src: url('../fonts/FDScandium-BlackItalic.woff2') format('woff2'),
+       url('fonts/FDScandium-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
 

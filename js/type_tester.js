@@ -343,20 +343,6 @@
         document.fonts.add(fontFace);
         var loadedFace = await fontFace.load();
         self.loadedFaces.set(cacheKey, loadedFace);
-
-        // Also register bold weights 600, 700 if default weight is 400 so bold elements don't fallback
-        if (String(weight) === '400' || weight === 'normal') {
-          try {
-            var bFace = new FontFace(
-              family,
-              'url(\'' + webFontUrl + '\')' + formatSpec,
-              { weight: '700', style: style || 'normal', display: 'swap' }
-            );
-            document.fonts.add(bFace);
-            bFace.load().catch(function () {});
-          } catch (e) {}
-        }
-
         self.emit('fontLoaded', { family: family, weight: weight, style: style, fontFace: loadedFace });
         return loadedFace;
       } catch (err) {

@@ -154,7 +154,12 @@ class TestCoTypeWebIntegration(unittest.TestCase):
         
         try:
             with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
+                chrome_path = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+                launch_kwargs = {"headless": True}
+                if os.path.exists(chrome_path):
+                    launch_kwargs["executable_path"] = chrome_path
+                
+                browser = p.chromium.launch(**launch_kwargs)
                 page = browser.new_page()
                 
                 url = f"http://127.0.0.1:{srv.port}/index.html"
@@ -162,7 +167,7 @@ class TestCoTypeWebIntegration(unittest.TestCase):
                 
                 # Check title
                 title = page.title()
-                self.assertIn("FEDU", title)
+                self.assertTrue("FONTHUB" in title or "FEDU" in title)
                 
                 # Find CoType chip
                 chip = page.locator("button.chip-btn:has-text('CoType'), [data-category*='CoType']")

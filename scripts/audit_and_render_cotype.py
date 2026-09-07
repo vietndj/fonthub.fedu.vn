@@ -266,7 +266,13 @@ def audit_single_font(font_path: Path, family_name: str = '') -> dict:
                 cff = f['CFF '].cff.topDictIndex[0]
                 cs_d = cff.CharStrings[cmap[ord('đ')]]
                 cs_D = cff.CharStrings[cmap[ord('Đ')]]
-                dcroat_ok = len(cs_d.bytecode) > 10 and len(cs_D.bytecode) > 10
+                b_d = cs_d.calcBounds(cff.CharStrings)
+                b_D = cs_D.calcBounds(cff.CharStrings)
+                dcroat_ok = (b_d is not None and (b_d[2] - b_d[0]) > 50) and (b_D is not None and (b_D[2] - b_D[0]) > 50)
+            elif 'glyf' in f:
+                g_d = f['glyf'][cmap[ord('đ')]]
+                g_D = f['glyf'][cmap[ord('Đ')]]
+                dcroat_ok = (g_d.numberOfContours > 0 or g_d.isComposite()) and (g_D.numberOfContours > 0 or g_D.isComposite())
         except Exception:
             dcroat_ok = False
 

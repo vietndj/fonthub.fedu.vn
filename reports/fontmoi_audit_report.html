@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>FEDU FONT MOI Quality Audit Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 40px; }
+        .container { max-width: 1200px; margin: 0 auto; background: #1e293b; border-radius: 12px; padding: 32px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        h1 { color: #f8fafc; margin-top: 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 30px; }
+        .stat-card { background: #334155; padding: 16px; border-radius: 8px; text-align: center; }
+        .stat-card .val { font-size: 28px; font-weight: 800; color: #38bdf8; }
+        .stat-card .lbl { font-size: 13px; color: #94a3b8; text-transform: uppercase; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px; }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #334155; }
+        th { background: #0f172a; color: #94a3b8; font-weight: 600; text-transform: uppercase; font-size: 12px; }
+        tr:hover { background: rgba(255,255,255,0.02); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FEDU Font Hub: Forensic Quality Audit — Font Mới</h1>
+        <p style="color: #94a3b8;">Giám sát độc lập chất lượng Việt hóa: DINAMO, Pangram Pangram, Klim Type Foundry</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="val">32</div>
+                <div class="lbl">Họ Font Mới</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">678</div>
+                <div class="lbl">Tổng Styles Đã Build</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">134 / 134</div>
+                <div class="lbl">Glyphs Tiếng Việt</div>
+            </div>
+            <div class="stat-card">
+                <div class="val"><span style="background:#10b981; color:#fff; padding:4px 12px; border-radius:12px; font-weight:700;">100% PASS</span></div>
+                <div class="lbl">Kết Quả Nghiệm Thu</div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Họ Font</th>
+                    <th>Styles</th>
+                    <th>Webfont WOFF2</th>
+                    <th>Độ phủ VN</th>
+                    <th>Advance Width</th>
+                    <th>OpenType & HarfBuzz</th>
+                    <th>Trạng Thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background:#f1f5f9; font-weight:bold;"><td colspan="7">Dinamo Foundry (4 families)</td></tr>
+            <tr>
+                <td style="font-weight:600;">FD Monument Grotesk</td>
+                <td>16 styles</td>
+                <td>16 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Monument Grotesk Condensed</td>
+                <td>16 styles</td>
+                <td>16 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Monument Grotesk Mono</td>
+                <td>16 styles</td>
+                <td>16 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Monument Grotesk Semi Mono</td>
+                <td>16 styles</td>
+                <td>16 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            <tr style="background:#f1f5f9; font-weight:bold;"><td colspan="7">Pangram Foundry (1 families)</td></tr>
+            <tr>
+                <td style="font-weight:600;">FD Formula</td>
+                <td>9 styles</td>
+                <td>9 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            <tr style="background:#f1f5f9; font-weight:bold;"><td colspan="7">Klim Foundry (27 families)</td></tr>
+            <tr>
+                <td style="font-weight:600;">FD American Grotesk</td>
+                <td>42 styles</td>
+                <td>42 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Calibre</td>
+                <td>14 styles</td>
+                <td>14 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Die Grotesk</td>
+                <td>64 styles</td>
+                <td>64 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Domaine</td>
+                <td>34 styles</td>
+                <td>34 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Domaine Sans</td>
+                <td>42 styles</td>
+                <td>42 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Epicene</td>
+                <td>20 styles</td>
+                <td>20 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Family</td>
+                <td>12 styles</td>
+                <td>12 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Feijoa</td>
+                <td>4 styles</td>
+                <td>4 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Financier</td>
+                <td>20 styles</td>
+                <td>20 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Founders Grotesk</td>
+                <td>25 styles</td>
+                <td>25 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Geograph</td>
+                <td>12 styles</td>
+                <td>12 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Heldane</td>
+                <td>12 styles</td>
+                <td>12 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Karbon</td>
+                <td>16 styles</td>
+                <td>16 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Maelstrom</td>
+                <td>2 styles</td>
+                <td>2 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Manuka</td>
+                <td>14 styles</td>
+                <td>14 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Martina Plantijn</td>
+                <td>10 styles</td>
+                <td>10 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Metric</td>
+                <td>14 styles</td>
+                <td>14 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD National</td>
+                <td>18 styles</td>
+                <td>18 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD National 2</td>
+                <td>48 styles</td>
+                <td>48 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Newzald</td>
+                <td>8 styles</td>
+                <td>8 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Pitch</td>
+                <td>20 styles</td>
+                <td>20 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Signifier</td>
+                <td>14 styles</td>
+                <td>14 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Söhne</td>
+                <td>64 styles</td>
+                <td>64 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD The Future</td>
+                <td>28 styles</td>
+                <td>28 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Tiempos</td>
+                <td>32 styles</td>
+                <td>32 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Untitled Sans</td>
+                <td>10 styles</td>
+                <td>10 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight:600;">FD Untitled Serif</td>
+                <td>6 styles</td>
+                <td>6 woff2</td>
+                <td>100.0%</td>
+                <td>Delta = 0px</td>
+                <td>CP1258 OK & HarfBuzz OK</td>
+                <td style="color:#10b981; font-weight:700;">PASS</td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

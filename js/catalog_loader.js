@@ -88,6 +88,53 @@
   }
 
   /**
+   * Identifies fonts belonging to Dinamo Typefaces collection.
+   */
+  function isDinamoFont(font) {
+    if (!font || typeof font !== 'object') return false;
+    if (font.is_dinamo) return true;
+    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /dinamo/i.test(t); })) return true;
+    var name = (font.name || font.family || '').toLowerCase().trim();
+    var id = (font.id || '').toLowerCase().trim();
+    return name.indexOf('monument') !== -1 || name.indexOf('dinamo') !== -1 || id.indexOf('monument') !== -1;
+  }
+
+  /**
+   * Identifies fonts belonging to Klim Type Foundry collection.
+   */
+  function isKlimFont(font) {
+    if (!font || typeof font !== 'object') return false;
+    if (font.is_klim) return true;
+    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /klim/i.test(t); })) return true;
+    var name = (font.name || font.family || '').toLowerCase().trim();
+    var id = (font.id || '').toLowerCase().trim();
+    var klimKnown = [
+      'american-grotesk', 'calibre', 'die-grotesk', 'domaine', 'epicene', 'family', 'feijoa',
+      'financier', 'founders-grotesk', 'geograph', 'heldane', 'karbon', 'maelstrom', 'manuka',
+      'martina-plantijn', 'metric', 'national', 'newzald', 'pitch', 'signifier', 'sohne', 'söhne',
+      'the-future', 'tiempos', 'untitled'
+    ];
+    for (var i = 0; i < klimKnown.length; i++) {
+      if (id.indexOf(klimKnown[i]) !== -1 || name.indexOf(klimKnown[i].replace('-', ' ')) !== -1) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Identifies fonts belonging to Pangram Pangram collection.
+   */
+  function isPangramFont(font) {
+    if (!font || typeof font !== 'object') return false;
+    if (font.is_pangram) return true;
+    if (Array.isArray(font.tags) && font.tags.some(function (t) { return /pangram/i.test(t); })) return true;
+    var name = (font.name || font.family || '').toLowerCase().trim();
+    var id = (font.id || '').toLowerCase().trim();
+    return name.indexOf('formula') !== -1 || name.indexOf('pangram') !== -1 || id.indexOf('formula') !== -1;
+  }
+
+  /**
    * Robust category matcher that discriminates 'Serif' vs 'Sans Serif'
    * and properly matches composite categories.
    */
@@ -104,6 +151,15 @@
     }
     if (tc === 'cotype' || tc === 'cotype font' || tc === 'cotype foundry') {
       return isCoTypeFont(font);
+    }
+    if (tc === 'dinamo' || tc === 'dinamo font' || tc === 'dinamo typefaces') {
+      return isDinamoFont(font);
+    }
+    if (tc === 'klim' || tc === 'klim font' || tc === 'klim type foundry') {
+      return isKlimFont(font);
+    }
+    if (tc === 'pangram' || tc === 'pangram pangram' || tc === 'pp formula') {
+      return isPangramFont(font);
     }
     if (fc === tc) return true;
 
@@ -411,7 +467,10 @@
         'Blackletter, Script & Monospace': 0,
         'Việt Nam Oldstyle / Vintage Sài Gòn': 0,
         'GT Font': 0,
-        'CoType': 0
+        'CoType': 0,
+        'Dinamo': 0,
+        'Klim': 0,
+        'Pangram': 0
       },
       styles: {},
       moods: {},
@@ -432,6 +491,9 @@
       if (matchesCategory(cat, 'Việt Nam Oldstyle / Vintage Sài Gòn', f)) counts.categories['Việt Nam Oldstyle / Vintage Sài Gòn']++;
       if (isGTFont(f)) counts.categories['GT Font']++;
       if (isCoTypeFont(f)) counts.categories['CoType']++;
+      if (isDinamoFont(f)) counts.categories['Dinamo']++;
+      if (isKlimFont(f)) counts.categories['Klim']++;
+      if (isPangramFont(f)) counts.categories['Pangram']++;
 
       var style = (f.matrix_3d && f.matrix_3d.style) || f.matrix_visual;
       if (style) counts.styles[style] = (counts.styles[style] || 0) + 1;
@@ -474,6 +536,9 @@
     removeVietnameseDiacritics: removeVietnameseDiacritics,
     isGTFont: isGTFont,
     isCoTypeFont: isCoTypeFont,
+    isDinamoFont: isDinamoFont,
+    isKlimFont: isKlimFont,
+    isPangramFont: isPangramFont,
     matchesCategory: matchesCategory,
     buildSearchIndex: buildSearchIndex,
     instantSearch: instantSearch,

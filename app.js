@@ -169,6 +169,9 @@
     DOM.countMonoScript = document.getElementById('count-mono-script');
     DOM.countGt = document.getElementById('count-gt');
     DOM.countCotype = document.getElementById('count-cotype');
+    DOM.countDinamo = document.getElementById('count-dinamo');
+    DOM.countKlim = document.getElementById('count-klim');
+    DOM.countPangram = document.getElementById('count-pangram');
     DOM.countFav = document.getElementById('count-fav');
     DOM.chipFavorites = document.getElementById('chip-favorites');
 
@@ -432,12 +435,14 @@
     var cleanStyle = raw.replace(/[_-]/g, ' ').trim();
     var hyphenStyle = raw.replace(/\s+/g, '-').trim();
 
+    var cleanFamily = family.replace(/['"]/g, '').trim();
     var candidates = [
-      "'" + family + " " + cleanStyle + "'",
-      "'" + family + "-" + hyphenStyle + "'",
-      "'" + family + " " + raw + "'",
-      "'" + family + "-" + raw + "'",
-      "'" + family + "'"
+      "'" + cleanFamily + "'",
+      "'" + cleanFamily.replace(/\s+/g, '') + "'",
+      "'" + cleanFamily + " " + cleanStyle + "'",
+      "'" + cleanFamily + "-" + hyphenStyle + "'",
+      "'" + cleanFamily + " " + raw + "'",
+      "'" + cleanFamily + "-" + raw + "'"
     ];
 
     // Check if matching file exists in font.files
@@ -451,7 +456,7 @@
       });
       if (found && found.filename) {
         matchedFilename = found.filename;
-        candidates.unshift("'" + matchedFilename.replace(/\.(ttf|otf|woff2)$/i, '') + "'");
+        candidates.push("'" + matchedFilename.replace(/\.(ttf|otf|woff2)$/i, '') + "'");
       }
     }
 
@@ -503,6 +508,30 @@
 
     var cotypeBadge = isCoType
       ? '<button type="button" class="badge badge-cotype" data-category="CoType" title="Lọc phông chữ CoType Foundry (FEDU)">CoType</button>'
+      : '';
+
+    var isDinamo = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isDinamoFont)
+      ? CatalogLoader.isDinamoFont(font)
+      : (Boolean(font.is_dinamo) || (Array.isArray(font.tags) && font.tags.indexOf('Dinamo') !== -1));
+
+    var dinamoBadge = isDinamo
+      ? '<button type="button" class="badge badge-dinamo" data-category="Dinamo" title="Lọc phông chữ Dinamo Typefaces (FEDU)">Dinamo</button>'
+      : '';
+
+    var isKlim = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isKlimFont)
+      ? CatalogLoader.isKlimFont(font)
+      : (Boolean(font.is_klim) || (Array.isArray(font.tags) && font.tags.indexOf('Klim') !== -1));
+
+    var klimBadge = isKlim
+      ? '<button type="button" class="badge badge-klim" data-category="Klim" title="Lọc phông chữ Klim Type Foundry (FEDU)">Klim</button>'
+      : '';
+
+    var isPangram = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isPangramFont)
+      ? CatalogLoader.isPangramFont(font)
+      : (Boolean(font.is_pangram) || (Array.isArray(font.tags) && font.tags.indexOf('Pangram') !== -1));
+
+    var pangramBadge = isPangram
+      ? '<button type="button" class="badge badge-pangram" data-category="Pangram" title="Lọc phông chữ Pangram Pangram (FEDU)">Pangram</button>'
       : '';
 
     var anatomy = font.anatomy || {};
@@ -633,6 +662,9 @@
       '    <div class="card-badges-row">',
       '      ' + gtBadge,
       '      ' + cotypeBadge,
+      '      ' + dinamoBadge,
+      '      ' + klimBadge,
+      '      ' + pangramBadge,
       '      ' + styleBadge,
       '      ' + moodBadge,
       '      ' + useBadge,
@@ -804,20 +836,22 @@
           }
         });
 
+        // Eagerly pre-load font weight
+        if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+          document.fonts.load(resolved.fontWeight + ' 36px "' + family + '"');
+        }
+
         // Dynamically load font face if available on server
         if (resolved.matchedFilename && typeof FontFace !== 'undefined') {
-          var fontFaceFamily = family + ' ' + resolved.rawVariant;
+          var fontFaceFamily = family;
           var fontUrl = 'fonts/' + resolved.matchedFilename;
-          if (!document.fonts.check('16px "' + fontFaceFamily + '"')) {
+          if (!document.fonts.check(resolved.fontWeight + ' 16px "' + fontFaceFamily + '"')) {
             var face = new FontFace(fontFaceFamily, 'url("' + fontUrl + '")', {
               weight: resolved.fontWeight,
               style: resolved.fontStyle
             });
             face.load().then(function (loaded) {
               document.fonts.add(loaded);
-              if (preview) {
-                preview.style.fontFamily = '"' + fontFaceFamily + '", ' + resolved.fontFamily;
-              }
             }).catch(function () {});
           }
         }
@@ -840,13 +874,19 @@
         var category = card.getAttribute('data-category') || (fontObj && fontObj.category) || 'Sans Serif';
         var files = fontObj ? fontObj.files : [];
         var weights = fontObj && Array.isArray(fontObj.weights) ? fontObj.weights : [];
+        var fallbackStack = App.typeTester ? App.typeTester.getFallbackStack(category) : 'sans-serif';
 
         var preview = card.querySelector('.preview-text');
         if (preview) {
           preview.style.fontWeight = val;
+          preview.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallbackStack;
           if (fontObj && (fontObj.is_variable || weights.length >= 6)) {
             preview.style.fontVariationSettings = "'wght' " + val;
           }
+        }
+
+        if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+          document.fonts.load(val + ' 36px "' + family + '"');
         }
 
         // Snap to closest weight chip and activate it
@@ -876,22 +916,6 @@
           var resolved = resolveVariantStyle(family, closestWeight, category, files);
           if (preview) {
             preview.style.fontStyle = resolved.fontStyle;
-            if (resolved.matchedFilename && typeof FontFace !== 'undefined') {
-              var fontFaceFamily = family + ' ' + resolved.rawVariant;
-              var fontUrl = 'fonts/' + resolved.matchedFilename;
-              if (!document.fonts.check('16px "' + fontFaceFamily + '"')) {
-                var face = new FontFace(fontFaceFamily, 'url("' + fontUrl + '")', {
-                  weight: resolved.fontWeight,
-                  style: resolved.fontStyle
-                });
-                face.load().then(function (loaded) {
-                  document.fonts.add(loaded);
-                  if (preview) {
-                    preview.style.fontFamily = '"' + fontFaceFamily + '", ' + resolved.fontFamily;
-                  }
-                }).catch(function () {});
-              }
-            }
           }
         }
 
@@ -981,6 +1005,10 @@
           if (wSlider) wSlider.value = numW;
           var wVal = card.querySelector('.card-weight-val');
           if (wVal) wVal.textContent = numW;
+
+          if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+            document.fonts.load(numW + ' 36px "' + family + '"');
+          }
         }
 
         card.querySelectorAll('.card-waterfall-row').forEach(function (r) { r.classList.remove('is-active'); });
@@ -1044,6 +1072,51 @@
           cotypeChip.click();
         } else {
           App.activeFilters.category = 'CoType';
+          applyFilters();
+        }
+      });
+    });
+
+    // Dinamo badge filter click
+    DOM.fontGrid.querySelectorAll('.badge-dinamo:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var chip = document.querySelector('.chip-btn[data-category="Dinamo"]');
+        if (chip) {
+          chip.click();
+        } else {
+          App.activeFilters.category = 'Dinamo';
+          applyFilters();
+        }
+      });
+    });
+
+    // Klim badge filter click
+    DOM.fontGrid.querySelectorAll('.badge-klim:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var chip = document.querySelector('.chip-btn[data-category="Klim"]');
+        if (chip) {
+          chip.click();
+        } else {
+          App.activeFilters.category = 'Klim';
+          applyFilters();
+        }
+      });
+    });
+
+    // Pangram badge filter click
+    DOM.fontGrid.querySelectorAll('.badge-pangram:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var chip = document.querySelector('.chip-btn[data-category="Pangram"]');
+        if (chip) {
+          chip.click();
+        } else {
+          App.activeFilters.category = 'Pangram';
           applyFilters();
         }
       });
@@ -1155,6 +1228,9 @@
     if (DOM.countMonoScript) DOM.countMonoScript.textContent = counts.categories['Blackletter, Script & Monospace'] || 0;
     if (DOM.countGt) DOM.countGt.textContent = counts.categories['GT Font'] || 0;
     if (DOM.countCotype) DOM.countCotype.textContent = counts.categories['CoType'] || 0;
+    if (DOM.countDinamo) DOM.countDinamo.textContent = counts.categories['Dinamo'] || 0;
+    if (DOM.countKlim) DOM.countKlim.textContent = counts.categories['Klim'] || 0;
+    if (DOM.countPangram) DOM.countPangram.textContent = counts.categories['Pangram'] || 0;
     if (DOM.countFav) DOM.countFav.textContent = getFavorites().length;
   }
 
@@ -1329,8 +1405,9 @@
 
   function renderFontshareCardHTML(font, idx, state) {
     var family = font.family || font.name;
+    var weights = Array.isArray(font.weights) ? font.weights : [];
     var designer = font.designer || 'FEDU Type Foundry';
-    var weightsCount = font.weights ? font.weights.length : (font.files_count || 1);
+    var weightsCount = weights.length || (font.files_count || 1);
     var defaultDrive = (font.id && font.id.startsWith('gr-'))
       ? 'https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing'
       : 'https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing';
@@ -1359,6 +1436,34 @@
 
     var fallbackCategory = (font.category && font.category.toLowerCase().includes('serif') && !font.category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
 
+    // Build waterfall rows for Fontshare card (dynamic for multi-style, 5 scale tiers for single style)
+    var waterfallRowsHTML = '';
+    if (weights.length > 1) {
+      waterfallRowsHTML = weights.map(function (w) {
+        var wResolved = resolveVariantStyle(family, w, fallbackCategory, font.files);
+        return [
+          '<div class="card-waterfall-row waterfall-row" data-weight="' + escapeHTML(w) + '">',
+          '  <div class="waterfall-meta">',
+          '    <span class="waterfall-style-name">' + escapeHTML(w) + '</span>',
+          '    <span class="waterfall-weight-tag">' + escapeHTML(wResolved.fontWeight) + '</span>',
+          '  </div>',
+          '  <div class="waterfall-sample-text" contenteditable="true" spellcheck="false" style="font-family: ' + wResolved.fontFamily + '; font-weight: ' + wResolved.fontWeight + '; font-style: ' + wResolved.fontStyle + ';">',
+          '    ' + escapeHTML(specimenText),
+          '  </div>',
+          '  <button type="button" class="waterfall-apply-btn" data-weight="' + escapeHTML(w) + '" title="Áp dụng style này cho card">Dùng style</button>',
+          '</div>'
+        ].join('');
+      }).join('');
+    } else {
+      waterfallRowsHTML = [
+        '<div class="card-waterfall-row waterfall-row"><span class="waterfall-size-tag">72px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 72px; font-weight: 700;">Việt Nam Độc Lập</div></div>',
+        '<div class="card-waterfall-row waterfall-row"><span class="waterfall-size-tag">48px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 48px; font-weight: 600;">Nghệ thuật chữ đồ họa thực chiến</div></div>',
+        '<div class="card-waterfall-row waterfall-row"><span class="waterfall-size-tag">32px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 32px; font-weight: 400;">Do bạch kim rất quý nên qua thời gian phong thổ vẫn giữ màu.</div></div>',
+        '<div class="card-waterfall-row waterfall-row"><span class="waterfall-size-tag">20px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 20px; font-weight: 400;">Đường nét hài hòa, tinh tế, dấu thanh điệu chuẩn xác bảo toàn vẻ đẹp tiếng Việt có dấu.</div></div>',
+        '<div class="card-waterfall-row waterfall-row"><span class="waterfall-size-tag">14px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 14px; font-weight: 400; letter-spacing: 0.05em;">0123456789 • ABCDEFGHIJKLMNOPQRSTUVWXYZ • abcdefghijklmnopqrstuvwxyz • ăâđêôơư</div></div>'
+      ].join('');
+    }
+
     return [
       '<article class="fontshare-card fs-list-item" data-family="' + escapeHTML(family) + '" data-font-id="' + escapeHTML(font.id) + '">',
       '  <div class="fs-item-meta-top">',
@@ -1367,7 +1472,7 @@
       '      <button type="button" class="fs-star-btn ' + (isFav ? 'active' : '') + '" data-fav-id="' + escapeHTML(font.id) + '" aria-label="Favorite">' + (isFav ? '★' : '☆') + '</button>',
       '    </div>',
       '    <div class="fs-item-badges">',
-      '      <span class="fs-styles-badge">' + weightsCount + ' styles</span>',
+      '      <button type="button" class="fs-styles-badge card-styles-toggle" data-action="toggle-card-waterfall" aria-expanded="false">' + weightsCount + ' styles ▾</button>',
       '      <span class="fs-feature-badge">' + (isVariable ? 'Variable' : 'Static') + '</span>',
       '      <span class="fs-license-badge">' + escapeHTML(sourceType) + '</span>',
       '    </div>',
@@ -1378,11 +1483,7 @@
       '    </div>',
       '  </div>',
       '  <div class="fontshare-waterfall fs-waterfall-drawer card-waterfall-drawer" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; display: none;">',
-      '    <div class="waterfall-row"><span class="waterfall-size-tag">72px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 72px; font-weight: 700;">Việt Nam Độc Lập</div></div>',
-      '    <div class="waterfall-row"><span class="waterfall-size-tag">48px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 48px; font-weight: 600;">Nghệ thuật chữ đồ họa thực chiến</div></div>',
-      '    <div class="waterfall-row"><span class="waterfall-size-tag">32px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 32px; font-weight: 400;">Do bạch kim rất quý nên qua thời gian phong thổ vẫn giữ màu.</div></div>',
-      '    <div class="waterfall-row"><span class="waterfall-size-tag">20px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 20px; font-weight: 400;">Đường nét hài hòa, tinh tế, dấu thanh điệu chuẩn xác bảo toàn vẻ đẹp tiếng Việt có dấu.</div></div>',
-      '    <div class="waterfall-row"><span class="waterfall-size-tag">14px</span><div class="waterfall-text" contenteditable="true" spellcheck="false" style="font-size: 14px; font-weight: 400; letter-spacing: 0.05em;">0123456789 • ABCDEFGHIJKLMNOPQRSTUVWXYZ • abcdefghijklmnopqrstuvwxyz • ăâđêôơư</div></div>',
+      waterfallRowsHTML,
       '  </div>',
       '  <div class="fs-item-meta-bottom">',
       '    <span class="fs-designer">Designed by ' + escapeHTML(designer) + '</span>',
@@ -1506,6 +1607,9 @@
         var c = (f.category || '').toLowerCase();
         if (state.category === 'GT Font') return (f.tags && f.tags.includes('GT Font')) || (f.name && (f.name.startsWith('GT') || f.name.startsWith('GR'))) || Boolean(f.is_gt);
         if (state.category === 'CoType') return (typeof CatalogLoader !== 'undefined' && CatalogLoader.isCoTypeFont) ? CatalogLoader.isCoTypeFont(f) : Boolean(f.is_cotype);
+        if (state.category === 'Dinamo') return (typeof CatalogLoader !== 'undefined' && CatalogLoader.isDinamoFont) ? CatalogLoader.isDinamoFont(f) : Boolean(f.is_dinamo);
+        if (state.category === 'Klim') return (typeof CatalogLoader !== 'undefined' && CatalogLoader.isKlimFont) ? CatalogLoader.isKlimFont(f) : Boolean(f.is_klim);
+        if (state.category === 'Pangram') return (typeof CatalogLoader !== 'undefined' && CatalogLoader.isPangramFont) ? CatalogLoader.isPangramFont(f) : Boolean(f.is_pangram);
         if (state.category === 'Vintage') return c.includes('vintage') || (f.tags && f.tags.some(function (t) { return t.includes('Vintage'); }));
         if (state.category === 'Mono/Script') return c.includes('mono') || c.includes('script');
         return c.includes(state.category.toLowerCase());
@@ -1660,17 +1764,19 @@
     // Delegated click listener on #fontshare-grid (Card buttons work on initial + dynamically loaded cards)
     if (DOM.fontshareGrid) {
       DOM.fontshareGrid.addEventListener('click', function (e) {
-        // 1. Toggle Waterfall drawer
-        var waterfallBtn = e.target.closest('[data-action="toggle-waterfall"], [data-action-card="toggle-card-waterfall"], .fs-btn-waterfall-toggle');
+        // 1. Toggle Waterfall drawer (via button or styles badge)
+        var waterfallBtn = e.target.closest('[data-action="toggle-waterfall"], [data-action-card="toggle-card-waterfall"], .fs-btn-waterfall-toggle, .fs-styles-badge, .card-styles-toggle');
         if (waterfallBtn) {
           e.preventDefault();
           var card = waterfallBtn.closest('.fontshare-card');
           if (!card) return;
-          var waterfall = card.querySelector('.fs-waterfall-drawer');
+          var waterfall = card.querySelector('.fs-waterfall-drawer, .card-waterfall-drawer');
           if (waterfall) {
             var isHidden = waterfall.style.display === 'none' || getComputedStyle(waterfall).display === 'none';
             waterfall.style.display = isHidden ? 'block' : 'none';
-            waterfallBtn.textContent = isHidden ? 'Ẩn Waterfall ▴' : 'Waterfall ▾';
+            waterfallBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+            var actionBtn = card.querySelector('.fs-btn-waterfall-toggle');
+            if (actionBtn) actionBtn.textContent = isHidden ? 'Ẩn Waterfall ▴' : 'Waterfall ▾';
           }
           return;
         }
@@ -1696,6 +1802,51 @@
           favBtn.textContent = isFav ? '★' : '☆';
           return;
         }
+
+        // 4. Waterfall row click on Fontshare card
+        var row = e.target.closest('.card-waterfall-row, .waterfall-row');
+        if (row && !e.target.closest('.waterfall-text') && !e.target.closest('input')) {
+          var card = row.closest('.fontshare-card');
+          if (!card) return;
+          var weightName = row.getAttribute('data-weight');
+          var family = card.getAttribute('data-family');
+          var fontId = card.getAttribute('data-font-id');
+          var fontObj = (App.fontsharePagination && App.fontsharePagination.pool.find(function (f) { return f.id === fontId; })) ||
+                       App.allFonts.find(function (f) { return f.id === fontId || (f.family || f.name) === family; });
+          var category = (fontObj && fontObj.category) || 'Sans Serif';
+          var files = fontObj ? fontObj.files : [];
+          var numW = 400;
+
+          if (weightName) {
+            var resolved = resolveVariantStyle(family, weightName, category, files);
+            numW = parseInt(resolved.fontWeight, 10) || 400;
+          } else {
+            var tag = row.querySelector('.waterfall-weight-tag');
+            if (tag && tag.textContent) {
+              numW = parseInt(tag.textContent, 10) || 400;
+            }
+          }
+
+          var specimen = card.querySelector('.fs-item-specimen') || card.querySelector('.preview-text');
+          if (specimen) {
+            var fallback = (category && category.toLowerCase().includes('serif') && !category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
+            specimen.style.fontWeight = numW;
+            specimen.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallback;
+            if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+              document.fonts.load(numW + ' 36px "' + family + '"');
+            }
+          }
+
+          var slider = card.querySelector('.card-weight-slider');
+          if (slider) slider.value = numW;
+          var readout = card.querySelector('.fs-weight-val, .card-weight-val');
+          if (readout) readout.textContent = numW;
+
+          card.querySelectorAll('.card-waterfall-row, .waterfall-row').forEach(function (r) {
+            r.classList.toggle('is-active', r === row);
+          });
+          return;
+        }
       });
 
       // Delegated input listener on #fontshare-grid (Card weight slider works on dynamically loaded cards)
@@ -1704,13 +1855,50 @@
         if (weightSlider) {
           var card = weightSlider.closest('.fontshare-card');
           if (!card) return;
+          var val = parseInt(weightSlider.value, 10);
           var specimen = card.querySelector('.fs-item-specimen') || card.querySelector('.preview-text');
+          var family = card.getAttribute('data-family');
+          var fontId = card.getAttribute('data-font-id');
+          var fontObj = (App.fontsharePagination && App.fontsharePagination.pool.find(function (f) { return f.id === fontId; })) ||
+                       App.allFonts.find(function (f) { return f.id === fontId || (f.family || f.name) === family; });
+          var category = (fontObj && fontObj.category) || 'Sans Serif';
+          var fallback = (category && category.toLowerCase().includes('serif') && !category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
+
           if (specimen) {
-            specimen.style.fontWeight = weightSlider.value;
+            specimen.style.fontWeight = val;
+            specimen.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallback;
+            if (fontObj && (fontObj.is_variable || (fontObj.weights && fontObj.weights.length >= 6))) {
+              specimen.style.fontVariationSettings = "'wght' " + val;
+            }
           }
-          var readout = card.querySelector('.fs-weight-val');
+          var readout = card.querySelector('.fs-weight-val, .card-weight-val');
           if (readout) {
-            readout.textContent = weightSlider.value;
+            readout.textContent = val;
+          }
+
+          if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+            document.fonts.load(val + ' 36px "' + family + '"');
+          }
+
+          // Sync waterfall active row
+          var rows = card.querySelectorAll('.card-waterfall-row, .waterfall-row');
+          var minDiff = 9999;
+          var closestRow = null;
+          rows.forEach(function (r) {
+            var tag = r.querySelector('.waterfall-weight-tag');
+            if (tag && tag.textContent) {
+              var rw = parseInt(tag.textContent, 10);
+              if (!isNaN(rw)) {
+                var d = Math.abs(rw - val);
+                if (d < minDiff) {
+                  minDiff = d;
+                  closestRow = r;
+                }
+              }
+            }
+          });
+          if (closestRow) {
+            rows.forEach(function (r) { r.classList.toggle('is-active', r === closestRow); });
           }
         }
       });
@@ -1721,13 +1909,29 @@
         if (weightSlider) {
           var card = weightSlider.closest('.fontshare-card');
           if (!card) return;
+          var val = parseInt(weightSlider.value, 10);
           var specimen = card.querySelector('.fs-item-specimen') || card.querySelector('.preview-text');
+          var family = card.getAttribute('data-family');
+          var fontId = card.getAttribute('data-font-id');
+          var fontObj = (App.fontsharePagination && App.fontsharePagination.pool.find(function (f) { return f.id === fontId; })) ||
+                       App.allFonts.find(function (f) { return f.id === fontId || (f.family || f.name) === family; });
+          var category = (fontObj && fontObj.category) || 'Sans Serif';
+          var fallback = (category && category.toLowerCase().includes('serif') && !category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
+
           if (specimen) {
-            specimen.style.fontWeight = weightSlider.value;
+            specimen.style.fontWeight = val;
+            specimen.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallback;
+            if (fontObj && (fontObj.is_variable || (fontObj.weights && fontObj.weights.length >= 6))) {
+              specimen.style.fontVariationSettings = "'wght' " + val;
+            }
           }
-          var readout = card.querySelector('.fs-weight-val');
+          var readout = card.querySelector('.fs-weight-val, .card-weight-val');
           if (readout) {
-            readout.textContent = weightSlider.value;
+            readout.textContent = val;
+          }
+
+          if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+            document.fonts.load(val + ' 36px "' + family + '"');
           }
         }
       });
@@ -2651,6 +2855,15 @@
         switchView(hash);
       } else {
         switchView('catalog');
+      }
+
+      // Eagerly pre-warm common static font weights for immediate canvas rendering
+      if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
+        ['FD Aeonik', 'FDAeonik', 'FD Gilroy', 'FDGilroy', 'GR Sectra', 'GRSectra'].forEach(function (f) {
+          [100, 300, 400, 700, 900].forEach(function (w) {
+            document.fonts.load(w + ' 36px "' + f + '"').catch(function () {});
+          });
+        });
       }
     } catch (err) {
       console.error('[fedu-font] Failed to load catalog.json:', err);

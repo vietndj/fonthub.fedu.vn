@@ -1,0 +1,2498 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoType Vietnamese Localization - Quality Audit & Specimen Report</title>
+<style>
+:root {
+  --bg: #0B0E14;
+  --card-bg: #151A23;
+  --card-border: #242C3D;
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --accent-blue: #38BDF8;
+  --accent-green: #4ADE80;
+  --accent-red: #F87171;
+  --badge-bg: #1E293B;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  padding: 30px;
+  line-height: 1.6;
+}
+.header {
+  background: linear-gradient(135deg, #1E293B, #0F172A);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header-title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+.header-title p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+.metrics-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.metric-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 15px 22px;
+  text-align: center;
+}
+.metric-val {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent-green);
+}
+.metric-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--accent-blue);
+  color: #000;
+  font-weight: 600;
+}
+.specimens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.specimen-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.specimen-card:hover {
+  transform: translateY(-4px);
+}
+.specimen-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.specimen-meta {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.family-badge {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #1E3A8A;
+  color: #93C5FD;
+}
+.table-container {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+th, td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--card-border);
+}
+th {
+  background: #10141D;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+.badge-pass {
+  background: rgba(74, 222, 128, 0.15);
+  color: var(--accent-green);
+  border: 1px solid var(--accent-green);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.badge-fail {
+  background: rgba(248, 113, 113, 0.15);
+  color: var(--accent-red);
+  border: 1px solid var(--accent-red);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-title">
+    <h1>CoType Master Vietnamese Quality Audit Report</h1>
+    <p>Hội Đồng Kiểm Định Chất Lượng FEDU • Báo cáo Nghiệm Thu 11 Họ Font CoType Việt Hóa</p>
+  </div>
+  <div class="metrics-row">
+    <div class="metric-card">
+      <div class="metric-val">196</div>
+      <div class="metric-label">Tổng Styles Đã Audit</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" style="color: var(--accent-green);">100.0%</div>
+      <div class="metric-label">Tỷ Lệ Đạt Chuẩn</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">11</div>
+      <div class="metric-label">Họ Font CoType</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">134/134</div>
+      <div class="metric-label">Ký Tự Tiếng Việt</div>
+    </div>
+  </div>
+</div>
+
+<h2 style="margin-bottom: 18px; font-size: 20px;">1. Bộ Mẫu Thử Thị Giác (Visual Specimen Cards)</h2>
+<div class="specimens-grid">
+
+  <div class="specimen-card" data-family="Altform">
+    <a href="specimens/cotype/specimen_altform.png" target="_blank">
+      <img src="specimens/cotype/specimen_altform.png" alt="Specimen CoType Altform" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Altform</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Ambit">
+    <a href="specimens/cotype/specimen_ambit.png" target="_blank">
+      <img src="specimens/cotype/specimen_ambit.png" alt="Specimen CoType Ambit" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Ambit</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Coanda">
+    <a href="specimens/cotype/specimen_coanda.png" target="_blank">
+      <img src="specimens/cotype/specimen_coanda.png" alt="Specimen CoType Coanda" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Coanda</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Lock Sans Stencil">
+    <a href="specimens/cotype/specimen_locksansstencil.png" target="_blank">
+      <img src="specimens/cotype/specimen_locksansstencil.png" alt="Specimen CoType Lock Sans Stencil" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Lock Sans Stencil</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Lock Sans">
+    <a href="specimens/cotype/specimen_locksans.png" target="_blank">
+      <img src="specimens/cotype/specimen_locksans.png" alt="Specimen CoType Lock Sans" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Lock Sans</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Lock Serif Stencil">
+    <a href="specimens/cotype/specimen_lockserifstencil.png" target="_blank">
+      <img src="specimens/cotype/specimen_lockserifstencil.png" alt="Specimen CoType Lock Serif Stencil" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Lock Serif Stencil</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Lock Serif">
+    <a href="specimens/cotype/specimen_lockserif.png" target="_blank">
+      <img src="specimens/cotype/specimen_lockserif.png" alt="Specimen CoType Lock Serif" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Lock Serif</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Orbikular">
+    <a href="specimens/cotype/specimen_orbikular.png" target="_blank">
+      <img src="specimens/cotype/specimen_orbikular.png" alt="Specimen CoType Orbikular" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Orbikular</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="RM Mono">
+    <a href="specimens/cotype/specimen_rmmono.png" target="_blank">
+      <img src="specimens/cotype/specimen_rmmono.png" alt="Specimen CoType RM Mono" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">RM Mono</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="RM Neue">
+    <a href="specimens/cotype/specimen_rmneue.png" target="_blank">
+      <img src="specimens/cotype/specimen_rmneue.png" alt="Specimen CoType RM Neue" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">RM Neue</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+  <div class="specimen-card" data-family="Scandium">
+    <a href="specimens/cotype/specimen_scandium.png" target="_blank">
+      <img src="specimens/cotype/specimen_scandium.png" alt="Specimen CoType Scandium" loading="lazy">
+    </a>
+    <div class="specimen-meta">
+      <span class="family-badge">Scandium</span>
+      <span class="badge-pass">100% PASS</span>
+    </div>
+  </div>
+
+</div>
+
+<h2 style="margin-bottom: 18px; font-size: 20px;">2. Chi Tiết Kiểm Thử 98 Styles Font</h2>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>File Font</th>
+        <th>Họ Font</th>
+        <th>Coverage VN</th>
+        <th>Advance Width (Delta)</th>
+        <th>GPOS Kerning</th>
+        <th>OS/2 CP1258</th>
+        <th>WOFF2 Web</th>
+        <th>Kết Quả</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td><strong>FDAltform-Black.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Black.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-BlackItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-BlackItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Bold.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Bold.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-BoldItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-BoldItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-ExtraLight.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-ExtraLight.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-ExtraLightItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-ExtraLightItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Light.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Light.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-LightItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-LightItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Regular.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Regular.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-RegularItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-RegularItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-SemiBold.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-SemiBold.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-SemiBoldItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-SemiBoldItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Thin.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-Thin.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-ThinItalic.otf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAltform-ThinItalic.ttf</strong></td>
+        <td>Altform</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Black.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Black.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-BlackItalic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-BlackItalic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Bold.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Bold.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-BoldItalic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-BoldItalic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-ExtraLight.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-ExtraLight.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-ExtraLightItalic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-ExtraLightItalic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Italic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Italic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Light.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Light.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-LightItalic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-LightItalic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Regular.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Regular.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-SemiBold.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-SemiBold.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-SemiBoldItalic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-SemiBoldItalic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Thin.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-Thin.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-ThinItalic.otf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDAmbit-ThinItalic.ttf</strong></td>
+        <td>Ambit</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Black.otf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Black.ttf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Bold.otf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Bold.ttf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Light.otf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Light.ttf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Regular.otf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Regular.ttf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Thin.otf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDCoanda-Thin.ttf</strong></td>
+        <td>Coanda</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Black.otf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Black.ttf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Bold.otf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Bold.ttf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-ExtraLight.otf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-ExtraLight.ttf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Light.otf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Light.ttf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Medium.otf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Medium.ttf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Regular.otf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSansStencil-Regular.ttf</strong></td>
+        <td>Lock Sans Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Black.otf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Black.ttf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Bold.otf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Bold.ttf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-ExtraLight.otf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-ExtraLight.ttf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Light.otf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Light.ttf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Medium.otf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Medium.ttf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Regular.otf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSans-Regular.ttf</strong></td>
+        <td>Lock Sans</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Black.otf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Black.ttf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Bold.otf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Bold.ttf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-ExtraLight.otf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-ExtraLight.ttf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Light.otf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Light.ttf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Medium.otf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Medium.ttf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Regular.otf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerifStencil-Regular.ttf</strong></td>
+        <td>Lock Serif Stencil</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Black.otf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Black.ttf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Bold.otf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Bold.ttf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-ExtraLight.otf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-ExtraLight.ttf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Light.otf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Light.ttf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Medium.otf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Medium.ttf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Regular.otf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDLockSerif-Regular.ttf</strong></td>
+        <td>Lock Serif</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Bold.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Bold.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-BoldItalic.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-BoldItalic.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraBold.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraBold.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraBoldItalic.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraBoldItalic.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraLight.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraLight.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (13.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraLightItalic.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-ExtraLightItalic.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Italic.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Italic.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Light.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Light.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-LightItalic.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-LightItalic.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Regular.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-Regular.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-SemiBold.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-SemiBold.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (14.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-SemiBoldItalic.otf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (15.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDOrbikular-SemiBoldItalic.ttf</strong></td>
+        <td>Orbikular</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (15.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Black.otf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Black.ttf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Bold.otf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Bold.ttf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Light.otf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Light.ttf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Regular.otf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-Regular.ttf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-SemiBold.otf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMMono-SemiBold.ttf</strong></td>
+        <td>RM Mono</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (9.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Black.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Black.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-BlackItalic.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-BlackItalic.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.9 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Bold.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Bold.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-BoldItalic.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-BoldItalic.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.1 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Italic.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Italic.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Light.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Light.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-LightItalic.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-LightItalic.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Regular.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-Regular.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.3 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-SemiBold.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-SemiBold.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-SemiBoldItalic.otf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDRMNeue-SemiBoldItalic.ttf</strong></td>
+        <td>RM Neue</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (12.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Black.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Black.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-BlackItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-BlackItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Bold.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Bold.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-BoldItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-BoldItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-ExtraLight.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-ExtraLight.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-ExtraLightItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-ExtraLightItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.5 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Light.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Light.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.2 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-LightItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-LightItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.6 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Regular.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Regular.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-RegularItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-RegularItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.7 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-SemiBold.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-SemiBold.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-SemiBoldItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-SemiBoldItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.8 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Thin.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-Thin.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.0 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-ThinItalic.otf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+      <tr>
+        <td><strong>FDScandium-ThinItalic.ttf</strong></td>
+        <td>Scandium</td>
+        <td>100.0% (134/134)</td>
+        <td>0px (Khớp 100%)</td>
+        <td>Parity Khớp</td>
+        <td>Bit 18 OK</td>
+        <td>OK (11.4 KB)</td>
+        <td><span class="badge-pass">PASS</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<footer style="margin-top: 40px; text-align: center; color: var(--text-muted); font-size: 13px;">
+  Báo cáo tự động được sinh bởi FEDU Quality Auditor • Mantra TEAM Opus Tự Trị Tuyệt Đối.
+</footer>
+
+</body>
+</html>
