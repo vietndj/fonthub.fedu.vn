@@ -214,6 +214,19 @@
     DOM.html.style.setProperty('--tester-font-size', clamped + 'px');
     if (DOM.fontSizeVal) DOM.fontSizeVal.textContent = clamped + 'px';
     if (DOM.fontSizeSlider) DOM.fontSizeSlider.value = clamped;
+
+    // Synchronize all card size sliders smoothly
+    if (DOM.fontGrid) {
+      DOM.fontGrid.querySelectorAll('.card-size-slider').forEach(function (slider) {
+        slider.value = clamped;
+        var card = slider.closest('.font-card');
+        var valDisplay = card ? card.querySelector('.card-size-val') : null;
+        if (valDisplay) valDisplay.textContent = clamped + 'px';
+      });
+      DOM.fontGrid.querySelectorAll('.preview-text').forEach(function (p) {
+        p.style.fontSize = '';
+      });
+    }
   }
 
   function setLineHeight(val) {
@@ -255,13 +268,13 @@
   }
 
   /**
-   * Updates global specimen preview text across all cards.
+   * Updates global specimen preview text across all cards and waterfall rows.
    */
   function broadcastPreviewText(text) {
     var cleanText = text !== undefined ? String(text) : '';
     App.typeTester.text = cleanText;
 
-    var previewElements = DOM.fontGrid.querySelectorAll('.preview-text');
+    var previewElements = DOM.fontGrid ? DOM.fontGrid.querySelectorAll('.preview-text, .waterfall-sample-text') : [];
     previewElements.forEach(function (el) {
       if (cleanText.trim() === '') {
         var fallbackText = el.getAttribute('data-sample') || el.getAttribute('data-family') || 'Tiếng Việt';
@@ -286,6 +299,27 @@
     if (DOM.globalTextInput) DOM.globalTextInput.value = defaultText;
     if (DOM.presetSelect) DOM.presetSelect.value = '';
     broadcastPreviewText(defaultText);
+
+    // Reset card weight sliders to 400 and close open waterfalls
+    if (DOM.fontGrid) {
+      DOM.fontGrid.querySelectorAll('.card-weight-slider').forEach(function (ws) {
+        ws.value = 400;
+        var card = ws.closest('.font-card');
+        if (card) {
+          var wv = card.querySelector('.card-weight-val');
+          if (wv) wv.textContent = '400';
+          var wf = card.querySelector('.card-waterfall-drawer');
+          if (wf) wf.style.display = 'none';
+          var btn = card.querySelector('.card-styles-toggle');
+          if (btn) {
+            btn.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+          }
+          card.classList.remove('is-waterfall-open');
+        }
+      });
+    }
+
     showToast('Đã đặt lại Type Tester về mặc định');
   }
 
@@ -489,6 +523,9 @@
     }
     var activeWeight = weights[defaultWeightIdx] || 'Regular';
     var initialResolved = resolveVariantStyle(font.family || font.name, activeWeight, category, font.files);
+    var initialNumericWeight = parseInt(initialResolved.fontWeight, 10) || 400;
+    var isVariable = Boolean(font.is_variable) || weightsCount >= 6;
+    var currentSize = (DOM.fontSizeSlider ? DOM.fontSizeSlider.value : '36');
 
     // Build weight chips
     var weightChipsHTML = weights.map(function (w, idx) {
@@ -497,6 +534,47 @@
     }).join('');
 
     var isFav = isFontFavorite(font.id);
+
+    // Build Waterfall rows HTML for this card
+    var waterfallRowsHTML = '';
+    if (weights.length > 1) {
+      waterfallRowsHTML = weights.map(function (w) {
+        var wResolved = resolveVariantStyle(font.family || font.name, w, category, font.files);
+        return [
+          '<div class="card-waterfall-row' + (w === activeWeight ? ' is-active' : '') + '" data-weight="' + escapeHTML(w) + '">',
+          '  <div class="waterfall-meta">',
+          '    <span class="waterfall-style-name">' + escapeHTML(w) + '</span>',
+          '    <span class="waterfall-weight-tag">' + escapeHTML(wResolved.fontWeight) + '</span>',
+          '  </div>',
+          '  <div class="waterfall-sample-text" contenteditable="true" spellcheck="false" style="font-family: ' + wResolved.fontFamily + '; font-weight: ' + wResolved.fontWeight + '; font-style: ' + wResolved.fontStyle + ';">',
+          '    ' + escapeHTML(currentText),
+          '  </div>',
+          '  <button type="button" class="waterfall-apply-btn" data-weight="' + escapeHTML(w) + '" title="Áp dụng style này cho card">Dùng style</button>',
+          '</div>'
+        ].join('');
+      }).join('');
+    } else {
+      var scaleSteps = [
+        { label: 'Display 72px', size: 72, text: currentText },
+        { label: 'Title 48px', size: 48, text: currentText },
+        { label: 'Subhead 32px', size: 32, text: currentText },
+        { label: 'Body 20px', size: 20, text: currentText },
+        { label: 'Caption 14px', size: 14, text: '0123456789 • ABCDEFGHIJKLMNOPQRSTUVWXYZ • abcdefghijklmnopqrstuvwxyz • ăâđêôơư' }
+      ];
+      waterfallRowsHTML = scaleSteps.map(function (step) {
+        return [
+          '<div class="card-waterfall-row scale-tier-row" data-size="' + step.size + '">',
+          '  <div class="waterfall-meta">',
+          '    <span class="waterfall-style-name">' + escapeHTML(step.label) + '</span>',
+          '    <span class="waterfall-weight-tag">' + step.size + 'px</span>',
+          '  </div>',
+          '  <div class="waterfall-sample-text" contenteditable="true" spellcheck="false" style="font-family: ' + initialResolved.fontFamily + '; font-weight: ' + initialResolved.fontWeight + '; font-style: ' + initialResolved.fontStyle + '; font-size: ' + step.size + 'px;">',
+          '    ' + escapeHTML(step.text),
+          '  </div>',
+          '</div>'
+        ].join('');
+      }).join('');
+    }
 
     return [
       '<article class="font-card" data-font-id="' + escapeHTML(font.id) + '" data-family="' + escapeHTML(font.family || font.name) + '" data-category="' + escapeHTML(category) + '">',
@@ -508,8 +586,25 @@
       '        <button type="button" class="btn-copy-name" data-copy-name="' + escapeHTML(font.name) + '" title="Copy tên font">',
       '          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
       '        </button>',
+      '        <span class="fs-card-cat-badge">' + escapeHTML(category) + '</span>',
       '      </div>',
-      '      <span class="badge">' + weightsLabel + '</span>',
+      '      <div class="card-fs-controls">',
+      '        <div class="fs-slider-control fs-weight-control" title="Kéo để đổi độ dày chữ (Font-Weight)">',
+      '          <span class="fs-control-label">Weight</span>',
+      '          <input type="range" class="card-weight-slider fs-range-slider" min="100" max="900" step="' + (isVariable ? '10' : '100') + '" value="' + initialNumericWeight + '" aria-label="Độ dày font">',
+      '          <span class="fs-control-val card-weight-val">' + initialNumericWeight + '</span>',
+      '        </div>',
+      '        <div class="fs-slider-control fs-size-control" title="Kéo để đổi cỡ chữ riêng cho font này">',
+      '          <span class="fs-control-label">Size</span>',
+      '          <input type="range" class="card-size-slider fs-range-slider" min="14" max="140" step="1" value="' + currentSize + '" aria-label="Cỡ chữ font">',
+      '          <span class="fs-control-val card-size-val">' + currentSize + 'px</span>',
+      '        </div>',
+      '        <button type="button" class="card-styles-toggle fs-styles-btn badge" data-action="toggle-card-waterfall" aria-expanded="false" title="Nhấp để bung toàn bộ styles dạng Waterfall">',
+      '          <span class="fs-styles-count">' + weightsLabel + '</span>',
+      '          <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>',
+      '        </button>',
+      '        <span class="fs-var-badge ' + (isVariable ? 'is-variable' : 'is-static') + '">' + (isVariable ? 'Variable' : 'Static') + '</span>',
+      '      </div>',
       '    </div>',
       '    <div class="card-designer-row">',
       '      <span>' + escapeHTML(font.designer || 'FEDU Studio') + '</span>',
@@ -531,6 +626,18 @@
       '  </div>',
       '  <div class="card-weights-bar" aria-label="Các biến thể độ dày">',
       '    ' + weightChipsHTML,
+      '  </div>',
+      '  <div class="card-waterfall-drawer fs-waterfall-panel" style="display: none;">',
+      '    <div class="fs-waterfall-panel-header">',
+      '      <div class="fs-waterfall-title-row">',
+      '        <span class="fs-waterfall-kicker">WATERFALL SPECIMEN</span>',
+      '        <span class="fs-waterfall-subkicker">' + weights.length + ' ' + (weights.length > 1 ? 'Styles' : 'Size Scale') + '</span>',
+      '      </div>',
+      '      <span class="fs-waterfall-tip">Bấm vào dòng để áp dụng style trực tiếp vào card</span>',
+      '    </div>',
+      '    <div class="fs-waterfall-rows-list">',
+      '      ' + waterfallRowsHTML,
+      '    </div>',
       '  </div>',
       '  <details class="card-drawer">',
       '    <summary class="drawer-trigger">',
@@ -656,7 +763,26 @@
           preview.style.fontWeight = resolved.fontWeight;
           preview.style.fontStyle = resolved.fontStyle;
           preview.style.fontFamily = resolved.fontFamily;
+          if (fontObj && (fontObj.is_variable || (fontObj.weights && fontObj.weights.length >= 6))) {
+            preview.style.fontVariationSettings = "'wght' " + (parseInt(resolved.fontWeight, 10) || 400);
+          }
         }
+
+        // Sync card weight slider & display
+        var numW = parseInt(resolved.fontWeight, 10) || 400;
+        var wSlider = card.querySelector('.card-weight-slider');
+        if (wSlider) wSlider.value = numW;
+        var wVal = card.querySelector('.card-weight-val');
+        if (wVal) wVal.textContent = numW;
+
+        // Highlight matching row in waterfall drawer
+        card.querySelectorAll('.card-waterfall-row').forEach(function (r) {
+          if (r.getAttribute('data-weight') === weight) {
+            r.classList.add('is-active');
+          } else {
+            r.classList.remove('is-active');
+          }
+        });
 
         // Dynamically load font face if available on server
         if (resolved.matchedFilename && typeof FontFace !== 'undefined') {
@@ -675,6 +801,170 @@
             }).catch(function () {});
           }
         }
+      });
+    });
+
+    // Fontshare Weight Slider on Card (100 to 900)
+    DOM.fontGrid.querySelectorAll('.card-weight-slider:not([data-bound])').forEach(function (slider) {
+      slider.setAttribute('data-bound', 'true');
+      slider.addEventListener('input', function () {
+        var card = slider.closest('.font-card');
+        if (!card) return;
+        var val = parseInt(slider.value, 10);
+        var valDisplay = card.querySelector('.card-weight-val');
+        if (valDisplay) valDisplay.textContent = val;
+
+        var family = card.getAttribute('data-family');
+        var fontId = card.getAttribute('data-font-id');
+        var fontObj = App.allFonts.find(function (f) { return f.id === fontId || (f.family || f.name) === family; });
+        var category = card.getAttribute('data-category') || (fontObj && fontObj.category) || 'Sans Serif';
+        var files = fontObj ? fontObj.files : [];
+        var weights = fontObj && Array.isArray(fontObj.weights) ? fontObj.weights : [];
+
+        var preview = card.querySelector('.preview-text');
+        if (preview) {
+          preview.style.fontWeight = val;
+          if (fontObj && (fontObj.is_variable || weights.length >= 6)) {
+            preview.style.fontVariationSettings = "'wght' " + val;
+          }
+        }
+
+        // Snap to closest weight chip and activate it
+        var closestWeight = null;
+        var minDiff = 9999;
+        var closestChip = null;
+
+        var chips = card.querySelectorAll('.weight-chip');
+        chips.forEach(function (chip) {
+          var wName = chip.getAttribute('data-weight');
+          var res = resolveVariantStyle(family, wName, category, files);
+          var numW = parseInt(res.fontWeight, 10) || 400;
+          var diff = Math.abs(numW - val);
+          if (diff < minDiff) {
+            minDiff = diff;
+            closestWeight = wName;
+            closestChip = chip;
+          }
+        });
+
+        if (closestChip) {
+          chips.forEach(function (c) { c.classList.remove('active'); });
+          closestChip.classList.add('active');
+        }
+
+        if (closestWeight) {
+          var resolved = resolveVariantStyle(family, closestWeight, category, files);
+          if (preview) {
+            preview.style.fontStyle = resolved.fontStyle;
+            if (resolved.matchedFilename && typeof FontFace !== 'undefined') {
+              var fontFaceFamily = family + ' ' + resolved.rawVariant;
+              var fontUrl = 'fonts/' + resolved.matchedFilename;
+              if (!document.fonts.check('16px "' + fontFaceFamily + '"')) {
+                var face = new FontFace(fontFaceFamily, 'url("' + fontUrl + '")', {
+                  weight: resolved.fontWeight,
+                  style: resolved.fontStyle
+                });
+                face.load().then(function (loaded) {
+                  document.fonts.add(loaded);
+                  if (preview) {
+                    preview.style.fontFamily = '"' + fontFaceFamily + '", ' + resolved.fontFamily;
+                  }
+                }).catch(function () {});
+              }
+            }
+          }
+        }
+
+        // Highlight active waterfall row
+        card.querySelectorAll('.card-waterfall-row').forEach(function (r) {
+          if (r.getAttribute('data-weight') === closestWeight) {
+            r.classList.add('is-active');
+          } else {
+            r.classList.remove('is-active');
+          }
+        });
+      });
+    });
+
+    // Fontshare Size Slider on Card (14 to 140)
+    DOM.fontGrid.querySelectorAll('.card-size-slider:not([data-bound])').forEach(function (slider) {
+      slider.setAttribute('data-bound', 'true');
+      slider.addEventListener('input', function () {
+        var card = slider.closest('.font-card');
+        if (!card) return;
+        var val = parseInt(slider.value, 10);
+        var valDisplay = card.querySelector('.card-size-val');
+        if (valDisplay) valDisplay.textContent = val + 'px';
+
+        var preview = card.querySelector('.preview-text');
+        if (preview) {
+          preview.style.fontSize = val + 'px';
+        }
+      });
+    });
+
+    // Card Waterfall Toggle Button
+    DOM.fontGrid.querySelectorAll('[data-action="toggle-card-waterfall"]:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var card = btn.closest('.font-card');
+        if (!card) return;
+        var drawer = card.querySelector('.card-waterfall-drawer');
+        if (!drawer) return;
+
+        var isOpen = drawer.style.display !== 'none';
+        if (isOpen) {
+          drawer.style.display = 'none';
+          btn.classList.remove('is-open');
+          btn.setAttribute('aria-expanded', 'false');
+          card.classList.remove('is-waterfall-open');
+        } else {
+          drawer.style.display = 'block';
+          btn.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true');
+          card.classList.add('is-waterfall-open');
+        }
+      });
+    });
+
+    // Card Waterfall Row Click & Apply Button
+    DOM.fontGrid.querySelectorAll('.card-waterfall-row:not([data-bound])').forEach(function (row) {
+      row.setAttribute('data-bound', 'true');
+      row.addEventListener('click', function (e) {
+        if (e.target.classList.contains('waterfall-sample-text') && document.activeElement === e.target) {
+          return;
+        }
+        var card = row.closest('.font-card');
+        if (!card) return;
+        var weightName = row.getAttribute('data-weight');
+        if (!weightName) return;
+
+        var chip = card.querySelector('.weight-chip[data-weight="' + weightName + '"]');
+        if (chip) {
+          chip.click();
+        } else {
+          var family = card.getAttribute('data-family');
+          var fontId = card.getAttribute('data-font-id');
+          var fontObj = App.allFonts.find(function (f) { return f.id === fontId || (f.family || f.name) === family; });
+          var category = card.getAttribute('data-category') || (fontObj && fontObj.category) || 'Sans Serif';
+          var files = fontObj ? fontObj.files : [];
+          var resolved = resolveVariantStyle(family, weightName, category, files);
+          var preview = card.querySelector('.preview-text');
+          if (preview) {
+            preview.style.fontWeight = resolved.fontWeight;
+            preview.style.fontStyle = resolved.fontStyle;
+            preview.style.fontFamily = resolved.fontFamily;
+          }
+          var numW = parseInt(resolved.fontWeight, 10) || 400;
+          var wSlider = card.querySelector('.card-weight-slider');
+          if (wSlider) wSlider.value = numW;
+          var wVal = card.querySelector('.card-weight-val');
+          if (wVal) wVal.textContent = numW;
+        }
+
+        card.querySelectorAll('.card-waterfall-row').forEach(function (r) { r.classList.remove('is-active'); });
+        row.classList.add('is-active');
       });
     });
 
