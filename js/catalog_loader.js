@@ -235,12 +235,15 @@
       var normMood = removeVietnameseDiacritics(mood);
       var normUseCase = removeVietnameseDiacritics(useCase);
       var normDrive = removeVietnameseDiacritics(driveFiles);
+      var studio = String(f.studio || f.foundry || '');
+      var normStudio = removeVietnameseDiacritics(studio);
       var gtTokens = isGTFont(f) ? 'gt gtfont grilli type swiss' : '';
       var tagsTokens = Array.isArray(f.tags) ? f.tags.map(removeVietnameseDiacritics).join(' ') : '';
 
       var searchComposite = [
         normName,
         normDesigner,
+        normStudio,
         normNotes,
         normCat,
         normSubcat,
@@ -252,6 +255,7 @@
         tagsTokens,
         name.toLowerCase(),
         designer.toLowerCase(),
+        studio.toLowerCase(),
         notes.toLowerCase(),
         mood.toLowerCase()
       ].join(' ');
@@ -260,6 +264,7 @@
         font: f,
         searchComposite: searchComposite,
         category: cat,
+        studio: studio,
         style: style,
         mood: mood,
         use_case: useCase,
@@ -334,8 +339,10 @@
           var mood = String((font.matrix_3d && font.matrix_3d.mood) || font.matrix_mood || '');
           var driveFiles = Array.isArray(font.drive_files) ? font.drive_files.join(' ') : String(font.drive_files || '');
 
+          var studio = String(font.studio || font.foundry || '');
           var normName = removeVietnameseDiacritics(name);
           var normDesigner = removeVietnameseDiacritics(designer);
+          var normStudio = removeVietnameseDiacritics(studio);
           var normNotes = removeVietnameseDiacritics(notes);
           var normSubcat = removeVietnameseDiacritics(subcategory);
           var normMood = removeVietnameseDiacritics(mood);
@@ -344,11 +351,14 @@
           searchNorm = [
             normName,
             normDesigner,
+            normStudio,
             normNotes,
             normSubcat,
             normMood,
             normDrive,
             name.toLowerCase(),
+            designer.toLowerCase(),
+            studio.toLowerCase(),
             notes.toLowerCase(),
             mood.toLowerCase()
           ].join(' \0 ');
@@ -439,7 +449,15 @@
         }
       }
 
-      // 6. Vietnamese Support Flag
+      // 6. Studio / Foundry Filter
+      if (typeof criteria.studio === 'string' && criteria.studio !== 'all' && criteria.studio.trim() !== '') {
+        var fontStudio = String(font.studio || font.foundry || '');
+        if (fontStudio.toLowerCase() !== criteria.studio.toLowerCase()) {
+          return false;
+        }
+      }
+
+      // 7. Vietnamese Support Flag
       if (typeof criteria.vietnamese_support === 'boolean') {
         var isSupported = typeof font.vietnamese_support === 'boolean'
           ? font.vietnamese_support
@@ -475,6 +493,7 @@
       styles: {},
       moods: {},
       useCases: {},
+      studios: {},
       weights: { 'all': fonts.length, 'single': 0, 'family': 0 },
       vnSupport: { 'all': fonts.length, 'supported': 0 }
     };
@@ -507,6 +526,9 @@
       var wLen = Array.isArray(f.weights) ? f.weights.length : 1;
       if (wLen === 1) counts.weights['single']++;
       if (wLen > 1) counts.weights['family']++;
+
+      var fontStudio = f.studio || f.foundry || 'FEDU Type Studio';
+      counts.studios[fontStudio] = (counts.studios[fontStudio] || 0) + 1;
 
       if (f.vietnamese_support || (typeof f.vietnamese_status === 'string' && f.vietnamese_status.startsWith('Supported'))) {
         counts.vnSupport['supported']++;

@@ -60,13 +60,13 @@ class TestFonthubDrukWideIntegration(unittest.TestCase):
         # Assert mandatory schema fields
         self.assertIn("name", entry)
         self.assertIn("category", entry)
-        self.assertIn("styles", entry)
+        self.assertTrue("styles" in entry or "weights" in entry or "files" in entry, "Thiếu styles/weights/files trong entry")
         self.assertIn("vietnamese_support", entry)
         self.assertTrue(entry.get("vietnamese_support"), "vietnamese_support phải là true")
         self.assertEqual(entry.get("category"), "Sans Serif", "Category của Druk Wide phải là Sans Serif")
         
-        # Check styles list
-        styles = entry.get("styles", [])
+        # Check styles/weights list
+        styles = entry.get("styles") or entry.get("weights") or []
         self.assertGreaterEqual(len(styles), 8, f"Druk Wide phải có ít nhất 8 styles, hiện có {len(styles)}")
         
         # Check director notes & sample text

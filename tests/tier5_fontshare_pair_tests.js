@@ -220,6 +220,46 @@ function runTier5Tests(reporter) {
       assert.ok(link.startsWith('https://drive.google.com/'), `${f.name} must have valid Drive link`);
     });
   });
+
+  // -------------------------------------------------------------------------
+  // T5.8: Studio / Foundry Tag & Grouping Filter Tests
+  // -------------------------------------------------------------------------
+  reporter.test('T5.8.1: Studio markup and CSS presence in index.html & style.css', () => {
+    assert.ok(html.includes('id="filter-studio"'), 'index.html must include id filter-studio dropdown');
+    assert.ok(html.includes('id="fs-filter-studio"'), 'index.html must include id fs-filter-studio dropdown');
+    assert.ok(css.includes('.badge-studio'), 'style.css must style .badge-studio tag');
+    assert.ok(css.includes('.fs-studio-badge'), 'style.css must style .fs-studio-badge');
+  });
+
+  reporter.test('T5.8.2: CatalogLoader Studio facet counts and multiFilter isolation', () => {
+    const loader = require('../js/catalog_loader.js');
+    const counts = loader.computeFacetCounts(catalog.fonts);
+    assert.ok(counts.studios, 'Facet counts must include studios');
+    assert.ok(Object.keys(counts.studios).length >= 10, 'Must have at least 10 studios tallied');
+    assert.ok(counts.studios['Klim Type Foundry'] >= 20, 'Must count Klim Type Foundry fonts');
+    assert.ok(counts.studios['Grilli Type'] >= 15, 'Must count Grilli Type fonts');
+
+    // Test studio isolation in multiFilter
+    const klimFiltered = loader.multiFilter(catalog.fonts, { studio: 'Klim Type Foundry' });
+    assert.strictEqual(klimFiltered.length, counts.studios['Klim Type Foundry'], 'multiFilter with studio must match count');
+    klimFiltered.forEach(f => {
+      assert.strictEqual(f.studio, 'Klim Type Foundry', `${f.name} studio must be Klim Type Foundry`);
+    });
+
+    const gtFiltered = loader.multiFilter(catalog.fonts, { studio: 'Grilli Type' });
+    assert.strictEqual(gtFiltered.length, counts.studios['Grilli Type'], 'multiFilter with Grilli Type must match count');
+  });
+
+  reporter.test('T5.8.3: Search Composite & Instant Search Studio indexing', () => {
+    const loader = require('../js/catalog_loader.js');
+    const index = loader.buildSearchIndex(catalog.fonts);
+    const klimResults = loader.instantSearch(index, 'Klim');
+    assert.ok(klimResults.length >= 20, 'Instant search for Klim must return at least 20 fonts');
+    assert.ok(klimResults.every(f => (f.studio || '').includes('Klim') || (f.designer || '').includes('Klim')), 'All Klim results must be Klim related');
+
+    const dinamoResults = loader.instantSearch(index, 'Dinamo');
+    assert.ok(dinamoResults.length >= 4, 'Instant search for Dinamo must return Dinamo fonts');
+  });
 }
 
 module.exports = { runTier5Tests };

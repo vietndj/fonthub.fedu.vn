@@ -3,7 +3,7 @@
   "root_drive_url": "https://drive.google.com/drive/folders/1vybz5LwFasmy9kRGBVcX3tX6vYfEoi9j?usp=sharing",
   "fd_drive_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
   "gr_drive_url": "https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing",
-  "total_fonts": 379,
+  "total_fonts": 380,
   "matched_zips": 379,
   "fonts": [
     {
@@ -3794,6 +3794,16 @@
       "size_mb": 0.53,
       "drive_view_url": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
       "drive_download_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
+      "status": "PASS"
+    },
+    {
+      "index": 380,
+      "id": "fd-druk-wide",
+      "name": "FD Druk Wide",
+      "zip_filename": "FD-DrukWide.zip",
+      "size_mb": 0.62,
+      "drive_view_url": "",
+      "drive_download_url": "dist/zips/FD/FD-DrukWide.zip",
       "status": "PASS"
     }
   ]

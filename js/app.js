@@ -25,6 +25,7 @@
     activeFilters: {
       searchQuery: '',
       category: 'all',
+      studio: 'all',
       mood: 'all',
       use_case: 'all',
       weight: 'all',
@@ -52,6 +53,7 @@
       align: 'left',
       viewMode: 'list',
       category: 'all',
+      studio: 'all',
       property: 'all',
       personality: 'all',
       pill: 'all',
@@ -155,6 +157,8 @@
     DOM.searchLatency = document.getElementById('search-latency');
     DOM.resultsCount = document.getElementById('results-count');
     DOM.categoryChips = document.querySelectorAll('[data-category]');
+    DOM.filterStudio = document.getElementById('filter-studio');
+    DOM.fsFilterStudio = document.getElementById('fs-filter-studio');
     DOM.filterMood = document.getElementById('filter-mood');
     DOM.filterUseCase = document.getElementById('filter-use-case');
     DOM.filterWeight = document.getElementById('filter-weight');
@@ -534,6 +538,9 @@
       ? '<button type="button" class="badge badge-pangram" data-category="Pangram" title="Lọc phông chữ Pangram Pangram (FEDU)">Pangram</button>'
       : '';
 
+    var studioName = font.studio || font.foundry || (isGT ? 'Grilli Type' : (isCoType ? 'CoType Foundry' : (isDinamo ? 'Dinamo' : (isKlim ? 'Klim Type Foundry' : (isPangram ? 'Pangram Pangram' : 'FEDU Type Studio')))));
+    var studioBadge = '<button type="button" class="badge badge-studio" data-studio="' + escapeHTML(studioName) + '" title="Gom nhóm các font thuộc studio ' + escapeHTML(studioName) + '">🏢 ' + escapeHTML(studioName) + '</button>';
+
     var anatomy = font.anatomy || {};
     var contrast = anatomy.contrast || 'Medium';
     var axis = anatomy.axis || 'Vertical';
@@ -625,7 +632,7 @@
     }
 
     return [
-      '<article class="font-card" data-font-id="' + escapeHTML(font.id) + '" data-family="' + escapeHTML(font.family || font.name) + '" data-category="' + escapeHTML(category) + '">',
+      '<article class="font-card" data-font-id="' + escapeHTML(font.id) + '" data-family="' + escapeHTML(font.family || font.name) + '" data-category="' + escapeHTML(category) + '" data-studio="' + escapeHTML(studioName) + '">',
       '  <header class="card-header">',
       '    <div class="card-title-row">',
       '      <div class="title-with-fav">',
@@ -660,6 +667,7 @@
       '      <span>' + escapeHTML(font.source || 'PDF & Drive') + '</span>',
       '    </div>',
       '    <div class="card-badges-row">',
+      '      ' + studioBadge,
       '      ' + gtBadge,
       '      ' + cotypeBadge,
       '      ' + dinamoBadge,
@@ -1175,6 +1183,38 @@
   }
 
   /**
+   * Populates the studio select dropdowns with available studios and font counts.
+   */
+  function populateStudioDropdowns() {
+    var counts = CatalogLoader.computeFacetCounts(App.allFonts);
+    if (!counts || !counts.studios) return;
+
+    var sortedStudios = Object.keys(counts.studios).sort(function (a, b) {
+      return counts.studios[b] - counts.studios[a];
+    });
+
+    if (DOM.filterStudio) {
+      var currentVal = App.activeFilters.studio || DOM.filterStudio.value || 'all';
+      var html = '<option value="all">🏢 Studio: Tất cả (' + App.allFonts.length + ')</option>';
+      sortedStudios.forEach(function (st) {
+        html += '<option value="' + escapeHTML(st) + '">' + escapeHTML(st) + ' (' + counts.studios[st] + ')</option>';
+      });
+      DOM.filterStudio.innerHTML = html;
+      DOM.filterStudio.value = currentVal;
+    }
+
+    if (DOM.fsFilterStudio) {
+      var fsVal = App.fontshareState.studio || DOM.fsFilterStudio.value || 'all';
+      var fsHtml = '<option value="all">Studio: Tất cả ▾</option>';
+      sortedStudios.forEach(function (st) {
+        fsHtml += '<option value="' + escapeHTML(st) + '">' + escapeHTML(st) + ' (' + counts.studios[st] + ')</option>';
+      });
+      DOM.fsFilterStudio.innerHTML = fsHtml;
+      DOM.fsFilterStudio.value = fsVal;
+    }
+  }
+
+  /**
    * Executes instant search and faceted filtering.
    */
   function applyFilters() {
@@ -1186,6 +1226,7 @@
     // 2. Multi-Dimensional Filter
     var filterCriteria = {
       category: App.activeFilters.category,
+      studio: App.activeFilters.studio,
       mood: App.activeFilters.mood,
       use_case: App.activeFilters.use_case,
       weight: App.activeFilters.weight,
@@ -1241,13 +1282,17 @@
     App.activeFilters = {
       searchQuery: '',
       category: 'all',
+      studio: 'all',
       mood: 'all',
       use_case: 'all',
       weight: 'all',
       vietnamese_support: true
     };
+    App.fontshareState.studio = 'all';
 
     if (DOM.searchInput) DOM.searchInput.value = '';
+    if (DOM.filterStudio) DOM.filterStudio.value = 'all';
+    if (DOM.fsFilterStudio) DOM.fsFilterStudio.value = 'all';
     if (DOM.filterMood) DOM.filterMood.value = 'all';
     if (DOM.filterUseCase) DOM.filterUseCase.value = 'all';
     if (DOM.filterWeight) DOM.filterWeight.value = 'all';
@@ -1464,14 +1509,16 @@
       ].join('');
     }
 
+    var fsStudioName = font.studio || font.foundry || 'FEDU Type Studio';
     return [
-      '<article class="fontshare-card fs-list-item" data-family="' + escapeHTML(family) + '" data-font-id="' + escapeHTML(font.id) + '">',
+      '<article class="fontshare-card fs-list-item" data-family="' + escapeHTML(family) + '" data-font-id="' + escapeHTML(font.id) + '" data-studio="' + escapeHTML(fsStudioName) + '">',
       '  <div class="fs-item-meta-top">',
       '    <div class="fs-item-title-group">',
       '      <h3 class="fs-item-name" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + ';">' + escapeHTML(font.name) + '</h3>',
       '      <button type="button" class="fs-star-btn ' + (isFav ? 'active' : '') + '" data-fav-id="' + escapeHTML(font.id) + '" aria-label="Favorite">' + (isFav ? '★' : '☆') + '</button>',
       '    </div>',
       '    <div class="fs-item-badges">',
+      '      <button type="button" class="fs-pill-badge fs-studio-badge badge-studio" data-studio="' + escapeHTML(fsStudioName) + '" title="Gom nhóm font theo studio ' + escapeHTML(fsStudioName) + '">🏢 ' + escapeHTML(fsStudioName) + '</button>',
       '      <button type="button" class="fs-styles-badge card-styles-toggle" data-action="toggle-card-waterfall" aria-expanded="false">' + weightsCount + ' styles ▾</button>',
       '      <span class="fs-feature-badge">' + (isVariable ? 'Variable' : 'Static') + '</span>',
       '      <span class="fs-license-badge">' + escapeHTML(sourceType) + '</span>',
@@ -1597,7 +1644,16 @@
         var n = (f.name || f.family || '').toLowerCase();
         var d = (f.designer || '').toLowerCase();
         var c = (f.category || '').toLowerCase();
-        return n.indexOf(query) !== -1 || d.indexOf(query) !== -1 || c.indexOf(query) !== -1;
+        var s = (f.studio || f.foundry || '').toLowerCase();
+        return n.indexOf(query) !== -1 || d.indexOf(query) !== -1 || c.indexOf(query) !== -1 || s.indexOf(query) !== -1;
+      });
+    }
+
+    // Studio dropdown filter
+    if (state.studio && state.studio !== 'all') {
+      pool = pool.filter(function (f) {
+        var s = (f.studio || f.foundry || '').toLowerCase();
+        return s === state.studio.toLowerCase();
       });
     }
 
@@ -2709,6 +2765,59 @@
     });
 
     // Secondary Filters
+    if (DOM.filterStudio) {
+      DOM.filterStudio.addEventListener('change', function (e) {
+        var val = e.target.value;
+        App.activeFilters.studio = val;
+        App.fontshareState.studio = val;
+        if (DOM.fsFilterStudio) DOM.fsFilterStudio.value = val;
+        applyFilters();
+        if (val !== 'all') {
+          showToast('🏢 Đã gom nhóm font theo Studio: ' + val);
+        }
+      });
+    }
+
+    if (DOM.fsFilterStudio) {
+      DOM.fsFilterStudio.addEventListener('change', function (e) {
+        var val = e.target.value;
+        App.fontshareState.studio = val;
+        App.activeFilters.studio = val;
+        if (DOM.filterStudio) DOM.filterStudio.value = val;
+        renderFontshareView({ scrollToTop: true });
+        applyFilters();
+        if (val !== 'all') {
+          showToast('🏢 Đã gom nhóm font theo Studio: ' + val);
+        }
+      });
+    }
+
+    // Global Click delegation for Studio badges on ANY card (.badge-studio, .fs-studio-badge, [data-studio])
+    document.addEventListener('click', function (e) {
+      var studioBtn = e.target.closest('.badge-studio, .fs-studio-badge, [data-studio]');
+      if (studioBtn) {
+        var studioName = studioBtn.getAttribute('data-studio');
+        if (!studioName) return;
+        e.preventDefault();
+        e.stopPropagation();
+
+        App.activeFilters.studio = studioName;
+        App.fontshareState.studio = studioName;
+        if (DOM.filterStudio) DOM.filterStudio.value = studioName;
+        if (DOM.fsFilterStudio) DOM.fsFilterStudio.value = studioName;
+
+        applyFilters();
+        renderFontshareView({ scrollToTop: true });
+
+        var targetSection = App.currentView === 'fontshare' ? DOM.fontshareView : DOM.fontGrid;
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        showToast('🏢 Đã gom nhóm font theo Studio: ' + studioName);
+      }
+    });
+
     if (DOM.filterMood) {
       DOM.filterMood.addEventListener('change', function (e) {
         App.activeFilters.mood = e.target.value;
@@ -2839,6 +2948,9 @@
       // Pre-index fonts for sub-4ms instant search
       App.indexedFonts = CatalogLoader.buildSearchIndex(App.allFonts);
       App.filteredFonts = App.allFonts.slice();
+
+      // Populate studio filter dropdowns
+      populateStudioDropdowns();
 
       // Update header metrics
       if (DOM.headerStatsBadge && catalogData.summary) {

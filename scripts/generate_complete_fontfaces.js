@@ -144,7 +144,8 @@ const cotypeDefs = [
   { names: ['FD Orbikular'], stems: ['FDOrbikular'] },
   { names: ['FDRM Mono', 'FD RM Mono'], stems: ['FDRMMono'] },
   { names: ['FDRM Neue', 'FD RM Neue'], stems: ['FDRMNeue'] },
-  { names: ['FD Scandium'], stems: ['FDScandium'] }
+  { names: ['FD Scandium'], stems: ['FDScandium'] },
+  { names: ['FD Druk Wide', 'FDDrukWide'], stems: ['FDDrukWide'] }
 ];
 
 let cotypeCSS = '';
@@ -176,8 +177,10 @@ if (coreIdx !== -1 && coreEndIdx !== -1) {
 }
 
 // Replace CoType section (from start marker to end of file)
-const cotypeStartMarker = '/* FD Aeonik Families (Soft, Condensed, Extended, Mono, Fono) */';
-const ctIdx = css.indexOf(cotypeStartMarker);
+let ctIdx = css.indexOf('/* FD Aeonik Families (Soft, Condensed, Extended, Mono, Fono) */');
+if (ctIdx === -1) {
+  ctIdx = css.indexOf('/* ==========================================================================\n   COTYPE TYPEFACES FULL MULTI-WEIGHT WEBFONTS\n   ========================================================================== */');
+}
 
 if (ctIdx !== -1) {
   const badgeStart = css.indexOf('/* CoType Foundry Category Chip & Badge */', ctIdx);
