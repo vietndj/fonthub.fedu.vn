@@ -4,7 +4,7 @@
 > **Thư mục tổng Google Drive**: [FONTHUB_ZIPS (Google Drive)](https://drive.google.com/drive/folders/1vybz5LwFasmy9kRGBVcX3tX6vYfEoi9j?usp=sharing)
 > **Thư mục FD Font (Google Drive)**: [FONTHUB_ZIPS/FD](https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing)
 > **Thư mục GR Font (Google Drive)**: [FONTHUB_ZIPS/GR](https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing)
-> **Tỷ lệ ánh xạ chính xác**: 374/374 (100.0%)
+> **Tỷ lệ ánh xạ chính xác**: 379/379 (100.0%)
 
 ## BẢNG TRA CỨU 374 HỌ FONT VÀ LINK TẢI TRỰC TIẾP KIỂM THỬ THỰC TẾ
 
@@ -384,3 +384,8 @@
 | 372 | **FD Zebra** | `FD-Zebra.zip` | 0.02 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1qX8MBU5dXLtQIeg92x8lc2X0KIjAVNA_) | [Xem Trên Drive](https://drive.google.com/file/d/1qX8MBU5dXLtQIeg92x8lc2X0KIjAVNA_/view?usp=sharing) | ✅ PASS |
 | 373 | **FD Zelda Sans** | `FD-ZeldaSans.zip` | 0.01 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1BjptBYSH6QJvbAeJRMgE3q09fQrB1Rzr) | [Xem Trên Drive](https://drive.google.com/file/d/1BjptBYSH6QJvbAeJRMgE3q09fQrB1Rzr/view?usp=sharing) | ✅ PASS |
 | 374 | **FD Zero** | `FD-Zero.zip` | 0.02 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc) | [Xem Trên Drive](https://drive.google.com/file/d/1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc/view?usp=sharing) | ✅ PASS |
+| 375 | **FD Aeonik Soft** | `FD-AeonikSoft.zip` | 1.09 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW) | [Xem Trên Drive](https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing) | ✅ PASS |
+| 376 | **FD Aeonik Condensed** | `FD-AeonikCondensed.zip` | 1.1 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb) | [Xem Trên Drive](https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing) | ✅ PASS |
+| 377 | **FD Aeonik Extended** | `FD-AeonikExtended.zip` | 1.11 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s) | [Xem Trên Drive](https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing) | ✅ PASS |
+| 378 | **FD Aeonik Mono** | `FD-AeonikMono.zip` | 0.41 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2) | [Xem Trên Drive](https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing) | ✅ PASS |
+| 379 | **FD Aeonik Fono** | `FD-AeonikFono.zip` | 0.53 MB | [Tải Ngay .zip](https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB) | [Xem Trên Drive](https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing) | ✅ PASS |

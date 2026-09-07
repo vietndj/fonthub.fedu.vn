@@ -3363,3 +3363,248 @@ input[type="range"]::-moz-range-thumb {
   transform: translateY(-2px);
 }
 
+/* ==========================================================================
+   FONTSHARE INFINITE SCROLL & CARD CONTROLS
+   ========================================================================== */
+
+.fontshare-sentinel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 44px 20px;
+  color: var(--fontshare-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.fontshare-loading-spinner {
+  width: 22px;
+  height: 22px;
+  border: 2.5px solid var(--fontshare-border);
+  border-top-color: var(--fontshare-text);
+  border-radius: 50%;
+  animation: fs-infinite-spin 0.65s linear infinite;
+}
+
+@keyframes fs-infinite-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fontshare-loading-text {
+  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  color: var(--fontshare-muted);
+}
+
+.fontshare-end-message {
+  text-align: center;
+  padding: 40px 20px 80px;
+  box-sizing: border-box;
+}
+
+.fs-end-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 26px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fontshare-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--fontshare-border);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Inline Card Weight Slider */
+.fs-card-weight-ctrl {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-surface);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--fontshare-border);
+  box-sizing: border-box;
+}
+
+.fs-weight-icon {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--fontshare-muted);
+  user-select: none;
+}
+
+.fs-card-weight-ctrl .card-weight-slider {
+  width: 72px;
+  height: 4px;
+  accent-color: var(--fontshare-text);
+  cursor: pointer;
+  background: var(--fontshare-border);
+  border-radius: 2px;
+  outline: none;
+  margin: 0;
+}
+
+.fs-weight-val {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--fontshare-text);
+  min-width: 26px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .fs-item-meta-bottom {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .fs-card-weight-ctrl {
+    order: 2;
+  }
+  .fs-actions {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+
+
+
+/* FD Aeonik Families (Soft, Condensed, Extended, Mono, Fono) */
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Soft';
+  src: url('../fonts/FDAeonikSoft-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikSoft-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Condensed';
+  src: url('../fonts/FDAeonikCondensed-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikCondensed-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Extended';
+  src: url('../fonts/FDAeonikExtended-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikExtended-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Mono';
+  src: url('../fonts/FDAeonikMono-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikMono-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Bold.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'FD Aeonik Fono';
+  src: url('../fonts/FDAeonikFono-Regular.woff2') format('woff2'),
+       url('fonts/FDAeonikFono-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

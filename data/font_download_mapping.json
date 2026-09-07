@@ -3,8 +3,8 @@
   "root_drive_url": "https://drive.google.com/drive/folders/1vybz5LwFasmy9kRGBVcX3tX6vYfEoi9j?usp=sharing",
   "fd_drive_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
   "gr_drive_url": "https://drive.google.com/drive/folders/1aT81y72_QzEGJjEFWSEjC11iLLXdwkpO?usp=sharing",
-  "total_fonts": 374,
-  "matched_zips": 374,
+  "total_fonts": 379,
+  "matched_zips": 379,
   "fonts": [
     {
       "index": 1,
@@ -3744,6 +3744,56 @@
       "size_mb": 0.02,
       "drive_view_url": "https://drive.google.com/file/d/1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc/view?usp=sharing",
       "drive_download_url": "https://drive.google.com/uc?export=download&id=1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc",
+      "status": "PASS"
+    },
+    {
+      "index": 375,
+      "id": "fdaeoniksoft",
+      "name": "FD Aeonik Soft",
+      "zip_filename": "FD-AeonikSoft.zip",
+      "size_mb": 1.09,
+      "drive_view_url": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
+      "status": "PASS"
+    },
+    {
+      "index": 376,
+      "id": "fdaeonikcondensed",
+      "name": "FD Aeonik Condensed",
+      "zip_filename": "FD-AeonikCondensed.zip",
+      "size_mb": 1.1,
+      "drive_view_url": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
+      "status": "PASS"
+    },
+    {
+      "index": 377,
+      "id": "fdaeonikextended",
+      "name": "FD Aeonik Extended",
+      "zip_filename": "FD-AeonikExtended.zip",
+      "size_mb": 1.11,
+      "drive_view_url": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
+      "status": "PASS"
+    },
+    {
+      "index": 378,
+      "id": "fdaeonikmono",
+      "name": "FD Aeonik Mono",
+      "zip_filename": "FD-AeonikMono.zip",
+      "size_mb": 0.41,
+      "drive_view_url": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
+      "status": "PASS"
+    },
+    {
+      "index": 379,
+      "id": "fdaeonikfono",
+      "name": "FD Aeonik Fono",
+      "zip_filename": "FD-AeonikFono.zip",
+      "size_mb": 0.53,
+      "drive_view_url": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
       "status": "PASS"
     }
   ]

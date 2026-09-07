@@ -1,0 +1,179 @@
+{
+  "timestamp": "2026-09-07 22:07:34",
+  "suites": {
+    "Redirect": [
+      {
+        "test": "HTTP Status 200 with instant redirect markup",
+        "status": "PASS",
+        "details": "HTTP 200"
+      },
+      {
+        "test": "Meta Refresh to fonthub.fedu.vn/#catalog",
+        "status": "PASS",
+        "details": "Meta refresh present"
+      },
+      {
+        "test": "JS window.location.replace to fonthub.fedu.vn/#catalog",
+        "status": "PASS",
+        "details": "JS replace present"
+      },
+      {
+        "test": "Canonical link points to fonthub.fedu.vn/#catalog",
+        "status": "PASS",
+        "details": "Canonical link present"
+      },
+      {
+        "test": "Headless Chrome resolves fedu.vn/font/ to fonthub.fedu.vn",
+        "status": "PASS",
+        "details": "Landed at: https://fonthub.fedu.vn/#catalog"
+      }
+    ],
+    "Catalog (Local)": [
+      {
+        "test": "Rendered font cards on catalog (Found: 24)",
+        "status": "PASS",
+        "details": "Count: 24"
+      }
+    ],
+    "Visual": [
+      {
+        "test": "Desktop 1440px Screenshot Captured",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Expanded Waterfall Screenshot Captured",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Mobile 390px Screenshot Captured",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Weight Slider (Local)": [
+      {
+        "test": "Card-level Weight Slider exists on font card",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Weight Slider adjusts font-weight to bold (300 -> 700)",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Weight Slider adjusts font-weight to light (300)",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Size Slider (Local)": [
+      {
+        "test": "Card-level Size Slider exists on font card",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Card Size Slider scales font-size (36px -> 58px)",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Waterfall Toggle (Local)": [
+      {
+        "test": "Waterfall style toggle button found on card",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Clicking style toggle expands Waterfall drawer (Rows: 10)",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Clicking waterfall row applies style to card (Row: Display Regular, Weight: 400)",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Clicking again collapses Waterfall drawer",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Console (Local)": [
+      {
+        "test": "Zero Uncaught Runtime JS Errors on Desktop (Errors: 0)",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Responsive": [
+      {
+        "test": "Mobile 390px Viewport No Horizontal Overflow (scrollWidth: 390px)",
+        "status": "PASS",
+        "details": "scrollWidth=390px, expected <= 390px"
+      },
+      {
+        "test": "Card Fontshare Controls (Weight, Size, Waterfall) intact on Mobile",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Console (Mobile)": [
+      {
+        "test": "Zero Uncaught Runtime JS Errors on Mobile (Errors: 0)",
+        "status": "PASS",
+        "details": null
+      }
+    ],
+    "Production Live": [
+      {
+        "test": "Live fonthub.fedu.vn renders Fontshare Weight Slider",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Live fonthub.fedu.vn renders Fontshare Size Slider",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Live fonthub.fedu.vn renders Waterfall Drawer Toggle",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Live Weight Slider adjusts font-weight to 800 (800)",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Live Waterfall Drawer expands with styles (Rows: 10)",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Live Mobile 390px No Horizontal Overflow (390px)",
+        "status": "PASS",
+        "details": null
+      },
+      {
+        "test": "Zero Uncaught Runtime JS Errors on Production (Errors: 0)",
+        "status": "PASS",
+        "details": null
+      }
+    ]
+  },
+  "passed": 29,
+  "failed": 0,
+  "total": 29,
+  "screenshots": [
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/audit_desktop_1440.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/audit_waterfall_expanded.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/audit_mobile_390.png",
+    "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/live_production_mobile_390.png"
+  ]
+}

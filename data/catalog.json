@@ -5,7 +5,8 @@
     "total_fonts": 374,
     "pdf_curated_fonts": 253,
     "drive_files_total": 968,
-    "categories_count": 15
+    "categories_count": 15,
+    "total_families": 379
   },
   "matrix_taxonomy": {
     "visual_styles": [
@@ -27414,6 +27415,738 @@
       "drive_view_url": "https://drive.google.com/file/d/1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc/view?usp=sharing",
       "drive_download_url": "https://drive.google.com/uc?export=download&id=1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc",
       "drive_link": "https://drive.google.com/file/d/1-PFW0Gw1P4uFt-Lgx7U2pTGKEMH12NAc/view?usp=sharing"
+    },
+    {
+      "id": "fdaeoniksoft",
+      "name": "FD Aeonik Soft",
+      "family": "FD Aeonik Soft",
+      "designer": "FEDU Type Foundry",
+      "source": "CoType & FEDU Studio",
+      "category": "Sans Serif",
+      "subcategory": "Sans Rounded Geometric",
+      "matrix_3d": {
+        "style": "Sans Rounded",
+        "mood": "Thân thiện & Công nghệ",
+        "use_case": "Display & UI"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Rounded Neo-Geometric",
+        "x_height": "High",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
+      "weights": [
+        "Air",
+        "AirItalic",
+        "Thin",
+        "ThinItalic",
+        "Light",
+        "LightItalic",
+        "Regular",
+        "RegularItalic",
+        "Medium",
+        "MediumItalic",
+        "SemiBold",
+        "SemiBoldItalic",
+        "Bold",
+        "BoldItalic",
+        "Black",
+        "BlackItalic"
+      ],
+      "sample_text": "Trải nghiệm giao diện mềm mại với đường nét hình học bo tròn tinh tế và hiện đại",
+      "web_font_url": "fonts/FDAeonikSoft-Regular.woff2",
+      "files_count": 16,
+      "files": [
+        {
+          "filename": "FDAeonikSoft-Air.ttf",
+          "style": "Air",
+          "ext": "ttf",
+          "size": 79244,
+          "source_filename": "FDAeonikSoft-Air.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 84036,
+          "source_filename": "FDAeonikSoft-AirItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Thin.ttf",
+          "style": "Thin",
+          "ext": "ttf",
+          "size": 80172,
+          "source_filename": "FDAeonikSoft-Thin.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 86648,
+          "source_filename": "FDAeonikSoft-ThinItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 80536,
+          "source_filename": "FDAeonikSoft-Light.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 87184,
+          "source_filename": "FDAeonikSoft-LightItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 80072,
+          "source_filename": "FDAeonikSoft-Regular.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 87496,
+          "source_filename": "FDAeonikSoft-RegularItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 80224,
+          "source_filename": "FDAeonikSoft-Medium.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 87364,
+          "source_filename": "FDAeonikSoft-MediumItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-SemiBold.ttf",
+          "style": "SemiBold",
+          "ext": "ttf",
+          "size": 81512,
+          "source_filename": "FDAeonikSoft-SemiBold.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-SemiBoldItalic.ttf",
+          "style": "SemiBoldItalic",
+          "ext": "ttf",
+          "size": 88068,
+          "source_filename": "FDAeonikSoft-SemiBoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 81792,
+          "source_filename": "FDAeonikSoft-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-BoldItalic.ttf",
+          "style": "BoldItalic",
+          "ext": "ttf",
+          "size": 87680,
+          "source_filename": "FDAeonikSoft-BoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 80624,
+          "source_filename": "FDAeonikSoft-Black.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 87620,
+          "source_filename": "FDAeonikSoft-BlackItalic.ttf"
+        }
+      ],
+      "director_review": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
+      "critique": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
+      "nhan_dinh_dao_dien": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
+      "typography_critique": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
+      "zip_filename": "FD-AeonikSoft.zip",
+      "zip_size_bytes": 1144426,
+      "drive_file_id": "12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
+      "drive_file_size": 1144426,
+      "drive_view_url": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
+      "drive_link": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
+      "drive_url": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
+      "download_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
+      "zip_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW"
+    },
+    {
+      "id": "fdaeonikcondensed",
+      "name": "FD Aeonik Condensed",
+      "family": "FD Aeonik Condensed",
+      "designer": "FEDU Type Foundry",
+      "source": "CoType & FEDU Studio",
+      "category": "Sans Serif",
+      "subcategory": "Sans Condensed Geometric",
+      "matrix_3d": {
+        "style": "Sans Condensed",
+        "mood": "Mạnh mẽ & Hiện đại",
+        "use_case": "Headline & Poster"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Condensed Neo-Geometric",
+        "x_height": "High",
+        "aperture": "Compact"
+      },
+      "vietnamese_support": true,
+      "director_notes": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
+      "weights": [
+        "Air",
+        "AirItalic",
+        "Thin",
+        "ThinItalic",
+        "Light",
+        "LightItalic",
+        "Regular",
+        "RegularItalic",
+        "Medium",
+        "MediumItalic",
+        "SemiBold",
+        "SemiBoldItalic",
+        "Bold",
+        "BoldItalic",
+        "Black",
+        "BlackItalic"
+      ],
+      "sample_text": "Tiết kiệm không gian hiển thị tối đa với cấu trúc ký tự nén chặt chẽ sắc nét",
+      "web_font_url": "fonts/FDAeonikCondensed-Regular.woff2",
+      "files_count": 16,
+      "files": [
+        {
+          "filename": "FDAeonikCondensed-Air.ttf",
+          "style": "Air",
+          "ext": "ttf",
+          "size": 66136,
+          "source_filename": "FDAeonikCondensed-Air.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 70424,
+          "source_filename": "FDAeonikCondensed-AirItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Thin.ttf",
+          "style": "Thin",
+          "ext": "ttf",
+          "size": 66556,
+          "source_filename": "FDAeonikCondensed-Thin.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 69744,
+          "source_filename": "FDAeonikCondensed-ThinItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 66436,
+          "source_filename": "FDAeonikCondensed-Light.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 69760,
+          "source_filename": "FDAeonikCondensed-LightItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 65440,
+          "source_filename": "FDAeonikCondensed-Regular.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 68520,
+          "source_filename": "FDAeonikCondensed-RegularItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 65412,
+          "source_filename": "FDAeonikCondensed-Medium.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 68340,
+          "source_filename": "FDAeonikCondensed-MediumItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-SemiBold.ttf",
+          "style": "SemiBold",
+          "ext": "ttf",
+          "size": 65300,
+          "source_filename": "FDAeonikCondensed-SemiBold.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-SemiBoldItalic.ttf",
+          "style": "SemiBoldItalic",
+          "ext": "ttf",
+          "size": 68408,
+          "source_filename": "FDAeonikCondensed-SemiBoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 64804,
+          "source_filename": "FDAeonikCondensed-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-BoldItalic.ttf",
+          "style": "BoldItalic",
+          "ext": "ttf",
+          "size": 68436,
+          "source_filename": "FDAeonikCondensed-BoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 64544,
+          "source_filename": "FDAeonikCondensed-Black.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 68296,
+          "source_filename": "FDAeonikCondensed-BlackItalic.ttf"
+        }
+      ],
+      "director_review": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
+      "critique": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
+      "nhan_dinh_dao_dien": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
+      "typography_critique": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
+      "zip_filename": "FD-AeonikCondensed.zip",
+      "zip_size_bytes": 1150033,
+      "drive_file_id": "1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
+      "drive_file_size": 1150033,
+      "drive_view_url": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
+      "drive_link": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
+      "drive_url": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
+      "download_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
+      "zip_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb"
+    },
+    {
+      "id": "fdaeonikextended",
+      "name": "FD Aeonik Extended",
+      "family": "FD Aeonik Extended",
+      "designer": "FEDU Type Foundry",
+      "source": "CoType & FEDU Studio",
+      "category": "Sans Serif",
+      "subcategory": "Sans Extended Geometric",
+      "matrix_3d": {
+        "style": "Sans Extended",
+        "mood": "Đẳng cấp & Vững chãi",
+        "use_case": "Branding & Hero Title"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Extended Neo-Geometric",
+        "x_height": "High",
+        "aperture": "Wide"
+      },
+      "vietnamese_support": true,
+      "director_notes": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
+      "weights": [
+        "Air",
+        "AirItalic",
+        "Thin",
+        "ThinItalic",
+        "Light",
+        "LightItalic",
+        "Regular",
+        "RegularItalic",
+        "Medium",
+        "MediumItalic",
+        "SemiBold",
+        "SemiBoldItalic",
+        "Bold",
+        "BoldItalic",
+        "Black",
+        "BlackItalic"
+      ],
+      "sample_text": "Mở rộng tầm nhìn kiến trúc chữ với tỷ lệ bề ngang ấn tượng và hiện đại",
+      "web_font_url": "fonts/FDAeonikExtended-Regular.woff2",
+      "files_count": 16,
+      "files": [
+        {
+          "filename": "FDAeonikExtended-Air.ttf",
+          "style": "Air",
+          "ext": "ttf",
+          "size": 68020,
+          "source_filename": "FDAeonikExtended-Air.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 71972,
+          "source_filename": "FDAeonikExtended-AirItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Thin.ttf",
+          "style": "Thin",
+          "ext": "ttf",
+          "size": 68516,
+          "source_filename": "FDAeonikExtended-Thin.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 70676,
+          "source_filename": "FDAeonikExtended-ThinItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 68560,
+          "source_filename": "FDAeonikExtended-Light.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 70540,
+          "source_filename": "FDAeonikExtended-LightItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 67104,
+          "source_filename": "FDAeonikExtended-Regular.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 70436,
+          "source_filename": "FDAeonikExtended-RegularItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 66876,
+          "source_filename": "FDAeonikExtended-Medium.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 69540,
+          "source_filename": "FDAeonikExtended-MediumItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-SemiBold.ttf",
+          "style": "SemiBold",
+          "ext": "ttf",
+          "size": 67004,
+          "source_filename": "FDAeonikExtended-SemiBold.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-SemiBoldItalic.ttf",
+          "style": "SemiBoldItalic",
+          "ext": "ttf",
+          "size": 69340,
+          "source_filename": "FDAeonikExtended-SemiBoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 67012,
+          "source_filename": "FDAeonikExtended-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-BoldItalic.ttf",
+          "style": "BoldItalic",
+          "ext": "ttf",
+          "size": 69136,
+          "source_filename": "FDAeonikExtended-BoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 67252,
+          "source_filename": "FDAeonikExtended-Black.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 69240,
+          "source_filename": "FDAeonikExtended-BlackItalic.ttf"
+        }
+      ],
+      "director_review": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
+      "critique": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
+      "nhan_dinh_dao_dien": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
+      "typography_critique": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
+      "zip_filename": "FD-AeonikExtended.zip",
+      "zip_size_bytes": 1168310,
+      "drive_file_id": "1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
+      "drive_file_size": 1168310,
+      "drive_view_url": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
+      "drive_link": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
+      "drive_url": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
+      "download_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
+      "zip_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s"
+    },
+    {
+      "id": "fdaeonikmono",
+      "name": "FD Aeonik Mono",
+      "family": "FD Aeonik Mono",
+      "designer": "FEDU Type Foundry",
+      "source": "CoType & FEDU Studio",
+      "category": "Monospace",
+      "subcategory": "Tech Monospace",
+      "matrix_3d": {
+        "style": "Monospace",
+        "mood": "Lập trình & Kỹ thuật",
+        "use_case": "Code & Data Visual"
+      },
+      "anatomy": {
+        "contrast": "None",
+        "axis": "Geometric Monospaced",
+        "x_height": "High",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
+      "weights": [
+        "Air",
+        "Thin",
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold",
+        "Black"
+      ],
+      "sample_text": "const system = new HighPrecisionTypographyEngine({ monospace: true, width: 620 });",
+      "web_font_url": "fonts/FDAeonikMono-Regular.woff2",
+      "files_count": 8,
+      "files": [
+        {
+          "filename": "FDAeonikMono-Air.ttf",
+          "style": "Air",
+          "ext": "ttf",
+          "size": 43804,
+          "source_filename": "FDAeonikMono-Air.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Thin.ttf",
+          "style": "Thin",
+          "ext": "ttf",
+          "size": 44020,
+          "source_filename": "FDAeonikMono-Thin.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 44008,
+          "source_filename": "FDAeonikMono-Light.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 43748,
+          "source_filename": "FDAeonikMono-Regular.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 42284,
+          "source_filename": "FDAeonikMono-Medium.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-SemiBold.ttf",
+          "style": "SemiBold",
+          "ext": "ttf",
+          "size": 42544,
+          "source_filename": "FDAeonikMono-SemiBold.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 42284,
+          "source_filename": "FDAeonikMono-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 42188,
+          "source_filename": "FDAeonikMono-Black.ttf"
+        }
+      ],
+      "director_review": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
+      "critique": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
+      "nhan_dinh_dao_dien": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
+      "typography_critique": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
+      "zip_filename": "FD-AeonikMono.zip",
+      "zip_size_bytes": 432664,
+      "drive_file_id": "1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
+      "drive_file_size": 432664,
+      "drive_view_url": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
+      "drive_link": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
+      "drive_url": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
+      "download_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
+      "zip_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2"
+    },
+    {
+      "id": "fdaeonikfono",
+      "name": "FD Aeonik Fono",
+      "family": "FD Aeonik Fono",
+      "designer": "FEDU Type Foundry",
+      "source": "CoType & FEDU Studio",
+      "category": "Sans Serif",
+      "subcategory": "Tech Semi-Monospace",
+      "matrix_3d": {
+        "style": "Tech Grotesque",
+        "mood": "Kỹ thuật số & Tương lai",
+        "use_case": "Display & Interface"
+      },
+      "anatomy": {
+        "contrast": "Low",
+        "axis": "Hybrid Tech Grotesque",
+        "x_height": "High",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "director_notes": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
+      "weights": [
+        "Air",
+        "Thin",
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold",
+        "Black"
+      ],
+      "sample_text": "Hệ thống tổng hợp tín hiệu âm thanh và điều chế tần số sóng kỹ thuật số",
+      "web_font_url": "fonts/FDAeonikFono-Regular.woff2",
+      "files_count": 8,
+      "files": [
+        {
+          "filename": "FDAeonikFono-Air.ttf",
+          "style": "Air",
+          "ext": "ttf",
+          "size": 65732,
+          "source_filename": "FDAeonikFono-Air.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Thin.ttf",
+          "style": "Thin",
+          "ext": "ttf",
+          "size": 66076,
+          "source_filename": "FDAeonikFono-Thin.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Light.ttf",
+          "style": "Light",
+          "ext": "ttf",
+          "size": 66172,
+          "source_filename": "FDAeonikFono-Light.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Regular.ttf",
+          "style": "Regular",
+          "ext": "ttf",
+          "size": 65088,
+          "source_filename": "FDAeonikFono-Regular.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Medium.ttf",
+          "style": "Medium",
+          "ext": "ttf",
+          "size": 64280,
+          "source_filename": "FDAeonikFono-Medium.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-SemiBold.ttf",
+          "style": "SemiBold",
+          "ext": "ttf",
+          "size": 64404,
+          "source_filename": "FDAeonikFono-SemiBold.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Bold.ttf",
+          "style": "Bold",
+          "ext": "ttf",
+          "size": 63788,
+          "source_filename": "FDAeonikFono-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 63916,
+          "source_filename": "FDAeonikFono-Black.ttf"
+        }
+      ],
+      "director_review": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
+      "critique": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
+      "nhan_dinh_dao_dien": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
+      "typography_critique": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
+      "zip_filename": "FD-AeonikFono.zip",
+      "zip_size_bytes": 552235,
+      "drive_file_id": "1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
+      "drive_file_size": 552235,
+      "drive_view_url": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
+      "drive_download_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
+      "drive_link": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
+      "drive_url": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
+      "download_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
+      "zip_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB"
     }
   ],
   "pdf_curated_catalog": [
