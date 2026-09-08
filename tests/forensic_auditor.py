@@ -4,7 +4,7 @@
 FEDU Quality Auditor — Master Forensic & Verification Suite
 Author: FEDU Quality Auditor (Opus Autonomous Team)
 Role: Comprehensive forensic verification of font renaming, metadata sanitization,
-      macOS installation, Google Drive links, and FontHub catalog integrity.
+      macOS installation, Google Drive links, and FEDU Font (font.fedu.vn) catalog integrity.
 """
 
 import os
@@ -314,7 +314,7 @@ class ForensicAuditor:
 
     def audit_fonthub_catalog(self):
         print('\n' + '='*60)
-        print('▶ [AUDIT 4] FontHub Web Interface & Catalog Data Audit')
+        print('▶ [AUDIT 4] FEDU Font (font.fedu.vn) Web Interface & Catalog Data Audit')
         print('='*60)
 
         if not CATALOG_PATH.exists():

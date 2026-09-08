@@ -38,7 +38,7 @@ REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 CHROME_PATH = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-LIVE_URL = 'https://fonthub.fedu.vn'
+LIVE_URL = os.environ.get('LIVE_URL', 'https://font.fedu.vn')
 
 TEST_TARGET_FONTS = ['FD Gilroy', 'FD Aeonik', 'GR Sectra']
 
@@ -409,7 +409,7 @@ class WeightWaterfallAuditor:
         page.close()
 
     def audit_live_production(self, browser):
-        suite = "Live Production (fonthub.fedu.vn)"
+        suite = "Live Production (font.fedu.vn)"
         print(f"\n[SUITE] {suite}")
         try:
             ctx = ssl.create_default_context()

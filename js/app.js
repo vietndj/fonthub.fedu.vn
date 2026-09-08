@@ -363,7 +363,7 @@
    */
   function getFavorites() {
     try {
-      var favs = localStorage.getItem('fonthub_favorites');
+      var favs = localStorage.getItem('fedu_font_favorites') || localStorage.getItem('fonthub_favorites');
       return favs ? JSON.parse(favs) : [];
     } catch (e) {
       return [];
@@ -387,6 +387,7 @@
         favs.splice(idx, 1);
         isFav = false;
       }
+      localStorage.setItem('fedu_font_favorites', JSON.stringify(favs));
       localStorage.setItem('fonthub_favorites', JSON.stringify(favs));
       updateFacetCountBadges();
       if (App.activeFilters && App.activeFilters.category === 'favorites') {
@@ -398,71 +399,213 @@
     }
   }
 
+  // In-memory dynamic font face cache to avoid duplicate network fetches
+  var loadedDynamicFaces = new Set();
+  var dynamicFacePromises = new Map();
+
+  function loadVariantFontFace(fontObj, resolved, previewElement) {
+    if (!resolved || !resolved.matchedFilename || typeof FontFace === 'undefined' || typeof document === 'undefined') {
+      return Promise.resolve(null);
+    }
+
+    var fontUrl = 'fonts/' + resolved.matchedFilename;
+    var ext = resolved.matchedFilename.split('.').pop().toLowerCase();
+    var formatSpec = ext === 'woff2' ? " format('woff2')" : (ext === 'otf' ? " format('opentype')" : " format('truetype')");
+    var fontSource = 'url("' + fontUrl + '")' + formatSpec;
+
+    var family = (fontObj && (fontObj.family || fontObj.name)) || 'sans-serif';
+    var specificFamily = resolved.specificFamily || resolved.matchedFilename.replace(/\.[^.]+$/, '');
+
+    var cacheKey = resolved.matchedFilename + '__' + resolved.fontWeight + '__' + resolved.fontStyle;
+    if (loadedDynamicFaces.has(cacheKey)) {
+      return Promise.resolve(null);
+    }
+    if (dynamicFacePromises.has(cacheKey)) {
+      return dynamicFacePromises.get(cacheKey);
+    }
+
+    var familiesToRegister = new Set([family, specificFamily]);
+    if (family.startsWith('GR ')) {
+      familiesToRegister.add(family.replace(/^GR /, 'GT '));
+      familiesToRegister.add(family.replace(/\s+/g, ''));
+    } else if (family.startsWith('GT ')) {
+      familiesToRegister.add(family.replace(/^GT /, 'GR '));
+      familiesToRegister.add(family.replace(/\s+/g, ''));
+    }
+    if (fontObj && fontObj.name) {
+      familiesToRegister.add(fontObj.name);
+      familiesToRegister.add(fontObj.name.replace(/\s+/g, ''));
+    }
+
+    var loadPromise = (async function () {
+      try {
+        var promises = [];
+        familiesToRegister.forEach(function (famName) {
+          try {
+            var face = new FontFace(famName, fontSource, {
+              weight: String(resolved.fontWeight || '400'),
+              style: resolved.fontStyle || 'normal',
+              display: 'swap'
+            });
+            document.fonts.add(face);
+            promises.push(face.load());
+          } catch (e) {}
+        });
+
+        await Promise.all(promises);
+        loadedDynamicFaces.add(cacheKey);
+
+        if (previewElement) {
+          previewElement.style.fontFamily = resolved.fontFamily;
+          previewElement.style.fontWeight = resolved.fontWeight;
+          previewElement.style.fontStyle = resolved.fontStyle;
+        }
+      } catch (err) {
+        console.warn('[FontHub] Failed dynamic font load for ' + resolved.matchedFilename + ':', err);
+      } finally {
+        dynamicFacePromises.delete(cacheKey);
+      }
+    })();
+
+    dynamicFacePromises.set(cacheKey, loadPromise);
+    return loadPromise;
+  }
+
   /**
    * Resolves a human-readable font variant (e.g. 'Light', 'Book', 'BoldItalic', 'ExtraBold')
    * into valid CSS font-weight, font-style, and family fallbacks matching OS & webfont files.
    */
   function resolveVariantStyle(family, variantStr, category, files) {
     var raw = String(variantStr || 'Regular').trim();
-    var lower = raw.toLowerCase();
+    var lower = raw.toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
 
-    // 1. Determine fontStyle
+    // 1. Determine fontStyle (italic vs normal)
     var isItalic = lower.includes('italic') || lower.includes('oblique') || lower.includes('slant');
     var fontStyle = isItalic ? 'italic' : 'normal';
 
-    // 2. Determine numeric fontWeight
+    // Base token without italic for weight matching
+    var baseToken = lower.replace(/\b(italic|oblique|slant)\b/g, '').trim();
+
+    // 2. Numeric weight lookup
     var fontWeight = '400';
-    if (lower.includes('thin') || lower.includes('hairline') || lower === '100' || lower === '100italic' || lower.includes('air')) {
+    if (/\b(thin|hairline|100|air)\b/.test(baseToken)) {
       fontWeight = '100';
-    } else if (lower.includes('extralight') || lower.includes('ultralight') || lower.includes('extra light') || lower.includes('ultra light') || lower === '200' || lower === '200italic') {
+    } else if (/\b(ultralight|extra light|ultra light|extralight|200)\b/.test(baseToken)) {
       fontWeight = '200';
-    } else if (lower.includes('light') || lower === '300' || lower === '300italic') {
+    } else if (/\b(light|300)\b/.test(baseToken)) {
       fontWeight = '300';
-    } else if (lower.includes('medium') || lower === '500' || lower === '500italic') {
+    } else if (/\b(medium|500)\b/.test(baseToken)) {
       fontWeight = '500';
-    } else if (lower.includes('semibold') || lower.includes('demibold') || lower.includes('semi bold') || lower.includes('demi bold') || lower === '600' || lower === '600italic') {
+    } else if (/\b(semibold|semi bold|demibold|demi bold|600)\b/.test(baseToken)) {
       fontWeight = '600';
-    } else if (lower.includes('extrabold') || lower.includes('ultrabold') || lower.includes('heavy') || lower.includes('extra bold') || lower.includes('ultra bold') || lower === '800' || lower === '800italic') {
+    } else if (/\b(ultrabold|ultra bold|extrabold|extra bold|super|heavy|800)\b/.test(baseToken)) {
       fontWeight = '800';
-    } else if (lower.includes('black') || lower.includes('poster') || lower.includes('ultra') || lower === '900' || lower === '900italic') {
+    } else if (/\b(black|poster|ultra|900)\b/.test(baseToken)) {
       fontWeight = '900';
-    } else if (lower.includes('bold') || lower === '700' || lower === '700italic') {
+    } else if (/\b(bold|700)\b/.test(baseToken)) {
       fontWeight = '700';
-    } else if (lower.includes('book') || lower.includes('regular') || lower.includes('normal') || lower.includes('roman') || lower === '400') {
+    } else if (/\b(book|regular|normal|roman|400)\b/.test(baseToken) || baseToken === '') {
       fontWeight = '400';
     }
 
     // 3. Fallback stack
     var fallbackStack = App.typeTester ? App.typeTester.getFallbackStack(category) : 'sans-serif';
 
-    // 4. Style naming for OS Font Matching
+    // 4. Match file in files array with high accuracy
+    var matchedFile = null;
+    if (Array.isArray(files) && files.length > 0) {
+      var bestScore = -1;
+      for (var i = 0; i < files.length; i++) {
+        var f = files[i];
+        if (!f || !f.filename) continue;
+        var fStyle = String(f.style || '').toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+        var fName = String(f.filename || '').toLowerCase();
+        var fItalic = Boolean(f.is_italic) || fStyle.includes('italic') || fName.includes('italic');
+
+        var score = 0;
+        // Prefer clean non-double extension files
+        if (!f.filename.includes('.ttf.ttf') && !f.filename.includes('.otf.otf')) {
+          score += 20;
+        }
+
+        // Exact style match
+        if (fStyle === lower) {
+          score += 100;
+        } else if (fStyle.replace(/\s+/g, '') === lower.replace(/\s+/g, '')) {
+          score += 90;
+        }
+
+        // Exact weight match
+        var fW = parseInt(f.weight, 10);
+        if (fW && String(fW) === fontWeight) {
+          score += 30;
+        }
+
+        // Italic match
+        if (fItalic === isItalic) {
+          score += 20;
+        } else {
+          score -= 50;
+        }
+
+        // Disambiguate light vs ultralight
+        if (baseToken === 'light' && (fStyle.includes('ultra') || fStyle.includes('extra') || fName.includes('ultra') || fName.includes('extra'))) {
+          score -= 60;
+        }
+        // Disambiguate bold vs ultrabold/semibold
+        if (baseToken === 'bold' && (fStyle.includes('ultra') || fStyle.includes('extra') || fStyle.includes('semi') || fName.includes('ultra') || fName.includes('extra') || fName.includes('semi'))) {
+          score -= 60;
+        }
+        // Disambiguate regular vs book
+        if (baseToken === 'regular' && (fStyle.includes('book') && !lower.includes('book'))) {
+          score -= 10;
+        }
+        if (baseToken === 'book' && fStyle.includes('book')) {
+          score += 40;
+        }
+
+        if (score > bestScore) {
+          bestScore = score;
+          matchedFile = f;
+        }
+      }
+    }
+
+    if (matchedFile) {
+      if (matchedFile.weight && parseInt(matchedFile.weight, 10) > 0) {
+        var mw = parseInt(matchedFile.weight, 10);
+        if (baseToken.includes('ultrabold') && mw === 400) {
+          fontWeight = '800';
+        } else {
+          fontWeight = String(mw);
+        }
+      }
+    }
+
+    var cleanFamily = family.replace(/['"]/g, '').trim();
     var cleanStyle = raw.replace(/[_-]/g, ' ').trim();
     var hyphenStyle = raw.replace(/\s+/g, '-').trim();
 
-    var cleanFamily = family.replace(/['"]/g, '').trim();
-    var candidates = [
-      "'" + cleanFamily + "'",
-      "'" + cleanFamily.replace(/\s+/g, '') + "'",
-      "'" + cleanFamily + " " + cleanStyle + "'",
-      "'" + cleanFamily + "-" + hyphenStyle + "'",
-      "'" + cleanFamily + " " + raw + "'",
-      "'" + cleanFamily + "-" + raw + "'"
-    ];
+    var specificFamily = matchedFile ? matchedFile.filename.replace(/\.(woff2|otf|ttf)$/i, '') : '';
 
-    // Check if matching file exists in font.files
-    var matchedFilename = null;
-    if (Array.isArray(files) && files.length > 0) {
-      var found = files.find(function (f) {
-        if (!f) return false;
-        var fStyle = String(f.style || '').toLowerCase();
-        var fName = String(f.filename || '').toLowerCase();
-        return fStyle === lower || fName.includes(lower) || fName.includes(hyphenStyle.toLowerCase());
-      });
-      if (found && found.filename) {
-        matchedFilename = found.filename;
-        candidates.push("'" + matchedFilename.replace(/\.(ttf|otf|woff2)$/i, '') + "'");
-      }
+    var candidates = [];
+    if (specificFamily) {
+      candidates.push("'" + specificFamily + "'");
     }
+    candidates.push("'" + cleanFamily + "'");
+    candidates.push("'" + cleanFamily.replace(/\s+/g, '') + "'");
+
+    // Add GT/GR aliases
+    if (cleanFamily.startsWith('GR ')) {
+      candidates.push("'" + cleanFamily.replace(/^GR /, 'GT ') + "'");
+      candidates.push("'" + cleanFamily.replace(/^GR /, 'GT ').replace(/\s+/g, '') + "'");
+    } else if (cleanFamily.startsWith('GT ')) {
+      candidates.push("'" + cleanFamily.replace(/^GT /, 'GR ') + "'");
+      candidates.push("'" + cleanFamily.replace(/^GT /, 'GR ').replace(/\s+/g, '') + "'");
+    }
+
+    candidates.push("'" + cleanFamily + " " + cleanStyle + "'");
+    candidates.push("'" + cleanFamily + "-" + hyphenStyle + "'");
 
     var combinedFamily = candidates.join(', ') + ', ' + fallbackStack;
 
@@ -471,7 +614,8 @@
       fontWeight: fontWeight,
       fontStyle: fontStyle,
       fontFamily: combinedFamily,
-      matchedFilename: matchedFilename
+      matchedFilename: matchedFile ? matchedFile.filename : null,
+      specificFamily: specificFamily
     };
   }
 

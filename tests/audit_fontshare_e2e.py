@@ -53,13 +53,13 @@ def audit_suite():
         with urllib.request.urlopen(req, context=ctx, timeout=10) as resp:
             http_status = resp.status
             content = resp.read().decode('utf-8', errors='ignore')
-            has_refresh = 'http-equiv="refresh"' in content and 'fonthub.fedu.vn' in content
-            has_js = 'location.replace' in content and 'fonthub.fedu.vn' in content
-            has_canon = 'rel="canonical"' in content and 'fonthub.fedu.vn' in content
+            has_refresh = 'http-equiv="refresh"' in content and ('font.fedu.vn' in content or 'fonthub.fedu.vn' in content)
+            has_js = 'location.replace' in content and ('font.fedu.vn' in content or 'fonthub.fedu.vn' in content)
+            has_canon = 'rel="canonical"' in content and ('font.fedu.vn' in content or 'fonthub.fedu.vn' in content)
             record('Redirect', 'HTTP Status 200 with instant redirect markup', http_status == 200, f'HTTP {http_status}')
-            record('Redirect', 'Meta Refresh to fonthub.fedu.vn/#catalog', has_refresh, 'Meta refresh present')
-            record('Redirect', 'JS window.location.replace to fonthub.fedu.vn/#catalog', has_js, 'JS replace present')
-            record('Redirect', 'Canonical link points to fonthub.fedu.vn/#catalog', has_canon, 'Canonical link present')
+            record('Redirect', 'Meta Refresh to font.fedu.vn/#catalog', has_refresh, 'Meta refresh present')
+            record('Redirect', 'JS window.location.replace to font.fedu.vn/#catalog', has_js, 'JS replace present')
+            record('Redirect', 'Canonical link points to font.fedu.vn/#catalog', has_canon, 'Canonical link present')
     except Exception as e:
         record('Redirect', 'Live HTTP GET https://fedu.vn/font/', False, str(e))
 
@@ -76,7 +76,8 @@ def audit_suite():
             r_page = browser.new_page()
             r_page.goto('https://fedu.vn/font/', wait_until='networkidle', timeout=15000)
             final_url = r_page.url
-            record('Redirect', 'Headless Chrome resolves fedu.vn/font/ to fonthub.fedu.vn', 'fonthub.fedu.vn' in final_url, f'Landed at: {final_url}')
+            is_redirected = 'font.fedu.vn' in final_url or 'fonthub.fedu.vn' in final_url
+            record('Redirect', 'Headless Chrome resolves fedu.vn/font/ to font.fedu.vn', is_redirected, f'Landed at: {final_url}')
             r_page.close()
         except Exception as e:
             record('Redirect', 'Headless Chrome resolves fedu.vn/font/', False, str(e))
@@ -202,24 +203,25 @@ def audit_suite():
         finally:
             mob_page.close()
 
-        # 4. Live Production fonthub.fedu.vn Verification
-        print('[SUITE 4] Live Production Verification (https://fonthub.fedu.vn)')
+        # 4. Live Production Verification
+        live_base = os.environ.get('LIVE_BASE_URL', 'https://font.fedu.vn')
+        print(f'[SUITE 4] Live Production Verification ({live_base})')
         live_page = browser.new_page(viewport={'width': 1440, 'height': 900})
         live_console = []
         live_page.on('console', lambda msg: live_console.append(msg.text) if msg.type == 'error' else None)
         live_page.on('pageerror', lambda err: live_console.append(str(err)))
 
         try:
-            live_page.goto('https://fonthub.fedu.vn/?v=' + str(int(time.time())), wait_until='networkidle', timeout=20000)
+            live_page.goto(f'{live_base}/?v=' + str(int(time.time())), wait_until='networkidle', timeout=20000)
             live_page.wait_for_selector('.font-card', timeout=15000)
             live_card = live_page.locator('.font-card').first
 
             has_live_w = live_card.locator('.card-weight-slider').count() > 0
             has_live_s = live_card.locator('.card-size-slider').count() > 0
             has_live_wf = live_card.locator('[data-action="toggle-card-waterfall"]').count() > 0
-            record('Production Live', 'Live fonthub.fedu.vn renders Fontshare Weight Slider', has_live_w)
-            record('Production Live', 'Live fonthub.fedu.vn renders Fontshare Size Slider', has_live_s)
-            record('Production Live', 'Live fonthub.fedu.vn renders Waterfall Drawer Toggle', has_live_wf)
+            record('Production Live', f'Live {live_base} renders Fontshare Weight Slider', has_live_w)
+            record('Production Live', f'Live {live_base} renders Fontshare Size Slider', has_live_s)
+            record('Production Live', f'Live {live_base} renders Waterfall Drawer Toggle', has_live_wf)
 
             # Live Weight Slider Test
             if has_live_w:

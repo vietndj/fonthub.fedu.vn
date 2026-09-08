@@ -363,7 +363,7 @@
    */
   function getFavorites() {
     try {
-      var favs = localStorage.getItem('fonthub_favorites');
+      var favs = localStorage.getItem('fedu_font_favorites') || localStorage.getItem('fonthub_favorites');
       return favs ? JSON.parse(favs) : [];
     } catch (e) {
       return [];
@@ -387,6 +387,7 @@
         favs.splice(idx, 1);
         isFav = false;
       }
+      localStorage.setItem('fedu_font_favorites', JSON.stringify(favs));
       localStorage.setItem('fonthub_favorites', JSON.stringify(favs));
       updateFacetCountBadges();
       if (App.activeFilters && App.activeFilters.category === 'favorites') {

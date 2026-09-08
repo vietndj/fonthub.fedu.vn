@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 tests/live_simulation_click.py
-Simulates real user clicks on live https://fonthub.fedu.vn
+Simulates real user clicks on live https://font.fedu.vn
 Inspects download button URLs, downloads files, and analyzes zip contents.
 """
 
@@ -38,8 +38,9 @@ def run_live_click_audit():
         )
         page = context.new_page()
 
-        print("🌐 [AUDIT] Navigating to https://fonthub.fedu.vn ...")
-        page.goto("https://fonthub.fedu.vn", wait_until="networkidle", timeout=30000)
+        live_base = os.environ.get("LIVE_BASE_URL", "https://font.fedu.vn")
+        print(f"🌐 [AUDIT] Navigating to {live_base} ...")
+        page.goto(live_base, wait_until="networkidle", timeout=30000)
         page.wait_for_timeout(2000)
 
         # Inspect all font cards currently rendered
@@ -79,7 +80,7 @@ def run_live_click_audit():
             # Test downloading or resolving URL
             resolved_url = href
             if href and not href.startswith("http"):
-                resolved_url = f"https://fonthub.fedu.vn/{href.lstrip('/')}"
+                resolved_url = f"{live_base}/{href.lstrip('/')}"
 
             item_result = {
                 "font_name": font_name,

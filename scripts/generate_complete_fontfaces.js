@@ -156,7 +156,7 @@ cotypeDefs.forEach(cd => {
 let css = fs.readFileSync(stylePath, 'utf8');
 
 // Replace Core typefaces section
-const coreStartMarker = '/* ==========================================================================\n   FEDU FONTHUB — CORE TYPEFACES & LOCAL WEBFONTS (@font-face)\n   ========================================================================== */';
+const coreStartMarker = '/* ==========================================================================\n   FEDU FONT — CORE TYPEFACES & LOCAL WEBFONTS (@font-face)\n   ========================================================================== */';
 const coreEndMarker = '/* 9. Curated Pairs 3-8 Webfonts */';
 
 const coreIdx = css.indexOf(coreStartMarker);

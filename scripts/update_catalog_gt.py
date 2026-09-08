@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FontHub Catalog Updater: 19 GR Families & FD Integration
+FEDU Font (font.fedu.vn) Catalog Updater: 19 GR Families & FD Integration
 Updates data/catalog.json with:
 1. All 19 GR Font families with rich Art Director critiques, anatomy, and direct Google Drive download links.
 2. Category 'GT Font' tag and is_gt = True.
@@ -318,7 +318,7 @@ def main():
         json.dump(catalog, f, indent=2, ensure_ascii=False)
 
     print(f"✔ Đã cập nhật thành công {len(new_gr_entries)} họ font GR vào {CATALOG_PATH}!")
-    print(f"  Tổng số fonts hiện tại trong FontHub: {len(catalog['fonts'])}")
+    print(f"  Tổng số fonts hiện tại trong FEDU Font (font.fedu.vn): {len(catalog['fonts'])}")
 
 if __name__ == "__main__":
     main()

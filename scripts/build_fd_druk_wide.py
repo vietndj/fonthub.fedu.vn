@@ -22,7 +22,7 @@ Engine Standards:
 6. OS/2 CodePage bit 18 (Vietnamese 1258) & bit 29 (Latin Extended Additional).
 7. Dual-Format Export: TTF and WOFF2.
 8. Auto installation to ~/Library/Fonts, packaging to dist/zips/FD/FD-DrukWide.zip.
-9. Fonthub catalog.json & fonts.json integration + complete @font-face generation.
+9. FEDU Font (font.fedu.vn) catalog.json & fonts.json integration + complete @font-face generation.
 """
 
 import os
@@ -600,7 +600,7 @@ def process_single_style(cfg: dict) -> dict:
         9: "Berton Hasebe",
         11: "https://commercialtype.com",
         12: "http://bertonhasebe.com",
-        13: "Vietnamese localized by FEDU Type Studio for Fonthub.",
+        13: "Vietnamese localized by FEDU Type Studio for FEDU Font (font.fedu.vn).",
         16: family_name,
         17: subfamily,
     }

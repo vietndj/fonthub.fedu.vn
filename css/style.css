@@ -1,8 +1,10 @@
 /* ==========================================================================
-   fedu.vn/font Interactive Type Hub — Master Stylesheet
+   font.fedu.vn — FEDU Font Interactive Type Hub Master Stylesheet
    Aesthetic: Editorial Brutalist / Swiss Modern Type Foundry (Grilli / Pangram)
    Architecture: Pure CSS3, Tri-Theme Custom Properties, Single-Variable Batching
    ========================================================================== */
+
+@import url('gr-fonts.css');
 
 /* --------------------------------------------------------------------------
    1. Root Variables & Typography Stacks
@@ -236,6 +238,7 @@ a {
   text-decoration: none;
 }
 
+.fedu-font-logo-icon,
 .fonthub-logo-icon {
   width: 32px;
   height: 32px;
@@ -244,6 +247,7 @@ a {
   flex-shrink: 0;
   transition: transform var(--trans-fast);
 }
+.brand-logo-wrap:hover .fedu-font-logo-icon,
 .brand-logo-wrap:hover .fonthub-logo-icon {
   transform: scale(1.05);
 }
@@ -2639,7 +2643,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* ==========================================================================
-   FEDU FONTHUB — CORE TYPEFACES & LOCAL WEBFONTS (@font-face)
+   FEDU FONT — CORE TYPEFACES & LOCAL WEBFONTS (@font-face)
    ========================================================================== */
 
 /* ==========================================================================
@@ -3815,34 +3819,6 @@ input[type="range"]::-moz-range-thumb {
   font-family: 'FDAvo';
   src: url('../fonts/FDAvo-Regular.ttf') format('truetype'),
        url('fonts/FDAvo-Regular.ttf') format('truetype');
-  font-weight: 400 900;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FDUltra';
-  src: url('../fonts/FDUltraStandard-Regular.ttf') format('truetype'),
-       url('fonts/FDUltraStandard-Regular.ttf') format('truetype');
-  font-weight: 400 900;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FDWalsheim Pro';
-  src: url('../fonts/FDWalsheimPro-Regular.ttf') format('truetype'),
-       url('fonts/FDWalsheimPro-Regular.ttf') format('truetype');
-  font-weight: 400 900;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FDAlpina';
-  src: url('../fonts/FDAlpinaFine-Regular.ttf') format('truetype'),
-       url('fonts/FDAlpinaFine-Regular.ttf') format('truetype');
-  font-weight: 400 900;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FDSuperDisplay';
-  src: url('../fonts/FDSuperDisplay-Regular.ttf') format('truetype'),
-       url('fonts/FDSuperDisplay-Regular.ttf') format('truetype');
   font-weight: 400 900;
   font-display: swap;
 }

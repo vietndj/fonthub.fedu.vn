@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 scripts/sync_drive_fonts.py
-Google Drive Font Auditor & Synchronization Utility for FONTHUB (fedu.vn/font).
+Google Drive Font Auditor & Synchronization Utility for FEDU Font (font.fedu.vn).
 
 Features:
 - Compares source folder 1UUQAj0QD1k5GM4kspVoRW0T_NDXtAu3E ("font list - 2022")
@@ -56,7 +56,7 @@ def audit_discrepancies():
     in_catalog_not_source = [name for name in catalog_files if name not in source_map]
 
     print("=" * 60)
-    print(" FONTHUB GOOGLE DRIVE AUDIT REPORT")
+    print(" FEDU FONT (font.fedu.vn) GOOGLE DRIVE AUDIT REPORT")
     print("=" * 60)
     print(f"Total source files (1UUQA... / 'font list - 2022'): {len(source_map)}")
     print(f"Total files in catalog.json:                      {len(catalog_files)}")
@@ -76,7 +76,7 @@ def audit_discrepancies():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="FONTHUB Google Drive Font Synchronizer")
+    parser = argparse.ArgumentParser(description="FEDU Font Google Drive Font Synchronizer")
     parser.add_argument("--audit", action="store_true", default=True, help="Run audit comparison")
     parser.add_argument("--dry-run", action="store_true", help="Simulate copying missing files without executing")
     parser.add_argument("--execute", action="store_true", help="Perform live file copy to target folder")

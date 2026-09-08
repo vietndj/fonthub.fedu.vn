@@ -167,7 +167,7 @@ class TestCoTypeWebIntegration(unittest.TestCase):
                 
                 # Check title
                 title = page.title()
-                self.assertTrue("FONTHUB" in title or "FEDU" in title)
+                self.assertTrue("FEDU" in title or "font.fedu.vn" in title)
                 
                 # Find CoType chip
                 chip = page.locator("button.chip-btn:has-text('CoType'), [data-category*='CoType']")

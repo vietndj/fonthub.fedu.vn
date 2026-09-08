@@ -367,7 +367,7 @@ class InfiniteScrollAuditor:
 
 def main():
     parser = argparse.ArgumentParser(description="Audit Fontshare Infinite Scroll E2E")
-    parser.add_argument("--live", action="store_true", help="Audit live production https://fonthub.fedu.vn/#fontshare")
+    parser.add_argument("--live", action="store_true", help="Audit live production https://font.fedu.vn/#fontshare")
     parser.add_argument("--local", action="store_true", default=True, help="Audit local build (default)")
     parser.add_argument("--all", action="store_true", help="Audit both local and live")
     args = parser.parse_args()
@@ -389,7 +389,7 @@ def main():
             server.shutdown()
 
     if args.all or args.live:
-        live_url = "https://fonthub.fedu.vn/#fontshare"
+        live_url = os.environ.get("LIVE_URL", "https://font.fedu.vn/#fontshare")
         auditor = InfiniteScrollAuditor(live_url, is_live=True)
         res = auditor.run_suite()
         overall_results['live'] = res

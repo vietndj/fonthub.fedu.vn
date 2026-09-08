@@ -18,7 +18,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS_JSON_PATH = os.path.join(PROJECT_ROOT, "data/fonts.json")
-LIVE_BASE_URL = "https://fonthub.fedu.vn"
+LIVE_BASE_URL = os.environ.get("LIVE_BASE_URL", "https://font.fedu.vn")
 
 # SSL context for macOS python
 ssl_ctx = ssl.create_default_context()

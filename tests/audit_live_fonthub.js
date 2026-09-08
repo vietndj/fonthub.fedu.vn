@@ -1,6 +1,6 @@
 /**
  * tests/audit_live_fonthub.js
- * Comprehensive Live Online E2E Auditor for https://fonthub.fedu.vn
+ * Comprehensive Live Online E2E Auditor for https://font.fedu.vn
  * 
  * Verifies:
  * 1. 100% of 376 font families:
@@ -19,7 +19,7 @@ const path = require('path');
 
 function fetchUrl(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'FEDU-FontHub-Auditor/2.0' } }, (res) => {
+    https.get(url, { headers: { 'User-Agent': 'FEDU-Font-Auditor/2.0' } }, (res) => {
       let data = '';
       res.on('data', chunk => { data += chunk; });
       res.on('end', () => {
@@ -34,13 +34,13 @@ function fetchUrl(url) {
 }
 
 async function runLiveAudit() {
+  const liveBase = process.env.LIVE_BASE || 'https://font.fedu.vn';
   console.log('============================================================');
-  console.log(' FEDU Font Hub — Live Online Verification Suite');
-  console.log(' Target: https://fonthub.fedu.vn');
+  console.log(' FEDU Font — Live Online Verification Suite');
+  console.log(` Target: ${liveBase}`);
   console.log('============================================================\n');
 
   const timestamp = Date.now();
-  const liveBase = 'https://fonthub.fedu.vn';
   const catalogUrl = `${liveBase}/data/catalog.json?t=${timestamp}`;
   const htmlUrl = `${liveBase}/?t=${timestamp}`;
 
@@ -184,7 +184,7 @@ async function runLiveAudit() {
   console.log('\nFetching live app.js to verify favorites storage & filtering logic...');
   const appJsResp = await fetchUrl(`${liveBase}/app.js?t=${timestamp}`);
   const appJs = appJsResp.body;
-  const hasFavStorage = appJs.includes('fonthub_favorites') &&
+  const hasFavStorage = (appJs.includes('fedu_font_favorites') || appJs.includes('fonthub_favorites')) &&
                         appJs.includes('getFavorites') &&
                         appJs.includes('toggleFontFavorite');
   const hasFavFilter = appJs.includes("App.activeFilters.category === 'favorites'") ||

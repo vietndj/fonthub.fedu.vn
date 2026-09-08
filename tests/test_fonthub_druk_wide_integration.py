@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 tests/test_fonthub_druk_wide_integration.py
-Quality Auditor & Verifier: Fonthub Integration Test Suite for Druk Wide.
+Quality Auditor & Verifier: FEDU Font (font.fedu.vn) Integration Test Suite for Druk Wide.
 
 Audits:
 1. data/catalog.json metadata registration (category, styles, 3D matrix, anatomy, notes)

@@ -43,7 +43,7 @@ STYLES = [
 
 def run_audit():
     print("================================================================================")
-    print("🔍 FEDU FONTHUB — MASTER QUALITY AUDITOR FOR FD DRUK WIDE (COMMERCIAL TYPE)")
+    print("🔍 FEDU FONT (font.fedu.vn) — MASTER QUALITY AUDITOR FOR FD DRUK WIDE")
     print("================================================================================")
     
     report_data = {
@@ -219,7 +219,7 @@ def run_audit():
         draw.text((50, 755), "KIỂM ĐỊNH KỸ THUẬT FEDU TYPE LAB:", fill=(80, 80, 90), font=f_sub)
         draw.text((50, 790), "✔ 134/134 Unicode Coverage (100%)       ✔ Strict Advance Width Invariance (Delta = 0px)", fill=(10, 130, 60), font=f_sub)
         draw.text((50, 825), "✔ GPOS Kerning Parity Inherited           ✔ OS/2 CodePage Bit 18 & Bit 29 Validated", fill=(10, 130, 60), font=f_sub)
-        draw.text((50, 860), "✔ Dual Export TTF & Brotli WOFF2          ✔ Catalog, Fonthub UI & CSS @font-face Integrated", fill=(10, 130, 60), font=f_sub)
+        draw.text((50, 860), "✔ Dual Export TTF & Brotli WOFF2          ✔ Catalog, FEDU Font UI & CSS @font-face Integrated", fill=(10, 130, 60), font=f_sub)
         
         img.save(str(specimen_path))
         print(f"     ✅ Specimen saved: {specimen_path} ({specimen_path.stat().st_size / 1024:.1f} KB)")
