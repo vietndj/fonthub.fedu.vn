@@ -1,16 +1,16 @@
 {
   "target_url": "https://font.fedu.vn",
-  "timestamp": "2026-09-08T13:54:55Z",
+  "timestamp": "2026-09-08T13:57:14Z",
   "total_tests": 31,
-  "passed_tests": 26,
-  "failed_tests": 5,
+  "passed_tests": 31,
+  "failed_tests": 0,
   "console_errors": [],
   "results": [
     {
       "test_num": 1.1,
       "name": "CSS .card-weights-bar flex-wrap is 'wrap'",
-      "passed": false,
-      "details": "Actual flex-wrap: nowrap"
+      "passed": true,
+      "details": "Actual flex-wrap: wrap"
     },
     {
       "test_num": 1.2,
@@ -22,13 +22,13 @@
       "test_num": 1.3,
       "name": "CSS .weight-chip padding is compact (<= 5px top/bottom, <= 10px sides)",
       "passed": true,
-      "details": "Actual padding: 4px 10px"
+      "details": "Actual padding: 3px 8px"
     },
     {
       "test_num": 1.4,
       "name": "Desktop: Multi-style font (16 chips) wraps cleanly in max 2 lines",
       "passed": true,
-      "details": "Bar height: 37.265625px, Chips: 16"
+      "details": "Bar height: 64px, Chips: 16"
     },
     {
       "test_num": 1.5,
@@ -39,8 +39,8 @@
     {
       "test_num": 2.1,
       "name": "No duplicate Studio badge (Dinamo appears exactly once)",
-      "passed": false,
-      "details": "Found 2 Dinamo badge(s) in row"
+      "passed": true,
+      "details": "Found 1 Dinamo badge(s) in row"
     },
     {
       "test_num": 2.2,
@@ -52,13 +52,13 @@
       "test_num": 2.3,
       "name": "Clicking Mood badge 'Massive, Bold & Tuyên ngôn' activates mood filter",
       "passed": true,
-      "details": "Dropdown value: all"
+      "details": "Dropdown value: "
     },
     {
       "test_num": 2.4,
       "name": "Clicking Use-Case badge 'Display & Headline' activates use-case filter",
       "passed": true,
-      "details": "Dropdown value: all"
+      "details": "Dropdown value: "
     },
     {
       "test_num": 2.5,
@@ -69,20 +69,20 @@
     {
       "test_num": 2.6,
       "name": "All badges in .card-badges-row have computed cursor: pointer",
-      "passed": false,
+      "passed": true,
       "details": ""
     },
     {
       "test_num": 3.1,
       "name": "FD Druk Wide slider min is 500 (NOT 100)",
-      "passed": false,
-      "details": "Actual min: 100"
+      "passed": true,
+      "details": "Actual min: 500"
     },
     {
       "test_num": 3.2,
       "name": "FD Druk Wide slider max is 800/900",
       "passed": true,
-      "details": "Actual max: 900"
+      "details": "Actual max: 800"
     },
     {
       "test_num": 3.3,
@@ -111,8 +111,8 @@
     {
       "test_num": 4.2,
       "name": "Waterfall drawer features 2-column split layout (Preview Col + Styles Col)",
-      "passed": false,
-      "details": "Left col: False, Right col: True"
+      "passed": true,
+      "details": "Left col: True, Right col: True"
     },
     {
       "test_num": 4.3,
@@ -136,7 +136,7 @@
       "test_num": 5.1,
       "name": "Catalog has category filter chips",
       "passed": true,
-      "details": "Chips count: 11"
+      "details": "Chips count: 12"
     },
     {
       "test_num": 5.2,
@@ -166,7 +166,7 @@
       "test_num": 5.6,
       "name": "Fontshare view: Category filter pills & options present",
       "passed": true,
-      "details": "Found 13 chips/pills/options"
+      "details": "Found 21 chips/pills/options"
     },
     {
       "test_num": 5.7,

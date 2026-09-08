@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "updated_at": "2026-09-07T15:45:59.000000+00:00",
   "summary": {
-    "total_fonts": 422,
+    "total_fonts": 424,
     "pdf_curated_fonts": 253,
     "drive_files_total": 968,
     "categories_count": 15,
-    "total_families": 422
+    "total_families": 424
   },
   "matrix_taxonomy": {
     "visual_styles": [
@@ -171,6 +171,200 @@
       ],
       "files_count": 8,
       "studio": "Commercial Type"
+    },
+    {
+      "id": "fd-orlando",
+      "name": "FD Orlando",
+      "family": "FD Orlando",
+      "designer": "Berton Hasebe / FEDU Type Studio",
+      "source": "Commercial Type (FEDU Vietnamese Localization)",
+      "foundry": "Commercial Type",
+      "studio": "Commercial Type",
+      "category": "Serif",
+      "subcategory": "Serif Flare Display Sculpture",
+      "is_dinamo": false,
+      "is_klim": false,
+      "is_pangram": false,
+      "is_commercial_type": true,
+      "is_variable": false,
+      "tags": [
+        "Commercial Type",
+        "Serif",
+        "Flare Serif",
+        "Display",
+        "Editorial",
+        "Sculptural",
+        "FEDU Type",
+        "Universal Standard",
+        "VN Ready"
+      ],
+      "matrix_3d": {
+        "style": "Serif Flare Display Sculpture",
+        "mood": "Sang trọng & Quý tộc",
+        "use_case": "Headline & Editorial"
+      },
+      "anatomy": {
+        "contrast": "High",
+        "axis": "Vertical Transitional",
+        "x_height": "Medium (510 UPM)",
+        "aperture": "Open"
+      },
+      "vietnamese_support": true,
+      "vietnamese_status": "Supported (100% - 134/134 glyphs)",
+      "director_notes": "📌 Nguồn gốc: Commercial Type (FEDU Việt Hóa Chuẩn Typographic Engine)\n\nKiệt tác Flare Serif mang phong cách điêu khắc La Mã đương đại của Berton Hasebe. Orlando là sự giao thoa ngoạn mục giữa sự chuẩn mực cổ điển và hình thái hình học hiện đại, với những đường nét loe nhẹ ở đầu ngọn (flare), độ tương phản cao vút và nhịp điệu chữ sắc sảo, hoàn hảo cho tiêu đề xa xỉ phẩm, bìa sách nghệ thuật và bộ nhận diện thương hiệu cao cấp.",
+      "weights": [
+        "Thin",
+        "Thin Italic",
+        "Light",
+        "Light Italic",
+        "Regular",
+        "Italic",
+        "Medium",
+        "Medium Italic",
+        "Bold",
+        "Bold Italic",
+        "Black",
+        "Black Italic",
+        "Fat",
+        "Fat Italic"
+      ],
+      "sample_text": "Nghệ thuật chữ khắc La Mã và vẻ đẹp điêu khắc đương đại",
+      "zip_filename": "FDOrlando.zip",
+      "zip_path": "dist/zips/FD/FDOrlando.zip",
+      "download_url": "dist/zips/FD/FDOrlando.zip",
+      "web_font_url": "fonts/FDOrlando-Regular.woff2",
+      "director_review": "Kiệt tác Flare Serif mang phong cách điêu khắc La Mã đương đại của Berton Hasebe. Orlando là sự giao thoa ngoạn mục giữa sự chuẩn mực cổ điển và hình thái hình học hiện đại, với những đường nét loe nhẹ ở đầu ngọn (flare), độ tương phản cao vút và nhịp điệu chữ sắc sảo, hoàn hảo cho tiêu đề xa xỉ phẩm, bìa sách nghệ thuật và bộ nhận diện thương hiệu cao cấp.",
+      "critique": "Kiệt tác Flare Serif mang phong cách điêu khắc La Mã đương đại của Berton Hasebe. Orlando là sự giao thoa ngoạn mục giữa sự chuẩn mực cổ điển và hình thái hình học hiện đại, với những đường nét loe nhẹ ở đầu ngọn (flare), độ tương phản cao vút và nhịp điệu chữ sắc sảo, hoàn hảo cho tiêu đề xa xỉ phẩm, bìa sách nghệ thuật và bộ nhận diện thương hiệu cao cấp.",
+      "nhan_dinh_dao_dien": "Kiệt tác Flare Serif mang phong cách điêu khắc La Mã đương đại của Berton Hasebe. Orlando là sự giao thoa ngoạn mục giữa sự chuẩn mực cổ điển và hình thái hình học hiện đại, với những đường nét loe nhẹ ở đầu ngọn (flare), độ tương phản cao vút và nhịp điệu chữ sắc sảo, hoàn hảo cho tiêu đề xa xỉ phẩm, bìa sách nghệ thuật và bộ nhận diện thương hiệu cao cấp.",
+      "typography_critique": "Kiệt tác Flare Serif mang phong cách điêu khắc La Mã đương đại của Berton Hasebe. Orlando là sự giao thoa ngoạn mục giữa sự chuẩn mực cổ điển và hình thái hình học hiện đại, với những đường nét loe nhẹ ở đầu ngọn (flare), độ tương phản cao vút và nhịp điệu chữ sắc sảo, hoàn hảo cho tiêu đề xa xỉ phẩm, bìa sách nghệ thuật và bộ nhận diện thương hiệu cao cấp.",
+      "files": [
+        {
+          "filename": "FDOrlando-Thin.woff2",
+          "source_filename": "FDOrlando-Thin.woff2",
+          "style": "Thin",
+          "weight": 100,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 14256
+        },
+        {
+          "filename": "FDOrlando-ThinItalic.woff2",
+          "source_filename": "FDOrlando-ThinItalic.woff2",
+          "style": "Thin Italic",
+          "weight": 100,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 14732
+        },
+        {
+          "filename": "FDOrlando-Light.woff2",
+          "source_filename": "FDOrlando-Light.woff2",
+          "style": "Light",
+          "weight": 300,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 14792
+        },
+        {
+          "filename": "FDOrlando-LightItalic.woff2",
+          "source_filename": "FDOrlando-LightItalic.woff2",
+          "style": "Light Italic",
+          "weight": 300,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 15440
+        },
+        {
+          "filename": "FDOrlando-Regular.woff2",
+          "source_filename": "FDOrlando-Regular.woff2",
+          "style": "Regular",
+          "weight": 400,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 15024
+        },
+        {
+          "filename": "FDOrlando-Italic.woff2",
+          "source_filename": "FDOrlando-Italic.woff2",
+          "style": "Italic",
+          "weight": 400,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 15604
+        },
+        {
+          "filename": "FDOrlando-Medium.woff2",
+          "source_filename": "FDOrlando-Medium.woff2",
+          "style": "Medium",
+          "weight": 500,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 15300
+        },
+        {
+          "filename": "FDOrlando-MediumItalic.woff2",
+          "source_filename": "FDOrlando-MediumItalic.woff2",
+          "style": "Medium Italic",
+          "weight": 500,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 15620
+        },
+        {
+          "filename": "FDOrlando-Bold.woff2",
+          "source_filename": "FDOrlando-Bold.woff2",
+          "style": "Bold",
+          "weight": 700,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 15396
+        },
+        {
+          "filename": "FDOrlando-BoldItalic.woff2",
+          "source_filename": "FDOrlando-BoldItalic.woff2",
+          "style": "Bold Italic",
+          "weight": 700,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 15736
+        },
+        {
+          "filename": "FDOrlando-Black.woff2",
+          "source_filename": "FDOrlando-Black.woff2",
+          "style": "Black",
+          "weight": 900,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 15264
+        },
+        {
+          "filename": "FDOrlando-BlackItalic.woff2",
+          "source_filename": "FDOrlando-BlackItalic.woff2",
+          "style": "Black Italic",
+          "weight": 900,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 15964
+        },
+        {
+          "filename": "FDOrlando-Fat.woff2",
+          "source_filename": "FDOrlando-Fat.woff2",
+          "style": "Fat",
+          "weight": 950,
+          "ext": "woff2",
+          "is_italic": false,
+          "size": 15072
+        },
+        {
+          "filename": "FDOrlando-FatItalic.woff2",
+          "source_filename": "FDOrlando-FatItalic.woff2",
+          "style": "Fat Italic",
+          "weight": 950,
+          "ext": "woff2",
+          "is_italic": true,
+          "size": 15380
+        }
+      ]
     },
     {
       "id": "fd-monument-grotesk",
