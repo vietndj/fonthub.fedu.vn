@@ -54,6 +54,7 @@
       viewMode: 'list',
       category: 'all',
       studio: 'all',
+      usecase: 'all',
       property: 'all',
       personality: 'all',
       pill: 'all',
@@ -99,6 +100,7 @@
     DOM.fsFilterCategory = document.getElementById('fs-filter-category');
     DOM.fsFilterProperty = document.getElementById('fs-filter-property');
     DOM.fsFilterPersonality = document.getElementById('fs-filter-personality');
+    DOM.fsFilterUseCase = document.getElementById('fs-filter-usecase');
     DOM.fsSizeSlider = document.getElementById('fs-size-slider');
     DOM.fsSizeReadout = document.getElementById('fs-size-readout');
     DOM.fsCustomTextInput = document.getElementById('fs-custom-text-input');
@@ -169,6 +171,7 @@
     DOM.countAll = document.getElementById('count-all');
     DOM.countSans = document.getElementById('count-sans');
     DOM.countSerif = document.getElementById('count-serif');
+    DOM.countDisplay = document.getElementById('count-display');
     DOM.countVintage = document.getElementById('count-vintage');
     DOM.countMonoScript = document.getElementById('count-mono-script');
     DOM.countGt = document.getElementById('count-gt');
@@ -635,6 +638,24 @@
   }
 
   /**
+   * Computes the sorted unique list of actual numeric font weights for a font family.
+   */
+  function getFontNumericWeights(family, weights, category, files) {
+    if (!Array.isArray(weights) || weights.length === 0) return [400];
+    var nums = weights.map(function (w) {
+      var res = resolveVariantStyle(family, w, category, files);
+      var nw = parseInt(res.fontWeight, 10);
+      return isNaN(nw) ? 400 : nw;
+    });
+    var unique = [];
+    nums.forEach(function (n) {
+      if (unique.indexOf(n) === -1) unique.push(n);
+    });
+    unique.sort(function (a, b) { return a - b; });
+    return unique.length > 0 ? unique : [400];
+  }
+
+  /**
    * Builds the HTML string for an individual font card.
    */
   function createFontCardHTML(font) {
@@ -647,55 +668,35 @@
       : (font.sample_text || font.name || 'Cộng hòa Xã hội Chủ nghĩa Việt Nam');
 
     var styleBadge = font.matrix_3d && font.matrix_3d.style
-      ? '<span class="badge badge-style">' + escapeHTML(font.matrix_3d.style) + '</span>' : '';
+      ? '<button type="button" class="badge badge-style" data-filter-style="' + escapeHTML(font.matrix_3d.style) + '" title="Lọc phông chữ kiểu dáng ' + escapeHTML(font.matrix_3d.style) + '">' + escapeHTML(font.matrix_3d.style) + '</button>' : '';
     var moodBadge = font.matrix_3d && font.matrix_3d.mood
-      ? '<span class="badge badge-mood">' + escapeHTML(font.matrix_3d.mood) + '</span>' : '';
+      ? '<button type="button" class="badge badge-mood" data-filter-mood="' + escapeHTML(font.matrix_3d.mood) + '" title="Lọc phông chữ Mood: ' + escapeHTML(font.matrix_3d.mood) + '">' + escapeHTML(font.matrix_3d.mood) + '</button>' : '';
     var useBadge = font.matrix_3d && font.matrix_3d.use_case
-      ? '<span class="badge badge-use">' + escapeHTML(font.matrix_3d.use_case) + '</span>' : '';
+      ? '<button type="button" class="badge badge-use" data-filter-usecase="' + escapeHTML(font.matrix_3d.use_case) + '" title="Lọc phông chữ Ứng dụng: ' + escapeHTML(font.matrix_3d.use_case) + '">' + escapeHTML(font.matrix_3d.use_case) + '</button>' : '';
 
     var vnBadge = font.vietnamese_support
-      ? '<span class="badge badge-vn" title="Hỗ trợ đầy đủ Tiếng Việt có dấu">VN Ready</span>'
-      : '<span class="badge" style="opacity: 0.6;">Basic Latin</span>';
+      ? '<button type="button" class="badge badge-vn" data-filter-vn="true" title="Lọc phông chữ hỗ trợ đầy đủ 100% Tiếng Việt có dấu">VN Ready 🇻🇳</button>'
+      : '<span class="badge" style="opacity: 0.6;" title="Chỉ hỗ trợ Latin cơ bản">Basic Latin</span>';
 
     var isGT = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isGTFont)
       ? CatalogLoader.isGTFont(font)
       : (Boolean(font.is_gt) || (Array.isArray(font.tags) && font.tags.indexOf('GT Font') !== -1));
 
-    var gtBadge = isGT
-      ? '<button type="button" class="badge badge-gt" data-category="GT Font" title="Lọc phông chữ GR Font (FEDU)">GT Font</button>'
-      : '';
-
     var isCoType = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isCoTypeFont)
       ? CatalogLoader.isCoTypeFont(font)
       : (Boolean(font.is_cotype) || (Array.isArray(font.tags) && font.tags.indexOf('CoType') !== -1));
-
-    var cotypeBadge = isCoType
-      ? '<button type="button" class="badge badge-cotype" data-category="CoType" title="Lọc phông chữ CoType Foundry (FEDU)">CoType</button>'
-      : '';
 
     var isDinamo = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isDinamoFont)
       ? CatalogLoader.isDinamoFont(font)
       : (Boolean(font.is_dinamo) || (Array.isArray(font.tags) && font.tags.indexOf('Dinamo') !== -1));
 
-    var dinamoBadge = isDinamo
-      ? '<button type="button" class="badge badge-dinamo" data-category="Dinamo" title="Lọc phông chữ Dinamo Typefaces (FEDU)">Dinamo</button>'
-      : '';
-
     var isKlim = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isKlimFont)
       ? CatalogLoader.isKlimFont(font)
       : (Boolean(font.is_klim) || (Array.isArray(font.tags) && font.tags.indexOf('Klim') !== -1));
 
-    var klimBadge = isKlim
-      ? '<button type="button" class="badge badge-klim" data-category="Klim" title="Lọc phông chữ Klim Type Foundry (FEDU)">Klim</button>'
-      : '';
-
     var isPangram = (typeof CatalogLoader !== 'undefined' && CatalogLoader.isPangramFont)
       ? CatalogLoader.isPangramFont(font)
       : (Boolean(font.is_pangram) || (Array.isArray(font.tags) && font.tags.indexOf('Pangram') !== -1));
-
-    var pangramBadge = isPangram
-      ? '<button type="button" class="badge badge-pangram" data-category="Pangram" title="Lọc phông chữ Pangram Pangram (FEDU)">Pangram</button>'
-      : '';
 
     var studioName = font.studio || font.foundry || (isGT ? 'Grilli Type' : (isCoType ? 'CoType Foundry' : (isDinamo ? 'Dinamo' : (isKlim ? 'Klim Type Foundry' : (isPangram ? 'Pangram Pangram' : 'FEDU Type Studio')))));
     var studioBadge = '<button type="button" class="badge badge-studio" data-studio="' + escapeHTML(studioName) + '" title="Gom nhóm các font thuộc studio ' + escapeHTML(studioName) + '">🏢 ' + escapeHTML(studioName) + '</button>';
@@ -726,6 +727,11 @@
 
     var category = font.category || (font.matrix_3d && font.matrix_3d.style) || 'Sans Serif';
 
+    // Collect actual font weights range to prevent false min=100
+    var numericWeights = getFontNumericWeights(font.family || font.name, weights, category, font.files);
+    var minWeight = numericWeights[0];
+    var maxWeight = numericWeights[numericWeights.length - 1];
+
     // Find default weight index (prefer Regular, Book, Medium or first index)
     var defaultWeightIdx = 0;
     for (var wIdx = 0; wIdx < weights.length; wIdx++) {
@@ -738,6 +744,10 @@
     var activeWeight = weights[defaultWeightIdx] || 'Regular';
     var initialResolved = resolveVariantStyle(font.family || font.name, activeWeight, category, font.files);
     var initialNumericWeight = parseInt(initialResolved.fontWeight, 10) || 400;
+    if (initialNumericWeight < minWeight || initialNumericWeight > maxWeight) {
+      initialNumericWeight = minWeight;
+    }
+
     var isVariable = Boolean(font.is_variable) || weightsCount >= 6;
     var currentSize = (DOM.fontSizeSlider ? DOM.fontSizeSlider.value : '36');
 
@@ -803,9 +813,9 @@
       '        <span class="fs-card-cat-badge">' + escapeHTML(category) + '</span>',
       '      </div>',
       '      <div class="card-fs-controls">',
-      '        <div class="fs-slider-control fs-weight-control" title="Kéo để đổi độ dày chữ (Font-Weight)">',
+      '        <div class="fs-slider-control fs-weight-control" title="Kéo để đổi độ dày chữ (Dải thực tế: ' + minWeight + ' - ' + maxWeight + ')">',
       '          <span class="fs-control-label">Weight</span>',
-      '          <input type="range" class="card-weight-slider fs-range-slider" min="100" max="900" step="' + (isVariable ? '10' : '100') + '" value="' + initialNumericWeight + '" aria-label="Độ dày font">',
+      '          <input type="range" class="card-weight-slider fs-range-slider" min="' + minWeight + '" max="' + maxWeight + '" step="' + (isVariable ? '10' : (minWeight === maxWeight ? '10' : '50')) + '" value="' + initialNumericWeight + '" aria-label="Độ dày font">',
       '          <span class="fs-control-val card-weight-val">' + initialNumericWeight + '</span>',
       '        </div>',
       '        <div class="fs-slider-control fs-size-control" title="Kéo để đổi cỡ chữ riêng cho font này">',
@@ -813,7 +823,7 @@
       '          <input type="range" class="card-size-slider fs-range-slider" min="14" max="140" step="1" value="' + currentSize + '" aria-label="Cỡ chữ font">',
       '          <span class="fs-control-val card-size-val">' + currentSize + 'px</span>',
       '        </div>',
-      '        <button type="button" class="card-styles-toggle fs-styles-btn badge" data-action="toggle-card-waterfall" aria-expanded="false" title="Nhấp để bung toàn bộ styles dạng Waterfall">',
+      '        <button type="button" class="card-styles-toggle fs-styles-btn badge" data-action="toggle-card-waterfall" aria-expanded="false" title="Nhấp để bung toàn bộ styles dạng Waterfall 2 cột">',
       '          <span class="fs-styles-count">' + weightsLabel + '</span>',
       '          <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>',
       '        </button>',
@@ -827,11 +837,6 @@
       '    </div>',
       '    <div class="card-badges-row">',
       '      ' + studioBadge,
-      '      ' + gtBadge,
-      '      ' + cotypeBadge,
-      '      ' + dinamoBadge,
-      '      ' + klimBadge,
-      '      ' + pangramBadge,
       '      ' + styleBadge,
       '      ' + moodBadge,
       '      ' + useBadge,
@@ -852,10 +857,30 @@
       '        <span class="fs-waterfall-kicker">WATERFALL SPECIMEN</span>',
       '        <span class="fs-waterfall-subkicker">' + weights.length + ' ' + (weights.length > 1 ? 'Styles' : 'Size Scale') + '</span>',
       '      </div>',
-      '      <span class="fs-waterfall-tip">Bấm vào dòng để áp dụng style trực tiếp vào card</span>',
+      '      <span class="fs-waterfall-tip">Bấm vào dòng bên phải để xem chữ to bên trái biến đổi tức thì 60fps</span>',
       '    </div>',
-      '    <div class="fs-waterfall-rows-list">',
-      '      ' + waterfallRowsHTML,
+      '    <div class="fs-waterfall-split-view">',
+      '      <div class="fs-waterfall-sticky-col fs-waterfall-preview-col waterfall-sticky-col">',
+      '        <div class="fs-waterfall-live-card">',
+      '          <div class="fs-waterfall-live-meta">',
+      '            <div class="fs-waterfall-live-title-group">',
+      '              <span class="fs-waterfall-live-label">LIVE SPECIMEN</span>',
+      '              <span class="fs-waterfall-live-style-label">' + escapeHTML(activeWeight) + '</span>',
+      '            </div>',
+      '            <span class="fs-waterfall-live-weight-val">' + initialNumericWeight + '</span>',
+      '          </div>',
+      '          <div class="fs-waterfall-live-text preview-text-live" contenteditable="true" spellcheck="false" data-family="' + escapeHTML(font.family || font.name) + '" style="font-family: ' + initialResolved.fontFamily + '; font-weight: ' + initialResolved.fontWeight + '; font-style: ' + initialResolved.fontStyle + ';">',
+      '            ' + escapeHTML(currentText),
+      '          </div>',
+      '          <div class="fs-waterfall-live-footer">',
+      '            <span class="fs-waterfall-live-hint">✦ Sticky Preview • Biến đổi 60fps</span>',
+      '            <span class="fs-waterfall-badge-sync">Synced</span>',
+      '          </div>',
+      '        </div>',
+      '      </div>',
+      '      <div class="fs-waterfall-rows-list waterfall-styles-col">',
+      '        ' + waterfallRowsHTML,
+      '      </div>',
       '    </div>',
       '  </div>',
       '  <details class="card-drawer">',
@@ -998,6 +1023,23 @@
         var wVal = card.querySelector('.card-weight-val');
         if (wVal) wVal.textContent = numW;
 
+        // Sync sticky live specimen preview in waterfall drawer
+        var liveText = card.querySelector('.fs-waterfall-live-text');
+        if (liveText) {
+          liveText.style.fontWeight = resolved.fontWeight;
+          liveText.style.fontStyle = resolved.fontStyle;
+          liveText.style.fontFamily = resolved.fontFamily;
+          if (fontObj && fontObj.is_variable) {
+            liveText.style.fontVariationSettings = "'wght' " + numW;
+          } else {
+            liveText.style.fontVariationSettings = 'normal';
+          }
+        }
+        var liveStyleLabel = card.querySelector('.fs-waterfall-live-style-label');
+        if (liveStyleLabel) liveStyleLabel.textContent = weight;
+        var liveWeightVal = card.querySelector('.fs-waterfall-live-weight-val');
+        if (liveWeightVal) liveWeightVal.textContent = numW;
+
         // Highlight matching row in waterfall drawer
         card.querySelectorAll('.card-waterfall-row').forEach(function (r) {
           if (r.getAttribute('data-weight') === weight) {
@@ -1017,7 +1059,7 @@
       });
     });
 
-    // Fontshare Weight Slider on Card (100 to 900)
+    // Fontshare Weight Slider on Card
     DOM.fontGrid.querySelectorAll('.card-weight-slider:not([data-bound])').forEach(function (slider) {
       slider.setAttribute('data-bound', 'true');
       slider.addEventListener('click', function (e) {
@@ -1036,7 +1078,6 @@
         var fontObj = App.allFonts.find(function (f) { return f.id === fontId || (f.family || f.name) === family; });
         var category = card.getAttribute('data-category') || (fontObj && fontObj.category) || 'Sans Serif';
         var files = fontObj ? fontObj.files : [];
-        var weights = fontObj && Array.isArray(fontObj.weights) ? fontObj.weights : [];
         var fallbackStack = App.typeTester ? App.typeTester.getFallbackStack(category) : 'sans-serif';
 
         var preview = card.querySelector('.preview-text');
@@ -1049,6 +1090,20 @@
             preview.style.fontVariationSettings = 'normal';
           }
         }
+
+        // Also update waterfall sticky live specimen preview
+        var liveText = card.querySelector('.fs-waterfall-live-text');
+        if (liveText) {
+          liveText.style.fontWeight = val;
+          liveText.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallbackStack;
+          if (fontObj && fontObj.is_variable) {
+            liveText.style.fontVariationSettings = "'wght' " + val;
+          } else {
+            liveText.style.fontVariationSettings = 'normal';
+          }
+        }
+        var liveWeightVal = card.querySelector('.fs-waterfall-live-weight-val');
+        if (liveWeightVal) liveWeightVal.textContent = val;
 
         if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
           document.fonts.load(val + ' 36px "' + family + '"');
@@ -1083,6 +1138,8 @@
             preview.style.fontStyle = resolved.fontStyle;
             preview.style.fontFamily = resolved.fontFamily;
           }
+          var liveStyleLabel = card.querySelector('.fs-waterfall-live-style-label');
+          if (liveStyleLabel) liveStyleLabel.textContent = closestWeight;
           loadVariantFontFace(fontObj, resolved, preview);
         }
 
@@ -1143,7 +1200,7 @@
       });
     });
 
-    // Card Waterfall Row Click & Apply Button
+    // Card Waterfall Row Click & Apply Button (60fps sync to live preview)
     DOM.fontGrid.querySelectorAll('.card-waterfall-row:not([data-bound])').forEach(function (row) {
       row.setAttribute('data-bound', 'true');
       row.addEventListener('click', function (e) {
@@ -1178,11 +1235,26 @@
             }
             void preview.offsetHeight;
           }
+          var liveText = card.querySelector('.fs-waterfall-live-text');
+          if (liveText) {
+            liveText.style.fontWeight = resolved.fontWeight;
+            liveText.style.fontStyle = resolved.fontStyle;
+            liveText.style.fontFamily = resolved.fontFamily;
+            if (fontObj && fontObj.is_variable) {
+              liveText.style.fontVariationSettings = "'wght' " + (parseInt(resolved.fontWeight, 10) || 400);
+            } else {
+              liveText.style.fontVariationSettings = 'normal';
+            }
+          }
           var numW = parseInt(resolved.fontWeight, 10) || 400;
           var wSlider = card.querySelector('.card-weight-slider');
           if (wSlider) wSlider.value = numW;
           var wVal = card.querySelector('.card-weight-val');
           if (wVal) wVal.textContent = numW;
+          var liveStyleLabel = card.querySelector('.fs-waterfall-live-style-label');
+          if (liveStyleLabel) liveStyleLabel.textContent = weightName;
+          var liveWeightVal = card.querySelector('.fs-waterfall-live-weight-val');
+          if (liveWeightVal) liveWeightVal.textContent = numW;
 
           if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
             document.fonts.load(numW + ' 36px "' + family + '"');
@@ -1226,7 +1298,82 @@
       });
     });
 
-    // GT Font badge filter click
+    // Interactive Card Badges: Studio Filter
+    DOM.fontGrid.querySelectorAll('[data-studio]:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var stName = btn.getAttribute('data-studio');
+        if (!stName) return;
+        App.activeFilters.studio = stName;
+        if (DOM.filterStudio) DOM.filterStudio.value = stName;
+        if (DOM.fsFilterStudio) DOM.fsFilterStudio.value = stName;
+        applyFilters();
+        showToast('Đã lọc theo Studio: ' + stName);
+      });
+    });
+
+    // Interactive Card Badges: Style / Subcategory Filter
+    DOM.fontGrid.querySelectorAll('[data-filter-style]:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var styleVal = btn.getAttribute('data-filter-style');
+        if (!styleVal) return;
+        var matchingChip = document.querySelector('.chip-btn[data-category="' + styleVal + '"]');
+        if (matchingChip) {
+          matchingChip.click();
+        } else {
+          App.activeFilters.searchQuery = styleVal;
+          if (DOM.searchInput) DOM.searchInput.value = styleVal;
+          applyFilters();
+        }
+        showToast('Đã lọc theo kiểu dáng: ' + styleVal);
+      });
+    });
+
+    // Interactive Card Badges: Mood Filter
+    DOM.fontGrid.querySelectorAll('[data-filter-mood]:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var moodVal = btn.getAttribute('data-filter-mood');
+        if (!moodVal) return;
+        App.activeFilters.mood = moodVal;
+        if (DOM.filterMood) DOM.filterMood.value = moodVal;
+        if (DOM.fsFilterPersonality) DOM.fsFilterPersonality.value = moodVal;
+        applyFilters();
+        showToast('Đã lọc theo Mood: ' + moodVal);
+      });
+    });
+
+    // Interactive Card Badges: Use Case Filter
+    DOM.fontGrid.querySelectorAll('[data-filter-usecase]:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var useVal = btn.getAttribute('data-filter-usecase');
+        if (!useVal) return;
+        App.activeFilters.use_case = useVal;
+        if (DOM.filterUseCase) DOM.filterUseCase.value = useVal;
+        if (DOM.fsFilterUseCase) DOM.fsFilterUseCase.value = useVal;
+        applyFilters();
+        showToast('Đã lọc theo Ứng dụng: ' + useVal);
+      });
+    });
+
+    // Interactive Card Badges: VN Ready Filter
+    DOM.fontGrid.querySelectorAll('[data-filter-vn]:not([data-bound])').forEach(function (btn) {
+      btn.setAttribute('data-bound', 'true');
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        App.activeFilters.vietnamese_support = true;
+        applyFilters();
+        showToast('Đang lọc 100% font hỗ trợ Tiếng Việt có dấu 🇻🇳');
+      });
+    });
+
+    // Legacy / Specific Foundry Badges
     DOM.fontGrid.querySelectorAll('.badge-gt:not([data-bound])').forEach(function (btn) {
       btn.setAttribute('data-bound', 'true');
       btn.addEventListener('click', function (e) {
@@ -1241,7 +1388,6 @@
       });
     });
 
-    // CoType badge filter click
     DOM.fontGrid.querySelectorAll('.badge-cotype:not([data-bound])').forEach(function (btn) {
       btn.setAttribute('data-bound', 'true');
       btn.addEventListener('click', function (e) {
@@ -1591,9 +1737,13 @@
     if (DOM.fontshareView) DOM.fontshareView.classList.toggle('hidden', viewName !== 'fontshare');
     if (DOM.pairView) DOM.pairView.classList.toggle('hidden', viewName !== 'pair');
 
-    // Trigger specific view rendering
+    // Trigger specific view rendering with bi-directional filter sync
     if (viewName === 'fontshare') {
+      syncFiltersBetweenViews('catalog');
       renderFontshareView();
+    } else if (viewName === 'catalog') {
+      syncFiltersBetweenViews('fontshare');
+      applyFilters();
     } else if (viewName === 'pair') {
       initPairView();
     }
@@ -1604,6 +1754,58 @@
         history.replaceState(null, '', '#' + viewName);
       }
     } catch (e) { /* ignore */ }
+  }
+
+  /**
+   * Bi-directional filter synchronization between Catalog View and Fontshare View.
+   */
+  function syncFiltersBetweenViews(sourceView) {
+    if (sourceView === 'catalog') {
+      // Sync Catalog filters -> Fontshare controls
+      if (DOM.fsFilterStudio && App.activeFilters.studio) {
+        DOM.fsFilterStudio.value = App.activeFilters.studio;
+        App.fontshareState.studio = App.activeFilters.studio;
+      }
+      if (DOM.fsFilterPersonality && App.activeFilters.mood) {
+        DOM.fsFilterPersonality.value = App.activeFilters.mood;
+        App.fontshareState.personality = App.activeFilters.mood;
+      }
+      if (DOM.fsFilterUseCase && App.activeFilters.use_case) {
+        DOM.fsFilterUseCase.value = App.activeFilters.use_case;
+        App.fontshareState.usecase = App.activeFilters.use_case;
+      }
+      if (DOM.fsFilterCategory && App.activeFilters.category) {
+        var catVal = App.activeFilters.category;
+        if (catVal === 'Sans Serif' || catVal === 'Serif' || catVal === 'Display' || catVal === 'GT Font' || catVal === 'CoType' || catVal === 'Dinamo' || catVal === 'Klim' || catVal === 'Pangram' || catVal === 'all') {
+          DOM.fsFilterCategory.value = catVal;
+          App.fontshareState.category = catVal;
+        }
+      }
+    } else if (sourceView === 'fontshare') {
+      // Sync Fontshare controls -> Catalog filters
+      if (App.fontshareState.studio && DOM.filterStudio) {
+        DOM.filterStudio.value = App.fontshareState.studio;
+        App.activeFilters.studio = App.fontshareState.studio;
+      }
+      if (App.fontshareState.personality && DOM.filterMood) {
+        DOM.filterMood.value = App.fontshareState.personality;
+        App.activeFilters.mood = App.fontshareState.personality;
+      }
+      if (App.fontshareState.usecase && DOM.filterUseCase) {
+        DOM.filterUseCase.value = App.fontshareState.usecase;
+        App.activeFilters.use_case = App.fontshareState.usecase;
+      }
+      if (App.fontshareState.category && App.fontshareState.category !== 'all') {
+        var catChip = document.querySelector('.chip-btn[data-category="' + App.fontshareState.category + '"]');
+        if (catChip) {
+          DOM.categoryChips.forEach(function (c) { c.classList.remove('active'); });
+          catChip.classList.add('active');
+          App.activeFilters.category = App.fontshareState.category;
+        } else {
+          App.activeFilters.category = App.fontshareState.category;
+        }
+      }
+    }
   }
 
   /* ==========================================================================
@@ -1681,6 +1883,11 @@
     }
 
     var fsStudioName = font.studio || font.foundry || 'FEDU Type Studio';
+    var fsNumericWeights = getFontNumericWeights(family, weights, fallbackCategory, font.files);
+    var fsMinWeight = fsNumericWeights[0];
+    var fsMaxWeight = fsNumericWeights[fsNumericWeights.length - 1];
+    var fsInitialNumericWeight = fsNumericWeights.indexOf(400) !== -1 ? 400 : fsMinWeight;
+
     return [
       '<article class="fontshare-card fs-list-item" data-family="' + escapeHTML(family) + '" data-font-id="' + escapeHTML(font.id) + '" data-studio="' + escapeHTML(fsStudioName) + '">',
       '  <div class="fs-item-meta-top">',
@@ -1701,14 +1908,36 @@
       '    </div>',
       '  </div>',
       '  <div class="fontshare-waterfall fs-waterfall-drawer card-waterfall-drawer" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; display: none;">',
-      waterfallRowsHTML,
+      '    <div class="fs-waterfall-split-view">',
+      '      <div class="fs-waterfall-sticky-col fs-waterfall-preview-col waterfall-sticky-col">',
+      '        <div class="fs-waterfall-live-card">',
+      '          <div class="fs-waterfall-live-meta">',
+      '            <div class="fs-waterfall-live-title-group">',
+      '              <span class="fs-waterfall-live-label">LIVE SPECIMEN</span>',
+      '              <span class="fs-waterfall-live-style-label">' + escapeHTML(weights[0] || 'Regular') + '</span>',
+      '            </div>',
+      '            <span class="fs-waterfall-live-weight-val">' + fsInitialNumericWeight + '</span>',
+      '          </div>',
+      '          <div class="fs-waterfall-live-text preview-text-live" contenteditable="true" spellcheck="false" style="font-family: \'' + escapeHTML(family) + '\', ' + fallbackCategory + '; font-weight: ' + fsInitialNumericWeight + ';">',
+      '            ' + escapeHTML(specimenText),
+      '          </div>',
+      '          <div class="fs-waterfall-live-footer">',
+      '            <span class="fs-waterfall-live-hint">✦ Sticky Preview • Biến đổi 60fps</span>',
+      '            <span class="fs-waterfall-badge-sync">Synced</span>',
+      '          </div>',
+      '        </div>',
+      '      </div>',
+      '      <div class="fs-waterfall-rows-list waterfall-styles-col">',
+      '        ' + waterfallRowsHTML,
+      '      </div>',
+      '    </div>',
       '  </div>',
       '  <div class="fs-item-meta-bottom">',
       '    <span class="fs-designer">Designed by ' + escapeHTML(designer) + '</span>',
-      '    <div class="fs-card-weight-ctrl" title="Độ dày font (Font Weight)">',
+      '    <div class="fs-card-weight-ctrl" title="Độ dày font (Dải thực tế: ' + fsMinWeight + ' - ' + fsMaxWeight + ')">',
       '      <span class="fs-weight-icon" aria-hidden="true">W</span>',
-      '      <input type="range" class="card-weight-slider fs-range-slider" min="100" max="900" step="100" value="400" aria-label="Độ dày font">',
-      '      <span class="fs-weight-val">400</span>',
+      '      <input type="range" class="card-weight-slider fs-range-slider" min="' + fsMinWeight + '" max="' + fsMaxWeight + '" step="' + (isVariable ? '10' : (fsMinWeight === fsMaxWeight ? '10' : '50')) + '" value="' + fsInitialNumericWeight + '" aria-label="Độ dày font">',
+      '      <span class="fs-weight-val">' + fsInitialNumericWeight + '</span>',
       '    </div>',
       '    <div class="fs-actions">',
       '      <button type="button" class="fs-btn-waterfall-toggle card-styles-toggle" data-action="toggle-waterfall" data-action-card="toggle-card-waterfall">Waterfall ▾</button>',
@@ -1839,20 +2068,36 @@
         if (state.category === 'Pangram') return (typeof CatalogLoader !== 'undefined' && CatalogLoader.isPangramFont) ? CatalogLoader.isPangramFont(f) : Boolean(f.is_pangram);
         if (state.category === 'Vintage') return c.includes('vintage') || (f.tags && f.tags.some(function (t) { return t.includes('Vintage'); }));
         if (state.category === 'Mono/Script') return c.includes('mono') || c.includes('script');
+        if (state.category === 'Display') return c.includes('display') || (f.name && f.name.toLowerCase().includes('display')) || (f.tags && f.tags.some(function (t) { return t.toLowerCase().includes('display'); })) || (f.matrix_3d && f.matrix_3d.use_case && f.matrix_3d.use_case.includes('Display'));
         return c.includes(state.category.toLowerCase());
       });
     }
 
-    // Personality dropdown filter
+    // Personality (Mood) dropdown filter
     if (state.personality && state.personality !== 'all') {
       pool = pool.filter(function (f) {
         return f.matrix_3d && f.matrix_3d.mood === state.personality;
       });
     }
 
+    // Use Case dropdown filter
+    if (state.usecase && state.usecase !== 'all') {
+      pool = pool.filter(function (f) {
+        return f.matrix_3d && f.matrix_3d.use_case === state.usecase;
+      });
+    }
+
     // Quick Pills filter
     if (state.pill && state.pill !== 'all') {
-      if (state.pill === 'top20') {
+      if (state.pill === 'vn-ready') {
+        pool = pool.filter(function (f) { return Boolean(f.vietnamese_support); });
+      } else if (state.pill === 'sans') {
+        pool = pool.filter(function (f) { var c = (f.category || '').toLowerCase(); return c.includes('sans'); });
+      } else if (state.pill === 'serif') {
+        pool = pool.filter(function (f) { var c = (f.category || '').toLowerCase(); return c.includes('serif') && !c.includes('sans'); });
+      } else if (state.pill === 'display') {
+        pool = pool.filter(function (f) { var c = (f.category || '').toLowerCase(); var n = (f.name || '').toLowerCase(); return c.includes('display') || n.includes('display') || (f.matrix_3d && f.matrix_3d.use_case && f.matrix_3d.use_case.includes('Display')); });
+      } else if (state.pill === 'top20') {
         pool = pool.slice(0, 20);
       } else if (state.pill === 'hot20') {
         pool = pool.slice(4, 24);
@@ -2190,6 +2435,7 @@
     if (DOM.fsFilterCategory) {
       DOM.fsFilterCategory.addEventListener('change', function (e) {
         App.fontshareState.category = e.target.value;
+        syncFiltersBetweenViews('fontshare');
         renderFontshareView({ scrollToTop: true });
       });
     }
@@ -2202,6 +2448,14 @@
     if (DOM.fsFilterPersonality) {
       DOM.fsFilterPersonality.addEventListener('change', function (e) {
         App.fontshareState.personality = e.target.value;
+        syncFiltersBetweenViews('fontshare');
+        renderFontshareView({ scrollToTop: true });
+      });
+    }
+    if (DOM.fsFilterUseCase) {
+      DOM.fsFilterUseCase.addEventListener('change', function (e) {
+        App.fontshareState.usecase = e.target.value;
+        syncFiltersBetweenViews('fontshare');
         renderFontshareView({ scrollToTop: true });
       });
     }
@@ -2287,6 +2541,8 @@
           align: 'left',
           viewMode: 'list',
           category: 'all',
+          studio: 'all',
+          usecase: 'all',
           property: 'all',
           personality: 'all',
           pill: 'all',
@@ -2297,6 +2553,8 @@
         if (DOM.fsSizeSlider) DOM.fsSizeSlider.value = 210;
         if (DOM.fsSizeReadout) DOM.fsSizeReadout.textContent = '210px ◂';
         if (DOM.fsFilterCategory) DOM.fsFilterCategory.value = 'all';
+        if (DOM.fsFilterStudio) DOM.fsFilterStudio.value = 'all';
+        if (DOM.fsFilterUseCase) DOM.fsFilterUseCase.value = 'all';
         if (DOM.fsFilterProperty) DOM.fsFilterProperty.value = 'all';
         if (DOM.fsFilterPersonality) DOM.fsFilterPersonality.value = 'all';
         DOM.fsPresetBtns.forEach(function (b) {
@@ -2998,6 +3256,7 @@
     if (DOM.filterMood) {
       DOM.filterMood.addEventListener('change', function (e) {
         App.activeFilters.mood = e.target.value;
+        syncFiltersBetweenViews('catalog');
         applyFilters();
       });
     }
@@ -3005,6 +3264,7 @@
     if (DOM.filterUseCase) {
       DOM.filterUseCase.addEventListener('change', function (e) {
         App.activeFilters.use_case = e.target.value;
+        syncFiltersBetweenViews('catalog');
         applyFilters();
       });
     }

@@ -900,6 +900,76 @@ input[type="range"]::-moz-range-thumb {
   background: var(--badge-vn-bg);
   color: var(--badge-vn-text);
   border: 1px solid var(--badge-vn-border);
+  cursor: pointer;
+  transition: all var(--trans-fast);
+}
+
+.badge-vn:hover,
+.badge-vn.active {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #10b981;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+}
+
+.card-badges-row button.badge {
+  cursor: pointer;
+  font-family: inherit;
+  line-height: normal;
+  transition: all var(--trans-fast);
+  outline: none;
+}
+
+.badge-style {
+  background: rgba(99, 102, 241, 0.12);
+  color: #6366f1;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.badge-style:hover,
+.badge-style.active {
+  background: #6366f1;
+  color: #ffffff;
+  border-color: #6366f1;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+}
+
+.badge-mood {
+  background: rgba(236, 72, 153, 0.12);
+  color: #ec4899;
+  border: 1px solid rgba(236, 72, 153, 0.35);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.badge-mood:hover,
+.badge-mood.active {
+  background: #ec4899;
+  color: #ffffff;
+  border-color: #ec4899;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.25);
+}
+
+.badge-use {
+  background: rgba(14, 165, 233, 0.12);
+  color: #0ea5e9;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.badge-use:hover,
+.badge-use.active {
+  background: #0ea5e9;
+  color: #ffffff;
+  border-color: #0ea5e9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.25);
 }
 
 .badge-gt {
@@ -1254,6 +1324,128 @@ input[type="range"]::-moz-range-thumb {
   font-style: italic;
 }
 
+.fs-waterfall-split-view {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.4fr);
+  gap: 20px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+@media (max-width: 860px) {
+  .fs-waterfall-split-view {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+.fs-waterfall-sticky-col {
+  position: sticky;
+  top: 80px;
+  z-index: 4;
+}
+
+.fs-waterfall-live-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-md);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all var(--trans-fast);
+}
+
+.fs-waterfall-live-card:hover {
+  border-color: var(--border-strong);
+}
+
+.fs-waterfall-live-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 8px;
+  gap: 8px;
+}
+
+.fs-waterfall-live-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fs-waterfall-live-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  background: var(--bg-elevated);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.fs-waterfall-live-style-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fs-waterfall-live-weight-val {
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  background: rgba(0, 229, 153, 0.12);
+  color: #00e599;
+  border: 1px solid rgba(0, 229, 153, 0.3);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.fs-waterfall-live-text {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--text-primary);
+  outline: none;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-height: 85px;
+  cursor: text;
+  transition: font-weight 0.08s ease, font-style 0.08s ease;
+}
+
+.fs-waterfall-live-text:focus {
+  background: var(--bg-hover);
+  border-radius: var(--border-radius-sm);
+}
+
+.fs-waterfall-live-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 8px;
+  font-size: 0.68rem;
+  color: var(--text-tertiary);
+  gap: 6px;
+}
+
+.fs-waterfall-badge-sync {
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #00e599;
+  background: rgba(0, 229, 153, 0.08);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
 .fs-waterfall-rows-list {
   display: flex;
   flex-direction: column;
@@ -1417,19 +1609,22 @@ input[type="range"]::-moz-range-thumb {
   border-radius: var(--border-radius-sm);
 }
 
-/* Weights Bar */
+/* Weights Bar: Multi-row wrap (up to 2 rows), compact size */
 .card-weights-bar {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 6px;
+  flex-wrap: wrap;
+  gap: 5px;
   padding: 4px 2px 6px;
+  max-height: 64px;
+  overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: thin;
   -webkit-overflow-scrolling: touch;
 }
 
 .card-weights-bar::-webkit-scrollbar {
+  width: 3px;
   height: 3px;
 }
 
@@ -1440,9 +1635,10 @@ input[type="range"]::-moz-range-thumb {
 
 .weight-chip {
   font-size: 0.72rem;
+  line-height: 1.2;
   font-weight: 500;
-  padding: 4px 10px;
-  border-radius: 100px;
+  padding: 3px 8px;
+  border-radius: 999px;
   background: var(--bg-elevated);
   color: var(--text-secondary);
   border: 1px solid var(--border-subtle);

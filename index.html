@@ -22,7 +22,7 @@
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%23111111'/><path d='M10 9H26V13.5H15.5V17H23.5V21H15.5V27H10V9Z' fill='%23FFFFFF'/><circle cx='24' cy='25' r='2.5' fill='%2300E599'/></svg>">
   <link rel="stylesheet" href="css/gr-fonts.css?v=2.6.0">
-  <link rel="stylesheet" href="css/style.css?v=2.6.0">
+  <link rel="stylesheet" href="css/style.css?v=2.7.0">
 </head>
 <body>
 
@@ -179,6 +179,10 @@
         <span>Serif</span>
         <span class="chip-count" id="count-serif">44</span>
       </button>
+      <button type="button" class="chip-btn" data-category="Display" title="Lọc phông chữ Display / Tiêu đề ấn tượng">
+        <span>Display</span>
+        <span class="chip-count" id="count-display">38</span>
+      </button>
       <button type="button" class="chip-btn" data-category="Việt Nam Oldstyle / Vintage Sài Gòn">
         <span>Vintage Sài Gòn</span>
         <span class="chip-count" id="count-vintage">63</span>
@@ -316,10 +320,37 @@
               <option value="all">Categories ▾</option>
               <option value="Sans Serif">Sans Serif</option>
               <option value="Serif">Serif</option>
+              <option value="Display">Display</option>
               <option value="Vintage">Việt Nam Vintage</option>
               <option value="GT Font">GT Font</option>
               <option value="CoType">CoType</option>
+              <option value="Dinamo">Dinamo</option>
+              <option value="Klim">Klim</option>
+              <option value="Pangram">Pangram</option>
               <option value="Mono/Script">Monospace / Script</option>
+            </select>
+          </div>
+          <div class="fs-dropdown-wrap" data-dropdown="studios">
+            <select id="fs-filter-studio" class="fs-select" aria-label="Studio">
+              <option value="all">Studio: Tất cả ▾</option>
+            </select>
+          </div>
+          <div class="fs-dropdown-wrap" data-dropdown="personality">
+            <select id="fs-filter-personality" class="fs-select" aria-label="Personality">
+              <option value="all">Mood / Tính cách ▾</option>
+              <option value="Luxury & Sang trọng">Luxury &amp; Sang trọng</option>
+              <option value="Tech & Công nghệ">Tech &amp; Công nghệ</option>
+              <option value="Bold & Tuyên ngôn">Bold &amp; Tuyên ngôn</option>
+              <option value="Friendly & Nhân văn">Friendly &amp; Nhân văn</option>
+              <option value="Nostalgic & Cổ điển">Nostalgic &amp; Cổ điển</option>
+            </select>
+          </div>
+          <div class="fs-dropdown-wrap" data-dropdown="usecase">
+            <select id="fs-filter-usecase" class="fs-select" aria-label="Use Case">
+              <option value="all">Ứng dụng: Tất cả ▾</option>
+              <option value="Display / Headline">Display / Headline</option>
+              <option value="Body Text">Body Text</option>
+              <option value="Display & Body">Display &amp; Body</option>
             </select>
           </div>
           <div class="fs-dropdown-wrap" data-dropdown="properties">
@@ -329,20 +360,6 @@
               <option value="high-contrast">High Contrast</option>
               <option value="geometric">Geometric</option>
               <option value="editorial">Editorial</option>
-            </select>
-          </div>
-          <div class="fs-dropdown-wrap" data-dropdown="personality">
-            <select id="fs-filter-personality" class="fs-select" aria-label="Personality">
-              <option value="all">Personality ▾</option>
-              <option value="Luxury & Sang trọng">Luxury &amp; Sang trọng</option>
-              <option value="Tech & Công nghệ">Tech &amp; Công nghệ</option>
-              <option value="Bold & Tuyên ngôn">Bold &amp; Tuyên ngôn</option>
-              <option value="Nostalgic & Cổ điển">Nostalgic &amp; Cổ điển</option>
-            </select>
-          </div>
-          <div class="fs-dropdown-wrap" data-dropdown="studios">
-            <select id="fs-filter-studio" class="fs-select" aria-label="Studio">
-              <option value="all">Studio ▾</option>
             </select>
           </div>
         </div>
@@ -402,11 +419,15 @@
           </div>
           <div class="fs-filter-pills" role="tablist">
             <button type="button" class="fs-pill-btn active" data-pill="all">All</button>
+            <button type="button" class="fs-pill-btn" data-pill="vn-ready" title="100% tiếng Việt có dấu">🇻🇳 VN Ready</button>
+            <button type="button" class="fs-pill-btn" data-pill="sans">Sans</button>
+            <button type="button" class="fs-pill-btn" data-pill="serif">Serif</button>
+            <button type="button" class="fs-pill-btn" data-pill="display">Display</button>
+            <button type="button" class="fs-pill-btn" data-pill="variable">Variable</button>
             <button type="button" class="fs-pill-btn" data-pill="top20">Top 20</button>
             <button type="button" class="fs-pill-btn" data-pill="hot20">Hot 20</button>
-            <button type="button" class="fs-pill-btn" data-pill="variable">Variable</button>
-            <button type="button" class="fs-pill-btn" data-pill="originals">Fontshare Originals</button>
-            <button type="button" class="fs-pill-btn" data-pill="shortlisted">Shortlisted</button>
+            <button type="button" class="fs-pill-btn" data-pill="originals">Originals</button>
+            <button type="button" class="fs-pill-btn" data-pill="shortlisted">⭐ Yêu thích</button>
           </div>
         </div>
 
@@ -605,8 +626,8 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/type_tester.js?v=2.6.0"></script>
-  <script src="js/catalog_loader.js?v=2.6.0"></script>
-  <script src="js/app.js?v=2.6.0"></script>
+  <script src="js/type_tester.js?v=2.7.0"></script>
+  <script src="js/catalog_loader.js?v=2.7.0"></script>
+  <script src="js/app.js?v=2.7.0"></script>
 </body>
 </html>

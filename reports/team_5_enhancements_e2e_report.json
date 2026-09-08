@@ -1,0 +1,196 @@
+{
+  "target_url": "https://font.fedu.vn",
+  "timestamp": "2026-09-08T13:54:55Z",
+  "total_tests": 31,
+  "passed_tests": 26,
+  "failed_tests": 5,
+  "console_errors": [],
+  "results": [
+    {
+      "test_num": 1.1,
+      "name": "CSS .card-weights-bar flex-wrap is 'wrap'",
+      "passed": false,
+      "details": "Actual flex-wrap: nowrap"
+    },
+    {
+      "test_num": 1.2,
+      "name": "CSS .weight-chip font-size is compact (<= 13px / ~0.75rem)",
+      "passed": true,
+      "details": "Actual font-size: 11.52px"
+    },
+    {
+      "test_num": 1.3,
+      "name": "CSS .weight-chip padding is compact (<= 5px top/bottom, <= 10px sides)",
+      "passed": true,
+      "details": "Actual padding: 4px 10px"
+    },
+    {
+      "test_num": 1.4,
+      "name": "Desktop: Multi-style font (16 chips) wraps cleanly in max 2 lines",
+      "passed": true,
+      "details": "Bar height: 37.265625px, Chips: 16"
+    },
+    {
+      "test_num": 1.5,
+      "name": "Mobile (390px): Zero horizontal page overflow with variant chips",
+      "passed": true,
+      "details": "Body scrollWidth: 390px, Viewport: 390px"
+    },
+    {
+      "test_num": 2.1,
+      "name": "No duplicate Studio badge (Dinamo appears exactly once)",
+      "passed": false,
+      "details": "Found 2 Dinamo badge(s) in row"
+    },
+    {
+      "test_num": 2.2,
+      "name": "Clicking Studio badge 'Commercial Type' activates #filter-studio dropdown",
+      "passed": true,
+      "details": "Dropdown value: Commercial Type"
+    },
+    {
+      "test_num": 2.3,
+      "name": "Clicking Mood badge 'Massive, Bold & Tuyên ngôn' activates mood filter",
+      "passed": true,
+      "details": "Dropdown value: all"
+    },
+    {
+      "test_num": 2.4,
+      "name": "Clicking Use-Case badge 'Display & Headline' activates use-case filter",
+      "passed": true,
+      "details": "Dropdown value: all"
+    },
+    {
+      "test_num": 2.5,
+      "name": "Clicking VN Ready badge triggers Vietnamese filter / feedback",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test_num": 2.6,
+      "name": "All badges in .card-badges-row have computed cursor: pointer",
+      "passed": false,
+      "details": ""
+    },
+    {
+      "test_num": 3.1,
+      "name": "FD Druk Wide slider min is 500 (NOT 100)",
+      "passed": false,
+      "details": "Actual min: 100"
+    },
+    {
+      "test_num": 3.2,
+      "name": "FD Druk Wide slider max is 800/900",
+      "passed": true,
+      "details": "Actual max: 900"
+    },
+    {
+      "test_num": 3.3,
+      "name": "FD Druk Wide slider initial value is 500 (NOT 100)",
+      "passed": true,
+      "details": "Actual value: 500"
+    },
+    {
+      "test_num": 3.4,
+      "name": "Changing FD Druk Wide slider updates readout to 700",
+      "passed": true,
+      "details": "Display value: 700"
+    },
+    {
+      "test_num": 3.5,
+      "name": "Full font (FD American Grotesk) slider has min=100, max=900",
+      "passed": true,
+      "details": "Min: 100, Max: 900"
+    },
+    {
+      "test_num": 4.1,
+      "name": "Waterfall drawer toggles open on button click",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test_num": 4.2,
+      "name": "Waterfall drawer features 2-column split layout (Preview Col + Styles Col)",
+      "passed": false,
+      "details": "Left col: False, Right col: True"
+    },
+    {
+      "test_num": 4.3,
+      "name": "Waterfall drawer renders styles (16 rows)",
+      "passed": true,
+      "details": "Row count: 16"
+    },
+    {
+      "test_num": 4.4,
+      "name": "Clicking style row instantly updates preview font-weight in view",
+      "passed": true,
+      "details": "Synced weight: 700"
+    },
+    {
+      "test_num": 4.5,
+      "name": "Waterfall style selection keeps viewport stable (no scroll jump)",
+      "passed": true,
+      "details": "Scroll difference: 0px"
+    },
+    {
+      "test_num": 5.1,
+      "name": "Catalog has category filter chips",
+      "passed": true,
+      "details": "Chips count: 11"
+    },
+    {
+      "test_num": 5.2,
+      "name": "Catalog #filter-studio dropdown is populated with studios",
+      "passed": true,
+      "details": "Studio options count: 129"
+    },
+    {
+      "test_num": 5.3,
+      "name": "Catalog #filter-mood dropdown is populated",
+      "passed": true,
+      "details": "Mood options count: 6"
+    },
+    {
+      "test_num": 5.4,
+      "name": "Catalog #filter-use-case dropdown is populated",
+      "passed": true,
+      "details": "Use Case options count: 4"
+    },
+    {
+      "test_num": 5.5,
+      "name": "Fontshare view: Instant Search bar present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test_num": 5.6,
+      "name": "Fontshare view: Category filter pills & options present",
+      "passed": true,
+      "details": "Found 13 chips/pills/options"
+    },
+    {
+      "test_num": 5.7,
+      "name": "Fontshare view: Studio filter present & populated",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test_num": 5.8,
+      "name": "Fontshare view: Font cards rendered",
+      "passed": true,
+      "details": "Rendered cards: 30"
+    },
+    {
+      "test_num": 5.9,
+      "name": "Fontshare view: Grid mode toggle works",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test_num": 6.1,
+      "name": "Zero runtime JavaScript console errors",
+      "passed": true,
+      "details": "Errors: []"
+    }
+  ]
+}
