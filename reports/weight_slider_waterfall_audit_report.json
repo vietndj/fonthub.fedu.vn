@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07 23:14:14",
+  "timestamp": "2026-09-08 19:55:45",
   "summary": {
     "total": 44,
     "passed": 44,
@@ -115,12 +115,12 @@
       {
         "name": "'GR Sectra' Light (300) is visually thinner than Regular (400)",
         "passed": true,
-        "details": "Light (300): 1963 px, Regular (400): 2671 px"
+        "details": "Light (300): 1963 px, Regular (400): 2654 px"
       },
       {
         "name": "'GR Sectra' Regular (400) is visually thinner than Bold (700)",
         "passed": true,
-        "details": "Regular (400): 2671 px, Bold (700): 3456 px"
+        "details": "Regular (400): 2654 px, Bold (700): 3456 px"
       },
       {
         "name": "'GR Sectra' Bold (700) vs Black (900) progression verified",
@@ -220,9 +220,9 @@
         "details": "Regular (400): 2671 px, Bold (700): 3456 px"
       }
     ],
-    "Live Production (fonthub.fedu.vn)": [
+    "Live Production (font.fedu.vn)": [
       {
-        "name": "HTTP GET https://fonthub.fedu.vn status 200",
+        "name": "HTTP GET https://font.fedu.vn status 200",
         "passed": true,
         "details": "HTTP 200"
       },

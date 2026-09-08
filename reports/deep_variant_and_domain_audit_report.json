@@ -1,0 +1,602 @@
+{
+  "timestamp": "2026-09-08 20:22:16",
+  "summary": {
+    "total": 116,
+    "passed": 116,
+    "failed": 0
+  },
+  "suites": {
+    "Domain & Configuration Audit": [
+      {
+        "test": "CNAME file exists and points to font.fedu.vn",
+        "status": true,
+        "details": "Content: 'font.fedu.vn'"
+      },
+      {
+        "test": "vercel.json has project name 'font-fedu-vn'",
+        "status": true,
+        "details": "name: 'font-fedu-vn'"
+      },
+      {
+        "test": "index.html contains canonical tag for font.fedu.vn",
+        "status": true,
+        "details": "Canonical tag verified"
+      },
+      {
+        "test": "index.html contains og:url meta tag for font.fedu.vn",
+        "status": true,
+        "details": "og:url verified"
+      },
+      {
+        "test": "vercel.json configures 301 Permanent Redirect fonthub.fedu.vn -> font.fedu.vn",
+        "status": true,
+        "details": "301 Redirect to font.fedu.vn configured"
+      },
+      {
+        "test": "Zero unintended occurrences of fonthub.fedu.vn across active codebase",
+        "status": true,
+        "details": "Clean 0 matches"
+      }
+    ],
+    "Variant Pills Preview & Behavior Isolation": [
+      {
+        "test": "GR Sectra [Light]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Light]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Light]: Rendered font-weight matches 300",
+        "status": true,
+        "details": "inline=300, comp=300"
+      },
+      {
+        "test": "GR Sectra [Light]: Card slider synced to 300",
+        "status": true,
+        "details": "got 300"
+      },
+      {
+        "test": "GR Sectra [Light]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Sectra [Light]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Sectra [Regular]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Regular]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Regular]: Rendered font-weight matches 400",
+        "status": true,
+        "details": "inline=400, comp=400"
+      },
+      {
+        "test": "GR Sectra [Regular]: Card slider synced to 400",
+        "status": true,
+        "details": "got 400"
+      },
+      {
+        "test": "GR Sectra [Regular]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Sectra [Regular]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Sectra [Medium]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Medium]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Medium]: Rendered font-weight matches 500",
+        "status": true,
+        "details": "inline=500, comp=500"
+      },
+      {
+        "test": "GR Sectra [Medium]: Card slider synced to 500",
+        "status": true,
+        "details": "got 500"
+      },
+      {
+        "test": "GR Sectra [Medium]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Sectra [Medium]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Sectra [Bold]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Bold]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Bold]: Rendered font-weight matches 700",
+        "status": true,
+        "details": "inline=700, comp=700"
+      },
+      {
+        "test": "GR Sectra [Bold]: Card slider synced to 700",
+        "status": true,
+        "details": "got 700"
+      },
+      {
+        "test": "GR Sectra [Bold]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Sectra [Bold]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Sectra [Super]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Super]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Super]: Rendered font-weight matches 800",
+        "status": true,
+        "details": "inline=800, comp=800"
+      },
+      {
+        "test": "GR Sectra [Super]: Card slider synced to 800",
+        "status": true,
+        "details": "got 800"
+      },
+      {
+        "test": "GR Sectra [Super]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Sectra [Super]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Sectra [Black]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Black]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Sectra [Black]: Rendered font-weight matches 900",
+        "status": true,
+        "details": "inline=900, comp=900"
+      },
+      {
+        "test": "GR Sectra [Black]: Card slider synced to 900",
+        "status": true,
+        "details": "got 900"
+      },
+      {
+        "test": "GR Sectra [Black]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Sectra [Black]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Walsheim [UltraLight]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [UltraLight]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [UltraLight]: Rendered font-weight matches 200",
+        "status": true,
+        "details": "inline=200, comp=200"
+      },
+      {
+        "test": "GR Walsheim [UltraLight]: Card slider synced to 200",
+        "status": true,
+        "details": "got 200"
+      },
+      {
+        "test": "GR Walsheim [UltraLight]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Walsheim [UltraLight]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Walsheim [Light]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Light]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Light]: Rendered font-weight matches 300",
+        "status": true,
+        "details": "inline=300, comp=300"
+      },
+      {
+        "test": "GR Walsheim [Light]: Card slider synced to 300",
+        "status": true,
+        "details": "got 300"
+      },
+      {
+        "test": "GR Walsheim [Light]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Walsheim [Light]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Walsheim [Regular]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Regular]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Regular]: Rendered font-weight matches 400",
+        "status": true,
+        "details": "inline=400, comp=400"
+      },
+      {
+        "test": "GR Walsheim [Regular]: Card slider synced to 400",
+        "status": true,
+        "details": "got 400"
+      },
+      {
+        "test": "GR Walsheim [Regular]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Walsheim [Regular]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Walsheim [Medium]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Medium]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Medium]: Rendered font-weight matches 500",
+        "status": true,
+        "details": "inline=500, comp=500"
+      },
+      {
+        "test": "GR Walsheim [Medium]: Card slider synced to 500",
+        "status": true,
+        "details": "got 500"
+      },
+      {
+        "test": "GR Walsheim [Medium]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Walsheim [Medium]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Walsheim [Bold]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Bold]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Bold]: Rendered font-weight matches 700",
+        "status": true,
+        "details": "inline=700, comp=700"
+      },
+      {
+        "test": "GR Walsheim [Bold]: Card slider synced to 700",
+        "status": true,
+        "details": "got 700"
+      },
+      {
+        "test": "GR Walsheim [Bold]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Walsheim [Bold]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "GR Walsheim [Black]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Black]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "GR Walsheim [Black]: Rendered font-weight matches 900",
+        "status": true,
+        "details": "inline=900, comp=900"
+      },
+      {
+        "test": "GR Walsheim [Black]: Card slider synced to 900",
+        "status": true,
+        "details": "got 900"
+      },
+      {
+        "test": "GR Walsheim [Black]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "GR Walsheim [Black]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "FD Gilroy [Thin]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Thin]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Thin]: Rendered font-weight matches 100",
+        "status": true,
+        "details": "inline=100, comp=100"
+      },
+      {
+        "test": "FD Gilroy [Thin]: Card slider synced to 100",
+        "status": true,
+        "details": "got 100"
+      },
+      {
+        "test": "FD Gilroy [Thin]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "FD Gilroy [Thin]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "FD Gilroy [Light]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Light]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Light]: Rendered font-weight matches 300",
+        "status": true,
+        "details": "inline=300, comp=300"
+      },
+      {
+        "test": "FD Gilroy [Light]: Card slider synced to 300",
+        "status": true,
+        "details": "got 300"
+      },
+      {
+        "test": "FD Gilroy [Light]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "FD Gilroy [Light]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "FD Gilroy [Regular]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Regular]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Regular]: Rendered font-weight matches 400",
+        "status": true,
+        "details": "inline=400, comp=400"
+      },
+      {
+        "test": "FD Gilroy [Regular]: Card slider synced to 400",
+        "status": true,
+        "details": "got 400"
+      },
+      {
+        "test": "FD Gilroy [Regular]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "FD Gilroy [Regular]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "FD Gilroy [Bold]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Bold]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Bold]: Rendered font-weight matches 700",
+        "status": true,
+        "details": "inline=700, comp=700"
+      },
+      {
+        "test": "FD Gilroy [Bold]: Card slider synced to 700",
+        "status": true,
+        "details": "got 700"
+      },
+      {
+        "test": "FD Gilroy [Bold]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "FD Gilroy [Bold]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      },
+      {
+        "test": "FD Gilroy [Black]: Pill exists and accepts click",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Black]: Pill gets .active class",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "FD Gilroy [Black]: Rendered font-weight matches 900",
+        "status": true,
+        "details": "inline=900, comp=900"
+      },
+      {
+        "test": "FD Gilroy [Black]: Card slider synced to 900",
+        "status": true,
+        "details": "got 900"
+      },
+      {
+        "test": "FD Gilroy [Black]: NO accidental Studio Toast triggered",
+        "status": true,
+        "details": "Toasts: []"
+      },
+      {
+        "test": "FD Gilroy [Black]: Studio filter remained unset ('all')",
+        "status": true,
+        "details": "Studio val: 'all'"
+      }
+    ],
+    "Waterfall Row Interaction & Isolation": [
+      {
+        "test": "Waterfall row click updates row to is-active",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "Waterfall row click updates preview font-weight",
+        "status": true,
+        "details": "Weight: 900"
+      },
+      {
+        "test": "Waterfall row click does NOT trigger Studio toast",
+        "status": true,
+        "details": "Found 0 toasts"
+      }
+    ],
+    "Intentional Studio Badge Grouping": [
+      {
+        "test": "Direct click on button.badge-studio succeeds",
+        "status": true,
+        "details": ""
+      },
+      {
+        "test": "Catalog filtered to Studio 'Commercial Type'",
+        "status": true,
+        "details": "Select: 'Commercial Type', Cards: 2/24"
+      },
+      {
+        "test": "Clear filters restores all font cards",
+        "status": true,
+        "details": "Restored 24/24 cards"
+      }
+    ],
+    "Console & Network Hygiene": [
+      {
+        "test": "Zero console runtime errors",
+        "status": true,
+        "details": "Errors: []"
+      },
+      {
+        "test": "Zero 404 font asset network errors",
+        "status": true,
+        "details": "404s: []"
+      }
+    ]
+  },
+  "console_errors": [],
+  "network_404_errors": []
+}

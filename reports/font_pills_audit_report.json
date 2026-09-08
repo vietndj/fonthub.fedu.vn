@@ -1,0 +1,743 @@
+{
+  "timestamp": "2026-09-08 19:58:49",
+  "summary": {
+    "total": 76,
+    "passed": 76,
+    "failed": 0
+  },
+  "network_errors_404": [],
+  "successful_font_loads": [
+    {
+      "url": "http://127.0.0.1:62907/css/gr-fonts.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDAeonik-Light.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDAeonik-Air.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDAeonik-Bold.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDAeonik-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDAeonik-Black.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDGilroy-Thin.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDGilroy-Bold.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDGilroy-Black.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDGilroy-Light.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/FDGilroy-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraDisplay-Light.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraFine-Book.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraDisplay-Bold.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraDisplay-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRCanonLCondensedRegular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRCanonLCondensedRegular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRPantheonDisplay-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraFine-Black.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRPantheonDisplay-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GREestiDisplayRegular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GREestiTextBook.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRCinetypeMono.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraDisplay-Medium.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRSectraDisplay-Super.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRWalsheimPro-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRWalsheimPro-Ultralight.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRWalsheimPro-Light.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRWalsheimPro-Medium.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRWalsheimPro-Bold.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRWalsheimPro-Black.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRAmerica-Regular.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRAmerica-UltraLight.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRAmerica-Light.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRAmerica-Medium.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRAmerica-Bold.woff2",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:62907/fonts/GRAmerica-Black.woff2",
+      "status": 200
+    }
+  ],
+  "fonts_audited": {
+    "GR Sectra": [
+      {
+        "name": "Card Presence for GR Sectra",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)",
+        "passed": true,
+        "details": "Expected 300 but got computed 300"
+      },
+      {
+        "name": "Font-Family inclusion for 'Light' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraDisplay-Light, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Light\", \"GR Sectra-Light\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Light' (Custom width=509.7px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Fine Book (Book)' (Exp: 400, Got inline=400, comp=400)",
+        "passed": true,
+        "details": "Expected 400 but got computed 400"
+      },
+      {
+        "name": "Font-Family inclusion for 'Fine Book (Book)' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraFine-Book, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Book\", \"GR Sectra-Book\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Fine Book (Book)' (Custom width=529.3px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Display Regular (Regular)' (Exp: 400, Got inline=400, comp=400)",
+        "passed": true,
+        "details": "Expected 400 but got computed 400"
+      },
+      {
+        "name": "Font-Family inclusion for 'Display Regular (Regular)' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraDisplay-Regular, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Regular\", \"GR Sectra-Regular\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Display Regular (Regular)' (Custom width=526.8px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Medium' (Exp: 500, Got inline=500, comp=500)",
+        "passed": true,
+        "details": "Expected 500 but got computed 500"
+      },
+      {
+        "name": "Font-Family inclusion for 'Medium' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraDisplay-Medium, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Medium\", \"GR Sectra-Medium\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Medium' (Custom width=537.1px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)",
+        "passed": true,
+        "details": "Expected 700 but got computed 700"
+      },
+      {
+        "name": "Font-Family inclusion for 'Bold' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraDisplay-Bold, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Bold\", \"GR Sectra-Bold\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Bold' (Custom width=549.3px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Super' (Exp: 800, Got inline=800, comp=800)",
+        "passed": true,
+        "details": "Expected 800 but got computed 800"
+      },
+      {
+        "name": "Font-Family inclusion for 'Super' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraDisplay-Super, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Super\", \"GR Sectra-Super\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Super' (Custom width=579.7px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Fine Black (Black)' (Exp: 900, Got inline=900, comp=900)",
+        "passed": true,
+        "details": "Expected 900 but got computed 900"
+      },
+      {
+        "name": "Font-Family inclusion for 'Fine Black (Black)' (Sectra in stack)",
+        "passed": true,
+        "details": "Family token 'Sectra' missing from 'GRSectraFine-Black, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Black\", \"GR Sectra-Black\", Georgia, Cambria, \"Times New Roman\", Times, serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Fine Black (Black)' (Custom width=574.1px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      }
+    ],
+    "GR Walsheim": [
+      {
+        "name": "Card Presence for GR Walsheim",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "Weight matching for 'UltraLight' (Exp: 200, Got inline=200, comp=200)",
+        "passed": true,
+        "details": "Expected 200 but got computed 200"
+      },
+      {
+        "name": "Font-Family inclusion for 'UltraLight' (Walsheim in stack)",
+        "passed": true,
+        "details": "Family token 'Walsheim' missing from 'GRWalsheimPro-Ultralight, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro UltraLight\", \"GR Walsheim Pro-UltraLight\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'UltraLight' (Custom width=538.5px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)",
+        "passed": true,
+        "details": "Expected 300 but got computed 300"
+      },
+      {
+        "name": "Font-Family inclusion for 'Light' (Walsheim in stack)",
+        "passed": true,
+        "details": "Family token 'Walsheim' missing from 'GRWalsheimPro-Light, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Light\", \"GR Walsheim Pro-Light\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Light' (Custom width=550.8px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Regular' (Exp: 400, Got inline=400, comp=400)",
+        "passed": true,
+        "details": "Expected 400 but got computed 400"
+      },
+      {
+        "name": "Font-Family inclusion for 'Regular' (Walsheim in stack)",
+        "passed": true,
+        "details": "Family token 'Walsheim' missing from 'GRWalsheimPro-Regular, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Regular\", \"GR Walsheim Pro-Regular\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Regular' (Custom width=556.5px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Medium' (Exp: 500, Got inline=500, comp=500)",
+        "passed": true,
+        "details": "Expected 500 but got computed 500"
+      },
+      {
+        "name": "Font-Family inclusion for 'Medium' (Walsheim in stack)",
+        "passed": true,
+        "details": "Family token 'Walsheim' missing from 'GRWalsheimPro-Medium, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Medium\", \"GR Walsheim Pro-Medium\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Medium' (Custom width=562.1px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)",
+        "passed": true,
+        "details": "Expected 700 but got computed 700"
+      },
+      {
+        "name": "Font-Family inclusion for 'Bold' (Walsheim in stack)",
+        "passed": true,
+        "details": "Family token 'Walsheim' missing from 'GRWalsheimPro-Bold, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Bold\", \"GR Walsheim Pro-Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Bold' (Custom width=596.7px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Black' (Exp: 900, Got inline=900, comp=900)",
+        "passed": true,
+        "details": "Expected 900 but got computed 900"
+      },
+      {
+        "name": "Font-Family inclusion for 'Black' (Walsheim in stack)",
+        "passed": true,
+        "details": "Family token 'Walsheim' missing from 'GRWalsheimPro-Black, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Black\", \"GR Walsheim Pro-Black\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Black' (Custom width=631.2px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      }
+    ],
+    "GR America": [
+      {
+        "name": "Card Presence for GR America",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "Weight matching for 'UltraLight' (Exp: 200, Got inline=200, comp=200)",
+        "passed": true,
+        "details": "Expected 200 but got computed 200"
+      },
+      {
+        "name": "Font-Family inclusion for 'UltraLight' (America in stack)",
+        "passed": true,
+        "details": "Family token 'America' missing from 'GRAmerica-UltraLight, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America UltraLight\", \"GR America-UltraLight\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'UltraLight' (Custom width=543.4px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)",
+        "passed": true,
+        "details": "Expected 300 but got computed 300"
+      },
+      {
+        "name": "Font-Family inclusion for 'Light' (America in stack)",
+        "passed": true,
+        "details": "Family token 'America' missing from 'GRAmerica-Light, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Light\", \"GR America-Light\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Light' (Custom width=547.2px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Regular' (Exp: 400, Got inline=400, comp=400)",
+        "passed": true,
+        "details": "Expected 400 but got computed 400"
+      },
+      {
+        "name": "Font-Family inclusion for 'Regular' (America in stack)",
+        "passed": true,
+        "details": "Family token 'America' missing from 'GRAmerica-Regular, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Regular\", \"GR America-Regular\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Regular' (Custom width=548.6px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Medium' (Exp: 500, Got inline=500, comp=500)",
+        "passed": true,
+        "details": "Expected 500 but got computed 500"
+      },
+      {
+        "name": "Font-Family inclusion for 'Medium' (America in stack)",
+        "passed": true,
+        "details": "Family token 'America' missing from 'GRAmerica-Medium, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Medium\", \"GR America-Medium\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Medium' (Custom width=566.6px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)",
+        "passed": true,
+        "details": "Expected 700 but got computed 700"
+      },
+      {
+        "name": "Font-Family inclusion for 'Bold' (America in stack)",
+        "passed": true,
+        "details": "Family token 'America' missing from 'GRAmerica-Bold, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Bold\", \"GR America-Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Bold' (Custom width=587.1px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Black' (Exp: 900, Got inline=900, comp=900)",
+        "passed": true,
+        "details": "Expected 900 but got computed 900"
+      },
+      {
+        "name": "Font-Family inclusion for 'Black' (America in stack)",
+        "passed": true,
+        "details": "Family token 'America' missing from 'GRAmerica-Black, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Black\", \"GR America-Black\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Black' (Custom width=608.5px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      }
+    ],
+    "FD Gilroy": [
+      {
+        "name": "Card Presence for FD Gilroy",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "Weight matching for 'Thin' (Exp: 100, Got inline=100, comp=100)",
+        "passed": true,
+        "details": "Expected 100 but got computed 100"
+      },
+      {
+        "name": "Font-Family inclusion for 'Thin' (Gilroy in stack)",
+        "passed": true,
+        "details": "Family token 'Gilroy' missing from 'FDGilroy-Thin, \"FD Gilroy\", FDGilroy, \"FD Gilroy Thin\", \"FD Gilroy-Thin\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Thin' (Custom width=596.4px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)",
+        "passed": true,
+        "details": "Expected 300 but got computed 300"
+      },
+      {
+        "name": "Font-Family inclusion for 'Light' (Gilroy in stack)",
+        "passed": true,
+        "details": "Family token 'Gilroy' missing from 'FDGilroy-Light, \"FD Gilroy\", FDGilroy, \"FD Gilroy Light\", \"FD Gilroy-Light\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Light' (Custom width=582.9px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Regular' (Exp: 400, Got inline=400, comp=400)",
+        "passed": true,
+        "details": "Expected 400 but got computed 400"
+      },
+      {
+        "name": "Font-Family inclusion for 'Regular' (Gilroy in stack)",
+        "passed": true,
+        "details": "Family token 'Gilroy' missing from 'FDGilroy-Regular, \"FD Gilroy\", FDGilroy, \"FD Gilroy Regular\", \"FD Gilroy-Regular\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Regular' (Custom width=575.9px vs Arial=567.7px / Times=522.2px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)",
+        "passed": true,
+        "details": "Expected 700 but got computed 700"
+      },
+      {
+        "name": "Font-Family inclusion for 'Bold' (Gilroy in stack)",
+        "passed": true,
+        "details": "Family token 'Gilroy' missing from 'FDGilroy-Bold, \"FD Gilroy\", FDGilroy, \"FD Gilroy Bold\", \"FD Gilroy-Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Bold' (Custom width=583.0px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      },
+      {
+        "name": "Weight matching for 'Black' (Exp: 900, Got inline=900, comp=900)",
+        "passed": true,
+        "details": "Expected 900 but got computed 900"
+      },
+      {
+        "name": "Font-Family inclusion for 'Black' (Gilroy in stack)",
+        "passed": true,
+        "details": "Family token 'Gilroy' missing from 'FDGilroy-Black, \"FD Gilroy\", FDGilroy, \"FD Gilroy Black\", \"FD Gilroy-Black\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif'"
+      },
+      {
+        "name": "Anti-Fallback Metric Check for 'Black' (Custom width=577.0px vs Arial=590.9px / Times=545.0px)",
+        "passed": true,
+        "details": "Metrics match system fallback - font may not have rendered"
+      }
+    ]
+  },
+  "screenshots": [
+    {
+      "font": "GR Sectra",
+      "style": "Light",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_light.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_light.png",
+      "weight": "300",
+      "family": "GRSectraDisplay-Light, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Light\", \"GR Sectra-Light\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Sectra",
+      "style": "Fine Book (Book)",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_book.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_book.png",
+      "weight": "400",
+      "family": "GRSectraFine-Book, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Book\", \"GR Sectra-Book\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Sectra",
+      "style": "Display Regular (Regular)",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_regular.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_regular.png",
+      "weight": "400",
+      "family": "GRSectraDisplay-Regular, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Regular\", \"GR Sectra-Regular\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Sectra",
+      "style": "Medium",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_medium.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_medium.png",
+      "weight": "500",
+      "family": "GRSectraDisplay-Medium, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Medium\", \"GR Sectra-Medium\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Sectra",
+      "style": "Bold",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_bold.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_bold.png",
+      "weight": "700",
+      "family": "GRSectraDisplay-Bold, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Bold\", \"GR Sectra-Bold\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Sectra",
+      "style": "Super",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_super.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_super.png",
+      "weight": "800",
+      "family": "GRSectraDisplay-Super, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Super\", \"GR Sectra-Super\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Sectra",
+      "style": "Fine Black (Black)",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-sectra_black.png",
+      "rel_path": "screenshots/style_pills/gr-sectra_black.png",
+      "weight": "900",
+      "family": "GRSectraFine-Black, \"GR Sectra\", GRSectra, \"GT Sectra\", GTSectra, \"GR Sectra Black\", \"GR Sectra-Black\", Georgia, Cambria, \"Times New Roman\", Times, serif"
+    },
+    {
+      "font": "GR Walsheim",
+      "style": "UltraLight",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-walsheim_ultralight.png",
+      "rel_path": "screenshots/style_pills/gr-walsheim_ultralight.png",
+      "weight": "200",
+      "family": "GRWalsheimPro-Ultralight, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro UltraLight\", \"GR Walsheim Pro-UltraLight\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR Walsheim",
+      "style": "Light",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-walsheim_light.png",
+      "rel_path": "screenshots/style_pills/gr-walsheim_light.png",
+      "weight": "300",
+      "family": "GRWalsheimPro-Light, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Light\", \"GR Walsheim Pro-Light\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR Walsheim",
+      "style": "Regular",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-walsheim_regular.png",
+      "rel_path": "screenshots/style_pills/gr-walsheim_regular.png",
+      "weight": "400",
+      "family": "GRWalsheimPro-Regular, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Regular\", \"GR Walsheim Pro-Regular\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR Walsheim",
+      "style": "Medium",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-walsheim_medium.png",
+      "rel_path": "screenshots/style_pills/gr-walsheim_medium.png",
+      "weight": "500",
+      "family": "GRWalsheimPro-Medium, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Medium\", \"GR Walsheim Pro-Medium\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR Walsheim",
+      "style": "Bold",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-walsheim_bold.png",
+      "rel_path": "screenshots/style_pills/gr-walsheim_bold.png",
+      "weight": "700",
+      "family": "GRWalsheimPro-Bold, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Bold\", \"GR Walsheim Pro-Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR Walsheim",
+      "style": "Black",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-walsheim_black.png",
+      "rel_path": "screenshots/style_pills/gr-walsheim_black.png",
+      "weight": "900",
+      "family": "GRWalsheimPro-Black, \"GR Walsheim Pro\", GRWalsheimPro, \"GT Walsheim Pro\", GTWalsheimPro, \"GR Walsheim Pro Black\", \"GR Walsheim Pro-Black\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR America",
+      "style": "UltraLight",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-america_ultralight.png",
+      "rel_path": "screenshots/style_pills/gr-america_ultralight.png",
+      "weight": "200",
+      "family": "GRAmerica-UltraLight, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America UltraLight\", \"GR America-UltraLight\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR America",
+      "style": "Light",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-america_light.png",
+      "rel_path": "screenshots/style_pills/gr-america_light.png",
+      "weight": "300",
+      "family": "GRAmerica-Light, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Light\", \"GR America-Light\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR America",
+      "style": "Regular",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-america_regular.png",
+      "rel_path": "screenshots/style_pills/gr-america_regular.png",
+      "weight": "400",
+      "family": "GRAmerica-Regular, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Regular\", \"GR America-Regular\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR America",
+      "style": "Medium",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-america_medium.png",
+      "rel_path": "screenshots/style_pills/gr-america_medium.png",
+      "weight": "500",
+      "family": "GRAmerica-Medium, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Medium\", \"GR America-Medium\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR America",
+      "style": "Bold",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-america_bold.png",
+      "rel_path": "screenshots/style_pills/gr-america_bold.png",
+      "weight": "700",
+      "family": "GRAmerica-Bold, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Bold\", \"GR America-Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "GR America",
+      "style": "Black",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/gr-america_black.png",
+      "rel_path": "screenshots/style_pills/gr-america_black.png",
+      "weight": "900",
+      "family": "GRAmerica-Black, \"GR America\", GRAmerica, \"GT America\", GTAmerica, \"GR America Black\", \"GR America-Black\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "FD Gilroy",
+      "style": "Thin",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/fd-gilroy_thin.png",
+      "rel_path": "screenshots/style_pills/fd-gilroy_thin.png",
+      "weight": "100",
+      "family": "FDGilroy-Thin, \"FD Gilroy\", FDGilroy, \"FD Gilroy Thin\", \"FD Gilroy-Thin\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "FD Gilroy",
+      "style": "Light",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/fd-gilroy_light.png",
+      "rel_path": "screenshots/style_pills/fd-gilroy_light.png",
+      "weight": "300",
+      "family": "FDGilroy-Light, \"FD Gilroy\", FDGilroy, \"FD Gilroy Light\", \"FD Gilroy-Light\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "FD Gilroy",
+      "style": "Regular",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/fd-gilroy_regular.png",
+      "rel_path": "screenshots/style_pills/fd-gilroy_regular.png",
+      "weight": "400",
+      "family": "FDGilroy-Regular, \"FD Gilroy\", FDGilroy, \"FD Gilroy Regular\", \"FD Gilroy-Regular\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "FD Gilroy",
+      "style": "Bold",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/fd-gilroy_bold.png",
+      "rel_path": "screenshots/style_pills/fd-gilroy_bold.png",
+      "weight": "700",
+      "family": "FDGilroy-Bold, \"FD Gilroy\", FDGilroy, \"FD Gilroy Bold\", \"FD Gilroy-Bold\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "font": "FD Gilroy",
+      "style": "Black",
+      "path": "/Users/vietmac/Documents/CODE/fedu-font/reports/screenshots/style_pills/fd-gilroy_black.png",
+      "rel_path": "screenshots/style_pills/fd-gilroy_black.png",
+      "weight": "900",
+      "family": "FDGilroy-Black, \"FD Gilroy\", FDGilroy, \"FD Gilroy Black\", \"FD Gilroy-Black\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+    }
+  ]
+}

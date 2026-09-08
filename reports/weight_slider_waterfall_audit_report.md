@@ -1,6 +1,6 @@
 # Báo Cáo Nghiệm Thu E2E: Weight Slider & Waterfall Styles
 
-- **Thời gian kiểm thử**: `2026-09-07 23:14:14`
+- **Thời gian kiểm thử**: `2026-09-08 19:55:45`
 - **Tổng số kiểm thử**: `44`
 - **Đạt (PASS)**: `44`
 - **Không đạt (FAIL)**: `0`
@@ -30,8 +30,8 @@
 | 'GR Sectra' Waterfall rows (14) match badge (14 styles) | ✅ PASS | `Actual: 14, Expected: 14` |
 | 'GR Sectra' Waterfall rows render distinct weights (Thin/Light/Bold) | ✅ PASS | - |
 | 'GR Sectra' Waterfall row click syncs slider to 300 | ✅ PASS | `Slider: 300, Display: 300, Target Row: 300` |
-| 'GR Sectra' Light (300) is visually thinner than Regular (400) | ✅ PASS | `Light (300): 1963 px, Regular (400): 2671 px` |
-| 'GR Sectra' Regular (400) is visually thinner than Bold (700) | ✅ PASS | `Regular (400): 2671 px, Bold (700): 3456 px` |
+| 'GR Sectra' Light (300) is visually thinner than Regular (400) | ✅ PASS | `Light (300): 1963 px, Regular (400): 2654 px` |
+| 'GR Sectra' Regular (400) is visually thinner than Bold (700) | ✅ PASS | `Regular (400): 2654 px, Bold (700): 3456 px` |
 | 'GR Sectra' Bold (700) vs Black (900) progression verified | ✅ PASS | `Bold (700): 3456 px, Black (900): 4424 px` |
 
 ### Fontshare (#fontshare)
@@ -57,10 +57,10 @@
 | 'GR Sectra' Fontshare Light (300) is visually thinner than Regular (400) | ✅ PASS | `Light (300): 1963 px, Regular (400): 2671 px` |
 | 'GR Sectra' Fontshare Regular (400) is visually thinner than Bold (700) | ✅ PASS | `Regular (400): 2671 px, Bold (700): 3456 px` |
 
-### Live Production (fonthub.fedu.vn)
+### Live Production (font.fedu.vn)
 
 | Tên Kiểm Thử | Trạng Thái | Chi Tiết |
 | :--- | :---: | :--- |
-| HTTP GET https://fonthub.fedu.vn status 200 | ✅ PASS | `HTTP 200` |
+| HTTP GET https://font.fedu.vn status 200 | ✅ PASS | `HTTP 200` |
 | Live Production rendered font cards (Count: 24) | ✅ PASS | - |
 

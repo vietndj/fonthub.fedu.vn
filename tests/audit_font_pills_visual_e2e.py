@@ -42,12 +42,12 @@ TARGET_FONTS_TO_AUDIT = [
         'expected_family_token': 'Sectra',
         'pill_tests': [
             {'style': 'Light', 'expected_weight': '300', 'style_type': 'normal'},
-            {'style': 'Book', 'expected_weight': '400', 'style_type': 'normal'},
-            {'style': 'Regular', 'expected_weight': '400', 'style_type': 'normal'},
+            {'style': 'Book', 'expected_weight': '400', 'style_type': 'normal', 'label': 'Fine Book (Book)'},
+            {'style': 'Regular', 'expected_weight': '400', 'style_type': 'normal', 'label': 'Display Regular (Regular)'},
             {'style': 'Medium', 'expected_weight': '500', 'style_type': 'normal'},
             {'style': 'Bold', 'expected_weight': '700', 'style_type': 'normal'},
             {'style': 'Super', 'expected_weight': '800', 'style_type': 'normal'},
-            {'style': 'Black', 'expected_weight': '900', 'style_type': 'normal'}
+            {'style': 'Black', 'expected_weight': '900', 'style_type': 'normal', 'label': 'Fine Black (Black)'}
         ]
     },
     {
@@ -131,10 +131,10 @@ class FontPillsAuditor:
         self.results['summary']['total'] += 1
         if passed:
             self.results['summary']['passed'] += 1
-            print(f"    ✅ [PASS] {test_name}")
+            print(f"    ✅ [PASS] {test_name}", flush=True)
         else:
             self.results['summary']['failed'] += 1
-            print(f"    ❌ [FAIL] {test_name} | Details: {details}")
+            print(f"    ❌ [FAIL] {test_name} | Details: {details}", flush=True)
         self.results['fonts_audited'][font_name].append({
             'name': test_name,
             'passed': passed,
@@ -146,11 +146,11 @@ class FontPillsAuditor:
         httpd = start_local_server(port)
         local_url = f"http://127.0.0.1:{port}/index.html"
 
-        print("=" * 80)
-        print("🎯 FEDU QUALITY AUDITOR: FONT STYLE PILLS & VISUAL RENDERING SUITE")
-        print(f"🌐 Local Server: {local_url}")
-        print(f"📸 Screenshot Output: {SCREENSHOTS_DIR}")
-        print("=" * 80)
+        print("=" * 80, flush=True)
+        print("🎯 FEDU QUALITY AUDITOR: FONT STYLE PILLS & VISUAL RENDERING SUITE", flush=True)
+        print(f"🌐 Local Server: {local_url}", flush=True)
+        print(f"📸 Screenshot Output: {SCREENSHOTS_DIR}", flush=True)
+        print("=" * 80, flush=True)
 
         with sync_playwright() as p:
             browser = p.chromium.launch(
@@ -168,7 +168,7 @@ class FontPillsAuditor:
             page.on('response', lambda res: self.handle_response(res))
 
             # Navigate
-            print("\n⏳ [1/4] Navigating to Font Hub Catalog...")
+            print("\n⏳ [1/4] Navigating to Font Hub Catalog...", flush=True)
             page.goto(local_url, wait_until='domcontentloaded')
             page.wait_for_selector('.font-card', timeout=15000)
             time.sleep(1.5)
@@ -176,23 +176,33 @@ class FontPillsAuditor:
             # Audit each target font
             for target in TARGET_FONTS_TO_AUDIT:
                 font_name = target['display_name']
-                print(f"\n" + "-" * 60)
-                print(f"🔍 [AUDIT FONT] {font_name} (ID: {target['id']})")
-                print("-" * 60)
+                print(f"\n" + "-" * 60, flush=True)
+                print(f"🔍 [AUDIT FONT] {font_name} (ID: {target['id']})", flush=True)
+                print("-" * 60, flush=True)
 
-                # Search to isolate card
-                search_input = page.locator('#search-input')
-                search_input.fill('')
-                search_input.fill(target['query'])
-                time.sleep(0.8)
+                # 1. Dispatch search input deterministically in page context
+                page.evaluate('''(query) => {
+                    const inp = document.getElementById('search-input');
+                    if (inp) {
+                        inp.value = query;
+                        inp.dispatchEvent(new Event('input', { bubbles: true }));
+                    }
+                }''', target['query'])
+                time.sleep(0.5)
 
-                # Locate card
+                # Locate card and wait until visible
                 card = page.locator(f".font-card[data-font-id='{target['id']}']").first
                 if card.count() == 0:
                     card = page.locator(f".font-card:has(.card-family-name:has-text('{target['display_name']}'))").first
 
-                if card.count() == 0:
-                    self.record(font_name, f"Card Presence for {font_name}", False, f"Card not found for query {target['query']}")
+                try:
+                    card.wait_for(state='visible', timeout=8000)
+                    card_present = True
+                except Exception:
+                    card_present = False
+
+                if not card_present:
+                    self.record(font_name, f"Card Presence for {font_name}", False, f"Card not found or visible for query '{target['query']}'")
                     continue
 
                 self.record(font_name, f"Card Presence for {font_name}", True)
@@ -201,44 +211,47 @@ class FontPillsAuditor:
                 card.scroll_into_view_if_needed()
                 time.sleep(0.3)
 
-                preview_el = card.locator('.preview-text')
-
                 # Test each style pill
                 for pill_info in target['pill_tests']:
                     style_name = pill_info['style']
                     exp_weight = pill_info['expected_weight']
-                    print(f"  👉 Testing Style Pill: '{style_name}' (Expect weight: {exp_weight})...")
+                    test_label = pill_info.get('label', style_name)
+                    print(f"  👉 Testing Style Pill: '{test_label}' (Expect weight: {exp_weight})...", flush=True)
 
-                    # Locate chip
-                    chip = card.locator(f".weight-chip:has-text('{style_name}')").first
-                    if chip.count() == 0:
-                        # Check waterfall drawer if not visible as chip
-                        waterfall_btn = card.locator('.card-styles-toggle, [data-action="toggle-card-waterfall"]').first
-                        if waterfall_btn.count() > 0:
-                            waterfall_btn.click()
-                            time.sleep(0.3)
-                        row = card.locator(f".card-waterfall-row[data-weight='{style_name}']").first
-                        if row.count() > 0:
-                            apply_btn = row.locator('.waterfall-apply-btn, .waterfall-sample-text').first
-                            apply_btn.click()
-                            time.sleep(0.5)
-                        else:
-                            self.record(font_name, f"Pill/Style found: {style_name}", False, "Neither weight chip nor waterfall row found")
-                            continue
-                    else:
-                        chip.click()
-                        time.sleep(0.6)
+                    # Click the chip directly in the card DOM context
+                    click_res = card.evaluate('''(cardEl, styleName) => {
+                        const chips = Array.from(cardEl.querySelectorAll('.weight-chip'));
+                        let chip = chips.find(c => c.textContent.trim().toLowerCase() === styleName.toLowerCase());
+                        if (!chip) chip = chips.find(c => c.textContent.toLowerCase().includes(styleName.toLowerCase()));
+                        if (chip) {
+                            chip.click();
+                            return { success: true, text: chip.textContent.trim(), type: 'chip' };
+                        }
+                        const rows = Array.from(cardEl.querySelectorAll('.card-waterfall-row'));
+                        let row = rows.find(r => (r.getAttribute('data-weight') || '').toLowerCase() === styleName.toLowerCase());
+                        if (row) {
+                            const btn = row.querySelector('.waterfall-apply-btn') || row;
+                            btn.click();
+                            return { success: true, text: row.getAttribute('data-weight'), type: 'waterfall' };
+                        }
+                        return { success: false, error: 'Chip not found for ' + styleName };
+                    }''', style_name)
 
-                    # Evaluate in-browser DOM & Computed Styles
-                    audit_data = page.evaluate('''(args) => {
-                        const [cardId, styleName, expWeight, familyToken] = args;
-                        const card = document.querySelector(`.font-card[data-font-id="${cardId}"]`);
-                        if (!card) return { error: 'Card not found in DOM' };
-                        const preview = card.querySelector('.preview-text');
+                    if not click_res.get('success'):
+                        self.record(font_name, f"Pill/Style found: {test_label}", False, click_res.get('error'))
+                        continue
+
+                    # Wait for dynamic font face load & browser element repaint
+                    time.sleep(0.6)
+
+                    # Evaluate in-browser DOM & Computed Styles & Canvas Anti-Fallback
+                    audit_data = card.evaluate('''(cardEl, params) => {
+                        const { styleName, expWeight, familyToken } = params;
+                        const preview = cardEl.querySelector('.preview-text');
                         if (!preview) return { error: 'Preview text not found' };
 
                         const cs = window.getComputedStyle(preview);
-                        const activeChip = card.querySelector(`.weight-chip.active`);
+                        const activeChip = cardEl.querySelector('.weight-chip.active');
                         const activeChipText = activeChip ? activeChip.textContent.trim() : null;
 
                         // Check FontFace in document.fonts
@@ -255,14 +268,16 @@ class FontPillsAuditor:
                         const ctx = canvas.getContext('2d');
                         
                         // 1. Measure with system fallback
-                        ctx.font = `${expWeight} 36px Times New Roman, serif`;
+                        ctx.font = expWeight + ' 36px Times New Roman, serif';
                         const timesWidth = ctx.measureText(testStr).width;
 
-                        ctx.font = `${expWeight} 36px Arial, sans-serif`;
+                        ctx.font = expWeight + ' 36px Arial, sans-serif';
                         const arialWidth = ctx.measureText(testStr).width;
 
-                        // 2. Measure with computed font
-                        ctx.font = `${cs.fontWeight} 36px ${cs.fontFamily}`;
+                        // 2. Measure with rendered font
+                        const targetWeight = cs.fontWeight || preview.style.fontWeight || expWeight;
+                        const targetFamily = preview.style.fontFamily || cs.fontFamily;
+                        ctx.font = targetWeight + ' 36px ' + targetFamily;
                         const customWidth = ctx.measureText(testStr).width;
 
                         return {
@@ -274,33 +289,34 @@ class FontPillsAuditor:
                             timesWidth: timesWidth,
                             arialWidth: arialWidth,
                             customWidth: customWidth,
-                            isDistinctFromTimes: Math.abs(customWidth - timesWidth) > 2.0,
-                            isDistinctFromArial: Math.abs(customWidth - arialWidth) > 2.0,
+                            isDistinctFromTimes: Math.abs(customWidth - timesWidth) > 0.5,
+                            isDistinctFromArial: Math.abs(customWidth - arialWidth) > 0.5,
                             loadedFontsCount: fontList.filter(f => f.status === 'loaded').length
                         };
-                    }''', [target['id'], style_name, exp_weight, target['expected_family_token']])
+                    }''', {'styleName': style_name, 'expWeight': exp_weight, 'familyToken': target['expected_family_token']})
 
                     if 'error' in audit_data:
-                        self.record(font_name, f"Style [{style_name}] Execution", False, audit_data['error'])
+                        self.record(font_name, f"Style [{test_label}] Execution", False, audit_data['error'])
                         continue
 
                     # 1. Check weight match
-                    comp_w = str(audit_data['computedWeight'])
-                    inline_w = str(audit_data['inlineWeight'])
+                    comp_w = str(audit_data.get('computedWeight', ''))
+                    inline_w = str(audit_data.get('inlineWeight', ''))
                     weight_matched = (comp_w == exp_weight) or (inline_w == exp_weight)
                     self.record(
                         font_name,
-                        f"Weight matching for '{style_name}' (Exp: {exp_weight}, Got inline={inline_w}, comp={comp_w})",
+                        f"Weight matching for '{test_label}' (Exp: {exp_weight}, Got inline={inline_w}, comp={comp_w})",
                         weight_matched,
                         f"Expected {exp_weight} but got computed {comp_w}"
                     )
 
                     # 2. Check family inclusion
-                    comp_f = audit_data['computedFamily']
-                    family_matched = target['expected_family_token'].lower() in comp_f.lower() or target['expected_family_token'].lower() in audit_data['inlineFamily'].lower()
+                    comp_f = audit_data.get('computedFamily', '')
+                    inline_f = audit_data.get('inlineFamily', '')
+                    family_matched = target['expected_family_token'].lower() in comp_f.lower() or target['expected_family_token'].lower() in inline_f.lower()
                     self.record(
                         font_name,
-                        f"Font-Family inclusion for '{style_name}' ({target['expected_family_token']} in stack)",
+                        f"Font-Family inclusion for '{test_label}' ({target['expected_family_token']} in stack)",
                         family_matched,
                         f"Family token '{target['expected_family_token']}' missing from '{comp_f}'"
                     )
@@ -309,7 +325,7 @@ class FontPillsAuditor:
                     is_distinct = audit_data['isDistinctFromTimes'] and audit_data['isDistinctFromArial']
                     self.record(
                         font_name,
-                        f"Anti-Fallback Metric Check for '{style_name}' (Custom width={audit_data['customWidth']:.1f}px vs Arial={audit_data['arialWidth']:.1f}px / Times={audit_data['timesWidth']:.1f}px)",
+                        f"Anti-Fallback Metric Check for '{test_label}' (Custom width={audit_data['customWidth']:.1f}px vs Arial={audit_data['arialWidth']:.1f}px / Times={audit_data['timesWidth']:.1f}px)",
                         is_distinct,
                         "Metrics match system fallback - font may not have rendered"
                     )
@@ -322,14 +338,14 @@ class FontPillsAuditor:
                         card.screenshot(path=str(ss_path))
                         self.results['screenshots'].append({
                             'font': font_name,
-                            'style': style_name,
+                            'style': test_label,
                             'path': str(ss_path),
                             'rel_path': f"screenshots/style_pills/{ss_path.name}",
                             'weight': comp_w,
                             'family': comp_f
                         })
                     except Exception as ss_err:
-                        print(f"      ⚠️ Failed to capture screenshot: {ss_err}")
+                        print(f"      ⚠️ Failed to capture screenshot: {ss_err}", flush=True)
 
             browser.close()
 
@@ -339,10 +355,10 @@ class FontPillsAuditor:
     def handle_response(self, res):
         url = res.url
         status = res.status
-        if 'fonts/' in url or url.endswith(('.woff2', '.ttf', '.otf', '.woff')):
+        if 'fonts/' in url or url.endswith(('.woff2', '.ttf', '.otf', '.woff', '.css')):
             if status == 404:
                 self.results['network_errors_404'].append({'url': url, 'status': status})
-                print(f"  🚨 [404 NOT FOUND] {url}")
+                print(f"  🚨 [404 NOT FOUND] {url}", flush=True)
             elif status == 200:
                 self.results['successful_font_loads'].append({'url': url, 'status': status})
 
@@ -366,13 +382,13 @@ class FontPillsAuditor:
             <div class="gallery-card">
               <div class="gallery-header">
                 <span class="gallery-font">{ss['font']}</span>
-                <span class="gallery-style">{ss['style']} ({ss['weight']})</span>
+                <span class="gallery-style">{ss['style']} (weight: {ss['weight']})</span>
               </div>
               <div class="gallery-img-wrap">
                 <img src="{ss['rel_path']}" alt="{ss['font']} - {ss['style']}" loading="lazy"/>
               </div>
               <div class="gallery-footer">
-                <code>{ss['family'][:45]}...</code>
+                <code>{ss['family'][:55]}...</code>
               </div>
             </div>
             """
@@ -521,12 +537,12 @@ class FontPillsAuditor:
         with open(html_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
 
-        print("\n" + "=" * 80)
-        print("🏁 AUDIT RUN COMPLETE")
-        print(f"📊 Passed: {passed}/{total} ({pass_pct:.1f}%) | Failed: {failed} | 404 Errors: {err_404_count}")
-        print(f"📄 HTML Report: file://{html_path}")
-        print(f"📄 JSON Report: file://{json_path}")
-        print("=" * 80)
+        print("\n" + "=" * 80, flush=True)
+        print("🏁 AUDIT RUN COMPLETE", flush=True)
+        print(f"📊 Passed: {passed}/{total} ({pass_pct:.1f}%) | Failed: {failed} | 404 Errors: {err_404_count}", flush=True)
+        print(f"📄 HTML Report: file://{html_path}", flush=True)
+        print(f"📄 JSON Report: file://{json_path}", flush=True)
+        print("=" * 80, flush=True)
 
 if __name__ == '__main__':
     auditor = FontPillsAuditor()

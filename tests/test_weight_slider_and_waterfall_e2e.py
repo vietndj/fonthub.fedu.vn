@@ -113,7 +113,7 @@ class WeightWaterfallAuditor:
                 # Suite 3: Live Production (if reachable)
                 self.audit_live_production(browser)
             except Exception as e:
-                self.record("Live Production (fonthub.fedu.vn)", "Suite Execution", False, str(e))
+                self.record("Live Production (font.fedu.vn)", "Suite Execution", False, str(e))
 
             browser.close()
 
@@ -415,7 +415,7 @@ class WeightWaterfallAuditor:
             ctx = ssl.create_default_context()
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE
-            req = urllib.request.Request(LIVE_URL, headers={'User-Agent': 'FontHub-Auditor/2.0'})
+            req = urllib.request.Request(LIVE_URL, headers={'User-Agent': 'FEDU-Font-Auditor/2.0'})
             with urllib.request.urlopen(req, context=ctx, timeout=10) as resp:
                 status = resp.status
                 self.record(suite, f"HTTP GET {LIVE_URL} status 200", status == 200, f"HTTP {status}")

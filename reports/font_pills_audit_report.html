@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quality Auditor Report — Font Style Pills & Visual Rendering</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #161920;
+      --border: #262c38;
+      --text: #f0f3f8;
+      --text-muted: #8892b0;
+      --accent: #00E599;
+      --fail: #ff4d6d;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 30px;
+      line-height: 1.5;
+    }
+    .container { max-width: 1400px; margin: 0 auto; }
+    h1 { margin: 0 0 8px 0; font-size: 26px; }
+    .meta { color: var(--text-muted); font-size: 14px; margin-bottom: 24px; }
+    .stats-row { display: flex; gap: 16px; margin-bottom: 30px; }
+    .stat-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 16px 22px;
+      border-radius: 8px;
+      flex: 1;
+    }
+    .stat-val { font-size: 28px; font-weight: 700; color: var(--accent); }
+    .stat-val.fail { color: var(--fail); }
+    .stat-label { font-size: 12px; text-transform: uppercase; color: var(--text-muted); }
+
+    .section-title { font-size: 20px; margin: 30px 0 16px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .gallery-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .gallery-header {
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.02);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+    .gallery-font { font-weight: 600; color: #fff; }
+    .gallery-style { color: var(--accent); }
+    .gallery-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+    .gallery-footer { padding: 8px 12px; font-size: 11px; color: var(--text-muted); }
+
+    table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 8px; overflow: hidden; }
+    th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; }
+    th { background: rgba(255,255,255,0.03); color: var(--text-muted); }
+    .badge { padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+    .badge.pass { background: rgba(0,229,153,0.15); color: #00E599; }
+    .badge.fail { background: rgba(255,77,109,0.15); color: #ff4d6d; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quality Auditor Report — Font Style Pills & Visual Verification</h1>
+    <div class="meta">Execution Date: 2026-09-08 19:58:49 • Local Chrome E2E Engine</div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-val">76 / 76</div>
+        <div class="stat-label">Tests Passed (100.0%)</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val ">0</div>
+        <div class="stat-label">Tests Failed</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val ">0</div>
+        <div class="stat-label">Font 404 Errors</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val">37</div>
+        <div class="stat-label">Successful Font Loads (200 OK)</div>
+      </div>
+    </div>
+
+    <div class="section-title">Visual Specimen Proof Gallery (24 Screenshots)</div>
+    <div class="gallery-grid">
+      
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Light (weight: 300)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_light.png" alt="GR Sectra - Light" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraDisplay-Light, "GR Sectra", GRSectra, "GT Sectr...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Fine Book (Book) (weight: 400)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_book.png" alt="GR Sectra - Fine Book (Book)" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraFine-Book, "GR Sectra", GRSectra, "GT Sectra", ...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Display Regular (Regular) (weight: 400)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_regular.png" alt="GR Sectra - Display Regular (Regular)" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraDisplay-Regular, "GR Sectra", GRSectra, "GT Sec...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Medium (weight: 500)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_medium.png" alt="GR Sectra - Medium" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraDisplay-Medium, "GR Sectra", GRSectra, "GT Sect...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Bold (weight: 700)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_bold.png" alt="GR Sectra - Bold" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraDisplay-Bold, "GR Sectra", GRSectra, "GT Sectra...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Super (weight: 800)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_super.png" alt="GR Sectra - Super" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraDisplay-Super, "GR Sectra", GRSectra, "GT Sectr...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Sectra</span>
+                <span class="gallery-style">Fine Black (Black) (weight: 900)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-sectra_black.png" alt="GR Sectra - Fine Black (Black)" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRSectraFine-Black, "GR Sectra", GRSectra, "GT Sectra",...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Walsheim</span>
+                <span class="gallery-style">UltraLight (weight: 200)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-walsheim_ultralight.png" alt="GR Walsheim - UltraLight" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRWalsheimPro-Ultralight, "GR Walsheim Pro", GRWalsheim...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Walsheim</span>
+                <span class="gallery-style">Light (weight: 300)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-walsheim_light.png" alt="GR Walsheim - Light" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRWalsheimPro-Light, "GR Walsheim Pro", GRWalsheimPro, ...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Walsheim</span>
+                <span class="gallery-style">Regular (weight: 400)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-walsheim_regular.png" alt="GR Walsheim - Regular" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRWalsheimPro-Regular, "GR Walsheim Pro", GRWalsheimPro...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Walsheim</span>
+                <span class="gallery-style">Medium (weight: 500)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-walsheim_medium.png" alt="GR Walsheim - Medium" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRWalsheimPro-Medium, "GR Walsheim Pro", GRWalsheimPro,...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Walsheim</span>
+                <span class="gallery-style">Bold (weight: 700)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-walsheim_bold.png" alt="GR Walsheim - Bold" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRWalsheimPro-Bold, "GR Walsheim Pro", GRWalsheimPro, "...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR Walsheim</span>
+                <span class="gallery-style">Black (weight: 900)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-walsheim_black.png" alt="GR Walsheim - Black" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRWalsheimPro-Black, "GR Walsheim Pro", GRWalsheimPro, ...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR America</span>
+                <span class="gallery-style">UltraLight (weight: 200)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-america_ultralight.png" alt="GR America - UltraLight" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRAmerica-UltraLight, "GR America", GRAmerica, "GT Amer...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR America</span>
+                <span class="gallery-style">Light (weight: 300)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-america_light.png" alt="GR America - Light" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRAmerica-Light, "GR America", GRAmerica, "GT America",...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR America</span>
+                <span class="gallery-style">Regular (weight: 400)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-america_regular.png" alt="GR America - Regular" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRAmerica-Regular, "GR America", GRAmerica, "GT America...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR America</span>
+                <span class="gallery-style">Medium (weight: 500)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-america_medium.png" alt="GR America - Medium" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRAmerica-Medium, "GR America", GRAmerica, "GT America"...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR America</span>
+                <span class="gallery-style">Bold (weight: 700)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-america_bold.png" alt="GR America - Bold" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRAmerica-Bold, "GR America", GRAmerica, "GT America", ...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">GR America</span>
+                <span class="gallery-style">Black (weight: 900)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/gr-america_black.png" alt="GR America - Black" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>GRAmerica-Black, "GR America", GRAmerica, "GT America",...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">FD Gilroy</span>
+                <span class="gallery-style">Thin (weight: 100)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/fd-gilroy_thin.png" alt="FD Gilroy - Thin" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>FDGilroy-Thin, "FD Gilroy", FDGilroy, "FD Gilroy Thin",...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">FD Gilroy</span>
+                <span class="gallery-style">Light (weight: 300)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/fd-gilroy_light.png" alt="FD Gilroy - Light" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>FDGilroy-Light, "FD Gilroy", FDGilroy, "FD Gilroy Light...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">FD Gilroy</span>
+                <span class="gallery-style">Regular (weight: 400)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/fd-gilroy_regular.png" alt="FD Gilroy - Regular" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>FDGilroy-Regular, "FD Gilroy", FDGilroy, "FD Gilroy Reg...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">FD Gilroy</span>
+                <span class="gallery-style">Bold (weight: 700)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/fd-gilroy_bold.png" alt="FD Gilroy - Bold" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>FDGilroy-Bold, "FD Gilroy", FDGilroy, "FD Gilroy Bold",...</code>
+              </div>
+            </div>
+            
+            <div class="gallery-card">
+              <div class="gallery-header">
+                <span class="gallery-font">FD Gilroy</span>
+                <span class="gallery-style">Black (weight: 900)</span>
+              </div>
+              <div class="gallery-img-wrap">
+                <img src="screenshots/style_pills/fd-gilroy_black.png" alt="FD Gilroy - Black" loading="lazy"/>
+              </div>
+              <div class="gallery-footer">
+                <code>FDGilroy-Black, "FD Gilroy", FDGilroy, "FD Gilroy Black...</code>
+              </div>
+            </div>
+            
+    </div>
+
+    <div class="section-title">Detailed Test Assertion Breakdown</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Font Family</th>
+          <th>Assertion Scope</th>
+          <th>Status</th>
+          <th>Details / Metrics</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Card Presence for GR Sectra</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>OK</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 300 but got computed 300</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Light' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraDisplay-Light, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Light", "GR Sectra-Light", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Light' (Custom width=509.7px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Fine Book (Book)' (Exp: 400, Got inline=400, comp=400)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 400 but got computed 400</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Fine Book (Book)' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraFine-Book, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Book", "GR Sectra-Book", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Fine Book (Book)' (Custom width=529.3px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Display Regular (Regular)' (Exp: 400, Got inline=400, comp=400)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 400 but got computed 400</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Display Regular (Regular)' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraDisplay-Regular, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Regular", "GR Sectra-Regular", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Display Regular (Regular)' (Custom width=526.8px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Medium' (Exp: 500, Got inline=500, comp=500)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 500 but got computed 500</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Medium' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraDisplay-Medium, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Medium", "GR Sectra-Medium", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Medium' (Custom width=537.1px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 700 but got computed 700</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Bold' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraDisplay-Bold, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Bold", "GR Sectra-Bold", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Bold' (Custom width=549.3px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Super' (Exp: 800, Got inline=800, comp=800)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 800 but got computed 800</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Super' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraDisplay-Super, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Super", "GR Sectra-Super", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Super' (Custom width=579.7px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Weight matching for 'Fine Black (Black)' (Exp: 900, Got inline=900, comp=900)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 900 but got computed 900</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Font-Family inclusion for 'Fine Black (Black)' (Sectra in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Sectra' missing from 'GRSectraFine-Black, "GR Sectra", GRSectra, "GT Sectra", GTSectra, "GR Sectra Black", "GR Sectra-Black", Georgia, Cambria, "Times New Roman", Times, serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Sectra</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Fine Black (Black)' (Custom width=574.1px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Card Presence for GR Walsheim</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>OK</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Weight matching for 'UltraLight' (Exp: 200, Got inline=200, comp=200)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 200 but got computed 200</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Font-Family inclusion for 'UltraLight' (Walsheim in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Walsheim' missing from 'GRWalsheimPro-Ultralight, "GR Walsheim Pro", GRWalsheimPro, "GT Walsheim Pro", GTWalsheimPro, "GR Walsheim Pro UltraLight", "GR Walsheim Pro-UltraLight", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Anti-Fallback Metric Check for 'UltraLight' (Custom width=538.5px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 300 but got computed 300</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Font-Family inclusion for 'Light' (Walsheim in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Walsheim' missing from 'GRWalsheimPro-Light, "GR Walsheim Pro", GRWalsheimPro, "GT Walsheim Pro", GTWalsheimPro, "GR Walsheim Pro Light", "GR Walsheim Pro-Light", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Light' (Custom width=550.8px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Weight matching for 'Regular' (Exp: 400, Got inline=400, comp=400)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 400 but got computed 400</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Font-Family inclusion for 'Regular' (Walsheim in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Walsheim' missing from 'GRWalsheimPro-Regular, "GR Walsheim Pro", GRWalsheimPro, "GT Walsheim Pro", GTWalsheimPro, "GR Walsheim Pro Regular", "GR Walsheim Pro-Regular", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Regular' (Custom width=556.5px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Weight matching for 'Medium' (Exp: 500, Got inline=500, comp=500)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 500 but got computed 500</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Font-Family inclusion for 'Medium' (Walsheim in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Walsheim' missing from 'GRWalsheimPro-Medium, "GR Walsheim Pro", GRWalsheimPro, "GT Walsheim Pro", GTWalsheimPro, "GR Walsheim Pro Medium", "GR Walsheim Pro-Medium", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Medium' (Custom width=562.1px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 700 but got computed 700</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Font-Family inclusion for 'Bold' (Walsheim in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Walsheim' missing from 'GRWalsheimPro-Bold, "GR Walsheim Pro", GRWalsheimPro, "GT Walsheim Pro", GTWalsheimPro, "GR Walsheim Pro Bold", "GR Walsheim Pro-Bold", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Bold' (Custom width=596.7px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Weight matching for 'Black' (Exp: 900, Got inline=900, comp=900)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 900 but got computed 900</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Font-Family inclusion for 'Black' (Walsheim in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Walsheim' missing from 'GRWalsheimPro-Black, "GR Walsheim Pro", GRWalsheimPro, "GT Walsheim Pro", GTWalsheimPro, "GR Walsheim Pro Black", "GR Walsheim Pro-Black", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR Walsheim</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Black' (Custom width=631.2px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Card Presence for GR America</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>OK</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Weight matching for 'UltraLight' (Exp: 200, Got inline=200, comp=200)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 200 but got computed 200</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Font-Family inclusion for 'UltraLight' (America in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'America' missing from 'GRAmerica-UltraLight, "GR America", GRAmerica, "GT America", GTAmerica, "GR America UltraLight", "GR America-UltraLight", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Anti-Fallback Metric Check for 'UltraLight' (Custom width=543.4px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 300 but got computed 300</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Font-Family inclusion for 'Light' (America in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'America' missing from 'GRAmerica-Light, "GR America", GRAmerica, "GT America", GTAmerica, "GR America Light", "GR America-Light", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Light' (Custom width=547.2px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Weight matching for 'Regular' (Exp: 400, Got inline=400, comp=400)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 400 but got computed 400</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Font-Family inclusion for 'Regular' (America in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'America' missing from 'GRAmerica-Regular, "GR America", GRAmerica, "GT America", GTAmerica, "GR America Regular", "GR America-Regular", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Regular' (Custom width=548.6px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Weight matching for 'Medium' (Exp: 500, Got inline=500, comp=500)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 500 but got computed 500</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Font-Family inclusion for 'Medium' (America in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'America' missing from 'GRAmerica-Medium, "GR America", GRAmerica, "GT America", GTAmerica, "GR America Medium", "GR America-Medium", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Medium' (Custom width=566.6px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 700 but got computed 700</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Font-Family inclusion for 'Bold' (America in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'America' missing from 'GRAmerica-Bold, "GR America", GRAmerica, "GT America", GTAmerica, "GR America Bold", "GR America-Bold", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Bold' (Custom width=587.1px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Weight matching for 'Black' (Exp: 900, Got inline=900, comp=900)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 900 but got computed 900</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Font-Family inclusion for 'Black' (America in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'America' missing from 'GRAmerica-Black, "GR America", GRAmerica, "GT America", GTAmerica, "GR America Black", "GR America-Black", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>GR America</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Black' (Custom width=608.5px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Card Presence for FD Gilroy</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>OK</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Weight matching for 'Thin' (Exp: 100, Got inline=100, comp=100)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 100 but got computed 100</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Font-Family inclusion for 'Thin' (Gilroy in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Gilroy' missing from 'FDGilroy-Thin, "FD Gilroy", FDGilroy, "FD Gilroy Thin", "FD Gilroy-Thin", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Thin' (Custom width=596.4px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Weight matching for 'Light' (Exp: 300, Got inline=300, comp=300)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 300 but got computed 300</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Font-Family inclusion for 'Light' (Gilroy in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Gilroy' missing from 'FDGilroy-Light, "FD Gilroy", FDGilroy, "FD Gilroy Light", "FD Gilroy-Light", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Light' (Custom width=582.9px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Weight matching for 'Regular' (Exp: 400, Got inline=400, comp=400)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 400 but got computed 400</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Font-Family inclusion for 'Regular' (Gilroy in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Gilroy' missing from 'FDGilroy-Regular, "FD Gilroy", FDGilroy, "FD Gilroy Regular", "FD Gilroy-Regular", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Regular' (Custom width=575.9px vs Arial=567.7px / Times=522.2px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Weight matching for 'Bold' (Exp: 700, Got inline=700, comp=700)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 700 but got computed 700</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Font-Family inclusion for 'Bold' (Gilroy in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Gilroy' missing from 'FDGilroy-Bold, "FD Gilroy", FDGilroy, "FD Gilroy Bold", "FD Gilroy-Bold", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Bold' (Custom width=583.0px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Weight matching for 'Black' (Exp: 900, Got inline=900, comp=900)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Expected 900 but got computed 900</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Font-Family inclusion for 'Black' (Gilroy in stack)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Family token 'Gilroy' missing from 'FDGilroy-Black, "FD Gilroy", FDGilroy, "FD Gilroy Black", "FD Gilroy-Black", -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif'</small></td>
+                </tr>
+                
+                <tr>
+                  <td><strong>FD Gilroy</strong></td>
+                  <td>Anti-Fallback Metric Check for 'Black' (Custom width=577.0px vs Arial=590.9px / Times=545.0px)</td>
+                  <td><span class="badge pass">PASS</span></td>
+                  <td><small>Metrics match system fallback - font may not have rendered</small></td>
+                </tr>
+                
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

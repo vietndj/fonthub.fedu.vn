@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-07 22:39:49",
+  "timestamp": "2026-09-08 19:55:23",
   "suites": {
     "Redirect": [
       {
@@ -8,24 +8,24 @@
         "details": "HTTP 200"
       },
       {
-        "test": "Meta Refresh to fonthub.fedu.vn/#catalog",
+        "test": "Meta Refresh to font.fedu.vn/#catalog",
         "status": "PASS",
         "details": "Meta refresh present"
       },
       {
-        "test": "JS window.location.replace to fonthub.fedu.vn/#catalog",
+        "test": "JS window.location.replace to font.fedu.vn/#catalog",
         "status": "PASS",
         "details": "JS replace present"
       },
       {
-        "test": "Canonical link points to fonthub.fedu.vn/#catalog",
+        "test": "Canonical link points to font.fedu.vn/#catalog",
         "status": "PASS",
         "details": "Canonical link present"
       },
       {
-        "test": "Headless Chrome resolves fedu.vn/font/ to fonthub.fedu.vn",
+        "test": "Headless Chrome resolves fedu.vn/font/ to font.fedu.vn",
         "status": "PASS",
-        "details": "Landed at: https://fonthub.fedu.vn/#catalog"
+        "details": "Landed at: https://font.fedu.vn/#catalog"
       }
     ],
     "Catalog (Local)": [
@@ -88,12 +88,12 @@
         "details": null
       },
       {
-        "test": "Clicking style toggle expands Waterfall drawer (Rows: 14)",
+        "test": "Clicking style toggle expands Waterfall drawer (Rows: 16)",
         "status": "PASS",
         "details": null
       },
       {
-        "test": "Clicking waterfall row applies style to card (Row: Black Italic, Weight: 900)",
+        "test": "Clicking waterfall row applies style to card (Row: Thin Italic, Weight: 100)",
         "status": "PASS",
         "details": null
       },
@@ -131,17 +131,17 @@
     ],
     "Production Live": [
       {
-        "test": "Live fonthub.fedu.vn renders Fontshare Weight Slider",
+        "test": "Live https://font.fedu.vn renders Fontshare Weight Slider",
         "status": "PASS",
         "details": null
       },
       {
-        "test": "Live fonthub.fedu.vn renders Fontshare Size Slider",
+        "test": "Live https://font.fedu.vn renders Fontshare Size Slider",
         "status": "PASS",
         "details": null
       },
       {
-        "test": "Live fonthub.fedu.vn renders Waterfall Drawer Toggle",
+        "test": "Live https://font.fedu.vn renders Waterfall Drawer Toggle",
         "status": "PASS",
         "details": null
       },
@@ -151,7 +151,7 @@
         "details": null
       },
       {
-        "test": "Live Waterfall Drawer expands with styles (Rows: 14)",
+        "test": "Live Waterfall Drawer expands with styles (Rows: 8)",
         "status": "PASS",
         "details": null
       },

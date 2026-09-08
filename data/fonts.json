@@ -10199,7 +10199,7 @@
         "filename": "GRWalsheimPro-Ultrabold.woff2",
         "source_filename": "GRWalsheimPro-Ultrabold.woff2",
         "style": "Ultrabold",
-        "weight": 400,
+        "weight": 800,
         "ext": "woff2",
         "is_italic": false,
         "size": 88944
@@ -10217,7 +10217,7 @@
         "filename": "GRWalsheimPro-UltraboldItalic.woff2",
         "source_filename": "GRWalsheimPro-UltraboldItalic.woff2",
         "style": "UltraboldItalic",
-        "weight": 400,
+        "weight": 800,
         "ext": "woff2",
         "is_italic": true,
         "size": 92996
@@ -10714,7 +10714,7 @@
         "filename": "GRSuperDisplay-Regular.woff2",
         "source_filename": "GRSuperDisplay-Regular.woff2",
         "style": "Regular",
-        "weight": 400,
+        "weight": 800,
         "ext": "woff2",
         "is_italic": false,
         "size": 73696
@@ -10723,7 +10723,7 @@
         "filename": "GRSuperDisplay-Italic.woff2",
         "source_filename": "GRSuperDisplay-LightItalic.woff2",
         "style": "Italic",
-        "weight": 400,
+        "weight": 800,
         "ext": "woff2",
         "is_italic": true,
         "size": 76144
@@ -10777,7 +10777,7 @@
         "filename": "GRSuperDisplay-Italic.woff2",
         "source_filename": "GRSuperDisplay-Italic.woff2",
         "style": "Italic",
-        "weight": 400,
+        "weight": 800,
         "ext": "woff2",
         "is_italic": true,
         "size": 76144

@@ -40,7 +40,7 @@ def audit_suite():
         results['suites'][suite].append({'test': name, 'status': status, 'details': details})
 
     print('=' * 80)
-    print('FONTHUB E2E QUALITY AUDIT SUITE (Fontshare Features & Redirects)')
+    print('FEDU FONT E2E QUALITY AUDIT SUITE (Fontshare Features & Redirects)')
     print('=' * 80)
 
     # 1. HTTP GET Redirect Test
@@ -49,13 +49,13 @@ def audit_suite():
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
-        req = urllib.request.Request('https://fedu.vn/font/', headers={'User-Agent': 'FontHub-QualityAuditor/2.0'})
+        req = urllib.request.Request('https://fedu.vn/font/', headers={'User-Agent': 'FEDU-Font-QualityAuditor/2.0'})
         with urllib.request.urlopen(req, context=ctx, timeout=10) as resp:
             http_status = resp.status
             content = resp.read().decode('utf-8', errors='ignore')
-            has_refresh = 'http-equiv="refresh"' in content and ('font.fedu.vn' in content or 'fonthub.fedu.vn' in content)
-            has_js = 'location.replace' in content and ('font.fedu.vn' in content or 'fonthub.fedu.vn' in content)
-            has_canon = 'rel="canonical"' in content and ('font.fedu.vn' in content or 'fonthub.fedu.vn' in content)
+            has_refresh = 'http-equiv="refresh"' in content and 'font.fedu.vn' in content
+            has_js = 'location.replace' in content and 'font.fedu.vn' in content
+            has_canon = 'rel="canonical"' in content and 'font.fedu.vn' in content
             record('Redirect', 'HTTP Status 200 with instant redirect markup', http_status == 200, f'HTTP {http_status}')
             record('Redirect', 'Meta Refresh to font.fedu.vn/#catalog', has_refresh, 'Meta refresh present')
             record('Redirect', 'JS window.location.replace to font.fedu.vn/#catalog', has_js, 'JS replace present')
@@ -76,7 +76,7 @@ def audit_suite():
             r_page = browser.new_page()
             r_page.goto('https://fedu.vn/font/', wait_until='networkidle', timeout=15000)
             final_url = r_page.url
-            is_redirected = 'font.fedu.vn' in final_url or 'fonthub.fedu.vn' in final_url
+            is_redirected = 'font.fedu.vn' in final_url
             record('Redirect', 'Headless Chrome resolves fedu.vn/font/ to font.fedu.vn', is_redirected, f'Landed at: {final_url}')
             r_page.close()
         except Exception as e:
@@ -100,7 +100,7 @@ def audit_suite():
             results['screenshots'].append(desktop_shot)
             record('Visual', 'Desktop 1440px Screenshot Captured', os.path.exists(desktop_shot))
 
-            first_card = page.locator('.font-card').first
+            first_card = page.locator('.font-card:has(.weight-chip[data-weight="Light"])').first
             preview_elem = first_card.locator('.preview-text')
 
             # Weight Slider

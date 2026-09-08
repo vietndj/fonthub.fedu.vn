@@ -1,6 +1,19 @@
 {
   "name": "font-fedu-vn",
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "fonthub.fedu.vn"
+        }
+      ],
+      "destination": "https://font.fedu.vn/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/data/(.*)",

@@ -388,7 +388,6 @@
         isFav = false;
       }
       localStorage.setItem('fedu_font_favorites', JSON.stringify(favs));
-      localStorage.setItem('fonthub_favorites', JSON.stringify(favs));
       updateFacetCountBadges();
       if (App.activeFilters && App.activeFilters.category === 'favorites') {
         applyFilters();
@@ -418,10 +417,23 @@
 
     var cacheKey = resolved.matchedFilename + '__' + resolved.fontWeight + '__' + resolved.fontStyle;
     if (loadedDynamicFaces.has(cacheKey)) {
+      if (previewElement) {
+        previewElement.style.fontFamily = resolved.fontFamily;
+        previewElement.style.fontWeight = resolved.fontWeight;
+        previewElement.style.fontStyle = resolved.fontStyle;
+        void previewElement.offsetHeight;
+      }
       return Promise.resolve(null);
     }
     if (dynamicFacePromises.has(cacheKey)) {
-      return dynamicFacePromises.get(cacheKey);
+      return dynamicFacePromises.get(cacheKey).then(function () {
+        if (previewElement) {
+          previewElement.style.fontFamily = resolved.fontFamily;
+          previewElement.style.fontWeight = resolved.fontWeight;
+          previewElement.style.fontStyle = resolved.fontStyle;
+          void previewElement.offsetHeight;
+        }
+      });
     }
 
     var familiesToRegister = new Set([family, specificFamily]);
@@ -459,9 +471,10 @@
           previewElement.style.fontFamily = resolved.fontFamily;
           previewElement.style.fontWeight = resolved.fontWeight;
           previewElement.style.fontStyle = resolved.fontStyle;
+          void previewElement.offsetHeight;
         }
       } catch (err) {
-        console.warn('[FontHub] Failed dynamic font load for ' + resolved.matchedFilename + ':', err);
+        console.warn('[FEDU Font] Failed dynamic font load for ' + resolved.matchedFilename + ':', err);
       } finally {
         dynamicFacePromises.delete(cacheKey);
       }
@@ -576,6 +589,8 @@
         var mw = parseInt(matchedFile.weight, 10);
         if (baseToken.includes('ultrabold') && mw === 400) {
           fontWeight = '800';
+        } else if (mw === 400 && (baseToken !== 'regular' && baseToken !== 'book' && baseToken !== 'normal' && baseToken !== 'roman' && baseToken !== '' && baseToken !== '400')) {
+          // Keep the accurate token-deduced weight (e.g. 100 for thin, 700 for bold, 300 for light)
         } else {
           fontWeight = String(mw);
         }
@@ -945,6 +960,7 @@
     DOM.fontGrid.querySelectorAll('.weight-chip:not([data-bound])').forEach(function (chip) {
       chip.setAttribute('data-bound', 'true');
       chip.addEventListener('click', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
         var card = chip.closest('.font-card');
         if (!card) return;
         var family = card.getAttribute('data-family');
@@ -967,9 +983,12 @@
           preview.style.fontWeight = resolved.fontWeight;
           preview.style.fontStyle = resolved.fontStyle;
           preview.style.fontFamily = resolved.fontFamily;
-          if (fontObj && (fontObj.is_variable || (fontObj.weights && fontObj.weights.length >= 6))) {
+          if (fontObj && fontObj.is_variable) {
             preview.style.fontVariationSettings = "'wght' " + (parseInt(resolved.fontWeight, 10) || 400);
+          } else {
+            preview.style.fontVariationSettings = 'normal';
           }
+          void preview.offsetHeight;
         }
 
         // Sync card weight slider & display
@@ -993,27 +1012,19 @@
           document.fonts.load(resolved.fontWeight + ' 36px "' + family + '"');
         }
 
-        // Dynamically load font face if available on server
-        if (resolved.matchedFilename && typeof FontFace !== 'undefined') {
-          var fontFaceFamily = family;
-          var fontUrl = 'fonts/' + resolved.matchedFilename;
-          if (!document.fonts.check(resolved.fontWeight + ' 16px "' + fontFaceFamily + '"')) {
-            var face = new FontFace(fontFaceFamily, 'url("' + fontUrl + '")', {
-              weight: resolved.fontWeight,
-              style: resolved.fontStyle
-            });
-            face.load().then(function (loaded) {
-              document.fonts.add(loaded);
-            }).catch(function () {});
-          }
-        }
+        // Dynamically load font face with deduplication and immediate element binding
+        loadVariantFontFace(fontObj, resolved, preview);
       });
     });
 
     // Fontshare Weight Slider on Card (100 to 900)
     DOM.fontGrid.querySelectorAll('.card-weight-slider:not([data-bound])').forEach(function (slider) {
       slider.setAttribute('data-bound', 'true');
-      slider.addEventListener('input', function () {
+      slider.addEventListener('click', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
+      });
+      slider.addEventListener('input', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
         var card = slider.closest('.font-card');
         if (!card) return;
         var val = parseInt(slider.value, 10);
@@ -1032,8 +1043,10 @@
         if (preview) {
           preview.style.fontWeight = val;
           preview.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallbackStack;
-          if (fontObj && (fontObj.is_variable || weights.length >= 6)) {
+          if (fontObj && fontObj.is_variable) {
             preview.style.fontVariationSettings = "'wght' " + val;
+          } else {
+            preview.style.fontVariationSettings = 'normal';
           }
         }
 
@@ -1068,7 +1081,9 @@
           var resolved = resolveVariantStyle(family, closestWeight, category, files);
           if (preview) {
             preview.style.fontStyle = resolved.fontStyle;
+            preview.style.fontFamily = resolved.fontFamily;
           }
+          loadVariantFontFace(fontObj, resolved, preview);
         }
 
         // Highlight active waterfall row
@@ -1085,7 +1100,11 @@
     // Fontshare Size Slider on Card (14 to 140)
     DOM.fontGrid.querySelectorAll('.card-size-slider:not([data-bound])').forEach(function (slider) {
       slider.setAttribute('data-bound', 'true');
-      slider.addEventListener('input', function () {
+      slider.addEventListener('click', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
+      });
+      slider.addEventListener('input', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
         var card = slider.closest('.font-card');
         if (!card) return;
         var val = parseInt(slider.value, 10);
@@ -1128,6 +1147,7 @@
     DOM.fontGrid.querySelectorAll('.card-waterfall-row:not([data-bound])').forEach(function (row) {
       row.setAttribute('data-bound', 'true');
       row.addEventListener('click', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
         if (e.target.classList.contains('waterfall-sample-text') && document.activeElement === e.target) {
           return;
         }
@@ -1151,6 +1171,12 @@
             preview.style.fontWeight = resolved.fontWeight;
             preview.style.fontStyle = resolved.fontStyle;
             preview.style.fontFamily = resolved.fontFamily;
+            if (fontObj && fontObj.is_variable) {
+              preview.style.fontVariationSettings = "'wght' " + (parseInt(resolved.fontWeight, 10) || 400);
+            } else {
+              preview.style.fontVariationSettings = 'normal';
+            }
+            void preview.offsetHeight;
           }
           var numW = parseInt(resolved.fontWeight, 10) || 400;
           var wSlider = card.querySelector('.card-weight-slider');
@@ -1161,6 +1187,7 @@
           if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
             document.fonts.load(numW + ' 36px "' + family + '"');
           }
+          loadVariantFontFace(fontObj, resolved, preview);
         }
 
         card.querySelectorAll('.card-waterfall-row').forEach(function (r) { r.classList.remove('is-active'); });
@@ -2031,7 +2058,13 @@
           if (specimen) {
             var fallback = (category && category.toLowerCase().includes('serif') && !category.toLowerCase().includes('sans')) ? 'serif' : 'sans-serif';
             specimen.style.fontWeight = numW;
-            specimen.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallback;
+            if (typeof resolved !== 'undefined' && resolved) {
+              specimen.style.fontStyle = resolved.fontStyle;
+              specimen.style.fontFamily = resolved.fontFamily;
+              loadVariantFontFace(fontObj, resolved, specimen);
+            } else {
+              specimen.style.fontFamily = "'" + family + "', '" + family.replace(/\s+/g, '') + "', " + fallback;
+            }
             if (typeof document !== 'undefined' && document.fonts && document.fonts.load) {
               document.fonts.load(numW + ' 36px "' + family + '"');
             }
@@ -2936,9 +2969,9 @@
       });
     }
 
-    // Global Click delegation for Studio badges on ANY card (.badge-studio, .fs-studio-badge, [data-studio])
+    // Global Click delegation ONLY for actual Studio badge buttons (button.badge-studio, button.fs-studio-badge)
     document.addEventListener('click', function (e) {
-      var studioBtn = e.target.closest('.badge-studio, .fs-studio-badge, [data-studio]');
+      var studioBtn = e.target.closest('button.badge-studio[data-studio], button.fs-studio-badge[data-studio]');
       if (studioBtn) {
         var studioName = studioBtn.getAttribute('data-studio');
         if (!studioName) return;

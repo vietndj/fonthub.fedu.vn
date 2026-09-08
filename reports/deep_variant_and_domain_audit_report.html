@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Deep E2E Variant & Domain Audit Report — FEDU FONT (font.fedu.vn)</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f1117; color: #e5e7eb; margin: 0; padding: 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #2d3748; padding-bottom: 16px; margin-bottom: 24px; }
+    .score { font-size: 32px; font-weight: 700; color: #10b981; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; background: #1a202c; border-radius: 8px; overflow: hidden; }
+    th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #2d3748; font-size: 14px; }
+    th { background: #2d3748; color: #a0aec0; }
+    .suite-hdr th { background: #1e293b; color: #38bdf8; font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .badge-pass { background: rgba(16, 185, 129, 0.2); color: #10b981; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
+    .badge-fail { background: rgba(239, 68, 68, 0.2); color: #ef4444; padding: 4px 8px; border-radius: 4px; font-weight: 600; }
+    code { color: #94a3b8; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1 style="margin:0; font-size:22px;">FEDU FONT — Deep E2E Variant & Domain Audit</h1>
+        <p style="margin:4px 0 0; color:#94a3b8;">Target: font.fedu.vn | Tested at: 2026-09-08 20:22:16</p>
+      </div>
+      <div class="score">116/116 (100.0%)</div>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Test Case</th><th>Status</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr class='suite-hdr'><th colspan='3'>Domain & Configuration Audit</th></tr>
+                <tr>
+                  <td>CNAME file exists and points to font.fedu.vn</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Content: 'font.fedu.vn'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>vercel.json has project name 'font-fedu-vn'</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>name: 'font-fedu-vn'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>index.html contains canonical tag for font.fedu.vn</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Canonical tag verified</code></td>
+                </tr>
+                
+                <tr>
+                  <td>index.html contains og:url meta tag for font.fedu.vn</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>og:url verified</code></td>
+                </tr>
+                
+                <tr>
+                  <td>vercel.json configures 301 Permanent Redirect fonthub.fedu.vn -> font.fedu.vn</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>301 Redirect to font.fedu.vn configured</code></td>
+                </tr>
+                
+                <tr>
+                  <td>Zero unintended occurrences of fonthub.fedu.vn across active codebase</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Clean 0 matches</code></td>
+                </tr>
+                <tr class='suite-hdr'><th colspan='3'>Variant Pills Preview & Behavior Isolation</th></tr>
+                <tr>
+                  <td>GR Sectra [Light]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Light]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Light]: Rendered font-weight matches 300</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=300, comp=300</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Light]: Card slider synced to 300</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 300</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Light]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Light]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Regular]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Regular]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Regular]: Rendered font-weight matches 400</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=400, comp=400</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Regular]: Card slider synced to 400</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 400</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Regular]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Regular]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Medium]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Medium]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Medium]: Rendered font-weight matches 500</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=500, comp=500</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Medium]: Card slider synced to 500</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 500</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Medium]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Medium]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Bold]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Bold]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Bold]: Rendered font-weight matches 700</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=700, comp=700</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Bold]: Card slider synced to 700</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 700</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Bold]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Bold]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Super]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Super]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Super]: Rendered font-weight matches 800</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=800, comp=800</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Super]: Card slider synced to 800</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 800</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Super]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Super]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Black]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Black]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Black]: Rendered font-weight matches 900</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=900, comp=900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Black]: Card slider synced to 900</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Black]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Sectra [Black]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [UltraLight]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [UltraLight]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [UltraLight]: Rendered font-weight matches 200</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=200, comp=200</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [UltraLight]: Card slider synced to 200</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 200</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [UltraLight]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [UltraLight]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Light]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Light]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Light]: Rendered font-weight matches 300</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=300, comp=300</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Light]: Card slider synced to 300</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 300</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Light]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Light]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Regular]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Regular]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Regular]: Rendered font-weight matches 400</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=400, comp=400</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Regular]: Card slider synced to 400</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 400</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Regular]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Regular]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Medium]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Medium]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Medium]: Rendered font-weight matches 500</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=500, comp=500</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Medium]: Card slider synced to 500</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 500</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Medium]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Medium]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Bold]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Bold]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Bold]: Rendered font-weight matches 700</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=700, comp=700</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Bold]: Card slider synced to 700</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 700</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Bold]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Bold]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Black]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Black]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Black]: Rendered font-weight matches 900</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=900, comp=900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Black]: Card slider synced to 900</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Black]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>GR Walsheim [Black]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Thin]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Thin]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Thin]: Rendered font-weight matches 100</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=100, comp=100</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Thin]: Card slider synced to 100</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 100</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Thin]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Thin]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Light]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Light]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Light]: Rendered font-weight matches 300</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=300, comp=300</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Light]: Card slider synced to 300</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 300</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Light]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Light]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Regular]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Regular]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Regular]: Rendered font-weight matches 400</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=400, comp=400</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Regular]: Card slider synced to 400</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 400</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Regular]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Regular]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Bold]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Bold]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Bold]: Rendered font-weight matches 700</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=700, comp=700</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Bold]: Card slider synced to 700</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 700</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Bold]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Bold]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Black]: Pill exists and accepts click</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Black]: Pill gets .active class</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Black]: Rendered font-weight matches 900</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>inline=900, comp=900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Black]: Card slider synced to 900</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>got 900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Black]: NO accidental Studio Toast triggered</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Toasts: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>FD Gilroy [Black]: Studio filter remained unset ('all')</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Studio val: 'all'</code></td>
+                </tr>
+                <tr class='suite-hdr'><th colspan='3'>Waterfall Row Interaction & Isolation</th></tr>
+                <tr>
+                  <td>Waterfall row click updates row to is-active</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>Waterfall row click updates preview font-weight</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Weight: 900</code></td>
+                </tr>
+                
+                <tr>
+                  <td>Waterfall row click does NOT trigger Studio toast</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Found 0 toasts</code></td>
+                </tr>
+                <tr class='suite-hdr'><th colspan='3'>Intentional Studio Badge Grouping</th></tr>
+                <tr>
+                  <td>Direct click on button.badge-studio succeeds</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code></code></td>
+                </tr>
+                
+                <tr>
+                  <td>Catalog filtered to Studio 'Commercial Type'</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Select: 'Commercial Type', Cards: 2/24</code></td>
+                </tr>
+                
+                <tr>
+                  <td>Clear filters restores all font cards</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Restored 24/24 cards</code></td>
+                </tr>
+                <tr class='suite-hdr'><th colspan='3'>Console & Network Hygiene</th></tr>
+                <tr>
+                  <td>Zero console runtime errors</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>Errors: []</code></td>
+                </tr>
+                
+                <tr>
+                  <td>Zero 404 font asset network errors</td>
+                  <td><span class='badge-pass'>PASS</span></td>
+                  <td><code>404s: []</code></td>
+                </tr>
+                
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

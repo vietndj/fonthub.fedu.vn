@@ -1,0 +1,5194 @@
+/* ==========================================================================
+   FEDU Font Hub — GR (Grilli Type) Webfont Master Definitions
+   Generated automatically with specific families & standard fallbacks
+   ========================================================================== */
+
+/* --- GR Pantheon (gr-pantheon) --- */
+@font-face {
+  font-family: 'GRPantheonDisplay-Light';
+  src: url('fonts/GRPantheonDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-LightItalic';
+  src: url('fonts/GRPantheonDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-Regular';
+  src: url('fonts/GRPantheonDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-RegularItalic';
+  src: url('fonts/GRPantheonDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-Medium';
+  src: url('fonts/GRPantheonDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-MediumItalic';
+  src: url('fonts/GRPantheonDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-Bold';
+  src: url('fonts/GRPantheonDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-BoldItalic';
+  src: url('fonts/GRPantheonDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-Black';
+  src: url('fonts/GRPantheonDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheonDisplay-BlackItalic';
+  src: url('fonts/GRPantheonDisplay-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Pantheon';
+  src: url('fonts/GRPantheonDisplay-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Pantheon';
+  src: url('fonts/GRPantheonDisplay-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPantheon';
+  src: url('fonts/GRPantheonDisplay-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- GR Canon (gr-canon) --- */
+@font-face {
+  font-family: 'GRCanonLCondensedLight';
+  src: url('fonts/GRCanonLCondensedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedLightItalic';
+  src: url('fonts/GRCanonLCondensedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedRegular';
+  src: url('fonts/GRCanonLCondensedRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedBlackItalic';
+  src: url('fonts/GRCanonLCondensedBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedRegularItalic';
+  src: url('fonts/GRCanonLCondensedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedMedium';
+  src: url('fonts/GRCanonLCondensedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedBold';
+  src: url('fonts/GRCanonLCondensedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedHeavy';
+  src: url('fonts/GRCanonLCondensedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanonLCondensedBlack';
+  src: url('fonts/GRCanonLCondensedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Canon';
+  src: url('fonts/GRCanonLCondensedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Canon';
+  src: url('fonts/GRCanonLCondensedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCanon';
+  src: url('fonts/GRCanonLCondensedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Cinetype (gr-cinetype) --- */
+@font-face {
+  font-family: 'GRCinetypeLight';
+  src: url('fonts/GRCinetypeLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Cinetype';
+  src: url('fonts/GRCinetypeLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('fonts/GRCinetypeLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetype';
+  src: url('fonts/GRCinetypeLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetypeLightItalic';
+  src: url('fonts/GRCinetypeLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Cinetype';
+  src: url('fonts/GRCinetypeLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('fonts/GRCinetypeLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetype';
+  src: url('fonts/GRCinetypeLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetypeMono';
+  src: url('fonts/GRCinetypeMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Cinetype';
+  src: url('fonts/GRCinetypeMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('fonts/GRCinetypeMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetype';
+  src: url('fonts/GRCinetypeMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetypeBoldItalic';
+  src: url('fonts/GRCinetypeBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Cinetype';
+  src: url('fonts/GRCinetypeBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('fonts/GRCinetypeBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetype';
+  src: url('fonts/GRCinetypeBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetypeRegularItalic';
+  src: url('fonts/GRCinetypeRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Cinetype';
+  src: url('fonts/GRCinetypeRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('fonts/GRCinetypeRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetype';
+  src: url('fonts/GRCinetypeRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetypeBold';
+  src: url('fonts/GRCinetypeBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Cinetype';
+  src: url('fonts/GRCinetypeBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('fonts/GRCinetypeBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRCinetype';
+  src: url('fonts/GRCinetypeBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Eesti (gr-eesti) --- */
+@font-face {
+  font-family: 'GREestiDisplayThin';
+  src: url('fonts/GREestiDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayThinItalic';
+  src: url('fonts/GREestiDisplayThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayUltraLight';
+  src: url('fonts/GREestiDisplayUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayUltraLightItalic';
+  src: url('fonts/GREestiDisplayUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayLight';
+  src: url('fonts/GREestiDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayLightItalic';
+  src: url('fonts/GREestiDisplayLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiTextBook';
+  src: url('fonts/GREestiTextBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiTextBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiTextBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiTextBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayRegular';
+  src: url('fonts/GREestiDisplayRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiTextBookItalic';
+  src: url('fonts/GREestiTextBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiTextBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiTextBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiTextBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayBoldItalic';
+  src: url('fonts/GREestiDisplayBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayRegularItalic';
+  src: url('fonts/GREestiDisplayRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayMedium';
+  src: url('fonts/GREestiDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREestiDisplayBold';
+  src: url('fonts/GREestiDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Eesti';
+  src: url('fonts/GREestiDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Eesti';
+  src: url('fonts/GREestiDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREesti';
+  src: url('fonts/GREestiDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Era (gr-era) --- */
+@font-face {
+  font-family: 'GREraDisplayThin';
+  src: url('fonts/GREraDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREraDisplayLight';
+  src: url('fonts/GREraDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREraDisplayBlackOblique';
+  src: url('fonts/GREraDisplayBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREraDisplayMedium';
+  src: url('fonts/GREraDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREraDisplayBold';
+  src: url('fonts/GREraDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREraDisplayHeavy';
+  src: url('fonts/GREraDisplayHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREraDisplayBlack';
+  src: url('fonts/GREraDisplayBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Era';
+  src: url('fonts/GREraDisplayBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Era';
+  src: url('fonts/GREraDisplayBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GREra';
+  src: url('fonts/GREraDisplayBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Flaire (gr-flaire) --- */
+@font-face {
+  font-family: 'GRFlaireExtraLight';
+  src: url('fonts/GRFlaireExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireExtraLightItalic';
+  src: url('fonts/GRFlaireExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicLight';
+  src: url('fonts/GRFlaireBasicLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicLightItalic';
+  src: url('fonts/GRFlaireBasicLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicExtra';
+  src: url('fonts/GRFlaireBasicExtra.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicExtra.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicExtra.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicExtra.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicBlackItalic';
+  src: url('fonts/GRFlaireBasicBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicRegularItalic';
+  src: url('fonts/GRFlaireBasicRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicMedium';
+  src: url('fonts/GRFlaireBasicMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicBold';
+  src: url('fonts/GRFlaireBasicBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicHeavy';
+  src: url('fonts/GRFlaireBasicHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaireBasicBlack';
+  src: url('fonts/GRFlaireBasicBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flaire';
+  src: url('fonts/GRFlaireBasicBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flaire';
+  src: url('fonts/GRFlaireBasicBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlaire';
+  src: url('fonts/GRFlaireBasicBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Flexa (gr-flexa) --- */
+@font-face {
+  font-family: 'GRFlexaCompressedThin';
+  src: url('fonts/GRFlexaCompressedThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaCompressedThinItalic';
+  src: url('fonts/GRFlexaCompressedThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaCompressedLight';
+  src: url('fonts/GRFlexaCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaCompressedLightItalic';
+  src: url('fonts/GRFlexaCompressedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaCompressedLazer';
+  src: url('fonts/GRFlexaCompressedLazer.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedLazer.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedLazer.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedLazer.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaBlackItalic';
+  src: url('fonts/GRFlexaBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaCompressedRegularItalic';
+  src: url('fonts/GRFlexaCompressedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaCompressedMedium';
+  src: url('fonts/GRFlexaCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaBold';
+  src: url('fonts/GRFlexaBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexaBlack';
+  src: url('fonts/GRFlexaBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Flexa';
+  src: url('fonts/GRFlexaBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Flexa';
+  src: url('fonts/GRFlexaBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRFlexa';
+  src: url('fonts/GRFlexaBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Haptik (gr-haptik) --- */
+@font-face {
+  font-family: 'GRHaptikThin';
+  src: url('fonts/GRHaptikThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Haptik';
+  src: url('fonts/GRHaptikThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('fonts/GRHaptikThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptik';
+  src: url('fonts/GRHaptikThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptikLight';
+  src: url('fonts/GRHaptikLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Haptik';
+  src: url('fonts/GRHaptikLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('fonts/GRHaptikLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptik';
+  src: url('fonts/GRHaptikLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptikBlackOblique';
+  src: url('fonts/GRHaptikBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Haptik';
+  src: url('fonts/GRHaptikBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('fonts/GRHaptikBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptik';
+  src: url('fonts/GRHaptikBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptikMedium';
+  src: url('fonts/GRHaptikMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Haptik';
+  src: url('fonts/GRHaptikMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('fonts/GRHaptikMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptik';
+  src: url('fonts/GRHaptikMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptikBold';
+  src: url('fonts/GRHaptikBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Haptik';
+  src: url('fonts/GRHaptikBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('fonts/GRHaptikBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptik';
+  src: url('fonts/GRHaptikBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptikBlack';
+  src: url('fonts/GRHaptikBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Haptik';
+  src: url('fonts/GRHaptikBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Haptik';
+  src: url('fonts/GRHaptikBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRHaptik';
+  src: url('fonts/GRHaptikBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Maru (gr-maru) --- */
+@font-face {
+  font-family: 'GRMaruLight';
+  src: url('fonts/GRMaruLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Maru';
+  src: url('fonts/GRMaruLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Maru';
+  src: url('fonts/GRMaruLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaru';
+  src: url('fonts/GRMaruLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaruBlackOblique';
+  src: url('fonts/GRMaruBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Maru';
+  src: url('fonts/GRMaruBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Maru';
+  src: url('fonts/GRMaruBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaru';
+  src: url('fonts/GRMaruBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaruMedium';
+  src: url('fonts/GRMaruMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Maru';
+  src: url('fonts/GRMaruMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Maru';
+  src: url('fonts/GRMaruMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaru';
+  src: url('fonts/GRMaruMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaruBold';
+  src: url('fonts/GRMaruBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Maru';
+  src: url('fonts/GRMaruBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Maru';
+  src: url('fonts/GRMaruBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaru';
+  src: url('fonts/GRMaruBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaruBlack';
+  src: url('fonts/GRMaruBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Maru';
+  src: url('fonts/GRMaruBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Maru';
+  src: url('fonts/GRMaruBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMaru';
+  src: url('fonts/GRMaruBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Mechanik (gr-mechanik) --- */
+@font-face {
+  font-family: 'GRMechanikMonoThin';
+  src: url('fonts/GRMechanikMonoThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikMonoLight';
+  src: url('fonts/GRMechanikMonoLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikMonoBlackOblique';
+  src: url('fonts/GRMechanikMonoBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikMonoMedium';
+  src: url('fonts/GRMechanikMonoMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikSemiBold';
+  src: url('fonts/GRMechanikSemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikSemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikSemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikSemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikMonoBold';
+  src: url('fonts/GRMechanikMonoBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikMonoHeavy';
+  src: url('fonts/GRMechanikMonoHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanikMonoBlack';
+  src: url('fonts/GRMechanikMonoBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Mechanik';
+  src: url('fonts/GRMechanikMonoBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Mechanik';
+  src: url('fonts/GRMechanikMonoBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRMechanik';
+  src: url('fonts/GRMechanikMonoBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Planar (gr-planar) --- */
+@font-face {
+  font-family: 'GRPlanarItalic15Thin';
+  src: url('fonts/GRPlanarItalic15Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Planar';
+  src: url('fonts/GRPlanarItalic15Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Planar';
+  src: url('fonts/GRPlanarItalic15Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanar';
+  src: url('fonts/GRPlanarItalic15Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanarItalic15Light';
+  src: url('fonts/GRPlanarItalic15Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Planar';
+  src: url('fonts/GRPlanarItalic15Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Planar';
+  src: url('fonts/GRPlanarItalic15Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanar';
+  src: url('fonts/GRPlanarItalic15Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanarItalic15Regular';
+  src: url('fonts/GRPlanarItalic15Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Planar';
+  src: url('fonts/GRPlanarItalic15Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Planar';
+  src: url('fonts/GRPlanarItalic15Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanar';
+  src: url('fonts/GRPlanarItalic15Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanarItalic15Medium';
+  src: url('fonts/GRPlanarItalic15Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Planar';
+  src: url('fonts/GRPlanarItalic15Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Planar';
+  src: url('fonts/GRPlanarItalic15Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanar';
+  src: url('fonts/GRPlanarItalic15Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanarBold';
+  src: url('fonts/GRPlanarBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Planar';
+  src: url('fonts/GRPlanarBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Planar';
+  src: url('fonts/GRPlanarBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanar';
+  src: url('fonts/GRPlanarBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanarBlack';
+  src: url('fonts/GRPlanarBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Planar';
+  src: url('fonts/GRPlanarBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Planar';
+  src: url('fonts/GRPlanarBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRPlanar';
+  src: url('fonts/GRPlanarBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Standard (gr-standard) --- */
+@font-face {
+  font-family: 'GRStandardLCompressedLight';
+  src: url('fonts/GRStandardLCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Standard';
+  src: url('fonts/GRStandardLCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Standard';
+  src: url('fonts/GRStandardLCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandard';
+  src: url('fonts/GRStandardLCompressedLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandardLCompressedBlackOblique';
+  src: url('fonts/GRStandardLCompressedBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Standard';
+  src: url('fonts/GRStandardLCompressedBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Standard';
+  src: url('fonts/GRStandardLCompressedBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandard';
+  src: url('fonts/GRStandardLCompressedBlackOblique.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandardLCompressedMedium';
+  src: url('fonts/GRStandardLCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Standard';
+  src: url('fonts/GRStandardLCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Standard';
+  src: url('fonts/GRStandardLCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandard';
+  src: url('fonts/GRStandardLCompressedMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandardLCompressedBold';
+  src: url('fonts/GRStandardLCompressedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Standard';
+  src: url('fonts/GRStandardLCompressedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Standard';
+  src: url('fonts/GRStandardLCompressedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandard';
+  src: url('fonts/GRStandardLCompressedBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandardLCompressedHeavy';
+  src: url('fonts/GRStandardLCompressedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Standard';
+  src: url('fonts/GRStandardLCompressedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Standard';
+  src: url('fonts/GRStandardLCompressedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandard';
+  src: url('fonts/GRStandardLCompressedHeavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandardLCompressedBlack';
+  src: url('fonts/GRStandardLCompressedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Standard';
+  src: url('fonts/GRStandardLCompressedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Standard';
+  src: url('fonts/GRStandardLCompressedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRStandard';
+  src: url('fonts/GRStandardLCompressedBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR Zirkon (gr-zirkon) --- */
+@font-face {
+  font-family: 'GRZirkonThin';
+  src: url('fonts/GRZirkonThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonThinItalic';
+  src: url('fonts/GRZirkonThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonUltraLight';
+  src: url('fonts/GRZirkonUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonUltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonUltraLightItalic';
+  src: url('fonts/GRZirkonUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonUltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonLight';
+  src: url('fonts/GRZirkonLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonLightItalic';
+  src: url('fonts/GRZirkonLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonBook';
+  src: url('fonts/GRZirkonBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonBook.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonRegular';
+  src: url('fonts/GRZirkonRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonBookItalic';
+  src: url('fonts/GRZirkonBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonBookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonBlackItalic';
+  src: url('fonts/GRZirkonBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonRegularItalic';
+  src: url('fonts/GRZirkonRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonMedium';
+  src: url('fonts/GRZirkonMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonBold';
+  src: url('fonts/GRZirkonBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkonBlack';
+  src: url('fonts/GRZirkonBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Zirkon';
+  src: url('fonts/GRZirkonBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Zirkon';
+  src: url('fonts/GRZirkonBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRZirkon';
+  src: url('fonts/GRZirkonBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- GR America (gr-america) --- */
+@font-face {
+  font-family: 'GRAmerica-Thin';
+  src: url('fonts/GRAmerica-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-ThinItalic';
+  src: url('fonts/GRAmerica-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-UltraLight';
+  src: url('fonts/GRAmerica-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-UltraLightItalic';
+  src: url('fonts/GRAmerica-UltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-UltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-UltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-UltraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-Light';
+  src: url('fonts/GRAmerica-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-LightItalic';
+  src: url('fonts/GRAmerica-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-Regular';
+  src: url('fonts/GRAmerica-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-RegularItalic';
+  src: url('fonts/GRAmerica-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-Medium';
+  src: url('fonts/GRAmerica-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-MediumItalic';
+  src: url('fonts/GRAmerica-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-Bold';
+  src: url('fonts/GRAmerica-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-BoldItalic';
+  src: url('fonts/GRAmerica-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-Black';
+  src: url('fonts/GRAmerica-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica-BlackItalic';
+  src: url('fonts/GRAmerica-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR America';
+  src: url('fonts/GRAmerica-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT America';
+  src: url('fonts/GRAmerica-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAmerica';
+  src: url('fonts/GRAmerica-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- GR Sectra (gr-sectra) --- */
+@font-face {
+  font-family: 'GRSectraDisplay-Light';
+  src: url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-LightItalic';
+  src: url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraFine-Book';
+  src: url('fonts/GRSectraFine-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraFine-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraFine-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraFine-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-Regular';
+  src: url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraFine-BookItalic';
+  src: url('fonts/GRSectraFine-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraFine-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraFine-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraFine-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-RegularItalic';
+  src: url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-Medium';
+  src: url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-MediumItalic';
+  src: url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-Bold';
+  src: url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-BoldItalic';
+  src: url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-Super';
+  src: url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-Super.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraDisplay-SuperItalic';
+  src: url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraDisplay-SuperItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraFine-Black';
+  src: url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectraFine-BlackItalic';
+  src: url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Sectra';
+  src: url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Sectra';
+  src: url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSectra';
+  src: url('fonts/GRSectraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- GR Walsheim Pro (gr-walsheim) --- */
+@font-face {
+  font-family: 'GRWalsheimPro-Thin';
+  src: url('fonts/GRWalsheimPro-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-ThinItalic';
+  src: url('fonts/GRWalsheimPro-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Ultralight';
+  src: url('fonts/GRWalsheimPro-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-UltralightItalic';
+  src: url('fonts/GRWalsheimPro-UltralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-UltralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-UltralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-UltralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Light';
+  src: url('fonts/GRWalsheimPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-LightItalic';
+  src: url('fonts/GRWalsheimPro-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Regular';
+  src: url('fonts/GRWalsheimPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Ultrabold';
+  src: url('fonts/GRWalsheimPro-Ultrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Ultrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Ultrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Ultrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-RegularItalic';
+  src: url('fonts/GRWalsheimPro-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-UltraboldItalic';
+  src: url('fonts/GRWalsheimPro-UltraboldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-UltraboldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-UltraboldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-UltraboldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Medium';
+  src: url('fonts/GRWalsheimPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-MediumItalic';
+  src: url('fonts/GRWalsheimPro-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Bold';
+  src: url('fonts/GRWalsheimPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-BoldItalic';
+  src: url('fonts/GRWalsheimPro-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-Black';
+  src: url('fonts/GRWalsheimPro-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro-BlackItalic';
+  src: url('fonts/GRWalsheimPro-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('fonts/GRWalsheimPro-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRWalsheimPro';
+  src: url('fonts/GRWalsheimPro-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- GR Ultra (gr-ultra) --- */
+@font-face {
+  font-family: 'GRUltraFine-Thin';
+  src: url('fonts/GRUltraFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-ThinItalic';
+  src: url('fonts/GRUltraFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-Light';
+  src: url('fonts/GRUltraFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-LightItalic';
+  src: url('fonts/GRUltraFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-Regular';
+  src: url('fonts/GRUltraFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-RegularItalic';
+  src: url('fonts/GRUltraFine-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-Bold';
+  src: url('fonts/GRUltraFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-BoldItalic';
+  src: url('fonts/GRUltraFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-Black';
+  src: url('fonts/GRUltraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltraFine-BlackItalic';
+  src: url('fonts/GRUltraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Ultra';
+  src: url('fonts/GRUltraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Ultra';
+  src: url('fonts/GRUltraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRUltra';
+  src: url('fonts/GRUltraFine-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- GR Alpina Fine (gr-alpina) --- */
+@font-face {
+  font-family: 'GRAlpinaFine-Thin';
+  src: url('fonts/GRAlpinaFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-ThinItalic';
+  src: url('fonts/GRAlpinaFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-Light';
+  src: url('fonts/GRAlpinaFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-LightItalic';
+  src: url('fonts/GRAlpinaFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-Regular';
+  src: url('fonts/GRAlpinaFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-Italic';
+  src: url('fonts/GRAlpinaFine-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-Medium';
+  src: url('fonts/GRAlpinaFine-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-MediumItalic';
+  src: url('fonts/GRAlpinaFine-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-Bold';
+  src: url('fonts/GRAlpinaFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine-BoldItalic';
+  src: url('fonts/GRAlpinaFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Alpina Fine';
+  src: url('fonts/GRAlpinaFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('fonts/GRAlpinaFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRAlpinaFine';
+  src: url('fonts/GRAlpinaFine-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- GR Super Display (gr-super) --- */
+@font-face {
+  font-family: 'GRSuperDisplay-Light';
+  src: url('fonts/GRSuperDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-LightItalic';
+  src: url('fonts/GRSuperDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-Regular';
+  src: url('fonts/GRSuperDisplay-Regular.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-Regular.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-Regular.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-Regular.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-Italic';
+  src: url('fonts/GRSuperDisplay-Italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-Italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-Italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-Italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-Medium';
+  src: url('fonts/GRSuperDisplay-Medium.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-Medium.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-Medium.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-Medium.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-MediumItalic';
+  src: url('fonts/GRSuperDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-MediumItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-Bold';
+  src: url('fonts/GRSuperDisplay-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-Bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-BoldItalic';
+  src: url('fonts/GRSuperDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-BoldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay-Black';
+  src: url('fonts/GRSuperDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GR Super Display';
+  src: url('fonts/GRSuperDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('fonts/GRSuperDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GRSuperDisplay';
+  src: url('fonts/GRSuperDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
