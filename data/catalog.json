@@ -38903,183 +38903,137 @@
       "director_notes": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
       "weights": [
         "Air",
+        "AirItalic",
         "Thin",
-        "Air Italic",
-        "Thin Italic",
+        "ThinItalic",
         "Light",
-        "Light Italic",
+        "LightItalic",
         "Regular",
-        "Regular Italic",
+        "RegularItalic",
         "Medium",
-        "Medium Italic",
+        "MediumItalic",
         "SemiBold",
-        "SemiBold Italic",
+        "SemiBoldItalic",
         "Bold",
-        "Bold Italic",
+        "BoldItalic",
         "Black",
-        "Black Italic"
+        "BlackItalic"
       ],
       "sample_text": "Trải nghiệm giao diện mềm mại với đường nét hình học bo tròn tinh tế và hiện đại",
       "web_font_url": "fonts/FDAeonikSoft-Regular.woff2",
-      "files_count": 18,
+      "files_count": 16,
       "files": [
         {
-          "filename": "FDAeonikSoft-Air.woff2",
-          "source_filename": "FDAeonikSoft-Air.ttf",
+          "filename": "FDAeonikSoft-Air.ttf",
           "style": "Air",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 18500
+          "ext": "ttf",
+          "size": 84064,
+          "source_filename": "FDAeonikSoft-Air.ttf"
         },
         {
-          "filename": "FDAeonikSoft-Thin.woff2",
-          "source_filename": "FDAeonikSoft-Thin.ttf",
+          "filename": "FDAeonikSoft-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 88720,
+          "source_filename": "FDAeonikSoft-AirItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Thin.ttf",
           "style": "Thin",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 20844
+          "ext": "ttf",
+          "size": 84836,
+          "source_filename": "FDAeonikSoft-Thin.ttf"
         },
         {
-          "filename": "FDAeonikSoft-AirItalic.woff2",
-          "source_filename": "FDAeonikSoft-AirItalic.ttf",
-          "style": "Air Italic",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 19468
+          "filename": "FDAeonikSoft-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 91440,
+          "source_filename": "FDAeonikSoft-ThinItalic.ttf"
         },
         {
-          "filename": "FDAeonikSoft-ThinItalic.woff2",
-          "source_filename": "FDAeonikSoft-ThinItalic.ttf",
-          "style": "Thin Italic",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22260
-        },
-        {
-          "filename": "FDAeonikSoft-Light.woff2",
-          "source_filename": "FDAeonikSoft-Light.ttf",
+          "filename": "FDAeonikSoft-Light.ttf",
           "style": "Light",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 20732
+          "ext": "ttf",
+          "size": 84732,
+          "source_filename": "FDAeonikSoft-Light.ttf"
         },
         {
-          "filename": "FDAeonikSoft-LightItalic.woff2",
-          "source_filename": "FDAeonikSoft-LightItalic.ttf",
-          "style": "Light Italic",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22528
+          "filename": "FDAeonikSoft-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 91644,
+          "source_filename": "FDAeonikSoft-LightItalic.ttf"
         },
         {
-          "filename": "FDAeonikSoft-Regular.woff2",
-          "source_filename": "FDAeonikSoft-Regular.ttf",
+          "filename": "FDAeonikSoft-Regular.ttf",
           "style": "Regular",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 20060
+          "ext": "ttf",
+          "size": 84292,
+          "source_filename": "FDAeonikSoft-Regular.ttf"
         },
         {
-          "filename": "FDAeonikSoft-RegularItalic.woff2",
-          "source_filename": "FDAeonikSoft-RegularItalic.ttf",
-          "style": "Regular Italic",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 21320
+          "filename": "FDAeonikSoft-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 91920,
+          "source_filename": "FDAeonikSoft-RegularItalic.ttf"
         },
         {
-          "filename": "FDAeonikSoft-Medium.woff2",
-          "source_filename": "FDAeonikSoft-Medium.ttf",
+          "filename": "FDAeonikSoft-Medium.ttf",
           "style": "Medium",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21192
+          "ext": "ttf",
+          "size": 84436,
+          "source_filename": "FDAeonikSoft-Medium.ttf"
         },
         {
-          "filename": "FDAeonikSoft-MediumItalic.woff2",
-          "source_filename": "FDAeonikSoft-MediumItalic.ttf",
-          "style": "Medium Italic",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22924
+          "filename": "FDAeonikSoft-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 91548,
+          "source_filename": "FDAeonikSoft-MediumItalic.ttf"
         },
         {
-          "filename": "FDAeonikSoft-SemiBold.woff2",
-          "source_filename": "FDAeonikSoft-SemiBold.ttf",
+          "filename": "FDAeonikSoft-SemiBold.ttf",
           "style": "SemiBold",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21480
+          "ext": "ttf",
+          "size": 85812,
+          "source_filename": "FDAeonikSoft-SemiBold.ttf"
         },
         {
-          "filename": "FDAeonikSoft-SemiBoldItalic.woff2",
-          "source_filename": "FDAeonikSoft-SemiBoldItalic.ttf",
-          "style": "SemiBold Italic",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22984
-        },
-        {
-          "filename": "FDAeonikSoft-Bold.woff2",
-          "source_filename": "FDAeonikSoft-SemiBold.ttf",
-          "style": "Bold",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21504
-        },
-        {
-          "filename": "FDAeonikSoft-BoldItalic.woff2",
-          "source_filename": "FDAeonikSoft-SemiBoldItalic.ttf",
-          "style": "Bold Italic",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 23096
-        },
-        {
-          "filename": "FDAeonikSoft-Black.woff2",
-          "source_filename": "FDAeonikSoft-Black.ttf",
-          "style": "Black",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 19988
-        },
-        {
-          "filename": "FDAeonikSoft-BlackItalic.woff2",
-          "source_filename": "FDAeonikSoft-BlackItalic.ttf",
-          "style": "Black Italic",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 21376
+          "filename": "FDAeonikSoft-SemiBoldItalic.ttf",
+          "style": "SemiBoldItalic",
+          "ext": "ttf",
+          "size": 92316,
+          "source_filename": "FDAeonikSoft-SemiBoldItalic.ttf"
         },
         {
           "filename": "FDAeonikSoft-Bold.ttf",
           "style": "Bold",
           "ext": "ttf",
-          "size": 81792,
+          "size": 86116,
           "source_filename": "FDAeonikSoft-Bold.ttf"
         },
         {
           "filename": "FDAeonikSoft-BoldItalic.ttf",
           "style": "BoldItalic",
           "ext": "ttf",
-          "size": 87680,
+          "size": 91916,
           "source_filename": "FDAeonikSoft-BoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 84776,
+          "source_filename": "FDAeonikSoft-Black.ttf"
+        },
+        {
+          "filename": "FDAeonikSoft-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 91956,
+          "source_filename": "FDAeonikSoft-BlackItalic.ttf"
         }
       ],
       "director_review": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
@@ -39087,17 +39041,7 @@
       "nhan_dinh_dao_dien": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
       "typography_critique": "📌 Phiên bản Soft bo tròn đỉnh nét (Rounded Neo-Grotesque) độc quyền FEDU, cân bằng giữa vẻ công nghệ sắc sảo và sự thân thiện hiện đại.",
       "zip_filename": "FD-AeonikSoft.zip",
-      "zip_size_bytes": 1144426,
-      "drive_file_id": "12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
-      "drive_file_size": 1144426,
-      "drive_view_url": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
-      "drive_download_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
-      "drive_link": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
-      "drive_url": "https://drive.google.com/file/d/12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW/view?usp=sharing",
-      "download_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
-      "zip_url": "https://drive.google.com/uc?export=download&id=12QxwVhbiaEoyYOn-KNem_z5pCuZVpuEW",
-      "studio": "CoType Foundry"
+      "zip_size_bytes": 1282699
     },
     {
       "id": "fdaeonikcondensed",
@@ -39122,183 +39066,137 @@
       "director_notes": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
       "weights": [
         "Air",
+        "AirItalic",
         "Thin",
-        "Air Italic",
-        "Thin Italic",
+        "ThinItalic",
         "Light",
-        "Light Italic",
+        "LightItalic",
         "Regular",
-        "Regular Italic",
+        "RegularItalic",
         "Medium",
-        "Medium Italic",
+        "MediumItalic",
         "SemiBold",
-        "SemiBold Italic",
+        "SemiBoldItalic",
         "Bold",
-        "Bold Italic",
+        "BoldItalic",
         "Black",
-        "Black Italic"
+        "BlackItalic"
       ],
       "sample_text": "Tiết kiệm không gian hiển thị tối đa với cấu trúc ký tự nén chặt chẽ sắc nét",
       "web_font_url": "fonts/FDAeonikCondensed-Regular.woff2",
-      "files_count": 18,
+      "files_count": 16,
       "files": [
         {
-          "filename": "FDAeonikCondensed-Air.woff2",
-          "source_filename": "FDAeonikCondensed-Air.ttf",
+          "filename": "FDAeonikCondensed-Air.ttf",
           "style": "Air",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 20096
+          "ext": "ttf",
+          "size": 69948,
+          "source_filename": "FDAeonikCondensed-Air.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-Thin.woff2",
-          "source_filename": "FDAeonikCondensed-Thin.ttf",
+          "filename": "FDAeonikCondensed-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 74392,
+          "source_filename": "FDAeonikCondensed-AirItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Thin.ttf",
           "style": "Thin",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21820
+          "ext": "ttf",
+          "size": 70376,
+          "source_filename": "FDAeonikCondensed-Thin.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-AirItalic.woff2",
-          "source_filename": "FDAeonikCondensed-AirItalic.ttf",
-          "style": "Air Italic",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 20520
+          "filename": "FDAeonikCondensed-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 73784,
+          "source_filename": "FDAeonikCondensed-ThinItalic.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-ThinItalic.woff2",
-          "source_filename": "FDAeonikCondensed-ThinItalic.ttf",
-          "style": "Thin Italic",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22100
-        },
-        {
-          "filename": "FDAeonikCondensed-Light.woff2",
-          "source_filename": "FDAeonikCondensed-Light.ttf",
+          "filename": "FDAeonikCondensed-Light.ttf",
           "style": "Light",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22284
+          "ext": "ttf",
+          "size": 70452,
+          "source_filename": "FDAeonikCondensed-Light.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-LightItalic.woff2",
-          "source_filename": "FDAeonikCondensed-LightItalic.ttf",
-          "style": "Light Italic",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22376
+          "filename": "FDAeonikCondensed-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 74000,
+          "source_filename": "FDAeonikCondensed-LightItalic.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-Regular.woff2",
-          "source_filename": "FDAeonikCondensed-Regular.ttf",
+          "filename": "FDAeonikCondensed-Regular.ttf",
           "style": "Regular",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22004
+          "ext": "ttf",
+          "size": 69364,
+          "source_filename": "FDAeonikCondensed-Regular.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-RegularItalic.woff2",
-          "source_filename": "FDAeonikCondensed-RegularItalic.ttf",
-          "style": "Regular Italic",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22068
+          "filename": "FDAeonikCondensed-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 72580,
+          "source_filename": "FDAeonikCondensed-RegularItalic.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-Medium.woff2",
-          "source_filename": "FDAeonikCondensed-Medium.ttf",
+          "filename": "FDAeonikCondensed-Medium.ttf",
           "style": "Medium",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22680
+          "ext": "ttf",
+          "size": 69292,
+          "source_filename": "FDAeonikCondensed-Medium.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-MediumItalic.woff2",
-          "source_filename": "FDAeonikCondensed-MediumItalic.ttf",
-          "style": "Medium Italic",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22924
+          "filename": "FDAeonikCondensed-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 72336,
+          "source_filename": "FDAeonikCondensed-MediumItalic.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-SemiBold.woff2",
-          "source_filename": "FDAeonikCondensed-SemiBold.ttf",
+          "filename": "FDAeonikCondensed-SemiBold.ttf",
           "style": "SemiBold",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22828
+          "ext": "ttf",
+          "size": 69204,
+          "source_filename": "FDAeonikCondensed-SemiBold.ttf"
         },
         {
-          "filename": "FDAeonikCondensed-SemiBoldItalic.woff2",
-          "source_filename": "FDAeonikCondensed-SemiBoldItalic.ttf",
-          "style": "SemiBold Italic",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 23056
-        },
-        {
-          "filename": "FDAeonikCondensed-Bold.woff2",
-          "source_filename": "FDAeonikCondensed-SemiBold.ttf",
-          "style": "Bold",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 23000
-        },
-        {
-          "filename": "FDAeonikCondensed-BoldItalic.woff2",
-          "source_filename": "FDAeonikCondensed-SemiBoldItalic.ttf",
-          "style": "Bold Italic",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 23124
-        },
-        {
-          "filename": "FDAeonikCondensed-Black.woff2",
-          "source_filename": "FDAeonikCondensed-Black.ttf",
-          "style": "Black",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22028
-        },
-        {
-          "filename": "FDAeonikCondensed-BlackItalic.woff2",
-          "source_filename": "FDAeonikCondensed-BlackItalic.ttf",
-          "style": "Black Italic",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22296
+          "filename": "FDAeonikCondensed-SemiBoldItalic.ttf",
+          "style": "SemiBoldItalic",
+          "ext": "ttf",
+          "size": 72448,
+          "source_filename": "FDAeonikCondensed-SemiBoldItalic.ttf"
         },
         {
           "filename": "FDAeonikCondensed-Bold.ttf",
           "style": "Bold",
           "ext": "ttf",
-          "size": 64804,
+          "size": 68736,
           "source_filename": "FDAeonikCondensed-Bold.ttf"
         },
         {
           "filename": "FDAeonikCondensed-BoldItalic.ttf",
           "style": "BoldItalic",
           "ext": "ttf",
-          "size": 68436,
+          "size": 72460,
           "source_filename": "FDAeonikCondensed-BoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 68444,
+          "source_filename": "FDAeonikCondensed-Black.ttf"
+        },
+        {
+          "filename": "FDAeonikCondensed-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 72392,
+          "source_filename": "FDAeonikCondensed-BlackItalic.ttf"
         }
       ],
       "director_review": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
@@ -39306,17 +39204,7 @@
       "nhan_dinh_dao_dien": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
       "typography_critique": "📌 Phiên bản Condensed thu hẹp bề ngang tối ưu cho tiêu đề hiển thị, poster và bảng tin công nghệ cần tiết kiệm diện tích mà vẫn giữ độ tác động thị giác mạnh mẽ.",
       "zip_filename": "FD-AeonikCondensed.zip",
-      "zip_size_bytes": 1150033,
-      "drive_file_id": "1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
-      "drive_file_size": 1150033,
-      "drive_view_url": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
-      "drive_download_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
-      "drive_link": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
-      "drive_url": "https://drive.google.com/file/d/1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb/view?usp=sharing",
-      "download_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
-      "zip_url": "https://drive.google.com/uc?export=download&id=1R75vEWMS2CChYi-HArUQKwvTgCsEd9rb",
-      "studio": "CoType Foundry"
+      "zip_size_bytes": 1273571
     },
     {
       "id": "fdaeonikextended",
@@ -39341,183 +39229,137 @@
       "director_notes": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
       "weights": [
         "Air",
+        "AirItalic",
         "Thin",
-        "Air Italic",
-        "Thin Italic",
+        "ThinItalic",
         "Light",
-        "Light Italic",
+        "LightItalic",
         "Regular",
-        "Regular Italic",
+        "RegularItalic",
         "Medium",
-        "Medium Italic",
+        "MediumItalic",
         "SemiBold",
-        "SemiBold Italic",
+        "SemiBoldItalic",
         "Bold",
-        "Bold Italic",
+        "BoldItalic",
         "Black",
-        "Black Italic"
+        "BlackItalic"
       ],
       "sample_text": "Mở rộng tầm nhìn kiến trúc chữ với tỷ lệ bề ngang ấn tượng và hiện đại",
       "web_font_url": "fonts/FDAeonikExtended-Regular.woff2",
-      "files_count": 18,
+      "files_count": 16,
       "files": [
         {
-          "filename": "FDAeonikExtended-Air.woff2",
-          "source_filename": "FDAeonikExtended-Air.ttf",
+          "filename": "FDAeonikExtended-Air.ttf",
           "style": "Air",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 20192
+          "ext": "ttf",
+          "size": 71840,
+          "source_filename": "FDAeonikExtended-Air.ttf"
         },
         {
-          "filename": "FDAeonikExtended-Thin.woff2",
-          "source_filename": "FDAeonikExtended-Thin.ttf",
+          "filename": "FDAeonikExtended-AirItalic.ttf",
+          "style": "AirItalic",
+          "ext": "ttf",
+          "size": 76400,
+          "source_filename": "FDAeonikExtended-AirItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Thin.ttf",
           "style": "Thin",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22160
+          "ext": "ttf",
+          "size": 72588,
+          "source_filename": "FDAeonikExtended-Thin.ttf"
         },
         {
-          "filename": "FDAeonikExtended-AirItalic.woff2",
-          "source_filename": "FDAeonikExtended-AirItalic.ttf",
-          "style": "Air Italic",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 21168
+          "filename": "FDAeonikExtended-ThinItalic.ttf",
+          "style": "ThinItalic",
+          "ext": "ttf",
+          "size": 74744,
+          "source_filename": "FDAeonikExtended-ThinItalic.ttf"
         },
         {
-          "filename": "FDAeonikExtended-ThinItalic.woff2",
-          "source_filename": "FDAeonikExtended-ThinItalic.ttf",
-          "style": "Thin Italic",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22644
-        },
-        {
-          "filename": "FDAeonikExtended-Light.woff2",
-          "source_filename": "FDAeonikExtended-Light.ttf",
+          "filename": "FDAeonikExtended-Light.ttf",
           "style": "Light",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22472
+          "ext": "ttf",
+          "size": 72596,
+          "source_filename": "FDAeonikExtended-Light.ttf"
         },
         {
-          "filename": "FDAeonikExtended-LightItalic.woff2",
-          "source_filename": "FDAeonikExtended-LightItalic.ttf",
-          "style": "Light Italic",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22840
+          "filename": "FDAeonikExtended-LightItalic.ttf",
+          "style": "LightItalic",
+          "ext": "ttf",
+          "size": 74792,
+          "source_filename": "FDAeonikExtended-LightItalic.ttf"
         },
         {
-          "filename": "FDAeonikExtended-Regular.woff2",
-          "source_filename": "FDAeonikExtended-Regular.ttf",
+          "filename": "FDAeonikExtended-Regular.ttf",
           "style": "Regular",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22212
+          "ext": "ttf",
+          "size": 71012,
+          "source_filename": "FDAeonikExtended-Regular.ttf"
         },
         {
-          "filename": "FDAeonikExtended-RegularItalic.woff2",
-          "source_filename": "FDAeonikExtended-RegularItalic.ttf",
-          "style": "Regular Italic",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22292
+          "filename": "FDAeonikExtended-RegularItalic.ttf",
+          "style": "RegularItalic",
+          "ext": "ttf",
+          "size": 74472,
+          "source_filename": "FDAeonikExtended-RegularItalic.ttf"
         },
         {
-          "filename": "FDAeonikExtended-Medium.woff2",
-          "source_filename": "FDAeonikExtended-Medium.ttf",
+          "filename": "FDAeonikExtended-Medium.ttf",
           "style": "Medium",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22992
+          "ext": "ttf",
+          "size": 70776,
+          "source_filename": "FDAeonikExtended-Medium.ttf"
         },
         {
-          "filename": "FDAeonikExtended-MediumItalic.woff2",
-          "source_filename": "FDAeonikExtended-MediumItalic.ttf",
-          "style": "Medium Italic",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 23288
+          "filename": "FDAeonikExtended-MediumItalic.ttf",
+          "style": "MediumItalic",
+          "ext": "ttf",
+          "size": 73552,
+          "source_filename": "FDAeonikExtended-MediumItalic.ttf"
         },
         {
-          "filename": "FDAeonikExtended-SemiBold.woff2",
-          "source_filename": "FDAeonikExtended-SemiBold.ttf",
+          "filename": "FDAeonikExtended-SemiBold.ttf",
           "style": "SemiBold",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 23116
+          "ext": "ttf",
+          "size": 70980,
+          "source_filename": "FDAeonikExtended-SemiBold.ttf"
         },
         {
-          "filename": "FDAeonikExtended-SemiBoldItalic.woff2",
-          "source_filename": "FDAeonikExtended-SemiBoldItalic.ttf",
-          "style": "SemiBold Italic",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 23400
-        },
-        {
-          "filename": "FDAeonikExtended-Bold.woff2",
-          "source_filename": "FDAeonikExtended-SemiBold.ttf",
-          "style": "Bold",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 23084
-        },
-        {
-          "filename": "FDAeonikExtended-BoldItalic.woff2",
-          "source_filename": "FDAeonikExtended-SemiBoldItalic.ttf",
-          "style": "Bold Italic",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 23232
-        },
-        {
-          "filename": "FDAeonikExtended-Black.woff2",
-          "source_filename": "FDAeonikExtended-Black.ttf",
-          "style": "Black",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22304
-        },
-        {
-          "filename": "FDAeonikExtended-BlackItalic.woff2",
-          "source_filename": "FDAeonikExtended-BlackItalic.ttf",
-          "style": "Black Italic",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": true,
-          "size": 22328
+          "filename": "FDAeonikExtended-SemiBoldItalic.ttf",
+          "style": "SemiBoldItalic",
+          "ext": "ttf",
+          "size": 73388,
+          "source_filename": "FDAeonikExtended-SemiBoldItalic.ttf"
         },
         {
           "filename": "FDAeonikExtended-Bold.ttf",
           "style": "Bold",
           "ext": "ttf",
-          "size": 67012,
+          "size": 70988,
           "source_filename": "FDAeonikExtended-Bold.ttf"
         },
         {
           "filename": "FDAeonikExtended-BoldItalic.ttf",
           "style": "BoldItalic",
           "ext": "ttf",
-          "size": 69136,
+          "size": 73184,
           "source_filename": "FDAeonikExtended-BoldItalic.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 71212,
+          "source_filename": "FDAeonikExtended-Black.ttf"
+        },
+        {
+          "filename": "FDAeonikExtended-BlackItalic.ttf",
+          "style": "BlackItalic",
+          "ext": "ttf",
+          "size": 73332,
+          "source_filename": "FDAeonikExtended-BlackItalic.ttf"
         }
       ],
       "director_review": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
@@ -39525,17 +39367,7 @@
       "nhan_dinh_dao_dien": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
       "typography_critique": "📌 Phiên bản Extended mở rộng bề ngang bề thế, vững chãi, cực kỳ ấn tượng cho các video headline, key visual và branding hiện đại.",
       "zip_filename": "FD-AeonikExtended.zip",
-      "zip_size_bytes": 1168310,
-      "drive_file_id": "1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
-      "drive_file_size": 1168310,
-      "drive_view_url": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
-      "drive_download_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
-      "drive_link": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
-      "drive_url": "https://drive.google.com/file/d/1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s/view?usp=sharing",
-      "download_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
-      "zip_url": "https://drive.google.com/uc?export=download&id=1vxwpXnUSi_BR7B-_llnbG3wA0KhYmU0s",
-      "studio": "CoType Foundry"
+      "zip_size_bytes": 1294011
     },
     {
       "id": "fdaeonikmono",
@@ -39570,86 +39402,63 @@
       ],
       "sample_text": "const system = new HighPrecisionTypographyEngine({ monospace: true, width: 620 });",
       "web_font_url": "fonts/FDAeonikMono-Regular.woff2",
-      "files_count": 9,
+      "files_count": 8,
       "files": [
         {
-          "filename": "FDAeonikMono-Air.woff2",
-          "source_filename": "FDAeonikMono-Air.ttf",
+          "filename": "FDAeonikMono-Air.ttf",
           "style": "Air",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 15644
+          "ext": "ttf",
+          "size": 47728,
+          "source_filename": "FDAeonikMono-Air.ttf"
         },
         {
-          "filename": "FDAeonikMono-Thin.woff2",
-          "source_filename": "FDAeonikMono-Thin.ttf",
+          "filename": "FDAeonikMono-Thin.ttf",
           "style": "Thin",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 16960
+          "ext": "ttf",
+          "size": 47760,
+          "source_filename": "FDAeonikMono-Thin.ttf"
         },
         {
-          "filename": "FDAeonikMono-Light.woff2",
-          "source_filename": "FDAeonikMono-Light.ttf",
+          "filename": "FDAeonikMono-Light.ttf",
           "style": "Light",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 17120
+          "ext": "ttf",
+          "size": 47892,
+          "source_filename": "FDAeonikMono-Light.ttf"
         },
         {
-          "filename": "FDAeonikMono-Regular.woff2",
-          "source_filename": "FDAeonikMono-Regular.ttf",
+          "filename": "FDAeonikMono-Regular.ttf",
           "style": "Regular",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 16856
+          "ext": "ttf",
+          "size": 47548,
+          "source_filename": "FDAeonikMono-Regular.ttf"
         },
         {
-          "filename": "FDAeonikMono-Medium.woff2",
-          "source_filename": "FDAeonikMono-Medium.ttf",
+          "filename": "FDAeonikMono-Medium.ttf",
           "style": "Medium",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 17816
+          "ext": "ttf",
+          "size": 46168,
+          "source_filename": "FDAeonikMono-Medium.ttf"
         },
         {
-          "filename": "FDAeonikMono-SemiBold.woff2",
-          "source_filename": "FDAeonikMono-SemiBold.ttf",
+          "filename": "FDAeonikMono-SemiBold.ttf",
           "style": "SemiBold",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 17840
-        },
-        {
-          "filename": "FDAeonikMono-Bold.woff2",
-          "source_filename": "FDAeonikMono-SemiBold.ttf",
-          "style": "Bold",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 17884
-        },
-        {
-          "filename": "FDAeonikMono-Black.woff2",
-          "source_filename": "FDAeonikMono-Black.ttf",
-          "style": "Black",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 17528
+          "ext": "ttf",
+          "size": 46392,
+          "source_filename": "FDAeonikMono-SemiBold.ttf"
         },
         {
           "filename": "FDAeonikMono-Bold.ttf",
           "style": "Bold",
           "ext": "ttf",
-          "size": 42284,
+          "size": 46184,
           "source_filename": "FDAeonikMono-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikMono-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 46076,
+          "source_filename": "FDAeonikMono-Black.ttf"
         }
       ],
       "director_review": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
@@ -39657,17 +39466,7 @@
       "nhan_dinh_dao_dien": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
       "typography_critique": "📌 Phiên bản Monospace chuẩn hình học độ rộng cố định (advance width 620), chuyên dụng cho giao diện lập trình, coding visual, thông số kỹ thuật và data visualization.",
       "zip_filename": "FD-AeonikMono.zip",
-      "zip_size_bytes": 432664,
-      "drive_file_id": "1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
-      "drive_file_size": 432664,
-      "drive_view_url": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
-      "drive_download_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
-      "drive_link": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
-      "drive_url": "https://drive.google.com/file/d/1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2/view?usp=sharing",
-      "download_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
-      "zip_url": "https://drive.google.com/uc?export=download&id=1hKx6xK3KvHyVxUFxhb6_NXLb-Tf31FQ2",
-      "studio": "CoType Foundry"
+      "zip_size_bytes": 490348
     },
     {
       "id": "fdaeonikfono",
@@ -39702,86 +39501,63 @@
       ],
       "sample_text": "Hệ thống tổng hợp tín hiệu âm thanh và điều chế tần số sóng kỹ thuật số",
       "web_font_url": "fonts/FDAeonikFono-Regular.woff2",
-      "files_count": 9,
+      "files_count": 8,
       "files": [
         {
-          "filename": "FDAeonikFono-Air.woff2",
-          "source_filename": "FDAeonikFono-Air.ttf",
+          "filename": "FDAeonikFono-Air.ttf",
           "style": "Air",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 19616
+          "ext": "ttf",
+          "size": 69644,
+          "source_filename": "FDAeonikFono-Air.ttf"
         },
         {
-          "filename": "FDAeonikFono-Thin.woff2",
-          "source_filename": "FDAeonikFono-Thin.ttf",
+          "filename": "FDAeonikFono-Thin.ttf",
           "style": "Thin",
-          "weight": 100,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21532
+          "ext": "ttf",
+          "size": 69988,
+          "source_filename": "FDAeonikFono-Thin.ttf"
         },
         {
-          "filename": "FDAeonikFono-Light.woff2",
-          "source_filename": "FDAeonikFono-Light.ttf",
+          "filename": "FDAeonikFono-Light.ttf",
           "style": "Light",
-          "weight": 300,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21820
+          "ext": "ttf",
+          "size": 70192,
+          "source_filename": "FDAeonikFono-Light.ttf"
         },
         {
-          "filename": "FDAeonikFono-Regular.woff2",
-          "source_filename": "FDAeonikFono-Regular.ttf",
+          "filename": "FDAeonikFono-Regular.ttf",
           "style": "Regular",
-          "weight": 400,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21380
+          "ext": "ttf",
+          "size": 68976,
+          "source_filename": "FDAeonikFono-Regular.ttf"
         },
         {
-          "filename": "FDAeonikFono-Medium.woff2",
-          "source_filename": "FDAeonikFono-Medium.ttf",
+          "filename": "FDAeonikFono-Medium.ttf",
           "style": "Medium",
-          "weight": 500,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22164
+          "ext": "ttf",
+          "size": 68332,
+          "source_filename": "FDAeonikFono-Medium.ttf"
         },
         {
-          "filename": "FDAeonikFono-SemiBold.woff2",
-          "source_filename": "FDAeonikFono-SemiBold.ttf",
+          "filename": "FDAeonikFono-SemiBold.ttf",
           "style": "SemiBold",
-          "weight": 600,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22332
-        },
-        {
-          "filename": "FDAeonikFono-Bold.woff2",
-          "source_filename": "FDAeonikFono-SemiBold.ttf",
-          "style": "Bold",
-          "weight": 700,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 22252
-        },
-        {
-          "filename": "FDAeonikFono-Black.woff2",
-          "source_filename": "FDAeonikFono-Black.ttf",
-          "style": "Black",
-          "weight": 900,
-          "ext": "woff2",
-          "is_italic": false,
-          "size": 21640
+          "ext": "ttf",
+          "size": 68360,
+          "source_filename": "FDAeonikFono-SemiBold.ttf"
         },
         {
           "filename": "FDAeonikFono-Bold.ttf",
           "style": "Bold",
           "ext": "ttf",
-          "size": 63788,
+          "size": 67744,
           "source_filename": "FDAeonikFono-Bold.ttf"
+        },
+        {
+          "filename": "FDAeonikFono-Black.ttf",
+          "style": "Black",
+          "ext": "ttf",
+          "size": 67860,
+          "source_filename": "FDAeonikFono-Black.ttf"
         }
       ],
       "director_review": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
@@ -39789,17 +39565,7 @@
       "nhan_dinh_dao_dien": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
       "typography_critique": "📌 Phiên bản Fono phong cách kỹ thuật số lai ghép (hybrid tech grotesque), mang linh hồn viễn thông, audio synthesizer và retro-future aesthetics.",
       "zip_filename": "FD-AeonikFono.zip",
-      "zip_size_bytes": 552235,
-      "drive_file_id": "1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
-      "drive_file_size": 552235,
-      "drive_view_url": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
-      "drive_download_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
-      "drive_folder_url": "https://drive.google.com/drive/folders/1mEkkjojZUZzBQYmcXnJoFIWM4QBc7u90?usp=sharing",
-      "drive_link": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
-      "drive_url": "https://drive.google.com/file/d/1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB/view?usp=sharing",
-      "download_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
-      "zip_url": "https://drive.google.com/uc?export=download&id=1rFmsPtiAUnfcVZmA3gingyB1lr3YkArB",
-      "studio": "CoType Foundry"
+      "zip_size_bytes": 611739
     }
   ],
   "pdf_curated_catalog": [

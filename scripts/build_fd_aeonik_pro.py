@@ -139,6 +139,48 @@ def draw_rel_contour(rel_pts, origin_x, origin_y, upm_scale, scale_x, pen):
     draw_tt_contour(pts, flags, pen, reverse=True)
 
 
+def get_horn_segment(f_a, g_base_name, g_horn_name):
+    """Dynamically extracts the horn contour segment from donor font f_a."""
+    glyf_a = f_a['glyf']
+    g_base_a = glyf_a[g_base_name]; g_base_a.expand(glyf_a)
+    g_horn_a = glyf_a[g_horn_name]; g_horn_a.expand(glyf_a)
+    cb, eb, fb = g_base_a.getCoordinates(glyf_a)
+    ch, eh, fh = g_horn_a.getCoordinates(glyf_a)
+    c0_h = ch[:eh[0]+1]
+    f0_h = fh[:eh[0]+1]
+    pts_base_set = set(cb[:eb[0]+1])
+    N = len(c0_h)
+    max_y = max(p[1] for p in c0_h)
+    tip_idx = [i for i, p in enumerate(c0_h) if p[1] == max_y][0]
+    i_start = tip_idx
+    while True:
+        prev_i = (i_start - 1) % N
+        if c0_h[prev_i] in pts_base_set and f0_h[prev_i] == 1:
+            i_start = prev_i
+            break
+        if c0_h[prev_i][1] < max(p[1] for p in cb) - 30:
+            i_start = prev_i
+            break
+        i_start = prev_i
+    i_end = tip_idx
+    while True:
+        next_i = (i_end + 1) % N
+        if c0_h[next_i] in pts_base_set and f0_h[next_i] == 1:
+            i_end = next_i
+            break
+        if c0_h[next_i][1] < min(p[1] for p in cb) + (max(p[1] for p in cb) - min(p[1] for p in cb))*0.4:
+            i_end = next_i
+            break
+        i_end = next_i
+    indices = []
+    curr = i_start
+    while True:
+        indices.append(curr)
+        if curr == i_end: break
+        curr = (curr + 1) % N
+    return indices
+
+
 def get_donor_path(filename: str) -> Path:
     fn_lower = filename.lower()
     is_italic = 'italic' in fn_lower
@@ -368,6 +410,27 @@ def process_aeonik_style(src_path_str: str, family_core: str):
                 order.append('dotlessi')
                 hmtx_p.metrics['dotlessi'] = (w_i, int(round(bounds_i[0])))
 
+        # Pre-extract donor horn geometry from f_a (adaptive to weight & style)
+        donor_horn_data = {}
+        for g_base, g_horn in [('O', 'Ohorn'), ('o', 'ohorn'), ('U', 'Uhorn'), ('u', 'uhorn')]:
+            if g_horn in glyf_a and g_base in glyf_a:
+                indices = get_horn_segment(f_a, g_base, g_horn)
+                g_h = glyf_a[g_horn]; g_h.expand(glyf_a)
+                c_h, _, f_h = g_h.getCoordinates(glyf_a)
+                g_b = glyf_a[g_base]; g_b.expand(glyf_a)
+                c_b, _, _ = g_b.getCoordinates(glyf_a)
+                pts_h = [c_h[i] for i in indices]
+                fl_h = [f_h[i] for i in indices]
+                if g_base in ['O', 'o']:
+                    xc_a = (min(p[0] for p in c_b) + max(p[0] for p in c_b)) / 2.0
+                    hw_a = (max(p[0] for p in c_b) - min(p[0] for p in c_b)) / 2.0
+                    top_a = max(p[1] for p in c_b)
+                    donor_horn_data[g_horn] = (pts_h, fl_h, xc_a, hw_a, top_a)
+                else:
+                    stem_a_x = max(p[0] for p in c_b)
+                    top_a_y = max(p[1] for p in c_b)
+                    donor_horn_data[g_horn] = (pts_h, fl_h, stem_a_x, top_a_y)
+
         for ch in VIET_CHARS:
             cp = ord(ch)
             base_ch = get_base_char(ch)
@@ -400,10 +463,31 @@ def process_aeonik_style(src_path_str: str, family_core: str):
             is_o_horn = ch in 'ƠỜỚỞỠỢ'
             is_lc_o_horn = ch in 'ơờớởỡợ'
 
-            if is_u_horn or is_o_horn:
-                draw_rel_contour(HORN_UC_REL, right_p_x, top_p_y, upm_scale, horn_scale_x, rec_accents)
-            elif is_lc_u_horn or is_lc_o_horn:
-                draw_rel_contour(HORN_LC_REL, right_p_x, top_p_y, upm_scale, horn_scale_x, rec_accents)
+            if is_o_horn or is_lc_o_horn:
+                g_donor_horn = 'Ohorn' if is_o_horn else 'ohorn'
+                if g_donor_horn in donor_horn_data:
+                    pts_h, fl_h, xc_a, hw_a, top_a = donor_horn_data[g_donor_horn]
+                    hw_p = (bounds_p[2] - bounds_p[0]) / 2.0
+                    mapped_horn = []
+                    for x, y in pts_h:
+                        rx = (x - xc_a) / hw_a
+                        ry = (y - top_a)
+                        tx = center_p_x + rx * hw_p
+                        ty = top_p_y + ry * upm_scale
+                        mapped_horn.append((int(round(tx)), int(round(ty))))
+                    draw_tt_contour(mapped_horn, fl_h, rec_accents, reverse=True)
+            elif is_u_horn or is_lc_u_horn:
+                g_donor_horn = 'Uhorn' if is_u_horn else 'uhorn'
+                if g_donor_horn in donor_horn_data:
+                    pts_h, fl_h, stem_a_x, top_a_y = donor_horn_data[g_donor_horn]
+                    mapped_horn = []
+                    for x, y in pts_h:
+                        dx = x - stem_a_x
+                        dy = y - top_a_y
+                        tx = right_p_x + dx * upm_scale * horn_scale_x
+                        ty = top_p_y + dy * upm_scale
+                        mapped_horn.append((int(round(tx)), int(round(ty))))
+                    draw_tt_contour(mapped_horn, fl_h, rec_accents, reverse=True)
 
             # Crossbar for Đ and đ
             if ch == 'Đ':
@@ -471,7 +555,7 @@ def process_aeonik_style(src_path_str: str, family_core: str):
                                 # Anti-collision offset for horn letters with top diacritics
                                 if is_lc_o_horn or is_lc_u_horn or is_o_horn or is_u_horn:
                                     s_x -= int(round(16 * upm_scale * (0.85 if is_condensed else 1.0)))
-                                    s_y += int(round(12 * upm_scale))
+                                    s_y += int(round(10 * upm_scale))
 
                             # Apply horizontal diacritic scaling around local center
                             c_shifted = []
@@ -508,6 +592,50 @@ def process_aeonik_style(src_path_str: str, family_core: str):
             hmtx_p.metrics[dest_gname] = (int(round(w_dest)), int(round(bounds_p[0])))
             for sub in f_p['cmap'].tables:
                 sub.cmap[cp] = dest_gname
+
+        # Import missing punctuation from donor font
+        PUNCT_CODEPOINTS = [
+            0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F,
+            0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40, 0x5B, 0x5C, 0x5D, 0x5E, 0x5F,
+            0x60, 0x7B, 0x7C, 0x7D, 0x7E,
+            0x2013, 0x2014, 0x2018, 0x2019, 0x201C, 0x201D, 0x2026, 0x2022
+        ]
+        cmap_p_best = f_p.getBestCmap()
+        for cp in PUNCT_CODEPOINTS:
+            if cp not in cmap_p_best and cp in cmap_a:
+                gname_a = cmap_a[cp]
+                if gname_a in glyf_a:
+                    rec_punct = RecordingPen()
+                    g_punct = glyf_a[gname_a]
+                    g_punct.expand(glyf_a)
+                    coords_punc, end_pts_punc, flags_punc = g_punct.getCoordinates(glyf_a)
+                    scale_punct_x = 0.92 if is_condensed else (1.15 if is_extended else 1.0)
+                    coords_punc = [(int(round(p[0] * upm_scale * scale_punct_x)), int(round(p[1] * upm_scale))) for p in coords_punc]
+                    start = 0
+                    for end in end_pts_punc:
+                        end = end + 1
+                        draw_tt_contour(coords_punc[start:end], flags_punc[start:end], rec_punct, reverse=True)
+                        start = end
+                    w_a, lsb_a = f_a['hmtx'][gname_a]
+                    w_dest_p = int(round(620 * upm_scale if is_mono else w_a * upm_scale * scale_punct_x))
+                    t2_p = T2CharStringPen(width=w_dest_p, glyphSet={})
+                    qu2cu_p = Qu2CuPen(t2_p, max_err=1.0)
+                    rec_punct.replay(qu2cu_p)
+                    cs_p = t2_p.getCharString()
+                    cs_p.private = top_dict_p.Private
+                    cs_p.compile()
+                    dest_gname = f'uni{cp:04X}' if cp > 0xFF else gname_a
+                    if dest_gname not in charstrings_p:
+                        idx = len(charstrings_p.charStringsIndex)
+                        charstrings_p.charStringsIndex.append(cs_p)
+                        charstrings_p.charStrings[dest_gname] = idx
+                        top_dict_p.charset.append(dest_gname)
+                        order.append(dest_gname)
+                    else:
+                        charstrings_p[dest_gname] = cs_p
+                    hmtx_p.metrics[dest_gname] = (w_dest_p, int(round(lsb_a * upm_scale * scale_punct_x)))
+                    for sub in f_p['cmap'].tables:
+                        sub.cmap[cp] = dest_gname
 
         for g in order:
             if g not in hmtx_p.metrics:

@@ -146,5 +146,38 @@ class TestAeonikVietnameseLocalization(unittest.TestCase):
                 self.assertIn(ord('đ'), cmap, f"Font {fp.name} thiếu ký tự đ")
                 self.assertIn(ord('Đ'), cmap, f"Font {fp.name} thiếu ký tự Đ")
 
+    def test_07_ohorn_horn_attachment_integrity(self):
+        """Kiểm tra râu chữ Ơ / ơ dính chặt vào vai O / o, không bị lơ lửng tách rời thành component riêng lẻ"""
+        from PIL import Image, ImageDraw, ImageFont
+        import numpy as np
+        import cv2
+
+        def get_comp_count(font_path, text, size=120):
+            try:
+                font = ImageFont.truetype(str(font_path), size)
+            except Exception:
+                return -1
+            img = Image.new("L", (size * 2, size * 2), 0)
+            draw = ImageDraw.Draw(img)
+            draw.text((20, 20), text, font=font, fill=255)
+            arr = np.array(img)
+            _, thresh = cv2.threshold(arr, 50, 255, cv2.THRESH_BINARY)
+            num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(thresh)
+            areas = [stats[i, cv2.CC_STAT_AREA] for i in range(1, num_labels)]
+            valid = [a for a in areas if a > 20]
+            return len(valid)
+
+        for fam in FAMILIES:
+            fonts = discover_family_fonts(fam)
+            for fp in fonts:
+                if fp.suffix.lower() == '.woff2':
+                    continue
+                # Ơ and ơ must be 1 single connected component (horn welded to O/o)
+                c_upper = get_comp_count(fp, "Ơ")
+                c_lower = get_comp_count(fp, "ơ")
+                self.assertEqual(c_upper, 1, f"Font {fp.name}: Chữ Ơ bị lỗi râu lơ lửng tách rời ({c_upper} components thay vì 1)")
+                self.assertEqual(c_lower, 1, f"Font {fp.name}: Chữ ơ bị lỗi râu lơ lửng tách rời ({c_lower} components thay vì 1)")
+
 if __name__ == '__main__':
     unittest.main()
+
